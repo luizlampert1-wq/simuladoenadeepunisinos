@@ -279,8 +279,17 @@ anteriores são evitadas.
 aparecem com borda destacada), contador "Questão 7 de 38", barra de progresso e contador de
 caracteres/linhas nas discursivas, com aviso quando passa das 15 linhas do ENADE. **Nenhum
 gabarito, justificativa ou padrão de resposta aparece antes de finalizar** — isso é verificado por
-teste automatizado. O progresso é salvo a cada clique e sobrevive a recarregar a página ou fechar o
-navegador.
+teste automatizado.
+
+**Pausar e continuar depois.** Cada resposta é gravada no navegador no instante em que é dada —
+incluindo o rascunho das discursivas, salvo a cada tecla. O aluno pode fechar a aba, desligar o
+computador e voltar dias depois: ao reabrir, a tela inicial mostra o cartão *"Simulado em
+andamento"* com quantas questões já respondeu, e o botão **Retomar simulado** devolve exatamente
+onde parou — as mesmas 38 questões sorteadas, as mesmas respostas, na mesma questão. Ao lado fica
+**Descartar e começar novo**, para quem prefere recomeçar. Não há prazo de validade.
+
+A ressalva: o progresso vive **naquele navegador, naquele computador**. Trocar de aparelho, usar
+aba anônima ou limpar os dados do navegador apaga o simulado em andamento.
 
 **Finalizar.** Pede confirmação e avisa quantas questões estão em branco.
 
@@ -527,7 +536,7 @@ Drive só seu, publicando apenas o `index.html` gerado.
 
 ## 9. Testes automatizados
 
-`python testar.py` executa o aplicativo real dentro do Chrome em modo headless. São **49
+`python testar.py` executa o aplicativo real dentro do Chrome em modo headless. São **58
 verificações**:
 
 **Banco**
@@ -566,6 +575,13 @@ verificações**:
 - pede confirmação antes de finalizar e exibe as 38 questões na correção;
 - o histórico registra o e-mail do aluno;
 - recupera o simulado em andamento — inclusive o rascunho da discursiva — ao recarregar a página.
+
+**Pausar e continuar** (feito recarregando a página de verdade, três vezes seguidas)
+- ao reabrir, a tela inicial oferece retomar e informa quantas questões já foram respondidas;
+- retoma na questão exata em que parou, com as mesmas 38 questões e as mesmas respostas;
+- o rascunho da discursiva volta escrito no campo de texto;
+- o simulado sobrevive a fechar e reabrir mais de uma vez;
+- "Descartar e começar novo" apaga o simulado interrompido.
 
 **Coleta de resultados**
 - vem desativada por padrão, e com ela desligada nada é enfileirado para envio;

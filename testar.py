@@ -444,6 +444,97 @@ DRIVER_LOGICA = r"""
 </script>
 """
 
+# ----------------------------------------------------- pausar e retomar
+# Este caso exige recarregar a página de verdade: o bug que ele pega (a tela
+# inicial apagava o progresso antes de lê-lo) passava despercebido por testes
+# que chamavam restaurarProgresso() diretamente. São três carregamentos, com
+# o estado atravessando via sessionStorage.
+DRIVER_PAUSA = r"""<script>
+(function(){
+  const M = [];
+  const t = () => document.body.innerText;
+  const diz = (cond, nome) => M.push((cond ? "PASS" : "FAIL") + " :: " + nome);
+  const passo = sessionStorage.getItem("__passo") || "1";
+
+  if (passo === "1"){
+    sessionStorage.setItem("__passo", "2");
+    try { localStorage.clear(); } catch(e){}
+    telaInicial();
+    document.getElementById("email").value = "aluno.teste@edu.unisinos.br";
+    document.getElementById("nome").value  = "Aluno Pausa";
+    document.getElementById("iniciar").click();
+    for (let i = 0; i < 3; i++) document.querySelectorAll(".alt")[i % 5].click();
+    S.atual = 37; telaQuiz();
+    const ta = document.getElementById("disc");
+    ta.value = "Rascunho antes da pausa."; ta.dispatchEvent(new Event("input"));
+    sessionStorage.setItem("__ids",  S.questoes.map(q=>q.id).join(","));
+    sessionStorage.setItem("__resp", JSON.stringify(S.respostas));
+    location.reload();                      // <- a "pausa"
+    return;
+  }
+
+  if (passo === "2"){
+    // a página acabou de carregar do zero e rodou telaInicial() sozinha
+    diz(/Simulado em andamento/.test(t()),
+        "Ao reabrir, a tela inicial oferece retomar o simulado interrompido");
+    diz(/4 de 38 respondidas/.test(t()),
+        "A tela inicial informa quantas questões já foram respondidas");
+    const btn = document.getElementById("retomar");
+    diz(!!btn, "A tela inicial traz o botão 'Retomar simulado'");
+    if (btn){
+      btn.click();
+      diz(/Questão 38 de 38/.test(t()), "Retoma exatamente na questão em que parou");
+      diz(S.questoes.map(q=>q.id).join(",") === sessionStorage.getItem("__ids"),
+          "As 38 questões sorteadas são as mesmas de antes da pausa");
+      diz(JSON.stringify(S.respostas) === sessionStorage.getItem("__resp"),
+          "As respostas dadas antes da pausa foram preservadas");
+      const ta = document.getElementById("disc");
+      diz(!!ta && /Rascunho antes da pausa\./.test(ta.value),
+          "O rascunho da discursiva volta escrito no campo de texto");
+    }
+    sessionStorage.setItem("__passo", "3");
+    sessionStorage.setItem("__M", JSON.stringify(M));
+    location.reload();                      // <- fecha e abre outra vez
+    return;
+  }
+
+  // terceiro carregamento: o simulado ainda deve estar lá, e "Descartar" limpa
+  const M2 = JSON.parse(sessionStorage.getItem("__M") || "[]");
+  M2.push((/Simulado em andamento/.test(t()) ? "PASS" : "FAIL") +
+          " :: O simulado sobrevive a fechar e reabrir mais de uma vez");
+  const desc = document.getElementById("descartar");
+  if (desc) desc.click();
+  M2.push((!store(LS.prog) && !/Simulado em andamento/.test(t()) ? "PASS" : "FAIL") +
+          " :: 'Descartar e começar novo' apaga o simulado interrompido");
+  const pre = document.createElement("pre");
+  pre.textContent = "<<" + "PAUSA>>" + String.fromCharCode(10) + M2.join(String.fromCharCode(10))
+                  + String.fromCharCode(10) + "<<" + "FIMPAUSA>>";
+  document.body.appendChild(pre);
+})();
+</script>"""
+
+
+def testar_pausa(porta):
+    """Pausar e retomar, com recarregamento real da página."""
+    preparar("pausa", DRIVER_PAUSA)
+    r = chrome(f"http://127.0.0.1:{porta}/_t_pausa.html", ["--dump-dom"])
+    m = re.search(r"&lt;&lt;PAUSA&gt;&gt;(.*?)&lt;&lt;FIMPAUSA&gt;&gt;", r.stdout, re.S)
+    print("\nPausar e retomar (recarregando a página de verdade):")
+    if not m:
+        print("  x nao foi possivel medir")
+        return True, 0
+    falhou, n = False, 0
+    for linha in m.group(1).strip().splitlines():
+        linha = linha.strip()
+        if not linha:
+            continue
+        n += 1
+        if linha.startswith("FAIL"):
+            falhou = True
+        print(("  ✓ " if linha.startswith("PASS") else "  ✗ ") + linha.split("::", 1)[1].strip())
+    return falhou, n
+
+
 _ENTRAR = """
   document.getElementById("email").value = "ana.camargo@edu.unisinos.br";
   document.getElementById("nome").value  = "Ana Beatriz Camargo";
@@ -575,6 +666,10 @@ def main():
             if linha.startswith("FAIL"):
                 falhou = True
             print(("  ✓ " if linha.startswith("PASS") else "  ✗ ") + linha.split("::", 1)[1].strip())
+
+    falhou_pausa, n_pausa = testar_pausa(porta)
+    if falhou_pausa:
+        falhou = True
 
     shots = "--shots" in sys.argv
     if shots:

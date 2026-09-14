@@ -388,7 +388,9 @@ function restaurarProgresso(){
 const app = $("#app");
 
 function telaInicial(msg){
-  del(LS.prog);
+  // NÃO apagar LS.prog aqui: é esta função que roda ao abrir a página, e o
+  // simulado interrompido precisa sobreviver para ser oferecido de volta.
+  // Quem apaga é o botão "Descartar" e o fim do simulado (telaResultado).
   const hist  = store(LS.hist) || [];
   const aluno = store(LS.aluno) || {};
   const nOf   = BANCO.filter(q=>q.tipo==="Oficial").length;
@@ -488,7 +490,7 @@ function telaInicial(msg){
     $("#"+id).addEventListener("keydown", e => { if (e.key === "Enter") iniciar(); }));
   if (pend){
     $("#retomar").onclick   = () => { S = pend; telaQuiz(); };
-    $("#descartar").onclick = () => telaInicial();
+    $("#descartar").onclick = () => { del(LS.prog); telaInicial(); };
   }
   if (hist.length) $("#limparHist").onclick = () => { del(LS.hist); telaInicial(); };
   window.scrollTo(0,0);
@@ -545,7 +547,8 @@ function telaQuiz(){
         <button class="btn ghost" id="prox" ${S.atual===n-1?"disabled":""}>Próxima →</button>
       </div>
       <p class="small muted" style="margin:14px 0 0">
-        Navegue para qualquer questão. As duas últimas, com borda destacada, são discursivas.</p>
+        Navegue para qualquer questão. As duas últimas, com borda destacada, são discursivas.
+        <b>Pode fechar e voltar depois</b> — cada resposta é salva na hora, neste navegador.</p>
       <div class="grid-nav">
         ${S.questoes.map((qq,i)=>`<button class="gn
           ${String(S.respostas[qq.id]||"").trim()?"done":""}
