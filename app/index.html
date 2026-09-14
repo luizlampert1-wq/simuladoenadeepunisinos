@@ -271,25 +271,41 @@ function registrarResultado(registro){
   escoarFila();
 }
 
+/* Devolve true quando o registro pode sair da fila.
+   modo "cors"     — o destino autoriza a leitura da resposta (Power Automate):
+                     dá para saber de verdade se entregou.
+   modo "no-cors"  — o destino não devolve cabeçalhos CORS (Google Apps Script):
+                     a resposta é opaca; só falha de rede é detectável. */
+async function enviar(registro){
+  if (COLETA.modo === "no-cors"){
+    await fetch(COLETA.url, {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify(registro)
+    });
+    return true;
+  }
+  const r = await fetch(COLETA.url, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(registro)
+  });
+  if (r.ok) return true;
+  // 4xx é erro permanente (assinatura, esquema): reenviar não resolve e só
+  // faria a fila bater no servidor a cada abertura. 5xx é passageiro.
+  return r.status >= 400 && r.status < 500;
+}
+
 async function escoarFila(){
   if (!coletaLigada()) return;
   const fila = store(LS.fila) || [];
   if (!fila.length) return;
   const pendentes = [];
   for (const r of fila){
-    try{
-      // no-cors: a requisição sai, mas a resposta é opaca — não dá para saber
-      // se o servidor gravou. Só falha de rede é detectável, e é justamente
-      // o caso que interessa reenviar depois.
-      await fetch(COLETA.url, {
-        method: "POST",
-        mode: "no-cors",
-        headers: { "Content-Type": "text/plain;charset=utf-8" },
-        body: JSON.stringify(r)
-      });
-    }catch(e){
-      pendentes.push(r);
-    }
+    let entregue = false;
+    try { entregue = await enviar(r); } catch(e){ entregue = false; }
+    if (!entregue) pendentes.push(r);
   }
   store(LS.fila, pendentes.slice(-MAX_FILA));
 }
@@ -428,6 +444,16 @@ function telaInicial(msg){
 
     <div class="card">
       <h3 style="font-size:1rem; margin-bottom:14px">Identificação</h3>
+      ${coletaLigada() ? `
+      <div class="note" style="margin:0 0 18px">
+        <b>Como seus dados são usados</b>
+        Ao finalizar um simulado, são enviados ao professor responsável pela disciplina:
+        seu nome, seu e-mail institucional, a data, o tempo gasto, o número de acertos e erros
+        e o seu desempenho por área. A finalidade é acompanhar a preparação da turma para o ENADE.
+        <b style="margin-top:8px">O que não é enviado</b>
+        O texto que você escreve nas questões discursivas permanece apenas neste navegador —
+        só o número de discursivas respondidas é informado.
+      </div>` : ""}
       <div style="margin-bottom:14px">
         <label for="email">E-mail institucional</label>
         <input type="email" id="email" placeholder="seunome@edu.unisinos.br"

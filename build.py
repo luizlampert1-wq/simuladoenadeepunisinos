@@ -141,11 +141,14 @@ def carregar_coleta():
 
     ativa = bool(cfg.get("ativa"))
     url = str(cfg.get("url") or "").strip()
+    modo = str(cfg.get("modo") or "cors").strip()
     if ativa and not url:
         raise SystemExit("ERRO: coleta.json está com \"ativa\": true e \"url\" vazia.")
     if ativa and not url.startswith("https://"):
         raise SystemExit(f"ERRO: a url da coleta precisa começar com https:// (veio {url!r})")
-    return {"ativa": ativa, "url": url}
+    if modo not in ("cors", "no-cors"):
+        raise SystemExit(f"ERRO: \"modo\" em coleta.json deve ser \"cors\" ou \"no-cors\" (veio {modo!r})")
+    return {"ativa": ativa, "url": url, "modo": modo}
 
 
 # ----------------------------------------------------------------- figuras

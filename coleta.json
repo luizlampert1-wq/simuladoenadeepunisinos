@@ -1,4 +1,5 @@
 {
-  "ativa": false,
-  "url": ""
+  "ativa": true,
+  "modo": "cors",
+  "url": "https://defaultc9b72b2a0b344425b9c7c2459ec015.1f.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/18/workflows/d02aaa4c3a904a269385fd585ee29029/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=wY9sQ9B-B1BQ8I__-sClonNO0yG2Ajs6C5ylrl6vWmw"
 }

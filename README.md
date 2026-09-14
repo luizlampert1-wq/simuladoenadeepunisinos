@@ -373,13 +373,25 @@ Um arquivo só, na raiz do projeto — **`coleta.json`**:
 
 ```json
 {
-  "ativa": false,
-  "url": ""
+  "ativa": true,
+  "modo": "cors",
+  "url": "https://...suas credenciais..."
 }
 ```
 
+| Campo | O que é |
+|---|---|
+| `ativa` | liga e desliga o envio |
+| `url` | o endpoint que recebe o POST |
+| `modo` | `cors` quando o destino autoriza a leitura da resposta (**Power Automate**); `no-cors` quando não autoriza (**Google Apps Script**) |
+
+O `modo` importa mais do que parece: em `cors` o aplicativo **lê a resposta do servidor** e sabe se
+a entrega deu certo, o que faz a fila de reenvio funcionar de verdade. Em `no-cors` a resposta é
+opaca e só falha de rede é detectável.
+
 Você não mexe em HTML nem em JavaScript. Depois de editar, `python build.py` e publique. O build
-recusa a configuração se `ativa` for `true` com a `url` vazia ou sem `https://`.
+recusa a configuração se `ativa` for `true` com a `url` vazia ou sem `https://`, ou se o `modo` não
+for um dos dois valores.
 
 #### Qual caminho escolher
 
@@ -456,9 +468,8 @@ Cada simulado finalizado vira uma linha. O script cria o cabeçalho sozinho na p
 6. **Deixe o campo "Esquema JSON do corpo da solicitação" vazio.** Em *Mostrar opções avançadas*,
    defina **Método = POST**. Se aparecer *"Quem pode acionar o fluxo?"*, escolha **Qualquer
    pessoa** — os alunos chamam o fluxo sem estar autenticados no locatário.
-7. *Nova etapa* → **Analisar JSON**:
-   - **Conteúdo:** a expressão `triggerBody()` (se reclamar, use `string(triggerBody())`)
-   - **Esquema:** *Usar payload de exemplo para gerar esquema*, colando:
+7. No campo **"Esquema JSON do corpo da solicitação"**, clique em *Usar o esquema de conteúdo
+   de exemplo* e cole:
 
    ```json
    {
@@ -470,11 +481,20 @@ Cada simulado finalizado vira uma linha. O script cria o cabeçalho sozinho na p
    }
    ```
 
-   **Por que este passo existe:** o aplicativo envia o corpo como `text/plain`, não
-   `application/json`. Não é escolha — em envio sem CORS o navegador só admite os tipos da lista
-   segura, e o Power Automate não devolve cabeçalhos CORS que autorizem `application/json`. Sem o
-   *Analisar JSON*, `triggerBody()` é uma string e todos os campos chegam vazios na planilha.
-8. *Nova etapa* → **Excel Online (Business) → Adicionar uma linha em uma tabela**:
+   O endpoint do Power Automate devolve `Access-Control-Allow-Origin: *` (verificado), então o
+   aplicativo envia `application/json` e o gatilho valida o corpo pelo esquema. **Não é preciso a
+   ação "Analisar JSON"** — e é por isso que `coleta.json` fica com `"modo": "cors"`.
+
+8. *Nova etapa* → **Condição**, para não aceitar envio de fora da universidade — a URL fica visível
+   no código da página publicada. Lado esquerdo, aba *Expressão*:
+
+   ```
+   endsWith(toLower(triggerBody()?['email']), '@edu.unisinos.br')
+   ```
+
+   Operador **é igual a**, lado direito `true`. A ação do Excel vai dentro do ramo **"Se sim"**.
+
+9. Dentro do "Se sim": **Excel Online (Business) → Adicionar uma linha em uma tabela**:
 
    | Campo | Valor |
    |---|---|
@@ -485,15 +505,14 @@ Cada simulado finalizado vira uma linha. O script cria o cabeçalho sozinho na p
 
    Menu *Arquivo* vazio = conexão com outra conta. Menu *Tabela* vazio = a Tabela não foi criada.
 
-9. Preencha as colunas com a saída do **Analisar JSON** (não do gatilho). Quatro precisam de
-   expressão, o resto é conteúdo dinâmico direto:
+   Quatro colunas precisam de expressão; o resto é conteúdo dinâmico direto do gatilho:
 
    | Coluna | Expressão |
    |---|---|
    | Recebido em | `convertFromUtc(utcNow(), 'E. South America Standard Time', 'dd/MM/yyyy HH:mm')` |
-   | Nota | `div(mul(body('Analisar_JSON')?['acertos'], 10.0), body('Analisar_JSON')?['totalObjetivas'])` |
-   | Desempenho por área | `string(body('Analisar_JSON')?['porArea'])` |
-   | Questões sorteadas | `join(body('Analisar_JSON')?['ids'], ' ')` |
+   | Nota | `div(mul(triggerBody()?['acertos'], 10.0), triggerBody()?['totalObjetivas'])` |
+   | Desempenho por área | `string(triggerBody()?['porArea'])` |
+   | Questões sorteadas | `join(triggerBody()?['ids'], ' ')` |
 
    As duas últimas são objeto e lista: arrastadas como conteúdo dinâmico viram `[object Object]`
    ou quebram o fluxo.
@@ -534,21 +553,26 @@ Se o aluno estiver sem internet ao finalizar, o registro **fica guardado no nave
 reenviado automaticamente na próxima vez que abrir o aplicativo. A fila guarda os 50 resultados
 mais recentes.
 
-Duas limitações que vale saber:
+No modo `cors` o aplicativo confere a resposta do servidor: sai da fila só o que foi realmente
+aceito. Erro 5xx ou queda de rede volta para a fila; erro 4xx (assinatura inválida, esquema
+errado) é descartado, porque reenviar não resolveria e a fila bateria no servidor a cada abertura.
 
-- **O aplicativo não consegue confirmar a entrega.** O envio é feito em modo `no-cors`, então o
-  navegador manda a requisição mas não lê a resposta. Só falha de rede é detectável — e é
-  justamente essa que a fila reenvia. Quem confirma que chegou é a planilha.
-- **A URL de coleta fica visível** no código da página publicada. Quem a encontrar pode enviar
-  linhas. O script do caminho A já recusa e-mails fora de `@edu.unisinos.br`; se aparecer lixo,
-  apague a linha.
+No modo `no-cors` a resposta é opaca e só falha de rede é detectável — quem confirma a chegada é a
+planilha.
+
+Uma limitação que vale nos dois: **a URL de coleta fica visível** no código da página publicada.
+Quem a encontrar pode enviar linhas. Por isso tanto o script do caminho A quanto a Condição do
+caminho B recusam e-mails fora de `@edu.unisinos.br`; se ainda assim aparecer lixo, apague a
+linha.
 
 ### 7.4. Antes de ligar a coleta
 
 Você passa a guardar e-mail e desempenho de alunos identificados — isso é dado pessoal sob a LGPD.
 Três cuidados que custam pouco:
 
-- **Avise na tela inicial** o que é coletado e para quê (posso incluir o texto no aplicativo);
+- **O aviso na tela inicial já está no aplicativo** — aparece sozinho quando `ativa` é `true`,
+  dizendo o que é enviado (nome, e-mail, data, tempo, acertos, erros e desempenho por área) e o que
+  não é (o texto escrito nas discursivas, que nunca sai do navegador do aluno);
 - **Restrinja o acesso** à planilha a você e a quem precisa;
 - **Não use os resultados para nota ou avaliação formal** sem comunicar a turma — é um simulado de
   treinamento, e tratá-lo assim evita qualquer discussão.
@@ -579,7 +603,7 @@ Drive só seu, publicando apenas o `index.html` gerado.
 
 ## 9. Testes automatizados
 
-`python testar.py` executa o aplicativo real dentro do Chrome em modo headless. São **58
+`python testar.py` executa o aplicativo real dentro do Chrome em modo headless. São **62
 verificações**:
 
 **Banco**
@@ -627,10 +651,15 @@ verificações**:
 - "Descartar e começar novo" apaga o simulado interrompido.
 
 **Coleta de resultados**
-- vem desativada por padrão, e com ela desligada nada é enfileirado para envio;
-- o histórico local é gravado de qualquer forma;
+- a configuração é coerente (desligada, ou ligada com url `https` e modo válido);
+- com a coleta desligada nada é enfileirado, mas o histórico local é gravado do mesmo jeito;
 - com a coleta ligada, o resultado entra na fila e o envio é disparado;
-- a fila de reenvio tem teto de 50 registros e descarta os mais antigos.
+- a fila de reenvio tem teto de 50 registros e descarta os mais antigos;
+- o aviso de uso de dados aparece na tela inicial quando a coleta está ligada, e some quando
+  está desligada.
+
+A bateria **nunca escreve no destino real**: toda página de teste substitui o `fetch` e desliga a
+coleta antes de rodar, guardando a configuração de verdade só para inspeção.
 
 **Responsividade**
 - mede o conteúdo em viewport real de **390 px e 320 px** nas quatro telas (início, objetiva,

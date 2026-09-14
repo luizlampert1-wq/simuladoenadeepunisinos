@@ -399,8 +399,12 @@ DRIVER_LOGICA = r"""
   // ---------- 10. coleta de resultados ----------
   (function(){
     try { localStorage.clear(); } catch(e){}
-    ok("Envio externo de dados vem desativado (nada sai do navegador do aluno)",
-        COLETA.ativa === false && !COLETA.url);
+    const C = window.__COLETA_REAL;
+    ok("Configuração da coleta é coerente (desligada, ou ligada com url https)",
+        (!C.ativa && !C.url) || (C.ativa && /^https:\/\//.test(C.url)),
+        C.ativa ? ("ativa · modo " + C.modo) : "desativada");
+    ok("O modo de envio é 'cors' ou 'no-cors'",
+        C.modo === "cors" || C.modo === "no-cors", "modo = " + C.modo);
 
     S = {nome:"Teste", email:EMAIL, questoes:sortear(), respostas:{}, atual:0, inicio:Date.now()};
     telaResultado();
@@ -409,17 +413,16 @@ DRIVER_LOGICA = r"""
     ok("O histórico local é gravado de qualquer forma",
         (store(LS.hist) || []).length === 1);
 
-    // liga a coleta com um fetch de mentira, que nunca resolve: assim a fila
-    // fica exatamente como registrarResultado a deixou.
-    const fetchReal = window.fetch;
-    let chamadas = 0;
-    window.fetch = () => { chamadas++; return new Promise(() => {}); };
+    // liga a coleta contra uma url de mentira. O fetch já foi substituído por um
+    // que nunca resolve, então a fila fica como registrarResultado a deixou.
     COLETA.ativa = true; COLETA.url = "https://exemplo.invalido/coleta";
+    const chamadasAntes = window.__envios;
     try { localStorage.clear(); } catch(e){}
 
     for (let i = 0; i < MAX_FILA + 12; i++)
       registrarResultado({ email:EMAIL, nome:"Teste", acertos:i });
     const fila = store(LS.fila) || [];
+    const chamadas = window.__envios - chamadasAntes;
     ok("Com a coleta ligada, o resultado entra na fila e o envio é disparado",
         fila.length > 0 && chamadas > 0, fila.length + " na fila · " + chamadas + " envios");
     ok("A fila de reenvio tem teto de " + MAX_FILA + " registros",
@@ -428,8 +431,19 @@ DRIVER_LOGICA = r"""
         fila[fila.length-1].acertos === MAX_FILA + 11 && fila[0].acertos === 12,
         "do " + fila[0].acertos + " ao " + fila[fila.length-1].acertos);
 
-    window.fetch = fetchReal;
+    // aviso de uso de dados, exigido assim que a coleta passa a funcionar
+    telaInicial();
+    const comAviso = document.body.innerText;
+    ok("Com a coleta ligada, a tela inicial explica quais dados são enviados",
+        /Como seus dados são usados/i.test(comAviso) &&
+        /e-mail institucional/i.test(comAviso) && /não é enviado/i.test(comAviso));
+    ok("O aviso deixa claro que o texto das discursivas não é enviado",
+        /permanece apenas neste navegador/.test(comAviso));
+
     COLETA.ativa = false; COLETA.url = "";
+    telaInicial();
+    ok("Com a coleta desligada, o aviso de uso de dados não aparece",
+        !/Como seus dados são usados/i.test(document.body.innerText));
     try { localStorage.clear(); } catch(e){}
   })();
 
@@ -623,6 +637,21 @@ def testar_responsivo(porta, larguras=(390, 320), shots=False):
     return falhou
 
 
+# Nenhum teste pode escrever na planilha de produção. Este trecho entra em TODA
+# página de teste, logo depois do aplicativo e antes do driver: troca o fetch por
+# um que nunca resolve e desliga a coleta, guardando a configuração real para ser
+# inspecionada. Sem isso, cada execução da bateria despejaria dezenas de linhas
+# de lixo no destino configurado em coleta.json.
+NEUTRALIZA_COLETA = """<script>
+  window.__fetchReal = window.fetch;
+  window.__envios = 0;
+  window.fetch = function(){ window.__envios++; return new Promise(function(){}); };
+  window.__COLETA_REAL = { ativa: COLETA.ativa, url: COLETA.url, modo: COLETA.modo };
+  COLETA.ativa = false; COLETA.url = "";
+</script>
+"""
+
+
 def preparar(nome, driver):
     base = open(os.path.join(DIST, "artifact.html"), encoding="utf-8").read()
     caminho = os.path.join(DIST, f"_t_{nome}.html")
@@ -631,6 +660,7 @@ def preparar(nome, driver):
                  '<meta name="viewport" content="width=device-width, initial-scale=1">'
                  '<style>body{margin:0}img{max-width:100%}</style></head><body>\n')
         fh.write(base)
+        fh.write(NEUTRALIZA_COLETA)
         fh.write(driver)
         fh.write("\n</body></html>")
     return f"_t_{nome}.html"
