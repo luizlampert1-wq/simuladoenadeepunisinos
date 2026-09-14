@@ -1,0 +1,193 @@
+[
+{
+  "id": "2014-D3",
+  "tipo": "Oficial",
+  "ano": 2014,
+  "referencia": "ENADE 2014 — Questão Discursiva 3 (Componente Específico)",
+  "area": "Logística e Cadeia de Suprimentos",
+  "dificuldade": "Difícil",
+  "competencia": "Analisar o trade-off entre nível de serviço logístico e custo de distribuição para dimensionar a política de entregas.",
+  "valor": "10,0 pontos",
+  "enunciado": "Uma empresa comercializa produtos de limpeza para restaurantes, hotéis, hospitais e escolas. O ambiente em que ela atua possui um cenário altamente competitivo, de forma que o prazo de entrega dos pedidos pode determinar a viabilidade de uma venda. O sistema de distribuição deve ser projetado de maneira a proporcionar diferentes níveis médios de prazo de entrega de acordo com o número e a localização dos armazéns, níveis de estoques, além de uma adequada previsão de demanda e procedimentos de processamento de pedidos.\n\nCom base na previsão da demanda, pode-se analisar a prioridade e a urgência de se atender o pedido, considerando que, embora o ambiente seja competitivo, o produto possui baixa perecibilidade.\n\nO gerente da distribuição física fez as estimativas a respeito do custo de fornecer tais níveis e de como o serviço afeta as vendas:\n\nProdutos entregues no mesmo dia | 50% | 60% | 70% | 80% | 90% | 95% | 100%\nCusto do serviço (R$ mi)        | 5,8 | 6,0 | 6,5 | 7,0 | 8,1 | 9,0 | 14,0\nVendas estimadas (R$ mi)        | 4,0 | 9,0 | 10,0 | 11,0 | 11,5 | 11,8 | 12,0\n\nCom base no quadro das estimativas das porcentagens de vendas no mesmo dia e o custo para se manter este nível, no curto e no médio/longo prazo, apresente subsídios para um adequado dimensionamento e planejamento para entregas, de acordo com suas urgências e prioridades.",
+  "padraoResposta": "A resposta deve partir do confronto entre vendas e custo em cada nível de serviço, calculando a contribuição (vendas menos custo do serviço):\n\n• 50%: 4,0 − 5,8 = − 1,8\n• 60%: 9,0 − 6,0 = + 3,0\n• 70%: 10,0 − 6,5 = + 3,5\n• 80%: 11,0 − 7,0 = + 4,0  ← máximo\n• 90%: 11,5 − 8,1 = + 3,4\n• 95%: 11,8 − 9,0 = + 2,8\n• 100%: 12,0 − 14,0 = − 2,0\n\nO resultado máximo ocorre em 80% de entregas no mesmo dia. A partir daí, o custo do serviço cresce mais rápido do que a receita adicional que ele gera — entre 95% e 100% o custo salta de 9,0 para 14,0 enquanto as vendas sobem apenas de 11,8 para 12,0.\n\nO texto dissertativo deve concluir que o nível de serviço não deve ser maximizado, e sim otimizado: o dimensionamento adequado é o de 80%, e não os 100% que intuitivamente pareceriam ideais. Deve ainda articular esse resultado com os elementos do enunciado: como o produto tem baixa perecibilidade, é possível segmentar os pedidos por urgência e prioridade, atendendo no mesmo dia apenas a parcela que efetivamente exige esse prazo, e programar os demais em janelas mais econômicas. No curto prazo, isso se faz pela política de priorização de pedidos e pelo processamento; no médio e longo prazos, pelo redimensionamento do número e da localização dos armazéns e dos níveis de estoque.",
+  "criterios": [
+    "Calcula a diferença entre vendas estimadas e custo do serviço para os sete níveis apresentados.",
+    "Identifica o nível de 80% como o de maior resultado econômico.",
+    "Explica que o custo cresce mais que proporcionalmente à receita nos níveis superiores a 80%.",
+    "Relaciona a baixa perecibilidade do produto à possibilidade de segmentar pedidos por urgência e prioridade.",
+    "Distingue as ações de curto prazo (priorização e processamento de pedidos) das de médio e longo prazos (número e localização de armazéns, níveis de estoque)."
+  ]
+},
+{
+  "id": "2014-D4",
+  "tipo": "Oficial",
+  "ano": 2014,
+  "referencia": "ENADE 2014 — Questão Discursiva 4 (Componente Específico)",
+  "area": "Sustentabilidade e Meio Ambiente",
+  "dificuldade": "Média",
+  "competencia": "Relacionar as bases e os objetivos do desenvolvimento sustentável a partir da valoração do capital natural.",
+  "valor": "10,0 pontos",
+  "enunciado": "Os lucros da produção sustentável\n\nQual é o impacto de substituir uma vegetação nativa pela produção agrícola? A pergunta, geralmente respondida com uma lista de conhecidos benefícios que as florestas prestam para a sociedade e para a própria agricultura, acaba de ganhar uma explicação mais concreta: um valor.\n\nNão preservar o meio ambiente pode causar prejuízos reais ao produtor. É o que mostra o projeto Teeb (Economia dos Ecossistemas e Biodiversidade) para o Setor de Negócios Brasileiro, que estabeleceu uma valoração para os serviços ambientais — ou para o \"capital natural\", como eles chamam — em dois estudos de caso.\n\nAo considerar nos cálculos o valor da biodiversidade e dos serviços que ela presta, como proteger o solo da erosão ou garantir a oferta de água, o valor da produção nos cenários em que houve adequação ao ambiente foi maior do que na situação tradicional de cultivo — o chamado \"business as usual\".\n\nNo estudo da Empresa A, realizado no oeste do estado da Bahia, comparou-se um hectare de terra coberto só com a monocultura de soja com outro em que a cultura convive com o Cerrado. Nesse cenário, baseado na proporção definida pelo Código Florestal — 80% de área cultivada e 20% de Reserva Legal —, o valor ambiental foi 11% maior que no cenário só com a monocultura.\n\nNo caso da Empresa B, os pesquisadores compararam os dados de um hectare de monocultura de palmeira de dendê com os de um hectare de um sistema agroflorestal, que combina árvores nativas, como cacau e maracujá, com os dendezeiros. No cenário agroflorestal, o valor ambiental total da produção — calculado pela diferença entre os ganhos prestados pelos serviços florestais e os impactos ao ambiente e à sociedade provocados pela cultura plantada — foi 200% maior que na versão \"business as usual\".\n\n(Disponível em: http://exame.abril.com.br. Acesso em: 6 ago. 2014, adaptado.)\n\nA partir das ideias centrais apresentadas no texto, redija um texto dissertativo relacionando as bases e os objetivos do desenvolvimento sustentável.",
+  "padraoResposta": "O texto dissertativo deve articular as três dimensões do desenvolvimento sustentável — ambiental, econômica e social — mostrando que elas não são concorrentes, e sim interdependentes, conforme evidenciam os dois estudos de caso.\n\nBases do desenvolvimento sustentável a serem exploradas:\n\n• Dimensão ambiental — a conservação da biodiversidade e dos serviços ecossistêmicos (controle de erosão, regulação hídrica, polinização, ciclagem de nutrientes) é condição de manutenção da própria base produtiva agrícola.\n• Dimensão econômica — a valoração do capital natural demonstra que a conservação gera retorno mensurável: 11% de ganho no caso da soja com Reserva Legal e 200% no sistema agroflorestal. A externalidade ambiental, quando internalizada, deixa de ser custo e passa a ser ativo.\n• Dimensão social — os benefícios dos serviços ambientais alcançam a sociedade além do produtor, e sua degradação transfere custos a terceiros.\n\nObjetivos a serem relacionados: atender às necessidades da geração presente sem comprometer a capacidade das gerações futuras de atenderem às suas próprias — formulação do Relatório Brundtland —, o que exige compatibilizar crescimento econômico, equidade social e conservação ambiental.\n\nA conclusão deve destacar que os estudos de caso desfazem a oposição entre lucro e conservação: a adequação ambiental, longe de representar apenas custo regulatório de cumprimento do Código Florestal, mostrou-se economicamente superior ao cultivo tradicional.",
+  "criterios": [
+    "Apresenta estrutura dissertativa, com introdução, desenvolvimento e conclusão.",
+    "Identifica e articula as dimensões ambiental, econômica e social do desenvolvimento sustentável.",
+    "Explica o conceito de serviços ecossistêmicos ou capital natural.",
+    "Utiliza os dados dos dois estudos de caso para sustentar a argumentação.",
+    "Conclui relacionando conservação ambiental e viabilidade econômica da produção."
+  ]
+},
+{
+  "id": "2014-D5",
+  "tipo": "Oficial",
+  "ano": 2014,
+  "referencia": "ENADE 2014 — Questão Discursiva 5 (Componente Específico)",
+  "area": "Desenvolvimento de Produto e Inovação",
+  "dificuldade": "Média",
+  "competencia": "Analisar estratégias de inovação e os elementos que sustentam o posicionamento de um seguidor no mercado.",
+  "valor": "10,0 pontos",
+  "enunciado": "O desenvolvimento de novos produtos é uma atividade complexa, envolvendo diversos interesses. Considere a situação em que uma empresa A que lança no mercado a primeira caneta esferográfica atinge sucesso comercial, mas com preço elevado e restrito a uma pequena parcela de consumidores. O entusiasmo inicial dos consumidores desaparece, principalmente devido a problemas de qualidade, tais como a estrutura metálica ser constituída por aço polido, e o vazamento da carga e a escrita não uniforme, ocasionando a queda da venda ao longo do tempo.\n\nPercebendo a oportunidade de inovar, uma outra empresa B utilizou uma estratégia nitidamente defensiva. Ela copiou a tecnologia básica das canetas esferográficas da empresa A e adotou um conceito revolucionário, introduzindo no mercado uma caneta plástica vendida a um preço consideravelmente mais baixo, enquanto as outras tinham um preço mais elevado.\n\n(BAXTER, M. Projeto de produto: guia prático para o design de novos produtos. 2. ed. São Paulo: Edgard Blücher, 1998, adaptado.)\n\nConsiderando o pioneirismo da empresa A no lançamento de seu produto, cujo objetivo era criar mercado, e as mudanças feitas pela empresa B nesse mesmo produto, discorra sobre os elementos que embasaram a estratégia inovadora da empresa B.",
+  "padraoResposta": "A resposta deve identificar os elementos que caracterizam a estratégia defensiva da empresa B e explicar por que ela se mostrou bem-sucedida.\n\nElementos a serem abordados:\n\n• Aproveitamento do risco assumido pelo pioneiro — a empresa A arcou com os custos de criar o mercado, educar o consumidor e validar tecnicamente o conceito. A empresa B entrou depois, sem esses custos e sem a incerteza de aceitação do produto.\n\n• Aprendizado a partir das falhas do produto pioneiro — os problemas de qualidade relatados (vazamento da carga, escrita não uniforme) funcionaram como informação gratuita de mercado. A empresa B pôde corrigi-los no projeto, entregando confiabilidade superior.\n\n• Substituição de material como decisão de projeto — a troca do aço polido pelo plástico reduziu simultaneamente o custo de matéria-prima e o custo de fabricação, viabilizando processos de alta produtividade como a injeção, adequados à produção em massa.\n\n• Reposicionamento de mercado — a redução de preço deslocou o produto de um nicho restrito para o mercado de massa, ampliando enormemente o volume e permitindo ganhos de escala que reforçam a vantagem de custo.\n\n• Inovação incremental de valor — a empresa B não criou tecnologia nova; ela reconfigurou a relação entre função e custo do produto, o que caracteriza inovação de valor, e não inovação tecnológica radical.\n\nA resposta deve concluir que a estratégia defensiva não é passiva: exige capacidade técnica própria para aperfeiçoar o produto e competência de manufatura para viabilizar o novo patamar de custo.",
+  "criterios": [
+    "Reconhece que a empresa B evitou o risco e o custo de criar o mercado, assumidos pela pioneira.",
+    "Identifica o aproveitamento das falhas de qualidade do produto pioneiro como fonte de melhoria.",
+    "Relaciona a substituição do aço pelo plástico à redução de custo de material e de processo.",
+    "Explica o reposicionamento do produto para o mercado de massa e os ganhos de escala decorrentes.",
+    "Caracteriza a estratégia como defensiva ou de inovação incremental, distinguindo-a da inovação radical."
+  ]
+},
+{
+  "id": "2017-D03",
+  "tipo": "Oficial",
+  "ano": 2017,
+  "referencia": "ENADE 2017 — Questão Discursiva 3 (Componente Específico)",
+  "area": "Logística e Cadeia de Suprimentos",
+  "dificuldade": "Difícil",
+  "competencia": "Comparar custos logísticos totais de fontes alternativas de suprimento e dimensionar o lote de compra.",
+  "valor": "10,0 pontos",
+  "enunciado": "Uma empresa fabrica móveis para o mercado externo, utilizando o alumínio como um dos principais insumos. Essa empresa consome, anualmente, 50 mil toneladas de alumínio obtido a partir da bauxita (minério) ou de matéria-prima secundária (alumínio reciclado). A bauxita é transportada por dutos, dos fornecedores até a fábrica, e transformada em alumínio ao custo de R$ 210,00 por tonelada, não havendo custo de armazenagem.\n\nA matéria-prima secundária é obtida de recicladoras localizadas a uma distância aproximada de 100 km da unidade fabril. O valor da tonelada do alumínio fornecido pelas recicladoras é R$ 40,00 por tonelada, e o transporte fica sob a responsabilidade da empresa compradora. Existe a possibilidade de usar tanto o modo rodoviário quanto o ferroviário.\n\nO frete rodoviário custa R$ 7,00 por tonelada e por quilômetro rodado, independentemente do tamanho da carga, que é entregue diretamente na empresa. Com relação ao transporte ferroviário, o valor do frete depende da quantidade transportada: para carga inferior ou igual a 2 mil toneladas, o frete custa R$ 0,50 por tonelada e por quilômetro rodado; para carga superior a 2 mil toneladas, o custo é de R$ 0,30 por tonelada e por quilômetro rodado. No modo ferroviário, há o custo adicional de transbordo no terminal, correspondente a R$ 80,00 por lote de compra. Na aquisição de alumínio de recicladoras, há, ainda, o custo médio de armazenagem do alumínio, equivalente a R$ 14,00 por tonelada, por ano.\n\nConsiderando essa situação hipotética, faça o que se pede nos itens a seguir.\n\na) Apresente duas vantagens e duas desvantagens da utilização de matéria-prima secundária (alumínio reciclado) pela empresa. (valor: 2,0 pontos)\n\nb) Com relação a transporte, produção e armazenagem, analise a viabilidade da substituição da bauxita pelo alumínio reciclado. Compare os custos totais de obtenção do alumínio, a partir da bauxita e do material reciclado. (valor: 4,0 pontos)\n\nc) Caso a empresa opte pelo modo de transporte ferroviário, ela deverá adquirir lotes de 2 mil ou 5 mil toneladas, para minimizar os custos logísticos? Justifique sua resposta, apresentando os cálculos dos custos associados a cada opção. (valor: 4,0 pontos)",
+  "padraoResposta": "a) Vantagens: economia de energia (a reciclagem do alumínio consome cerca de 5% da energia da produção primária); redução da extração de bauxita e dos impactos ambientais associados; custo de aquisição muito inferior (R$ 40,00 contra R$ 210,00 por tonelada); atendimento a exigências ambientais do mercado externo. Desvantagens: necessidade de armazenagem, inexistente na rota da bauxita; dependência da oferta e da regularidade das recicladoras; possível variabilidade na composição e na qualidade da liga; custo e risco do transporte, que passa a ser responsabilidade da empresa.\n\nb) Bauxita: 50 000 t × R$ 210,00 = R$ 10.500.000,00 por ano, sem transporte nem armazenagem adicionais.\n\nAlumínio reciclado — material: 50 000 × R$ 40,00 = R$ 2.000.000,00.\nFrete rodoviário: R$ 7,00 × 100 km = R$ 700,00 por tonelada, ou R$ 35.000.000,00 por ano — inviável.\nFrete ferroviário em lotes acima de 2 000 t: R$ 0,30 × 100 km = R$ 30,00 por tonelada, ou R$ 1.500.000,00 por ano, mais transbordo e armazenagem.\n\nMesmo somando transporte ferroviário, transbordo e armazenagem, o custo total do alumínio reciclado fica em torno de R$ 3,5 milhões, contra R$ 10,5 milhões da bauxita. A substituição é, portanto, economicamente viável, desde que por via ferroviária.\n\nc) Lotes de 5 000 t (10 lotes por ano):\n• frete: R$ 0,30 × 100 × 50 000 = R$ 1.500.000,00\n• transbordo: 10 × R$ 80,00 = R$ 800,00\n• armazenagem: estoque médio de 2 500 t × R$ 14,00 = R$ 35.000,00\n• subtotal logístico: R$ 1.535.800,00\n\nLotes de 2 000 t (25 lotes por ano):\n• frete: R$ 0,50 × 100 × 50 000 = R$ 2.500.000,00\n• transbordo: 25 × R$ 80,00 = R$ 2.000,00\n• armazenagem: estoque médio de 1 000 t × R$ 14,00 = R$ 14.000,00\n• subtotal logístico: R$ 2.516.000,00\n\nOs lotes de 5 000 toneladas são a opção de menor custo, com economia de aproximadamente R$ 980.000,00 por ano. O ganho no frete unitário (R$ 30,00 contra R$ 50,00 por tonelada) supera largamente o aumento do custo de armazenagem decorrente do estoque médio maior.",
+  "criterios": [
+    "Item a: apresenta duas vantagens e duas desvantagens pertinentes do uso de matéria-prima secundária.",
+    "Item b: calcula corretamente o custo anual da rota da bauxita (R$ 10,5 milhões).",
+    "Item b: identifica a inviabilidade do modo rodoviário e conclui pela viabilidade do reciclado por via ferroviária.",
+    "Item c: calcula frete, transbordo e armazenagem para as duas alternativas de lote.",
+    "Item c: conclui pelos lotes de 5 000 t, justificando pelo ganho no frete unitário superar o aumento do custo de estoque."
+  ]
+},
+{
+  "id": "2017-D04",
+  "tipo": "Oficial",
+  "ano": 2017,
+  "referencia": "ENADE 2017 — Questão Discursiva 4 (Componente Específico)",
+  "area": "Ergonomia e Segurança do Trabalho",
+  "dificuldade": "Média",
+  "competencia": "Aplicar a análise ergonômica do trabalho ao sistema homem-máquina-ambiente e relacioná-la ao desenvolvimento de produto.",
+  "valor": "10,0 pontos",
+  "figura": "2017_D04.png",
+  "enunciado": "Um sistema homem-máquina-ambiente pode ser aprimorado para se adaptar às capacidades e limitações do usuário, tanto na fase de projeto de máquinas, equipamentos e postos de trabalho, como na de inclusão de alterações em sistemas existentes, conforme representado na figura acima.\n\nPara que as adaptações do trabalho ao ser humano sejam realizadas com êxito, é necessário estar de posse do máximo de conhecimento sobre ambos, a fim de que as adaptações não resultem em trabalho que gere desgastes desnecessários, acima dos limites adequados ou que não possam ser recuperados.\n\n(DANA, A. C. et al. Análise ergonômica de ruído e de iluminância em postos de trabalho de uma instituição pública. Revista Espacios, v. 37, n. 30, 2016, adaptado.)\n\nCom base na figura e nas afirmações apresentadas, faça o que se pede nos itens a seguir.\n\na) Mencione três possíveis queixas físicas de um operador em decorrência de falhas do sistema homem-máquina-ambiente. (valor: 3,0 pontos)\n\nb) Usando o método de análise ergonômica do trabalho (AET), descreva uma sequência lógica para resolver os problemas ergonômicos mencionados no item \"a\". (valor: 4,0 pontos)\n\nc) Mencione três possíveis ferramentas ou métodos aplicados ao Processo de Desenvolvimento de Produto que possam ser utilizados para aprimorar o sistema homem-máquina-ambiente. (valor: 3,0 pontos)",
+  "padraoResposta": "a) Três queixas físicas possíveis, entre outras: dores na coluna cervical e lombar, decorrentes de postura inadequada e de mobiliário sem regulagem; fadiga visual, com ardência e lacrimejamento, por iluminância inadequada ou reflexos na tela; dores e formigamento em punhos, mãos e ombros, associadas a movimentos repetitivos e à altura incorreta do dispositivo de controle; cefaleia e irritabilidade por ruído excessivo; desconforto térmico.\n\nb) Sequência lógica da Análise Ergonômica do Trabalho, em cinco etapas encadeadas:\n\n1. Análise da demanda — delimitar o problema a partir das queixas, identificando quem demanda, o que se espera e qual a abrangência da intervenção.\n2. Análise da tarefa — levantar o trabalho prescrito: procedimentos, metas, jornada, características do mobiliário, do posto, da iluminância, do ruído e do ambiente térmico, comparando com normas e recomendações (NR-17).\n3. Análise da atividade — observar o trabalho real, os modos operatórios efetivamente adotados, as posturas, os deslocamentos e as regulações que o trabalhador faz para dar conta da tarefa, registrando a distância entre o prescrito e o real.\n4. Diagnóstico — estabelecer o nexo entre as condições observadas e as queixas relatadas, identificando os determinantes do problema.\n5. Recomendações ergonômicas e validação — propor transformações no posto, no mobiliário, no ambiente e na organização do trabalho, implantá-las e validar os resultados junto aos trabalhadores, retroalimentando o ciclo.\n\nc) Três ferramentas ou métodos do Processo de Desenvolvimento de Produto: QFD (Desdobramento da Função Qualidade), que traduz requisitos de conforto e usabilidade em características técnicas do produto; FMEA, que antecipa modos de falha de uso e suas consequências para o usuário; prototipagem rápida e testes de usabilidade com usuários reais; análise antropométrica aplicada ao dimensionamento; design centrado no usuário; DFMA; engenharia simultânea, com participação de ergonomista desde a concepção.",
+  "criterios": [
+    "Item a: menciona três queixas físicas plausíveis e coerentes com falhas do sistema homem-máquina-ambiente.",
+    "Item b: apresenta as etapas da AET em sequência lógica, partindo da demanda.",
+    "Item b: distingue a análise da tarefa (trabalho prescrito) da análise da atividade (trabalho real).",
+    "Item b: inclui diagnóstico e recomendações com validação.",
+    "Item c: menciona três ferramentas ou métodos pertinentes ao desenvolvimento de produto."
+  ]
+},
+{
+  "id": "2017-D05",
+  "tipo": "Oficial",
+  "ano": 2017,
+  "referencia": "ENADE 2017 — Questão Discursiva 5 (Componente Específico)",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Difícil",
+  "competencia": "Calcular tempo de ciclo e balancear uma linha de montagem respeitando as precedências das tarefas.",
+  "valor": "10,0 pontos",
+  "enunciado": "Uma empresa produz circuitos eletrônicos integrados em um turno de trabalho de oito horas por dia. Cada unidade produzida passa, em sua linha de montagem, por oito tarefas. A tabela a seguir apresenta a duração (em minutos) e a precedência das tarefas.\n\nTarefa | Descrição | Duração | Precedência\nA | Receber os produtos e soltar os cabos | 6 | —\nB | Posicionar os cabos e os ligantes de forma contígua | 4 | A\nC | Inserir os ligantes nos terminais de diferenciação | 3 | B\nD | Aplicar revestimento no ligante componente | 5 | B, C\nE | Montar a base e posicionar os componentes | 4 | D\nF | Fixar os aterradores de proteção | 5 | D\nG | Lixar a base e aplicar adesivos | 2 | E, F\nH | Fixar componentes na base e retirar rebarbas | 1 | G\n\nConsiderando essas informações e a necessidade da empresa de produzir 1 200 peças em um mês com 25 dias úteis, faça o que se pede nos itens a seguir.\n\na) Calcule o tempo de ciclo (em minutos por unidade produzida) no referido mês. (valor: 3,0 pontos)\n\nb) Projete os centros de trabalho agrupando tarefas sequenciais de forma a minimizar o desbalanceamento da linha de montagem. (valor: 7,0 pontos)",
+  "padraoResposta": "a) Tempo disponível: 8 horas por dia × 60 = 480 minutos por dia; em 25 dias úteis, 12 000 minutos por mês.\nDemanda: 1 200 peças no mês.\nTempo de ciclo = 12 000 ÷ 1 200 = 10 minutos por unidade.\n\nb) Conteúdo total de trabalho: 6 + 4 + 3 + 5 + 4 + 5 + 2 + 1 = 30 minutos.\nNúmero mínimo teórico de estações: 30 ÷ 10 = 3 estações.\n\nAgrupamento respeitando as precedências e o limite de 10 minutos por estação:\n\n• Estação 1: A (6) + B (4) = 10 minutos — ociosidade zero\n• Estação 2: C (3) + D (5) = 8 minutos — ociosidade de 2 minutos\n• Estação 3: E (4) + F (5) ... excederia o ciclo se somado a G e H\n\nUma configuração equilibrada e viável é:\n• Estação 1: A + B = 10 min\n• Estação 2: C + D = 8 min\n• Estação 3: E + F = 9 min\n• Estação 4: G + H = 3 min\n\nEssa solução usa 4 estações, com eficiência de 30 ÷ (4 × 10) = 75%.\n\nUma alternativa melhor, ainda respeitando as precedências, agrupa:\n• Estação 1: A + B = 10 min\n• Estação 2: C + D = 8 min\n• Estação 3: E + F + G + H = 12 min → excede o ciclo, inviável\n\nComo E e F somam 9 minutos e G e H somam 3, não há agrupamento em 3 estações que respeite simultaneamente as precedências e o ciclo de 10 minutos. A solução de 4 estações, com eficiência de 75%, é a de menor desbalanceamento possível nessas condições.\n\nSerá considerada correta qualquer distribuição que respeite as precedências, não ultrapasse 10 minutos por estação e justifique o número de estações adotado.",
+  "criterios": [
+    "Item a: calcula corretamente o tempo disponível no mês (12 000 minutos).",
+    "Item a: obtém o tempo de ciclo de 10 minutos por unidade.",
+    "Item b: soma corretamente o conteúdo total de trabalho (30 minutos) e calcula o número mínimo teórico de estações.",
+    "Item b: propõe agrupamento que respeita as relações de precedência entre as tarefas.",
+    "Item b: nenhuma estação ultrapassa o tempo de ciclo, e o resultado é justificado com o cálculo da eficiência ou da ociosidade."
+  ]
+},
+{
+  "id": "2019-D3",
+  "tipo": "Oficial",
+  "ano": 2019,
+  "referencia": "ENADE 2019 — Questão Discursiva 3 (Componente Específico)",
+  "area": "Sistemas de Informação e Indústria 4.0",
+  "dificuldade": "Média",
+  "competencia": "Avaliar criticamente vantagens e desvantagens da implantação de sistemas integrados de gestão.",
+  "valor": "10,0 pontos",
+  "enunciado": "Uma empresa de distribuição de material de construção, com 350 funcionários e atuação no âmbito nacional, chega a entregar para sua rede de clientes — na maioria, lojas de material de construção de pequeno e médio porte — mais de 4 mil itens. Todo o controle das atividades organizacionais dessa empresa vinha sendo feito por meio de planilhas; entretanto, o novo diretor decidiu pela implantação de um sistema integrado de gestão (ERP), com vistas ao alinhamento de todos os dados, antes inseridos nessas planilhas, dentro de um sistema único.\n\nMuitos insumos financeiros e de capital humano foram empregados na implantação do ERP, mas, oito meses depois do início do processo de implantação, nenhum resultado concreto foi colhido, do ponto de vista dos trabalhadores da empresa. Um dos supervisores de logística fez a seguinte avaliação: \"Parece que tudo piorou, queremos voltar às nossas planilhas, mais simples e mais bem controladas\".\n\nConsiderando essa situação, faça o que se pede nos itens a seguir.\n\na) Cite uma possível desvantagem da implantação do ERP na referida empresa e justifique sua resposta. (valor: 5,0 pontos)\n\nb) Cite uma vantagem da correta implantação do ERP na referida empresa e justifique sua resposta. (valor: 5,0 pontos)",
+  "padraoResposta": "a) Desvantagens possíveis, com a devida justificativa:\n\n• Custo e prazo elevados de implantação — o projeto consome recursos financeiros e capital humano significativos, com retorno que só se materializa no médio prazo, o que explica a ausência de resultados concretos após oito meses.\n• Resistência dos usuários e necessidade de gestão da mudança — a fala do supervisor evidencia que a empresa subestimou a capacitação e o envolvimento das pessoas. Sem isso, os usuários mantêm controles paralelos e o sistema não é alimentado corretamente.\n• Rigidez do sistema frente aos processos existentes — o ERP impõe processos de referência, obrigando a empresa a adaptar suas práticas ou a customizar o sistema, o que encarece e atrasa o projeto.\n• Perda temporária de produtividade durante a transição, quando convivem o sistema novo e os controles antigos.\n\nb) Vantagens possíveis, com a devida justificativa:\n\n• Base de dados única e integrada — elimina a redundância e a inconsistência entre as planilhas dos diversos setores, garantindo que compras, estoque, vendas e financeiro trabalhem com a mesma informação.\n• Rastreabilidade e confiabilidade da informação — essencial para uma empresa que gerencia mais de 4 mil itens, volume inviável de controlar por planilhas.\n• Informação em tempo real para a tomada de decisão — permite acompanhar níveis de estoque, posição de pedidos e desempenho de entregas sem consolidações manuais.\n• Padronização de processos e apoio ao crescimento — sustenta a operação nacional e reduz a dependência de conhecimento individual dos operadores das planilhas.\n\nA resposta deve, em ambos os itens, apresentar a justificativa articulada ao caso descrito, e não apenas citar o item isoladamente.",
+  "criterios": [
+    "Item a: cita uma desvantagem pertinente da implantação de ERP.",
+    "Item a: justifica a desvantagem relacionando-a à situação concreta descrita no enunciado.",
+    "Item b: cita uma vantagem pertinente da correta implantação de ERP.",
+    "Item b: justifica a vantagem relacionando-a ao porte da empresa e ao volume de itens gerenciados.",
+    "Demonstra compreensão de que o insucesso relatado decorre da condução da implantação, e não de defeito inerente à ferramenta."
+  ]
+},
+{
+  "id": "2019-D4",
+  "tipo": "Oficial",
+  "ano": 2019,
+  "referencia": "ENADE 2019 — Questão Discursiva 4 (Componente Específico)",
+  "area": "Sustentabilidade e Meio Ambiente",
+  "dificuldade": "Média",
+  "competencia": "Aplicar o princípio da responsabilidade compartilhada da PNRS e avaliar impactos ambientais do descarte inadequado.",
+  "valor": "10,0 pontos",
+  "enunciado": "Um programa de logística reversa, realizado no âmbito da Política Nacional de Resíduos Sólidos (PNRS), Lei n. 12.305 de 2 de agosto de 2010, instalou máquinas em estações de metrô de uma grande metrópole brasileira para coletar latas de alumínio, embalagens longa-vida, garrafas PET e de vidro descartadas. As pessoas que entregam esses materiais recicláveis na estação recebem benefícios, como descontos no transporte público, na fatura de energia elétrica e na recarga de telefones celulares pré-pagos.\n\n(Disponível em: https://www1.folha.uol.com.br. Acesso em: 16 jun. 2019, adaptado.)\n\nConsiderando esse contexto, faça o que se pede nos itens a seguir.\n\na) Com base no princípio da responsabilidade compartilhada adotado na PNRS, cite três atores das cadeias produtivas de um dos materiais mencionados no texto e descreva suas responsabilidades com relação ao meio ambiente nos processos que envolvem esse material. (valor: 5,0 pontos)\n\nb) Descreva três impactos ambientais causados pela disposição inadequada de um desses materiais. (valor: 5,0 pontos)",
+  "padraoResposta": "a) Tomando como exemplo a cadeia da garrafa PET, três atores e suas responsabilidades:\n\n• Fabricantes e importadores — conceber embalagens que gerem o menor volume possível de resíduos, favorecer a reciclabilidade no projeto, estruturar e operacionalizar sistemas de logística reversa e dar destinação ambientalmente adequada ao material retornado.\n• Distribuidores e comerciantes — receber e armazenar temporariamente os resíduos devolvidos pelo consumidor, encaminhando-os aos fabricantes ou importadores, e informar o consumidor sobre os pontos de devolução.\n• Consumidores — acondicionar adequadamente e de forma diferenciada os resíduos gerados e disponibilizá-los para coleta ou devolução nos pontos previstos, participando ativamente do sistema.\n• Titulares dos serviços públicos de limpeza urbana — implantar coleta seletiva, estruturar a participação de cooperativas de catadores e dar destinação adequada aos rejeitos.\n\nb) Três impactos ambientais do descarte inadequado, por exemplo, da garrafa PET:\n\n• Obstrução de galerias, bueiros e cursos d'água, agravando enchentes e alagamentos urbanos.\n• Persistência ambiental prolongada — o PET leva centenas de anos para se degradar, ocupando volume em aterros e reduzindo sua vida útil.\n• Fragmentação em microplásticos que contaminam solo, cursos d'água e a cadeia alimentar, alcançando organismos aquáticos e o ser humano.\n• Desperdício de recursos naturais e energia, pois a reciclagem do PET consome substancialmente menos energia que a produção de resina virgem a partir do petróleo.\n• Poluição visual e criação de criadouros de vetores quando há acúmulo de água em recipientes descartados.\n\nSerão aceitas respostas referentes a qualquer um dos quatro materiais citados, desde que os atores e os impactos descritos sejam coerentes com a cadeia escolhida.",
+  "criterios": [
+    "Item a: identifica três atores da cadeia produtiva do material escolhido.",
+    "Item a: descreve responsabilidades ambientais específicas e corretas para cada ator, e não genéricas.",
+    "Item a: demonstra compreensão do princípio da responsabilidade compartilhada previsto na PNRS.",
+    "Item b: descreve três impactos ambientais distintos e pertinentes ao material escolhido.",
+    "Item b: os impactos descritos decorrem efetivamente da disposição inadequada, e não de outras etapas do ciclo de vida."
+  ]
+},
+{
+  "id": "2019-D5",
+  "tipo": "Oficial",
+  "ano": 2019,
+  "referencia": "ENADE 2019 — Questão Discursiva 5 (Componente Específico)",
+  "area": "Engenharia Econômica",
+  "dificuldade": "Média",
+  "competencia": "Decompor o custo total em parcelas fixa e variável e determinar o ponto de equilíbrio.",
+  "valor": "10,0 pontos",
+  "enunciado": "O ponto de equilíbrio de uma empresa é o volume de vendas que cobre os custos fixos dos recursos comprometidos em determinado período. A empresa começa a obter lucro quando as vendas superam o ponto de equilíbrio.\n\nA partir dessas informações, considere a seguinte situação.\n\nO custo total de uma empresa para produção de determinada quantidade do produto X é de R$ 900.000,00 por mês. Sabe-se que o custo total mensal da empresa é composto pelo custo fixo de R$ 200.000,00 e pelo custo variável de R$ 50,00 por unidade produzida, e que o preço de venda desse produto é de R$ 70,00 por unidade.\n\nCom base nessa situação, faça o que se pede nos itens a seguir.\n\na) Calcule a quantidade do produto X produzida pela empresa por mês. (valor: 5,0 pontos)\n\nb) Calcule a quantidade do produto X que a empresa deve produzir e vender por mês para que alcance seu ponto de equilíbrio. (valor: 5,0 pontos)",
+  "padraoResposta": "a) O custo total é a soma do custo fixo com o custo variável total:\n\nCT = CF + CVu × q\n900 000 = 200 000 + 50q\n50q = 700 000\nq = 14 000 unidades por mês\n\nA empresa produz 14 000 unidades do produto X por mês.\n\nb) No ponto de equilíbrio, a receita total iguala o custo total:\n\nRT = CT\n70q = 200 000 + 50q\n20q = 200 000\nq = 10 000 unidades por mês\n\nAlternativamente, pela margem de contribuição unitária: MC = 70 − 50 = R$ 20,00 por unidade, e o ponto de equilíbrio é 200 000 ÷ 20 = 10 000 unidades.\n\nObserva-se que a produção atual de 14 000 unidades está 4 000 unidades acima do ponto de equilíbrio, o que corresponde a um lucro mensal de 4 000 × R$ 20,00 = R$ 80.000,00.",
+  "criterios": [
+    "Item a: monta corretamente a equação do custo total, separando parcela fixa e variável.",
+    "Item a: obtém a quantidade produzida de 14 000 unidades por mês.",
+    "Item b: iguala receita total e custo total, ou utiliza a margem de contribuição unitária.",
+    "Item b: obtém o ponto de equilíbrio de 10 000 unidades por mês.",
+    "Apresenta os cálculos de forma organizada, permitindo acompanhar o raciocínio."
+  ]
+},
+{
+  "id": "2023-D2",
+  "tipo": "Oficial",
+  "ano": 2023,
+  "referencia": "ENADE 2023 — Questão Discursiva 2 (Componente Específico)",
+  "area": "Pesquisa Operacional",
+  "dificuldade": "Difícil",
+  "competencia": "Modelar e resolver um problema de programação linear de mix de produtos com múltiplas restrições.",
+  "valor": "10,0 pontos",
+  "enunciado": "Uma empresa apresenta, em seu portfólio, dois produtos considerados substitutos, A e B, com contribuição marginal diferente para o lucro da empresa, a saber: R$ 20,00 por centena do item A e R$ 30,00 por centena do item B. Ambos os produtos consomem um mesmo recurso de produção, cuja disponibilidade total é de 60 horas. Para cada centena do produto A são necessárias 10 horas desse recurso, ao passo que, para cada centena do produto B, são necessárias 20 horas desse mesmo recurso.\n\nA empresa foi orientada, por uma consultoria de mercado, a não colocar à venda uma soma de produtos superior a 400 unidades, uma vez que a demanda pelos itens é relacionada. Além disso, atendendo à política institucional de diversificação, o volume produzido do item A não deve ultrapassar o volume produzido do item B em mais de 250 unidades.\n\nConsiderando o caso apresentado, faça o que se pede nos itens a seguir.\n\na) Utilizando-se de programação linear, apresente a modelagem matemática do problema visando a maximização do lucro da empresa. Considere que as variáveis xA e xB representam, respectivamente, o volume produzido, em centenas de itens, dos produtos A e B. (valor: 5,0 pontos)\n\nb) Determine, pelo método gráfico e pelo desenvolvimento da solução do modelo matemático, os valores das variáveis xA e xB que maximizam o lucro da empresa e indique o valor desse lucro. (valor: 5,0 pontos)",
+  "padraoResposta": "a) Modelagem, com as variáveis em centenas de itens:\n\nFunção-objetivo:\nMaximizar Z = 20·xA + 30·xB\n\nSujeito a:\n• Recurso de produção: 10·xA + 20·xB ≤ 60\n• Demanda total (400 unidades = 4 centenas): xA + xB ≤ 4\n• Diversificação (250 unidades = 2,5 centenas): xA − xB ≤ 2,5\n• Não negatividade: xA ≥ 0 e xB ≥ 0\n\nb) Avaliando os vértices da região viável:\n\n• (0; 0) → Z = 0\n• (2,5; 0) → limitado pela restrição de diversificação → Z = 50\n• (3,25; 0,75) → interseção de xA − xB = 2,5 com xA + xB = 4 → Z = 65 + 22,5 = 87,5\n• (2; 2) → interseção de xA + xB = 4 com 10xA + 20xB = 60 → Z = 40 + 60 = 100\n• (0; 3) → limitado pelo recurso de produção → Z = 90\n\nO ótimo ocorre em xA = 2 e xB = 2 centenas, ou seja, 200 unidades de cada produto, com lucro máximo de R$ 100,00.\n\nVerificação das restrições no ponto ótimo:\n• Recurso: 10(2) + 20(2) = 60 horas — restrição ativa, recurso totalmente utilizado\n• Demanda: 2 + 2 = 4 centenas — restrição ativa\n• Diversificação: 2 − 2 = 0 ≤ 2,5 — restrição folgada",
+  "criterios": [
+    "Item a: escreve corretamente a função-objetivo de maximização Z = 20xA + 30xB.",
+    "Item a: formula a restrição do recurso de produção (10xA + 20xB ≤ 60).",
+    "Item a: converte corretamente as 400 e 250 unidades para centenas nas restrições de demanda e diversificação.",
+    "Item b: avalia os vértices da região viável ou resolve o sistema correspondente.",
+    "Item b: obtém xA = 2 e xB = 2 centenas e lucro máximo de R$ 100,00."
+  ]
+}
+]

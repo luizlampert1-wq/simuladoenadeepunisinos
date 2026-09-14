@@ -32,12 +32,12 @@ def servir(pasta):
     return srv, srv.server_address[1]
 
 
-def chrome(url, extra=(), timeout=90):
+def chrome(url, extra=(), timeout=120):
     perfil = tempfile.mkdtemp(prefix="enade_chrome_")
     cmd = [CHROME, "--headless=new", "--disable-gpu", "--no-sandbox",
            "--no-first-run", "--disable-extensions", "--hide-scrollbars",
            "--force-device-scale-factor=1",
-           f"--user-data-dir={perfil}", "--virtual-time-budget=20000", *extra, url]
+           f"--user-data-dir={perfil}", "--virtual-time-budget=30000", *extra, url]
     p = subprocess.run(cmd, capture_output=True, timeout=timeout)
     dec = lambda b: b.decode("utf-8", "replace")
     return type("R", (), {"stdout": dec(p.stdout), "stderr": dec(p.stderr)})()
@@ -49,14 +49,35 @@ DRIVER_LOGICA = r"""
 (function(){
   const R = [];
   const ok = (nome, cond, det) => R.push({nome, cond: !!cond, det: det || ""});
+  const L = ["A","B","C","D","E"];
+  const EMAIL = "aluno.teste@edu.unisinos.br";
+
+  function preencher(email, nome){
+    document.getElementById("email").value = email;
+    document.getElementById("nome").value  = nome;
+    document.getElementById("iniciar").click();
+  }
+  const erroVisivel = () => {
+    const e = document.getElementById("erroForm");
+    return !!e && e.style.display === "block";
+  };
 
   // ---------- 1. integridade do banco ----------
   (function(){
-    const L = ["A","B","C","D","E"];
     let ids = new Set(), problemas = [];
     for (const q of BANCO){
       if (ids.has(q.id)) problemas.push("id duplicado " + q.id);
       ids.add(q.id);
+      if (!q.enunciado || !q.area || !q.competencia || !q.dificuldade)
+        problemas.push(q.id + " campos comuns");
+      if (q.formato !== "objetiva" && q.formato !== "discursiva")
+        problemas.push(q.id + " formato");
+    }
+    ok("Banco íntegro: ids únicos, campos comuns e formato declarado",
+        problemas.length === 0, problemas.slice(0,5).join(" | "));
+
+    problemas = [];
+    for (const q of OBJETIVAS){
       if (JSON.stringify(Object.keys(q.alternativas).sort()) !== JSON.stringify(L))
         problemas.push(q.id + " alternativas");
       if (!L.includes(q.gabarito)) problemas.push(q.id + " gabarito");
@@ -65,21 +86,53 @@ DRIVER_LOGICA = r"""
         problemas.push(q.id + " sem explicacao " + k);
       for (const k of L) if (!String(q.alternativas[k]||"").trim())
         problemas.push(q.id + " alternativa vazia " + k);
-      if (!q.enunciado || !q.justificativa) problemas.push(q.id + " texto faltando");
+      if (!q.justificativa) problemas.push(q.id + " sem justificativa");
     }
-    ok("Banco íntegro (ids, 5 alternativas, gabarito, justificativas)",
+    ok("Objetivas: 5 alternativas, gabarito válido e justificativas completas",
         problemas.length === 0, problemas.slice(0,5).join(" | "));
+
+    problemas = [];
+    for (const q of DISCURSIVAS){
+      if (!q.padraoResposta) problemas.push(q.id + " sem padrão de resposta");
+      if (!Array.isArray(q.criterios) || q.criterios.length < 3)
+        problemas.push(q.id + " critérios insuficientes");
+      if (q.gabarito || q.alternativas) problemas.push(q.id + " tem campo de objetiva");
+    }
+    ok("Discursivas: padrão de resposta e ao menos 3 critérios de correção",
+        problemas.length === 0, problemas.slice(0,5).join(" | "));
+
     ok("Banco com pelo menos 100 questões", BANCO.length >= 100, "total=" + BANCO.length);
+    ok("Banco tem objetivas e discursivas suficientes para o simulado",
+        OBJETIVAS.length >= N_OBJETIVAS && DISCURSIVAS.length >= N_DISCURSIVAS,
+        OBJETIVAS.length + " objetivas · " + DISCURSIVAS.length + " discursivas");
+
+    const t = {}, f = {};
+    for (const q of BANCO){ t[q.tipo] = (t[q.tipo]||0)+1;
+      f[q.formato+"/"+q.tipo] = (f[q.formato+"/"+q.tipo]||0)+1; }
+    ok("Proporção igual de oficiais, adaptadas e inéditas",
+        t["Oficial"] === t["Adaptada"] && t["Adaptada"] === t["Inédita"],
+        "oficiais " + t["Oficial"] + " · adaptadas " + t["Adaptada"] + " · inéditas " + t["Inédita"]);
+    ok("Proporção igual também dentro das discursivas",
+        f["discursiva/Oficial"] === f["discursiva/Adaptada"] &&
+        f["discursiva/Adaptada"] === f["discursiva/Inédita"],
+        f["discursiva/Oficial"] + " / " + f["discursiva/Adaptada"] + " / " + f["discursiva/Inédita"]);
   })();
 
   // ---------- 2. sorteio ----------
   (function(){
-    const ITER = 400;
-    let tamOk = true, dupOk = true, existeOk = true, maxArea = 0, areasVistas = new Set();
+    try { localStorage.clear(); } catch(e){}
+    const ITER = 300;
+    let tamOk = true, compOk = true, ordemOk = true, dupOk = true, existeOk = true;
+    let maxArea = 0, areasVistas = new Set();
     const contagem = {};
     for (let i = 0; i < ITER; i++){
       const s = sortear();
-      if (s.length !== 20) tamOk = false;
+      if (s.length !== 38) tamOk = false;
+      const obj = s.filter(q=>q.formato==="objetiva");
+      const dis = s.filter(q=>q.formato==="discursiva");
+      if (obj.length !== 36 || dis.length !== 2) compOk = false;
+      // as discursivas ficam sempre no fim, como na prova real
+      if (s[36].formato !== "discursiva" || s[37].formato !== "discursiva") ordemOk = false;
       const ids = new Set(s.map(q=>q.id));
       if (ids.size !== s.length) dupOk = false;
       for (const q of s){
@@ -88,170 +141,265 @@ DRIVER_LOGICA = r"""
         areasVistas.add(q.area);
       }
       const porArea = {};
-      for (const q of s) porArea[q.area] = (porArea[q.area]||0)+1;
+      for (const q of obj) porArea[q.area] = (porArea[q.area]||0)+1;
       maxArea = Math.max(maxArea, ...Object.values(porArea));
     }
-    ok("Sorteio devolve sempre 20 questões", tamOk);
+    ok("Sorteio devolve sempre 38 questões", tamOk);
+    ok("Cada simulado tem exatamente 36 objetivas e 2 discursivas", compOk);
+    ok("As duas discursivas ficam ao final do simulado", ordemOk);
     ok("Nenhuma questão repetida dentro do mesmo simulado", dupOk);
     ok("Todas as questões sorteadas existem no banco", existeOk);
-    ok("Distribuição equilibrada: no máximo 3 questões da mesma área",
-        maxArea <= 3, "máximo observado = " + maxArea);
-    // A frequência esperada de cada questão é 20/N. Os limites são relativos a
+    ok("Distribuição equilibrada: no máximo " + MAX_POR_AREA + " objetivas da mesma área",
+        maxArea <= MAX_POR_AREA, "máximo observado = " + maxArea);
+
+    // A frequência esperada de cada questão é N/pool. Os limites são relativos a
     // esse valor, para que o teste continue válido conforme o banco cresce.
-    const esperada = 20 / BANCO.length;
-    const freq = BANCO.map(q => (contagem[q.id]||0) / ITER);
-    const fmax = Math.max(...freq), fmin = Math.min(...freq);
-    ok("Nenhuma questão domina os sorteios (frequência dentro de 0,4x a 2,5x a esperada)",
-        fmax <= 2.5 * esperada && fmin >= 0.4 * esperada,
-        "esperada " + (esperada*100).toFixed(1) + "% · observada de "
-        + (fmin*100).toFixed(1) + "% a " + (fmax*100).toFixed(1) + "%");
-    const mediaAreas = new Set();
-    for (let i = 0; i < 50; i++) sortear().forEach(q => mediaAreas.add(q.area));
+    function freqOk(lista, n, rotulo){
+      const esperada = n / lista.length;
+      const fs = lista.map(q => (contagem[q.id]||0) / ITER);
+      const fmax = Math.max(...fs), fmin = Math.min(...fs);
+      ok("Nenhuma " + rotulo + " domina os sorteios (0,4x a 2,5x a frequência esperada)",
+          fmax <= 2.5 * esperada && fmin >= 0.4 * esperada,
+          "esperada " + (esperada*100).toFixed(1) + "% · observada de "
+          + (fmin*100).toFixed(1) + "% a " + (fmax*100).toFixed(1) + "%");
+    }
+    freqOk(OBJETIVAS, 36, "objetiva");
+    freqOk(DISCURSIVAS, 2, "discursiva");
+
     const nunca = BANCO.filter(q => !contagem[q.id]).length;
     ok("Todas as questões do banco podem ser sorteadas",
         nunca === 0, nunca + " nunca sorteadas em " + ITER + " simulados");
     ok("Sorteio cobre todas as áreas do banco",
         areasVistas.size === new Set(BANCO.map(q=>q.area)).size,
         areasVistas.size + " de " + new Set(BANCO.map(q=>q.area)).size);
+    try { localStorage.clear(); } catch(e){}
   })();
 
   // ---------- 3. simulados consecutivos não se repetem ----------
   (function(){
     try { localStorage.clear(); } catch(e){}
     const s1 = sortear();
-    store(LS.hist, [{nome:"t", data:"x", acertos:0, total:20, ids:s1.map(q=>q.id)}]);
+    store(LS.hist, [{nome:"t", data:"x", acertos:0, totalObjetivas:36, ids:s1.map(q=>q.id)}]);
     const s2 = sortear();
     const inter = s2.filter(q => s1.some(a=>a.id===q.id)).length;
     ok("Simulado seguinte não reaproveita questões do anterior",
         inter === 0, "interseção = " + inter);
+    store(LS.hist, [{nome:"t", data:"x", acertos:0, totalObjetivas:36, ids:s2.map(q=>q.id)},
+                    {nome:"t", data:"x", acertos:0, totalObjetivas:36, ids:s1.map(q=>q.id)}]);
+    const s3 = sortear();
+    const inter2 = s3.filter(q => s1.some(a=>a.id===q.id) || s2.some(a=>a.id===q.id)).length;
+    ok("Sorteio evita os " + HIST_EVITAR + " simulados anteriores",
+        inter2 === 0, "interseção = " + inter2);
     try { localStorage.clear(); } catch(e){}
   })();
 
-  // ---------- 4. correção: cada alternativa é avaliada corretamente ----------
+  // ---------- 4. correção: cada objetiva tem exatamente 1 alternativa correta ----------
   (function(){
-    let certos = 0, falsosPositivos = 0, falsosNegativos = 0;
-    for (const q of BANCO){
-      for (const L of ["A","B","C","D","E"]){
-        const acertou = (L === q.gabarito);
-        if (acertou) certos++;
-        if (!acertou && L === q.gabarito) falsosPositivos++;
-        if (acertou && L !== q.gabarito) falsosNegativos++;
-      }
+    let certos = 0, multiplas = 0;
+    for (const q of OBJETIVAS){
+      const corretas = L.filter(k => k === q.gabarito).length;
+      if (corretas === 1) certos++; else multiplas++;
     }
-    ok("Correção: exatamente 1 alternativa correta por questão",
-        certos === BANCO.length && !falsosPositivos && !falsosNegativos,
-        "corretas=" + certos + " de " + BANCO.length);
+    ok("Correção: exatamente 1 alternativa correta por objetiva",
+        certos === OBJETIVAS.length && multiplas === 0,
+        "corretas=" + certos + " de " + OBJETIVAS.length);
   })();
 
-  // ---------- 5. pontuação de ponta a ponta ----------
+  // ---------- 5. validação do e-mail institucional ----------
+  (function(){
+    const validos   = ["ana@edu.unisinos.br", "joao.silva@edu.unisinos.br",
+                       "MARIA@EDU.UNISINOS.BR", "a1@edu.unisinos.br"];
+    const invalidos = ["", "ana", "ana@unisinos.br", "ana@gmail.com",
+                       "ana@edu.unisinos.br.br", "ana@edu.unisinos.com",
+                       "ana @edu.unisinos.br", "@edu.unisinos.br",
+                       "ana@edu.unisinos.brx", "edu.unisinos.br"];
+    const fv = validos.filter(e => !emailValido(e));
+    const fi = invalidos.filter(e => emailValido(e));
+    ok("Aceita e-mails @edu.unisinos.br (inclusive em maiúsculas)",
+        fv.length === 0, fv.join(", "));
+    ok("Recusa e-mails de outros domínios e endereços malformados",
+        fi.length === 0, fi.join(", "));
+  })();
+
+  // ---------- 6. pontuação de ponta a ponta ----------
   (function(){
     try { localStorage.clear(); } catch(e){}
+    const outra = q => L.find(k => k !== q.gabarito);
     const cenarios = [
-      {nome:"todas certas",  f:(q,i)=>q.gabarito,                          esperado:20},
-      {nome:"todas erradas", f:(q,i)=>"ABCDE".split("").find(L=>L!==q.gabarito), esperado:0},
-      {nome:"metade certa",  f:(q,i)=> i%2===0 ? q.gabarito
-                                 : "ABCDE".split("").find(L=>L!==q.gabarito), esperado:10},
-      {nome:"em branco",     f:(q,i)=>null,                                esperado:0},
+      {nome:"todas certas",  f:(q,i)=>q.gabarito,                        esperado:36},
+      {nome:"todas erradas", f:(q,i)=>outra(q),                          esperado:0},
+      {nome:"metade certa",  f:(q,i)=> i%2===0 ? q.gabarito : outra(q),  esperado:18},
+      {nome:"em branco",     f:(q,i)=>null,                              esperado:0},
     ];
     let todosOk = true, det = [];
     for (const c of cenarios){
-      S = {nome:"Teste", questoes:sortear(), respostas:{}, atual:0, inicio:Date.now()};
-      S.questoes.forEach((q,i)=>{ const r = c.f(q,i); if (r) S.respostas[q.id] = r; });
+      S = {nome:"Teste", email:EMAIL, questoes:sortear(), respostas:{}, atual:0, inicio:Date.now()};
+      S.questoes.filter(q=>q.formato==="objetiva").forEach((q,i)=>{
+        const r = c.f(q,i); if (r) S.respostas[q.id] = r; });
       telaResultado();
-      const txt = document.body.innerText;
-      const m = txt.match(/(\d+)\s*acertos/);
+      const m = document.body.innerText.match(/(\d+)\s*acertos/);
       const got = m ? +m[1] : -1;
       if (got !== c.esperado){ todosOk = false; det.push(c.nome + ": " + got + "≠" + c.esperado); }
     }
-    ok("Placar correto em todos os cenários (20/0/10/branco)", todosOk, det.join(" | "));
+    ok("Placar correto em todos os cenários (36/0/18/branco)", todosOk, det.join(" | "));
+
+    // a nota e o percentual consideram apenas as 36 objetivas
+    S = {nome:"Teste", email:EMAIL, questoes:sortear(), respostas:{}, atual:0, inicio:Date.now()};
+    S.questoes.filter(q=>q.formato==="objetiva").forEach((q,i)=>{
+      if (i < 27) S.respostas[q.id] = q.gabarito; });
+    telaResultado();
+    const t = document.body.innerText;
+    ok("Percentual e nota usam apenas as objetivas (27/36 = 75% = nota 7,5)",
+        /75%/.test(t) && /7\.5|7,5/.test(t), t.slice(0, 0));
     try { localStorage.clear(); } catch(e){}
   })();
 
-  // ---------- 6. gabarito exibido confere com o banco ----------
+  // ---------- 7. gabarito exibido confere com o banco ----------
   (function(){
     try { localStorage.clear(); } catch(e){}
-    S = {nome:"Conferência", questoes:sortear(), respostas:{}, atual:0, inicio:Date.now()};
-    S.questoes.forEach((q,i)=>{ S.respostas[q.id] = "ABCDE"[i%5]; });
+    S = {nome:"Conferência", email:EMAIL, questoes:sortear(), respostas:{}, atual:0, inicio:Date.now()};
+    S.questoes.forEach((q,i)=>{
+      S.respostas[q.id] = q.formato === "objetiva" ? "ABCDE"[i%5] : "Resposta escrita de teste " + i;
+    });
     telaResultado();
-    let erros = 0, detalhes = [];
+    let erros = 0, detalhes = [], nObj = 0, nDis = 0;
     document.querySelectorAll(".rev").forEach((rev, i) => {
       rev.open = true;
       const q = S.questoes[i];
-      const marcadas = rev.querySelectorAll(".alt.right .k");
-      if (marcadas.length !== 1 || marcadas[0].textContent.trim() !== q.gabarito){
-        erros++; detalhes.push(q.id + " destaque");
-      }
       const txt = rev.textContent;
-      if (!txt.includes(q.justificativa.slice(0, 40))){ erros++; detalhes.push(q.id + " justif"); }
-      const resp = S.respostas[q.id];
-      if (resp !== q.gabarito && !txt.includes(q.porqueErradas[resp].slice(0, 40))){
-        erros++; detalhes.push(q.id + " porque-errada");
+      if (q.formato === "objetiva"){
+        nObj++;
+        const marcadas = rev.querySelectorAll(".alt.right .k");
+        if (marcadas.length !== 1 || marcadas[0].textContent.trim() !== q.gabarito){
+          erros++; detalhes.push(q.id + " destaque");
+        }
+        if (!txt.includes(q.justificativa.slice(0, 40))){ erros++; detalhes.push(q.id + " justif"); }
+        const resp = S.respostas[q.id];
+        if (resp !== q.gabarito && !txt.includes(q.porqueErradas[resp].slice(0, 40))){
+          erros++; detalhes.push(q.id + " porque-errada");
+        }
+      } else {
+        nDis++;
+        if (!txt.includes(q.padraoResposta.slice(0, 40))){ erros++; detalhes.push(q.id + " padrão"); }
+        for (const c of q.criterios)
+          if (!txt.includes(c.slice(0, 30))){ erros++; detalhes.push(q.id + " critério"); break; }
+        if (!txt.includes(S.respostas[q.id])){ erros++; detalhes.push(q.id + " resposta do aluno"); }
+        if (rev.querySelectorAll(".alt").length){ erros++; detalhes.push(q.id + " tem alternativas"); }
       }
     });
-    ok("Tela de resultado destaca o gabarito certo e a justificativa correspondente",
+    ok("Resultado destaca o gabarito certo e a justificativa correspondente",
         erros === 0, erros + " divergências: " + detalhes.slice(0,4).join(", "));
+    ok("Correção detalhada traz 36 objetivas e 2 discursivas",
+        nObj === 36 && nDis === 2, nObj + " objetivas · " + nDis + " discursivas");
+
+    // autoavaliação das discursivas
+    const ul = document.querySelector(".criterios");
+    const caixas = [...ul.querySelectorAll(".crit")];
+    const alvo = document.querySelector('.autoscore[data-for="' + CSS.escape(ul.dataset.qid) + '"]');
+    caixas.forEach(c => { c.checked = true; c.dispatchEvent(new Event("change")); });
+    ok("Autoavaliação das discursivas calcula a nota pelos critérios marcados",
+        /nota estimada 10[.,]0/.test(alvo.textContent),
+        alvo.textContent.slice(0,70));
     try { localStorage.clear(); } catch(e){}
   })();
 
-  // ---------- 7. fluxo real de cliques ----------
+  // ---------- 8. fluxo real de cliques ----------
   (function(){
     try { localStorage.clear(); } catch(e){}
     telaInicial();
-    document.getElementById("iniciar").click();                   // sem nome
-    const bloqueou = document.getElementById("erroNome") &&
-                     document.getElementById("erroNome").style.display === "block";
-    ok("Bloqueia início do simulado sem o nome do aluno", bloqueou);
-
-    document.getElementById("nome").value = "Aluno de Teste";
     document.getElementById("iniciar").click();
-    const iniciou = /Questão 1 de 20/.test(document.body.innerText);
-    ok("Inicia o simulado e mostra 'Questão 1 de 20'", iniciou);
+    ok("Bloqueia início sem e-mail", erroVisivel());
 
-    let avancou = true;
-    for (let i = 0; i < 20; i++){
+    preencher("aluno@gmail.com", "Aluno de Teste");
+    ok("Bloqueia início com e-mail não institucional",
+        erroVisivel() && !/Questão 1 de/.test(document.body.innerText));
+
+    preencher(EMAIL, "");
+    ok("Bloqueia início sem o nome do aluno",
+        erroVisivel() && !/Questão 1 de/.test(document.body.innerText));
+
+    preencher(EMAIL, "Aluno de Teste");
+    ok("Inicia o simulado e mostra 'Questão 1 de 38'",
+        /Questão 1 de 38/.test(document.body.innerText));
+
+    let cincoAlts = true;
+    for (let i = 0; i < 36; i++){
       const alts = document.querySelectorAll(".alt");
-      if (alts.length !== 5){ avancou = false; break; }
+      if (alts.length !== 5){ cincoAlts = false; break; }
       alts[i % 5].click();
     }
-    ok("Cada questão apresenta exatamente 5 alternativas clicáveis", avancou);
-    ok("Todas as 20 respostas foram registradas",
-        Object.keys(S.respostas).length === 20, Object.keys(S.respostas).length + "/20");
+    ok("Cada objetiva apresenta exatamente 5 alternativas clicáveis", cincoAlts);
+    ok("As 36 respostas objetivas foram registradas",
+        Object.keys(S.respostas).length === 36, Object.keys(S.respostas).length + "/36");
 
-    const semGabarito = !/Justificativa|Resposta correta|gabarito/i.test(document.body.innerText);
-    ok("Gabarito não é revelado durante o simulado", semGabarito);
+    // questão 37: discursiva
+    ok("Após as objetivas o simulado chega à primeira discursiva",
+        /Questão 37 de 38/.test(document.body.innerText) &&
+        !!document.getElementById("disc") &&
+        document.querySelectorAll(".alt").length === 0);
+
+    const escrever = txt => {
+      const ta = document.getElementById("disc");
+      ta.value = txt; ta.dispatchEvent(new Event("input"));
+    };
+    escrever("Resposta discursiva do aluno para a primeira questão.");
+    document.getElementById("prox").click();
+    escrever("Resposta discursiva do aluno para a segunda questão.");
+    ok("Respostas discursivas são registradas no estado do simulado",
+        Object.keys(S.respostas).length === 38,
+        Object.keys(S.respostas).length + "/38");
+
+    // o gabarito não pode estar na tela durante o simulado
+    const vazou = document.querySelectorAll(".rev, .alt.right, .note, .autoscore").length;
+    ok("Gabarito e padrão de resposta não aparecem durante o simulado", vazou === 0,
+        vazou + " elementos de correção visíveis");
 
     document.getElementById("finalizar").click();
-    const temModal = /Tem certeza de que deseja finalizar/.test(document.body.innerText);
-    ok("Pede confirmação antes de finalizar", temModal);
+    ok("Pede confirmação antes de finalizar",
+        /Tem certeza de que deseja finalizar/.test(document.body.innerText));
     document.getElementById("sim").click();
     ok("Exibe a tela de resultado após confirmar",
         /Resultado de Aluno de Teste/.test(document.body.innerText));
-    ok("Mostra as 20 questões na correção detalhada",
-        document.querySelectorAll(".rev").length === 20,
+    ok("Mostra as 38 questões na correção detalhada",
+        document.querySelectorAll(".rev").length === 38,
         document.querySelectorAll(".rev").length + " blocos");
+    ok("Histórico registra o simulado com o e-mail do aluno",
+        (store(LS.hist)||[]).length === 1 && (store(LS.hist)||[])[0].email === EMAIL);
     try { localStorage.clear(); } catch(e){}
   })();
 
-  // ---------- 8. persistência ----------
+  // ---------- 9. persistência ----------
   (function(){
     try { localStorage.clear(); } catch(e){}
     let temLS = true;
     try { localStorage.setItem("__t","1"); localStorage.removeItem("__t"); } catch(e){ temLS = false; }
     if (!temLS){ ok("Persistência (localStorage indisponível neste contexto)", true, "ignorado"); return; }
     telaInicial();
-    document.getElementById("nome").value = "Aluno Persistente";
-    document.getElementById("iniciar").click();
+    preencher(EMAIL, "Aluno Persistente");
     for (let i = 0; i < 5; i++) document.querySelectorAll(".alt")[0].click();
+    S.atual = 37;                                      // vai até a última discursiva
+    telaQuiz();
+    const ta = document.getElementById("disc");
+    ta.value = "Rascunho da discursiva."; ta.dispatchEvent(new Event("input"));
     const idsAntes = S.questoes.map(q=>q.id).join(",");
     const respAntes = JSON.stringify(S.respostas);
-    S = null;                                    // simula recarregar a página
+    S = null;                                          // simula recarregar a página
     const rec = restaurarProgresso();
     ok("Recupera o simulado em andamento após recarregar a página",
         rec && rec.questoes.map(q=>q.id).join(",") === idsAntes &&
-        JSON.stringify(rec.respostas) === respAntes && rec.nome === "Aluno Persistente");
+        JSON.stringify(rec.respostas) === respAntes && rec.nome === "Aluno Persistente" &&
+        rec.email === EMAIL && rec.atual === 37);
+    ok("A resposta discursiva em andamento também é preservada",
+        rec && /Rascunho da discursiva\./.test(JSON.stringify(rec.respostas)));
     ok("Banco de questões continua disponível após recarregar (embutido no arquivo)",
         BANCO.length >= 100);
     try { localStorage.clear(); } catch(e){}
+  })();
+
+  // ---------- 10. coleta de dados desativada por padrão ----------
+  (function(){
+    ok("Envio externo de dados vem desativado (nada sai do navegador do aluno)",
+        COLETA.ativa === false && !COLETA.url);
   })();
 
   // ---------- saída ----------
@@ -265,18 +413,30 @@ DRIVER_LOGICA = r"""
 </script>
 """
 
+_ENTRAR = """
+  document.getElementById("email").value = "ana.camargo@edu.unisinos.br";
+  document.getElementById("nome").value  = "Ana Beatriz Camargo";
+  document.getElementById("iniciar").click();
+"""
+
 DRIVER_SHOT = {
     "home": "",
-    "quiz": r"""<script>
-      document.getElementById("nome").value = "Ana Beatriz Camargo";
-      document.getElementById("iniciar").click();
+    "quiz": "<script>" + _ENTRAR + r"""
       for (let i = 0; i < 6; i++) document.querySelectorAll(".alt")[i%5].click();
     </script>""",
-    "result": r"""<script>
-      document.getElementById("nome").value = "Ana Beatriz Camargo";
-      document.getElementById("iniciar").click();
-      S.questoes.forEach((q,i)=>{ S.respostas[q.id] = (i%4===0)
-        ? "ABCDE".split("").find(L=>L!==q.gabarito) : q.gabarito; });
+    "disc": "<script>" + _ENTRAR + r"""
+      S.atual = 36; telaQuiz();
+      const ta = document.getElementById("disc");
+      ta.value = "A capacidade efetiva da linha é limitada pelo posto gargalo, "
+        + "cujo tempo de ciclo determina o ritmo de saída.";
+      ta.dispatchEvent(new Event("input"));
+    </script>""",
+    "result": "<script>" + _ENTRAR + r"""
+      S.questoes.forEach((q,i)=>{
+        S.respostas[q.id] = q.formato === "objetiva"
+          ? (i%4===0 ? "ABCDE".split("").find(L=>L!==q.gabarito) : q.gabarito)
+          : "O gargalo define o ritmo da linha e, portanto, a capacidade do sistema.";
+      });
       telaResultado();
       document.querySelectorAll(".rev")[0].open = true;
     </script>""",
@@ -307,7 +467,7 @@ document.getElementById("f").onload = function(){
     pre.textContent = "<<" + "INI>>" + String.fromCharCode(10)
       + out.slice(0,8).join(String.fromCharCode(10)) + String.fromCharCode(10) + "<<" + "FIM>>";
     document.body.appendChild(pre);
-  }, 350);
+  }, 450);
 };
 </script></body></html>"""
 

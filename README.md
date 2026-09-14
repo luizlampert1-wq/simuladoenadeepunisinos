@@ -3,32 +3,36 @@
 Aplicativo web de treinamento para o ENADE de Engenharia de Produção, construído a partir das
 provas oficiais do INEP de **2014, 2017, 2019 e 2023**.
 
+Cada simulado reproduz a estrutura do componente específico do ENADE 2023:
+**38 questões — 36 objetivas e 2 discursivas**.
+
 ---
 
 ## 1. O que é entregue
 
 ```
 simulado-enade-ep/
-├── banco/                     ← BANCO DE QUESTÕES (fonte da verdade)
-│   ├── oficiais-2014a.json    ·  105 questões oficiais do ENADE
+├── banco/                          ← BANCO DE QUESTÕES (fonte da verdade)
+│   ├── oficiais-2014a.json         ·  105 objetivas oficiais do ENADE
 │   ├── oficiais-2014b.json
-│   ├── oficiais-2017a.json
-│   ├── oficiais-2017b.json
-│   ├── oficiais-2019a.json
-│   ├── oficiais-2019b.json
-│   ├── oficiais-2023a.json
-│   ├── oficiais-2023b.json
-│   ├── oficiais-2023c.json
-│   ├── adaptadas-a.json …-f   ·  105 questões adaptadas (6 arquivos)
-│   └── ineditas-a.json …-h    ·  105 questões inéditas (8 arquivos)
-├── figuras/                   ← 28 figuras recortadas dos PDFs originais
-├── app/index.html             ← interface (HTML + CSS + JS)
-├── build.py                   ← gera o aplicativo final
-├── testar.py                  ← testes automatizados
+│   ├── oficiais-2017a.json  …b
+│   ├── oficiais-2019a.json  …b
+│   ├── oficiais-2023a.json  …b, c
+│   ├── adaptadas-a.json …-f        ·  105 objetivas adaptadas (6 arquivos)
+│   ├── ineditas-a.json …-h         ·  105 objetivas inéditas (8 arquivos)
+│   ├── discursivas-oficiais.json   ·   10 discursivas oficiais do ENADE
+│   ├── discursivas-adaptadas.json  ·   10 discursivas adaptadas
+│   └── discursivas-ineditas.json   ·   10 discursivas inéditas
+├── figuras/                        ← 29 figuras recortadas dos PDFs originais
+├── app/index.html                  ← interface (HTML + CSS + JS)
+├── build.py                        ← gera o aplicativo final
+├── testar.py                       ← testes automatizados
+├── index.html                      ← gerado pelo build — é o que o GitHub Pages publica
 ├── dist/
-│   ├── simulado-enade-ep.html ← APLICATIVO PRONTO (abre com duplo clique)
-│   ├── artifact.html          ← mesma coisa, para publicar na web
-│   └── screenshots/           ← capturas desktop e celular
+│   ├── simulado-enade-ep.html      ← APLICATIVO PRONTO (abre com duplo clique)
+│   ├── artifact.html               ← mesma coisa, para publicar na web
+│   ├── publicar/index.html         ← pasta pronta para arrastar no Netlify Drop
+│   └── screenshots/                ← capturas desktop e celular
 └── README.md
 ```
 
@@ -39,18 +43,22 @@ simulado-enade-ep/
 
 ## 2. Composição do banco
 
-| Tipo | Qtd. | % | Observação |
-|---|---:|---:|---|
-| **Oficiais** | 105 | 33,3% | Componente específico das provas de 2014, 2017, 2019 e 2023, com gabarito definitivo do INEP |
-| **Adaptadas** | 105 | 33,3% | Uma para cada oficial: mesma competência, com contexto e dados alterados |
-| **Inéditas** | 105 | 33,3% | Criadas no padrão ENADE, com situações-problema aplicadas |
-| **Total** | **315** | 100% | distribuídas em 23 áreas |
+| Tipo | Objetivas | Discursivas | Total | % |
+|---|---:|---:|---:|---:|
+| **Oficiais** | 105 | 10 | **115** | 33,3% |
+| **Adaptadas** | 105 | 10 | **115** | 33,3% |
+| **Inéditas** | 105 | 10 | **115** | 33,3% |
+| **Total** | **315** | **30** | **345** | 100% |
 
-O banco é **equilibrado em terços**. A regra que estrutura as adaptadas é **uma por oficial**:
-cada questão do ENADE tem uma contraparte que cobra a mesma competência em outro contexto — útil
-para o aluno verificar se aprendeu o conceito ou apenas decorou aquela questão específica.
+Distribuídas em **23 áreas** da Engenharia de Produção.
 
-### Por que 105 e não 110 oficiais
+O banco é **equilibrado em terços** — e o equilíbrio vale tanto no total quanto dentro de cada
+formato. A regra que estrutura as adaptadas é **uma por oficial**: cada questão do ENADE tem uma
+contraparte que cobra a mesma competência em outro contexto — útil para o aluno verificar se
+aprendeu o conceito ou apenas decorou aquela questão específica. Isso vale também para as
+discursivas: `ADP-D1` é a adaptação de `2014-D3`, e assim por diante.
+
+### Por que 105 objetivas oficiais e não 110
 
 Das 110 questões objetivas do componente específico das quatro provas:
 
@@ -63,11 +71,30 @@ A **Formação Geral** (33 questões) não entra no banco: é conteúdo genéric
 interpretação de texto, não de Engenharia de Produção. Se quiser incluí-la depois, basta criar um
 arquivo `banco/formacao-geral.json` no mesmo formato.
 
+### Por que 30 discursivas e não ~17
+
+A proporção 2 : 36 do simulado é garantida **no sorteio**, não no banco. No banco, as discursivas
+são 30 porque **existem exatamente 10 discursivas oficiais** de Engenharia de Produção nas quatro
+provas (3 por edição em 2014, 2017 e 2019; 1 em 2023, já descontadas as de Formação Geral). Reduzir
+o banco para ~17 discursivas exigiria descartar 4 questões reais do ENADE — o conteúdo mais escasso
+e mais valioso do acervo. Manter as 10 e espelhá-las em 10 adaptadas + 10 inéditas preserva o terço
+exato e ainda dá **15 simulados de discursivas sem repetição**.
+
 ### Questões com figura
 
-27 questões dependem de figura (circuitos, boxplots, cartas de controle, diagramas de rede,
-histogramas, tabelas). As figuras foram **recortadas diretamente dos PDFs originais** e embutidas
-no aplicativo — nenhuma questão foi descartada por causa disso.
+28 objetivas e 1 discursiva dependem de figura (circuitos, boxplots, cartas de controle, diagramas
+de rede, histogramas, tabelas). As figuras foram **recortadas diretamente dos PDFs originais** e
+embutidas no aplicativo — nenhuma questão foi descartada por causa disso.
+
+### Padrão de resposta das discursivas — leia isto
+
+**O INEP não publica o padrão de resposta das questões discursivas.** Nos gabaritos oficiais, as
+discursivas aparecem marcadas com `***`. Os padrões de resposta e os critérios de correção deste
+aplicativo foram **elaborados para ele**, a partir do enunciado e da bibliografia da área. O
+aplicativo diz isso ao aluno, na própria tela de correção. Ou seja:
+
+- o **enunciado** das discursivas oficiais é o real da prova;
+- o **padrão de resposta** é material de estudo, não gabarito oficial.
 
 ---
 
@@ -76,33 +103,26 @@ no aplicativo — nenhuma questão foi descartada por causa disso.
 ### Opção A — arquivo local (sem internet)
 
 Abra `dist/simulado-enade-ep.html` com duplo clique. Funciona offline, em qualquer navegador.
-Para distribuir aos alunos, basta enviar esse único arquivo (≈2,3 MB).
+Para distribuir aos alunos, basta enviar esse único arquivo (≈2,6 MB).
 
 ### Opção B — link público na internet (para qualquer pessoa)
 
-A pasta **`dist/publicar/`** já está pronta: contém um único `index.html` autossuficiente.
-Escolha uma das opções abaixo — nenhuma exige servidor, banco de dados ou backend.
+**1. GitHub Pages — é o que está no ar hoje**
 
-**1. Netlify Drop — mais rápido, sem instalar nada**
+O repositório já está configurado: o `index.html` da raiz é gerado pelo `build.py` e o GitHub
+Pages o publica. Fluxo de atualização na seção 6.
+
+**2. Netlify Drop — mais rápido, sem instalar nada**
 
 1. Acesse **https://app.netlify.com/drop**
 2. Arraste a pasta `dist/publicar/` inteira para a área indicada
 3. Em segundos aparece um link público, do tipo `https://nome-aleatorio.netlify.app`
 
-Qualquer pessoa abre esse link, sem login e sem conta. Criando uma conta gratuita você mantém
-o link permanente e pode trocar o nome do site.
-
-**2. GitHub Pages — gratuito e permanente**
-
-1. Crie um repositório **público** no github.com
-2. Envie o `index.html` para a raiz do repositório
-3. Em *Settings → Pages*, selecione a branch `main` e a pasta `/ (root)`, e salve
-4. O endereço fica `https://SEU-USUARIO.github.io/NOME-DO-REPO/`
-
 **3. Moodle da UNISINOS**
 
 Envie o `index.html` como recurso do tipo *Arquivo* na disciplina. Os alunos acessam pelo
-ambiente, já autenticados.
+ambiente, já autenticados — é a única opção em que a identificação do aluno é de fato confiável
+(veja a seção 7).
 
 **4. Qualquer outra hospedagem estática**
 
@@ -113,18 +133,17 @@ Cloudflare Pages, Vercel, Google Sites, hospedagem da própria instituição —
 
 **https://claude.ai/code/artifact/8fbfb95d-dbb7-450f-b6cc-3edb66aeb321**
 
-Este link nasce privado. Abra a página e use o menu de compartilhamento para liberar o acesso —
-confira ali quais níveis de acesso estão disponíveis na sua conta. Para uma turma inteira, as
-opções 1 a 3 acima são mais previsíveis, por não dependerem de conta em nenhuma plataforma.
+Este link nasce privado. Abra a página e use o menu de compartilhamento para liberar o acesso.
 
 ---
 
 ## 4. Como adicionar ou corrigir questões
 
-### 4.1. Formato de uma questão
-
 Cada arquivo em `banco/` é uma **lista JSON**. Você pode criar quantos arquivos quiser — o build
-junta todos automaticamente. Modelo:
+junta todos automaticamente. O build **deduz o formato pelo conteúdo**: quem tem `alternativas` é
+objetiva, quem tem `padraoResposta` é discursiva. Não existe campo para declarar isso.
+
+### 4.1. Questão objetiva
 
 ```json
 {
@@ -156,107 +175,242 @@ junta todos automaticamente. Modelo:
 }
 ```
 
-**Campos obrigatórios:** `id`, `tipo`, `area`, `dificuldade`, `competencia`, `enunciado`,
-`alternativas`, `gabarito`, `justificativa`, `porqueErradas`.
+**Obrigatórios:** `id`, `tipo`, `area`, `dificuldade`, `competencia`, `enunciado`, `alternativas`,
+`gabarito`, `justificativa`, `porqueErradas`. **Opcionais:** `ano`, `referencia`, `figura`,
+`observacao`.
 
-**Regras que o build verifica e recusa se violadas:**
+### 4.2. Questão discursiva
+
+```json
+{
+  "id": "INE-D11",
+  "tipo": "Inédita",
+  "ano": null,
+  "referencia": "",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Difícil",
+  "competencia": "O que a questão avalia, em uma frase.",
+  "valor": "10,0 pontos",
+  "enunciado": "Situação-problema e o que se pede.\n\na) ...\nb) ...",
+  "figura": "outra_figura.png",
+  "padraoResposta": "a) Resposta esperada do item a.\n\nb) Resposta esperada do item b.",
+  "criterios": [
+    "Calcula corretamente o tempo de ciclo do gargalo.",
+    "Identifica o posto que limita a capacidade.",
+    "Justifica a proposta com base no dado numérico."
+  ]
+}
+```
+
+**Obrigatórios:** `id`, `tipo`, `area`, `dificuldade`, `competencia`, `enunciado`,
+`padraoResposta`, `criterios` (no mínimo 3). **Opcionais:** `ano`, `referencia`, `figura`, `valor`.
+
+Os `criterios` não são decorativos: na tela de correção o aluno marca os que atendeu e o aplicativo
+calcula a nota estimada proporcional. Escreva-os como itens **verificáveis**, um por linha de
+raciocínio esperada.
+
+### 4.3. Regras que o build verifica e recusa se violadas
 
 - `id` único em todo o banco;
-- exatamente 5 alternativas: A, B, C, D e E, nenhuma vazia;
-- `gabarito` ∈ {A, B, C, D, E};
-- o gabarito **não** pode aparecer em `porqueErradas`;
+- toda questão tem `alternativas` **ou** `padraoResposta` — nunca os dois, nunca nenhum;
+- objetiva: exatamente 5 alternativas A–E, nenhuma vazia; `gabarito` ∈ {A,…,E}; o gabarito **não**
+  pode aparecer em `porqueErradas`; `justificativa` preenchida;
+- discursiva: `criterios` com ao menos 3 itens; **não** pode ter `gabarito`, `alternativas` nem
+  `porqueErradas`;
 - `tipo` ∈ {Oficial, Adaptada, Inédita};
-- se houver `figura`, o arquivo precisa existir em `figuras/`.
+- se houver `figura`, o arquivo precisa existir em `figuras/`;
+- o banco precisa ter pelo menos 36 objetivas e 2 discursivas, senão o simulado não fecha.
 
-Campos opcionais: `ano`, `referencia`, `figura`, `observacao`.
-
-### 4.2. Passo a passo
+### 4.4. Passo a passo
 
 1. Edite um arquivo existente em `banco/` ou crie um novo (ex.: `banco/minhas-questoes.json`).
    Se criar do zero, o conteúdo deve começar com `[` e terminar com `]`.
 2. Se a questão tiver figura, coloque o PNG em `figuras/` e referencie pelo nome no campo `figura`.
-3. Rode o build:
+3. Rode o build e os testes:
    ```
    cd "simulado-enade-ep"
    python build.py
-   ```
-4. Rode os testes:
-   ```
    python testar.py
    ```
-5. Abra `dist/simulado-enade-ep.html` e confira.
+4. Abra `dist/simulado-enade-ep.html` e confira.
 
 O build recusa o arquivo se encontrar qualquer inconsistência, apontando a questão e o problema —
 ou seja, **não é possível publicar um banco quebrado sem perceber**.
 
-### 4.3. Quantos simulados sem repetir questões?
+### 4.5. Quantos simulados sem repetir questões?
 
-Com 315 questões e 20 por simulado, o aplicativo evita as questões dos **3 simulados anteriores**
-(60 questões). Na prática, o aluno faz cerca de 15 simulados antes de rever qualquer questão.
+O aplicativo evita as questões dos **2 simulados anteriores** (76 questões).
 
-### 4.4. Ajustar o tamanho do simulado
+- **Objetivas:** 315 no banco, 36 por simulado → o aluno faz cerca de **8 simulados** antes de
+  rever uma objetiva.
+- **Discursivas:** 30 no banco, 2 por simulado → **15 simulados** para percorrer todas.
+
+### 4.6. Ajustar o tamanho do simulado
 
 No arquivo `app/index.html`, perto do início do `<script>`:
 
 ```js
-const N_QUESTOES   = 20;   // questões por simulado
-const MAX_POR_AREA = 3;    // teto de questões da mesma área
-const HIST_EVITAR  = 3;    // simulados anteriores cujas questões são evitadas
+const N_OBJETIVAS   = 36;   // objetivas por simulado
+const N_DISCURSIVAS = 2;    // discursivas por simulado
+const MAX_POR_AREA  = 4;    // teto de objetivas da mesma área
+const HIST_EVITAR   = 2;    // simulados anteriores cujas questões são evitadas
+const DOMINIO       = "@edu.unisinos.br";
+const MAX_LINHAS    = 15;   // limite de linhas da resposta discursiva
 ```
 
-Altere e rode `python build.py` novamente.
+Altere e rode `python build.py` novamente. Se mexer em `N_OBJETIVAS` ou `N_DISCURSIVAS`, ajuste
+também os números esperados em `testar.py`.
 
 ---
 
-## 5. Como publicar uma nova versão
+## 5. Como o simulado funciona
 
-Depois de `python build.py`, o arquivo `dist/artifact.html` fica atualizado.
+**Identificação.** O aluno informa o e-mail institucional `@edu.unisinos.br` e o nome. Sem os dois,
+o botão não avança. Os dados ficam guardados no navegador e vêm preenchidos da próxima vez.
 
-- **Distribuição por arquivo:** envie `dist/simulado-enade-ep.html` aos alunos (e-mail, Moodle,
-  Drive, pendrive). Funciona offline.
-- **Hospedagem pública (Netlify, GitHub Pages, Moodle):** copie o novo
-  `dist/simulado-enade-ep.html` por cima de `dist/publicar/index.html` e republique. No Netlify
-  Drop, basta arrastar a pasta de novo; o endereço permanece o mesmo se você tiver conta.
-- **Artifact do claude.ai:** peça para eu republicar o `dist/artifact.html` — o link não muda.
+**Sorteio.** 36 objetivas sorteadas com teto de 4 por área (garante variedade sem distorcer a
+proporção entre áreas grandes e pequenas) + 2 discursivas, preferencialmente de áreas diferentes
+entre si. As discursivas ficam **ao final**, como na prova real. Questões dos 2 simulados
+anteriores são evitadas.
 
----
+**Durante a prova.** Navegação livre entre as 38 questões, grade de acesso rápido (as discursivas
+aparecem com borda destacada), contador "Questão 7 de 38", barra de progresso e contador de
+caracteres/linhas nas discursivas, com aviso quando passa das 15 linhas do ENADE. **Nenhum
+gabarito, justificativa ou padrão de resposta aparece antes de finalizar** — isso é verificado por
+teste automatizado. O progresso é salvo a cada clique e sobrevive a recarregar a página ou fechar o
+navegador.
 
-## 6. Testes automatizados
+**Finalizar.** Pede confirmação e avisa quantas questões estão em branco.
 
-`python testar.py` executa o aplicativo real dentro do Chrome em modo headless e verifica:
-
-**Banco e sorteio**
-- integridade de todas as questões (ids únicos, 5 alternativas, gabarito válido, justificativas);
-- o sorteio devolve sempre 20 questões, sem nenhuma repetida no mesmo simulado;
-- distribuição equilibrada — no máximo 3 questões da mesma área;
-- nenhuma questão domina os sorteios (frequência medida em 400 simulados, com limites
-  relativos ao tamanho do banco);
-- todas as 315 questões e todas as 23 áreas podem ser sorteadas;
-- o simulado seguinte não reaproveita questões do anterior.
-
-**Correção e resultado**
-- exatamente uma alternativa correta por questão;
-- placar correto nos cenários de 20 acertos, 0 acertos, 10 acertos e prova em branco;
-- a tela de resultado destaca o gabarito certo e mostra a justificativa correspondente;
-- questões não respondidas contam como erro.
-
-**Fluxo de uso**
-- não inicia sem o nome do aluno;
-- mostra "Questão 1 de 20" e 5 alternativas clicáveis;
-- **o gabarito não aparece em nenhum momento durante o simulado**;
-- pede confirmação antes de finalizar;
-- exibe as 20 questões na correção detalhada;
-- recupera o simulado em andamento se a página for recarregada.
-
-**Responsividade**
-- mede o conteúdo em viewport real de **390 px e 320 px** e confirma que não há rolagem horizontal
-  nem elemento estourando, nas três telas.
-
-`python testar.py --shots` gera também as capturas em `dist/screenshots/`.
+**Resultado.**
+- Percentual, acertos, erros e nota **das 36 objetivas** — as discursivas não entram no percentual,
+  porque não têm correção automática.
+- Desempenho por área, ordenado da pior para a melhor.
+- Correção questão a questão: resposta do aluno, gabarito destacado, justificativa da correta,
+  por que a alternativa que ele marcou está errada, e as demais sob demanda.
+- Nas discursivas: a resposta que ele escreveu, o padrão de resposta, e os critérios de correção
+  como **checklist de autoavaliação** — marcando os atendidos, o aplicativo estima a nota.
 
 ---
 
-## 7. Sobre o gabarito no código
+## 6. Como publicar uma nova versão
+
+Depois de `python build.py`, todos os quatro arquivos de saída ficam atualizados.
+
+**GitHub Pages (o link que está no ar):**
+
+```
+python build.py
+python testar.py
+git add -A
+git commit -m "Atualiza banco de questões"
+git push
+```
+
+O GitHub Pages republica sozinho em 1–2 minutos. O endereço não muda. Se a página parecer a antiga,
+force o recarregamento com **Ctrl + F5** — é cache do navegador.
+
+**Distribuição por arquivo:** envie `dist/simulado-enade-ep.html` aos alunos (e-mail, Moodle,
+Drive, pendrive). Funciona offline.
+
+**Netlify Drop:** arraste a pasta `dist/publicar/` de novo; o endereço permanece o mesmo se você
+tiver conta.
+
+**Artifact do claude.ai:** peça para eu republicar o `dist/artifact.html` — o link não muda.
+
+---
+
+## 7. Acesso por e-mail institucional e coleta de dados
+
+Esta seção responde às duas perguntas de viabilidade — e o que está implementado hoje.
+
+### 7.1. O que já funciona
+
+O aplicativo **exige** um e-mail terminado em `@edu.unisinos.br` para liberar o simulado, e grava
+esse e-mail em cada registro do histórico.
+
+### 7.2. O que isso é e o que não é
+
+**É identificação, não autenticação.** A validação acontece no navegador do aluno. Qualquer pessoa
+pode digitar `qualquercoisa@edu.unisinos.br` e entrar; alguém com conhecimento técnico pode
+contornar a validação pelo console do navegador. Isso é uma limitação **inerente a um aplicativo
+sem servidor** — não há como verificar de verdade um e-mail sem alguém do outro lado conferindo.
+
+Na prática, para um simulado de treinamento, isso costuma bastar: cumpre o papel de deixar claro
+que é material da turma e de marcar quem fez a prova. Se a exigência for **acesso realmente
+restrito**, há dois caminhos honestos:
+
+- **Publicar pelo Moodle da UNISINOS.** O aluno já entra autenticado pela instituição, e o
+  aplicativo herda esse controle sem precisar de nada. É de longe a opção mais simples e a única
+  que resolve o problema de verdade sem infraestrutura nova.
+- **Colocar um backend com login institucional** (Google Workspace / Microsoft Entra da UNISINOS).
+  Resolve, mas deixa de ser um arquivo estático: exige hospedagem, cadastro de aplicação no TI da
+  universidade e manutenção.
+
+### 7.3. Coleta dos resultados por aluno
+
+Hoje o histórico (e-mail, nome, data, acertos, erros, percentual, tempo, desempenho por área e os
+ids das questões sorteadas) é gravado **apenas no navegador do aluno**, em `localStorage`. Ele vê
+os próprios simulados na tela inicial; você não vê nada. Nada sai da máquina dele.
+
+Para que os resultados cheguem até você, é preciso um ponto de coleta. O aplicativo já tem o gancho
+pronto e isolado, no início do `<script>` de `app/index.html`:
+
+```js
+const COLETA = {
+  ativa: false,
+  url: "",        // endpoint que recebe o POST
+};
+```
+
+Com `ativa: true` e uma `url`, cada simulado finalizado dispara um POST com o registro em JSON.
+Nada mais no aplicativo precisa mudar.
+
+**Opção recomendada — Google Sheets via Apps Script.** Gratuita, dentro da conta institucional,
+sem hospedagem e sem custo:
+
+1. Crie uma planilha no Google Drive da UNISINOS.
+2. *Extensões → Apps Script*, e cole:
+
+   ```js
+   function doPost(e) {
+     const d = JSON.parse(e.postData.contents);
+     SpreadsheetApp.getActiveSheet().appendRow([
+       new Date(), d.email, d.nome, d.acertos, d.totalObjetivas,
+       d.percentual, d.discursivasRespondidas, d.minutos, JSON.stringify(d.porArea)
+     ]);
+     return ContentService.createTextOutput("ok");
+   }
+   ```
+3. *Implantar → Nova implantação → Aplicativo da Web*, executar como **você**, com acesso para
+   **qualquer pessoa**. Copie a URL gerada.
+4. Cole a URL em `COLETA.url`, mude `ativa` para `true`, rode `python build.py` e publique.
+
+Cada simulado finalizado vira uma linha na planilha.
+
+**Outras opções:** um Formulário Google (mesma ideia, menos controle sobre as colunas), ou um
+serviço como Supabase/Firebase se você quiser consultas e painéis. Em todos os casos, muda apenas
+a `url` — o aplicativo não sabe qual é o destino.
+
+**Sobre o `db` do Artifact (claude.ai):** a versão publicada no claude.ai pode usar um banco de
+dados do próprio Artifact, sem nada externo. Duas ressalvas: só funciona no link do claude.ai
+(no GitHub Pages não existe), e a capacidade de identificar cada visitante individualmente não está
+disponível nesta conta — os dados ficariam num espaço comum a todos os alunos. Por isso a planilha
+é a recomendação.
+
+### 7.4. Antes de ligar a coleta
+
+Você passa a guardar e-mail e desempenho de alunos identificados — isso é dado pessoal sob a LGPD.
+Três cuidados que custam pouco:
+
+- **Avise na tela inicial** o que é coletado e para quê (posso incluir o texto no aplicativo);
+- **Restrinja o acesso** à planilha a você e a quem precisa;
+- **Não use os resultados para nota ou avaliação formal** sem comunicar a turma — é um simulado de
+  treinamento, e tratá-lo assim evita qualquer discussão.
+
+---
+
+## 8. Sobre o gabarito no código
 
 O aplicativo é 100% client-side: não há servidor. Para a correção funcionar sem internet, o
 gabarito precisa estar no navegador do aluno. O banco é gravado **codificado (XOR + base64)**,
@@ -264,12 +418,68 @@ de modo que não é legível abrindo o código-fonte da página.
 
 Isso é **ofuscação, não segurança**: alguém com conhecimento técnico e disposição consegue
 decodificar. Para impedir de fato, seria necessário um servidor que guardasse o gabarito e
-corrigisse as respostas — o que exigiria hospedagem e sairia do escopo de um arquivo único.
-Na prática, para um simulado de treinamento, a ofuscação resolve.
+corrigisse as respostas. Na prática, para um simulado de treinamento, a ofuscação resolve.
+
+**Atenção ao repositório público:** os arquivos `banco/*.json` estão no GitHub em texto puro, com
+gabaritos e justificativas legíveis por qualquer pessoa que abra o repositório. Se isso for um
+problema, há duas saídas: tornar o repositório **privado** (o GitHub Pages continua funcionando em
+contas gratuitas para repositório privado desde 2021) ou manter a pasta `banco/` fora do Git, num
+Drive só seu, publicando apenas o `index.html` gerado.
 
 ---
 
-## 8. Como o texto foi extraído dos PDFs
+## 9. Testes automatizados
+
+`python testar.py` executa o aplicativo real dentro do Chrome em modo headless. São **44
+verificações**:
+
+**Banco**
+- ids únicos, campos comuns preenchidos, formato corretamente deduzido;
+- objetivas: 5 alternativas, gabarito válido, justificativa e explicações completas;
+- discursivas: padrão de resposta e ao menos 3 critérios, sem campos de objetiva;
+- proporção de terços entre oficiais, adaptadas e inéditas — no total e dentro das discursivas.
+
+**Sorteio** (300 simulados simulados a cada execução)
+- sempre 38 questões: exatamente 36 objetivas + 2 discursivas, com as discursivas ao final;
+- nenhuma questão repetida no mesmo simulado;
+- no máximo 4 objetivas da mesma área;
+- nenhuma questão domina os sorteios — a frequência medida fica entre 0,4× e 2,5× a esperada,
+  com limites relativos ao tamanho do banco (hoje: objetivas de 5,0% a 18,3%, esperado 11,4%);
+- todas as 345 questões e todas as 23 áreas podem ser sorteadas;
+- os 2 simulados anteriores não são reaproveitados.
+
+**Identificação**
+- aceita `@edu.unisinos.br`, inclusive em maiúsculas;
+- recusa outros domínios e 10 variações de endereço malformado.
+
+**Correção e resultado**
+- exatamente uma alternativa correta por objetiva;
+- placar correto nos cenários de 36, 0 e 18 acertos e prova em branco;
+- percentual e nota calculados **só sobre as 36 objetivas** (27/36 → 75% → nota 7,5);
+- o gabarito destacado e a justificativa exibida conferem com o banco, questão por questão;
+- nas discursivas, a tela traz a resposta do aluno, o padrão de resposta e todos os critérios;
+- a autoavaliação por critérios calcula a nota corretamente;
+- questões não respondidas contam como erro.
+
+**Fluxo de uso**
+- não inicia sem e-mail, com e-mail de outro domínio, ou sem o nome;
+- mostra "Questão 1 de 38" e 5 alternativas clicáveis nas objetivas;
+- chega à discursiva na questão 37, com campo de texto e sem alternativas;
+- **nenhum elemento de correção aparece durante o simulado**;
+- pede confirmação antes de finalizar e exibe as 38 questões na correção;
+- o histórico registra o e-mail do aluno;
+- recupera o simulado em andamento — inclusive o rascunho da discursiva — ao recarregar a página;
+- o envio externo de dados vem desativado por padrão.
+
+**Responsividade**
+- mede o conteúdo em viewport real de **390 px e 320 px** nas quatro telas (início, objetiva,
+  discursiva e resultado) e confirma que não há rolagem horizontal nem elemento estourando.
+
+`python testar.py --shots` gera também as capturas em `dist/screenshots/`.
+
+---
+
+## 10. Como o texto foi extraído dos PDFs
 
 Registro do método, caso seja preciso reprocessar as provas no futuro.
 
@@ -281,21 +491,13 @@ Windows, com tratamento das ligaduras (`fi`, `ti`, `tí`, `tt`) que não têm co
 Resultado: menos de 10 caracteres não resolvidos por prova (contra ~1.100 na extração bruta).
 
 Os gabaritos de 2019 e 2023 saíam desalinhados no modo tabela do `pdftotext`; foram reextraídos em
-modo bruto (`-raw`) e conferidos item a item.
+modo bruto (`-raw`) e conferidos item a item. Os gabaritos das discursivas trazem `***` — o INEP
+não os divulga.
 
 ---
 
-## 9. Requisitos
+## 11. Requisitos
 
 - **Python 3** — apenas para rodar `build.py` e `testar.py`. O aplicativo em si não precisa de nada.
 - **Chrome ou Edge** — apenas para `testar.py`.
 - O aplicativo gerado roda em qualquer navegador moderno, sem instalação e sem internet.
-
-
----
-
-## 10. Link do aplicativo
-
-**https://claude.ai/code/artifact/8fbfb95d-dbb7-450f-b6cc-3edb66aeb321**
-
-Lembre-se de compartilhar a página (ela começa privada) antes de divulgar o endereço aos alunos.

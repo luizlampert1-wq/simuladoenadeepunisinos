@@ -41,16 +41,21 @@ def carregar_banco():
 
 # ----------------------------------------------------------------- validar
 def validar(banco, origem):
+    """Valida o banco e marca cada questão com seu formato.
+
+    O formato é deduzido do conteúdo, não precisa ser declarado:
+      - tem "alternativas"   -> objetiva
+      - tem "padraoResposta" -> discursiva
+    """
     erros, avisos = [], []
-    obrigatorios = ["id", "tipo", "area", "dificuldade", "competencia",
-                    "enunciado", "alternativas", "gabarito", "justificativa", "porqueErradas"]
+    comuns = ["id", "tipo", "area", "dificuldade", "competencia", "enunciado"]
     vistos = {}
     for q in banco:
         qid = q.get("id", "<sem id>")
         onde = origem.get(qid, "?")
         tag = f"[{onde}] {qid}"
 
-        for campo in obrigatorios:
+        for campo in comuns:
             if not q.get(campo):
                 erros.append(f"{tag}: campo obrigatório ausente ou vazio -> {campo}")
 
@@ -58,23 +63,46 @@ def validar(banco, origem):
             erros.append(f"{tag}: id duplicado (também em {vistos[qid]})")
         vistos[qid] = onde
 
-        alts = q.get("alternativas") or {}
-        if sorted(alts) != LETRAS:
-            erros.append(f"{tag}: precisa ter exatamente as alternativas A, B, C, D e E")
-        for L in LETRAS:
-            if L in alts and not str(alts[L]).strip():
-                erros.append(f"{tag}: alternativa {L} está vazia")
+        # ---- formato ----
+        tem_alt = bool(q.get("alternativas"))
+        tem_pad = bool(q.get("padraoResposta"))
+        if tem_alt and tem_pad:
+            erros.append(f"{tag}: tem 'alternativas' e 'padraoResposta' — escolha um dos dois formatos")
+            continue
+        if not tem_alt and not tem_pad:
+            erros.append(f"{tag}: precisa ter 'alternativas' (objetiva) ou 'padraoResposta' (discursiva)")
+            continue
+        q["formato"] = "objetiva" if tem_alt else "discursiva"
 
-        gab = q.get("gabarito")
-        if gab not in LETRAS:
-            erros.append(f"{tag}: gabarito inválido ({gab!r}) — use A, B, C, D ou E")
+        if q["formato"] == "objetiva":
+            alts = q.get("alternativas") or {}
+            if sorted(alts) != LETRAS:
+                erros.append(f"{tag}: precisa ter exatamente as alternativas A, B, C, D e E")
+            for L in LETRAS:
+                if L in alts and not str(alts[L]).strip():
+                    erros.append(f"{tag}: alternativa {L} está vazia")
 
-        pq = q.get("porqueErradas") or {}
-        if gab in pq:
-            erros.append(f"{tag}: o gabarito {gab} não deve aparecer em porqueErradas")
-        faltando = [L for L in LETRAS if L != gab and L not in pq]
-        if faltando:
-            avisos.append(f"{tag}: sem explicação para {', '.join(faltando)}")
+            gab = q.get("gabarito")
+            if gab not in LETRAS:
+                erros.append(f"{tag}: gabarito inválido ({gab!r}) — use A, B, C, D ou E")
+
+            pq = q.get("porqueErradas") or {}
+            if gab in pq:
+                erros.append(f"{tag}: o gabarito {gab} não deve aparecer em porqueErradas")
+            faltando = [L for L in LETRAS if L != gab and L not in pq]
+            if faltando:
+                avisos.append(f"{tag}: sem explicação para {', '.join(faltando)}")
+            if not q.get("justificativa"):
+                erros.append(f"{tag}: questão objetiva sem 'justificativa'")
+        else:
+            crit = q.get("criterios")
+            if not isinstance(crit, list) or len(crit) < 3:
+                erros.append(f"{tag}: questão discursiva precisa de 'criterios' com pelo menos 3 itens")
+            for campo in ("gabarito", "alternativas", "porqueErradas"):
+                if q.get(campo):
+                    erros.append(f"{tag}: questão discursiva não deve ter o campo '{campo}'")
+            if not q.get("valor"):
+                avisos.append(f"{tag}: questão discursiva sem o campo 'valor' (pontuação)")
 
         if q.get("tipo") not in ("Oficial", "Adaptada", "Inédita"):
             erros.append(f"{tag}: tipo deve ser Oficial, Adaptada ou Inédita")
@@ -84,6 +112,14 @@ def validar(banco, origem):
         fig = q.get("figura")
         if fig and not os.path.exists(os.path.join(RAIZ, "figuras", fig)):
             erros.append(f"{tag}: figura não encontrada -> figuras/{fig}")
+
+    # ---- composição: o simulado exige 36 objetivas + 2 discursivas ----
+    obj = [q for q in banco if q.get("formato") == "objetiva"]
+    dis = [q for q in banco if q.get("formato") == "discursiva"]
+    if len(obj) < 36:
+        erros.append(f"banco: apenas {len(obj)} questões objetivas — o simulado exige 36")
+    if len(dis) < 2:
+        erros.append(f"banco: apenas {len(dis)} questões discursivas — o simulado exige 2")
 
     return erros, avisos
 
@@ -131,8 +167,13 @@ def main():
 
     tipos = collections.Counter(q["tipo"] for q in banco)
     areas = collections.Counter(q["area"] for q in banco)
+    fmts  = collections.Counter(q["formato"] for q in banco)
     print(f"  oficiais {tipos['Oficial']} · adaptadas {tipos['Adaptada']} · inéditas {tipos['Inédita']}")
+    print(f"  objetivas {fmts['objetiva']} · discursivas {fmts['discursiva']}")
     print(f"  áreas: {len(areas)}")
+    for f in ("objetiva", "discursiva"):
+        t = collections.Counter(q["tipo"] for q in banco if q["formato"] == f)
+        print(f"    {f:11s} oficiais {t['Oficial']:3d} · adaptadas {t['Adaptada']:3d} · inéditas {t['Inédita']:3d}")
 
     n_figs, bytes_figs = embutir_figuras(banco)
     print(f"  figuras embutidas: {n_figs} ({bytes_figs/1024:.0f} KB)")

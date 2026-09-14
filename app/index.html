@@ -10,6 +10,7 @@
     --brand:#0b4f9e; --brand-ink:#083a76; --brand-soft:#e6effa;
     --ok:#0d7a4d; --ok-soft:#e2f5eb; --err:#b3261e; --err-soft:#fdeceb;
     --warn:#9a6700; --warn-soft:#fff5d6;
+    --disc:#6b3fa0; --disc-soft:#f0e9f8;
     --radius:14px; --shadow:0 1px 2px rgba(16,32,56,.06),0 8px 24px rgba(16,32,56,.07);
     color-scheme: light;
   }
@@ -20,6 +21,7 @@
       --brand:#5aa2f5; --brand-ink:#b9d6fb; --brand-soft:#16283f;
       --ok:#4ec98a; --ok-soft:#12301f; --err:#f28b82; --err-soft:#33191a;
       --warn:#e3b341; --warn-soft:#2e2513;
+      --disc:#c4a2f0; --disc-soft:#241a33;
       --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);
       color-scheme: dark;
     }
@@ -30,6 +32,7 @@
     --brand:#5aa2f5; --brand-ink:#b9d6fb; --brand-soft:#16283f;
     --ok:#4ec98a; --ok-soft:#12301f; --err:#f28b82; --err-soft:#33191a;
     --warn:#e3b341; --warn-soft:#2e2513;
+    --disc:#c4a2f0; --disc-soft:#241a33;
     --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);
     color-scheme: dark;
   }
@@ -41,7 +44,7 @@
     -webkit-text-size-adjust:100%;
   }
   h1,h2,h3{text-wrap:balance; letter-spacing:-.011em}
-  :where(button,a,input,summary):focus-visible{
+  :where(button,a,input,textarea,summary):focus-visible{
     outline:2px solid var(--brand); outline-offset:2px; border-radius:8px}
   @media (prefers-reduced-motion: reduce){
     *,*::before,*::after{animation-duration:.01ms!important; transition-duration:.01ms!important}
@@ -62,10 +65,10 @@
   .topbar h1{font-size:1.05rem; font-weight:650}
   .topbar p{margin:2px 0 0; font-size:.8rem; opacity:.85}
 
-  /* ---------- generic ---------- */
+  /* ---------- genérico ---------- */
   .card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
         box-shadow:var(--shadow); padding:22px; margin-block:18px}
-  .card.plain{box-shadow:none; background:transparent}   /* blocos de apoio: só contorno */
+  .card.plain{box-shadow:none; background:transparent}
   .muted{color:var(--ink-2)}
   .small{font-size:.85rem}
   .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;
@@ -78,11 +81,14 @@
   .btn.danger{background:var(--err)}
   .row{display:flex; gap:10px; flex-wrap:wrap}
   .spread{display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap}
-  input[type=text]{
+  input[type=text],input[type=email],textarea{
     width:100%; padding:12px 14px; border:1px solid var(--line); border-radius:10px;
     background:var(--surface); color:var(--ink); font:inherit}
-  input[type=text]:focus{outline:2px solid var(--brand); outline-offset:1px; border-color:transparent}
+  textarea{min-height:230px; resize:vertical; line-height:1.6}
+  input:focus,textarea:focus{outline:2px solid var(--brand); outline-offset:1px; border-color:transparent}
   label{display:block; font-weight:600; margin-bottom:6px; font-size:.92rem}
+  .hint{font-size:.8rem; color:var(--ink-3); margin:6px 0 0}
+  .erro{font-size:.85rem; color:var(--err); margin:8px 0 0}
 
   .tags{display:flex; gap:6px; flex-wrap:wrap; margin-bottom:12px}
   .tag{font-size:.68rem; font-weight:600; padding:4px 10px; border-radius:99px;
@@ -92,6 +98,7 @@
   .tag.brand{background:var(--brand-soft); color:var(--brand-ink); border-color:transparent}
   .tag.ok{background:var(--ok-soft); color:var(--ok); border-color:transparent}
   .tag.warn{background:var(--warn-soft); color:var(--warn); border-color:transparent}
+  .tag.disc{background:var(--disc-soft); color:var(--disc); border-color:transparent}
 
   .stats{display:grid; grid-template-columns:repeat(auto-fit,minmax(112px,1fr)); gap:10px; margin:16px 0 4px}
   .stat{background:var(--surface-2); border-radius:10px; padding:12px; text-align:center}
@@ -101,7 +108,7 @@
   :root[data-theme="dark"] .stat b{color:var(--brand)}
   .stat span{font-size:.74rem; color:var(--ink-2)}
 
-  /* ---------- quiz ---------- */
+  /* ---------- simulado ---------- */
   .quizbar{position:sticky; top:0; z-index:20; background:var(--surface);
            border-bottom:1px solid var(--line); box-shadow:0 2px 10px rgba(16,32,56,.05)}
   .quizbar .wrap{padding-block:10px}
@@ -110,13 +117,16 @@
   .progress{height:6px; background:var(--surface-2); border-radius:99px; overflow:hidden; margin-top:8px}
   .progress i{display:block; height:100%; background:var(--brand); border-radius:99px; transition:width .25s}
 
-  .grid-nav{display:grid; grid-template-columns:repeat(10,1fr); gap:6px; margin-top:12px}
-  @media(max-width:520px){.grid-nav{grid-template-columns:repeat(5,1fr)}}
-  .gn{aspect-ratio:1; border:1px solid var(--line); background:var(--surface); border-radius:8px;
-      font-family:var(--font-mono); font-size:.8rem; font-weight:600; color:var(--ink-2);
+  .grid-nav{display:grid; grid-template-columns:repeat(13,1fr); gap:5px; margin-top:12px}
+  @media(max-width:720px){.grid-nav{grid-template-columns:repeat(8,1fr)}}
+  @media(max-width:420px){.grid-nav{grid-template-columns:repeat(6,1fr)}}
+  .gn{aspect-ratio:1; border:1px solid var(--line); background:var(--surface); border-radius:7px;
+      font-family:var(--font-mono); font-size:.72rem; font-weight:600; color:var(--ink-2);
       cursor:pointer; padding:0; font-variant-numeric:tabular-nums}
   .gn.done{background:var(--brand-soft); border-color:transparent; color:var(--brand-ink)}
   :root[data-theme="dark"] .gn.done{color:var(--brand)}
+  .gn.disc{border-color:var(--disc); border-width:1.5px}
+  .gn.disc.done{background:var(--disc-soft); color:var(--disc)}
   .gn.cur{outline:2px solid var(--brand); outline-offset:1px}
 
   .enun{white-space:pre-wrap; margin:0 0 16px; overflow-wrap:break-word; max-width:68ch}
@@ -135,13 +145,12 @@
           background:var(--surface-2); color:var(--ink-2)}
   .alt.sel{border-color:var(--brand); background:var(--brand-soft)}
   .alt.sel .k{background:var(--brand); color:#fff}
-  .alt[disabled]{cursor:default}
   .alt.right{border-color:var(--ok); background:var(--ok-soft)}
   .alt.right .k{background:var(--ok); color:#fff}
   .alt.wrong{border-color:var(--err); background:var(--err-soft)}
   .alt.wrong .k{background:var(--err); color:#fff}
 
-  /* ---------- result ---------- */
+  /* ---------- resultado ---------- */
   .score{display:flex; align-items:center; gap:20px; flex-wrap:wrap}
   .donut{--p:0; width:118px; height:118px; border-radius:50%; flex:none; display:grid; place-items:center;
     background:conic-gradient(var(--brand) calc(var(--p)*1%), var(--surface-2) 0)}
@@ -151,16 +160,18 @@
   :root[data-theme="dark"] .donut>div{color:var(--brand)}
   .rev{border:1px solid var(--line); border-radius:12px; margin-block:12px; overflow:hidden}
   .rev>summary{cursor:pointer; padding:13px 16px; background:var(--surface-2); font-weight:600;
-               display:flex; gap:10px; align-items:center; list-style:none}
+               display:flex; gap:10px; align-items:center; list-style:none; flex-wrap:wrap}
   .rev>summary::-webkit-details-marker{display:none}
   .rev>summary .ico{flex:none; width:22px;height:22px;border-radius:50%;display:grid;place-items:center;
                     font-size:.75rem;font-weight:700;color:#fff}
-  .rev>summary .resp{font-family:var(--font-mono); font-size:.74rem; text-align:right}
   .rev.ok>summary .ico{background:var(--ok)} .rev.bad>summary .ico{background:var(--err)}
+  .rev.disc>summary .ico{background:var(--disc)}
+  .rev>summary .resp{font-family:var(--font-mono); font-size:.74rem; text-align:right}
   .rev .body{padding:16px; border-top:1px solid var(--line)}
   .note{border-left:3px solid var(--brand); background:var(--surface-2); padding:11px 14px;
-        border-radius:0 8px 8px 0; margin:12px 0}
-  .note.ok{border-color:var(--ok)} .note.bad{border-color:var(--err)} .note.warn{border-color:var(--warn)}
+        border-radius:0 8px 8px 0; margin:12px 0; white-space:pre-wrap}
+  .note.ok{border-color:var(--ok)} .note.bad{border-color:var(--err)}
+  .note.warn{border-color:var(--warn)} .note.disc{border-color:var(--disc)}
   .note b{display:block; margin-bottom:4px; font-size:.72rem; text-transform:uppercase;
           letter-spacing:.06em; font-weight:600}
   table.areas{width:100%; border-collapse:collapse; font-size:.88rem; margin-top:8px}
@@ -168,11 +179,17 @@
   table.areas td:last-child{text-align:right; white-space:nowrap;
       font-family:var(--font-mono); font-variant-numeric:tabular-nums; font-size:.84rem}
 
+  .criterios{list-style:none; padding:0; margin:10px 0 0; display:grid; gap:8px}
+  .criterios li{display:flex; gap:10px; align-items:flex-start; font-size:.92rem}
+  .criterios input{margin-top:4px; flex:none; width:17px; height:17px; accent-color:var(--disc)}
+  .autoscore{background:var(--disc-soft); color:var(--disc); border-radius:10px; padding:10px 14px;
+             margin-top:12px; font-weight:600; font-size:.9rem}
+
   /* ---------- modal / lightbox ---------- */
   .modal{position:fixed; inset:0; background:rgba(8,16,28,.55); display:grid; place-items:center;
          z-index:60; padding:18px}
-  .modal .box{background:var(--surface); border-radius:var(--radius); padding:24px; max-width:440px;
-              box-shadow:var(--shadow)}
+  .modal .box{background:var(--surface); border-radius:var(--radius); padding:24px; max-width:460px;
+              box-shadow:var(--shadow); max-height:90vh; overflow:auto}
   .lightbox{position:fixed; inset:0; background:rgba(8,16,28,.9); z-index:70; display:grid;
             place-items:center; padding:16px; cursor:zoom-out; overflow:auto}
   .lightbox img{max-width:100%; background:#fff; border-radius:8px}
@@ -194,7 +211,7 @@
 <div id="app" class="wrap"></div>
 <footer>
   Aplicativo de treinamento independente, elaborado a partir das provas públicas do ENADE (INEP).
-  Não possui vínculo oficial com o INEP.
+  Não possui vínculo oficial com o INEP nem com a UNISINOS.
 </footer>
 
 <script>
@@ -212,14 +229,54 @@ function decodeBanco(s){
   return JSON.parse(new TextDecoder("utf-8").decode(arr));
 }
 const BANCO = decodeBanco(BANCO_ENC);
+const OBJETIVAS   = BANCO.filter(q => q.formato === "objetiva");
+const DISCURSIVAS = BANCO.filter(q => q.formato === "discursiva");
 
 /* ============================================================
-   Configuração e utilidades
+   Configuração
    ============================================================ */
-const N_QUESTOES   = 20;   // questões por simulado
-const MAX_POR_AREA = 3;    // teto por área no sorteio equilibrado
-const HIST_EVITAR  = 3;    // nº de simulados anteriores cujas questões são evitadas
-const LS = { hist:"enade_ep_hist_v1", prog:"enade_ep_prog_v1", tema:"enade_ep_tema_v1" };
+const N_OBJETIVAS   = 36;   // objetivas por simulado
+const N_DISCURSIVAS = 2;    // discursivas por simulado
+const N_QUESTOES    = N_OBJETIVAS + N_DISCURSIVAS;   // 38, como no ENADE 2023
+const MAX_POR_AREA  = 4;    // teto de objetivas da mesma área
+const HIST_EVITAR   = 2;    // simulados anteriores cujas questões são evitadas
+const DOMINIO       = "@edu.unisinos.br";
+const MAX_LINHAS    = 15;   // limite de linhas da resposta discursiva, como no ENADE
+
+/* ------------------------------------------------------------
+   COLETA DE RESULTADOS
+   Ponto único de integração. Enquanto `ativa` for false, tudo
+   fica apenas no navegador do aluno (localStorage).
+   Para ativar, veja a seção 7 do README.
+   ------------------------------------------------------------ */
+const COLETA = {
+  ativa: false,
+  url: "",        // endpoint que recebe o POST (Google Apps Script, Formulários, etc.)
+};
+
+async function registrarResultado(registro){
+  // 1) histórico local — sempre
+  const hist = store(LS.hist) || [];
+  hist.unshift(registro);
+  store(LS.hist, hist.slice(0, 30));
+
+  // 2) envio externo — só quando configurado
+  if (!COLETA.ativa || !COLETA.url) return { enviado:false, motivo:"coleta desativada" };
+  try{
+    await fetch(COLETA.url, {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify(registro)
+    });
+    return { enviado:true };
+  }catch(e){
+    return { enviado:false, motivo:String(e) };
+  }
+}
+
+const LS = { hist:"enade_ep_hist_v2", prog:"enade_ep_prog_v2", tema:"enade_ep_tema_v1",
+             aluno:"enade_ep_aluno_v1" };
 const LETRAS = ["A","B","C","D","E"];
 const $ = (sel, el=document) => el.querySelector(sel);
 const esc = s => String(s).replace(/[&<>"']/g, c =>
@@ -235,24 +292,20 @@ function shuffle(a){
   return r;
 }
 
-/* ============================================================
-   Sorteio: 20 questões, sem repetição, equilibrado por área,
-   evitando as usadas nos últimos simulados
-   ============================================================ */
-function sortear(){
-  const hist = store(LS.hist) || [];
-  const recentes = new Set(hist.slice(0, HIST_EVITAR).flatMap(h => h.ids || []));
-  let pool = BANCO.filter(q => !recentes.has(q.id));
-  if (pool.length < N_QUESTOES) pool = BANCO.slice();      // banco pequeno: libera tudo
+function emailValido(e){
+  return /^[^\s@]+@edu\.unisinos\.br$/i.test(String(e).trim());
+}
 
-  // Percorre o banco embaralhado e vai aceitando questões enquanto a área
-  // não estourar o teto. Isso mantém a proporção natural entre as áreas
-  // (áreas maiores aparecem mais) e, ao mesmo tempo, impede que o simulado
-  // se concentre em um único assunto. Se faltar questão, o teto é relaxado.
+/* ============================================================
+   Sorteio: 36 objetivas equilibradas por área + 2 discursivas
+   ============================================================ */
+function sortearObjetivas(evitar){
+  let pool = OBJETIVAS.filter(q => !evitar.has(q.id));
+  if (pool.length < N_OBJETIVAS) pool = OBJETIVAS.slice();
   const escolhidas = [], porArea = {};
-  for (let teto = MAX_POR_AREA; teto <= N_QUESTOES && escolhidas.length < N_QUESTOES; teto++){
+  for (let teto = MAX_POR_AREA; teto <= N_OBJETIVAS && escolhidas.length < N_OBJETIVAS; teto++){
     for (const q of shuffle(pool)){
-      if (escolhidas.length >= N_QUESTOES) break;
+      if (escolhidas.length >= N_OBJETIVAS) break;
       if (escolhidas.some(e => e.id === q.id)) continue;
       if ((porArea[q.area] || 0) >= teto) continue;
       escolhidas.push(q);
@@ -262,22 +315,46 @@ function sortear(){
   return shuffle(escolhidas);
 }
 
+function sortearDiscursivas(evitar){
+  let pool = DISCURSIVAS.filter(q => !evitar.has(q.id));
+  if (pool.length < N_DISCURSIVAS) pool = DISCURSIVAS.slice();
+  // evita as duas discursivas caírem na mesma área, quando possível
+  const emb = shuffle(pool), escolhidas = [];
+  for (const q of emb){
+    if (escolhidas.length >= N_DISCURSIVAS) break;
+    if (escolhidas.some(e => e.area === q.area)) continue;
+    escolhidas.push(q);
+  }
+  for (const q of emb){
+    if (escolhidas.length >= N_DISCURSIVAS) break;
+    if (!escolhidas.some(e => e.id === q.id)) escolhidas.push(q);
+  }
+  return escolhidas;
+}
+
+function sortear(){
+  const hist = store(LS.hist) || [];
+  const evitar = new Set(hist.slice(0, HIST_EVITAR).flatMap(h => h.ids || []));
+  return [...sortearObjetivas(evitar), ...sortearDiscursivas(evitar)];
+}
+
 /* ============================================================
    Estado
    ============================================================ */
-let S = null;   // { nome, questoes, respostas, atual, inicio }
+let S = null;   // { nome, email, questoes, respostas, atual, inicio }
 
 function salvarProgresso(){
   if (!S) return;
-  store(LS.prog, { nome:S.nome, ids:S.questoes.map(q=>q.id), respostas:S.respostas,
-                   atual:S.atual, inicio:S.inicio });
+  store(LS.prog, { nome:S.nome, email:S.email, ids:S.questoes.map(q=>q.id),
+                   respostas:S.respostas, atual:S.atual, inicio:S.inicio });
 }
 function restaurarProgresso(){
   const p = store(LS.prog);
   if (!p || !p.ids) return null;
   const qs = p.ids.map(id => BANCO.find(q => q.id === id)).filter(Boolean);
   if (qs.length !== p.ids.length) return null;
-  return { nome:p.nome, questoes:qs, respostas:p.respostas||{}, atual:p.atual||0, inicio:p.inicio };
+  return { nome:p.nome, email:p.email, questoes:qs, respostas:p.respostas||{},
+           atual:p.atual||0, inicio:p.inicio };
 }
 
 /* ============================================================
@@ -288,9 +365,8 @@ const app = $("#app");
 function telaInicial(msg){
   del(LS.prog);
   const hist  = store(LS.hist) || [];
+  const aluno = store(LS.aluno) || {};
   const nOf   = BANCO.filter(q=>q.tipo==="Oficial").length;
-  const nAd   = BANCO.filter(q=>q.tipo==="Adaptada").length;
-  const nIn   = BANCO.filter(q=>q.tipo==="Inédita").length;
   const nArea = new Set(BANCO.map(q=>q.area)).size;
   const pend  = restaurarProgresso();
 
@@ -298,21 +374,22 @@ function telaInicial(msg){
     <div class="card">
       <h2>Treinamento ENADE — Engenharia de Produção UNISINOS</h2>
       <p class="muted" style="margin:10px 0 0">
-        Cada simulado sorteia <b>${N_QUESTOES} questões</b> do banco, distribuídas entre as diversas
-        áreas da Engenharia de Produção. Ao final, você recebe a correção completa, com o gabarito
-        e a justificativa de cada alternativa.
+        Cada simulado reproduz a estrutura da prova de 2023: <b>${N_QUESTOES} questões</b> —
+        ${N_OBJETIVAS} objetivas e ${N_DISCURSIVAS} discursivas — sorteadas do banco e distribuídas
+        entre as áreas da Engenharia de Produção. Ao final, as objetivas são corrigidas
+        automaticamente e as discursivas recebem o padrão de resposta com critérios de correção.
       </p>
       <div class="stats">
         <div class="stat"><b>${BANCO.length}</b><span>questões no banco</span></div>
+        <div class="stat"><b>${OBJETIVAS.length}</b><span>objetivas</span></div>
+        <div class="stat"><b>${DISCURSIVAS.length}</b><span>discursivas</span></div>
         <div class="stat"><b>${nOf}</b><span>oficiais do ENADE</span></div>
-        <div class="stat"><b>${nAd}</b><span>adaptadas</span></div>
-        <div class="stat"><b>${nIn}</b><span>inéditas</span></div>
         <div class="stat"><b>${nArea}</b><span>áreas cobertas</span></div>
       </div>
       <p class="small muted" style="margin-top:14px">
         Questões oficiais extraídas das provas do ENADE de 2014, 2017, 2019 e 2023 (componente
-        específico), com os gabaritos definitivos do INEP. As questões adaptadas e inéditas seguem o
-        mesmo padrão de exigência, mas <b>não são questões oficiais do exame</b>.
+        específico), com os gabaritos definitivos do INEP. As questões adaptadas e inéditas seguem
+        o mesmo padrão de exigência, mas <b>não são questões oficiais do exame</b>.
       </p>
     </div>
 
@@ -322,7 +399,7 @@ function telaInicial(msg){
     <div class="card" style="border-color:var(--warn)">
       <h3 style="font-size:1rem">Simulado em andamento</h3>
       <p class="muted small" style="margin:8px 0 14px">
-        Encontramos um simulado não finalizado de <b>${esc(pend.nome)}</b>
+        Há um simulado não finalizado de <b>${esc(pend.nome)}</b>
         (${Object.keys(pend.respostas).length} de ${pend.questoes.length} respondidas).
       </p>
       <div class="row">
@@ -332,11 +409,20 @@ function telaInicial(msg){
     </div>` : ""}
 
     <div class="card">
-      <label for="nome">Nome do aluno</label>
-      <input type="text" id="nome" placeholder="Digite seu nome completo" autocomplete="name"
-             maxlength="80" value="${esc(hist[0]?.nome || "")}">
-      <p id="erroNome" class="small" style="color:var(--err); margin:8px 0 0; display:none">
-        Informe seu nome para iniciar.</p>
+      <h3 style="font-size:1rem; margin-bottom:14px">Identificação</h3>
+      <div style="margin-bottom:14px">
+        <label for="email">E-mail institucional</label>
+        <input type="email" id="email" placeholder="seunome@edu.unisinos.br"
+               autocomplete="email" inputmode="email" maxlength="120"
+               value="${esc(aluno.email || "")}">
+        <p class="hint">O acesso é restrito a e-mails <b>${DOMINIO}</b>.</p>
+      </div>
+      <div>
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" placeholder="Digite seu nome completo" autocomplete="name"
+               maxlength="80" value="${esc(aluno.nome || "")}">
+      </div>
+      <p id="erroForm" class="erro" style="display:none"></p>
       <div class="row" style="margin-top:16px">
         <button class="btn" id="iniciar">Iniciar simulado</button>
       </div>
@@ -347,21 +433,34 @@ function telaInicial(msg){
       <div class="spread"><h3 style="font-size:1rem">Seus simulados anteriores</h3>
         <button class="btn ghost small" id="limparHist">Limpar histórico</button></div>
       <table class="areas" style="margin-top:12px">
-        ${hist.slice(0,8).map(h=>`<tr>
+        ${hist.slice(0,10).map(h=>`<tr>
           <td>${esc(h.nome)}<br><span class="small muted">${esc(h.data)}</span></td>
-          <td><b>${h.acertos}/${h.total}</b> &nbsp; ${Math.round(h.acertos/h.total*100)}%</td>
+          <td><b>${h.acertos}/${h.totalObjetivas ?? h.total}</b> &nbsp;
+              ${Math.round(h.acertos/(h.totalObjetivas ?? h.total)*100)}%</td>
         </tr>`).join("")}
       </table>
     </div>` : ""}
   `;
 
-  $("#iniciar").onclick = () => {
-    const nome = $("#nome").value.trim();
-    if (!nome){ $("#erroNome").style.display="block"; $("#nome").focus(); return; }
-    S = { nome, questoes:sortear(), respostas:{}, atual:0, inicio:Date.now() };
+  const iniciar = () => {
+    const email = $("#email").value.trim();
+    const nome  = $("#nome").value.trim();
+    const err   = $("#erroForm");
+    if (!emailValido(email)){
+      err.textContent = `Informe um e-mail institucional válido, terminado em ${DOMINIO}.`;
+      err.style.display = "block"; $("#email").focus(); return;
+    }
+    if (!nome){
+      err.textContent = "Informe seu nome completo.";
+      err.style.display = "block"; $("#nome").focus(); return;
+    }
+    store(LS.aluno, { nome, email });
+    S = { nome, email, questoes:sortear(), respostas:{}, atual:0, inicio:Date.now() };
     salvarProgresso(); telaQuiz();
   };
-  $("#nome").addEventListener("keydown", e => { if (e.key === "Enter") $("#iniciar").click(); });
+  $("#iniciar").onclick = iniciar;
+  ["email","nome"].forEach(id =>
+    $("#"+id).addEventListener("keydown", e => { if (e.key === "Enter") iniciar(); }));
   if (pend){
     $("#retomar").onclick   = () => { S = pend; telaQuiz(); };
     $("#descartar").onclick = () => telaInicial();
@@ -372,8 +471,9 @@ function telaInicial(msg){
 
 function telaQuiz(){
   const q = S.questoes[S.atual], n = S.questoes.length;
-  const respondidas = Object.keys(S.respostas).length;
-  const sel = S.respostas[q.id];
+  const respondidas = Object.keys(S.respostas).filter(k => String(S.respostas[k]).trim()).length;
+  const resp = S.respostas[q.id];
+  const disc = q.formato === "discursiva";
 
   app.innerHTML = `
     <div class="quizbar"><div class="wrap">
@@ -389,20 +489,29 @@ function telaQuiz(){
       <div class="tags">
         <span class="tag brand">${esc(q.area)}</span>
         <span class="tag">${esc(q.dificuldade)}</span>
+        ${disc ? `<span class="tag disc">Discursiva${q.valor ? " · " + esc(q.valor) : ""}</span>` : ""}
         ${q.tipo==="Oficial" ? `<span class="tag ok">Oficial ENADE ${q.ano}</span>`
                              : `<span class="tag warn">${esc(q.tipo)}</span>`}
       </div>
       <p class="enun">${esc(q.enunciado)}</p>
       ${q.figuraData ? `<div class="figbox"><img src="${q.figuraData}" alt="Figura da questão"
           loading="lazy"><div class="figcap">Toque na imagem para ampliar</div></div>` : ""}
-      <div class="alts">
-        ${LETRAS.map(L=>`
-          <button class="alt ${sel===L?"sel":""}" data-k="${L}">
-            <span class="k">${L}</span><span>${esc(q.alternativas[L])}</span>
-          </button>`).join("")}
-      </div>
-      ${sel ? `<div class="row" style="margin-top:12px">
-        <button class="btn ghost small" id="limpar">Limpar resposta</button></div>` : ""}
+
+      ${disc ? `
+        <label for="disc">Sua resposta</label>
+        <textarea id="disc" placeholder="Escreva aqui sua resposta..."
+                  spellcheck="true">${esc(resp || "")}</textarea>
+        <p class="hint" id="contador"></p>
+      ` : `
+        <div class="alts">
+          ${LETRAS.map(L=>`
+            <button class="alt ${resp===L?"sel":""}" data-k="${L}">
+              <span class="k">${L}</span><span>${esc(q.alternativas[L])}</span>
+            </button>`).join("")}
+        </div>
+        ${resp ? `<div class="row" style="margin-top:12px">
+          <button class="btn ghost small" id="limpar">Limpar resposta</button></div>` : ""}
+      `}
     </div>
 
     <div class="card plain">
@@ -410,19 +519,39 @@ function telaQuiz(){
         <button class="btn ghost" id="ant" ${S.atual===0?"disabled":""}>← Anterior</button>
         <button class="btn ghost" id="prox" ${S.atual===n-1?"disabled":""}>Próxima →</button>
       </div>
-      <p class="small muted" style="margin:14px 0 0">Navegue diretamente para qualquer questão:</p>
+      <p class="small muted" style="margin:14px 0 0">
+        Navegue para qualquer questão. As duas últimas, com borda destacada, são discursivas.</p>
       <div class="grid-nav">
-        ${S.questoes.map((qq,i)=>`<button class="gn ${S.respostas[qq.id]?"done":""}
+        ${S.questoes.map((qq,i)=>`<button class="gn
+          ${String(S.respostas[qq.id]||"").trim()?"done":""}
+          ${qq.formato==="discursiva"?"disc":""}
           ${i===S.atual?"cur":""}" data-i="${i}">${i+1}</button>`).join("")}
       </div>
     </div>
   `;
 
-  app.querySelectorAll(".alt").forEach(b => b.onclick = () => {
-    S.respostas[q.id] = b.dataset.k; salvarProgresso();
-    if (S.atual < n-1){ S.atual++; telaQuiz(); } else telaQuiz();
-  });
-  if (sel) $("#limpar").onclick = () => { delete S.respostas[q.id]; salvarProgresso(); telaQuiz(); };
+  if (disc){
+    const ta = $("#disc"), cont = $("#contador");
+    const atualiza = () => {
+      const txt = ta.value;
+      const linhas = txt ? txt.split(/\r?\n/).length : 0;
+      cont.textContent = `${txt.trim().length} caracteres · ${linhas} linha${linhas===1?"":"s"}`
+        + ` — o ENADE limita a resposta a ${MAX_LINHAS} linhas.`;
+      cont.style.color = linhas > MAX_LINHAS ? "var(--err)" : "";
+    };
+    ta.addEventListener("input", () => {
+      S.respostas[q.id] = ta.value; salvarProgresso(); atualiza();
+    });
+    atualiza();
+  } else {
+    app.querySelectorAll(".alt").forEach(b => b.onclick = () => {
+      S.respostas[q.id] = b.dataset.k; salvarProgresso();
+      if (S.atual < n-1){ S.atual++; telaQuiz(); } else telaQuiz();
+    });
+    if (resp) $("#limpar").onclick = () => {
+      delete S.respostas[q.id]; salvarProgresso(); telaQuiz(); };
+  }
+
   $("#ant").onclick  = () => { if (S.atual>0){ S.atual--; salvarProgresso(); telaQuiz(); } };
   $("#prox").onclick = () => { if (S.atual<n-1){ S.atual++; salvarProgresso(); telaQuiz(); } };
   app.querySelectorAll(".gn").forEach(b => b.onclick = () => {
@@ -433,7 +562,8 @@ function telaQuiz(){
 }
 
 function confirmarFinal(){
-  const faltam = S.questoes.length - Object.keys(S.respostas).length;
+  const respondidas = S.questoes.filter(q => String(S.respostas[q.id]||"").trim()).length;
+  const faltam = S.questoes.length - respondidas;
   const div = document.createElement("div");
   div.className = "modal";
   div.innerHTML = `<div class="box">
@@ -441,8 +571,9 @@ function confirmarFinal(){
     <p class="muted" style="margin:12px 0 0">Após isso, suas respostas serão corrigidas e o
       gabarito será exibido.</p>
     ${faltam ? `<p style="color:var(--warn); margin:12px 0 0"><b>Atenção:</b> ${faltam}
-      ${faltam===1?"questão ainda não foi respondida e será contabilizada como erro."
-                 :"questões ainda não foram respondidas e serão contabilizadas como erro."}</p>` : ""}
+      ${faltam===1?"questão ainda não foi respondida."
+                 :"questões ainda não foram respondidas."}
+      As objetivas em branco contam como erro.</p>` : ""}
     <div class="row" style="margin-top:20px; justify-content:flex-end">
       <button class="btn ghost" id="nao">Continuar respondendo</button>
       <button class="btn danger" id="sim">Finalizar e corrigir</button>
@@ -454,31 +585,46 @@ function confirmarFinal(){
 }
 
 function telaResultado(){
-  const n = S.questoes.length;
+  const objetivas   = S.questoes.filter(q => q.formato === "objetiva");
+  const discursivas = S.questoes.filter(q => q.formato === "discursiva");
+
   let acertos = 0, naoResp = 0;
   const detalhe = S.questoes.map((q,i) => {
-    const r  = S.respostas[q.id] || null;
-    const ok = r === q.gabarito;
-    if (ok) acertos++;
-    if (!r) naoResp++;
-    return { i, q, r, ok };
+    const r = S.respostas[q.id];
+    if (q.formato === "objetiva"){
+      const ok = r === q.gabarito;
+      if (ok) acertos++;
+      if (!r) naoResp++;
+      return { i, q, r:r||null, ok };
+    }
+    const txt = String(r||"").trim();
+    if (!txt) naoResp++;
+    return { i, q, r:txt, ok:null };
   });
-  const erros = n - acertos;
-  const pct   = Math.round(acertos / n * 100);
+
+  const nObj  = objetivas.length;
+  const erros = nObj - acertos;
+  const pct   = Math.round(acertos / nObj * 100);
   const mins  = Math.max(1, Math.round((Date.now() - S.inicio) / 60000));
 
-  // desempenho por área
   const areas = {};
   for (const d of detalhe){
+    if (d.q.formato !== "objetiva") continue;
     const a = areas[d.q.area] || (areas[d.q.area] = { c:0, t:0 });
     a.t++; if (d.ok) a.c++;
   }
 
-  // histórico
-  const hist = store(LS.hist) || [];
-  hist.unshift({ nome:S.nome, data:new Date().toLocaleString("pt-BR"), acertos, total:n,
-                 ids:S.questoes.map(q=>q.id) });
-  store(LS.hist, hist.slice(0,20));
+  registrarResultado({
+    nome: S.nome, email: S.email,
+    data: new Date().toLocaleString("pt-BR"),
+    dataISO: new Date().toISOString(),
+    acertos, erros, totalObjetivas: nObj, percentual: pct,
+    discursivasRespondidas: discursivas.filter(q => String(S.respostas[q.id]||"").trim()).length,
+    totalDiscursivas: discursivas.length,
+    minutos: mins,
+    ids: S.questoes.map(q => q.id),
+    porArea: Object.fromEntries(Object.entries(areas).map(([a,v]) => [a, `${v.c}/${v.t}`]))
+  });
   del(LS.prog);
 
   const msg = pct >= 80 ? "Excelente desempenho!" : pct >= 60 ? "Bom desempenho — siga revisando."
@@ -489,21 +635,25 @@ function telaResultado(){
     <div class="card">
       <h2 style="font-size:1.15rem">Resultado de ${esc(S.nome)}</h2>
       <p class="small muted" style="margin:4px 0 18px">
-        ${new Date().toLocaleString("pt-BR")} · tempo aproximado: ${mins} min</p>
+        ${esc(S.email)} · ${new Date().toLocaleString("pt-BR")} · tempo aproximado: ${mins} min</p>
       <div class="score">
         <div class="donut" style="--p:${pct}"><div>${pct}%</div></div>
         <div class="stats" style="flex:1; min-width:240px; margin:0">
           <div class="stat"><b style="color:var(--ok)">${acertos}</b><span>acertos</span></div>
           <div class="stat"><b style="color:var(--err)">${erros}</b><span>erros</span></div>
-          <div class="stat"><b>${naoResp}</b><span>em branco</span></div>
-          <div class="stat"><b>${(acertos/n*10).toFixed(1)}</b><span>nota (0–10)</span></div>
+          <div class="stat"><b>${(acertos/nObj*10).toFixed(1)}</b><span>nota objetiva</span></div>
+          <div class="stat"><b>${discursivas.length}</b><span>discursivas</span></div>
         </div>
       </div>
       <p style="margin:18px 0 0"><b>${msg}</b></p>
+      <p class="small muted" style="margin:10px 0 0">
+        O percentual considera apenas as ${nObj} questões objetivas. As discursivas não têm correção
+        automática — abaixo você encontra o padrão de resposta e os critérios para autoavaliação.
+      </p>
     </div>
 
     <div class="card">
-      <h3 style="font-size:1rem">Desempenho por área</h3>
+      <h3 style="font-size:1rem">Desempenho por área (objetivas)</h3>
       <table class="areas">
         ${Object.entries(areas).sort((a,b)=> a[1].c/a[1].t - b[1].c/b[1].t)
           .map(([a,v])=>`<tr><td>${esc(a)}</td>
@@ -515,7 +665,7 @@ function telaResultado(){
     <div class="card">
       <h3 style="font-size:1rem">Correção detalhada</h3>
       <p class="small muted" style="margin:6px 0 4px">Toque em cada questão para ver a justificativa.</p>
-      ${detalhe.map(d => revisaoHTML(d)).join("")}
+      ${detalhe.map(d => d.q.formato === "objetiva" ? revisaoObjetiva(d) : revisaoDiscursiva(d)).join("")}
     </div>
 
     <div class="card plain" style="text-align:center">
@@ -527,15 +677,24 @@ function telaResultado(){
   `;
 
   $("#novo").onclick = () => {
-    S = { nome:S.nome, questoes:sortear(), respostas:{}, atual:0, inicio:Date.now() };
+    S = { nome:S.nome, email:S.email, questoes:sortear(), respostas:{}, atual:0, inicio:Date.now() };
     salvarProgresso(); telaQuiz();
   };
   $("#inicio").onclick = () => telaInicial();
   app.querySelectorAll(".figbox img").forEach(img => img.onclick = () => lightbox(img.src));
+  ligarAutoavaliacao();
   window.scrollTo(0,0);
 }
 
-function revisaoHTML({ i, q, r, ok }){
+function cabecalhoRev(q){
+  return `<div class="tags">
+    ${q.tipo==="Oficial" ? `<span class="tag ok">${esc(q.referencia||("Oficial ENADE "+q.ano))}</span>`
+                         : `<span class="tag warn">${esc(q.tipo)}${q.referencia?" · "+esc(q.referencia):""}</span>`}
+    <span class="tag">${esc(q.dificuldade)}</span>
+  </div>`;
+}
+
+function revisaoObjetiva({ i, q, r, ok }){
   return `
   <details class="rev ${ok?"ok":"bad"}">
     <summary>
@@ -544,11 +703,7 @@ function revisaoHTML({ i, q, r, ok }){
       <span class="small muted resp">${r ? `Sua resposta: ${r}` : "Em branco"} · Gabarito: ${q.gabarito}</span>
     </summary>
     <div class="body">
-      <div class="tags">
-        ${q.tipo==="Oficial" ? `<span class="tag ok">${esc(q.referencia)}</span>`
-                             : `<span class="tag warn">${esc(q.tipo)}${q.referencia?" · "+esc(q.referencia):""}</span>`}
-        <span class="tag">${esc(q.dificuldade)}</span>
-      </div>
+      ${cabecalhoRev(q)}
       <p class="enun">${esc(q.enunciado)}</p>
       ${q.figuraData ? `<div class="figbox"><img src="${q.figuraData}" alt="Figura da questão"
           loading="lazy"><div class="figcap">Toque na imagem para ampliar</div></div>` : ""}
@@ -560,7 +715,7 @@ function revisaoHTML({ i, q, r, ok }){
       </div>
       <div class="note ${ok?"ok":"bad"}">
         <b>${ok ? "Você acertou" : (r ? `Sua resposta: ${r} — incorreta` : "Questão não respondida")}</b>
-        Resposta correta: <b>${q.gabarito}</b>
+        Resposta correta: ${q.gabarito}
       </div>
       ${(!ok && r && q.porqueErradas[r]) ? `<div class="note bad">
         <b>Por que a alternativa ${r} está incorreta</b>${esc(q.porqueErradas[r])}</div>` : ""}
@@ -576,6 +731,62 @@ function revisaoHTML({ i, q, r, ok }){
       <p class="small muted" style="margin:12px 0 0"><b>Competência avaliada:</b> ${esc(q.competencia)}</p>
     </div>
   </details>`;
+}
+
+function revisaoDiscursiva({ i, q, r }){
+  const respondeu = !!r;
+  return `
+  <details class="rev disc">
+    <summary>
+      <span class="ico">✎</span>
+      <span style="flex:1">Questão ${i+1} — ${esc(q.area)} (discursiva)</span>
+      <span class="small muted resp">${respondeu ? "Respondida" : "Em branco"} · autoavaliação</span>
+    </summary>
+    <div class="body">
+      ${cabecalhoRev(q)}
+      <p class="enun">${esc(q.enunciado)}</p>
+      ${q.figuraData ? `<div class="figbox"><img src="${q.figuraData}" alt="Figura da questão"
+          loading="lazy"><div class="figcap">Toque na imagem para ampliar</div></div>` : ""}
+
+      <div class="note ${respondeu ? "" : "warn"}">
+        <b>Sua resposta</b>${respondeu ? esc(r) : "Você não respondeu esta questão."}</div>
+
+      <div class="note disc"><b>Padrão de resposta</b>${esc(q.padraoResposta)}</div>
+
+      <div class="note disc">
+        <b>Critérios de correção — marque os que você atendeu</b>
+        <ul class="criterios" data-qid="${esc(q.id)}">
+          ${q.criterios.map((c,k)=>`<li>
+            <input type="checkbox" id="c_${esc(q.id)}_${k}" class="crit">
+            <label for="c_${esc(q.id)}_${k}" style="font-weight:400; margin:0">${esc(c)}</label>
+          </li>`).join("")}
+        </ul>
+        <div class="autoscore" data-for="${esc(q.id)}">Marque os critérios atendidos para estimar sua nota.</div>
+      </div>
+
+      <p class="small muted" style="margin:12px 0 0"><b>Competência avaliada:</b> ${esc(q.competencia)}</p>
+      <p class="small muted" style="margin:8px 0 0">
+        O INEP não divulga o padrão de resposta das questões discursivas junto com o gabarito.
+        O padrão acima foi elaborado para este aplicativo com base no enunciado e na bibliografia
+        da área — serve como referência de estudo, não como gabarito oficial.
+      </p>
+    </div>
+  </details>`;
+}
+
+function ligarAutoavaliacao(){
+  app.querySelectorAll(".criterios").forEach(ul => {
+    const qid = ul.dataset.qid;
+    const caixas = [...ul.querySelectorAll(".crit")];
+    const alvo = app.querySelector(`.autoscore[data-for="${CSS.escape(qid)}"]`);
+    const atualiza = () => {
+      const m = caixas.filter(c => c.checked).length;
+      if (!m){ alvo.textContent = "Marque os critérios atendidos para estimar sua nota."; return; }
+      const nota = (m / caixas.length * 10).toFixed(1);
+      alvo.textContent = `${m} de ${caixas.length} critérios atendidos — nota estimada ${nota} de 10,0`;
+    };
+    caixas.forEach(c => c.addEventListener("change", atualiza));
+  });
 }
 
 function lightbox(src){
@@ -602,6 +813,7 @@ function lightbox(src){
   };
 })();
 
-$("#sub").textContent = `Banco com ${BANCO.length} questões · atualizado em ${BUILD_INFO.data}`;
+$("#sub").textContent =
+  `${N_QUESTOES} questões por simulado · banco com ${BANCO.length} · atualizado em ${BUILD_INFO.data}`;
 telaInicial();
 </script>

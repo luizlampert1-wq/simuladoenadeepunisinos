@@ -1,0 +1,192 @@
+[
+{
+  "id": "ADP-D1",
+  "tipo": "Adaptada",
+  "ano": 2014,
+  "referencia": "Adaptada de ENADE 2014 — Questão Discursiva 3",
+  "area": "Logística e Cadeia de Suprimentos",
+  "dificuldade": "Difícil",
+  "competencia": "Analisar o trade-off entre nível de serviço logístico e custo de distribuição para dimensionar a política de entregas.",
+  "valor": "10,0 pontos",
+  "enunciado": "Uma distribuidora de medicamentos atende farmácias de pequeno e médio porte em uma região metropolitana. O prazo de entrega é critério decisivo de compra, mas os produtos têm validade longa e giro previsível, o que permite programar parte dos pedidos.\n\nA diretoria levantou, para diferentes níveis de serviço, o custo anual de operar a malha de distribuição e as vendas anuais estimadas:\n\nPedidos entregues em 24 h | 60% | 70% | 80% | 90% | 95% | 100%\nCusto do serviço (R$ mi)  | 4,0 | 4,4 | 5,0 | 6,2 | 7,5 | 11,0\nVendas estimadas (R$ mi)  | 7,0 | 8,2 | 9,0 | 9,6 | 9,9 | 10,1\n\nCom base nesses dados, apresente subsídios para o dimensionamento da política de entregas da distribuidora, indicando o nível de serviço economicamente mais adequado e as ações de curto e de médio/longo prazos que sustentam essa decisão.",
+  "padraoResposta": "A resposta deve calcular a contribuição de cada nível de serviço, pela diferença entre vendas estimadas e custo do serviço:\n\n• 60%: 7,0 − 4,0 = + 3,0\n• 70%: 8,2 − 4,4 = + 3,8\n• 80%: 9,0 − 5,0 = + 4,0  ← máximo\n• 90%: 9,6 − 6,2 = + 3,4\n• 95%: 9,9 − 7,5 = + 2,4\n• 100%: 10,1 − 11,0 = − 0,9\n\nO melhor resultado ocorre em 80% dos pedidos entregues em 24 horas. A partir desse ponto, o custo cresce mais rápido do que a receita adicional: entre 95% e 100% o custo salta de 7,5 para 11,0 enquanto as vendas sobem apenas de 9,9 para 10,1, tornando o nível de 100% economicamente destrutivo.\n\nA argumentação deve sustentar que o nível de serviço é objeto de otimização, não de maximização. Como os medicamentos têm validade longa e giro previsível, é possível segmentar a carteira: reservar a entrega em 24 horas para pedidos urgentes, de alto giro ou de clientes estratégicos, e programar os demais em rotas consolidadas de menor custo.\n\nNo curto prazo, as ações são de priorização e processamento de pedidos, roteirização e definição de janelas de entrega. No médio e longo prazos, envolvem o redimensionamento da malha — número e localização de centros de distribuição —, os níveis de estoque avançado e a acurácia da previsão de demanda.",
+  "criterios": [
+    "Calcula a diferença entre vendas estimadas e custo do serviço para os seis níveis apresentados.",
+    "Identifica o nível de 80% como o de maior resultado econômico.",
+    "Explica que o custo cresce mais que proporcionalmente à receita acima desse nível.",
+    "Relaciona a validade longa e o giro previsível à possibilidade de segmentar pedidos por urgência.",
+    "Distingue ações de curto prazo das de médio e longo prazos no dimensionamento da malha."
+  ]
+},
+{
+  "id": "ADP-D2",
+  "tipo": "Adaptada",
+  "ano": 2014,
+  "referencia": "Adaptada de ENADE 2014 — Questão Discursiva 4",
+  "area": "Sustentabilidade e Meio Ambiente",
+  "dificuldade": "Média",
+  "competencia": "Relacionar as dimensões do desenvolvimento sustentável à gestão de recursos hídricos na indústria.",
+  "valor": "10,0 pontos",
+  "enunciado": "A água como ativo industrial\n\nPor muito tempo tratada como insumo de custo desprezível, a água passou a ser contabilizada como ativo estratégico por indústrias intensivas em seu uso. A escassez hídrica registrada em diversas bacias brasileiras tornou concreto um risco que antes era apenas ambiental: a interrupção da produção.\n\nUma indústria têxtil do interior paulista implantou sistema de reuso que reduziu sua captação de 6,0 para 3,6 metros cúbicos por tonelada de tecido. O investimento foi recuperado em 22 meses, considerando apenas a economia na conta de água e no tratamento de efluentes. Além disso, a empresa deixou de operar sob risco de racionamento em períodos de estiagem.\n\nUma segunda empresa, do setor de bebidas, foi além: passou a investir na recuperação da mata ciliar da bacia que a abastece, em parceria com produtores rurais da região. O custo do programa equivale a 0,4% de seu faturamento anual, mas a vazão e a qualidade da água captada apresentaram melhora mensurável, reduzindo o custo de tratamento na entrada da fábrica.\n\nA partir das ideias centrais apresentadas no texto, redija um texto dissertativo relacionando as bases e os objetivos do desenvolvimento sustentável.",
+  "padraoResposta": "O texto dissertativo deve articular as três dimensões do desenvolvimento sustentável, mostrando sua interdependência a partir dos dois casos apresentados.\n\nBases a serem exploradas:\n\n• Dimensão ambiental — a água é recurso finito e compartilhado; a preservação da mata ciliar sustenta a recarga e a qualidade dos mananciais, caracterizando serviço ecossistêmico de regulação hídrica.\n• Dimensão econômica — os dois casos demonstram retorno mensurável: payback de 22 meses no reuso e redução do custo de tratamento no programa de bacia. O que era tratado como custo ambiental revela-se investimento com retorno, além de mitigar o risco de interrupção da produção.\n• Dimensão social — a água é recurso de uso múltiplo e compartilhado com a população e a agricultura da bacia; reduzir a captação industrial e recuperar mananciais amplia a disponibilidade para os demais usuários, e a parceria com produtores rurais distribui os benefícios.\n\nObjetivos a serem relacionados: atender às necessidades da geração presente sem comprometer a capacidade de as gerações futuras atenderem às suas, o que exige compatibilizar viabilidade econômica, equidade social e conservação ambiental.\n\nA conclusão deve destacar a diferença de alcance entre as duas iniciativas: a primeira atua sobre a ecoeficiência do processo, reduzindo o consumo por unidade produzida; a segunda atua sobre o sistema que sustenta o recurso, ultrapassando os limites da fábrica. Ambas evidenciam que a conservação ambiental deixou de se opor à racionalidade econômica.",
+  "criterios": [
+    "Apresenta estrutura dissertativa, com introdução, desenvolvimento e conclusão.",
+    "Identifica e articula as dimensões ambiental, econômica e social do desenvolvimento sustentável.",
+    "Explica o conceito de serviço ecossistêmico ou de ecoeficiência.",
+    "Utiliza os dados dos dois casos para sustentar a argumentação.",
+    "Distingue a ação sobre o processo produtivo da ação sobre o sistema que sustenta o recurso."
+  ]
+},
+{
+  "id": "ADP-D3",
+  "tipo": "Adaptada",
+  "ano": 2014,
+  "referencia": "Adaptada de ENADE 2014 — Questão Discursiva 5",
+  "area": "Desenvolvimento de Produto e Inovação",
+  "dificuldade": "Média",
+  "competencia": "Analisar estratégias de inovação e os elementos que sustentam o posicionamento de um seguidor no mercado.",
+  "valor": "10,0 pontos",
+  "enunciado": "Uma empresa X lançou a primeira bicicleta elétrica dobrável do mercado nacional, com quadro em liga de magnésio usinada e bateria proprietária de alta densidade. O produto obteve grande repercussão e atingiu um público de alta renda, mas o preço elevado restringiu o volume. Com o tempo, surgiram reclamações recorrentes: a bateria proprietária não podia ser substituída fora da rede autorizada, o mecanismo de dobra apresentava folgas após alguns meses de uso e a assistência técnica era concentrada em duas capitais.\n\nPercebendo a oportunidade, uma empresa Y adotou estratégia claramente defensiva. Manteve o conceito de bicicleta elétrica dobrável, mas substituiu o quadro usinado por perfis de alumínio extrudado soldados, adotou baterias de padrão de mercado, disponíveis em qualquer loja de componentes, e reprojetou a articulação de dobra com um mecanismo de trava simples e de fabricação barata. O produto chegou ao mercado por cerca de 40% do preço da concorrente.\n\nConsiderando o pioneirismo da empresa X, cujo objetivo era criar mercado, e as mudanças introduzidas pela empresa Y, discorra sobre os elementos que embasaram a estratégia inovadora da empresa Y.",
+  "padraoResposta": "A resposta deve identificar os elementos que caracterizam a estratégia defensiva da empresa Y e explicar por que ela se mostrou eficaz.\n\nElementos a serem abordados:\n\n• Aproveitamento do risco assumido pelo pioneiro — a empresa X arcou com os custos de criar a categoria, educar o consumidor e validar o conceito técnico e comercial. A empresa Y entrou em um mercado já demonstrado, sem essa incerteza.\n\n• Aprendizado a partir das falhas do produto pioneiro — as reclamações sobre bateria proprietária, folga no mecanismo de dobra e assistência técnica limitada funcionaram como informação gratuita de mercado, permitindo à empresa Y atacar diretamente os pontos de insatisfação.\n\n• Decisões de projeto orientadas à manufatura — a substituição do quadro usinado em magnésio por perfis de alumínio extrudado e soldados reduz drasticamente o custo e o tempo de fabricação, além de permitir maior volume. Trata-se de aplicação dos princípios do DFMA.\n\n• Adoção de padrões abertos em vez de componentes proprietários — baterias de padrão de mercado reduzem o custo de aquisição, eliminam a dependência da rede autorizada e diminuem o custo total de propriedade percebido pelo cliente.\n\n• Simplificação funcional — o mecanismo de trava mais simples reduz o número de peças e os modos de falha, atacando a causa da folga relatada.\n\n• Reposicionamento de mercado — a redução de preço a 40% do praticado pela pioneira desloca o produto de um nicho de alta renda para o mercado de massa, permitindo ganhos de escala que reforçam a vantagem de custo.\n\nA conclusão deve destacar que a estratégia defensiva não é passiva: exige capacidade de engenharia própria para reprojetar o produto e competência de manufatura para viabilizar o novo patamar de custo.",
+  "criterios": [
+    "Reconhece que a empresa Y evitou o risco e o custo de criar o mercado, assumidos pela pioneira.",
+    "Identifica o aproveitamento das falhas do produto pioneiro como fonte de melhoria.",
+    "Relaciona as mudanças de material e de processo à redução de custo de fabricação.",
+    "Discute a substituição de componente proprietário por padrão de mercado e seu efeito sobre o custo de propriedade.",
+    "Caracteriza a estratégia como defensiva ou de inovação incremental, distinguindo-a da inovação radical."
+  ]
+},
+{
+  "id": "ADP-D4",
+  "tipo": "Adaptada",
+  "ano": 2017,
+  "referencia": "Adaptada de ENADE 2017 — Questão Discursiva 3",
+  "area": "Logística e Cadeia de Suprimentos",
+  "dificuldade": "Difícil",
+  "competencia": "Comparar custos logísticos totais de fontes alternativas de suprimento e dimensionar o lote de compra.",
+  "valor": "10,0 pontos",
+  "enunciado": "Uma indústria de autopeças consome 30 mil toneladas de aço por ano. Esse aço pode ser obtido de duas formas:\n\n• Aço primário, entregue diretamente pela usina, ao custo de R$ 300,00 por tonelada, já posto na fábrica e sem custo de armazenagem.\n\n• Aço proveniente de sucata reciclada, adquirido de recicladoras situadas a 150 km da fábrica, ao custo de R$ 60,00 por tonelada, com transporte por conta da compradora.\n\nPara o aço reciclado, há duas opções de transporte. O frete rodoviário custa R$ 4,00 por tonelada e por quilômetro rodado, com entrega direta na fábrica. O frete ferroviário depende da quantidade: para lotes de até 3 mil toneladas, custa R$ 0,40 por tonelada e por quilômetro rodado; para lotes superiores a 3 mil toneladas, custa R$ 0,25 por tonelada e por quilômetro rodado. No modo ferroviário há, ainda, custo de transbordo de R$ 100,00 por lote. A aquisição de aço reciclado implica custo médio de armazenagem de R$ 18,00 por tonelada, por ano, incidente sobre o estoque médio.\n\nConsiderando essa situação hipotética, faça o que se pede nos itens a seguir.\n\na) Apresente duas vantagens e duas desvantagens da utilização de aço reciclado pela empresa. (valor: 2,0 pontos)\n\nb) Analise a viabilidade econômica da substituição do aço primário pelo reciclado, comparando os custos totais anuais de cada alternativa. (valor: 4,0 pontos)\n\nc) Caso a empresa opte pelo transporte ferroviário, deverá adquirir lotes de 3 mil ou de 6 mil toneladas para minimizar os custos logísticos? Justifique apresentando os cálculos. (valor: 4,0 pontos)",
+  "padraoResposta": "a) Vantagens: custo de aquisição muito inferior (R$ 60,00 contra R$ 300,00 por tonelada); economia expressiva de energia e de emissões em relação à rota primária; redução da extração de minério e da geração de resíduos; atendimento a requisitos ambientais de clientes e certificações. Desvantagens: surgimento de custo de armazenagem, inexistente na rota primária; dependência da regularidade de oferta das recicladoras; possível variabilidade na composição química e na qualidade da sucata, exigindo controle de recebimento; transferência do risco e do custo de transporte para a compradora.\n\nb) Aço primário: 30 000 t × R$ 300,00 = R$ 9.000.000,00 por ano.\n\nAço reciclado — material: 30 000 × R$ 60,00 = R$ 1.800.000,00.\nFrete rodoviário: R$ 4,00 × 150 km = R$ 600,00 por tonelada, o que resultaria em R$ 18.000.000,00 por ano — alternativa inviável.\nFrete ferroviário em lotes acima de 3 000 t: R$ 0,25 × 150 km = R$ 37,50 por tonelada, ou R$ 1.125.000,00 por ano.\n\nCusto total do aço reciclado por via ferroviária, em lotes de 6 000 t: 1.800.000 + 1.125.000 + 500 (transbordo) + 54.000 (armazenagem) ≈ R$ 2.979.500,00 por ano.\n\nA substituição é economicamente viável e reduz o custo anual em cerca de R$ 6 milhões, desde que realizada por via ferroviária.\n\nc) Lotes de 6 000 t (5 lotes por ano):\n• frete: R$ 0,25 × 150 × 30 000 = R$ 1.125.000,00\n• transbordo: 5 × R$ 100,00 = R$ 500,00\n• armazenagem: estoque médio de 3 000 t × R$ 18,00 = R$ 54.000,00\n• subtotal logístico: R$ 1.179.500,00\n\nLotes de 3 000 t (10 lotes por ano):\n• frete: R$ 0,40 × 150 × 30 000 = R$ 1.800.000,00\n• transbordo: 10 × R$ 100,00 = R$ 1.000,00\n• armazenagem: estoque médio de 1 500 t × R$ 18,00 = R$ 27.000,00\n• subtotal logístico: R$ 1.828.000,00\n\nOs lotes de 6 000 toneladas são a opção de menor custo, com economia de aproximadamente R$ 648.500,00 por ano. A redução do frete unitário, de R$ 60,00 para R$ 37,50 por tonelada, supera largamente o aumento de R$ 27.000,00 no custo de armazenagem decorrente do estoque médio maior.",
+  "criterios": [
+    "Item a: apresenta duas vantagens e duas desvantagens pertinentes do uso de aço reciclado.",
+    "Item b: calcula corretamente o custo anual da rota do aço primário (R$ 9 milhões).",
+    "Item b: identifica a inviabilidade do modo rodoviário e conclui pela viabilidade do reciclado por via ferroviária.",
+    "Item c: calcula frete, transbordo e armazenagem para as duas alternativas de lote.",
+    "Item c: conclui pelos lotes de 6 000 t, justificando pelo ganho no frete unitário superar o aumento do custo de estoque."
+  ]
+},
+{
+  "id": "ADP-D5",
+  "tipo": "Adaptada",
+  "ano": 2017,
+  "referencia": "Adaptada de ENADE 2017 — Questão Discursiva 4",
+  "area": "Ergonomia e Segurança do Trabalho",
+  "dificuldade": "Média",
+  "competencia": "Aplicar a análise ergonômica do trabalho a um posto operacional e relacioná-la ao projeto do posto.",
+  "valor": "10,0 pontos",
+  "enunciado": "Em uma rede de supermercados, os operadores de caixa permanecem sentados durante toda a jornada de seis horas, manuseando produtos que chegam por uma esteira à sua esquerda e são transferidos, após a leitura do código de barras, para uma bancada à sua direita. O scanner é fixo, embutido na bancada, o que obriga o operador a girar o tronco a cada item. Cadeiras e bancadas têm altura fixa, iguais para todos os postos. A empresa registrou aumento expressivo de afastamentos por dores em ombros, punhos e região lombar.\n\nO sistema homem-máquina-ambiente pode ser aprimorado para se adaptar às capacidades e limitações do usuário, tanto na fase de projeto de postos de trabalho quanto na inclusão de alterações em sistemas já existentes. Para que as adaptações do trabalho ao ser humano sejam bem-sucedidas, é necessário conhecer profundamente ambos os lados.\n\nCom base nessa situação, faça o que se pede nos itens a seguir.\n\na) Mencione três queixas físicas plausíveis dos operadores e relacione cada uma a um fator do posto de trabalho descrito. (valor: 3,0 pontos)\n\nb) Usando o método de análise ergonômica do trabalho (AET), descreva uma sequência lógica para resolver os problemas ergonômicos identificados. (valor: 4,0 pontos)\n\nc) Mencione três recomendações ergonômicas de projeto que possam ser aplicadas para aprimorar esse posto de trabalho. (valor: 3,0 pontos)",
+  "padraoResposta": "a) Três queixas e seus determinantes no posto descrito:\n\n• Dor lombar e cervical — decorrente da rotação repetida do tronco a cada item, imposta pela disposição da esteira à esquerda e da bancada à direita com scanner fixo, agravada pela cadeira de altura fixa que não se ajusta à estatura de cada operador.\n• Dor e formigamento em punhos e mãos — associados à repetitividade do movimento de preensão e ao posicionamento inadequado do punho para apresentar o produto ao scanner embutido.\n• Dor em ombros e região cervical — decorrente da elevação e abdução repetidas do braço para alcançar produtos na esteira em altura não regulável, sem apoio para os antebraços.\n\nb) Sequência lógica da Análise Ergonômica do Trabalho:\n\n1. Análise da demanda — delimitar o problema a partir dos afastamentos registrados, identificando os setores e postos envolvidos e o que se espera da intervenção.\n2. Análise da tarefa — levantar o trabalho prescrito: jornada, pausas, metas de itens por minuto, dimensões da bancada, da cadeira e da esteira, posicionamento do scanner, confrontando com a NR-17.\n3. Análise da atividade — observar o trabalho real: posturas efetivamente adotadas, frequência das rotações de tronco, modos operatórios usados pelos operadores para compensar as limitações do posto, variação ao longo da jornada.\n4. Diagnóstico — estabelecer o nexo entre as condições observadas e as queixas, hierarquizando os determinantes.\n5. Recomendações e validação — propor transformações no posto e na organização do trabalho, implantá-las e validar os resultados com os próprios trabalhadores, retroalimentando o ciclo.\n\nc) Três recomendações de projeto, entre outras: adotar cadeiras com regulagem de altura, encosto ajustável com apoio lombar e apoio para os pés; substituir o scanner fixo por leitor manual ou reposicionar o conjunto esteira-bancada para eliminar a rotação de tronco, alinhando o fluxo de produtos à frente do operador; dimensionar as alturas de bancada e esteira com base em dados antropométricos da população usuária, prevendo regulagem; incluir apoio para antebraços; instituir pausas e rodízio entre postos como medida organizacional complementar.",
+  "criterios": [
+    "Item a: menciona três queixas físicas plausíveis e as relaciona a fatores concretos do posto descrito.",
+    "Item b: apresenta as etapas da AET em sequência lógica, partindo da demanda.",
+    "Item b: distingue a análise da tarefa (trabalho prescrito) da análise da atividade (trabalho real).",
+    "Item b: inclui diagnóstico, recomendações e validação com os trabalhadores.",
+    "Item c: apresenta três recomendações de projeto pertinentes, que atacam os determinantes identificados."
+  ]
+},
+{
+  "id": "ADP-D6",
+  "tipo": "Adaptada",
+  "ano": 2017,
+  "referencia": "Adaptada de ENADE 2017 — Questão Discursiva 5",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Difícil",
+  "competencia": "Calcular tempo de ciclo e balancear uma linha de montagem respeitando as precedências das tarefas.",
+  "valor": "10,0 pontos",
+  "enunciado": "Uma empresa monta painéis de comando elétrico em um turno de oito horas por dia. Cada painel passa por sete tarefas em sua linha de montagem, conforme a tabela a seguir.\n\nTarefa | Descrição | Duração (min) | Precedência\nA | Preparar a chapa e fixar trilhos | 4 | —\nB | Montar disjuntores e barramentos | 8 | A\nC | Preparar chicote de cabos | 4 | A\nD | Conectar o chicote aos disjuntores | 4 | B\nE | Instalar componentes de sinalização | 4 | C\nF | Realizar ensaio elétrico funcional | 8 | D, E\nG | Identificar, fechar e embalar | 4 | F\n\nConsiderando que a empresa precisa produzir 800 painéis em um mês com 20 dias úteis, faça o que se pede nos itens a seguir.\n\na) Calcule o tempo de ciclo, em minutos por unidade produzida, no referido mês. (valor: 3,0 pontos)\n\nb) Projete os centros de trabalho agrupando tarefas de forma a minimizar o desbalanceamento da linha, indicando o número de estações e a eficiência do balanceamento obtido. (valor: 7,0 pontos)",
+  "padraoResposta": "a) Tempo disponível: 8 horas × 60 = 480 minutos por dia; em 20 dias úteis, 9 600 minutos por mês.\nDemanda: 800 painéis.\nTempo de ciclo = 9 600 ÷ 800 = 12 minutos por unidade.\n\nb) Conteúdo total de trabalho: 4 + 8 + 4 + 4 + 4 + 8 + 4 = 36 minutos.\nNúmero mínimo teórico de estações: 36 ÷ 12 = 3 estações.\n\nAgrupamento que respeita as precedências e o limite de 12 minutos por estação:\n\n• Estação 1: A (4) + B (8) = 12 minutos — A é inicial e B depende de A\n• Estação 2: C (4) + D (4) + E (4) = 12 minutos — C depende de A, D depende de B e E depende de C, todas já concluídas\n• Estação 3: F (8) + G (4) = 12 minutos — F depende de D e E, concluídas na estação anterior; G depende de F\n\nA linha fica com 3 estações, todas carregadas com exatamente 12 minutos.\n\nEficiência do balanceamento = 36 ÷ (3 × 12) = 36 ÷ 36 = 100%, com ociosidade nula. Esse é o balanceamento ótimo, pois atinge o número mínimo teórico de estações sem qualquer tempo ocioso.",
+  "criterios": [
+    "Item a: calcula corretamente o tempo disponível no mês (9 600 minutos).",
+    "Item a: obtém o tempo de ciclo de 12 minutos por unidade.",
+    "Item b: soma corretamente o conteúdo total de trabalho (36 minutos) e calcula o número mínimo teórico de estações.",
+    "Item b: propõe agrupamento que respeita todas as relações de precedência e não excede o tempo de ciclo.",
+    "Item b: calcula a eficiência do balanceamento e conclui sobre a qualidade da solução obtida."
+  ]
+},
+{
+  "id": "ADP-D7",
+  "tipo": "Adaptada",
+  "ano": 2019,
+  "referencia": "Adaptada de ENADE 2019 — Questão Discursiva 3",
+  "area": "Sistemas de Informação e Indústria 4.0",
+  "dificuldade": "Média",
+  "competencia": "Avaliar criticamente vantagens e desvantagens da implantação de sistemas de execução da manufatura.",
+  "valor": "10,0 pontos",
+  "enunciado": "Uma indústria metalmecânica com 280 funcionários produz peças usinadas sob encomenda, em lotes pequenos e com grande variedade de roteiros. O apontamento de produção sempre foi feito em fichas de papel preenchidas pelos operadores e digitadas ao final de cada turno por um auxiliar administrativo. A diretoria decidiu implantar um sistema de execução da manufatura (MES), com coleta automática de dados diretamente das máquinas e apontamento por leitura de código de barras no chão de fábrica.\n\nDez meses após o início da implantação, os indicadores de produtividade não apresentaram melhora. Um supervisor de usinagem resumiu a percepção da equipe: \"Antes a gente sabia onde cada ordem estava; agora ninguém confia no que o sistema mostra, e ainda perdemos tempo apontando\".\n\nConsiderando essa situação, faça o que se pede nos itens a seguir.\n\na) Cite uma possível desvantagem da implantação do MES na referida empresa e justifique sua resposta. (valor: 5,0 pontos)\n\nb) Cite uma vantagem da correta implantação do MES na referida empresa e justifique sua resposta. (valor: 5,0 pontos)",
+  "padraoResposta": "a) Desvantagens possíveis, com a devida justificativa:\n\n• Resistência dos usuários e falha na gestão da mudança — a fala do supervisor evidencia perda de confiança no sistema. Se os operadores não compreendem a finalidade do apontamento nem recebem retorno da informação gerada, tendem a apontar de forma incorreta ou tardia, comprometendo toda a base de dados.\n• Acréscimo de trabalho no chão de fábrica — o apontamento por leitura, se mal projetado, insere uma tarefa adicional no ciclo do operador. Em ambiente de lotes pequenos e roteiros variados, o número de apontamentos por turno é elevado, e o tempo consumido pode anular o ganho pretendido.\n• Custo e prazo elevados de implantação — envolve integração com máquinas de gerações distintas, infraestrutura de rede no chão de fábrica e capacitação, com retorno que só se materializa no médio prazo.\n• Dados não confiáveis no período de transição — a convivência entre fichas de papel e sistema gera divergências e alimenta a desconfiança relatada.\n\nb) Vantagens possíveis, com a devida justificativa:\n\n• Rastreabilidade em tempo real das ordens de produção — em um ambiente de lotes pequenos e alta variedade de roteiros, saber a posição exata de cada ordem é justamente o que o controle em papel não consegue entregar com a tempestividade necessária.\n• Base confiável para indicadores de desempenho — a coleta automática permite apurar OEE, tempos de setup e paradas por causa, viabilizando ações de melhoria fundamentadas em dados, e não em percepção.\n• Redução do trabalho administrativo e do atraso da informação — elimina a digitação ao final do turno e a defasagem de um turno inteiro entre o evento e o registro.\n• Apoio à promessa de prazo ao cliente — com posição real das ordens e capacidade apurada, a empresa melhora a confiabilidade dos prazos prometidos, critério competitivo central na produção sob encomenda.\n\nA resposta deve, em ambos os itens, articular a justificativa ao caso concreto descrito, e não apenas citar o item isoladamente.",
+  "criterios": [
+    "Item a: cita uma desvantagem pertinente da implantação de um MES.",
+    "Item a: justifica a desvantagem relacionando-a à situação concreta descrita no enunciado.",
+    "Item b: cita uma vantagem pertinente da correta implantação do MES.",
+    "Item b: justifica a vantagem relacionando-a à produção sob encomenda, em lotes pequenos e com roteiros variados.",
+    "Demonstra compreensão de que o insucesso relatado decorre da condução da implantação, e não de defeito inerente à ferramenta."
+  ]
+},
+{
+  "id": "ADP-D8",
+  "tipo": "Adaptada",
+  "ano": 2019,
+  "referencia": "Adaptada de ENADE 2019 — Questão Discursiva 4",
+  "area": "Sustentabilidade e Meio Ambiente",
+  "dificuldade": "Média",
+  "competencia": "Aplicar o princípio da responsabilidade compartilhada da PNRS a resíduos eletroeletrônicos e avaliar seus impactos.",
+  "valor": "10,0 pontos",
+  "enunciado": "Um consórcio de fabricantes de eletroeletrônicos implantou pontos de entrega voluntária em lojas de varejo e em centros de serviço de uma região metropolitana, destinados a receber celulares, carregadores, notebooks e pequenos eletrodomésticos fora de uso. Os equipamentos recolhidos são encaminhados a operadores licenciados, que realizam a triagem, o reaproveitamento de componentes ainda funcionais e a recuperação de metais como cobre, ouro e prata presentes nas placas de circuito impresso.\n\nO programa integra o sistema de logística reversa previsto na Política Nacional de Resíduos Sólidos (Lei n. 12.305/2010), que estabelece a responsabilidade compartilhada pelo ciclo de vida dos produtos.\n\nConsiderando esse contexto, faça o que se pede nos itens a seguir.\n\na) Com base no princípio da responsabilidade compartilhada, cite três atores da cadeia produtiva dos equipamentos eletroeletrônicos e descreva suas responsabilidades ambientais nos processos que envolvem esses produtos. (valor: 5,0 pontos)\n\nb) Descreva três impactos ambientais causados pela disposição inadequada de resíduos eletroeletrônicos. (valor: 5,0 pontos)",
+  "padraoResposta": "a) Três atores e suas responsabilidades:\n\n• Fabricantes e importadores — projetar produtos que facilitem a desmontagem e a recuperação de materiais, reduzir o uso de substâncias perigosas, estruturar e custear o sistema de logística reversa e assegurar a destinação ambientalmente adequada dos equipamentos retornados.\n• Distribuidores e comerciantes — disponibilizar e manter os pontos de entrega voluntária, receber e armazenar temporariamente os equipamentos devolvidos, encaminhá-los aos fabricantes ou operadores licenciados e informar o consumidor sobre a existência e a localização dos pontos.\n• Consumidores — não descartar os equipamentos no lixo comum, devolvendo-os nos pontos de entrega previstos, e realizar a remoção de dados pessoais antes da devolução.\n• Titulares dos serviços públicos de limpeza urbana — articular a coleta seletiva com o sistema de logística reversa, evitando que esses resíduos sigam para aterros, e apoiar a inclusão de cooperativas de catadores.\n\nb) Três impactos ambientais do descarte inadequado:\n\n• Contaminação do solo e das águas subterrâneas por metais pesados — chumbo das soldas, cádmio de baterias e mercúrio de telas, que são persistentes e bioacumulativos, alcançando a cadeia alimentar.\n• Emissão de poluentes atmosféricos altamente tóxicos, como dioxinas e furanos, quando placas e cabos com revestimento plástico são queimados a céu aberto para recuperação artesanal de metais.\n• Desperdício de recursos naturais e energia — a concentração de ouro, prata e cobre nas placas de circuito é superior à de muitos minérios; descartá-las obriga a nova extração mineral, com todo o impacto associado.\n• Risco à saúde de catadores e da população do entorno, expostos sem proteção a esses agentes químicos.\n• Ocupação de volume em aterros por materiais de degradação muito lenta.",
+  "criterios": [
+    "Item a: identifica três atores da cadeia produtiva dos eletroeletrônicos.",
+    "Item a: descreve responsabilidades ambientais específicas e corretas para cada ator, e não genéricas.",
+    "Item a: demonstra compreensão do princípio da responsabilidade compartilhada previsto na PNRS.",
+    "Item b: descreve três impactos ambientais distintos e pertinentes aos resíduos eletroeletrônicos.",
+    "Item b: os impactos descritos decorrem efetivamente da disposição inadequada, e não de outras etapas do ciclo de vida."
+  ]
+},
+{
+  "id": "ADP-D9",
+  "tipo": "Adaptada",
+  "ano": 2019,
+  "referencia": "Adaptada de ENADE 2019 — Questão Discursiva 5",
+  "area": "Engenharia Econômica",
+  "dificuldade": "Média",
+  "competencia": "Decompor o custo total em parcelas fixa e variável e determinar o ponto de equilíbrio.",
+  "valor": "10,0 pontos",
+  "enunciado": "O ponto de equilíbrio de uma empresa corresponde ao volume de vendas capaz de cobrir os custos fixos dos recursos comprometidos em determinado período. A partir desse volume, cada unidade adicional vendida passa a gerar lucro.\n\nConsidere a seguinte situação. O custo total mensal de uma empresa para a produção de determinada quantidade do produto Y é de R$ 1.400.000,00. Esse custo total é composto por um custo fixo de R$ 500.000,00 e por um custo variável de R$ 60,00 por unidade produzida. O preço de venda do produto é de R$ 100,00 por unidade.\n\nCom base nessa situação, faça o que se pede nos itens a seguir.\n\na) Calcule a quantidade do produto Y produzida pela empresa por mês. (valor: 4,0 pontos)\n\nb) Calcule a quantidade do produto Y que a empresa deve produzir e vender por mês para atingir seu ponto de equilíbrio. (valor: 4,0 pontos)\n\nc) Calcule o lucro mensal da empresa no nível de produção atual. (valor: 2,0 pontos)",
+  "padraoResposta": "a) O custo total é a soma do custo fixo com o custo variável total:\n\nCT = CF + CVu × q\n1 400 000 = 500 000 + 60q\n60q = 900 000\nq = 15 000 unidades por mês\n\nb) No ponto de equilíbrio, a receita total iguala o custo total:\n\n100q = 500 000 + 60q\n40q = 500 000\nq = 12 500 unidades por mês\n\nAlternativamente, pela margem de contribuição unitária: MC = 100 − 60 = R$ 40,00 por unidade, e o ponto de equilíbrio é 500 000 ÷ 40 = 12 500 unidades.\n\nc) O lucro corresponde às unidades vendidas acima do ponto de equilíbrio, multiplicadas pela margem de contribuição unitária:\n\nLucro = (15 000 − 12 500) × R$ 40,00 = 2 500 × 40 = R$ 100.000,00 por mês\n\nVerificação pela demonstração direta: receita = 15 000 × 100 = R$ 1.500.000,00; custo total = R$ 1.400.000,00; lucro = R$ 100.000,00.",
+  "criterios": [
+    "Item a: monta corretamente a equação do custo total, separando parcela fixa e variável.",
+    "Item a: obtém a quantidade produzida de 15 000 unidades por mês.",
+    "Item b: iguala receita total e custo total, ou utiliza a margem de contribuição unitária.",
+    "Item b: obtém o ponto de equilíbrio de 12 500 unidades por mês.",
+    "Item c: obtém lucro mensal de R$ 100.000,00, por qualquer das duas vias de cálculo."
+  ]
+},
+{
+  "id": "ADP-D10",
+  "tipo": "Adaptada",
+  "ano": 2023,
+  "referencia": "Adaptada de ENADE 2023 — Questão Discursiva 2",
+  "area": "Pesquisa Operacional",
+  "dificuldade": "Difícil",
+  "competencia": "Modelar e resolver um problema de programação linear de mix de produtos com múltiplas restrições.",
+  "valor": "10,0 pontos",
+  "enunciado": "Uma empresa fabrica dois produtos complementares, M e N, com contribuição marginal de R$ 40,00 por centena do item M e R$ 50,00 por centena do item N. Ambos consomem um mesmo recurso produtivo, cuja disponibilidade total é de 80 horas. Cada centena do produto M exige 10 horas desse recurso, enquanto cada centena do produto N exige 20 horas.\n\nUm estudo de mercado indicou que a empresa não deve colocar à venda uma soma de produtos superior a 600 unidades, uma vez que a demanda pelos itens é relacionada. Adicionalmente, por decisão comercial, o volume produzido do item N não deve ultrapassar o volume produzido do item M em mais de 200 unidades.\n\nConsiderando o caso apresentado, faça o que se pede nos itens a seguir.\n\na) Utilizando programação linear, apresente a modelagem matemática do problema visando à maximização do lucro. Considere que as variáveis xM e xN representam, respectivamente, o volume produzido, em centenas de itens, dos produtos M e N. (valor: 5,0 pontos)\n\nb) Determine os valores de xM e xN que maximizam o lucro da empresa e indique o valor desse lucro, apresentando o desenvolvimento da solução. (valor: 5,0 pontos)",
+  "padraoResposta": "a) Modelagem, com as variáveis expressas em centenas de itens:\n\nFunção-objetivo:\nMaximizar Z = 40·xM + 50·xN\n\nSujeito a:\n• Recurso produtivo: 10·xM + 20·xN ≤ 80\n• Demanda total (600 unidades = 6 centenas): xM + xN ≤ 6\n• Restrição comercial (200 unidades = 2 centenas): xN − xM ≤ 2\n• Não negatividade: xM ≥ 0 e xN ≥ 0\n\nb) Avaliando os vértices da região viável:\n\n• (0; 0) → Z = 0\n• (6; 0) → limitado pela demanda; recurso: 60 ≤ 80 ✓ → Z = 240\n• (4; 2) → interseção de xM + xN = 6 com 10xM + 20xN = 80 → Z = 40(4) + 50(2) = 160 + 100 = 260  ← máximo\n• (1,33; 3,33) → interseção de 10xM + 20xN = 80 com xN − xM = 2 → Z ≈ 53,3 + 166,7 = 220\n• (0; 2) → limitado pela restrição comercial → Z = 100\n\nO ótimo ocorre em xM = 4 e xN = 2 centenas, ou seja, 400 unidades do produto M e 200 unidades do produto N, com lucro máximo de R$ 260,00.\n\nVerificação das restrições no ponto ótimo:\n• Recurso: 10(4) + 20(2) = 80 horas — restrição ativa, recurso totalmente utilizado\n• Demanda: 4 + 2 = 6 centenas — restrição ativa\n• Comercial: 2 − 4 = − 2 ≤ 2 — restrição folgada",
+  "criterios": [
+    "Item a: escreve corretamente a função-objetivo de maximização Z = 40xM + 50xN.",
+    "Item a: formula a restrição do recurso produtivo (10xM + 20xN ≤ 80).",
+    "Item a: converte corretamente as 600 e 200 unidades para centenas nas restrições.",
+    "Item b: avalia os vértices da região viável ou resolve o sistema correspondente.",
+    "Item b: obtém xM = 4 e xN = 2 centenas e lucro máximo de R$ 260,00."
+  ]
+}
+]
