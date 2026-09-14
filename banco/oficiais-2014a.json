@@ -1,0 +1,307 @@
+[
+ {
+  "id": "2014-Q09",
+  "tipo": "Oficial",
+  "ano": 2014,
+  "referencia": "ENADE 2014 — Questão 9 (Componente Específico)",
+  "area": "Estatística",
+  "dificuldade": "Média",
+  "competencia": "Interpretar parâmetros de uma distribuição normal (média, variância, desvio-padrão) e aplicá-los a grandezas físicas derivadas.",
+  "enunciado": "Suponha que a distância percorrida por um ciclista que pedala regularmente pode ser inferida pela variável aleatória x, com densidade de probabilidade normal, com μ = 25 km e σ² = 25 km². A duração média do seu treino é de 1h15min.\n\nCom base nesses dados, avalie as afirmações abaixo.\n\nI. A velocidade média de cada treino é de 21,7 km/h.\nII. A distância média percorrida em cada treino é de 25 km.\nIII. A área média percorrida em cada treino é de 25 km².\nIV. A distância percorrida de cada treino, em um desvio-padrão, está entre 20 km e 30 km.\nV. A velocidade média de cada treino, em um desvio-padrão, está entre 16 km/h e 24 km/h.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+   "A": "I.",
+   "B": "I e IV.",
+   "C": "II e III.",
+   "D": "III e V.",
+   "E": "II, IV e V."
+  },
+  "gabarito": "E",
+  "justificativa": "Como μ = 25 km, a distância média é 25 km (II correta). Sendo σ² = 25 km², o desvio-padrão é σ = 5 km, logo o intervalo de um desvio-padrão é 25 ± 5 = [20 km; 30 km] (IV correta). Com duração de 1h15min = 1,25 h, as velocidades correspondentes são 20/1,25 = 16 km/h e 30/1,25 = 24 km/h (V correta).",
+  "porqueErradas": {
+   "A": "A afirmação I é falsa: a velocidade média é 25 km ÷ 1,25 h = 20 km/h, e não 21,7 km/h.",
+   "B": "Inclui a afirmação I, que é falsa (a velocidade média é 20 km/h), e deixa de fora II e V, que são corretas.",
+   "C": "Inclui a afirmação III, que é falsa: σ² = 25 km² é a variância da distância, não uma 'área percorrida' — trata-se de erro conceitual de interpretação da unidade.",
+   "D": "Inclui a afirmação III, que confunde variância com área, e omite II e IV, que são corretas."
+  }
+ },
+ {
+  "id": "2014-Q10",
+  "tipo": "Oficial",
+  "ano": 2014,
+  "referencia": "ENADE 2014 — Questão 10 (Componente Específico)",
+  "area": "Eletricidade e Eletrotécnica",
+  "dificuldade": "Média",
+  "competencia": "Analisar o comportamento de cargas resistivas, capacitivas e indutivas em regime permanente de corrente contínua.",
+  "figura": "2014_q10.png",
+  "enunciado": "Denominam-se cargas os elementos de um circuito elétrico que se opõem à passagem de corrente elétrica. Essencialmente, distinguem-se três tipos de cargas: resistivas, capacitivas e indutivas. As cargas resistivas dissipam energia, enquanto as puramente capacitivas ou puramente indutivas são consideradas armazenadoras de energia.\n\nSe o circuito mostrado acima é alimentado por uma fonte de tensão contínua de 12 V e as lâmpadas são de 12 V/6 W, observa-se que, em regime permanente,",
+  "alternativas": {
+   "A": "as três lâmpadas, L1, L2 e L3, ficarão apagadas, pois lâmpadas incandescentes só operam com corrente alternada.",
+   "B": "somente L2 e L3 ficarão acesas, pois a corrente que passa em L2 é a soma das correntes em L3 e no indutor.",
+   "C": "as três lâmpadas, L1, L2 e L3, ficarão acesas, pois estão ligadas à fonte de alimentação.",
+   "D": "somente L2 ficará acesa, pois está em série com a fonte de alimentação.",
+   "E": "somente L1 ficará acesa, pois está em série com o capacitor."
+  },
+  "gabarito": "D",
+  "justificativa": "Em regime permanente com corrente contínua, o capacitor comporta-se como circuito aberto e o indutor como curto-circuito. O ramo do capacitor de 1 F bloqueia a corrente, de modo que L1 (em série com ele) permanece apagada. O indutor de 1 H, em paralelo com L3, funciona como um curto e desvia toda a corrente, anulando a tensão sobre L3, que também fica apagada. Resta o caminho fonte → L2 → indutor, em série com a fonte, mantendo apenas L2 acesa.",
+  "porqueErradas": {
+   "A": "Lâmpadas incandescentes funcionam normalmente em corrente contínua — o aquecimento do filamento independe do sentido da corrente.",
+   "B": "L3 está curto-circuitada pelo indutor, que em regime permanente CC apresenta tensão nula em seus terminais; logo L3 não acende.",
+   "C": "Estar ligada à fonte não basta: o capacitor interrompe o ramo de L1 e o indutor curto-circuita L3.",
+   "E": "É exatamente o oposto: por estar em série com o capacitor, que bloqueia a corrente contínua, L1 é a lâmpada que permanece apagada."
+  }
+ },
+ {
+  "id": "2014-Q11",
+  "tipo": "Oficial",
+  "ano": 2014,
+  "referencia": "ENADE 2014 — Questão 11 (Componente Específico)",
+  "area": "Sustentabilidade e Meio Ambiente",
+  "dificuldade": "Média",
+  "competencia": "Converter unidades de concentração e classificar a qualidade de um corpo hídrico a partir da DBO.",
+  "figura": "2014_q11.png",
+  "enunciado": "A DBO (Demanda Bioquímica de Oxigênio) de uma amostra de água é a quantidade de oxigênio necessária para oxidar a matéria orgânica por decomposição aeróbia. Quando a amostra é guardada por 5 dias em uma temperatura de incubação de 20 °C, ela é referida como DBO₅,₂₀, que é normalmente utilizada como um dos parâmetros para verificação da qualidade da água.\n\nO quadro a seguir classifica um curso d'água em função da sua DBO₅,₂₀:\n• Muito limpo: até 1 mg/L\n• Limpo: maior que 1 até 2 mg/L\n• Razoável: maior que 2 até 4 mg/L\n• Ruim: maior que 4 até 6 mg/L\n• Péssimo: maior que 6 mg/L\n\nA figura mostra um trecho de rio com 5 seções (X, Y, Z, W e T) e a tabela apresenta os resultados, em diferentes unidades, das amostras colhidas.\n\nConsiderando que pode ocorrer autodepuração no rio, em qual seção dele a água não pode ser classificada, no mínimo, como \"razoável\"?",
+  "alternativas": {
+   "A": "X.",
+   "B": "Y.",
+   "C": "Z.",
+   "D": "W.",
+   "E": "T."
+  },
+  "gabarito": "E",
+  "justificativa": "É preciso converter todos os valores para mg/L, lembrando que 1 m³ = 1 000 L. Assim: X = 0,4 g/m³ = 400 mg/m³ = 0,4 mg/L (muito limpo); Y = 3 850 mg/m³ = 3,85 mg/L (razoável); Z = 2 500 mg/m³ = 2,5 mg/L (razoável); W = 3 000 mg/m³ = 3,0 mg/L (razoável); T = 0,01 kg/m³ = 10 000 mg/m³ = 10 mg/L (péssimo). Somente a seção T ultrapassa 6 mg/L e, portanto, não atinge sequer a classificação \"razoável\".",
+  "porqueErradas": {
+   "A": "X apresenta 0,4 mg/L, a melhor qualidade de todas as seções — classificada como \"muito limpo\".",
+   "B": "Y apresenta 3,85 mg/L, dentro da faixa de 2 a 4 mg/L, ou seja, \"razoável\".",
+   "C": "Z apresenta 2,5 mg/L, também na faixa \"razoável\".",
+   "D": "W apresenta 3,0 mg/L, igualmente na faixa \"razoável\"."
+  }
+ },
+ {
+  "id": "2014-Q12",
+  "tipo": "Oficial",
+  "ano": 2014,
+  "referencia": "ENADE 2014 — Questão 12 (Componente Específico)",
+  "area": "Ciências Térmicas",
+  "dificuldade": "Média",
+  "competencia": "Aplicar a lei de Fourier de condução de calor na seleção de materiais de construção.",
+  "enunciado": "Um ambiente termicamente confortável é uma das condições que devem ser consideradas em projetos de edificações. A fim de projetar um ambiente interno com temperatura de 20 °C para uma temperatura externa média de 35 °C, um engenheiro considerou, no dimensionamento, um fluxo de calor através de uma parede externa de 105 W/m², sendo a espessura da parede igual a 20 cm.\n\nA tabela a seguir apresenta os valores da condutividade térmica para alguns materiais de construção:\n• Concreto: 1,40 W·m⁻¹·K⁻¹\n• Pedra natural: 1,00 W·m⁻¹·K⁻¹\n• Placa de aglomerado de fibras de madeira: 0,20 W·m⁻¹·K⁻¹\n• Placa de madeira prensada: 0,10 W·m⁻¹·K⁻¹\n• Placa com espuma rígida de poliuretano: 0,03 W·m⁻¹·K⁻¹\n\n(ABNT NBR 15220-1: Desempenho térmico de edificações. Rio de Janeiro, 2005, adaptado.)\n\nA fim de se obter a temperatura interna desejada, qual deve ser o material selecionado, entre os apresentados na tabela acima, para composição da parede externa?",
+  "alternativas": {
+   "A": "Concreto.",
+   "B": "Pedra natural.",
+   "C": "Placa de madeira prensada.",
+   "D": "Placa com espuma rígida de poliuretano.",
+   "E": "Placa de aglomerado de fibras de madeira."
+  },
+  "gabarito": "A",
+  "justificativa": "Pela lei de Fourier em regime permanente, q = k · ΔT / L, em que q é o fluxo de calor, k a condutividade térmica, ΔT a diferença de temperatura e L a espessura. Isolando k: k = q · L / ΔT = 105 × 0,20 / (35 − 20) = 21 / 15 = 1,40 W·m⁻¹·K⁻¹. O material com exatamente essa condutividade é o concreto.",
+  "porqueErradas": {
+   "B": "A pedra natural (k = 1,00) produziria um fluxo de calor de apenas 75 W/m², abaixo do valor de projeto de 105 W/m².",
+   "C": "A placa de madeira prensada (k = 0,10) resultaria em fluxo de 7,5 W/m², muito distante do valor especificado.",
+   "D": "A espuma rígida de poliuretano (k = 0,03) resultaria em fluxo de apenas 2,25 W/m² — é o melhor isolante da lista, mas não atende à condição de projeto estabelecida.",
+   "E": "A placa de aglomerado de fibras de madeira (k = 0,20) resultaria em fluxo de 15 W/m², muito inferior ao especificado."
+  }
+ },
+ {
+  "id": "2014-Q13",
+  "tipo": "Oficial",
+  "ano": 2014,
+  "referencia": "ENADE 2014 — Questão 13 (Componente Específico)",
+  "area": "Materiais e Processos de Fabricação",
+  "dificuldade": "Média",
+  "competencia": "Relacionar propriedades mecânicas de materiais compósitos (resistência específica) a decisões de projeto.",
+  "enunciado": "Engenheiros de uma empresa holandesa encontraram uma maneira de fazer com que os elevadores terrestres subam até o topo de edifícios com 1 000 metros de altura, pois os cabos de aço usados nos elevadores atuais só conseguem alçá-los a alturas de, aproximadamente, 500 metros. Isso será possível com a criação de um novo cabo superleve e superforte, ou seja, uma espécie de cinta, tecida com fibras de carbono. Em vez dos fios de aço entrelaçados usados nos cabos de aço comuns, a cinta é formada por quatro fitas de fibra de carbono seladas em plástico transparente. O plástico é necessário para proteger do atrito as fibras de carbono e aumentar a vida útil do conjunto. Cada fita tem 4 centímetros de largura por 4 milímetros de espessura. Elas são parecidas com uma régua escolar flexível. Esse novo material supera ligeiramente a resistência à tensão do aço, mas pesa sete vezes menos que o atualmente usado. Assim, a força gasta para sustentar o peso do próprio cabo passa a ser aplicada para sustentar apenas o elevador, e o consumo de energia dos elevadores também é cerca de 15% menor do que os anteriores.\n\n(Disponível em: www.inovacaotecnologica.com.br. Acesso em: 27 jul. 2014, adaptado.)\n\nTendo em vista a situação descrita, avalie as afirmações a seguir.\n\nI. O cabo de fibra de carbono suporta elevadas cargas devido à sua elevada resistência à tração.\nII. A fibra de carbono torna o cabo bem mais flexível, o que, aliado a sua resistência à tração, proporciona a esse material uma vantagem em relação aos cabos de aço convencionais.\nIII. A relação resistência/peso do cabo de fibra de carbono assegura vantagem desse material em relação aos cabos de aço, pois a economia do peso próprio do cabo pode ser usada para sustentar o elevador e reduzir o consumo de energia.\nIV. Apesar da resistência à tensão ser apenas ligeiramente maior no cabo de fibra de carbono, a vantagem principal de seu uso é a alta relação resistência/peso.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+   "A": "I.",
+   "B": "II.",
+   "C": "I e III.",
+   "D": "II e IV.",
+   "E": "III e IV."
+  },
+  "gabarito": "E",
+  "justificativa": "O texto é explícito ao afirmar que o novo material \"supera ligeiramente a resistência à tensão do aço, mas pesa sete vezes menos\". A vantagem determinante, portanto, não é a resistência absoluta, mas a resistência específica (relação resistência/peso): ao reduzir o peso próprio do cabo, a capacidade de carga fica disponível para sustentar o elevador e o consumo de energia cai cerca de 15%. É exatamente o que afirmam III e IV.",
+  "porqueErradas": {
+   "A": "A afirmação I atribui o desempenho à \"elevada resistência à tração\", mas o texto informa que essa resistência é apenas ligeiramente superior à do aço — não é o fator determinante.",
+   "B": "A flexibilidade é apenas uma característica descritiva (comparação com uma régua escolar); o texto não a apresenta como a vantagem competitiva do material.",
+   "C": "Embora III esteja correta, I é falsa pelo motivo já exposto: a resistência à tração é só ligeiramente maior que a do aço.",
+   "D": "Embora IV esteja correta, II é falsa: a vantagem relatada no texto é a relação resistência/peso, e não a maior flexibilidade."
+  }
+ },
+ {
+  "id": "2014-Q15",
+  "tipo": "Oficial",
+  "ano": 2014,
+  "referencia": "ENADE 2014 — Questão 15 (Componente Específico)",
+  "area": "Algoritmos e Programação",
+  "dificuldade": "Média",
+  "competencia": "Interpretar algoritmos de ordenação expressos em pseudocódigo.",
+  "figura": "2014_q15.png",
+  "enunciado": "Observe o programa classificador (\"sort\"), em pseudocódigo, apresentado na figura acima.\n\nEsse programa classifica, em ordem",
+  "alternativas": {
+   "A": "decrescente, notas de alunos e nomes de alunos de mesma nota.",
+   "B": "alfabética crescente, nomes e notas de alunos de mesmo nome.",
+   "C": "decrescente, notas de alunos.",
+   "D": "alfabética crescente, nomes de alunos.",
+   "E": "crescente, notas de alunos."
+  },
+  "gabarito": "C",
+  "justificativa": "O laço duplo compara nota[i] com nota[j] e, sempre que nota[i] <= nota[j], efetua a troca dos valores — levando os maiores valores para as primeiras posições. O vetor nome[] é apenas arrastado junto para manter a correspondência entre aluno e nota. O critério de ordenação é, portanto, exclusivamente a nota, em ordem decrescente.",
+  "porqueErradas": {
+   "A": "O algoritmo não aplica nenhum critério de desempate por nome: quando duas notas são iguais, a ordem relativa dos nomes depende apenas da posição inicial.",
+   "B": "Nenhuma comparação é feita entre cadeias de caracteres (nomes); o teste incide somente sobre o vetor numérico nota[].",
+   "D": "O vetor nome[] é apenas reposicionado em conjunto com as notas — ele nunca é usado como chave de comparação.",
+   "E": "A condição de troca nota[i] <= nota[j] coloca os maiores valores à frente, produzindo ordem decrescente, e não crescente."
+  }
+ },
+ {
+  "id": "2014-Q16",
+  "tipo": "Oficial",
+  "ano": 2014,
+  "referencia": "ENADE 2014 — Questão 16 (Componente Específico)",
+  "area": "Engenharia Econômica",
+  "dificuldade": "Média",
+  "competencia": "Avaliar payback simples de projeto de substituição energética e reconhecer características de fontes renováveis.",
+  "enunciado": "Uma indústria de blocos cerâmicos pretende utilizar queima de biomassa resultante de resíduos de madeira, para gerar energia térmica para seus fornos, que, atualmente, utilizam gás natural. Tal iniciativa poderá reduzir o consumo de combustível, porém será necessário um investimento no valor de 20% do consumo/ano atual de combustível, visando à adaptação dos fornos. Além disso, o transporte anual dos resíduos da fonte geradora até a indústria irá custar 5% do consumo/ano atual de combustível. Estima-se que essa alteração promova uma economia, no consumo/ano atual de combustível, de 10% ao ano.\n\nA partir da situação descrita, avalie as afirmações a seguir.\n\nI. A partir do quinto ano, a indústria começaria a ter benefícios econômicos.\nII. Na proposta apresentada, a indústria substituiria o combustível atual por uma fonte de energia com menor produção e emissão de partículas devido ao processo de combustão (particulados).\nIII. Na proposta apresentada, a indústria substituiria o combustível atual por uma fonte renovável de energia.\nIV. O valor do investimento supera os benefícios promovidos com a economia de combustível durante os 5 primeiros anos.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+   "A": "II.",
+   "B": "IV.",
+   "C": "I e II.",
+   "D": "I e III.",
+   "E": "III e IV."
+  },
+  "gabarito": "D",
+  "justificativa": "Tomando o consumo anual atual como 100%, o benefício líquido anual é a economia de 10% menos o custo de transporte de 5%, ou seja, 5% ao ano. Com investimento de 20%, o payback é 20 ÷ 5 = 4 anos; portanto, a partir do 5.º ano o projeto passa a gerar benefício econômico (I correta). A biomassa de resíduos de madeira é fonte renovável (III correta).",
+  "porqueErradas": {
+   "A": "A afirmação II é falsa: a queima de biomassa sólida emite significativamente mais material particulado que o gás natural, que é o combustível de queima mais limpa entre os fósseis.",
+   "B": "A afirmação IV é falsa: ao final de 5 anos o benefício líquido acumulado é 5 × 5% = 25%, que já supera o investimento de 20%.",
+   "C": "Embora I esteja correta, II é falsa quanto à emissão de particulados da biomassa.",
+   "E": "Embora III esteja correta, IV é falsa: em 5 anos o acumulado (25%) ultrapassa o investimento (20%)."
+  }
+ },
+ {
+  "id": "2014-Q17",
+  "tipo": "Oficial",
+  "ano": 2014,
+  "referencia": "ENADE 2014 — Questão 17 (Componente Específico)",
+  "area": "Estatística",
+  "dificuldade": "Média",
+  "competencia": "Reconhecer distorções na representação gráfica de dados e suas implicações éticas.",
+  "figura": "2014_q17.png",
+  "enunciado": "Existem controvérsias acerca da magnitude dos fatores que influenciam o voto do eleitor. Embora, atualmente, as pesquisas eleitorais possam ser divulgadas próximo ao dia da eleição, durante muito tempo essa divulgação não era permitida sob a alegação de que as mesmas influenciavam a decisão de um tipo particular de eleitor, o qual desejava \"votar no candidato ganhador\" e tendia a votar nos candidatos cuja suposta probabilidade de vitória é maior, independentemente do conteúdo da proposta política apresentada.\n\nOs Gráficos I e II acima apresentam os mesmos resultados de uma pesquisa eleitoral, com escalas verticais diferentes.\n\nConsiderando que o Candidato B esteja interessado no voto do tipo de eleitor mencionado no texto e esteja examinando os dois gráficos acima para apresentar, em seu material de propaganda, os resultados de uma pesquisa eleitoral, avalie as afirmações que se seguem.\n\nI. Os dois gráficos apresentam resultados diferentes.\nII. Em relação aos objetivos do Candidato B, o gráfico I é mais adequado que o II.\nIII. A decisão a ser tomada apresenta implicações de natureza ética, além das de natureza técnica.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+   "A": "I, apenas.",
+   "B": "III, apenas.",
+   "C": "I e II, apenas.",
+   "D": "II e III, apenas.",
+   "E": "I, II e III."
+  },
+  "gabarito": "B",
+  "justificativa": "Os dois gráficos representam exatamente os mesmos dados (45% para A e 55% para B); apenas a escala do eixo vertical muda. Como o Gráfico II tem eixo truncado (inicia em 40%), ele amplia visualmente a vantagem do Candidato B — sendo, portanto, o mais conveniente aos objetivos dele, e não o Gráfico I. A escolha deliberada de uma escala que distorce a percepção do eleitor é uma decisão com implicações éticas, além das técnicas: somente a afirmação III é correta.",
+  "porqueErradas": {
+   "A": "A afirmação I é falsa: os resultados numéricos são idênticos nos dois gráficos; o que difere é apenas a escala do eixo das ordenadas.",
+   "C": "Além de I ser falsa, II também é: o gráfico com eixo truncado (II) é o que exagera a diferença e favorece o Candidato B.",
+   "D": "A afirmação II está invertida — o Gráfico II, e não o I, é o mais adequado aos objetivos do Candidato B.",
+   "E": "As afirmações I e II são falsas; apenas III procede."
+  }
+ },
+ {
+  "id": "2014-Q18",
+  "tipo": "Oficial",
+  "ano": 2014,
+  "referencia": "ENADE 2014 — Questão 18 (Componente Específico)",
+  "area": "Materiais e Processos de Fabricação",
+  "dificuldade": "Fácil",
+  "competencia": "Associar propriedades de ligas leves a requisitos de projeto de produto.",
+  "enunciado": "No Brasil, é comercializada uma cadeira de rodas de alumínio com peso aproximado de 12 kg, que representa cerca da metade do peso de um modelo convencional. Construída em estrutura tubular de uma liga de alumínio aeronáutico, essa cadeira de rodas possui alta resistência mecânica, além de ter custo reduzido.\n\n(Disponível em: www.hospitalar.com. Acesso em: 26 jul. 2014, adaptado.)\n\nO alumínio aeronáutico possui uma combinação única de propriedades que o torna um material de construção versátil, altamente utilizável e atrativo. Essas características são devidas a quais propriedades?",
+  "alternativas": {
+   "A": "Alta resistência mecânica e baixa densidade.",
+   "B": "Baixa plasticidade e alto ponto de fusão.",
+   "C": "Alta dureza a quente e baixa dutilidade.",
+   "D": "Baixa plasticidade e alta soldabilidade.",
+   "E": "Alta dureza e alta densidade."
+  },
+  "gabarito": "A",
+  "justificativa": "A vantagem das ligas de alumínio aeronáutico está na elevada resistência específica: alta resistência mecânica associada a baixa densidade (cerca de 2,7 g/cm³, aproximadamente um terço da do aço). É exatamente essa combinação que explica a cadeira de rodas pesar metade do modelo convencional mantendo a capacidade estrutural.",
+  "porqueErradas": {
+   "B": "O alumínio tem alta plasticidade (é facilmente conformado) e baixo ponto de fusão (≈ 660 °C), o oposto do que a alternativa afirma.",
+   "C": "O alumínio perde resistência rapidamente com o aumento da temperatura e apresenta boa dutilidade — ambas as propriedades estão invertidas.",
+   "D": "A plasticidade do alumínio é alta, não baixa; além disso, sua soldabilidade é comprometida pela camada de óxido refratária.",
+   "E": "A densidade do alumínio é baixa — justamente a propriedade que permite a redução de peso descrita no enunciado."
+  }
+ },
+ {
+  "id": "2014-Q19",
+  "tipo": "Oficial",
+  "ano": 2014,
+  "referencia": "ENADE 2014 — Questão 19 (Componente Específico)",
+  "area": "Pesquisa Operacional",
+  "dificuldade": "Média",
+  "competencia": "Formular e resolver um problema de programação linear de mix de produção com restrições de recursos.",
+  "enunciado": "Uma fábrica produz dois refrigerantes: A e B. Para produzi-los, utilizam-se vários recursos, entre os quais os extratos e a água são os mais limitantes, devido a problemas ecológicos.\n\nPara produzir um litro de refrigerante A, o processo envolve a dissolução de um pacote de extrato (denominado Delta) em um litro de água, além de outros recursos que não são limitantes.\n\nJá a produção de um litro de refrigerante B, além da dissolução de um pacote de extrato (denominado Gama) em um litro de água, exige mais um litro de água para o processo de arrefecimento, além de outros recursos que não são limitantes.\n\nSabe-se que:\na) O lucro gerado por litro de A é R$ 5, enquanto que o lucro por litro de B é R$ 2.\nb) O fornecedor de extratos só consegue entregar 3 000 pacotes de extrato Delta e 4 000 pacotes de extrato Gama, semanalmente.\nc) Há um fator ambiental limitante de 9 000 litros de água por semana.\n\nDenominando de X1 a quantidade de litros de refrigerante A e, de X2, a quantidade de litros de refrigerante B a serem produzidos, qual deverá ser o plano de produção semanal viável para gerar o maior lucro a essa fábrica, dentro das condições apresentadas?",
+  "alternativas": {
+   "A": "X1 = 0; X2 = 0",
+   "B": "X1 = 0; X2 = 4 000",
+   "C": "X1 = 3 000; X2 = 4 000",
+   "D": "X1 = 3 000; X2 = 3 000",
+   "E": "X1 = 1 000; X2 = 4 000"
+  },
+  "gabarito": "D",
+  "justificativa": "O modelo é: maximizar Z = 5X1 + 2X2, sujeito a X1 ≤ 3 000 (extrato Delta), X2 ≤ 4 000 (extrato Gama) e X1 + 2X2 ≤ 9 000 (água, pois B consome 2 L por litro produzido). A alternativa D consome 3 000 + 2(3 000) = 9 000 L de água — exatamente o limite — e respeita as demais restrições, gerando lucro de 5(3 000) + 2(3 000) = R$ 21 000, o maior entre as opções viáveis.",
+  "porqueErradas": {
+   "A": "Solução trivial de não produzir nada: é viável, mas gera lucro zero.",
+   "B": "Viável (0 + 8 000 = 8 000 L de água), porém gera lucro de apenas R$ 8 000, pois abre mão do produto de maior margem.",
+   "C": "Inviável: consumiria 3 000 + 2(4 000) = 11 000 L de água, ultrapassando o limite ambiental de 9 000 L.",
+   "E": "Viável (1 000 + 8 000 = 9 000 L), mas gera lucro de apenas R$ 13 000, inferior aos R$ 21 000 da alternativa D, pois privilegia o produto de menor lucro unitário."
+  }
+ },
+ {
+  "id": "2014-Q20",
+  "tipo": "Oficial",
+  "ano": 2014,
+  "referencia": "ENADE 2014 — Questão 20 (Componente Específico)",
+  "area": "Desenvolvimento de Produto e Inovação",
+  "dificuldade": "Média",
+  "competencia": "Reconhecer os princípios e os efeitos do DFMA no desenvolvimento integrado de produtos.",
+  "enunciado": "Em projetos de desenvolvimento de novos produtos considera-se que a participação de uma equipe profissional multidisciplinar contribui para o sucesso do projeto. Com relação à participação do representante da manufatura na equipe do projeto, espera-se que sejam usados os princípios do DFMA (Design for Manufacturing and Assembly) nas fases do desenvolvimento.\n\n(BOOTHROYD, G.; DEWHURST, P.; KNIGHT, W. A. Product design for manufacture and assembly. 3. ed. Boca Raton: Taylor and Francis Group, 2011, adaptado.)\n\nConsiderando as especificidades e princípios do DFMA, avalie as afirmações a seguir.\n\nI. É esperado que o produto resultante passe por menos etapas de produção e, como consequência, tenha menor tempo de produção.\nII. O design do produto, resultante do projeto, terá maior grau de novidade.\nIII. A participação do representante da manufatura reduzirá os custos de execução do projeto.\nIV. É almejado que o novo produto apresente menor número de componentes ou peças.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+   "A": "I e IV.",
+   "B": "II e III.",
+   "C": "III e IV.",
+   "D": "I, II e III.",
+   "E": "I, II e IV."
+  },
+  "gabarito": "A",
+  "justificativa": "O DFMA orienta o projeto para a facilidade de fabricação e montagem. Seus dois resultados típicos são exatamente a simplificação do processo — menos etapas e menor tempo de produção (I) — e a redução do número de componentes por integração de funções em peças únicas (IV).",
+  "porqueErradas": {
+   "B": "A afirmação II é falsa: o DFMA busca simplificação e uso de soluções construtivas consagradas, o que tende a reduzir, e não aumentar, o grau de novidade. A afirmação III também não procede.",
+   "C": "Embora IV esteja correta, III é falsa: o DFMA reduz os custos de manufatura e montagem do produto, não os custos de execução do projeto — que podem inclusive aumentar pelo maior esforço na fase de concepção.",
+   "D": "Inclui II e III, ambas falsas, e deixa de fora IV, que é correta.",
+   "E": "Inclui II, que é falsa: maior grau de novidade não é objetivo nem consequência esperada do DFMA."
+  }
+ },
+ {
+  "id": "2014-Q21",
+  "tipo": "Oficial",
+  "ano": 2014,
+  "referencia": "ENADE 2014 — Questão 21 (Componente Específico)",
+  "area": "Gestão da Qualidade",
+  "dificuldade": "Média",
+  "competencia": "Distinguir exatidão (tendência) de precisão (variabilidade) na avaliação de sistemas de medição.",
+  "figura": "2014_q21.png",
+  "enunciado": "Uma empresa desenvolve, fabrica e vende equipamentos de medição de alta tecnologia. Atualmente, a equipe de engenharia de um determinado produto desenvolve um novo instrumento de medição. Quatro protótipos do equipamento foram manufaturados e submetidos a teste. Uma peça padrão com dimensão de 50,00 mm foi usada como padrão de referência. Cada protótipo do instrumento foi utilizado para fazer sete medições na dimensão da peça padrão por um mesmo operador.\n\nOs resultados são apresentados na figura acima. O centro do alvo representa o valor verdadeiro da dimensão da peça padrão e os pontos representam os resultados das sete medidas da característica.\n\nCom relação aos resultados mostrados na figura e às definições de exatidão (capacidade de medir corretamente, em média, o verdadeiro valor da característica) e precisão (variabilidade inerente às medidas), avalie as seguintes afirmações conforme o que a equipe de engenharia do produto da empresa deveria inferir.\n\nI. O instrumento A é mais exato que o instrumento C e ambos são precisos.\nII. O instrumento D é mais exato que o instrumento B e ambos não são precisos.\nIII. Os instrumentos A e B são exatos, mas o instrumento A é mais preciso que o instrumento B.\nIV. Os instrumentos C e D são exatos, mas o instrumento C é mais preciso que o instrumento D.\nV. O instrumento A é mais exato que o instrumento D, mas o instrumento D é mais preciso que o instrumento A.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+   "A": "II e IV.",
+   "B": "I, III e V.",
+   "C": "I, IV e V.",
+   "D": "II, III e IV.",
+   "E": "I, II, III e V."
+  },
+  "gabarito": "A",
+  "justificativa": "Na figura, o instrumento A concentra os pontos em um grupo compacto, porém deslocado para fora do centro — é preciso, mas não exato. O instrumento B espalha os pontos ao redor do alvo — é razoavelmente exato na média, mas impreciso. O instrumento C agrupa os pontos compactamente no centro — exato e preciso. O instrumento D distribui os pontos em torno do centro, com dispersão intermediária — exato, porém menos preciso que C. Logo, II é correta (D é mais exato que B e ambos são imprecisos) e IV é correta (C e D são exatos, com C mais preciso).",
+  "porqueErradas": {
+   "B": "As afirmações I e III dependem de A ser exato, o que é falso: seus pontos estão agrupados longe do centro do alvo. A afirmação V também inverte a situação.",
+   "C": "A afirmação I é falsa — A é menos exato que C, pois seus pontos estão deslocados do centro.",
+   "D": "A afirmação III é falsa: A não é exato, já que suas medições apresentam tendência sistemática em relação ao valor verdadeiro.",
+   "E": "Inclui I, III e V, todas apoiadas na premissa incorreta de que o instrumento A é exato."
+  }
+ }
+]

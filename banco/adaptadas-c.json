@@ -1,0 +1,477 @@
+[
+{
+  "id": "ADP-26",
+  "tipo": "Adaptada",
+  "ano": 2014,
+  "referencia": "Adaptada de ENADE 2014 — Questão 10",
+  "area": "Eletricidade e Eletrotécnica",
+  "dificuldade": "Média",
+  "competencia": "Analisar o comportamento de capacitores e indutores em regime permanente de corrente contínua.",
+  "enunciado": "Um circuito é alimentado por uma fonte de tensão contínua de 24 V e contém três lâmpadas incandescentes idênticas, todas de 24 V, associadas da seguinte forma:\n\n• a lâmpada L1 está em série com um capacitor de 2 F;\n• a lâmpada L2 está em série com a fonte de alimentação, no ramo principal;\n• a lâmpada L3 está em paralelo com um indutor ideal de 1 H.\n\nApós o transitório, com o circuito já em regime permanente, quais lâmpadas permanecem acesas?",
+  "alternativas": {
+    "A": "Apenas L1.",
+    "B": "Apenas L2.",
+    "C": "Apenas L3.",
+    "D": "L1 e L2.",
+    "E": "L1, L2 e L3."
+  },
+  "gabarito": "B",
+  "justificativa": "Em regime permanente sob corrente contínua, o capacitor comporta-se como circuito aberto e o indutor ideal como curto-circuito. O capacitor interrompe o ramo de L1, que não conduz corrente e permanece apagada. O indutor curto-circuita L3, anulando a tensão sobre ela, que também fica apagada. L2, por estar no ramo principal em série com a fonte, é percorrida pela corrente e permanece acesa.",
+  "porqueErradas": {
+    "A": "L1 está em série com o capacitor, que bloqueia a corrente contínua em regime permanente — é justamente a lâmpada que não acende.",
+    "C": "L3 está em paralelo com o indutor ideal, que em regime permanente apresenta tensão nula entre seus terminais e desvia toda a corrente.",
+    "D": "Inclui L1, cujo ramo está interrompido pelo capacitor.",
+    "E": "Duas das três lâmpadas estão inativas: L1 pelo bloqueio do capacitor e L3 pelo curto-circuito do indutor."
+  }
+},
+{
+  "id": "ADP-27",
+  "tipo": "Adaptada",
+  "ano": 2014,
+  "referencia": "Adaptada de ENADE 2014 — Questão 11",
+  "area": "Sustentabilidade e Meio Ambiente",
+  "dificuldade": "Média",
+  "competencia": "Converter unidades de concentração e classificar a qualidade de corpos hídricos pela DBO.",
+  "enunciado": "A DBO₅,₂₀ é usada para classificar a qualidade de cursos d'água segundo a escala:\n\n• Muito limpo: até 1 mg/L\n• Limpo: maior que 1 até 2 mg/L\n• Razoável: maior que 2 até 4 mg/L\n• Ruim: maior que 4 até 6 mg/L\n• Péssimo: maior que 6 mg/L\n\nForam coletadas amostras em quatro seções de um rio, com os resultados expressos em unidades diferentes:\n\n• Seção P: 0,8 g/m³\n• Seção Q: 5 200 mg/m³\n• Seção R: 0,009 kg/m³\n• Seção S: 1 800 mg/m³\n\nCom base nesses dados, a seção cuja água é classificada como \"ruim\" é a",
+  "alternativas": {
+    "A": "seção P.",
+    "B": "seção Q.",
+    "C": "seção R.",
+    "D": "seção S.",
+    "E": "nenhuma das seções analisadas."
+  },
+  "gabarito": "B",
+  "justificativa": "Como 1 m³ = 1 000 L, basta dividir por 1 000 os valores expressos por metro cúbico, convertendo antes para miligramas. Assim: P = 0,8 g/m³ = 800 mg/m³ = 0,8 mg/L (muito limpo); Q = 5 200 mg/m³ = 5,2 mg/L (ruim, faixa de 4 a 6); R = 0,009 kg/m³ = 9 000 mg/m³ = 9,0 mg/L (péssimo); S = 1 800 mg/m³ = 1,8 mg/L (limpo). Somente a seção Q cai na faixa \"ruim\".",
+  "porqueErradas": {
+    "A": "A seção P apresenta 0,8 mg/L, abaixo de 1 mg/L — é classificada como \"muito limpo\".",
+    "C": "A seção R apresenta 9,0 mg/L, acima de 6 mg/L — é classificada como \"péssimo\", e não \"ruim\".",
+    "D": "A seção S apresenta 1,8 mg/L, dentro da faixa de 1 a 2 mg/L — é classificada como \"limpo\".",
+    "E": "A seção Q está na faixa de 4 a 6 mg/L, que corresponde exatamente à classificação \"ruim\"."
+  }
+},
+{
+  "id": "ADP-28",
+  "tipo": "Adaptada",
+  "ano": 2014,
+  "referencia": "Adaptada de ENADE 2014 — Questão 13",
+  "area": "Materiais e Processos de Fabricação",
+  "dificuldade": "Média",
+  "competencia": "Distinguir resistência absoluta de resistência específica e de rigidez na seleção de materiais.",
+  "enunciado": "Um fabricante de drones profissionais avalia a substituição da estrutura de alumínio por um novo compósito de fibra de carbono. Ensaios indicaram que o compósito apresenta resistência à tração 5% superior à da liga de alumínio atualmente empregada e massa específica 40% menor.\n\nCom base nessas informações, avalie as afirmações a seguir.\n\nI. A vantagem determinante do compósito é sua resistência à tração absoluta, muito superior à do alumínio.\nII. A relação entre resistência e peso é o fator determinante para a substituição do material.\nIII. A redução de massa da estrutura permite aumentar a carga útil ou a autonomia do drone sem alterar a potência instalada.\nIV. Por apresentar maior resistência à tração, o compósito é necessariamente mais rígido que o alumínio.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e II.",
+    "B": "II e III.",
+    "C": "III e IV.",
+    "D": "I, II e III.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "B",
+  "justificativa": "O ganho de resistência é de apenas 5%, enquanto a redução de massa é de 40% — a vantagem decisiva está, portanto, na resistência específica, ou seja, na relação resistência/peso (II correta). Essa economia de massa estrutural converte-se diretamente em maior carga útil ou maior autonomia para a mesma potência instalada (III correta).",
+  "porqueErradas": {
+    "A": "A afirmação I é falsa: 5% de ganho não caracteriza resistência \"muito superior\"; é a combinação com a massa menor que justifica a troca.",
+    "C": "A afirmação IV confunde resistência com rigidez: resistência à tração é a tensão de ruptura, enquanto rigidez é dada pelo módulo de elasticidade — são propriedades independentes.",
+    "D": "Inclui I, que superdimensiona a importância do ganho de resistência absoluta.",
+    "E": "Inclui IV, que deduz indevidamente a rigidez a partir da resistência à tração."
+  }
+},
+{
+  "id": "ADP-29",
+  "tipo": "Adaptada",
+  "ano": 2014,
+  "referencia": "Adaptada de ENADE 2014 — Questão 15",
+  "area": "Algoritmos e Programação",
+  "dificuldade": "Média",
+  "competencia": "Interpretar algoritmos de ordenação e estimar seu número de operações.",
+  "enunciado": "Observe o trecho de pseudocódigo a seguir, que opera sobre um vetor valor[] de n posições.\n\npara i de 1 até n-1\n    para j de i+1 até n\n        se valor[i] > valor[j] então\n            aux <- valor[i]\n            valor[i] <- valor[j]\n            valor[j] <- aux\n        fimSe\n    proximo\nproximo\n\nCom base nesse algoritmo, avalie as afirmações a seguir.\n\nI. Ao final da execução, o vetor estará ordenado em ordem crescente.\nII. Para um vetor de 5 posições, são realizadas 10 comparações.\nIII. O número de comparações cresce linearmente com n, de modo que dobrar o tamanho do vetor dobra o tempo de execução.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "III, apenas.",
+    "C": "I e II, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "C",
+  "justificativa": "A condição de troca é valor[i] > valor[j], que empurra os menores valores para as primeiras posições, produzindo ordenação crescente (I correta). O número de comparações é n(n−1)/2; para n = 5, tem-se 5 × 4 / 2 = 10 comparações (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira: o laço duplo realiza exatamente n(n−1)/2 comparações.",
+    "B": "A afirmação III é falsa: o crescimento é quadrático, não linear. Dobrar n multiplica o número de comparações por aproximadamente quatro.",
+    "D": "Inclui III, que atribui comportamento linear a um algoritmo de complexidade O(n²).",
+    "E": "Inclui III, incorreta quanto à ordem de crescimento do número de operações."
+  }
+},
+{
+  "id": "ADP-30",
+  "tipo": "Adaptada",
+  "ano": 2014,
+  "referencia": "Adaptada de ENADE 2014 — Questão 17",
+  "area": "Estatística",
+  "dificuldade": "Média",
+  "competencia": "Reconhecer distorções na representação gráfica de dados e suas implicações éticas.",
+  "enunciado": "A produtividade média de dois turnos de uma fábrica foi de 92 peças/hora no turno A e 96 peças/hora no turno B. O setor de comunicação interna preparou duas versões do mesmo gráfico de barras:\n\n• Versão 1: eixo vertical iniciando em 0 e terminando em 100 peças/hora;\n• Versão 2: eixo vertical iniciando em 90 e terminando em 100 peças/hora.\n\nA gerência pretende divulgar uma das versões para justificar a premiação do turno B. Nesse contexto, avalie as afirmações a seguir.\n\nI. As duas versões apresentam resultados numéricos diferentes.\nII. A versão 2 amplia visualmente a diferença de desempenho entre os turnos.\nIII. A escolha deliberada da versão que favorece a conclusão desejada envolve uma questão de natureza ética, além da técnica.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "II, apenas.",
+    "C": "II e III, apenas.",
+    "D": "I e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "C",
+  "justificativa": "Com o eixo truncado em 90, a diferença de 4 peças/hora ocupa quase metade da altura útil do gráfico, exagerando visualmente uma vantagem de apenas 4,3% (II correta). Escolher essa versão justamente porque ela sustenta a conclusão pretendida transfere o problema do campo técnico para o ético (III correta).",
+  "porqueErradas": {
+    "A": "A afirmação I é falsa: os dados são exatamente os mesmos nas duas versões — o que muda é apenas a escala do eixo vertical.",
+    "B": "Embora II esteja correta, III também é verdadeira e é justamente o ponto central do problema apresentado.",
+    "D": "Inclui I, que confunde diferença de representação com diferença de dados.",
+    "E": "Inclui I, falsa: alterar a escala não altera os valores medidos."
+  }
+},
+{
+  "id": "ADP-31",
+  "tipo": "Adaptada",
+  "ano": 2014,
+  "referencia": "Adaptada de ENADE 2014 — Questão 18",
+  "area": "Materiais e Processos de Fabricação",
+  "dificuldade": "Fácil",
+  "competencia": "Selecionar material a partir de requisitos combinados de desempenho mecânico, químico e biológico.",
+  "enunciado": "Uma empresa de dispositivos médicos vai desenvolver um implante ortopédico que permanecerá no corpo humano por longos períodos. Os requisitos de projeto são: baixa massa específica, alta resistência mecânica, elevada resistência à corrosão em meio fisiológico e biocompatibilidade comprovada.\n\nEntre as opções a seguir, o material mais adequado e a justificativa correta são",
+  "alternativas": {
+    "A": "aço-carbono, pela alta resistência mecânica associada ao baixo custo de matéria-prima.",
+    "B": "liga de titânio, pela combinação de alta resistência específica, excelente resistência à corrosão e biocompatibilidade.",
+    "C": "alumínio comercialmente puro, pela baixa massa específica e pela elevada dutilidade.",
+    "D": "ferro fundido cinzento, pela capacidade de amortecimento de vibrações e pela facilidade de fundição.",
+    "E": "polietileno de alta densidade, pela elevada rigidez e pela alta resistência à fadiga."
+  },
+  "gabarito": "B",
+  "justificativa": "As ligas de titânio atendem simultaneamente aos quatro requisitos: massa específica de cerca de 4,5 g/cm³ (aproximadamente 55% da do aço) com resistência mecânica comparável, camada passiva de TiO₂ que confere excelente resistência à corrosão em meio fisiológico, e biocompatibilidade consolidada — razão pela qual são o material de referência para implantes ortopédicos.",
+  "porqueErradas": {
+    "A": "O aço-carbono comum sofre corrosão acentuada em meio fisiológico e apresenta massa específica elevada, contrariando dois requisitos essenciais.",
+    "C": "O alumínio comercialmente puro tem resistência mecânica baixa e libera íons associados a efeitos adversos, não sendo considerado biocompatível para implantes permanentes.",
+    "D": "O ferro fundido cinzento é frágil, pesado e sujeito à corrosão, além de não possuir biocompatibilidade para uso implantável.",
+    "E": "O polietileno de alta densidade tem rigidez baixa, e não elevada; é usado em superfícies de deslizamento de próteses, não como elemento estrutural de sustentação."
+  }
+},
+{
+  "id": "ADP-32",
+  "tipo": "Adaptada",
+  "ano": 2014,
+  "referencia": "Adaptada de ENADE 2014 — Questão 20",
+  "area": "Desenvolvimento de Produto e Inovação",
+  "dificuldade": "Média",
+  "competencia": "Aplicar os princípios do DFMA ao projeto de produtos.",
+  "enunciado": "A equipe de desenvolvimento de um eletrodoméstico aplicou os princípios do DFMA (Design for Manufacturing and Assembly) na revisão do projeto de um novo modelo.\n\nConsiderando esses princípios, avalie as afirmações a seguir.\n\nI. Espera-se redução do número de peças do produto, por meio da integração de funções em componentes únicos.\nII. Espera-se aumento do número de operações de montagem, em razão da maior precisão dimensional exigida.\nIII. A padronização dos elementos de fixação reduz o tempo de montagem e o número de ferramentas necessárias.\nIV. O DFMA tem como objetivo principal elevar o grau de inovação estética do produto.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e II.",
+    "B": "I e III.",
+    "C": "II e IV.",
+    "D": "I, III e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "B",
+  "justificativa": "A redução do número de peças por integração de funções é o efeito mais característico do DFMA (I correta), pois cada componente eliminado suprime também operações de manuseio, posicionamento e fixação. A padronização de fixadores segue a mesma lógica: menos variedade significa menos trocas de ferramenta e menor tempo de montagem (III correta).",
+  "porqueErradas": {
+    "A": "A afirmação II inverte o resultado esperado: o DFMA busca reduzir, e não aumentar, o número de operações de montagem.",
+    "C": "Reúne duas afirmações falsas — o aumento de operações contraria o método, e a inovação estética não é objetivo do DFMA.",
+    "D": "Inclui IV, que confunde DFMA com design de produto no sentido estético; o foco do método é a manufaturabilidade e a montabilidade.",
+    "E": "Inclui II e IV, ambas contrárias aos princípios do método."
+  }
+},
+{
+  "id": "ADP-33",
+  "tipo": "Adaptada",
+  "ano": 2014,
+  "referencia": "Adaptada de ENADE 2014 — Questão 21",
+  "area": "Gestão da Qualidade",
+  "dificuldade": "Média",
+  "competencia": "Distinguir exatidão (tendência) de precisão (dispersão) na avaliação de sistemas de medição.",
+  "enunciado": "Quatro paquímetros digitais foram avaliados medindo-se, dez vezes cada, um bloco-padrão calibrado de 25,00 mm. Os resultados obtidos foram:\n\n• Instrumento P: média 25,00 mm; desvio-padrão 0,01 mm\n• Instrumento Q: média 25,00 mm; desvio-padrão 0,15 mm\n• Instrumento R: média 25,40 mm; desvio-padrão 0,01 mm\n• Instrumento S: média 25,40 mm; desvio-padrão 0,15 mm\n\nConsiderando que exatidão é a proximidade entre a média das medições e o valor verdadeiro, e precisão é a menor dispersão entre as medições, avalie as afirmações a seguir.\n\nI. O instrumento P é, ao mesmo tempo, exato e preciso.\nII. O instrumento R é preciso, porém não é exato.\nIII. O instrumento Q é exato, porém não é preciso.\nIV. O instrumento S é o mais adequado, pois apresenta a maior média entre os quatro.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e IV.",
+    "B": "II e III.",
+    "C": "I, II e III.",
+    "D": "I, III e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "C",
+  "justificativa": "O instrumento P combina média coincidente com o valor verdadeiro (exato) e a menor dispersão (preciso) — I correta. O instrumento R tem dispersão igualmente baixa, mas média deslocada 0,40 mm do valor verdadeiro, caracterizando erro sistemático: preciso e não exato (II correta). O instrumento Q acerta a média, mas com dispersão quinze vezes maior: exato e não preciso (III correta).",
+  "porqueErradas": {
+    "A": "A afirmação IV é falsa por dois motivos: o instrumento S é o pior dos quatro, pois soma tendência de 0,40 mm com a maior dispersão; e maior média não é critério de qualidade — o objetivo é aproximar-se do valor verdadeiro de 25,00 mm.",
+    "B": "Embora II e III estejam corretas, a alternativa omite I, que descreve corretamente o único instrumento exato e preciso.",
+    "D": "Inclui IV, que confunde valor mais alto com melhor desempenho metrológico.",
+    "E": "Inclui IV, incorreta, e deixa de fora I, que identifica o instrumento de melhor desempenho."
+  }
+},
+{
+  "id": "ADP-34",
+  "tipo": "Adaptada",
+  "ano": 2014,
+  "referencia": "Adaptada de ENADE 2014 — Questão 22",
+  "area": "Logística e Cadeia de Suprimentos",
+  "dificuldade": "Média",
+  "competencia": "Relacionar a obrigatoriedade legal da logística reversa à natureza dos resíduos envolvidos.",
+  "enunciado": "Avalie as asserções a seguir e a relação proposta entre elas.\n\nI. Os fabricantes, importadores, distribuidores e comerciantes de baterias automotivas estão obrigados a estruturar e implementar sistemas de logística reversa para esses produtos.\n\nPORQUE\n\nII. As baterias automotivas contêm chumbo e ácido sulfúrico, substâncias perigosas cujo descarte inadequado contamina solo e águas subterrâneas, exigindo destinação ambientalmente adequada.\n\nA respeito dessas asserções, assinale a opção correta.",
+  "alternativas": {
+    "A": "As asserções I e II são proposições verdadeiras, e a II é uma justificativa correta da I.",
+    "B": "As asserções I e II são proposições verdadeiras, mas a II não é uma justificativa correta da I.",
+    "C": "A asserção I é uma proposição verdadeira, e a II é uma proposição falsa.",
+    "D": "A asserção I é uma proposição falsa, e a II é uma proposição verdadeira.",
+    "E": "As asserções I e II são proposições falsas."
+  },
+  "gabarito": "A",
+  "justificativa": "A asserção I é verdadeira: a Política Nacional de Resíduos Sólidos (Lei n. 12.305/2010) inclui expressamente as pilhas e baterias entre os produtos sujeitos a sistema de logística reversa obrigatório, com responsabilidade compartilhada por toda a cadeia. A asserção II também é verdadeira e constitui exatamente o motivo pelo qual o legislador incluiu esses produtos na lista: a periculosidade do chumbo e do ácido sulfúrico é o que torna indispensável o retorno controlado do produto pós-consumo.",
+  "porqueErradas": {
+    "B": "Há nexo causal direto: é precisamente a periculosidade dos componentes que fundamenta a obrigação legal de estruturar o sistema de logística reversa para esses produtos.",
+    "C": "A asserção II é verdadeira: chumbo e ácido sulfúrico são reconhecidamente perigosos e demandam destinação controlada.",
+    "D": "A asserção I é verdadeira: a obrigatoriedade está prevista no artigo 33 da Lei n. 12.305/2010.",
+    "E": "Ambas as asserções são verdadeiras e, adicionalmente, a segunda explica a primeira."
+  }
+},
+{
+  "id": "ADP-35",
+  "tipo": "Adaptada",
+  "ano": 2014,
+  "referencia": "Adaptada de ENADE 2014 — Questão 23",
+  "area": "Gestão de Projetos",
+  "dificuldade": "Média",
+  "competencia": "Distinguir os tipos de Escritório de Projetos e suas atribuições.",
+  "enunciado": "Uma organização decidiu implantar um Escritório de Projetos (PMO) para dar suporte à sua carteira de projetos de melhoria industrial.\n\nA respeito das características e atribuições do PMO, avalie as afirmações a seguir.\n\nI. O PMO pode assumir três configurações típicas: de suporte, de controle e diretivo, com graus crescentes de influência sobre os projetos.\nII. No PMO diretivo, o escritório assume a gestão dos projetos, designando os gerentes de projeto e respondendo pelos resultados.\nIII. Cabe ao PMO aprovar o orçamento corporativo anual e definir a estratégia de negócio da organização.\nIV. O PMO de suporte fornece modelos, treinamento, ferramentas e lições aprendidas, exercendo baixo grau de controle sobre os projetos.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e III.",
+    "B": "II e III.",
+    "C": "I, II e IV.",
+    "D": "I, III e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "C",
+  "justificativa": "O PMBOK descreve exatamente as três configurações citadas em I, diferenciadas pelo grau de controle exercido. O PMO diretivo, no extremo superior desse espectro, assume efetivamente a condução dos projetos (II correta), enquanto o PMO de suporte atua como repositório de boas práticas, com papel consultivo e baixo controle (IV correta).",
+  "porqueErradas": {
+    "A": "A afirmação III atribui ao PMO responsabilidades de governança corporativa — aprovação de orçamento e definição de estratégia — que pertencem à alta direção, e não ao escritório de projetos.",
+    "B": "Inclui III, que extrapola largamente as atribuições do PMO.",
+    "D": "Inclui III, incorreta, e omite II, que caracteriza corretamente o PMO diretivo.",
+    "E": "Inclui III, incorreta, e deixa de fora I, que apresenta a tipologia dos escritórios de projetos."
+  }
+},
+{
+  "id": "ADP-36",
+  "tipo": "Adaptada",
+  "ano": 2014,
+  "referencia": "Adaptada de ENADE 2014 — Questão 25",
+  "area": "Sistemas de Informação e Indústria 4.0",
+  "dificuldade": "Média",
+  "competencia": "Associar sistemas de informação às suas funções específicas na cadeia de suprimentos.",
+  "enunciado": "Uma empresa de bens de consumo está selecionando sistemas de informação para três necessidades distintas:\n\n(1) controlar o endereçamento, a separação e a movimentação de paletes dentro do centro de distribuição;\n(2) planejar rotas, consolidar cargas e apurar custos de frete da frota de entrega;\n(3) planejar de forma colaborativa, junto ao principal cliente varejista, as previsões de demanda e a reposição de produtos.\n\nOs sistemas adequados a (1), (2) e (3) são, respectivamente,",
+  "alternativas": {
+    "A": "RFID, MES e ERP.",
+    "B": "WMS, TMS e CPFR.",
+    "C": "ERP, CRM e SRM.",
+    "D": "MRP, DRP e APS.",
+    "E": "SFC, CRP e MPS."
+  },
+  "gabarito": "B",
+  "justificativa": "O WMS (Warehouse Management System) gerencia endereçamento, separação e movimentação interna do armazém (1). O TMS (Transportation Management System) planeja rotas, consolida cargas e apura custos de transporte (2). O CPFR (Collaborative Planning, Forecasting and Replenishment) é o processo estruturado de planejamento colaborativo de demanda e reposição entre indústria e varejo (3).",
+  "porqueErradas": {
+    "A": "O RFID é uma tecnologia de identificação, não um sistema de gestão de armazém; o MES atua no chão de fábrica e o ERP na gestão interna — nenhum deles cobre o planejamento colaborativo com o cliente.",
+    "C": "ERP, CRM e SRM tratam, respectivamente, da gestão interna, do relacionamento com clientes e do relacionamento com fornecedores; nenhum responde às três necessidades listadas.",
+    "D": "MRP, DRP e APS são sistemas de planejamento de materiais, de distribuição e de programação avançada — não gerenciam a operação física do armazém nem o transporte.",
+    "E": "SFC, CRP e MPS pertencem todos ao núcleo de planejamento e controle da produção, sem relação com armazenagem, transporte ou colaboração com o cliente."
+  }
+},
+{
+  "id": "ADP-37",
+  "tipo": "Adaptada",
+  "ano": 2014,
+  "referencia": "Adaptada de ENADE 2014 — Questão 28",
+  "area": "Desenvolvimento de Produto e Inovação",
+  "dificuldade": "Média",
+  "competencia": "Compreender os fluxos de conhecimento e os mecanismos da inovação aberta.",
+  "enunciado": "Uma empresa de bens de capital decidiu adotar o modelo de inovação aberta em seu processo de desenvolvimento tecnológico.\n\nA respeito desse modelo, avalie as afirmações a seguir.\n\nI. A inovação aberta pressupõe fluxos de conhecimento em dois sentidos: de fora para dentro (outside-in) e de dentro para fora (inside-out).\nII. O licenciamento, para terceiros, de patentes que a empresa não pretende explorar internamente é um exemplo de fluxo de dentro para fora.\nIII. A adoção da inovação aberta elimina a necessidade de proteção da propriedade intelectual, já que o conhecimento passa a ser compartilhado.\nIV. Parcerias com universidades, institutos de pesquisa e startups são mecanismos típicos do modelo.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e III.",
+    "B": "II e III.",
+    "C": "I, II e IV.",
+    "D": "I, III e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "C",
+  "justificativa": "A bidirecionalidade dos fluxos de conhecimento é a característica definidora do modelo proposto por Chesbrough (I correta). O licenciamento de tecnologias ociosas é o exemplo clássico do fluxo inside-out, convertendo ativos parados em receita (II correta). E a articulação com universidades, ICTs e startups constitui o mecanismo prático mais difundido de captação externa de conhecimento (IV correta).",
+  "porqueErradas": {
+    "A": "A afirmação III inverte a lógica do modelo: a inovação aberta torna a gestão da propriedade intelectual mais importante, não dispensável, pois é a PI que permite negociar, licenciar e definir o que se compartilha.",
+    "B": "Inclui III, que confunde abertura ao conhecimento externo com renúncia à proteção jurídica dos ativos intangíveis.",
+    "D": "Inclui III, incorreta, e omite II, que exemplifica corretamente o fluxo de dentro para fora.",
+    "E": "Inclui III, incorreta, e deixa de fora I, que expressa o princípio central do modelo."
+  }
+},
+{
+  "id": "ADP-38",
+  "tipo": "Adaptada",
+  "ano": 2014,
+  "referencia": "Adaptada de ENADE 2014 — Questão 29",
+  "area": "Gestão da Qualidade",
+  "dificuldade": "Média",
+  "competencia": "Calcular e interpretar o Número de Prioridade de Risco (NPR) em um FMEA.",
+  "enunciado": "Em um FMEA de processo de uma linha de usinagem, um determinado modo de falha recebeu os seguintes índices: severidade (S) = 8, ocorrência (O) = 5 e detecção (D) = 3.\n\nConsiderando que o Número de Prioridade de Risco é dado por NPR = S × O × D, avalie as afirmações a seguir.\n\nI. O NPR desse modo de falha é igual a 120.\nII. A implantação de um dispositivo à prova de erro que reduza o índice de detecção de 3 para 2 fará o NPR cair para 80.\nIII. O NPR pode ser reduzido pela metade apenas com a redução do índice de severidade de 8 para 4, sem qualquer alteração no projeto do produto ou do processo.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "III, apenas.",
+    "C": "I e II, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "C",
+  "justificativa": "O NPR é o produto dos três índices: 8 × 5 × 3 = 120 (I correta). Reduzindo apenas a detecção para 2, obtém-se 8 × 5 × 2 = 80 (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira e decorre da aplicação direta da fórmula.",
+    "B": "A afirmação III é falsa: a severidade mede a gravidade da consequência da falha para o cliente e só pode ser reduzida por alteração do projeto do produto ou do processo — jamais por medidas de controle ou inspeção.",
+    "D": "Inclui III, que supõe ser possível reduzir a severidade sem alterar projeto algum.",
+    "E": "Inclui III, incorreta quanto à natureza do índice de severidade."
+  }
+},
+{
+  "id": "ADP-39",
+  "tipo": "Adaptada",
+  "ano": 2014,
+  "referencia": "Adaptada de ENADE 2014 — Questão 30",
+  "area": "Engenharia Econômica",
+  "dificuldade": "Difícil",
+  "competencia": "Interpretar análise de sensibilidade de VPL em matriz de taxa mínima de atratividade versus fluxo de caixa uniforme.",
+  "enunciado": "Um projeto exige investimento de R$ 5.300,00 no instante zero e gera um fluxo de caixa líquido uniforme A ao longo de 4 períodos. Há incerteza tanto sobre a taxa mínima de atratividade quanto sobre o valor de A. O quadro apresenta o valor presente, no instante zero, da série uniforme, em reais:\n\nA = 1.400 → 2%: 5.331 | 4%: 5.082 | 5%: 4.964 | 6%: 4.851 | 8%: 4.637\nA = 1.500 → 2%: 5.712 | 4%: 5.445 | 5%: 5.319 | 6%: 5.198 | 8%: 4.968\nA = 1.600 → 2%: 6.092 | 4%: 5.808 | 5%: 5.674 | 6%: 5.544 | 8%: 5.299\n\nCom base nesses dados, avalie as afirmações a seguir.\n\nI. Para A = 1.400, o projeto é economicamente inviável em qualquer taxa igual ou superior a 4% ao período.\nII. Para A = 1.500 e taxa de 5% ao período, o projeto é economicamente viável.\nIII. Para A = 1.600, o ponto de equilíbrio econômico ocorre entre 4% e 5% ao período.\nIV. O quadro não permite avaliar o projeto, pois não informa o valor exato de A.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e II.",
+    "B": "III e IV.",
+    "C": "I, II e III.",
+    "D": "I e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "A",
+  "justificativa": "O projeto é viável quando o valor presente da série iguala ou supera o investimento de 5.300. Para A = 1.400, o valor presente é 5.082 a 4% e cai progressivamente daí em diante, ficando sempre abaixo de 5.300 (I correta). Para A = 1.500 a 5%, o valor presente é 5.319, superior ao investimento, tornando o projeto viável (II correta).",
+  "porqueErradas": {
+    "B": "A afirmação III é falsa: para A = 1.600, o valor presente é 5.808 a 4% e 5.674 a 5%, ambos acima de 5.300 — o projeto continua viável nessa faixa, e o equilíbrio só é alcançado próximo de 8%.",
+    "C": "Inclui III, que localiza o ponto de equilíbrio em uma faixa na qual o projeto ainda apresenta VPL positivo.",
+    "D": "A afirmação IV é falsa: a matriz de sensibilidade existe justamente para permitir a análise sob incerteza, indicando em que combinações de A e taxa o projeto é ou não viável.",
+    "E": "Reúne III e IV, ambas incorretas, e omite I."
+  }
+},
+{
+  "id": "ADP-40",
+  "tipo": "Adaptada",
+  "ano": 2014,
+  "referencia": "Adaptada de ENADE 2014 — Questão 31",
+  "area": "Engenharia Econômica",
+  "dificuldade": "Média",
+  "competencia": "Analisar a viabilidade econômica de modelos de negócio baseados no compartilhamento de ativos.",
+  "enunciado": "Um serviço de compartilhamento de bicicletas elétricas cobra por hora de uso, com seguro incluído na tarifa. O usuário não arca com manutenção, seguro próprio, depreciação ou espaço de guarda. Na outra ponta, proprietários de bicicletas podem cadastrar seus equipamentos na plataforma e cedê-los mediante remuneração nos períodos em que não os utilizam.\n\nSob o ponto de vista da viabilidade econômica, avalie as afirmações a seguir.\n\nI. Na comparação entre alugar e comprar, o gasto com manutenção é a variável mais relevante do cálculo.\nII. Existe um nível de utilização a partir do qual a compra da bicicleta passa a ser economicamente mais vantajosa que o aluguel.\nIII. Do ponto de vista do proprietário que disponibiliza o equipamento, o compartilhamento converte capacidade ociosa em receita.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "III, apenas.",
+    "C": "I e II, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "D",
+  "justificativa": "A comparação opõe um custo essencialmente variável (aluguel por hora) a uma estrutura de custos predominantemente fixa (aquisição, depreciação, seguro, guarda). Existe, portanto, um ponto de equilíbrio em horas de uso a partir do qual a compra se torna mais econômica (II correta). Para quem cede o ativo, a plataforma transforma em receita as horas em que a bicicleta ficaria parada, reduzindo o desperdício por ociosidade (III correta).",
+  "porqueErradas": {
+    "A": "A afirmação I é falsa: a manutenção é apenas uma das parcelas. Pesam igualmente o custo de aquisição, a depreciação, o seguro, o espaço de guarda e, sobretudo, o nível de utilização.",
+    "B": "Embora III esteja correta, II também é verdadeira e descreve a lógica do ponto de equilíbrio entre as duas alternativas.",
+    "C": "Inclui I, que elege indevidamente a manutenção como variável determinante da análise.",
+    "E": "Inclui I, cuja generalização não se sustenta diante da estrutura de custos descrita."
+  }
+},
+{
+  "id": "ADP-41",
+  "tipo": "Adaptada",
+  "ano": 2014,
+  "referencia": "Adaptada de ENADE 2014 — Questão 32",
+  "area": "Ergonomia e Segurança do Trabalho",
+  "dificuldade": "Fácil",
+  "competencia": "Classificar fatores de risco ocupacional e identificar a natureza da medida de prevenção adotada.",
+  "enunciado": "Uma marcenaria substituiu o verniz à base de solventes orgânicos, até então utilizado no acabamento dos móveis, por verniz à base de água, com desempenho equivalente e sem alteração no processo de aplicação.\n\nDo ponto de vista da segurança e da saúde do trabalhador, essa medida atua prioritariamente sobre o",
+  "alternativas": {
+    "A": "risco químico, por reduzir a exposição dos trabalhadores a vapores orgânicos.",
+    "B": "risco físico, por reduzir o nível de ruído gerado nas operações de acabamento.",
+    "C": "risco ergonômico, por melhorar a postura adotada durante a aplicação do produto.",
+    "D": "risco de acidente, por eliminar a exposição a partes móveis desprotegidas.",
+    "E": "risco biológico, por impedir a proliferação de microrganismos nas superfícies tratadas."
+  },
+  "gabarito": "A",
+  "justificativa": "Vernizes à base de solventes orgânicos liberam compostos orgânicos voláteis, que penetram no organismo principalmente por via respiratória e podem causar efeitos neurológicos, hepáticos e irritativos. Substituí-los por produtos de base aquosa elimina a fonte desses vapores, atuando diretamente sobre um agente químico — e o faz pela medida de maior hierarquia na prevenção, que é a substituição do agente de risco.",
+  "porqueErradas": {
+    "B": "Ruído é agente físico gerado pelas máquinas de corte e lixamento; a composição do verniz não interfere nele.",
+    "C": "A medida não altera postura, movimentos, alturas de trabalho ou esforço físico, que são os fatores próprios do risco ergonômico.",
+    "D": "Riscos de acidente decorrem de proteções de máquina, arranjo físico, eletricidade e incêndio — não da composição química de um insumo.",
+    "E": "Agentes biológicos são vírus, bactérias, fungos e parasitas; não há relação com a troca da base do verniz."
+  }
+},
+{
+  "id": "ADP-42",
+  "tipo": "Adaptada",
+  "ano": 2014,
+  "referencia": "Adaptada de ENADE 2014 — Questão 33",
+  "area": "Gestão da Qualidade",
+  "dificuldade": "Média",
+  "competencia": "Compreender o escopo e a integração de normas de sistemas de gestão certificáveis.",
+  "enunciado": "Uma indústria química decidiu implantar um Sistema de Gestão Integrado abrangendo qualidade, meio ambiente e segurança e saúde ocupacional.\n\nA respeito das normas envolvidas e do processo de certificação, avalie as afirmações a seguir.\n\nI. A ISO 45001 substituiu a BS OHSAS 18001 como norma internacional de sistemas de gestão de segurança e saúde ocupacional.\nII. As normas ISO 9001, ISO 14001 e ISO 45001 adotam a mesma estrutura de alto nível, o que facilita a integração dos sistemas em uma única documentação.\nIII. Uma vez concedida, a certificação tem validade indeterminada, dispensando auditorias posteriores.\nIV. A ISO 14001 trata da gestão ambiental, estruturada a partir da identificação de aspectos e impactos ambientais das atividades da organização.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e III.",
+    "B": "II e III.",
+    "C": "I, II e IV.",
+    "D": "I, III e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "C",
+  "justificativa": "A ISO 45001, publicada em 2018, efetivamente substituiu a OHSAS 18001 (I correta). As três normas seguem a estrutura de alto nível do Anexo SL, com capítulos e requisitos comuns que permitem documentação e auditorias integradas (II correta). E a ISO 14001 organiza-se em torno do levantamento de aspectos e impactos ambientais (IV correta).",
+  "porqueErradas": {
+    "A": "A afirmação III é falsa: o ciclo de certificação é de três anos, com auditorias de manutenção periódicas e auditoria de recertificação ao final de cada ciclo.",
+    "B": "Inclui III, que ignora o caráter periódico e renovável das auditorias de certificação.",
+    "D": "Inclui III, incorreta, e omite II, que explica justamente por que a integração dos três sistemas é viável.",
+    "E": "Inclui III, incorreta, e deixa de fora I, que registra a substituição da OHSAS 18001 pela ISO 45001."
+  }
+},
+{
+  "id": "ADP-43",
+  "tipo": "Adaptada",
+  "ano": 2014,
+  "referencia": "Adaptada de ENADE 2014 — Questão 34",
+  "area": "Ergonomia e Segurança do Trabalho",
+  "dificuldade": "Média",
+  "competencia": "Dimensionar a altura da superfície de trabalho em pé conforme o tipo de tarefa.",
+  "enunciado": "Nas recomendações ergonômicas para o trabalho realizado na posição em pé, a altura da superfície de trabalho é definida tomando-se como referência a altura do cotovelo do trabalhador em relação ao piso.\n\nConsiderando essas recomendações, avalie as afirmações a seguir.\n\nI. Tarefas de precisão, que exigem apoio dos cotovelos e aproximação visual, pedem superfície de trabalho acima da altura do cotovelo.\nII. Tarefas manuais leves pedem superfície de trabalho ligeiramente abaixo da altura do cotovelo.\nIII. Tarefas pesadas, com emprego de força e movimentação do tronco, pedem superfície bem abaixo da altura do cotovelo.\nIV. A altura adequada independe do tipo de tarefa, bastando padronizar todas as bancadas da fábrica em 90 cm.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e IV.",
+    "B": "II e III.",
+    "C": "I, II e III.",
+    "D": "I, III e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "C",
+  "justificativa": "A altura da bancada é definida pela combinação entre exigência visual e exigência de força. Trabalhos de precisão aproximam a peça dos olhos e demandam apoio dos cotovelos, elevando a superfície acima da linha do cotovelo (I correta). Trabalhos manuais leves ficam logo abaixo dessa linha, permitindo os braços relaxados (II correta). Trabalhos pesados exigem espaço para aplicar força com o peso do corpo, baixando bastante a superfície (III correta).",
+  "porqueErradas": {
+    "A": "A afirmação IV contraria o princípio central da recomendação: a altura depende simultaneamente do tipo de tarefa e da estatura do trabalhador, sendo a regulagem individual a solução preferencial.",
+    "B": "Embora II e III estejam corretas, a alternativa omite I, que trata das tarefas de precisão.",
+    "D": "Inclui IV, que propõe padronização única, desconsiderando tanto a tarefa quanto a variabilidade antropométrica.",
+    "E": "Inclui IV, incorreta, e deixa de fora I."
+  }
+},
+{
+  "id": "ADP-44",
+  "tipo": "Adaptada",
+  "ano": 2014,
+  "referencia": "Adaptada de ENADE 2014 — Questão 35",
+  "area": "Sustentabilidade e Meio Ambiente",
+  "dificuldade": "Média",
+  "competencia": "Compreender as fases, o escopo e as aplicações da Avaliação do Ciclo de Vida.",
+  "enunciado": "Uma empresa de embalagens contratou um estudo de Avaliação do Ciclo de Vida (ACV) para comparar duas alternativas de embalagem para o mesmo produto.\n\nA respeito da ACV, avalie as afirmações a seguir.\n\nI. A ACV é normalizada pelas normas ISO 14040 e ISO 14044, que definem princípios, estrutura e requisitos do estudo.\nII. A definição da unidade funcional é o que torna possível comparar produtos diferentes que cumprem a mesma função.\nIII. Um estudo do tipo \"do berço ao portão\" (cradle-to-gate) abrange todo o ciclo de vida do produto, incluindo o uso e o descarte final.\nIV. A fase de avaliação de impacto converte os dados do inventário em categorias como mudança climática, acidificação e eutrofização.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e III.",
+    "B": "II e III.",
+    "C": "I, II e IV.",
+    "D": "I, III e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "C",
+  "justificativa": "As ISO 14040 e 14044 são efetivamente as normas de referência da ACV (I correta). A unidade funcional é o elemento que garante a equivalência da comparação, pois expressa o serviço prestado e não a quantidade de material (II correta). A avaliação de impacto é a fase que traduz os fluxos elementares do inventário em indicadores de categorias de impacto (IV correta).",
+  "porqueErradas": {
+    "A": "A afirmação III é falsa: o estudo \"do berço ao portão\" encerra-se na saída da fábrica, sem incluir uso e descarte. Quem abrange todo o ciclo é o estudo \"do berço ao túmulo\" (cradle-to-grave).",
+    "B": "Inclui III, que confunde os limites de sistema do cradle-to-gate com os do cradle-to-grave.",
+    "D": "Inclui III, incorreta, e omite II, que trata da unidade funcional — elemento indispensável a um estudo comparativo.",
+    "E": "Inclui III, incorreta, e deixa de fora I, que identifica as normas que regem a ACV."
+  }
+}
+]

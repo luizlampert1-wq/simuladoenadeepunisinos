@@ -1,0 +1,607 @@
+<title>Simulado ENADE Produção</title>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap");
+
+  :root{
+    --font-sans:"IBM Plex Sans","Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;
+    --font-mono:"IBM Plex Mono",ui-monospace,"Cascadia Mono","Consolas",monospace;
+    --bg:#f4f6f9; --surface:#ffffff; --surface-2:#eef2f7; --line:#d9e0ea;
+    --ink:#16202e; --ink-2:#516075; --ink-3:#7b8798;
+    --brand:#0b4f9e; --brand-ink:#083a76; --brand-soft:#e6effa;
+    --ok:#0d7a4d; --ok-soft:#e2f5eb; --err:#b3261e; --err-soft:#fdeceb;
+    --warn:#9a6700; --warn-soft:#fff5d6;
+    --radius:14px; --shadow:0 1px 2px rgba(16,32,56,.06),0 8px 24px rgba(16,32,56,.07);
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0f1520; --surface:#161e2b; --surface-2:#1d2736; --line:#2c3849;
+      --ink:#e8edf5; --ink-2:#a9b6c8; --ink-3:#8494aa;
+      --brand:#5aa2f5; --brand-ink:#b9d6fb; --brand-soft:#16283f;
+      --ok:#4ec98a; --ok-soft:#12301f; --err:#f28b82; --err-soft:#33191a;
+      --warn:#e3b341; --warn-soft:#2e2513;
+      --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0f1520; --surface:#161e2b; --surface-2:#1d2736; --line:#2c3849;
+    --ink:#e8edf5; --ink-2:#a9b6c8; --ink-3:#8494aa;
+    --brand:#5aa2f5; --brand-ink:#b9d6fb; --brand-soft:#16283f;
+    --ok:#4ec98a; --ok-soft:#12301f; --err:#f28b82; --err-soft:#33191a;
+    --warn:#e3b341; --warn-soft:#2e2513;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);
+    color-scheme: dark;
+  }
+
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:var(--font-sans); font-size:16px; line-height:1.55;
+    -webkit-text-size-adjust:100%;
+  }
+  h1,h2,h3{text-wrap:balance; letter-spacing:-.011em}
+  :where(button,a,input,summary):focus-visible{
+    outline:2px solid var(--brand); outline-offset:2px; border-radius:8px}
+  @media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{animation-duration:.01ms!important; transition-duration:.01ms!important}
+  }
+  .wrap{max-width:960px; margin:0 auto; padding-inline:16px; padding-block:0}
+  h1,h2,h3{line-height:1.25; margin:0}
+  button{font:inherit; color:inherit}
+  img{max-width:100%}
+
+  /* ---------- top bar ---------- */
+  .topbar{background:var(--brand); color:#fff}
+  :root:not([data-theme="light"]) .topbar{background:#12243c}
+  @media (prefers-color-scheme: light){:root:not([data-theme="dark"]) .topbar{background:var(--brand)}}
+  :root[data-theme="dark"] .topbar{background:#12243c}
+  .topbar .wrap{display:flex; align-items:center; gap:12px; padding-block:14px; flex-wrap:wrap}
+  .logo{width:36px;height:36px;border-radius:9px;background:rgba(255,255,255,.16);
+        display:grid;place-items:center;font-weight:700;font-size:14px;letter-spacing:.5px;flex:none}
+  .topbar h1{font-size:1.05rem; font-weight:650}
+  .topbar p{margin:2px 0 0; font-size:.8rem; opacity:.85}
+
+  /* ---------- generic ---------- */
+  .card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+        box-shadow:var(--shadow); padding:22px; margin-block:18px}
+  .card.plain{box-shadow:none; background:transparent}   /* blocos de apoio: só contorno */
+  .muted{color:var(--ink-2)}
+  .small{font-size:.85rem}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;
+       background:var(--brand); color:#fff; border:1px solid transparent; border-radius:10px;
+       padding:11px 18px; font-weight:600; cursor:pointer; transition:filter .15s, transform .05s}
+  .btn:hover{filter:brightness(1.08)} .btn:active{transform:translateY(1px)}
+  .btn[disabled]{opacity:.45; cursor:not-allowed; filter:none}
+  .btn.ghost{background:transparent; color:var(--brand); border-color:var(--line)}
+  .btn.ghost:hover{background:var(--surface-2); filter:none}
+  .btn.danger{background:var(--err)}
+  .row{display:flex; gap:10px; flex-wrap:wrap}
+  .spread{display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap}
+  input[type=text]{
+    width:100%; padding:12px 14px; border:1px solid var(--line); border-radius:10px;
+    background:var(--surface); color:var(--ink); font:inherit}
+  input[type=text]:focus{outline:2px solid var(--brand); outline-offset:1px; border-color:transparent}
+  label{display:block; font-weight:600; margin-bottom:6px; font-size:.92rem}
+
+  .tags{display:flex; gap:6px; flex-wrap:wrap; margin-bottom:12px}
+  .tag{font-size:.68rem; font-weight:600; padding:4px 10px; border-radius:99px;
+       text-transform:uppercase; letter-spacing:.045em;
+       background:var(--surface-2); color:var(--ink-2); border:1px solid var(--line);
+       max-width:100%; overflow-wrap:anywhere}
+  .tag.brand{background:var(--brand-soft); color:var(--brand-ink); border-color:transparent}
+  .tag.ok{background:var(--ok-soft); color:var(--ok); border-color:transparent}
+  .tag.warn{background:var(--warn-soft); color:var(--warn); border-color:transparent}
+
+  .stats{display:grid; grid-template-columns:repeat(auto-fit,minmax(112px,1fr)); gap:10px; margin:16px 0 4px}
+  .stat{background:var(--surface-2); border-radius:10px; padding:12px; text-align:center}
+  .stat b{display:block; font-size:1.5rem; color:var(--brand-ink); line-height:1.15;
+          font-family:var(--font-mono); font-weight:600; font-variant-numeric:tabular-nums;
+          letter-spacing:-.03em}
+  :root[data-theme="dark"] .stat b{color:var(--brand)}
+  .stat span{font-size:.74rem; color:var(--ink-2)}
+
+  /* ---------- quiz ---------- */
+  .quizbar{position:sticky; top:0; z-index:20; background:var(--surface);
+           border-bottom:1px solid var(--line); box-shadow:0 2px 10px rgba(16,32,56,.05)}
+  .quizbar .wrap{padding-block:10px}
+  .quizbar b{font-family:var(--font-mono); font-weight:600; font-variant-numeric:tabular-nums;
+             letter-spacing:-.02em}
+  .progress{height:6px; background:var(--surface-2); border-radius:99px; overflow:hidden; margin-top:8px}
+  .progress i{display:block; height:100%; background:var(--brand); border-radius:99px; transition:width .25s}
+
+  .grid-nav{display:grid; grid-template-columns:repeat(10,1fr); gap:6px; margin-top:12px}
+  @media(max-width:520px){.grid-nav{grid-template-columns:repeat(5,1fr)}}
+  .gn{aspect-ratio:1; border:1px solid var(--line); background:var(--surface); border-radius:8px;
+      font-family:var(--font-mono); font-size:.8rem; font-weight:600; color:var(--ink-2);
+      cursor:pointer; padding:0; font-variant-numeric:tabular-nums}
+  .gn.done{background:var(--brand-soft); border-color:transparent; color:var(--brand-ink)}
+  :root[data-theme="dark"] .gn.done{color:var(--brand)}
+  .gn.cur{outline:2px solid var(--brand); outline-offset:1px}
+
+  .enun{white-space:pre-wrap; margin:0 0 16px; overflow-wrap:break-word; max-width:68ch}
+  .figbox{margin:0 0 16px; background:#fff; border:1px solid var(--line); border-radius:10px;
+          padding:10px; overflow-x:auto; text-align:center}
+  .figbox img{display:inline-block; cursor:zoom-in}
+  .figcap{font-size:.75rem; color:var(--ink-3); margin-top:6px}
+
+  .alts{display:grid; gap:9px}
+  .alt{display:flex; gap:12px; align-items:flex-start; text-align:left; width:100%;
+       background:var(--surface); border:1.5px solid var(--line); border-radius:11px;
+       padding:12px 14px; cursor:pointer; transition:border-color .12s, background .12s}
+  .alt:hover{border-color:var(--brand); background:var(--surface-2)}
+  .alt .k{flex:none; width:27px; height:27px; border-radius:50%; display:grid; place-items:center;
+          font-family:var(--font-mono); font-weight:600; font-size:.85rem;
+          background:var(--surface-2); color:var(--ink-2)}
+  .alt.sel{border-color:var(--brand); background:var(--brand-soft)}
+  .alt.sel .k{background:var(--brand); color:#fff}
+  .alt[disabled]{cursor:default}
+  .alt.right{border-color:var(--ok); background:var(--ok-soft)}
+  .alt.right .k{background:var(--ok); color:#fff}
+  .alt.wrong{border-color:var(--err); background:var(--err-soft)}
+  .alt.wrong .k{background:var(--err); color:#fff}
+
+  /* ---------- result ---------- */
+  .score{display:flex; align-items:center; gap:20px; flex-wrap:wrap}
+  .donut{--p:0; width:118px; height:118px; border-radius:50%; flex:none; display:grid; place-items:center;
+    background:conic-gradient(var(--brand) calc(var(--p)*1%), var(--surface-2) 0)}
+  .donut>div{width:88px;height:88px;border-radius:50%;background:var(--surface);display:grid;place-items:center;
+             font-family:var(--font-mono); font-size:1.5rem;font-weight:600;color:var(--brand-ink);
+             font-variant-numeric:tabular-nums; letter-spacing:-.04em}
+  :root[data-theme="dark"] .donut>div{color:var(--brand)}
+  .rev{border:1px solid var(--line); border-radius:12px; margin-block:12px; overflow:hidden}
+  .rev>summary{cursor:pointer; padding:13px 16px; background:var(--surface-2); font-weight:600;
+               display:flex; gap:10px; align-items:center; list-style:none}
+  .rev>summary::-webkit-details-marker{display:none}
+  .rev>summary .ico{flex:none; width:22px;height:22px;border-radius:50%;display:grid;place-items:center;
+                    font-size:.75rem;font-weight:700;color:#fff}
+  .rev>summary .resp{font-family:var(--font-mono); font-size:.74rem; text-align:right}
+  .rev.ok>summary .ico{background:var(--ok)} .rev.bad>summary .ico{background:var(--err)}
+  .rev .body{padding:16px; border-top:1px solid var(--line)}
+  .note{border-left:3px solid var(--brand); background:var(--surface-2); padding:11px 14px;
+        border-radius:0 8px 8px 0; margin:12px 0}
+  .note.ok{border-color:var(--ok)} .note.bad{border-color:var(--err)} .note.warn{border-color:var(--warn)}
+  .note b{display:block; margin-bottom:4px; font-size:.72rem; text-transform:uppercase;
+          letter-spacing:.06em; font-weight:600}
+  table.areas{width:100%; border-collapse:collapse; font-size:.88rem; margin-top:8px}
+  table.areas td{padding:6px 4px; border-bottom:1px solid var(--line)}
+  table.areas td:last-child{text-align:right; white-space:nowrap;
+      font-family:var(--font-mono); font-variant-numeric:tabular-nums; font-size:.84rem}
+
+  /* ---------- modal / lightbox ---------- */
+  .modal{position:fixed; inset:0; background:rgba(8,16,28,.55); display:grid; place-items:center;
+         z-index:60; padding:18px}
+  .modal .box{background:var(--surface); border-radius:var(--radius); padding:24px; max-width:440px;
+              box-shadow:var(--shadow)}
+  .lightbox{position:fixed; inset:0; background:rgba(8,16,28,.9); z-index:70; display:grid;
+            place-items:center; padding:16px; cursor:zoom-out; overflow:auto}
+  .lightbox img{max-width:100%; background:#fff; border-radius:8px}
+  footer{color:var(--ink-3); font-size:.78rem; text-align:center; padding:26px 0 34px}
+</style>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="logo">EP</div>
+    <div style="flex:1;min-width:180px">
+      <h1>Simulado ENADE — Engenharia de Produção</h1>
+      <p id="sub">Treinamento com base nas provas oficiais do INEP</p>
+    </div>
+    <button class="btn ghost" id="themeBtn" style="color:#fff;border-color:rgba(255,255,255,.35)"
+            title="Alternar tema">◐</button>
+  </div>
+</div>
+
+<div id="app" class="wrap"></div>
+<footer>
+  Aplicativo de treinamento independente, elaborado a partir das provas públicas do ENADE (INEP).
+  Não possui vínculo oficial com o INEP.
+</footer>
+
+<script>
+/* ============================================================
+   Banco de questões (injetado pelo build.py — ofuscado)
+   ============================================================ */
+const BANCO_ENC = "__BANCO__";
+const BUILD_INFO = __BUILD__;
+
+function decodeBanco(s){
+  const bin = atob(s);
+  const n = bin.length, arr = new Uint8Array(n);
+  const key = "enade-ep-unisinos";
+  for (let i = 0; i < n; i++) arr[i] = bin.charCodeAt(i) ^ key.charCodeAt(i % key.length);
+  return JSON.parse(new TextDecoder("utf-8").decode(arr));
+}
+const BANCO = decodeBanco(BANCO_ENC);
+
+/* ============================================================
+   Configuração e utilidades
+   ============================================================ */
+const N_QUESTOES   = 20;   // questões por simulado
+const MAX_POR_AREA = 3;    // teto por área no sorteio equilibrado
+const HIST_EVITAR  = 3;    // nº de simulados anteriores cujas questões são evitadas
+const LS = { hist:"enade_ep_hist_v1", prog:"enade_ep_prog_v1", tema:"enade_ep_tema_v1" };
+const LETRAS = ["A","B","C","D","E"];
+const $ = (sel, el=document) => el.querySelector(sel);
+const esc = s => String(s).replace(/[&<>"']/g, c =>
+  ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+function store(k, v){ try{ if(v===undefined) return JSON.parse(localStorage.getItem(k)||"null");
+  localStorage.setItem(k, JSON.stringify(v)); }catch(e){ return null; } }
+function del(k){ try{ localStorage.removeItem(k); }catch(e){} }
+
+function shuffle(a){
+  const r = a.slice();
+  for (let i = r.length - 1; i > 0; i--){ const j = Math.floor(Math.random()*(i+1)); [r[i],r[j]]=[r[j],r[i]]; }
+  return r;
+}
+
+/* ============================================================
+   Sorteio: 20 questões, sem repetição, equilibrado por área,
+   evitando as usadas nos últimos simulados
+   ============================================================ */
+function sortear(){
+  const hist = store(LS.hist) || [];
+  const recentes = new Set(hist.slice(0, HIST_EVITAR).flatMap(h => h.ids || []));
+  let pool = BANCO.filter(q => !recentes.has(q.id));
+  if (pool.length < N_QUESTOES) pool = BANCO.slice();      // banco pequeno: libera tudo
+
+  // Percorre o banco embaralhado e vai aceitando questões enquanto a área
+  // não estourar o teto. Isso mantém a proporção natural entre as áreas
+  // (áreas maiores aparecem mais) e, ao mesmo tempo, impede que o simulado
+  // se concentre em um único assunto. Se faltar questão, o teto é relaxado.
+  const escolhidas = [], porArea = {};
+  for (let teto = MAX_POR_AREA; teto <= N_QUESTOES && escolhidas.length < N_QUESTOES; teto++){
+    for (const q of shuffle(pool)){
+      if (escolhidas.length >= N_QUESTOES) break;
+      if (escolhidas.some(e => e.id === q.id)) continue;
+      if ((porArea[q.area] || 0) >= teto) continue;
+      escolhidas.push(q);
+      porArea[q.area] = (porArea[q.area] || 0) + 1;
+    }
+  }
+  return shuffle(escolhidas);
+}
+
+/* ============================================================
+   Estado
+   ============================================================ */
+let S = null;   // { nome, questoes, respostas, atual, inicio }
+
+function salvarProgresso(){
+  if (!S) return;
+  store(LS.prog, { nome:S.nome, ids:S.questoes.map(q=>q.id), respostas:S.respostas,
+                   atual:S.atual, inicio:S.inicio });
+}
+function restaurarProgresso(){
+  const p = store(LS.prog);
+  if (!p || !p.ids) return null;
+  const qs = p.ids.map(id => BANCO.find(q => q.id === id)).filter(Boolean);
+  if (qs.length !== p.ids.length) return null;
+  return { nome:p.nome, questoes:qs, respostas:p.respostas||{}, atual:p.atual||0, inicio:p.inicio };
+}
+
+/* ============================================================
+   Telas
+   ============================================================ */
+const app = $("#app");
+
+function telaInicial(msg){
+  del(LS.prog);
+  const hist  = store(LS.hist) || [];
+  const nOf   = BANCO.filter(q=>q.tipo==="Oficial").length;
+  const nAd   = BANCO.filter(q=>q.tipo==="Adaptada").length;
+  const nIn   = BANCO.filter(q=>q.tipo==="Inédita").length;
+  const nArea = new Set(BANCO.map(q=>q.area)).size;
+  const pend  = restaurarProgresso();
+
+  app.innerHTML = `
+    <div class="card">
+      <h2>Treinamento ENADE — Engenharia de Produção UNISINOS</h2>
+      <p class="muted" style="margin:10px 0 0">
+        Cada simulado sorteia <b>${N_QUESTOES} questões</b> do banco, distribuídas entre as diversas
+        áreas da Engenharia de Produção. Ao final, você recebe a correção completa, com o gabarito
+        e a justificativa de cada alternativa.
+      </p>
+      <div class="stats">
+        <div class="stat"><b>${BANCO.length}</b><span>questões no banco</span></div>
+        <div class="stat"><b>${nOf}</b><span>oficiais do ENADE</span></div>
+        <div class="stat"><b>${nAd}</b><span>adaptadas</span></div>
+        <div class="stat"><b>${nIn}</b><span>inéditas</span></div>
+        <div class="stat"><b>${nArea}</b><span>áreas cobertas</span></div>
+      </div>
+      <p class="small muted" style="margin-top:14px">
+        Questões oficiais extraídas das provas do ENADE de 2014, 2017, 2019 e 2023 (componente
+        específico), com os gabaritos definitivos do INEP. As questões adaptadas e inéditas seguem o
+        mesmo padrão de exigência, mas <b>não são questões oficiais do exame</b>.
+      </p>
+    </div>
+
+    ${msg ? `<div class="card" style="border-color:var(--ok)"><b>${esc(msg)}</b></div>` : ""}
+
+    ${pend ? `
+    <div class="card" style="border-color:var(--warn)">
+      <h3 style="font-size:1rem">Simulado em andamento</h3>
+      <p class="muted small" style="margin:8px 0 14px">
+        Encontramos um simulado não finalizado de <b>${esc(pend.nome)}</b>
+        (${Object.keys(pend.respostas).length} de ${pend.questoes.length} respondidas).
+      </p>
+      <div class="row">
+        <button class="btn" id="retomar">Retomar simulado</button>
+        <button class="btn ghost" id="descartar">Descartar e começar novo</button>
+      </div>
+    </div>` : ""}
+
+    <div class="card">
+      <label for="nome">Nome do aluno</label>
+      <input type="text" id="nome" placeholder="Digite seu nome completo" autocomplete="name"
+             maxlength="80" value="${esc(hist[0]?.nome || "")}">
+      <p id="erroNome" class="small" style="color:var(--err); margin:8px 0 0; display:none">
+        Informe seu nome para iniciar.</p>
+      <div class="row" style="margin-top:16px">
+        <button class="btn" id="iniciar">Iniciar simulado</button>
+      </div>
+    </div>
+
+    ${hist.length ? `
+    <div class="card">
+      <div class="spread"><h3 style="font-size:1rem">Seus simulados anteriores</h3>
+        <button class="btn ghost small" id="limparHist">Limpar histórico</button></div>
+      <table class="areas" style="margin-top:12px">
+        ${hist.slice(0,8).map(h=>`<tr>
+          <td>${esc(h.nome)}<br><span class="small muted">${esc(h.data)}</span></td>
+          <td><b>${h.acertos}/${h.total}</b> &nbsp; ${Math.round(h.acertos/h.total*100)}%</td>
+        </tr>`).join("")}
+      </table>
+    </div>` : ""}
+  `;
+
+  $("#iniciar").onclick = () => {
+    const nome = $("#nome").value.trim();
+    if (!nome){ $("#erroNome").style.display="block"; $("#nome").focus(); return; }
+    S = { nome, questoes:sortear(), respostas:{}, atual:0, inicio:Date.now() };
+    salvarProgresso(); telaQuiz();
+  };
+  $("#nome").addEventListener("keydown", e => { if (e.key === "Enter") $("#iniciar").click(); });
+  if (pend){
+    $("#retomar").onclick   = () => { S = pend; telaQuiz(); };
+    $("#descartar").onclick = () => telaInicial();
+  }
+  if (hist.length) $("#limparHist").onclick = () => { del(LS.hist); telaInicial(); };
+  window.scrollTo(0,0);
+}
+
+function telaQuiz(){
+  const q = S.questoes[S.atual], n = S.questoes.length;
+  const respondidas = Object.keys(S.respostas).length;
+  const sel = S.respostas[q.id];
+
+  app.innerHTML = `
+    <div class="quizbar"><div class="wrap">
+      <div class="spread">
+        <div><b>Questão ${S.atual+1} de ${n}</b>
+          <span class="muted small"> · ${respondidas} respondida${respondidas===1?"":"s"}</span></div>
+        <button class="btn danger" id="finalizar">Finalizar simulado</button>
+      </div>
+      <div class="progress"><i style="width:${(respondidas/n)*100}%"></i></div>
+    </div></div>
+
+    <div class="card">
+      <div class="tags">
+        <span class="tag brand">${esc(q.area)}</span>
+        <span class="tag">${esc(q.dificuldade)}</span>
+        ${q.tipo==="Oficial" ? `<span class="tag ok">Oficial ENADE ${q.ano}</span>`
+                             : `<span class="tag warn">${esc(q.tipo)}</span>`}
+      </div>
+      <p class="enun">${esc(q.enunciado)}</p>
+      ${q.figuraData ? `<div class="figbox"><img src="${q.figuraData}" alt="Figura da questão"
+          loading="lazy"><div class="figcap">Toque na imagem para ampliar</div></div>` : ""}
+      <div class="alts">
+        ${LETRAS.map(L=>`
+          <button class="alt ${sel===L?"sel":""}" data-k="${L}">
+            <span class="k">${L}</span><span>${esc(q.alternativas[L])}</span>
+          </button>`).join("")}
+      </div>
+      ${sel ? `<div class="row" style="margin-top:12px">
+        <button class="btn ghost small" id="limpar">Limpar resposta</button></div>` : ""}
+    </div>
+
+    <div class="card plain">
+      <div class="row">
+        <button class="btn ghost" id="ant" ${S.atual===0?"disabled":""}>← Anterior</button>
+        <button class="btn ghost" id="prox" ${S.atual===n-1?"disabled":""}>Próxima →</button>
+      </div>
+      <p class="small muted" style="margin:14px 0 0">Navegue diretamente para qualquer questão:</p>
+      <div class="grid-nav">
+        ${S.questoes.map((qq,i)=>`<button class="gn ${S.respostas[qq.id]?"done":""}
+          ${i===S.atual?"cur":""}" data-i="${i}">${i+1}</button>`).join("")}
+      </div>
+    </div>
+  `;
+
+  app.querySelectorAll(".alt").forEach(b => b.onclick = () => {
+    S.respostas[q.id] = b.dataset.k; salvarProgresso();
+    if (S.atual < n-1){ S.atual++; telaQuiz(); } else telaQuiz();
+  });
+  if (sel) $("#limpar").onclick = () => { delete S.respostas[q.id]; salvarProgresso(); telaQuiz(); };
+  $("#ant").onclick  = () => { if (S.atual>0){ S.atual--; salvarProgresso(); telaQuiz(); } };
+  $("#prox").onclick = () => { if (S.atual<n-1){ S.atual++; salvarProgresso(); telaQuiz(); } };
+  app.querySelectorAll(".gn").forEach(b => b.onclick = () => {
+    S.atual = +b.dataset.i; salvarProgresso(); telaQuiz(); });
+  $("#finalizar").onclick = confirmarFinal;
+  app.querySelectorAll(".figbox img").forEach(img => img.onclick = () => lightbox(img.src));
+  window.scrollTo(0,0);
+}
+
+function confirmarFinal(){
+  const faltam = S.questoes.length - Object.keys(S.respostas).length;
+  const div = document.createElement("div");
+  div.className = "modal";
+  div.innerHTML = `<div class="box">
+    <h3 style="font-size:1.05rem">Tem certeza de que deseja finalizar?</h3>
+    <p class="muted" style="margin:12px 0 0">Após isso, suas respostas serão corrigidas e o
+      gabarito será exibido.</p>
+    ${faltam ? `<p style="color:var(--warn); margin:12px 0 0"><b>Atenção:</b> ${faltam}
+      ${faltam===1?"questão ainda não foi respondida e será contabilizada como erro."
+                 :"questões ainda não foram respondidas e serão contabilizadas como erro."}</p>` : ""}
+    <div class="row" style="margin-top:20px; justify-content:flex-end">
+      <button class="btn ghost" id="nao">Continuar respondendo</button>
+      <button class="btn danger" id="sim">Finalizar e corrigir</button>
+    </div></div>`;
+  document.body.appendChild(div);
+  $("#nao", div).onclick = () => div.remove();
+  $("#sim", div).onclick = () => { div.remove(); telaResultado(); };
+  div.onclick = e => { if (e.target === div) div.remove(); };
+}
+
+function telaResultado(){
+  const n = S.questoes.length;
+  let acertos = 0, naoResp = 0;
+  const detalhe = S.questoes.map((q,i) => {
+    const r  = S.respostas[q.id] || null;
+    const ok = r === q.gabarito;
+    if (ok) acertos++;
+    if (!r) naoResp++;
+    return { i, q, r, ok };
+  });
+  const erros = n - acertos;
+  const pct   = Math.round(acertos / n * 100);
+  const mins  = Math.max(1, Math.round((Date.now() - S.inicio) / 60000));
+
+  // desempenho por área
+  const areas = {};
+  for (const d of detalhe){
+    const a = areas[d.q.area] || (areas[d.q.area] = { c:0, t:0 });
+    a.t++; if (d.ok) a.c++;
+  }
+
+  // histórico
+  const hist = store(LS.hist) || [];
+  hist.unshift({ nome:S.nome, data:new Date().toLocaleString("pt-BR"), acertos, total:n,
+                 ids:S.questoes.map(q=>q.id) });
+  store(LS.hist, hist.slice(0,20));
+  del(LS.prog);
+
+  const msg = pct >= 80 ? "Excelente desempenho!" : pct >= 60 ? "Bom desempenho — siga revisando."
+            : pct >= 40 ? "Desempenho intermediário: revise as áreas com mais erros."
+                        : "Vale retomar os fundamentos das áreas abaixo.";
+
+  app.innerHTML = `
+    <div class="card">
+      <h2 style="font-size:1.15rem">Resultado de ${esc(S.nome)}</h2>
+      <p class="small muted" style="margin:4px 0 18px">
+        ${new Date().toLocaleString("pt-BR")} · tempo aproximado: ${mins} min</p>
+      <div class="score">
+        <div class="donut" style="--p:${pct}"><div>${pct}%</div></div>
+        <div class="stats" style="flex:1; min-width:240px; margin:0">
+          <div class="stat"><b style="color:var(--ok)">${acertos}</b><span>acertos</span></div>
+          <div class="stat"><b style="color:var(--err)">${erros}</b><span>erros</span></div>
+          <div class="stat"><b>${naoResp}</b><span>em branco</span></div>
+          <div class="stat"><b>${(acertos/n*10).toFixed(1)}</b><span>nota (0–10)</span></div>
+        </div>
+      </div>
+      <p style="margin:18px 0 0"><b>${msg}</b></p>
+    </div>
+
+    <div class="card">
+      <h3 style="font-size:1rem">Desempenho por área</h3>
+      <table class="areas">
+        ${Object.entries(areas).sort((a,b)=> a[1].c/a[1].t - b[1].c/b[1].t)
+          .map(([a,v])=>`<tr><td>${esc(a)}</td>
+          <td>${v.c}/${v.t} &nbsp;<b style="color:${v.c===v.t?"var(--ok)":v.c===0?"var(--err)":"inherit"}">
+          ${Math.round(v.c/v.t*100)}%</b></td></tr>`).join("")}
+      </table>
+    </div>
+
+    <div class="card">
+      <h3 style="font-size:1rem">Correção detalhada</h3>
+      <p class="small muted" style="margin:6px 0 4px">Toque em cada questão para ver a justificativa.</p>
+      ${detalhe.map(d => revisaoHTML(d)).join("")}
+    </div>
+
+    <div class="card plain" style="text-align:center">
+      <div class="row" style="justify-content:center">
+        <button class="btn" id="novo">Fazer novo simulado</button>
+        <button class="btn ghost" id="inicio">Voltar ao início</button>
+      </div>
+    </div>
+  `;
+
+  $("#novo").onclick = () => {
+    S = { nome:S.nome, questoes:sortear(), respostas:{}, atual:0, inicio:Date.now() };
+    salvarProgresso(); telaQuiz();
+  };
+  $("#inicio").onclick = () => telaInicial();
+  app.querySelectorAll(".figbox img").forEach(img => img.onclick = () => lightbox(img.src));
+  window.scrollTo(0,0);
+}
+
+function revisaoHTML({ i, q, r, ok }){
+  return `
+  <details class="rev ${ok?"ok":"bad"}">
+    <summary>
+      <span class="ico">${ok?"✓":"✕"}</span>
+      <span style="flex:1">Questão ${i+1} — ${esc(q.area)}</span>
+      <span class="small muted resp">${r ? `Sua resposta: ${r}` : "Em branco"} · Gabarito: ${q.gabarito}</span>
+    </summary>
+    <div class="body">
+      <div class="tags">
+        ${q.tipo==="Oficial" ? `<span class="tag ok">${esc(q.referencia)}</span>`
+                             : `<span class="tag warn">${esc(q.tipo)}${q.referencia?" · "+esc(q.referencia):""}</span>`}
+        <span class="tag">${esc(q.dificuldade)}</span>
+      </div>
+      <p class="enun">${esc(q.enunciado)}</p>
+      ${q.figuraData ? `<div class="figbox"><img src="${q.figuraData}" alt="Figura da questão"
+          loading="lazy"><div class="figcap">Toque na imagem para ampliar</div></div>` : ""}
+      <div class="alts">
+        ${LETRAS.map(L=>{
+          const cls = L===q.gabarito ? "right" : (L===r ? "wrong" : "");
+          return `<div class="alt ${cls}"><span class="k">${L}</span><span>${esc(q.alternativas[L])}</span></div>`;
+        }).join("")}
+      </div>
+      <div class="note ${ok?"ok":"bad"}">
+        <b>${ok ? "Você acertou" : (r ? `Sua resposta: ${r} — incorreta` : "Questão não respondida")}</b>
+        Resposta correta: <b>${q.gabarito}</b>
+      </div>
+      ${(!ok && r && q.porqueErradas[r]) ? `<div class="note bad">
+        <b>Por que a alternativa ${r} está incorreta</b>${esc(q.porqueErradas[r])}</div>` : ""}
+      <div class="note ok"><b>Justificativa da resposta correta</b>${esc(q.justificativa)}</div>
+      ${q.observacao ? `<div class="note warn"><b>Observação</b>${esc(q.observacao)}</div>` : ""}
+      <details style="margin-top:10px">
+        <summary class="small muted" style="cursor:pointer">Ver por que as demais alternativas estão incorretas</summary>
+        <div style="margin-top:8px">
+          ${LETRAS.filter(L => L!==q.gabarito && q.porqueErradas[L]).map(L =>
+            `<p class="small" style="margin:6px 0"><b>${L})</b> ${esc(q.porqueErradas[L])}</p>`).join("")}
+        </div>
+      </details>
+      <p class="small muted" style="margin:12px 0 0"><b>Competência avaliada:</b> ${esc(q.competencia)}</p>
+    </div>
+  </details>`;
+}
+
+function lightbox(src){
+  const d = document.createElement("div");
+  d.className = "lightbox";
+  d.innerHTML = `<img src="${src}" alt="Figura ampliada">`;
+  d.onclick = () => d.remove();
+  document.body.appendChild(d);
+}
+
+/* ============================================================
+   Tema + início
+   ============================================================ */
+(function initTema(){
+  const t = store(LS.tema);
+  if (t) document.documentElement.setAttribute("data-theme", t);
+  $("#themeBtn").onclick = () => {
+    const atual = document.documentElement.getAttribute("data-theme");
+    const escuro = atual ? atual === "dark"
+      : matchMedia("(prefers-color-scheme: dark)").matches;
+    const novo = escuro ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", novo);
+    store(LS.tema, novo);
+  };
+})();
+
+$("#sub").textContent = `Banco com ${BANCO.length} questões · atualizado em ${BUILD_INFO.data}`;
+telaInicial();
+</script>

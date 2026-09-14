@@ -1,0 +1,452 @@
+[
+{
+  "id": "ADP-45",
+  "tipo": "Adaptada",
+  "ano": 2017,
+  "referencia": "Adaptada de ENADE 2017 — Questão 9",
+  "area": "Materiais e Processos de Fabricação",
+  "dificuldade": "Média",
+  "competencia": "Relacionar módulo de elasticidade e alongamento na ruptura ao comportamento mecânico de polímeros.",
+  "enunciado": "Quatro materiais poliméricos foram submetidos a ensaio de tração, obtendo-se os seguintes resultados:\n\n• Material P: módulo de elasticidade 3,2 GPa; alongamento na ruptura 4%\n• Material Q: módulo de elasticidade 0,9 GPa; alongamento na ruptura 250%\n• Material R: módulo de elasticidade 2,8 GPa; alongamento na ruptura 6%\n• Material S: módulo de elasticidade 0,02 GPa; alongamento na ruptura 600%\n\nAssinale a opção que associa corretamente um material ao seu comportamento mecânico.",
+  "alternativas": {
+    "A": "Material P — elastômero, por apresentar baixo módulo de elasticidade e grande deformação.",
+    "B": "Material Q — polímero rígido e frágil, por apresentar alto módulo de elasticidade e pequena deformação.",
+    "C": "Material S — elastômero, por apresentar módulo de elasticidade muito baixo e deformação muito elevada.",
+    "D": "Material R — polímero dúctil, por apresentar baixo módulo de elasticidade e grande deformação.",
+    "E": "Material P — polímero tenaz, por combinar baixo módulo de elasticidade e deformação intermediária."
+  },
+  "gabarito": "C",
+  "justificativa": "O material S combina módulo de elasticidade de 0,02 GPa — cerca de 150 vezes menor que o dos materiais P e R — com alongamento de 600% na ruptura. Essa combinação de rigidez muito baixa com capacidade de deformação muito elevada, com recuperação elástica, é exatamente o que caracteriza um elastômero.",
+  "porqueErradas": {
+    "A": "O material P tem o maior módulo de elasticidade do conjunto (3,2 GPa) e o menor alongamento (4%) — comporta-se como polímero rígido e frágil, o oposto de um elastômero.",
+    "B": "O material Q apresenta módulo baixo (0,9 GPa) e alongamento de 250%, sendo dúctil e flexível; a descrição de rígido e frágil não lhe cabe.",
+    "D": "O material R tem módulo alto (2,8 GPa) e alongamento de apenas 6%, o que caracteriza comportamento rígido, e não dúctil.",
+    "E": "O material P não tem baixo módulo nem deformação intermediária — é o mais rígido e o menos deformável dos quatro."
+  }
+},
+{
+  "id": "ADP-46",
+  "tipo": "Adaptada",
+  "ano": 2017,
+  "referencia": "Adaptada de ENADE 2017 — Questão 10",
+  "area": "Sustentabilidade e Meio Ambiente",
+  "dificuldade": "Média",
+  "competencia": "Compreender instrumentos econômicos aplicados à gestão ambiental.",
+  "enunciado": "A relação entre atividade produtiva e meio ambiente tem sido tratada por meio de instrumentos econômicos que buscam alinhar decisões empresariais a objetivos de conservação.\n\nA respeito desses instrumentos, avalie as afirmações a seguir.\n\nI. A internalização de externalidades busca incorporar ao custo privado da empresa os custos sociais decorrentes da degradação ambiental que ela provoca.\nII. O princípio do poluidor-pagador atribui ao agente causador da degradação o ônus de prevenir e reparar o dano ambiental.\nIII. O pagamento por serviços ambientais remunera proprietários que conservam ecossistemas provedores de serviços como regulação hídrica e sequestro de carbono.\nIV. Crescimento econômico e conservação ambiental são objetivos necessariamente incompatíveis, de modo que avançar em um implica retroceder no outro.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e IV.",
+    "B": "II e IV.",
+    "C": "I, II e III.",
+    "D": "I, III e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "C",
+  "justificativa": "As três primeiras afirmações descrevem corretamente instrumentos consolidados da economia ambiental: a internalização de externalidades (I), o princípio do poluidor-pagador (II), incorporado à legislação ambiental brasileira, e o pagamento por serviços ambientais (III), que reconhece valor econômico à conservação.",
+  "porqueErradas": {
+    "A": "A afirmação IV é falsa: o conceito de desenvolvimento sustentável e a própria noção de ecoeficiência baseiam-se na possibilidade de desacoplar crescimento econômico de consumo de recursos naturais.",
+    "B": "Inclui IV, que trata a relação entre economia e meio ambiente como jogo de soma zero.",
+    "D": "Inclui IV, incorreta, e omite II, que apresenta um dos princípios estruturantes do direito ambiental.",
+    "E": "Inclui IV, incorreta, e deixa de fora I, que descreve o conceito central de externalidade ambiental."
+  }
+},
+{
+  "id": "ADP-47",
+  "tipo": "Adaptada",
+  "ano": 2017,
+  "referencia": "Adaptada de ENADE 2017 — Questão 11",
+  "area": "Sistemas de Produção Enxuta",
+  "dificuldade": "Média",
+  "competencia": "Reconhecer os pilares e os mecanismos operacionais do Sistema Toyota de Produção.",
+  "enunciado": "O Sistema Toyota de Produção apoia-se em um conjunto articulado de princípios e mecanismos operacionais.\n\nA respeito desses elementos, avalie as afirmações a seguir.\n\nI. O jidoka consiste em dotar máquinas e operadores de autonomia para interromper a produção ao detectar uma anomalia, impedindo que o defeito avance no fluxo.\nII. O heijunka nivela mix e volume de produção, reduzindo a variabilidade transmitida aos processos anteriores e aos fornecedores.\nIII. O poka-yoke é um dispositivo à prova de erros que impede a ocorrência da falha ou sua passagem para a etapa seguinte.\nIV. O just in time recomenda manter estoques intermediários elevados entre as operações, para proteger o fluxo contra paradas não programadas.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e II.",
+    "B": "II e III.",
+    "C": "I, II e IV.",
+    "D": "I, II e III.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "D",
+  "justificativa": "O jidoka, um dos dois pilares do STP, é a autonomação com toque humano: a linha para diante da anomalia (I correta). O heijunka é o nivelamento da produção, que estabiliza a demanda transmitida à montante (II correta). O poka-yoke é o dispositivo à prova de erros que bloqueia a falha na origem (III correta).",
+  "porqueErradas": {
+    "A": "Embora I e II estejam corretas, a alternativa omite III, que descreve corretamente o poka-yoke.",
+    "B": "Omite I, que apresenta o jidoka — um dos dois pilares do sistema, ao lado do just in time.",
+    "C": "Inclui IV, que inverte o princípio do just in time: o objetivo é reduzir os estoques intermediários, expondo os problemas para que sejam resolvidos.",
+    "E": "Inclui IV, incorreta, e deixa de fora I."
+  }
+},
+{
+  "id": "ADP-48",
+  "tipo": "Adaptada",
+  "ano": 2017,
+  "referencia": "Adaptada de ENADE 2017 — Questão 13",
+  "area": "Materiais e Processos de Fabricação",
+  "dificuldade": "Fácil",
+  "competencia": "Selecionar classes de materiais a partir de requisitos de desempenho em alta temperatura.",
+  "enunciado": "Uma siderúrgica precisa especificar o material de revestimento interno de um forno industrial que opera continuamente a 1 400 °C. O revestimento deve suportar essa temperatura sem perda de integridade estrutural e, ao mesmo tempo, reduzir a perda de calor para o ambiente externo.\n\nNessas condições, o material adequado e a justificativa correta são",
+  "alternativas": {
+    "A": "aço inoxidável austenítico, pela elevada resistência à corrosão em atmosferas oxidantes.",
+    "B": "refratário cerâmico à base de alumina, pela elevada temperatura de fusão associada à baixa condutividade térmica.",
+    "C": "liga de alumínio, pela baixa massa específica e pela facilidade de conformação em chapas.",
+    "D": "polímero termofixo reforçado, pela estabilidade dimensional e pela resistência ao ataque químico.",
+    "E": "cobre eletrolítico, pela elevada condutividade térmica, que dissipa rapidamente o calor gerado."
+  },
+  "gabarito": "B",
+  "justificativa": "Refratários cerâmicos à base de alumina apresentam temperatura de fusão muito acima de 1 400 °C, mantendo resistência mecânica na temperatura de trabalho, e possuem condutividade térmica baixa — frequentemente reduzida ainda mais pela porosidade controlada. Essa combinação atende simultaneamente aos dois requisitos: suportar a temperatura e limitar a perda de calor.",
+  "porqueErradas": {
+    "A": "Aços inoxidáveis austeníticos perdem resistência mecânica bem antes de 1 400 °C e, por serem metais, conduzem calor com facilidade, ampliando as perdas térmicas.",
+    "C": "O alumínio funde por volta de 660 °C, muito abaixo da temperatura de operação do forno.",
+    "D": "Polímeros termofixos degradam-se a poucas centenas de graus Celsius, sendo inviáveis nessa aplicação.",
+    "E": "Alta condutividade térmica é exatamente o oposto do requerido: o revestimento deve isolar, e não dissipar, o calor. Além disso, o cobre funde a cerca de 1 085 °C."
+  }
+},
+{
+  "id": "ADP-49",
+  "tipo": "Adaptada",
+  "ano": 2017,
+  "referencia": "Adaptada de ENADE 2017 — Questão 15",
+  "area": "Estatística",
+  "dificuldade": "Média",
+  "competencia": "Distinguir dispersão absoluta de dispersão relativa na comparação entre processos.",
+  "enunciado": "Duas linhas de envase de uma mesma fábrica foram monitoradas por um período. Os resultados obtidos para o volume envasado foram:\n\n• Linha 1 (frascos de 500 mL): média 500 mL; desvio-padrão 5 mL\n• Linha 2 (frascos de 1 000 mL): média 1 000 mL; desvio-padrão 8 mL\n\nCom base nesses dados, avalie as afirmações a seguir.\n\nI. A Linha 2 apresenta maior dispersão absoluta que a Linha 1.\nII. A Linha 1 apresenta maior dispersão relativa que a Linha 2.\nIII. A Linha 1 é necessariamente mais homogênea, pois seu desvio-padrão é menor.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "II, apenas.",
+    "C": "I e II, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "C",
+  "justificativa": "A dispersão absoluta é medida pelo desvio-padrão: 8 mL na Linha 2 contra 5 mL na Linha 1 (I correta). A dispersão relativa é medida pelo coeficiente de variação: Linha 1 = 5/500 = 1,0% e Linha 2 = 8/1 000 = 0,8% (II correta). Ou seja, embora a Linha 2 varie mais em mililitros, ela é proporcionalmente mais uniforme.",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira — e é justamente a comparação relativa que permite avaliar processos de escalas diferentes.",
+    "B": "Além de II, a afirmação I também procede: 8 mL é efetivamente maior que 5 mL em termos absolutos.",
+    "D": "A afirmação III é falsa: comparar desvios-padrão de variáveis com médias muito diferentes é inadequado. Em termos relativos, a Linha 1 é a menos homogênea das duas.",
+    "E": "Inclui III, que confunde dispersão absoluta com homogeneidade relativa do processo."
+  }
+},
+{
+  "id": "ADP-50",
+  "tipo": "Adaptada",
+  "ano": 2017,
+  "referencia": "Adaptada de ENADE 2017 — Questão 16",
+  "area": "Eletricidade e Eletrotécnica",
+  "dificuldade": "Média",
+  "competencia": "Identificar o princípio comum a medidas de eficiência energética industrial.",
+  "enunciado": "Um programa de eficiência energética em uma indústria metalmecânica estabeleceu as seguintes recomendações:\n\n• dimensionar corretamente os motores elétricos, evitando o superdimensionamento e a operação em baixa carga;\n• corrigir o fator de potência da instalação com banco de capacitores;\n• substituir motores antigos por modelos de alto rendimento;\n• eliminar vazamentos na rede de ar comprimido;\n• desligar equipamentos que permaneçam operando em vazio.\n\nA característica comum a essas recomendações é a proposta de economizar energia por meio da",
+  "alternativas": {
+    "A": "redução do tempo total de operação dos equipamentos produtivos.",
+    "B": "redução das perdas no sistema motriz e na distribuição de energia elétrica.",
+    "C": "substituição da energia elétrica por fontes térmicas de menor custo.",
+    "D": "ampliação da potência instalada, de modo a reduzir o tempo de processamento.",
+    "E": "redução do consumo de energia térmica convertida em energia elétrica."
+  },
+  "gabarito": "B",
+  "justificativa": "Todas as medidas atacam energia consumida sem produzir trabalho útil: motores superdimensionados operam com baixo rendimento; um fator de potência ruim aumenta a corrente e as perdas por efeito Joule nos condutores; motores de baixo rendimento dissipam mais calor; vazamentos de ar comprimido fazem o compressor trabalhar sem entregar ar ao processo; e equipamentos em vazio consomem sem produzir. O denominador comum é a eliminação de perdas no sistema motriz e na distribuição.",
+  "porqueErradas": {
+    "A": "A maioria das medidas não altera o tempo de operação: trocar um motor ou corrigir o fator de potência reduz o consumo mantendo a mesma jornada produtiva.",
+    "C": "Nenhuma das recomendações propõe troca de fonte energética; todas atuam sobre a eficiência do uso da energia elétrica já disponível.",
+    "D": "Aumentar a potência instalada não é recomendado em nenhum dos itens — ao contrário, o primeiro item alerta justamente contra o superdimensionamento.",
+    "E": "A conversão relevante ocorre no sentido inverso: energia elétrica que se perde como calor nos condutores e nos motores."
+  }
+},
+{
+  "id": "ADP-51",
+  "tipo": "Adaptada",
+  "ano": 2017,
+  "referencia": "Adaptada de ENADE 2017 — Questão 17",
+  "area": "Cálculo e Otimização",
+  "dificuldade": "Difícil",
+  "competencia": "Modelar problema de otimização com restrição pelo método dos multiplicadores de Lagrange.",
+  "enunciado": "Um fabricante de embalagens precisa projetar uma caixa de papelão de base quadrada e sem tampa, com volume interno fixo V₀. O papelão da base tem custo K₁ por unidade de área e o das quatro laterais tem custo K₂ por unidade de área. Deseja-se determinar o lado da base (x) e a altura (h) que minimizam o custo total, usando o método dos multiplicadores de Lagrange.\n\nCom base nessa situação, avalie as afirmações a seguir.\n\nI. A função a ser minimizada é C(x, h) = K₁x² + 4K₂xh.\nII. O vínculo do problema é g(x, h) = x²h − V₀.\nIII. A condição de otimalidade é ∇C(x, h) = λ∇g(x, h), em que λ é o multiplicador de Lagrange.\nIV. Como a caixa não tem tampa, sua área total é A(x, h) = 2x² + 4xh.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e IV.",
+    "B": "II e IV.",
+    "C": "I, II e III.",
+    "D": "I, III e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "C",
+  "justificativa": "A base é um quadrado de área x² ao custo K₁, e as quatro laterais somam área 4xh ao custo K₂, resultando em C(x, h) = K₁x² + 4K₂xh (I correta). O volume da caixa de base quadrada é x²h, de modo que a restrição de volume fixo se escreve como g(x, h) = x²h − V₀ = 0 (II correta). A condição de estacionariedade do método de Lagrange é a igualdade entre os gradientes, a menos do multiplicador λ (III correta).",
+  "porqueErradas": {
+    "A": "A afirmação IV é falsa: o termo 2x² corresponderia a base mais tampa. Como a caixa é aberta, a área total é A(x, h) = x² + 4xh.",
+    "B": "Inclui IV, que contabiliza uma tampa inexistente, e omite I e III.",
+    "D": "Inclui IV, incorreta, e deixa de fora II, que estabelece a restrição de volume.",
+    "E": "Inclui IV, incorreta, e omite I, que define corretamente a função-objetivo de custo."
+  }
+},
+{
+  "id": "ADP-52",
+  "tipo": "Adaptada",
+  "ano": 2017,
+  "referencia": "Adaptada de ENADE 2017 — Questão 19",
+  "area": "Gestão da Qualidade",
+  "dificuldade": "Média",
+  "competencia": "Interpretar cartas de controle e decidir a ação correta diante de causas especiais.",
+  "enunciado": "Uma indústria de alimentos monitora duas máquinas de dosagem por meio de cartas de controle de médias e amplitudes. A análise do período recente mostrou que:\n\n• na máquina A, a carta de amplitudes registra um ponto acima do limite superior de controle e uma sequência de sete pontos consecutivos com tendência crescente;\n• na máquina B, ambas as cartas apresentam pontos distribuídos aleatoriamente dentro dos limites de controle.\n\nPara reduzir a variabilidade do processo de dosagem, a ação correta é",
+  "alternativas": {
+    "A": "ampliar os limites de controle da máquina A, de modo que os pontos voltem a ficar dentro da faixa.",
+    "B": "implantar inspeção de 100% dos produtos após a máquina A, garantindo que nenhum item fora de especificação siga adiante.",
+    "C": "manter ambos os processos como estão, pois a máquina B compensa a variação observada na máquina A.",
+    "D": "investigar e eliminar a causa especial que atua no processo da máquina A, evidenciada pelo ponto fora de controle e pela tendência.",
+    "E": "aumentar o tamanho das amostras coletadas na máquina A, a fim de reduzir a amplitude observada."
+  },
+  "gabarito": "D",
+  "justificativa": "Um ponto além do limite de controle e uma sequência de sete pontos com tendência são dois sinais clássicos de causa especial de variação. Diante deles, a conduta correta é investigar a origem do sinal — desgaste de componente, desajuste, variação de matéria-prima — e eliminá-la, devolvendo o processo ao estado de controle estatístico.",
+  "porqueErradas": {
+    "A": "Os limites de controle são calculados a partir da variabilidade natural do processo; alargá-los apenas oculta a instabilidade, sem reduzir a variação real.",
+    "B": "A inspeção 100% é ação de contenção que separa defeitos já produzidos; não reduz a variabilidade do processo e contraria o princípio de construir a qualidade na operação.",
+    "C": "Processos não se compensam: a variabilidade da máquina A continuaria gerando produtos fora de especificação, independentemente do desempenho da máquina B.",
+    "E": "Aumentar o tamanho da amostra estreita os limites da carta de médias e altera a sensibilidade do monitoramento, mas não modifica a variabilidade do processo de dosagem."
+  }
+},
+{
+  "id": "ADP-53",
+  "tipo": "Adaptada",
+  "ano": 2017,
+  "referencia": "Adaptada de ENADE 2017 — Questão 20",
+  "area": "Sustentabilidade e Meio Ambiente",
+  "dificuldade": "Média",
+  "competencia": "Conhecer as etapas e os instrumentos do licenciamento ambiental brasileiro.",
+  "enunciado": "Uma empresa pretende implantar uma nova unidade fabril e precisa obter o licenciamento ambiental junto ao órgão competente.\n\nA respeito desse processo, avalie as afirmações a seguir.\n\nI. A Licença Prévia é concedida na fase preliminar do planejamento e aprova a localização e a concepção do empreendimento.\nII. A Licença de Instalação autoriza o início das obras, de acordo com os planos e projetos aprovados.\nIII. A Licença de Operação autoriza o início das atividades, após verificação do cumprimento das condicionantes das licenças anteriores.\nIV. O Estudo de Impacto Ambiental e o respectivo relatório são exigidos de todo e qualquer empreendimento sujeito a licenciamento, independentemente do porte e do potencial poluidor.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e II.",
+    "B": "I, II e III.",
+    "C": "III e IV.",
+    "D": "I, II e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "B",
+  "justificativa": "As três primeiras afirmações reproduzem exatamente a definição das licenças ambientais na Resolução CONAMA n. 237/1997: a Licença Prévia atesta a viabilidade ambiental e aprova localização e concepção; a Licença de Instalação autoriza a implantação conforme os projetos aprovados; e a Licença de Operação libera o funcionamento após a verificação das condicionantes.",
+  "porqueErradas": {
+    "A": "Embora I e II estejam corretas, a alternativa omite III, que descreve a terceira e última etapa da sequência.",
+    "C": "A afirmação IV é falsa: o EIA/RIMA é exigido apenas para empreendimentos de significativo impacto ambiental. Atividades de menor potencial poluidor seguem por estudos ambientais simplificados.",
+    "D": "Inclui IV, que generaliza indevidamente a exigência do EIA/RIMA.",
+    "E": "Inclui IV, incorreta, e deixa de fora I, que trata da primeira licença da sequência."
+  }
+},
+{
+  "id": "ADP-54",
+  "tipo": "Adaptada",
+  "ano": 2017,
+  "referencia": "Adaptada de ENADE 2017 — Questão 21",
+  "area": "Engenharia Econômica",
+  "dificuldade": "Média",
+  "competencia": "Calcular o Valor Presente Líquido e aplicar o critério de decisão de investimento.",
+  "enunciado": "Uma empresa avalia a aquisição de um equipamento no valor de R$ 350.000,00, que gerará fluxos de caixa líquidos anuais, iguais e consecutivos, de R$ 95.000,00 durante 6 anos. A taxa mínima de atratividade adotada é de 14% ao ano.\n\nConsidere que o fator de valor presente de série uniforme para 14% ao ano e 6 períodos é igual a 3,8887.\n\nCom base nesses dados, o valor presente líquido do projeto e a decisão correspondente são",
+  "alternativas": {
+    "A": "aproximadamente R$ 19.400,00 positivo, devendo o projeto ser aceito.",
+    "B": "aproximadamente R$ 19.400,00 negativo, devendo o projeto ser rejeitado.",
+    "C": "aproximadamente R$ 220.000,00 positivo, devendo o projeto ser aceito.",
+    "D": "aproximadamente R$ 19.400,00 positivo, devendo o projeto ser rejeitado, por representar menos de 10% do investimento.",
+    "E": "indeterminado, pois não é possível decidir sem o cálculo prévio da taxa interna de retorno."
+  },
+  "gabarito": "A",
+  "justificativa": "O valor presente dos fluxos é 95.000 × 3,8887 = R$ 369.426,50. Subtraindo o investimento inicial: VPL = 369.426,50 − 350.000,00 = R$ 19.426,50, positivo. Pelo critério do VPL, projetos com valor presente líquido maior que zero remuneram o capital à taxa mínima de atratividade e ainda geram valor adicional, devendo ser aceitos.",
+  "porqueErradas": {
+    "B": "O sinal está invertido: o valor presente dos fluxos (R$ 369.426,50) supera o investimento (R$ 350.000,00), resultando em VPL positivo.",
+    "C": "R$ 220.000,00 seria a diferença entre a soma nominal dos fluxos (6 × 95.000 = R$ 570.000,00) e o investimento, sem descontar os fluxos a valor presente.",
+    "D": "Não existe, na engenharia econômica, critério que exija VPL superior a um percentual do investimento; o parâmetro de comparação é zero.",
+    "E": "O VPL é um critério de decisão autônomo e suficiente, não dependendo do cálculo prévio da TIR."
+  }
+},
+{
+  "id": "ADP-55",
+  "tipo": "Adaptada",
+  "ano": 2017,
+  "referencia": "Adaptada de ENADE 2017 — Questão 23",
+  "area": "Desenvolvimento de Produto e Inovação",
+  "dificuldade": "Média",
+  "competencia": "Compreender os fundamentos e os efeitos da engenharia simultânea.",
+  "enunciado": "Uma fabricante de máquinas agrícolas adotou a engenharia simultânea no desenvolvimento de sua nova linha de produtos.\n\nA respeito desse método e de seus efeitos, avalie as afirmações a seguir.\n\nI. A sobreposição parcial das fases de desenvolvimento reduz o tempo total até o lançamento no mercado.\nII. O método exige equipes multifuncionais, com participação de manufatura, suprimentos e qualidade desde a fase de concepção do produto.\nIII. O método aumenta a probabilidade de retrabalho, uma vez que obriga a tomar decisões de projeto com informação incompleta.\nIV. A antecipação das restrições de manufatura para a fase de projeto reduz alterações tardias e custosas de engenharia.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e III.",
+    "B": "II e III.",
+    "C": "I, II e IV.",
+    "D": "I, III e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "C",
+  "justificativa": "A sobreposição de fases é o mecanismo pelo qual a engenharia simultânea encurta o time to market (I correta). Isso só é viável com equipes multifuncionais atuando desde a concepção, pois é a presença antecipada das demais funções que permite decidir em paralelo (II correta). O resultado prático é a antecipação de restrições de manufatura, evitando alterações tardias — as mais caras do ciclo de desenvolvimento (IV correta).",
+  "porqueErradas": {
+    "A": "A afirmação III inverte o efeito do método: ao trazer manufatura e qualidade para a concepção, a engenharia simultânea reduz o retrabalho, pois evita que problemas de produção só apareçam na fase de industrialização.",
+    "B": "Inclui III, incorreta, e deixa de fora I e IV.",
+    "D": "Inclui III, que atribui ao método exatamente o problema que ele se propõe a resolver.",
+    "E": "Inclui III, incorreta, e omite I, que expressa o principal benefício competitivo do método."
+  }
+},
+{
+  "id": "ADP-56",
+  "tipo": "Adaptada",
+  "ano": 2017,
+  "referencia": "Adaptada de ENADE 2017 — Questão 24",
+  "area": "Gestão da Qualidade",
+  "dificuldade": "Média",
+  "competencia": "Distinguir os níveis estratégico, tático e operacional da gestão da qualidade.",
+  "enunciado": "Em uma organização, o modelo geral de gestão da qualidade distribui seus elementos entre os níveis estratégico, tático e operacional.\n\nNesse contexto, o gerenciamento da rotina do trabalho do dia a dia",
+  "alternativas": {
+    "A": "situa-se no nível estratégico, pois define a política da qualidade da organização.",
+    "B": "situa-se no nível tático, pois desdobra as diretrizes anuais para as diversas unidades.",
+    "C": "situa-se no nível operacional, pois padroniza os procedimentos e mantém os resultados dos processos já estabilizados.",
+    "D": "situa-se no nível estratégico, pois estabelece as metas de sobrevivência do negócio a longo prazo.",
+    "E": "situa-se no nível tático, pois seleciona as ferramentas estatísticas que serão aplicadas no chão de fábrica."
+  },
+  "gabarito": "C",
+  "justificativa": "O gerenciamento da rotina atua sobre os processos já existentes, por meio de padronização, treinamento, monitoramento de itens de controle e ação corretiva sobre anomalias. Seu objetivo é manter os resultados no patamar já alcançado, o que o situa no nível operacional — em contraposição ao gerenciamento das diretrizes, que é o instrumento de melhoria e pertence ao nível tático.",
+  "porqueErradas": {
+    "A": "A política da qualidade é definida no nível estratégico pela alta direção; o gerenciamento da rotina é a execução cotidiana, não a definição de diretrizes.",
+    "B": "O desdobramento de diretrizes anuais é precisamente o gerenciamento das diretrizes, que é outro instrumento e ocupa o nível tático.",
+    "D": "Metas de sobrevivência são estabelecidas no planejamento estratégico, com horizonte de longo prazo, e não na rotina diária.",
+    "E": "As ferramentas estatísticas pertencem ao nível operacional, e sua seleção não caracteriza o gerenciamento da rotina."
+  }
+},
+{
+  "id": "ADP-57",
+  "tipo": "Adaptada",
+  "ano": 2017,
+  "referencia": "Adaptada de ENADE 2017 — Questão 25",
+  "area": "Gestão Organizacional e Estratégia",
+  "dificuldade": "Média",
+  "competencia": "Relacionar estratégias competitivas genéricas aos critérios competitivos da produção.",
+  "enunciado": "Uma manufatura de relógios mecânicos produz cerca de 400 peças por ano, cada uma montada e regulada manualmente por um único relojoeiro. Os produtos são vendidos exclusivamente em boutiques próprias, a preços muito acima da média do mercado, a um público restrito de colecionadores que valoriza a tradição da marca e o acabamento artesanal.\n\nA estratégia competitiva genérica adotada e o critério competitivo prioritário da produção são, respectivamente,",
+  "alternativas": {
+    "A": "liderança em custo e custos baixos.",
+    "B": "enfoque em diferenciação e qualidade.",
+    "C": "diferenciação em alvo amplo e velocidade de entrega.",
+    "D": "enfoque em custo e confiabilidade de entrega.",
+    "E": "liderança em custo e flexibilidade de mix."
+  },
+  "gabarito": "B",
+  "justificativa": "O escopo competitivo é estreito — um segmento restrito de colecionadores — e a fonte de vantagem é a singularidade percebida, expressa na tradição da marca e no acabamento artesanal. Essa combinação de alvo estreito com diferenciação caracteriza a estratégia de enfoque em diferenciação, cujo critério competitivo prioritário na produção é a qualidade do produto.",
+  "porqueErradas": {
+    "A": "Liderança em custo pressupõe alto volume, padronização e disputa por preço — o oposto de 400 peças anuais vendidas com forte prêmio de preço.",
+    "C": "Embora haja diferenciação, o alvo é estreito, e não amplo; além disso, velocidade de entrega não é o critério valorizado por esse público.",
+    "D": "O enfoque está correto quanto ao escopo, mas a fonte de vantagem é a diferenciação, e não o custo.",
+    "E": "Nem a liderança em custo nem a flexibilidade de mix descrevem uma operação artesanal de altíssimo valor agregado e baixíssimo volume."
+  }
+},
+{
+  "id": "ADP-58",
+  "tipo": "Adaptada",
+  "ano": 2017,
+  "referencia": "Adaptada de ENADE 2017 — Questão 26",
+  "area": "Sistemas de Informação e Indústria 4.0",
+  "dificuldade": "Média",
+  "competencia": "Avaliar benefícios e limitações da implantação de sistemas ERP.",
+  "enunciado": "Seis meses após implantar um sistema ERP, uma indústria de autopeças fez um balanço: a duplicidade de cadastros entre setores foi eliminada e os relatórios gerenciais passaram a ser consistentes, mas houve resistência dos usuários e o custo de treinamento superou o previsto.\n\nCom base nessa situação, avalie as afirmações a seguir.\n\nI. A base de dados única é a característica do ERP que elimina a redundância e a inconsistência de informações entre os setores.\nII. A implantação de um ERP exige gestão da mudança e capacitação dos usuários, itens frequentemente subestimados no orçamento do projeto.\nIII. O ERP dispensa o redesenho dos processos da empresa, pois se adapta integralmente às práticas já existentes.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "III, apenas.",
+    "C": "I e II, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "C",
+  "justificativa": "A base de dados única é justamente o que elimina cadastros duplicados e garante consistência entre os relatórios das diferentes áreas (I correta). E a experiência relatada — resistência dos usuários e custo de treinamento acima do previsto — confirma que gestão da mudança e capacitação são dimensões críticas e comumente subdimensionadas (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira e é corroborada pelos próprios fatos descritos no enunciado.",
+    "B": "A afirmação III é falsa: sistemas ERP incorporam processos de referência e, na prática, exigem que a empresa adapte seus processos ao sistema — o redesenho de processos é parte central desse tipo de projeto.",
+    "D": "Inclui III, que nega a necessidade de redesenho de processos, contrariando a prática de implantação desses sistemas.",
+    "E": "Inclui III, incorreta pelo mesmo motivo."
+  }
+},
+{
+  "id": "ADP-59",
+  "tipo": "Adaptada",
+  "ano": 2017,
+  "referencia": "Adaptada de ENADE 2017 — Questão 27",
+  "area": "Desenvolvimento de Produto e Inovação",
+  "dificuldade": "Média",
+  "competencia": "Classificar estratégias tecnológicas empresariais.",
+  "enunciado": "As estratégias tecnológicas das empresas costumam ser classificadas em ofensiva, defensiva, imitativa, dependente, tradicional e oportunista, conforme o posicionamento adotado em relação à fronteira tecnológica de seu setor.\n\nUma empresa que mantém laboratórios próprios de pesquisa, investe percentual elevado do faturamento em P&D e busca sistematicamente ser a primeira a introduzir novas tecnologias no mercado, assumindo os riscos do pioneirismo, adota estratégia",
+  "alternativas": {
+    "A": "ofensiva.",
+    "B": "defensiva.",
+    "C": "imitativa.",
+    "D": "dependente.",
+    "E": "tradicional."
+  },
+  "gabarito": "A",
+  "justificativa": "A estratégia ofensiva caracteriza-se pela busca da liderança técnica e de mercado por meio da introdução pioneira de novas tecnologias. Exige capacidade própria e permanente de pesquisa, investimento elevado em P&D e disposição para assumir os riscos e a incerteza inerentes a ser o primeiro — exatamente o perfil descrito.",
+  "porqueErradas": {
+    "B": "Na estratégia defensiva, a empresa também mantém P&D próprio, mas deliberadamente evita o pioneirismo: deixa outra assumir o risco inicial e entra logo em seguida, com uma versão aperfeiçoada.",
+    "C": "A estratégia imitativa consiste em seguir as tecnologias já estabelecidas, frequentemente sob licença, sem pretensão de liderança técnica.",
+    "D": "Na estratégia dependente, a empresa atua como fornecedora ou subsidiária e recebe as especificações técnicas de clientes ou da matriz, sem desenvolvimento próprio.",
+    "E": "A estratégia tradicional aplica-se a empresas que operam em mercados estáveis, praticamente sem mudança técnica no produto."
+  }
+},
+{
+  "id": "ADP-60",
+  "tipo": "Adaptada",
+  "ano": 2017,
+  "referencia": "Adaptada de ENADE 2017 — Questão 28",
+  "area": "Logística e Cadeia de Suprimentos",
+  "dificuldade": "Média",
+  "competencia": "Aplicar os princípios de bom roteamento na construção de rotas de distribuição.",
+  "enunciado": "Uma transportadora está revisando as rotas de distribuição urbana de um centro de distribuição para 90 pontos de entrega.\n\nA respeito dos princípios de bom roteamento, avalie as afirmações a seguir.\n\nI. Devem ser agrupadas em uma mesma rota as paradas geograficamente próximas entre si, minimizando o percurso entre atendimentos consecutivos.\nII. Rotas bem construídas assumem formato semelhante ao de uma gota d'água, sem cruzamentos entre os trechos percorridos.\nIII. As paradas com janelas de tempo mais restritas devem ser distribuídas entre o maior número possível de rotas, para diluir o risco de atraso.\nIV. A construção das rotas deve começar pelas paradas mais distantes do centro de distribuição, agregando-se em seguida as intermediárias.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e III.",
+    "B": "II e III.",
+    "C": "I, II e IV.",
+    "D": "I, III e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "C",
+  "justificativa": "Agrupar paradas próximas é o princípio mais elementar do roteamento, pois reduz diretamente a distância entre atendimentos (I correta). O formato de gota d'água, sem cruzamentos, é o indicador visual clássico de uma rota eficiente (II correta). E iniciar a construção pelas paradas mais afastadas permite formar o núcleo da rota e agregar as intermediárias no caminho de volta, evitando deslocamentos redundantes (IV correta).",
+  "porqueErradas": {
+    "A": "A afirmação III inverte a boa prática: paradas com restrições de horário devem ser concentradas em uma mesma rota, de modo que as demais fiquem livres dessas amarras e possam ser sequenciadas apenas por proximidade.",
+    "B": "Inclui III, incorreta, e omite I e IV.",
+    "D": "Inclui III, que dispersaria as restrições de janela por todas as rotas, comprometendo a eficiência de todas elas.",
+    "E": "Inclui III, incorreta, e deixa de fora I, que é o princípio fundamental do agrupamento."
+  }
+},
+{
+  "id": "ADP-61",
+  "tipo": "Adaptada",
+  "ano": 2017,
+  "referencia": "Adaptada de ENADE 2017 — Questão 32",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Difícil",
+  "competencia": "Calcular necessidade líquida, tamanho de lote e período de liberação de ordens no MRP.",
+  "enunciado": "No registro MRP de um componente, constam os seguintes parâmetros e dados:\n\n• Necessidade bruta na semana 5: 300 unidades\n• Estoque projetado disponível no início do horizonte: 120 unidades\n• Estoque de segurança: 50 unidades\n• Regra de lote: múltiplos de 200 unidades\n• Lead time de produção: 2 semanas\n\nNão há outras necessidades brutas nem recebimentos programados no horizonte considerado.\n\nCom base nesses dados, a quantidade e a semana de liberação da ordem planejada de produção são, respectivamente,",
+  "alternativas": {
+    "A": "200 unidades na semana 3.",
+    "B": "400 unidades na semana 3.",
+    "C": "400 unidades na semana 5.",
+    "D": "230 unidades na semana 3.",
+    "E": "200 unidades na semana 5."
+  },
+  "gabarito": "B",
+  "justificativa": "A necessidade líquida é a necessidade bruta menos o estoque disponível, acrescida do estoque de segurança que deve ser preservado: 300 − 120 + 50 = 230 unidades. Como a regra de lote exige múltiplos de 200, a ordem deve ser de 400 unidades (200 seria insuficiente para cobrir as 230 necessárias). Com lead time de 2 semanas, para que o material esteja disponível na semana 5, a ordem precisa ser liberada na semana 3.",
+  "porqueErradas": {
+    "A": "Um lote de 200 unidades não cobre a necessidade líquida de 230, o que provocaria ruptura do estoque de segurança.",
+    "C": "A semana 5 é a do recebimento, não a da liberação: descontando o lead time de 2 semanas, a ordem deve ser liberada na semana 3.",
+    "D": "230 unidades é a necessidade líquida calculada, mas a regra de lote impõe múltiplos de 200, obrigando o arredondamento para cima.",
+    "E": "Erra nas duas dimensões: a quantidade é insuficiente e a semana indicada é a do recebimento, e não a da liberação."
+  }
+},
+{
+  "id": "ADP-62",
+  "tipo": "Adaptada",
+  "ano": 2017,
+  "referencia": "Adaptada de ENADE 2017 — Questão 33",
+  "area": "Gestão de Projetos",
+  "dificuldade": "Média",
+  "competencia": "Determinar caminho crítico, folga total e relações de precedência em diagramas de rede.",
+  "enunciado": "O quadro a seguir apresenta as atividades de um projeto de reforma industrial, com durações em dias e respectivas precedências.\n\nAtividade | Duração (dias) | Predecessoras\nA | 3 | —\nB | 5 | A\nC | 4 | A\nD | 4 | B\nE | 7 | C\nF | 2 | D e E\n\nCom base nesses dados, avalie as afirmações a seguir.\n\nI. A duração total do projeto é de 16 dias.\nII. O caminho que inclui as atividades B e D possui folga total de 2 dias.\nIII. A atividade F pode ser iniciada tão logo a atividade D seja concluída.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "I e II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "B",
+  "justificativa": "Há dois caminhos: A → B → D → F = 3 + 5 + 4 + 2 = 14 dias, e A → C → E → F = 3 + 4 + 7 + 2 = 16 dias. O caminho crítico é o mais longo, de 16 dias, que define a duração do projeto (I correta). A folga total do caminho que contém B e D é 16 − 14 = 2 dias (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira e decorre da diferença entre os dois caminhos da rede.",
+    "C": "A afirmação III é falsa: F tem duas predecessoras e só começa quando ambas terminarem. D encerra no dia 12, mas E só encerra no dia 14 — F aguarda a atividade E, que é a mais tardia.",
+    "D": "Inclui III, que ignora a precedência de E sobre a atividade F.",
+    "E": "Inclui III, incorreta quanto à condição de início da atividade F."
+  }
+}
+]

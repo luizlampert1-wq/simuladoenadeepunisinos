@@ -1,0 +1,232 @@
+[
+{
+  "id": "INE-01",
+  "tipo": "Inédita",
+  "area": "Gestão da Qualidade",
+  "dificuldade": "Difícil",
+  "competencia": "Calcular e interpretar os índices de capacidade Cp e Cpk de um processo.",
+  "enunciado": "Uma linha de usinagem produz eixos cuja especificação de diâmetro é de 50 mm, com limite inferior de especificação (LIE) de 48 mm e limite superior (LSE) de 52 mm. O processo encontra-se sob controle estatístico, com média de 50,4 mm e desvio-padrão de 0,5 mm.\n\nCom base nesses dados, avalie as afirmações a seguir.\n\nI. O índice de capacidade potencial (Cp) do processo é de aproximadamente 1,33.\nII. O índice de capacidade real (Cpk) do processo é de aproximadamente 1,07.\nIII. O processo encontra-se centrado em relação aos limites de especificação.\nIV. Se o processo fosse centrado, sem alteração da dispersão, o Cpk passaria a ser igual ao Cp.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e III.",
+    "B": "II e III.",
+    "C": "I, II e IV.",
+    "D": "I, III e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "C",
+  "justificativa": "O Cp mede a capacidade potencial: Cp = (LSE − LIE)/(6σ) = (52 − 48)/(6 × 0,5) = 4/3 ≈ 1,33 (I correta). O Cpk considera o descentramento: Cpk = mín[(LSE − μ)/(3σ); (μ − LIE)/(3σ)] = mín[(52 − 50,4)/1,5; (50,4 − 48)/1,5] = mín[1,07; 1,60] = 1,07 (II correta). Como Cpk = Cp quando e somente quando a média coincide com o centro da especificação, centrar o processo elevaria o Cpk a 1,33 (IV correta).",
+  "porqueErradas": {
+    "A": "A afirmação III é falsa: a média de 50,4 mm está deslocada 0,4 mm acima do centro da faixa de especificação (50 mm), o que se comprova pela diferença entre Cpk (1,07) e Cp (1,33).",
+    "B": "Inclui III, que ignora o descentramento evidenciado pela própria diferença entre os dois índices.",
+    "D": "Inclui III, incorreta, e omite II, que corresponde ao cálculo correto da capacidade real.",
+    "E": "Inclui III, incorreta, e deixa de fora I, que expressa a capacidade potencial do processo."
+  }
+},
+{
+  "id": "INE-02",
+  "tipo": "Inédita",
+  "area": "Gestão da Qualidade",
+  "dificuldade": "Média",
+  "competencia": "Aplicar o princípio de Pareto na priorização de causas de não conformidade.",
+  "enunciado": "O setor da qualidade de uma fábrica de peças plásticas registrou, ao longo de um mês, as seguintes ocorrências de não conformidade:\n\n• Riscos superficiais: 420 ocorrências\n• Trincas: 180 ocorrências\n• Manchas: 90 ocorrências\n• Rebarbas: 60 ocorrências\n• Outros defeitos: 50 ocorrências\n\nAplicando o princípio de Pareto, segundo o qual devem ser priorizadas as categorias que, somadas, respondem por pelo menos 80% das ocorrências, as categorias a serem atacadas prioritariamente são",
+  "alternativas": {
+    "A": "apenas riscos superficiais.",
+    "B": "riscos superficiais e trincas.",
+    "C": "riscos superficiais, trincas e manchas.",
+    "D": "riscos superficiais, trincas, manchas e rebarbas.",
+    "E": "todas as cinco categorias registradas."
+  },
+  "gabarito": "C",
+  "justificativa": "O total de ocorrências é 420 + 180 + 90 + 60 + 50 = 800. Ordenando de forma decrescente e acumulando: riscos = 420 (52,5%); + trincas = 600 (75,0%); + manchas = 690 (86,25%). Apenas ao incluir as manchas o acumulado ultrapassa os 80% estabelecidos como critério de priorização.",
+  "porqueErradas": {
+    "A": "Os riscos superficiais representam 52,5% das ocorrências — sozinhos, ficam muito abaixo do patamar de 80%.",
+    "B": "Riscos e trincas somam 75%, ainda insuficientes para atingir o critério de 80% definido no enunciado.",
+    "D": "Acrescentar as rebarbas eleva o acumulado a 93,75%, mas contraria a lógica de Pareto de concentrar esforços no menor conjunto de causas que atinja o patamar estabelecido.",
+    "E": "Priorizar todas as categorias equivale a não priorizar — o princípio de Pareto existe justamente para separar as poucas causas vitais das muitas triviais."
+  }
+},
+{
+  "id": "INE-03",
+  "tipo": "Inédita",
+  "area": "Gestão da Qualidade",
+  "dificuldade": "Média",
+  "competencia": "Calcular os limites de controle de cartas X-barra a partir de constantes tabeladas.",
+  "enunciado": "Em um processo de envase, foram coletadas 25 amostras de tamanho n = 5 para a construção de cartas de controle por variáveis. A média das médias amostrais foi de 40,0 mL e a média das amplitudes amostrais foi de 2,0 mL.\n\nPara n = 5, as constantes tabeladas são: A₂ = 0,577; D₃ = 0; D₄ = 2,114.\n\nOs limites inferior e superior de controle da carta de médias (X̄) são, respectivamente, de aproximadamente",
+  "alternativas": {
+    "A": "38,85 mL e 41,15 mL.",
+    "B": "38,00 mL e 42,00 mL.",
+    "C": "39,42 mL e 40,58 mL.",
+    "D": "37,89 mL e 42,11 mL.",
+    "E": "36,00 mL e 44,00 mL."
+  },
+  "gabarito": "A",
+  "justificativa": "Os limites de controle da carta de médias são LIC = X̄̄ − A₂ · R̄ e LSC = X̄̄ + A₂ · R̄. Substituindo: A₂ · R̄ = 0,577 × 2,0 = 1,154. Logo, LIC = 40,0 − 1,154 = 38,85 mL e LSC = 40,0 + 1,154 = 41,15 mL.",
+  "porqueErradas": {
+    "B": "Corresponderia a usar um fator igual a 1,0 em vez de A₂ = 0,577 multiplicado pela amplitude média.",
+    "C": "Resultaria de dividir A₂ · R̄ por 2, reduzindo indevidamente a largura dos limites de controle.",
+    "D": "Utiliza a constante D₄ = 2,114, que se aplica à carta de amplitudes (R), e não à carta de médias.",
+    "E": "Corresponderia a somar e subtrair 4,0 mL da média, valor que não decorre de nenhuma das constantes fornecidas."
+  }
+},
+{
+  "id": "INE-04",
+  "tipo": "Inédita",
+  "area": "Gestão de Estoques",
+  "dificuldade": "Média",
+  "competencia": "Calcular lote econômico de compra, número de pedidos e custos anuais associados.",
+  "enunciado": "Uma indústria consome 14 400 unidades por ano de um insumo, com demanda praticamente constante. O custo de emissão de cada pedido é de R$ 150,00 e o custo anual de manter uma unidade em estoque é de R$ 3,00. O preço unitário de compra é constante.\n\nCom base nesses dados, avalie as afirmações a seguir.\n\nI. O lote econômico de compra é de 1 200 unidades.\nII. Serão emitidos 12 pedidos por ano.\nIII. O custo anual total relevante (pedido mais armazenagem) é de R$ 3 600,00.\nIV. No lote econômico, o custo anual de pedido supera o custo anual de armazenagem.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e IV.",
+    "B": "II e IV.",
+    "C": "I e II.",
+    "D": "I, II e III.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "D",
+  "justificativa": "O lote econômico é Q* = √(2 · D · Cp / Ca) = √(2 × 14 400 × 150 / 3) = √1 440 000 = 1 200 unidades (I correta). O número de pedidos é 14 400 ÷ 1 200 = 12 por ano (II correta). O custo total relevante é 12 × 150 + (1 200/2) × 3 = 1 800 + 1 800 = R$ 3 600,00 (III correta).",
+  "porqueErradas": {
+    "A": "A afirmação IV é falsa: no lote econômico, por construção do modelo, os custos anuais de pedido e de armazenagem são exatamente iguais — R$ 1 800,00 cada.",
+    "B": "Inclui IV, incorreta, e omite I e III, que decorrem corretamente do modelo.",
+    "C": "Embora I e II estejam corretas, a alternativa deixa de fora III, que também é verdadeira.",
+    "E": "Inclui IV, que contraria a propriedade de igualdade dos custos no ponto ótimo do lote econômico."
+  }
+},
+{
+  "id": "INE-05",
+  "tipo": "Inédita",
+  "area": "Gestão de Estoques",
+  "dificuldade": "Média",
+  "competencia": "Classificar itens de estoque pela curva ABC.",
+  "enunciado": "Uma empresa levantou o valor anual de consumo de sete itens de seu estoque:\n\n• Item 1: R$ 480.000 | Item 2: R$ 240.000 | Item 3: R$ 120.000 | Item 4: R$ 90.000 | Item 5: R$ 40.000 | Item 6: R$ 20.000 | Item 7: R$ 10.000\n\nAdotando o critério de que a classe A reúne os itens cujo valor acumulado não ultrapassa 80% do total, a classe B os itens seguintes até o acumulado de 95% e a classe C os demais, o número de itens das classes A, B e C é, respectivamente,",
+  "alternativas": {
+    "A": "1, 3 e 3.",
+    "B": "2, 2 e 3.",
+    "C": "2, 3 e 2.",
+    "D": "3, 2 e 2.",
+    "E": "1, 2 e 4."
+  },
+  "gabarito": "B",
+  "justificativa": "O valor total é R$ 1 000 000. Os percentuais acumulados, em ordem decrescente, são: Item 1 = 48%; Item 2 = 72%; Item 3 = 84%; Item 4 = 93%; Item 5 = 97%; Item 6 = 99%; Item 7 = 100%. A classe A compreende os itens cujo acumulado não ultrapassa 80%: itens 1 e 2 (72%). A classe B vai até 95%: itens 3 (84%) e 4 (93%), pois o item 5 levaria a 97%. A classe C reúne os itens 5, 6 e 7. Logo, 2, 2 e 3 itens.",
+  "porqueErradas": {
+    "A": "Considerar apenas o item 1 na classe A o limitaria a 48% do valor, muito abaixo do patamar de 80% definido no critério.",
+    "C": "Colocar três itens na classe B elevaria o acumulado a 97%, ultrapassando o limite de 95% estabelecido para essa classe.",
+    "D": "Incluir o item 3 na classe A levaria o acumulado a 84%, acima do teto de 80% fixado pelo critério.",
+    "E": "Além de subdimensionar a classe A, deixa de aplicar corretamente o limite de 95% para a fronteira entre as classes B e C."
+  }
+},
+{
+  "id": "INE-06",
+  "tipo": "Inédita",
+  "area": "Logística e Cadeia de Suprimentos",
+  "dificuldade": "Difícil",
+  "competencia": "Comparar modais de transporte considerando frete e custo do capital em trânsito.",
+  "enunciado": "Uma indústria precisa transportar 2 000 unidades de um produto cujo valor unitário é de R$ 500,00 entre duas cidades. Foram cotadas duas alternativas:\n\n• Modal rodoviário: frete de R$ 12,00 por unidade, prazo de trânsito de 5 dias;\n• Modal ferroviário: frete de R$ 7,00 por unidade, prazo de trânsito de 12 dias.\n\nA empresa considera, além do frete, o custo de oportunidade do capital imobilizado em trânsito, estimado em 0,05% ao dia sobre o valor da carga.\n\nConsiderando o custo total (frete mais custo do capital em trânsito), a alternativa de menor custo e a economia obtida em relação à outra são, respectivamente,",
+  "alternativas": {
+    "A": "o modal rodoviário, com economia de R$ 6.500,00.",
+    "B": "o modal ferroviário, com economia de R$ 6.500,00.",
+    "C": "o modal ferroviário, com economia de R$ 10.000,00.",
+    "D": "o modal rodoviário, com economia de R$ 10.000,00.",
+    "E": "o modal ferroviário, com economia de R$ 3.500,00."
+  },
+  "gabarito": "B",
+  "justificativa": "O valor total da carga é 2 000 × R$ 500,00 = R$ 1 000 000,00. Modal rodoviário: frete = 2 000 × 12 = R$ 24 000,00; capital em trânsito = 1 000 000 × 0,0005 × 5 = R$ 2 500,00; total = R$ 26 500,00. Modal ferroviário: frete = 2 000 × 7 = R$ 14 000,00; capital em trânsito = 1 000 000 × 0,0005 × 12 = R$ 6 000,00; total = R$ 20 000,00. A economia com o ferroviário é de 26 500 − 20 000 = R$ 6 500,00.",
+  "porqueErradas": {
+    "A": "O modal rodoviário é o mais caro no total: apesar do menor custo de capital em trânsito, seu frete é 71% superior ao ferroviário.",
+    "C": "R$ 10 000,00 é a diferença apenas entre os fretes (24 000 − 14 000), desprezando o custo do capital em trânsito, que reduz a vantagem do ferroviário.",
+    "D": "Erra tanto na alternativa escolhida quanto no valor, que corresponde somente à diferença de frete.",
+    "E": "R$ 3 500,00 resultaria de considerar o custo de capital com prazos ou taxas diferentes dos informados no enunciado."
+  }
+},
+{
+  "id": "INE-07",
+  "tipo": "Inédita",
+  "area": "Sistemas de Produção Enxuta",
+  "dificuldade": "Difícil",
+  "competencia": "Calcular a Eficiência Global do Equipamento (OEE) a partir de disponibilidade, desempenho e qualidade.",
+  "enunciado": "Em um turno de 480 minutos, uma máquina apresentou os seguintes registros:\n\n• Paradas planejadas (refeição e reuniões): 30 minutos\n• Paradas não planejadas (quebras e ajustes): 50 minutos\n• Tempo de ciclo ideal: 0,5 minuto por peça\n• Peças produzidas: 700\n• Peças refugadas: 21\n\nConsiderando que a disponibilidade é a razão entre o tempo operacional e o tempo programado, o desempenho é a razão entre a produção real convertida em tempo ideal e o tempo operacional, e a qualidade é a razão entre peças boas e peças produzidas, a Eficiência Global do Equipamento (OEE) é de aproximadamente",
+  "alternativas": {
+    "A": "62%.",
+    "B": "68%.",
+    "C": "75%.",
+    "D": "82%.",
+    "E": "89%."
+  },
+  "gabarito": "C",
+  "justificativa": "Tempo programado = 480 − 30 = 450 min. Tempo operacional = 450 − 50 = 400 min. Disponibilidade = 400/450 = 0,889. Desempenho = (700 × 0,5)/400 = 350/400 = 0,875. Qualidade = (700 − 21)/700 = 679/700 = 0,970. OEE = 0,889 × 0,875 × 0,970 ≈ 0,754, ou seja, aproximadamente 75%.",
+  "porqueErradas": {
+    "A": "62% resultaria de descontar as paradas planejadas também do denominador da disponibilidade, penalizando duplamente o indicador.",
+    "B": "68% seria obtido ao considerar o tempo total do turno (480 min) como base da disponibilidade, sem excluir as paradas planejadas.",
+    "D": "82% corresponderia a desconsiderar o fator qualidade, calculando apenas disponibilidade × desempenho.",
+    "E": "89% é o valor isolado do fator disponibilidade — o OEE exige a multiplicação dos três fatores."
+  }
+},
+{
+  "id": "INE-08",
+  "tipo": "Inédita",
+  "area": "Sistemas de Produção Enxuta",
+  "dificuldade": "Média",
+  "competencia": "Dimensionar o número de cartões kanban de um sistema puxado.",
+  "enunciado": "Uma célula de manufatura opera com sistema kanban de produção. O número de cartões é dimensionado pela expressão\n\nN = [D × T × (1 + S)] / C\n\nem que D é a demanda diária, T o tempo de reposição em dias, S o fator de segurança e C a capacidade do contenedor.\n\nSabendo que a demanda diária é de 1 200 peças, o tempo de reposição é de 0,5 dia, o fator de segurança adotado é de 20% e cada contenedor comporta 60 peças, o número de cartões kanban necessários é de",
+  "alternativas": {
+    "A": "10.",
+    "B": "12.",
+    "C": "15.",
+    "D": "20.",
+    "E": "24."
+  },
+  "gabarito": "B",
+  "justificativa": "Aplicando a fórmula: N = [1 200 × 0,5 × (1 + 0,20)] / 60 = [1 200 × 0,5 × 1,2] / 60 = 720 / 60 = 12 cartões.",
+  "porqueErradas": {
+    "A": "10 cartões seria o resultado ao desprezar o fator de segurança de 20%, ou seja, N = (1 200 × 0,5)/60.",
+    "C": "15 cartões resultaria de adotar fator de segurança de 50% em vez dos 20% informados.",
+    "D": "20 cartões corresponderia a considerar o tempo de reposição de 1 dia inteiro, e não de 0,5 dia.",
+    "E": "24 cartões seria obtido ao usar o tempo de reposição de 1 dia somado ao fator de segurança de 20%."
+  }
+},
+{
+  "id": "INE-09",
+  "tipo": "Inédita",
+  "area": "Sistemas de Produção Enxuta",
+  "dificuldade": "Média",
+  "competencia": "Classificar situações reais segundo os sete desperdícios do Sistema Toyota de Produção.",
+  "enunciado": "Durante o mapeamento do fluxo de valor de uma montadora, um engenheiro de produção registrou as seguintes situações:\n\n(i) operadores percorrem 15 metros a cada ciclo para buscar ferramentas guardadas em um armário central;\n(ii) lotes de 500 peças permanecem três dias parados entre duas operações consecutivas;\n(iii) foram produzidas 2 000 peças, embora o pedido firme do cliente fosse de 1 200 unidades;\n(iv) uma inspeção de 100% foi implantada ao final da linha para separar peças fora de especificação.\n\nAs situações (i), (ii), (iii) e (iv) correspondem, respectivamente, aos desperdícios de",
+  "alternativas": {
+    "A": "transporte, espera, superprodução e processamento desnecessário.",
+    "B": "movimentação, estoque, superprodução e defeitos.",
+    "C": "movimentação, transporte, estoque e defeitos.",
+    "D": "transporte, estoque, processamento desnecessário e superprodução.",
+    "E": "espera, movimentação, defeitos e superprodução."
+  },
+  "gabarito": "B",
+  "justificativa": "O deslocamento do operador dentro do posto caracteriza desperdício de movimentação (i). Peças acumuladas e paradas entre operações configuram desperdício de estoque (ii). Produzir além do pedido firme é superprodução (iii). A necessidade de inspeção para separar peças não conformes evidencia o desperdício de defeitos (iv).",
+  "porqueErradas": {
+    "A": "Transporte refere-se ao deslocamento de materiais, e não de pessoas; espera é o tempo ocioso de recursos, e não o acúmulo de material; e a inspeção decorre de defeitos, não de processamento desnecessário.",
+    "C": "Classifica a situação (ii) como transporte, quando se trata de material parado — característica do desperdício de estoque — e desloca indevidamente a superprodução da situação (iii).",
+    "D": "Inverte as classificações: (i) é movimentação e não transporte, e as situações (iii) e (iv) são trocadas entre si.",
+    "E": "Troca completamente as duas primeiras classificações e associa erroneamente defeitos à superprodução do item (iii)."
+  }
+},
+{
+  "id": "INE-10",
+  "tipo": "Inédita",
+  "area": "Engenharia Econômica",
+  "dificuldade": "Difícil",
+  "competencia": "Comparar projetos mutuamente excludentes pelo critério do Valor Presente Líquido.",
+  "enunciado": "Uma empresa avalia dois projetos mutuamente excludentes, ambos com vida útil de 4 anos, adotando taxa mínima de atratividade de 12% ao ano.\n\n• Projeto A: investimento inicial de R$ 100.000,00 e fluxos de caixa anuais de R$ 40.000,00.\n• Projeto B: investimento inicial de R$ 150.000,00 e fluxos de caixa anuais de R$ 55.000,00.\n\nConsidere que o fator de valor presente de série uniforme para 12% ao ano e 4 períodos é igual a 3,0373.\n\nCom base nessas informações, assinale a opção correta.",
+  "alternativas": {
+    "A": "Ambos os projetos são inviáveis, pois o investimento inicial supera os fluxos de caixa anuais.",
+    "B": "O projeto B deve ser escolhido, pois exige maior investimento e, portanto, gera maior retorno absoluto.",
+    "C": "O projeto A deve ser escolhido, pois apresenta o maior valor presente líquido.",
+    "D": "O projeto B deve ser escolhido, pois apresenta o maior valor presente líquido.",
+    "E": "A decisão é indiferente, pois ambos os projetos apresentam o mesmo valor presente líquido."
+  },
+  "gabarito": "C",
+  "justificativa": "VPL do projeto A = −100 000 + 40 000 × 3,0373 = −100 000 + 121 492 = R$ 21 492,00. VPL do projeto B = −150 000 + 55 000 × 3,0373 = −150 000 + 167 052 = R$ 17 052,00. Ambos são viáveis (VPL > 0), mas, por serem mutuamente excludentes, escolhe-se o de maior VPL — o projeto A.",
+  "porqueErradas": {
+    "A": "Comparar o investimento inicial com o fluxo anual isolado não é critério de viabilidade; ambos os projetos apresentam VPL positivo à TMA de 12% ao ano.",
+    "B": "Maior investimento não implica maior criação de valor. O que decide entre projetos mutuamente excludentes é o VPL, e o do projeto B é inferior.",
+    "D": "O VPL do projeto B (R$ 17 052,00) é inferior ao do projeto A (R$ 21 492,00).",
+    "E": "Os valores presentes líquidos são distintos — diferem em R$ 4 440,00 —, de modo que a decisão não é indiferente."
+  }
+}
+]

@@ -1,0 +1,24 @@
+# ---------------------------------------------------------------
+# Arquivos gerados pelo build.py — todos são recriados com um
+# "python build.py", por isso não são versionados.
+#
+# EXCEÇÃO: o index.html da raiz é versionado, pois é o arquivo
+# que o GitHub Pages publica.
+# ---------------------------------------------------------------
+dist/simulado-enade-ep.html
+dist/artifact.html
+dist/publicar/index.html
+
+# artefatos temporários dos testes
+dist/_t_*.html
+dist/_o*.html
+dist/_w.html
+
+# sistema operacional
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# python
+__pycache__/
+*.pyc

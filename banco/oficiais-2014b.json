@@ -1,0 +1,330 @@
+[
+{
+  "id": "2014-Q22",
+  "tipo": "Oficial",
+  "ano": 2014,
+  "referencia": "ENADE 2014 — Questão 22 (Componente Específico)",
+  "area": "Logística e Cadeia de Suprimentos",
+  "dificuldade": "Média",
+  "competencia": "Avaliar asserções sobre logística reversa e canais reversos e a relação lógica entre elas.",
+  "enunciado": "Nem sempre os resíduos gerados pós-consumo, pós-venda ou industriais são projetados para serem insumos de uma cadeia de suprimentos reversa. Todavia, quando há limitações de recursos naturais, o seu reuso é e deve ser estimulado. Considere que uma empresa implantou o Programa Ciclo Sustentável, que consiste na reciclagem de seus produtos eletroeletrônicos e eletrodomésticos. Em operação desde 2008, esse programa recebe, em postos credenciados localizados em todo Brasil, os produtos que os consumidores não utilizam e/ou não pretendem mais utilizar. Todos os produtos recolhidos são encaminhados a um local ambientalmente adequado, onde cada componente presente em sua composição é devidamente tratado. Dessa forma, os produtos completarão seu ciclo de vida de maneira sustentável, mitigando os impactos no meio ambiente e com participação e contribuição direta do consumidor.\n\nA partir do texto apresentado, avalie as asserções a seguir e a relação proposta entre elas.\n\nI. A logística reversa deve ser considerada no projeto de desenvolvimento de produtos, pois tem por objetivo descartar/encaminhar apropriadamente os resíduos gerados e os produtos não mais em uso, de forma a se obter um ciclo de vida mais sustentável.\n\nPORQUE\n\nII. Os canais reversos estabelecem o papel da logística reversa na sustentabilidade, que consiste em reduzir o uso de recursos não renováveis e a geração de resíduos nocivos ao ambiente.\n\nA respeito dessas asserções, assinale a opção correta.",
+  "alternativas": {
+    "A": "As asserções I e II são proposições verdadeiras, e a II é uma justificativa correta da I.",
+    "B": "As asserções I e II são proposições verdadeiras, mas a II não é uma justificativa correta da I.",
+    "C": "A asserção I é uma proposição verdadeira e, a II é uma proposição falsa.",
+    "D": "A asserção I é uma proposição falsa, e a II é uma proposição verdadeira.",
+    "E": "As asserções I e II são proposições falsas."
+  },
+  "gabarito": "B",
+  "justificativa": "Ambas as asserções são verdadeiras. A I trata de uma recomendação de projeto — incorporar a logística reversa já na fase de desenvolvimento do produto. A II descreve o papel dos canais reversos na sustentabilidade. Contudo, a II não explica por que a logística reversa deve ser considerada já no projeto do produto: ela apenas caracteriza a finalidade dos canais reversos em operação. Falta o nexo causal entre a etapa de concepção e o efeito descrito, por isso a II não é justificativa da I.",
+  "porqueErradas": {
+    "A": "Embora as duas proposições sejam verdadeiras, a II descreve a função dos canais reversos já existentes e não fundamenta a necessidade de considerar a logística reversa na etapa de projeto do produto.",
+    "C": "A asserção II é verdadeira: os canais reversos efetivamente reduzem o consumo de recursos não renováveis e a geração de resíduos.",
+    "D": "A asserção I é verdadeira — projetar considerando o fim de vida do produto (design for disassembly, design for recycling) é princípio consolidado.",
+    "E": "As duas asserções são verdadeiras; o que não se sustenta é apenas a relação de causalidade entre elas."
+  }
+},
+{
+  "id": "2014-Q23",
+  "tipo": "Oficial",
+  "ano": 2014,
+  "referencia": "ENADE 2014 — Questão 23 (Componente Específico)",
+  "area": "Gestão de Projetos",
+  "dificuldade": "Média",
+  "competencia": "Reconhecer as atribuições de um Escritório de Projetos (PMO) segundo o PMBOK.",
+  "enunciado": "O conceito de produtividade global considera que os benefícios obtidos pela melhoria dos processos devem ser mensurados no conjunto, considerando os fatores econômicos, sociais e ambientais de todos os setores ou departamentos da organização. Nessa lógica, as organizações que executam projetos para melhorar seus ganhos globais buscam implantar os denominados Escritórios de Projetos, também conhecidos como PMO, do inglês Project Management Office.\n\n(PMBOK — Guia do conjunto de conhecimentos de projetos. 5. ed. Project Management Institute, 2013, adaptado.)\n\nA respeito do Escritório de Projetos, avalie as afirmações a seguir.\n\nI. É uma unidade funcional responsável pela tomada de decisões sobre quais projetos devem ser executados pela organização.\nII. Tem como função prover recursos financeiros para os projetos da organização.\nIII. É uma estrutura de gestão que padroniza os processos de governança relacionados aos projetos.\nIV. É responsável pela decisão de encerramento de projetos.\nV. Facilita o compartilhamento de recursos, métodos, ferramentas e técnicas nos projetos sob seu domínio.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "II e IV.",
+    "B": "III e V.",
+    "C": "I, III e IV.",
+    "D": "I, II, III e V.",
+    "E": "I, II, IV e V."
+  },
+  "gabarito": "B",
+  "justificativa": "O PMBOK define o PMO exatamente como \"uma estrutura organizacional que padroniza os processos de governança relacionados a projetos e facilita o compartilhamento de recursos, metodologias, ferramentas e técnicas\". As afirmações III e V reproduzem essa definição.",
+  "porqueErradas": {
+    "A": "A afirmação II é falsa: o PMO não é fonte de recursos financeiros — o financiamento cabe ao patrocinador (sponsor) e à alta direção. A IV também não procede como atribuição geral do PMO.",
+    "C": "As afirmações I e IV atribuem ao PMO decisões de seleção e de encerramento de projetos, que pertencem à governança de portfólio e ao patrocinador.",
+    "D": "Inclui I e II, ambas falsas, ainda que III e V estejam corretas.",
+    "E": "Inclui I, II e IV, todas falsas, e omite III, que integra a definição do PMO."
+  }
+},
+{
+  "id": "2014-Q24",
+  "tipo": "Oficial",
+  "ano": 2014,
+  "referencia": "ENADE 2014 — Questão 24 (Componente Específico)",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Difícil",
+  "competencia": "Aplicar a Teoria das Restrições para definir o mix de produção que maximiza o ganho no recurso gargalo.",
+  "figura": "2014_q24.png",
+  "enunciado": "A figura acima ilustra um sistema produtivo que opera na produção de dois tipos de produtos: P e Q. Os preços de venda líquidos de P e Q são, respectivamente, de R$ 80,00 e R$ 90,00 por unidade. A demanda semanal do produto P é de 100 unidades e a demanda do produto Q é de 50 unidades. Existem quatro centros de trabalho (ou recursos) no sistema produtivo: A, B, C e D. Cada centro de trabalho possui capacidade máxima de processamento igual a 2 400 minutos por semana (8 h × 60 min × 5 dias). A figura identifica, ainda, (i) o tempo, em minutos, requerido em cada centro de trabalho para realizar a operação específica necessária para a produção de cada unidade dos produtos finais; e (ii) as matérias-primas (MP e embalagem) utilizadas nos produtos, com os respectivos custos de aquisição.\n\n(GOLDRATT, E. M. A síndrome do palheiro. 2. ed. São Paulo: Educator, 1992, adaptado.)\n\nConsiderando as informações apresentadas, é correto afirmar que o mix de produtos semanal que maximiza economicamente a utilização da capacidade do sistema produtivo é composto por",
+  "alternativas": {
+    "A": "100 unidades do produto P e 30 unidades do produto Q.",
+    "B": "100 unidades do produto P e 50 unidades do produto Q.",
+    "C": "100 unidades do produto P e 100 unidades do produto Q.",
+    "D": "75 unidades do produto P e 75 unidades do produto Q.",
+    "E": "60 unidades do produto P e 50 unidades do produto Q."
+  },
+  "gabarito": "A",
+  "justificativa": "Pela figura, cada unidade de P consome 15 min em A, 15 min em B, 15 min em C e 15 min em D, com material de R$ 50 (MP1 20 + MP2 20 + embalagem 10), gerando ganho de 80 − 50 = R$ 30. Cada unidade de Q consome 10 min em A, 30 min em B, 5 min em C e 5 min em D, com material de R$ 40 (MP1 20 + MP3 20), gerando ganho de 90 − 40 = R$ 50. Para atender toda a demanda seriam necessários, em B, 100×15 + 50×30 = 3 000 min — acima dos 2 400 disponíveis; logo B é o gargalo (os demais recursos ficam abaixo da capacidade). O critério da TOC é priorizar pelo ganho por minuto do gargalo: P rende 30/15 = R$ 2,00/min e Q rende 50/30 ≈ R$ 1,67/min. Produz-se, então, toda a demanda de P (100 un, consumindo 1 500 min) e, com os 900 min restantes, 900/30 = 30 unidades de Q.",
+  "porqueErradas": {
+    "B": "Inviável: atender integralmente as duas demandas exigiria 3 000 minutos no recurso B, que dispõe de apenas 2 400 minutos semanais.",
+    "C": "Duplamente inviável — além de estourar a capacidade de B, 100 unidades de Q superam a própria demanda de mercado, que é de 50 unidades.",
+    "D": "Consumiria 75×15 + 75×30 = 3 375 minutos em B, muito acima da capacidade, além de não atender integralmente a demanda de P, que é o produto de maior ganho por minuto do gargalo.",
+    "E": "Viável em capacidade (60×15 + 50×30 = 2 400 min), mas economicamente pior: gera 60×30 + 50×50 = R$ 4 300 de ganho, contra R$ 4 500 da alternativa A, pois privilegia o produto de menor ganho por minuto do gargalo."
+  }
+},
+{
+  "id": "2014-Q25",
+  "tipo": "Oficial",
+  "ano": 2014,
+  "referencia": "ENADE 2014 — Questão 25 (Componente Específico)",
+  "area": "Sistemas de Informação e Indústria 4.0",
+  "dificuldade": "Média",
+  "competencia": "Associar soluções de TI aos elos fornecedor–empresa, interno e empresa–cliente da cadeia de suprimentos.",
+  "figura": "2014_q25.png",
+  "enunciado": "A figura acima apresenta os elos que integram uma rede de suprimentos em que a informação é um dos principais insumos nesse processo, apoiando a gestão e a tomada de decisão.\n\n(CORRÊA, H. L. Gestão de redes de suprimentos. São Paulo: Atlas, 2012, adaptado.)\n\nSão exemplos de soluções de Tecnologia de Informação aplicadas à gestão da cadeia de suprimentos que relaciona fornecedores e empresa (1), gestão da empresa (2) e empresa e clientes (3), respectivamente,",
+  "alternativas": {
+    "A": "plano mestre de produção (MPS), capacidade do plano de produção (CRP) e controle do chão de fábrica (SFC).",
+    "B": "gestão de relacionamento com fornecedor (SRM), sistema de execução da produção (MES) e capacidade do plano de produção (CRP).",
+    "C": "identificação por radiofrequência (RFID), gestão de relacionamento com o cliente (CRM) e sistema de planejamento avançado de produção (APS).",
+    "D": "sistema de gerenciamento de armazém (WMS), sistema de gestão de transporte e logística (TMS) e planejamento das necessidades de distribuição (DRP).",
+    "E": "intercâmbio eletrônico de dados (EDI), sistema integrado de gestão (ERP) e gestão de relacionamento com o cliente (CRM)."
+  },
+  "gabarito": "E",
+  "justificativa": "A sequência correta acompanha os três elos: (1) na interface com fornecedores, o EDI é a solução clássica de troca estruturada de documentos entre empresas; (2) na gestão interna, o ERP integra em base única os dados de todos os processos da empresa; (3) na interface com clientes, o CRM gerencia o relacionamento e as informações de mercado.",
+  "porqueErradas": {
+    "A": "MPS, CRP e SFC são todos módulos internos de planejamento e controle da produção — nenhum deles atua nas interfaces com fornecedores ou clientes.",
+    "B": "Embora o SRM seja adequado ao elo (1), o MES é sistema interno de chão de fábrica e o CRP é de planejamento de capacidade: nenhum dos dois corresponde ao elo com clientes.",
+    "C": "A ordem está trocada: o CRM pertence ao elo com clientes (3), e não à gestão interna (2); o APS é ferramenta interna de programação da produção.",
+    "D": "WMS, TMS e DRP são todos sistemas de operação logística interna e de distribuição, não cobrindo a gestão integrada da empresa nem o relacionamento com o cliente."
+  }
+},
+{
+  "id": "2014-Q27",
+  "tipo": "Oficial",
+  "ano": 2014,
+  "referencia": "ENADE 2014 — Questão 27 (Componente Específico)",
+  "area": "Gestão de Estoques",
+  "dificuldade": "Média",
+  "competencia": "Compreender a composição do custo total anual de estoques e o modelo do lote econômico de compra.",
+  "enunciado": "O lote econômico de compra é uma ferramenta importante para empresas que desejam minimizar o custo total anual de estoques. Esse custo é formado pelo somatório dos custos de pedidos anual, de armazenagem anual e de aquisição anual, sendo o lote econômico de compra o ponto mínimo da curva de custo total anual.\n\nA respeito do lote econômico, assinale a alternativa correta.",
+  "alternativas": {
+    "A": "O custo de armazenagem anual é independente do tamanho do lote econômico de compra.",
+    "B": "O custo de pedidos anual pode ser considerado igual a zero, caso a empresa faça todas as compras de materiais sem atrasos.",
+    "C": "A demanda não precisa ser conhecida para que o lote econômico de compra seja encontrado, pois ela não é utilizada no cálculo do custo total anual.",
+    "D": "O custo de aquisição anual é calculado a partir dos valores do nível de estoque de segurança que a empresa pretende utilizar durante todo o ano.",
+    "E": "O lote econômico de compra também pode ser encontrado desconsiderando-se o custo de aquisição anual, pois este é sempre constante."
+  },
+  "gabarito": "E",
+  "justificativa": "Com preço unitário constante, o custo de aquisição anual é D × C, em que D é a demanda anual e C o preço unitário — uma parcela que não depende do tamanho do lote Q. Como esse termo é constante em relação a Q, sua derivada é nula e ele não altera o ponto de mínimo da curva de custo total. Por isso o LEC pode ser obtido considerando apenas os custos de pedido e de armazenagem, chegando-se a Q* = √(2·D·Cp / Ca).",
+  "porqueErradas": {
+    "A": "O custo de armazenagem anual é diretamente proporcional ao estoque médio (Q/2) e, portanto, cresce com o tamanho do lote — é justamente essa dependência que cria o ponto de mínimo.",
+    "B": "O custo de pedido existe independentemente de atrasos: decorre do esforço administrativo de emitir, acompanhar e receber cada pedido, multiplicado pelo número de pedidos por ano (D/Q).",
+    "C": "A demanda anual D é parâmetro essencial e aparece no numerador da fórmula do LEC; sem ela não há como calcular nem o número de pedidos nem o lote ótimo.",
+    "D": "O custo de aquisição anual é o produto da demanda pelo preço unitário; o estoque de segurança influencia o custo de armazenagem, não o de aquisição."
+  }
+},
+{
+  "id": "2014-Q28",
+  "tipo": "Oficial",
+  "ano": 2014,
+  "referencia": "ENADE 2014 — Questão 28 (Componente Específico)",
+  "area": "Desenvolvimento de Produto e Inovação",
+  "dificuldade": "Média",
+  "competencia": "Compreender o modelo de inovação aberta e seus atores, limites e riscos.",
+  "enunciado": "Em seu livro Open Innovation: The New Imperative for Creating and Profiting from Technology (\"Inovação Aberta: o Novo Imperativo Para Criar e Lucrar Com a Tecnologia\"), o economista Henry Chesbrough criou, em 2003, o termo \"inovação aberta\" para explicar como as corporações podem buscar ideias externas para alavancar seu desenvolvimento, além de compartilhar as próprias inovações.\n\n(Disponível em: www.petrobras.com. Acesso em: 27 ago. 2014, adaptado.)\n\nUsando o texto acima como referência inicial, avalie as afirmações a seguir.\n\nI. Empresas líderes de mercado são capazes de agregar todo conhecimento por conta própria, independente de seu tamanho ou eficiência.\nII. O grau de abertura do modelo de inovação de uma empresa depende da diversidade e da amplitude de sua rede de comunicação interna e externa.\nIII. Em um modelo de inovação aberta, alguns dos possíveis participantes no processo de desenvolvimento podem ser: empresas concorrentes, órgãos de fomento, instituições de pesquisa, universidades, clientes, fornecedores e sociedade.\nIV. Os riscos na abertura e na partilha de conhecimento, entre departamentos, filiais e empresas, são desprezíveis.\nV. As formas conhecidas e aceitas de propriedade intelectual atendem integralmente ao cenário cultural próprio de um modelo de inovação aberta.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e II.",
+    "B": "I e IV.",
+    "C": "II e III.",
+    "D": "III e V.",
+    "E": "IV e V."
+  },
+  "gabarito": "C",
+  "justificativa": "A afirmação II é correta porque o grau de abertura do modelo depende diretamente da amplitude e da diversidade das redes de relacionamento que a empresa constrói, dentro e fora de suas fronteiras. A III também é correta: a inovação aberta pressupõe justamente a participação de um ecossistema amplo — concorrentes, agências de fomento, ICTs, universidades, clientes, fornecedores e sociedade.",
+  "porqueErradas": {
+    "A": "A afirmação I contraria a própria premissa da inovação aberta: nenhuma empresa, por maior que seja, detém todo o conhecimento relevante — é exatamente esse o argumento de Chesbrough.",
+    "B": "Reúne duas afirmações falsas: I (nega a premissa do modelo) e IV (os riscos de vazamento e apropriação indevida de conhecimento são significativos, não desprezíveis).",
+    "D": "Embora III esteja correta, V é falsa: os instrumentos tradicionais de propriedade intelectual são frequentemente apontados como inadequados ao ambiente colaborativo da inovação aberta.",
+    "E": "Reúne IV e V, ambas falsas: os riscos da partilha de conhecimento são relevantes e os regimes de PI existentes não atendem integralmente ao modelo aberto."
+  }
+},
+{
+  "id": "2014-Q29",
+  "tipo": "Oficial",
+  "ano": 2014,
+  "referencia": "ENADE 2014 — Questão 29 (Componente Específico)",
+  "area": "Gestão da Qualidade",
+  "dificuldade": "Média",
+  "competencia": "Aplicar corretamente a técnica FMEA no projeto de produto e de processo.",
+  "enunciado": "O pensamento enxuto considera que devem ser reduzidos os desperdícios de todos os níveis do processo de produção. O gerente de produção de uma determinada empresa participa de um projeto de desenvolvimento de produto, que objetiva obter uma nova plataforma de um modelo já existente na empresa. Levando em consideração o pensamento enxuto, o gerente de produção propõe para a equipe de desenvolvimento o uso da técnica Failure Mode and Effect Analysis (FMEA), tanto no desenvolvimento de produto como no novo processo de produção.\n\nConsiderando as especificidades da técnica FMEA, avalie as afirmações a seguir.\n\nI. Para a elaboração do FMEA de um processo, as fontes de informações necessárias são os dados dos fornecedores.\nII. A aplicação da técnica FMEA tem como objetivo aumentar a confiabilidade do produto ou processo.\nIII. O uso da técnica FMEA no projeto de um novo produto possibilita a redução de dois tipos de desperdícios do pensamento enxuto: defeitos e superprodução.\nIV. O índice de risco no FMEA resulta da multiplicação entre os índices de severidade (S), ocorrência (O) e detecção (D).\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e III.",
+    "B": "II e III.",
+    "C": "II e IV.",
+    "D": "I, II e IV.",
+    "E": "I, III e IV."
+  },
+  "gabarito": "C",
+  "justificativa": "A afirmação II é correta: o FMEA é uma técnica preventiva cujo propósito é identificar modos de falha potenciais e atuar sobre eles, elevando a confiabilidade do produto ou do processo. A IV também é correta: o índice de risco (RPN — Risk Priority Number) é o produto dos índices de severidade, ocorrência e detecção (RPN = S × O × D).",
+  "porqueErradas": {
+    "A": "A afirmação I é falsa: o FMEA de processo se apoia principalmente em dados internos — fluxogramas, histórico de falhas, registros de refugo e retrabalho, conhecimento da equipe — e não apenas em dados de fornecedores.",
+    "B": "Embora II esteja correta, III é falsa: o FMEA atua diretamente sobre o desperdício de defeitos, mas não sobre a superprodução, que decorre de decisões de programação e dimensionamento de lotes.",
+    "D": "Inclui I, que restringe indevidamente as fontes de informação do FMEA de processo aos dados de fornecedores.",
+    "E": "Inclui I e III, ambas falsas, e deixa de fora II, que expressa o objetivo central da técnica."
+  }
+},
+{
+  "id": "2014-Q30",
+  "tipo": "Oficial",
+  "ano": 2014,
+  "referencia": "ENADE 2014 — Questão 30 (Componente Específico)",
+  "area": "Engenharia Econômica",
+  "dificuldade": "Difícil",
+  "competencia": "Interpretar análise de sensibilidade de VPL em matriz TMA × fluxo de caixa uniforme.",
+  "enunciado": "A viabilidade econômica de um projeto é analisada considerando-se uma taxa de mínima atratividade (TMA) de 3% ao período. O fluxo de caixa previsto tem, no tempo 0, o investimento inicial de R$ 3 172 e, nos períodos 1, 2 e 3, um fluxo de caixa líquido uniforme igual a A. Considere que o investimento inicial não está sujeito a incertezas, porém há incertezas tanto para o valor da TMA quanto para o valor de A. O quadro apresenta o valor equivalente, no tempo 0, da série uniforme A, para diferentes combinações de A e TMA:\n\nA = 1 000 → 2% : 2 884 | 3% : 2 829 | 4% : 2 775 | 5% : 2 723 | 6% : 2 673\nA = 1 050 → 2% : 3 028 | 3% : 2 970 | 4% : 2 914 | 5% : 2 859 | 6% : 2 807\nA = 1 100 → 2% : 3 172 | 3% : 3 111 | 4% : 3 053 | 5% : 2 996 | 6% : 2 940\nA = 1 150 → 2% : 3 316 | 3% : 3 253 | 4% : 3 191 | 5% : 3 132 | 6% : 3 074\nA = 1 200 → 2% : 3 461 | 3% : 3 394 | 4% : 3 330 | 5% : 3 268 | 6% : 3 208\n\nCom base no exposto, avalie as afirmações a seguir.\n\nI. O projeto é economicamente viável.\nII. Não há relação entre o projeto e o quadro apresentado, pois os valores apresentados no quadro não podem ser considerados, dado que há incerteza no valor de A.\nIII. Considerando a amplitude de taxas de desconto apresentadas, o projeto é economicamente inviável para fluxos de caixa líquidos uniformes inferiores a $ 1 100,00.\nIV. Caso o fluxo de caixa líquido passe a ser $ 1 150,00, o ponto de equilíbrio econômico para o projeto ocorrerá para TMA entre 4% e 5% ao período.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e II.",
+    "B": "I e III.",
+    "C": "III e IV.",
+    "D": "I, II e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "C",
+  "justificativa": "O projeto é viável quando o valor presente da série A iguala ou supera o investimento de 3 172. Para A = 1 000 e A = 1 050, o maior valor presente possível em toda a faixa de taxas (2%) é 2 884 e 3 028, respectivamente — ambos abaixo de 3 172. Logo, para A inferior a 1 100, o projeto é inviável em qualquer das taxas apresentadas (III correta). Para A = 1 150, o valor presente é 3 191 a 4% (VPL positivo) e 3 132 a 5% (VPL negativo); portanto o ponto de equilíbrio, em que o VPL se anula, está entre 4% e 5% (IV correta).",
+  "porqueErradas": {
+    "A": "A afirmação I não pode ser sustentada: sem se fixar o valor de A, a viabilidade é indeterminada — o quadro mostra cenários viáveis e inviáveis. A II também é falsa.",
+    "B": "Embora III esteja correta, I é indeterminada pelo motivo exposto.",
+    "D": "Inclui I (indeterminada) e II (falsa); o quadro existe justamente para tratar a incerteza, e não para invalidá-la.",
+    "E": "A afirmação II é falsa: a matriz de sensibilidade é precisamente o instrumento adequado para analisar o projeto sob incerteza de TMA e de A."
+  }
+},
+{
+  "id": "2014-Q31",
+  "tipo": "Oficial",
+  "ano": 2014,
+  "referencia": "ENADE 2014 — Questão 31 (Componente Específico)",
+  "area": "Engenharia Econômica",
+  "dificuldade": "Média",
+  "competencia": "Analisar viabilidade econômica de modelos de negócio baseados em compartilhamento de ativos.",
+  "enunciado": "O compartilhamento de veículos de particulares, também conhecido como a locação de veículos entre particulares, é uma alternativa para pessoas que necessitam utilizar um carro e não querem ou não podem adquiri-lo. Nesse serviço, o proprietário do veículo, pessoa física, aluga seu veículo para um terceiro. Embora esse seja um serviço praticamente desconhecido no Brasil, ele já ocorre em Paris, França. O aluguel é cobrado pelo número de horas ou diárias em que o veículo foi utilizado, estando incluído nesse valor um seguro para reduzir os riscos do proprietário. O aluguel é intermediado por uma empresa estruturada com o objetivo de reduzir o risco para o proprietário e garantir, por meio de tecnologia da informação como sites específicos e GPS, a facilidade de utilização do serviço por parte do interessado. Traz como principal vantagem para os usuários tarifas menores que as praticadas nos serviços de táxi e de locação de automóveis, em empresas que possuem uma frota para aluguel. Ainda, o usuário tem à sua disposição uma ampla diversidade de veículos, possibilitando a escolha que mais se adapte às suas necessidades, sem ter que arcar com gastos de manutenção e com impostos sobre o veículo.\n\nCom base no texto e, sob o ponto de vista da viabilidade econômica, avalie as afirmações a seguir.\n\nI. Ao se comparar esse serviço com a alternativa de compra do veículo, o gasto com manutenção é a variável mais importante nos cálculos.\nII. A compra de um veículo por um usuário passa a ser economicamente vantajosa, em comparação com o serviço de compartilhamento de veículos, a partir de determinado nível de utilização (número de horas ou diárias) mais os custos de manutenção e impostos.\nIII. O serviço, compartilhamento de veículos, sob o ponto de vista do proprietário do veículo, é interessante porque reduz o desperdício por ociosidade causada pelo não uso do veículo.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "III, apenas.",
+    "C": "I e II, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "D",
+  "justificativa": "A afirmação II descreve corretamente a lógica do ponto de equilíbrio entre as duas alternativas: o aluguel tem custo essencialmente variável, enquanto a compra concentra custos fixos (aquisição, impostos, manutenção); acima de certo nível de utilização, a compra passa a ser mais vantajosa. A III também é correta: do ponto de vista do proprietário, alugar o veículo nos períodos ociosos converte capacidade ociosa em receita, reduzindo o desperdício por ociosidade do ativo.",
+  "porqueErradas": {
+    "A": "A afirmação I é falsa: o gasto com manutenção é apenas uma das parcelas. Na comparação, pesam também o custo de aquisição, a depreciação, os impostos, o seguro e, sobretudo, o nível de utilização.",
+    "B": "Embora III esteja correta, II também é — ambas descrevem corretamente a análise econômica das alternativas.",
+    "C": "A afirmação I é falsa por eleger indevidamente a manutenção como variável mais importante da análise.",
+    "E": "Inclui I, que é falsa; apenas II e III se sustentam."
+  }
+},
+{
+  "id": "2014-Q32",
+  "tipo": "Oficial",
+  "ano": 2014,
+  "referencia": "ENADE 2014 — Questão 32 (Componente Específico)",
+  "area": "Ergonomia e Segurança do Trabalho",
+  "dificuldade": "Média",
+  "competencia": "Classificar fatores de risco ocupacional e associá-los a medidas de prevenção no projeto do produto.",
+  "enunciado": "Uma empresa do setor moveleiro pretende lançar no mercado uma nova linha de produtos que atenda ao critério de prevenção de acidentes, conforme diretrizes do Ministério do Trabalho, e identificar os riscos potenciais ao ambiente de trabalho a fim de determinar quais os meios para diminuí-los. Duas soluções para o projeto foram apontadas: a primeira é o uso de madeira plástica, que é um produto fabricado a partir de plástico reciclado e fibras vegetais, com vantagem de ser resistente à umidade; e a segunda é a substituição de resinas químicas derivadas do petróleo por adesivos à base de tanino, extraído de material vegetal, como a casca de acácia negra.\n\nA respeito do conceito e dos princípios de segurança do trabalho, a melhoria da nova resina aplicada ao produto deverá ser vista como critério de prevenção para o trabalhador referente",
+  "alternativas": {
+    "A": "aos fatores relacionados com o ambiente de trabalho, devido à liberação de componentes que podem comprometer a saúde do trabalhador.",
+    "B": "aos fatores que causam desconforto, aumentam o risco de acidentes e podem causar danos consideráveis à saúde do trabalhador no posto de trabalho.",
+    "C": "ao enfoque ergonômico para desenvolver postos de trabalho que reduzam as exigências biomecânicas, procurando colocar o operador em uma boa postura de trabalho e eliminando os desconfortos.",
+    "D": "aos fatores, como a postura adequada do corpo, movimentos corporais, antropometria, necessidade de iluminação, ventilação, dimensões de máquinas, ferramentas e, ainda, interações com o ambiente externo.",
+    "E": "ao conjunto de fatores interdependentes, materiais ou abstratos, que atuam direta e indiretamente na qualidade de vida do trabalhador, em condições ambientais desfavoráveis, como excesso de calor, ruído e vibrações."
+  },
+  "gabarito": "A",
+  "justificativa": "A substituição de resinas derivadas do petróleo — que liberam compostos orgânicos voláteis, notadamente formaldeído — por adesivos à base de tanino atua sobre um risco químico do ambiente de trabalho. Trata-se, portanto, de prevenção relativa aos agentes presentes no ambiente que são liberados pelo material e podem comprometer a saúde do trabalhador por inalação ou contato.",
+  "porqueErradas": {
+    "B": "Descreve genericamente riscos de acidente e desconforto; a troca da resina não altera a probabilidade de acidentes nem o conforto do posto, e sim a exposição a agentes químicos.",
+    "C": "Refere-se a intervenções ergonômicas sobre postura e exigências biomecânicas, que não guardam relação com a composição química do adesivo.",
+    "D": "Enumera fatores ergonômicos e antropométricos do posto de trabalho — igualmente alheios ao efeito da substituição da resina.",
+    "E": "Menciona agentes físicos (calor, ruído, vibração); o risco eliminado pela nova resina é de natureza química, não física."
+  }
+},
+{
+  "id": "2014-Q33",
+  "tipo": "Oficial",
+  "ano": 2014,
+  "referencia": "ENADE 2014 — Questão 33 (Componente Específico)",
+  "area": "Gestão da Qualidade",
+  "dificuldade": "Média",
+  "competencia": "Compreender a estrutura, o escopo e a manutenção de certificações de sistemas de gestão integrados.",
+  "enunciado": "Uma empresa que atua no envase e distribuição de GLP acaba de anunciar que o Centro Operativo (CO) manteve a tríplice certificação das normas NBR ISO 9001, NBR ISO 14001 e BS OHSAS 18001. A equipe especializada do órgão certificador concluiu que o CO tem um sistema de gestão da qualidade solidamente implementado em todas as áreas produtivas, bem como alto nível de comprometimento dos colaboradores com as normas de excelência. Essa unidade operacional é modelo corporativo e de excelência de gestão para as demais unidades da Companhia que, gradualmente, também passarão pelo processo de implantação do Sistema de Gestão Integrado (SGI). A certificação assegura as boas práticas de gestão e os novos padrões de trabalho, que trouxeram benefícios à unidade, como aumento da eficiência operacional, maior satisfação do cliente em relação à qualidade do produto, além de reduções de custos de produção, acidentes e incidentes ambientais e de trabalho.\n\nConsiderando os benefícios que o SGI proporcionou à empresa, avalie as afirmações a seguir.\n\nI. Um SGI necessita, obrigatoriamente, da certificação nos três sistemas de gestão: ABNT NBR ISO 9001, ABNT NBR ISO 14001 e BS OHSAS 18001.\nII. A ABNT NBR ISO 9001, a ABNT NBR ISO 14001 e a BS OHSAS 18001 referem-se a sistemas da gestão da qualidade, a sistemas da gestão ambiental e a sistemas de gestão de segurança e saúde ocupacional, respectivamente.\nIII. As concessões da certificação desta natureza são concedidas individualmente para sistema de gestão.\nIV. Uma vez certificada em um sistema de gestão, a empresa necessita, a cada três anos, da renovação da certificação com o propósito de confirmar a conformidade com todos os requisitos da norma de sistema de gestão.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e II.",
+    "B": "I e IV.",
+    "C": "II e III.",
+    "D": "I, III e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "E",
+  "justificativa": "A afirmação II identifica corretamente o escopo de cada norma: ISO 9001 (qualidade), ISO 14001 (meio ambiente) e OHSAS 18001 (segurança e saúde ocupacional). A III é correta porque a certificação é concedida por norma, individualmente, ainda que os sistemas sejam gerenciados de forma integrada. A IV também procede: o ciclo de certificação é de três anos, com auditorias de manutenção periódicas e auditoria de recertificação ao final do ciclo.",
+  "porqueErradas": {
+    "A": "A afirmação I é falsa: um Sistema de Gestão Integrado pode combinar dois ou mais sistemas, não havendo obrigatoriedade de certificação nas três normas simultaneamente.",
+    "B": "Reúne I (falsa quanto à obrigatoriedade das três certificações) com IV, deixando de fora II e III, que são corretas.",
+    "C": "Embora II e III estejam corretas, a alternativa omite IV, que também é verdadeira quanto ao ciclo trienal de recertificação.",
+    "D": "Inclui I, que é falsa ao exigir as três certificações como condição para existir um SGI."
+  }
+},
+{
+  "id": "2014-Q34",
+  "tipo": "Oficial",
+  "ano": 2014,
+  "referencia": "ENADE 2014 — Questão 34 (Componente Específico)",
+  "area": "Ergonomia e Segurança do Trabalho",
+  "dificuldade": "Difícil",
+  "competencia": "Dimensionar a altura da superfície de trabalho em pé conforme o tipo de tarefa e a altura do cotovelo.",
+  "figura": "2014_q34.png",
+  "enunciado": "Do ponto de vista ergonômico, é sempre desejável a adaptação individual da altura de trabalho. Ao invés de soluções improvisadas, como estrados para os pés ou o aumento das pernas das mesas, uma mesa com altura regulável é mais recomendável. Na figura acima são mostradas as alturas de trabalho desejáveis para atividades em pé, em relação à altura das pessoas, sendo que a linha de referência corresponde à altura do cotovelo a partir do chão, que é em média 1 050 mm para os homens e 980 mm para as mulheres.\n\n(KROEMER, K. H. E.; GRANDJEAN, E. Manual de ergonomia: adaptando o trabalho ao homem. 5. ed. Porto Alegre: Bookman, 2005, adaptado.)\n\nConsiderando o texto e a figura, avalie as afirmações a seguir.\n\nI. Durante o trabalho em pé, se há muita exigência de emprego de força, como em trabalhos pesados de montagem, a altura da superfície de trabalho deve ser mais baixa: entre 150 e 300 mm abaixo da altura do cotovelo, conforme situação (c) da figura.\nII. Para um trabalho delicado, por exemplo, desenho, é desejável um apoio dos cotovelos, sendo a altura adequada entre 50 e 100 mm acima da altura do cotovelo, conforme situação (a) da figura.\nIII. Para trabalhos manuais realizados em pé, as alturas recomendadas são de 50 a 100 mm abaixo da altura do cotovelo, conforme situação (b) da figura.\nIV. Em atividades manuais com necessidade de espaço para ferramentas, materiais e recipientes variados, a altura de trabalho adequada é a da situação (c) da figura, em torno de 100 a 150 mm abaixo da altura do cotovelo.\nV. Para trabalhos de precisão, como manuseio de componentes eletrônicos, podem ser consideradas como adequadas as situações (a) e (b) da figura, que vão desde 50 mm acima da altura do cotovelo a 50 mm abaixo da altura do cotovelo.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I, II e III.",
+    "B": "I, III e IV.",
+    "C": "I, IV e V.",
+    "D": "II, III e V.",
+    "E": "II, IV e V."
+  },
+  "gabarito": "B",
+  "justificativa": "A figura associa cada tipo de tarefa a uma faixa de altura medida a partir da linha do cotovelo. A situação (c) — a mais baixa, entre 750 e 900 mm para homens — corresponde aos trabalhos pesados, que exigem emprego de força e, por isso, superfície bem abaixo do cotovelo (I correta), e também às atividades que demandam espaço para ferramentas, materiais e recipientes, visíveis sobre a bancada nessa situação (IV correta). A situação (b), intermediária, é a indicada para trabalhos manuais comuns, ligeiramente abaixo da linha do cotovelo (III correta).",
+  "porqueErradas": {
+    "A": "Inclui a afirmação II, cuja faixa numérica não corresponde à situação (a) da figura: para homens, (a) fica entre 1 000 e 1 100 mm, o que em relação ao cotovelo de 1 050 mm significa de 50 mm abaixo a 50 mm acima — e não \"entre 50 e 100 mm acima\".",
+    "C": "Inclui a afirmação V, que estende indevidamente a recomendação de trabalho de precisão também à situação (b); a bancada elevada com apoio de cotovelos corresponde apenas à situação (a).",
+    "D": "Inclui II e V, ambas incorretas quanto às faixas e às situações associadas, e omite I e IV.",
+    "E": "Inclui II e V, incorretas, e deixa de fora I e III, que estão de acordo com a figura."
+  }
+},
+{
+  "id": "2014-Q35",
+  "tipo": "Oficial",
+  "ano": 2014,
+  "referencia": "ENADE 2014 — Questão 35 (Componente Específico)",
+  "area": "Sustentabilidade e Meio Ambiente",
+  "dificuldade": "Média",
+  "competencia": "Compreender princípios, fases e aplicações da Avaliação do Ciclo de Vida (ACV) de produtos.",
+  "enunciado": "Iniciativas para sustentabilidade vêm sendo uma preocupação mundial. A Organização das Nações Unidas, em seu Programa para o Meio Ambiente, aborda os esforços que as organizações devem fazer, em todas suas decisões e atividades, com foco na sustentabilidade. Nesse programa, uma das recomendações é a adoção e prática da Avaliação do Ciclo de Vida (ACV) do Produto. No Brasil, a Resolução n.º 04, de 15 de dezembro de 2010, do Ministério do Desenvolvimento, Indústria e Comércio Exterior, dispõe sobre a Aprovação do Programa Brasileiro de Avaliação do Ciclo de Vida.\n\nA respeito das características e princípios da Avaliação do Ciclo de Vida do Produto, avalie as afirmações a seguir.\n\nI. Permite a quantificação das emissões ambientais ou a análise do impacto ambiental de um produto.\nII. É utilizada para comparar o impacto ambiental de diferentes produtos com similar função.\nIII. A avaliação do impacto ambiental de um produto é considerada desde a fase de montagem até o seu final de vida.\nIV. A fase de inventário consiste na realização de um levantamento quantificado de dados de todas as emissões das entradas (insumos e energia) e saídas (produtos e subprodutos).\nV. As fases que compõem um estudo de ACV são: prospecção de materiais; definição de objetivo e escopo; análise de inventário; avaliação de impacto e interpretação.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e III.",
+    "B": "II e V.",
+    "C": "I, II e IV.",
+    "D": "I, III, IV e V.",
+    "E": "II, III, IV e V."
+  },
+  "gabarito": "C",
+  "justificativa": "A afirmação I é correta: a ACV quantifica as cargas ambientais e avalia os impactos potenciais associados a um produto. A II também procede — a comparação entre produtos de função equivalente, com base na mesma unidade funcional, é uma das aplicações clássicas da ACV. A IV descreve corretamente a fase de análise de inventário (ICV), que contabiliza todas as entradas de insumos e energia e todas as saídas de produtos, coprodutos e emissões.",
+  "porqueErradas": {
+    "A": "A afirmação III é falsa: a ACV é do berço ao túmulo, abrangendo desde a extração das matérias-primas — e não apenas a partir da montagem — até a destinação final.",
+    "B": "Embora II esteja correta, V é falsa: conforme a ISO 14040, as fases são quatro (definição de objetivo e escopo, análise de inventário, avaliação de impacto e interpretação); \"prospecção de materiais\" não é uma delas.",
+    "D": "Inclui III (que exclui indevidamente a extração de matérias-primas) e V (que acrescenta uma quinta fase inexistente na ISO 14040).",
+    "E": "Inclui III e V, ambas falsas, e deixa de fora I, que expressa a finalidade central da ACV."
+  }
+}
+]

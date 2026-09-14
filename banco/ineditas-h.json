@@ -1,0 +1,347 @@
+[
+{
+  "id": "INE-91",
+  "tipo": "Inédita",
+  "area": "Sistemas de Produção Enxuta",
+  "dificuldade": "Fácil",
+  "competencia": "Reconhecer os sensos do programa 5S e sua sequência de implantação.",
+  "enunciado": "Uma fábrica iniciou a implantação do programa 5S em suas células de montagem, seguindo a sequência original dos cinco sensos.\n\nAssinale a opção que apresenta corretamente essa sequência e o significado de cada senso.",
+  "alternativas": {
+    "A": "Seiri (utilização), Seiton (ordenação), Seiso (limpeza), Seiketsu (padronização) e Shitsuke (disciplina).",
+    "B": "Seiton (ordenação), Seiri (utilização), Seiso (limpeza), Shitsuke (disciplina) e Seiketsu (padronização).",
+    "C": "Seiso (limpeza), Seiri (utilização), Seiton (ordenação), Seiketsu (padronização) e Shitsuke (disciplina).",
+    "D": "Seiri (utilização), Seiso (limpeza), Seiton (ordenação), Shitsuke (disciplina) e Seiketsu (padronização).",
+    "E": "Seiketsu (padronização), Seiri (utilização), Seiton (ordenação), Seiso (limpeza) e Shitsuke (disciplina)."
+  },
+  "gabarito": "A",
+  "justificativa": "A sequência original é Seiri, Seiton, Seiso, Seiketsu e Shitsuke. A ordem tem lógica própria: primeiro separa-se o necessário do desnecessário (utilização), depois organiza-se o que ficou (ordenação), em seguida limpa-se e inspeciona-se o ambiente (limpeza), então padroniza-se a condição alcançada (padronização) e, por fim, sustenta-se o hábito (disciplina).",
+  "porqueErradas": {
+    "B": "Inverte os dois primeiros sensos: não se pode ordenar antes de descartar o desnecessário, sob pena de organizar aquilo que deveria ser eliminado. Também troca os dois últimos.",
+    "C": "Coloca a limpeza em primeiro lugar, o que levaria a limpar itens que seriam descartados na etapa seguinte.",
+    "D": "Inverte Seiton e Seiso e troca a ordem dos dois últimos sensos: a padronização precede a disciplina, pois é o padrão que se busca sustentar.",
+    "E": "Inicia pela padronização, que pressupõe uma condição já estabelecida pelos três primeiros sensos."
+  }
+},
+{
+  "id": "INE-92",
+  "tipo": "Inédita",
+  "area": "Sistemas de Produção Enxuta",
+  "dificuldade": "Média",
+  "competencia": "Compreender os elementos e a função do trabalho padronizado.",
+  "enunciado": "Em uma célula de manufatura, a equipe de engenharia implantou o trabalho padronizado como base para o programa de melhoria contínua.\n\nA respeito dessa prática, avalie as afirmações a seguir.\n\nI. O trabalho padronizado define três elementos: o takt time, a sequência de trabalho e o estoque padrão em processo.\nII. A padronização é pré-requisito da melhoria contínua, pois sem um padrão de referência não é possível medir o ganho obtido por uma mudança.\nIII. O trabalho padronizado deve ser definido exclusivamente pela engenharia de processos, sem participação dos operadores que executam a atividade.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "I e II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "B",
+  "justificativa": "Os três elementos citados em I são exatamente os que compõem o trabalho padronizado no Sistema Toyota de Produção. E a afirmação II expressa a relação fundamental entre padrão e kaizen: a melhoria é medida como desvio em relação a um padrão, de modo que onde não há padrão não há melhoria demonstrável, apenas variação.",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira e explica por que a padronização antecede a melhoria contínua.",
+    "C": "A afirmação III contraria a prática do sistema: o padrão é construído com a participação de quem executa a tarefa, pois é o operador que conhece as variações reais da atividade. Padrões impostos sem essa participação tendem a não ser seguidos.",
+    "D": "Inclui III, que exclui indevidamente o operador da construção do padrão de trabalho.",
+    "E": "Inclui III, incorreta: a participação dos operadores é elemento essencial da padronização no contexto do trabalho enxuto."
+  }
+},
+{
+  "id": "INE-93",
+  "tipo": "Inédita",
+  "area": "Desenvolvimento de Produto e Inovação",
+  "dificuldade": "Média",
+  "competencia": "Compreender a lógica do modelo stage-gate no desenvolvimento de produtos.",
+  "enunciado": "Uma empresa de bens de consumo estruturou seu processo de desenvolvimento de produtos segundo o modelo stage-gate.\n\nA respeito desse modelo, avalie as afirmações a seguir.\n\nI. O processo é organizado em fases de trabalho separadas por pontos formais de decisão, nos quais o projeto é avaliado segundo critérios predefinidos.\nII. Em cada ponto de decisão, as saídas possíveis incluem prosseguir, interromper, retornar à fase anterior ou manter o projeto em espera.\nIII. O modelo impede o cancelamento de projetos após a conclusão da fase de concepção, por conta dos investimentos já realizados.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "I e II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "B",
+  "justificativa": "A alternância entre fases de execução e portões de decisão é a estrutura definidora do modelo (I correta). E as quatro decisões possíveis em cada portão — go, kill, hold e recycle — constituem o mecanismo pelo qual a empresa aloca recursos de forma progressiva (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira e detalha o funcionamento dos pontos de decisão.",
+    "C": "A afirmação III inverte a finalidade do modelo: os portões existem justamente para permitir o cancelamento oportuno de projetos que deixaram de se justificar, evitando que investimentos já feitos — custos afundados — perpetuem projetos inviáveis.",
+    "D": "Inclui III, que confunde a lógica do modelo com a armadilha do comprometimento crescente.",
+    "E": "Inclui III, incorreta: interromper projetos é uma das decisões previstas em cada portão."
+  }
+},
+{
+  "id": "INE-94",
+  "tipo": "Inédita",
+  "area": "Desenvolvimento de Produto e Inovação",
+  "dificuldade": "Média",
+  "competencia": "Aplicar os conceitos de análise do valor na revisão de projetos de produto.",
+  "enunciado": "Durante a revisão do projeto de um eletrodoméstico, identificou-se que determinado componente custa R$ 40,00 e desempenha a função de fixar o painel frontal. Uma solução alternativa, de R$ 22,00, cumpre exatamente a mesma função, com desempenho, durabilidade e segurança equivalentes.\n\nA respeito da análise do valor aplicada a essa situação, avalie as afirmações a seguir.\n\nI. A análise do valor examina a relação entre a função desempenhada por um componente e o custo necessário para obtê-la.\nII. A substituição proposta eleva o valor do componente, por manter a função ao mesmo tempo em que reduz o custo.\nIII. A análise do valor consiste em reduzir custos por meio da eliminação de funções do produto.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "I e II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "B",
+  "justificativa": "A análise do valor parte da razão entre função e custo (I correta). Como o valor é definido por essa razão, manter a função reduzindo o custo de R$ 40,00 para R$ 22,00 eleva o valor do componente em cerca de 82% (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira e aplica o conceito ao caso apresentado.",
+    "C": "A afirmação III é falsa: eliminar funções necessárias reduz o desempenho do produto e, portanto, não aumenta seu valor. A análise do valor busca obter a mesma função por meio mais econômico, ou eliminar apenas funções desnecessárias, que não são percebidas nem exigidas pelo cliente.",
+    "D": "Inclui III, que confunde análise do valor com corte indiscriminado de custos.",
+    "E": "Inclui III, incorreta: o método preserva as funções requeridas e ataca o custo de obtê-las."
+  }
+},
+{
+  "id": "INE-95",
+  "tipo": "Inédita",
+  "area": "Gestão Organizacional e Estratégia",
+  "dificuldade": "Fácil",
+  "competencia": "Identificar estruturas organizacionais a partir da distribuição de autoridade.",
+  "enunciado": "Em uma empresa de engenharia, os profissionais estão lotados em departamentos técnicos permanentes — mecânica, elétrica e automação — sob a coordenação de gerentes funcionais. Simultaneamente, cada profissional é alocado a um ou mais projetos, cujos gerentes respondem por prazo, custo e escopo. Assim, o técnico responde a dois superiores: o gerente funcional, quanto ao desenvolvimento técnico, e o gerente de projeto, quanto às entregas.\n\nEssa configuração caracteriza uma estrutura organizacional",
+  "alternativas": {
+    "A": "funcional.",
+    "B": "matricial.",
+    "C": "projetizada.",
+    "D": "divisional.",
+    "E": "em rede."
+  },
+  "gabarito": "B",
+  "justificativa": "A estrutura matricial caracteriza-se exatamente pela sobreposição de duas linhas de autoridade: a funcional, que mantém a especialização técnica e a alocação permanente dos profissionais, e a de projetos, responsável pelas entregas. A dupla subordinação descrita é a marca distintiva desse arranjo, que busca conciliar eficiência técnica com foco em resultados de projeto.",
+  "porqueErradas": {
+    "A": "Na estrutura funcional pura, o profissional responde a um único superior — o gerente de seu departamento — e os projetos são coordenados dentro de cada área, sem gerentes de projeto com autoridade transversal.",
+    "C": "Na estrutura projetizada, as equipes são alocadas integralmente aos projetos, respondendo apenas ao gerente de projeto; não há departamentos funcionais permanentes com autoridade sobre os membros.",
+    "D": "A estrutura divisional agrupa a organização por produto, mercado ou região geográfica, cada divisão contendo suas próprias funções — o que não corresponde à dupla subordinação descrita.",
+    "E": "A estrutura em rede baseia-se na articulação de organizações independentes em torno de um núcleo coordenador, e não na dupla linha de autoridade interna."
+  }
+},
+{
+  "id": "INE-96",
+  "tipo": "Inédita",
+  "area": "Gestão Organizacional e Estratégia",
+  "dificuldade": "Fácil",
+  "competencia": "Aplicar corretamente a análise SWOT e reconhecer seus limites.",
+  "enunciado": "Uma indústria conduziu uma análise SWOT como etapa de seu planejamento estratégico.\n\nA respeito dessa ferramenta, avalie as afirmações a seguir.\n\nI. Forças e fraquezas referem-se ao ambiente interno da organização, sobre o qual ela tem governança direta.\nII. Oportunidades e ameaças referem-se ao ambiente externo, sobre o qual a organização tem pouca ou nenhuma governança.\nIII. A construção da matriz SWOT define automaticamente as estratégias que a organização deve adotar.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "I e II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "B",
+  "justificativa": "A separação entre ambiente interno — forças e fraquezas — e ambiente externo — oportunidades e ameaças — é o eixo estruturante da ferramenta, e o critério que distingue os dois é justamente o grau de governança da organização sobre cada fator (I e II corretas).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira e completa a lógica de classificação dos quadrantes.",
+    "C": "A afirmação III é falsa: a SWOT é uma ferramenta de diagnóstico, não de formulação. Ela organiza informações para apoiar a decisão, mas a construção das estratégias — aproveitar oportunidades com as forças, corrigir fraquezas, proteger-se de ameaças — exige análise e escolha dos gestores.",
+    "D": "Inclui III, que atribui à matriz um automatismo que ela não possui.",
+    "E": "Inclui III, incorreta: diagnóstico e formulação estratégica são etapas distintas do planejamento."
+  }
+},
+{
+  "id": "INE-97",
+  "tipo": "Inédita",
+  "area": "Arranjo Físico e Layout",
+  "dificuldade": "Difícil",
+  "competencia": "Dimensionar o número de máquinas necessário a partir da demanda e da eficiência.",
+  "enunciado": "Uma fábrica precisa atender à demanda de 12 000 peças por mês de determinado componente. O tempo padrão de processamento é de 6 minutos por peça. Cada máquina está disponível 160 horas por mês e opera com eficiência de 90%.\n\nNessas condições, o número mínimo de máquinas necessárias é de",
+  "alternativas": {
+    "A": "7.",
+    "B": "8.",
+    "C": "9.",
+    "D": "10.",
+    "E": "12."
+  },
+  "gabarito": "C",
+  "justificativa": "O tempo total necessário é 12 000 × 6 = 72 000 minutos, equivalentes a 1 200 horas por mês. A capacidade efetiva de cada máquina é 160 × 0,90 = 144 horas mensais. Dividindo: 1 200 ÷ 144 = 8,33 máquinas. Como não é possível operar fração de máquina, arredonda-se para cima: 9 máquinas.",
+  "porqueErradas": {
+    "A": "7 máquinas ofereceriam 7 × 144 = 1 008 horas, insuficientes para as 1 200 horas necessárias.",
+    "B": "8 máquinas ofereceriam 1 152 horas, ainda 48 horas abaixo do necessário — o arredondamento para baixo deixaria a demanda descoberta.",
+    "D": "10 máquinas resultariam de desconsiderar a eficiência de 90%, calculando 1 200 ÷ 120 e arredondando incorretamente.",
+    "E": "12 máquinas superdimensionariam largamente a instalação, gerando capacidade ociosa e investimento desnecessário."
+  }
+},
+{
+  "id": "INE-98",
+  "tipo": "Inédita",
+  "area": "Arranjo Físico e Layout",
+  "dificuldade": "Média",
+  "competencia": "Interpretar a carta de interligações preferenciais do Planejamento Sistemático de Layout.",
+  "enunciado": "No Planejamento Sistemático de Layout (SLP), a carta de interligações preferenciais registra o grau de proximidade desejado entre cada par de setores de uma instalação.\n\nA respeito desse instrumento, avalie as afirmações a seguir.\n\nI. A carta classifica a proximidade desejada entre setores por meio de códigos que vão de A a X, acompanhados da justificativa de cada avaliação.\nII. A classificação X indica que a proximidade entre os dois setores é indesejável e deve ser evitada no arranjo.\nIII. A classificação U indica que a proximidade entre os dois setores é absolutamente necessária.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "I e II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "B",
+  "justificativa": "A carta emprega a escala A (absolutamente necessária), E (muito importante), I (importante), O (pouco importante), U (sem importância) e X (indesejável), sempre acompanhada de um código de motivo que justifica cada atribuição (I correta). A classificação X sinaliza incompatibilidade entre setores — por ruído, contaminação, vibração ou risco —, devendo-se afastá-los no arranjo (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira e descreve corretamente o significado da classificação X.",
+    "C": "A afirmação III inverte os códigos: U significa proximidade sem importância, isto é, indiferente. A proximidade absolutamente necessária é indicada pela letra A, a de maior prioridade da escala.",
+    "D": "Inclui III, que troca o significado de U pelo de A.",
+    "E": "Inclui III, incorreta quanto à interpretação da classificação U."
+  }
+},
+{
+  "id": "INE-99",
+  "tipo": "Inédita",
+  "area": "Cálculo e Otimização",
+  "dificuldade": "Média",
+  "competencia": "Determinar o ponto de máximo de uma função lucro por meio de derivadas.",
+  "enunciado": "O lucro mensal de uma fábrica, em reais, em função da quantidade q produzida e vendida, é dado por\n\nL(q) = − 0,5q² + 120q − 3 000\n\nCom base nessa função, avalie as afirmações a seguir.\n\nI. A quantidade que maximiza o lucro é de 120 unidades por mês.\nII. O lucro máximo mensal é de R$ 4.200,00.\nIII. O lucro é positivo para qualquer quantidade produzida.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "I e II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "B",
+  "justificativa": "Derivando: L'(q) = − q + 120. Igualando a zero, obtém-se q = 120 unidades. Como L''(q) = − 1 < 0, trata-se de um ponto de máximo (I correta). Substituindo na função: L(120) = − 0,5 × 14 400 + 120 × 120 − 3 000 = − 7 200 + 14 400 − 3 000 = R$ 4.200,00 (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira e corresponde ao valor da função no ponto de máximo.",
+    "C": "A afirmação III é falsa: o termo independente de − 3 000 representa os custos fixos, de modo que L(0) = − R$ 3.000,00. Para quantidades pequenas o lucro é negativo, tornando-se positivo apenas a partir do ponto de equilíbrio.",
+    "D": "Inclui III, que ignora a existência de custos fixos e, portanto, de uma faixa de prejuízo em baixos volumes.",
+    "E": "Inclui III, incorreta: a parábola cruza o eixo das abscissas, havendo intervalos de prejuízo em ambos os extremos."
+  }
+},
+{
+  "id": "INE-100",
+  "tipo": "Inédita",
+  "area": "Cálculo e Otimização",
+  "dificuldade": "Média",
+  "competencia": "Maximizar a receita a partir de uma função de demanda linear.",
+  "enunciado": "Estudos de mercado indicaram que a demanda mensal de um produto, em unidades, relaciona-se ao preço unitário p, em reais, pela função\n\nq(p) = 500 − 4p\n\nA receita total é dada por R(p) = p · q(p).\n\nNessas condições, o preço que maximiza a receita total é de",
+  "alternativas": {
+    "A": "R$ 50,00.",
+    "B": "R$ 62,50.",
+    "C": "R$ 75,00.",
+    "D": "R$ 100,00.",
+    "E": "R$ 125,00."
+  },
+  "gabarito": "B",
+  "justificativa": "A receita é R(p) = p(500 − 4p) = 500p − 4p². Derivando: R'(p) = 500 − 8p. Igualando a zero, obtém-se p = 62,50. Como R''(p) = − 8 < 0, trata-se de máximo. Nesse preço, a quantidade vendida é 500 − 4 × 62,5 = 250 unidades e a receita máxima é R$ 15.625,00.",
+  "porqueErradas": {
+    "A": "A R$ 50,00 a receita é 50 × 300 = R$ 15.000,00, inferior ao máximo — o preço ainda pode subir sem que a perda de volume compense o ganho unitário.",
+    "C": "A R$ 75,00 a receita é 75 × 200 = R$ 15.000,00, também abaixo do máximo; o preço já ultrapassou o ponto ótimo.",
+    "D": "A R$ 100,00 a receita cai para 100 × 100 = R$ 10.000,00, pois a redução de demanda supera o efeito do preço maior.",
+    "E": "A R$ 125,00 a demanda se anula (500 − 500 = 0), zerando a receita — esse é o preço de choque do mercado."
+  }
+},
+{
+  "id": "INE-101",
+  "tipo": "Inédita",
+  "area": "Ciências Térmicas",
+  "dificuldade": "Média",
+  "competencia": "Aplicar o balanço de energia em escoamento com aquecimento sensível.",
+  "enunciado": "Um trocador de calor deve aquecer uma vazão mássica de 2 kg/s de água, elevando sua temperatura de 20 °C para 60 °C, em regime permanente e sem mudança de fase.\n\nConsiderando o calor específico da água igual a 4,18 kJ/(kg·K) e desprezando as perdas térmicas, a potência térmica que deve ser fornecida é de",
+  "alternativas": {
+    "A": "83,6 kW.",
+    "B": "167,2 kW.",
+    "C": "334,4 kW.",
+    "D": "501,6 kW.",
+    "E": "668,8 kW."
+  },
+  "gabarito": "C",
+  "justificativa": "Pelo balanço de energia em regime permanente, a potência térmica é o produto da vazão mássica, do calor específico e da variação de temperatura: Q = ṁ · cp · ΔT = 2 × 4,18 × (60 − 20) = 2 × 4,18 × 40 = 334,4 kW.",
+  "porqueErradas": {
+    "A": "83,6 kW corresponde a ṁ · cp × 10 °C, ou seja, a um quarto da variação de temperatura efetivamente exigida.",
+    "B": "167,2 kW corresponde à metade do valor correto, resultado de usar ΔT = 20 °C em vez de 40 °C.",
+    "D": "501,6 kW corresponderia a uma vazão de 3 kg/s, superior à informada no enunciado.",
+    "E": "668,8 kW corresponderia a uma vazão de 4 kg/s, o dobro da especificada."
+  }
+},
+{
+  "id": "INE-102",
+  "tipo": "Inédita",
+  "area": "Mecânica dos Fluidos",
+  "dificuldade": "Média",
+  "competencia": "Aplicar a equação da continuidade em escoamento incompressível.",
+  "enunciado": "Uma tubulação de 100 mm de diâmetro interno conduz água a uma velocidade média de 2 m/s. Em determinado trecho, a tubulação sofre uma redução, passando a 50 mm de diâmetro interno.\n\nConsiderando escoamento incompressível e permanente, a velocidade média da água no trecho de menor diâmetro é de",
+  "alternativas": {
+    "A": "1 m/s.",
+    "B": "2 m/s.",
+    "C": "4 m/s.",
+    "D": "8 m/s.",
+    "E": "16 m/s."
+  },
+  "gabarito": "D",
+  "justificativa": "Pela equação da continuidade, a vazão volumétrica se conserva: A₁v₁ = A₂v₂. Como a área da seção circular é proporcional ao quadrado do diâmetro, reduzir o diâmetro à metade reduz a área a um quarto. Assim, v₂ = v₁ × (D₁/D₂)² = 2 × (100/50)² = 2 × 4 = 8 m/s.",
+  "porqueErradas": {
+    "A": "1 m/s indicaria redução da velocidade em uma seção mais estreita, contrariando a conservação da vazão.",
+    "B": "2 m/s suporia velocidade constante, o que só ocorreria se a área da seção não mudasse.",
+    "C": "4 m/s resultaria de considerar a área proporcional ao diâmetro, e não ao seu quadrado — erro conceitual frequente.",
+    "E": "16 m/s corresponderia a uma redução do diâmetro a um quarto do valor original, e não à metade."
+  }
+},
+{
+  "id": "INE-103",
+  "tipo": "Inédita",
+  "area": "Resistência dos Materiais",
+  "dificuldade": "Média",
+  "competencia": "Aplicar a lei de Hooke no cálculo de deformações elásticas.",
+  "enunciado": "Uma barra de aço de seção transversal constante de 400 mm² e comprimento inicial de 2 m é submetida a uma força de tração axial de 80 kN, permanecendo em regime elástico.\n\nConsiderando o módulo de elasticidade do aço igual a 200 GPa, o alongamento da barra é de",
+  "alternativas": {
+    "A": "0,5 mm.",
+    "B": "1,0 mm.",
+    "C": "2,0 mm.",
+    "D": "4,0 mm.",
+    "E": "8,0 mm."
+  },
+  "gabarito": "C",
+  "justificativa": "A tensão normal é σ = F / A = 80 000 N ÷ 400 mm² = 200 N/mm² = 200 MPa. Pela lei de Hooke, a deformação específica é ε = σ / E = 200 MPa ÷ 200 000 MPa = 0,001. O alongamento é ΔL = ε · L = 0,001 × 2 000 mm = 2,0 mm.",
+  "porqueErradas": {
+    "A": "0,5 mm corresponderia a uma força de 20 kN, um quarto da aplicada.",
+    "B": "1,0 mm corresponderia a uma força de 40 kN ou a um comprimento inicial de 1 m, valores diferentes dos informados.",
+    "D": "4,0 mm corresponderia a um módulo de elasticidade de 100 GPa, metade do valor do aço.",
+    "E": "8,0 mm exigiria módulo de elasticidade de 50 GPa, incompatível com o aço — valor mais próximo do alumínio seria 70 GPa."
+  }
+},
+{
+  "id": "INE-104",
+  "tipo": "Inédita",
+  "area": "Eletricidade e Eletrotécnica",
+  "dificuldade": "Difícil",
+  "competencia": "Calcular consumo e custo de energia elétrica considerando o rendimento do equipamento.",
+  "enunciado": "Um motor elétrico de 15 kW de potência útil no eixo opera 8 horas por dia, durante 22 dias por mês, com rendimento de 90%. A tarifa de energia elétrica é de R$ 0,60 por kWh.\n\nNessas condições, o custo mensal de energia elétrica consumida por esse motor é de",
+  "alternativas": {
+    "A": "R$ 1.584,00.",
+    "B": "R$ 1.760,00.",
+    "C": "R$ 1.980,00.",
+    "D": "R$ 2.112,00.",
+    "E": "R$ 2.640,00."
+  },
+  "gabarito": "B",
+  "justificativa": "A potência elétrica absorvida da rede é maior que a potência útil no eixo, pois parte da energia se perde no motor: P = 15 ÷ 0,90 = 16,667 kW. O consumo mensal é 16,667 × 8 × 22 = 2 933,3 kWh. Multiplicando pela tarifa: 2 933,3 × 0,60 = R$ 1.760,00.",
+  "porqueErradas": {
+    "A": "R$ 1.584,00 resulta de usar a potência útil de 15 kW diretamente, ignorando que o rendimento de 90% faz o motor absorver mais energia do que entrega ao eixo.",
+    "C": "R$ 1.980,00 corresponderia a um rendimento de 80%, inferior ao informado.",
+    "D": "R$ 2.112,00 resultaria de multiplicar a potência útil pelo rendimento em vez de dividi-la, invertendo a correção.",
+    "E": "R$ 2.640,00 corresponderia a um rendimento de 60%, muito abaixo do especificado para o motor."
+  }
+},
+{
+  "id": "INE-105",
+  "tipo": "Inédita",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Difícil",
+  "competencia": "Dimensionar estações e avaliar a eficiência do balanceamento de linha.",
+  "enunciado": "Uma linha de montagem é composta por cinco operações, com os seguintes tempos: A = 30 s; B = 45 s; C = 25 s; D = 50 s; E = 40 s. O tempo de ciclo definido para atender à demanda é de 60 segundos por unidade.\n\nCom base nesses dados, avalie as afirmações a seguir.\n\nI. O número mínimo teórico de estações de trabalho é 4.\nII. A eficiência do balanceamento, considerando 4 estações, é de aproximadamente 79%.\nIII. Nenhuma operação isolada impede que o tempo de ciclo de 60 segundos seja alcançado.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "I e II, apenas.",
+    "C": "II e III, apenas.",
+    "D": "I e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "E",
+  "justificativa": "O conteúdo total de trabalho é 30 + 45 + 25 + 50 + 40 = 190 segundos. O número mínimo teórico de estações é 190 ÷ 60 = 3,17, arredondado para cima: 4 estações (I correta). A eficiência é o conteúdo de trabalho dividido pela capacidade instalada: 190 ÷ (4 × 60) = 190 ÷ 240 = 0,792, ou seja, cerca de 79% (II correta). A operação mais longa é D, com 50 segundos, inferior aos 60 segundos do tempo de ciclo — nenhuma operação, portanto, inviabiliza o ciclo definido (III correta).",
+  "porqueErradas": {
+    "A": "As três afirmações são verdadeiras; restringir a resposta a I ignora tanto o cálculo da eficiência quanto a verificação de viabilidade do tempo de ciclo.",
+    "B": "Além de I e II, a afirmação III também procede: 50 s é menor que os 60 s do tempo de ciclo.",
+    "C": "Omite I, que apresenta o cálculo correto do número mínimo teórico de estações.",
+    "D": "Omite II, que corresponde ao cálculo correto da eficiência do balanceamento."
+  }
+}
+]

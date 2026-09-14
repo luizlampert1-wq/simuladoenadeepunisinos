@@ -1,0 +1,232 @@
+[
+{
+  "id": "INE-21",
+  "tipo": "Inédita",
+  "area": "Ergonomia e Segurança do Trabalho",
+  "dificuldade": "Difícil",
+  "competencia": "Aplicar a equação do NIOSH para avaliar o risco em atividades de levantamento manual de cargas.",
+  "enunciado": "Em uma operação de paletização, o trabalhador levanta caixas de 12 kg. Para avaliar o risco, foi aplicada a equação do NIOSH, que fornece o Limite de Peso Recomendado (LPR):\n\nLPR = 23 × HM × VM × DM × AM × FM × CM\n\nNa situação avaliada, os multiplicadores obtidos foram: HM = 0,80; VM = 0,95; DM = 0,90; AM = 1,00; FM = 0,75 e CM = 1,00.\n\nSabendo que o Índice de Levantamento (IL) é a razão entre o peso da carga e o LPR, e que valores de IL superiores a 1,0 indicam risco de lesão para parte significativa da população trabalhadora, o índice de levantamento e a respectiva interpretação são",
+  "alternativas": {
+    "A": "0,52 — situação segura, sem necessidade de intervenção.",
+    "B": "0,98 — situação segura, no limite da aceitabilidade.",
+    "C": "1,02 — situação de risco, exigindo medidas de controle.",
+    "D": "1,50 — situação de risco elevado, exigindo interrupção imediata da atividade.",
+    "E": "2,04 — situação de risco muito elevado, exigindo redefinição completa do posto."
+  },
+  "gabarito": "C",
+  "justificativa": "Calculando o LPR: 23 × 0,80 = 18,4; × 0,95 = 17,48; × 0,90 = 15,73; × 1,00 = 15,73; × 0,75 = 11,80; × 1,00 = 11,80 kg. O índice de levantamento é IL = 12 ÷ 11,80 ≈ 1,02. Por ser superior a 1,0, ainda que ligeiramente, a situação indica risco e demanda medidas de controle, como reduzir o peso da caixa, aproximar a carga do corpo ou diminuir a frequência de levantamentos.",
+  "porqueErradas": {
+    "A": "0,52 resultaria de dividir o LPR pelo peso da carga, invertendo a razão que define o índice de levantamento.",
+    "B": "0,98 corresponderia a um LPR de aproximadamente 12,25 kg, valor que não decorre da multiplicação dos fatores apresentados.",
+    "D": "1,50 exigiria um LPR de apenas 8 kg; além disso, um IL pouco acima de 1,0 indica necessidade de melhoria, e não interrupção imediata.",
+    "E": "2,04 resultaria de desprezar alguns multiplicadores no cálculo do LPR, reduzindo-o indevidamente à metade do valor correto."
+  }
+},
+{
+  "id": "INE-22",
+  "tipo": "Inédita",
+  "area": "Ergonomia e Segurança do Trabalho",
+  "dificuldade": "Média",
+  "competencia": "Aplicar a hierarquia de medidas de prevenção no gerenciamento de riscos ocupacionais.",
+  "enunciado": "Em uma fundição, foi identificado risco de exposição de trabalhadores à poeira de sílica cristalina, agente reconhecidamente cancerígeno. A equipe de segurança do trabalho propôs quatro medidas:\n\nI. Fornecimento de respiradores PFF2 a todos os trabalhadores da área.\nII. Substituição da areia contendo sílica por areia sintética isenta desse agente.\nIII. Instalação de sistema de exaustão localizada nos pontos de geração de poeira.\nIV. Adoção de rodízio de trabalhadores, para reduzir o tempo individual de exposição.\n\nSegundo a hierarquia de medidas de prevenção adotada no gerenciamento de riscos ocupacionais, a ordem de prioridade de implantação dessas medidas é",
+  "alternativas": {
+    "A": "I, II, III, IV.",
+    "B": "II, III, IV, I.",
+    "C": "III, II, I, IV.",
+    "D": "II, I, III, IV.",
+    "E": "IV, III, II, I."
+  },
+  "gabarito": "B",
+  "justificativa": "A hierarquia de controle estabelece a seguinte ordem de prioridade: primeiro, eliminação ou substituição do agente de risco — a troca da areia com sílica por areia sintética (II); em seguida, as medidas de proteção coletiva de engenharia — a exaustão localizada (III); depois, as medidas administrativas ou de organização do trabalho — o rodízio de trabalhadores (IV); e, por último, o equipamento de proteção individual — os respiradores (I), adotado quando as medidas anteriores forem inviáveis ou insuficientes.",
+  "porqueErradas": {
+    "A": "Coloca o EPI em primeiro lugar, invertendo completamente a hierarquia: o equipamento individual é a última linha de defesa, pois depende do uso correto e contínuo pelo trabalhador.",
+    "C": "Prioriza a medida de engenharia sobre a substituição do agente e ainda antecipa o EPI às medidas administrativas.",
+    "D": "Acerta a substituição como primeira medida, mas posiciona o EPI antes das proteções coletivas e administrativas.",
+    "E": "Inverte integralmente a hierarquia, começando pela medida administrativa e terminando na eliminação do agente, que deveria ser a primeira opção."
+  }
+},
+{
+  "id": "INE-23",
+  "tipo": "Inédita",
+  "area": "Materiais e Processos de Fabricação",
+  "dificuldade": "Difícil",
+  "competencia": "Calcular parâmetros e tempo de usinagem em torneamento cilíndrico.",
+  "enunciado": "Em uma operação de torneamento cilíndrico externo, será usinada uma peça de 100 mm de diâmetro e 300 mm de comprimento em um único passe. Os parâmetros de corte definidos são: velocidade de corte vc = 157 m/min e avanço f = 0,25 mm por volta.\n\nConsiderando π ≈ 3,14 e que a rotação é dada por n = (vc × 1 000)/(π × D), o tempo de corte da operação é de aproximadamente",
+  "alternativas": {
+    "A": "1,2 minuto.",
+    "B": "2,0 minutos.",
+    "C": "2,4 minutos.",
+    "D": "3,0 minutos.",
+    "E": "4,8 minutos."
+  },
+  "gabarito": "C",
+  "justificativa": "A rotação é n = (157 × 1 000)/(3,14 × 100) = 157 000/314 = 500 rpm. A velocidade de avanço é vf = n × f = 500 × 0,25 = 125 mm/min. O tempo de corte é o comprimento dividido pela velocidade de avanço: 300 ÷ 125 = 2,4 minutos.",
+  "porqueErradas": {
+    "A": "1,2 minuto resultaria de considerar avanço de 0,5 mm/volta, o dobro do especificado.",
+    "B": "2,0 minutos corresponderia a uma velocidade de avanço de 150 mm/min, o que exigiria rotação de 600 rpm — acima da calculada.",
+    "D": "3,0 minutos resultaria de uma velocidade de avanço de 100 mm/min, correspondente a 400 rpm.",
+    "E": "4,8 minutos corresponderia a avanço de 0,125 mm/volta, metade do valor informado no enunciado."
+  }
+},
+{
+  "id": "INE-24",
+  "tipo": "Inédita",
+  "area": "Materiais e Processos de Fabricação",
+  "dificuldade": "Média",
+  "competencia": "Selecionar processo de fabricação a partir de requisitos de geometria, material e volume de produção.",
+  "enunciado": "Uma empresa precisa produzir 50 000 peças por ano de um componente em liga de alumínio, com geometria complexa, paredes finas, tolerâncias dimensionais apertadas e bom acabamento superficial, de modo a minimizar operações posteriores de usinagem.\n\nNessas condições, o processo de fabricação mais adequado é",
+  "alternativas": {
+    "A": "a fundição em areia verde, pela flexibilidade geométrica e pelo baixo custo de ferramental.",
+    "B": "a fundição sob pressão (die casting), pela elevada produtividade, boa precisão dimensional e adequação a paredes finas em ligas de alumínio.",
+    "C": "o forjamento a quente em matriz fechada, pelas propriedades mecânicas superiores obtidas no componente.",
+    "D": "a usinagem a partir de bloco maciço, por dispensar investimento em ferramental específico.",
+    "E": "a sinterização de pós metálicos, por eliminar a necessidade de qualquer operação de acabamento."
+  },
+  "gabarito": "B",
+  "justificativa": "A fundição sob pressão injeta o metal líquido em molde metálico permanente sob alta pressão, o que permite reproduzir geometrias complexas com paredes finas, obter boa precisão dimensional e excelente acabamento superficial, com ciclos muito curtos. É o processo clássico para altos volumes de peças em ligas de alumínio, zinco e magnésio, condições exatamente descritas no enunciado.",
+  "porqueErradas": {
+    "A": "A fundição em areia verde produz acabamento rugoso e tolerâncias largas, exigindo usinagem posterior; além disso, a moldagem individual limita a produtividade para 50 000 peças por ano.",
+    "C": "O forjamento não é adequado a paredes finas e geometrias complexas com cavidades, além de exigir operações posteriores de usinagem para atingir as tolerâncias requeridas.",
+    "D": "Usinar a partir de bloco maciço gera elevado desperdício de material e tempo de ciclo alto, tornando-se antieconômico nesse volume de produção.",
+    "E": "A sinterização apresenta limitações de geometria (dificuldade com reentrâncias e paredes muito finas) e normalmente requer operações de calibração e acabamento."
+  }
+},
+{
+  "id": "INE-25",
+  "tipo": "Inédita",
+  "area": "Sustentabilidade e Meio Ambiente",
+  "dificuldade": "Média",
+  "competencia": "Quantificar emissões de gases de efeito estufa e avaliar o impacto de medidas de mitigação.",
+  "enunciado": "Uma fábrica de embalagens consome anualmente 1 800 MWh de energia elétrica da rede, cujo fator de emissão é de 0,10 tCO₂e por MWh, e queima 120 000 m³ de gás natural por ano, com fator de emissão de 0,002 tCO₂e por m³.\n\nA empresa pretende instalar um sistema fotovoltaico capaz de suprir 60% de seu consumo de energia elétrica, sem alterar o consumo de gás natural.\n\nCom a implantação do sistema, a redução percentual das emissões totais da fábrica será de aproximadamente",
+  "alternativas": {
+    "A": "15%.",
+    "B": "26%.",
+    "C": "43%.",
+    "D": "60%.",
+    "E": "74%."
+  },
+  "gabarito": "B",
+  "justificativa": "Emissões atuais: energia elétrica = 1 800 × 0,10 = 180 tCO₂e; gás natural = 120 000 × 0,002 = 240 tCO₂e; total = 420 tCO₂e. A redução obtida corresponde a 60% das emissões elétricas: 0,60 × 180 = 108 tCO₂e. Em relação ao total, a redução é 108 ÷ 420 = 0,257, ou seja, aproximadamente 26%.",
+  "porqueErradas": {
+    "A": "15% subestima a redução — corresponderia a eliminar cerca de 63 tCO₂e, valor inferior às 108 tCO₂e efetivamente evitadas.",
+    "C": "43% corresponderia à participação da energia elétrica no total das emissões (180/420), e não à redução obtida.",
+    "D": "60% é o percentual do consumo elétrico substituído pelo sistema fotovoltaico, e não o percentual de redução das emissões totais, que incluem o gás natural.",
+    "E": "74% inverte o raciocínio, correspondendo ao percentual de emissões remanescentes após a implantação do sistema."
+  }
+},
+{
+  "id": "INE-26",
+  "tipo": "Inédita",
+  "area": "Gestão Organizacional e Estratégia",
+  "dificuldade": "Fácil",
+  "competencia": "Associar indicadores de desempenho às perspectivas do Balanced Scorecard.",
+  "enunciado": "Uma indústria implantou o Balanced Scorecard (BSC) e definiu, entre outros, os seguintes indicadores de desempenho:\n\n(i) Retorno sobre o capital investido;\n(ii) Índice de satisfação do cliente;\n(iii) Tempo de ciclo do pedido, da entrada até a expedição;\n(iv) Horas de treinamento por colaborador.\n\nOs indicadores (i), (ii), (iii) e (iv) pertencem, respectivamente, às perspectivas",
+  "alternativas": {
+    "A": "financeira, processos internos, clientes, aprendizado e crescimento.",
+    "B": "financeira, clientes, processos internos, aprendizado e crescimento.",
+    "C": "clientes, financeira, aprendizado e crescimento, processos internos.",
+    "D": "processos internos, clientes, financeira, aprendizado e crescimento.",
+    "E": "financeira, clientes, aprendizado e crescimento, processos internos."
+  },
+  "gabarito": "B",
+  "justificativa": "O retorno sobre o capital investido é um indicador de resultado econômico, próprio da perspectiva financeira (i). O índice de satisfação do cliente pertence à perspectiva de clientes (ii). O tempo de ciclo do pedido mede a eficiência da operação interna, situando-se na perspectiva de processos internos (iii). As horas de treinamento por colaborador dizem respeito ao desenvolvimento de competências, integrando a perspectiva de aprendizado e crescimento (iv).",
+  "porqueErradas": {
+    "A": "Troca as perspectivas dos indicadores (ii) e (iii): a satisfação do cliente não é um indicador de processos internos, nem o tempo de ciclo é um indicador de clientes.",
+    "C": "Desloca o retorno sobre o capital investido para a perspectiva de clientes e a satisfação do cliente para a financeira, invertendo ambas.",
+    "D": "Classifica o retorno sobre o capital como indicador de processos internos, quando se trata de medida financeira por excelência.",
+    "E": "Inverte as perspectivas dos indicadores (iii) e (iv): o tempo de ciclo é de processos internos e o treinamento é de aprendizado e crescimento."
+  }
+},
+{
+  "id": "INE-27",
+  "tipo": "Inédita",
+  "area": "Sistemas de Informação e Indústria 4.0",
+  "dificuldade": "Média",
+  "competencia": "Reconhecer aplicações de gêmeo digital e manutenção preditiva na indústria 4.0.",
+  "enunciado": "Uma indústria instalou sensores de Internet das Coisas (IoT) em suas prensas hidráulicas, transmitindo continuamente dados de vibração, temperatura e pressão para um modelo virtual que replica o comportamento físico de cada equipamento. Esse modelo permite simular cenários de operação, identificar desvios de comportamento e estimar o momento provável de falha dos componentes críticos.\n\nCom base nessa situação, avalie as afirmações a seguir.\n\nI. A tecnologia descrita corresponde a um gêmeo digital (digital twin).\nII. A aplicação descrita caracteriza uma estratégia de manutenção preditiva.\nIII. O gêmeo digital dispensa a coleta contínua de dados do equipamento físico, pois opera a partir dos parâmetros de projeto original.\nIV. A análise dos dados coletados permite antecipar intervenções, reduzindo paradas não programadas.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e III.",
+    "B": "II e III.",
+    "C": "I, II e IV.",
+    "D": "I, III e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "C",
+  "justificativa": "O modelo virtual que replica o comportamento de um ativo físico e é alimentado por dados em tempo real é, por definição, um gêmeo digital (I correta). Estimar o momento provável de falha a partir da condição monitorada caracteriza manutenção preditiva (II correta), cuja finalidade é justamente antecipar intervenções e reduzir paradas não programadas (IV correta).",
+  "porqueErradas": {
+    "A": "A afirmação III contraria a essência do gêmeo digital: o que o distingue de um simples modelo de simulação é exatamente a sincronização contínua com dados do ativo físico real.",
+    "B": "Inclui III, que descaracteriza o conceito de gêmeo digital, e omite I e IV.",
+    "D": "Inclui III, incorreta, e deixa de fora II, que identifica corretamente a estratégia de manutenção adotada.",
+    "E": "Inclui III, cuja afirmação de dispensa da coleta de dados invalida o próprio funcionamento descrito no enunciado."
+  }
+},
+{
+  "id": "INE-28",
+  "tipo": "Inédita",
+  "area": "Arranjo Físico e Layout",
+  "dificuldade": "Fácil",
+  "competencia": "Selecionar o tipo de arranjo físico adequado ao volume, à variedade e às características do produto.",
+  "enunciado": "Uma empresa fabrica, sob encomenda, equipamentos industriais de grande porte, com baixíssimo volume de produção e alta variedade de configurações. Devido ao peso e às dimensões dos equipamentos, o produto permanece estacionário durante toda a montagem, sendo os recursos — pessoas, ferramentas e materiais — deslocados até ele.\n\nO tipo de arranjo físico adequado a essa operação é o arranjo",
+  "alternativas": {
+    "A": "por produto (em linha), pela padronização do fluxo e pelo alto volume de produção.",
+    "B": "por processo (funcional), pelo agrupamento de máquinas e operações semelhantes em departamentos.",
+    "C": "celular, pela formação de famílias de peças processadas em uma mesma célula.",
+    "D": "posicional (fixo), pois o produto permanece estacionário e os recursos transformadores se deslocam até ele.",
+    "E": "por produto em células em U, pela flexibilidade de alocação da mão de obra ao longo do ciclo."
+  },
+  "gabarito": "D",
+  "justificativa": "O arranjo físico posicional, também chamado de fixo, é aquele em que o objeto da transformação permanece parado e os recursos transformadores — mão de obra, equipamentos e materiais — se deslocam até ele. É o arranjo típico de produtos de grande porte, elevado peso ou dificuldade de movimentação, como navios, aeronaves, turbinas e obras civis, situação exatamente descrita no enunciado.",
+  "porqueErradas": {
+    "A": "O arranjo por produto pressupõe alto volume e baixa variedade, com o material fluindo por uma sequência fixa de postos — o oposto do cenário apresentado.",
+    "B": "O arranjo por processo aplica-se a operações de alta variedade e baixo volume em que o material se desloca entre departamentos, o que é inviável para equipamentos de grande porte.",
+    "C": "O arranjo celular pressupõe o agrupamento de peças em famílias com roteiros semelhantes e a movimentação do material dentro da célula, incompatível com um produto estacionário e singular.",
+    "E": "As células em U são uma variação do arranjo por produto, voltada a produção repetitiva em volume, o que não corresponde à fabricação sob encomenda descrita."
+  }
+},
+{
+  "id": "INE-29",
+  "tipo": "Inédita",
+  "area": "Gestão da Manutenção",
+  "dificuldade": "Difícil",
+  "competencia": "Aplicar o modelo exponencial de confiabilidade com taxa de falhas constante.",
+  "enunciado": "Um equipamento opera na fase de vida útil da curva da banheira, na qual a taxa de falhas é constante e igual a λ = 0,002 falha por hora. Nessas condições, a confiabilidade para um período de operação t é dada por R(t) = e^(−λt), e o tempo médio entre falhas é MTBF = 1/λ.\n\nConsiderando e⁻¹ ≈ 0,37 e e⁻² ≈ 0,14, avalie as afirmações a seguir.\n\nI. O MTBF do equipamento é de 500 horas.\nII. A confiabilidade do equipamento para 500 horas de operação contínua é de aproximadamente 37%.\nIII. A confiabilidade do equipamento para 1 000 horas de operação contínua é de aproximadamente 74%.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "III, apenas.",
+    "C": "I e II, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "C",
+  "justificativa": "O tempo médio entre falhas é MTBF = 1/λ = 1/0,002 = 500 horas (I correta). Para t = 500 h, tem-se λt = 0,002 × 500 = 1, logo R(500) = e⁻¹ ≈ 0,37, ou seja, aproximadamente 37% (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira: a confiabilidade no tempo igual ao MTBF é sempre e⁻¹ ≈ 37% no modelo exponencial.",
+    "B": "A afirmação III é falsa: para t = 1 000 h, λt = 2 e R(1 000) = e⁻² ≈ 0,14, ou seja, cerca de 14% — e não 74%. O erro típico é supor decaimento linear, dobrando a redução em vez de aplicar a função exponencial.",
+    "D": "Inclui III, que aplica indevidamente proporcionalidade linear a um decaimento exponencial.",
+    "E": "Inclui III, incorreta pelo mesmo motivo — a confiabilidade cai para cerca de 14% em 1 000 horas."
+  }
+},
+{
+  "id": "INE-30",
+  "tipo": "Inédita",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Média",
+  "competencia": "Realizar a explosão de necessidades de materiais em estrutura de produto multinível (MRP).",
+  "enunciado": "O produto acabado P é composto por 2 unidades do componente X e 3 unidades do componente Y. Por sua vez, cada unidade do componente X é composta por 4 unidades da matéria-prima Z.\n\nPara atender a uma necessidade bruta de 500 unidades do produto P, o almoxarifado dispõe dos seguintes estoques: 200 unidades de X, 300 unidades de Y e 500 unidades de Z. Não há estoque de segurança nem recebimentos programados.\n\nAs necessidades líquidas dos itens X, Y e Z são, respectivamente, de",
+  "alternativas": {
+    "A": "800, 1 200 e 2 700 unidades.",
+    "B": "1 000, 1 500 e 4 000 unidades.",
+    "C": "800, 1 200 e 3 200 unidades.",
+    "D": "800, 1 200 e 1 500 unidades.",
+    "E": "1 000, 1 500 e 2 700 unidades."
+  },
+  "gabarito": "A",
+  "justificativa": "Necessidade bruta de X = 500 × 2 = 1 000; líquida = 1 000 − 200 = 800 unidades. Necessidade bruta de Y = 500 × 3 = 1 500; líquida = 1 500 − 300 = 1 200 unidades. A necessidade bruta de Z decorre da necessidade LÍQUIDA de X, pois somente essas unidades serão efetivamente fabricadas: 800 × 4 = 3 200; a líquida é 3 200 − 500 = 2 700 unidades.",
+  "porqueErradas": {
+    "B": "Apresenta as necessidades brutas de X e Y, sem descontar os estoques disponíveis, e calcula Z a partir da necessidade bruta de X (1 000 × 4 = 4 000).",
+    "C": "Acerta X e Y, mas para Z apresenta a necessidade bruta (3 200) sem abater as 500 unidades já em estoque.",
+    "D": "Acerta X e Y, porém o valor de Z não decorre de nenhuma etapa do cálculo de explosão de necessidades.",
+    "E": "Usa as necessidades brutas de X e Y, embora apresente o valor correto de Z — combinação inconsistente entre os níveis da estrutura."
+  }
+}
+]

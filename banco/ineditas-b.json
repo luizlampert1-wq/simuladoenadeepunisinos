@@ -1,0 +1,232 @@
+[
+{
+  "id": "INE-11",
+  "tipo": "Inédita",
+  "area": "Engenharia Econômica",
+  "dificuldade": "Difícil",
+  "competencia": "Comparar alternativas de investimento pelo método do Custo Anual Equivalente.",
+  "enunciado": "Uma empresa avalia a aquisição de uma entre duas máquinas, ambas com vida útil de 6 anos e valor residual desprezível, a uma taxa mínima de atratividade de 10% ao ano.\n\n• Máquina A: investimento de R$ 60.000,00 e custo operacional anual de R$ 18.000,00.\n• Máquina B: investimento de R$ 90.000,00 e custo operacional anual de R$ 12.000,00.\n\nConsidere que o fator de recuperação de capital para 10% ao ano e 6 períodos é igual a 0,2296.\n\nPelo método do Custo Anual Equivalente (CAE), a alternativa a ser escolhida e o respectivo CAE são",
+  "alternativas": {
+    "A": "a máquina A, com CAE de aproximadamente R$ 31.776,00.",
+    "B": "a máquina B, com CAE de aproximadamente R$ 32.664,00.",
+    "C": "a máquina A, com CAE de aproximadamente R$ 28.000,00.",
+    "D": "a máquina B, com CAE de aproximadamente R$ 30.000,00.",
+    "E": "qualquer uma, pois os custos anuais equivalentes são iguais."
+  },
+  "gabarito": "A",
+  "justificativa": "O CAE é a soma do investimento anualizado com o custo operacional anual. Máquina A: 60 000 × 0,2296 + 18 000 = 13 776 + 18 000 = R$ 31 776,00. Máquina B: 90 000 × 0,2296 + 12 000 = 20 664 + 12 000 = R$ 32 664,00. Como se trata de custos, escolhe-se o menor CAE: a máquina A.",
+  "porqueErradas": {
+    "B": "O valor do CAE da máquina B está correto, mas ele é o maior dos dois — em uma comparação de custos, deve-se escolher a alternativa de menor CAE.",
+    "C": "R$ 28.000,00 não decorre do cálculo: desprezaria parte do investimento anualizado da máquina A.",
+    "D": "R$ 30.000,00 não corresponde ao CAE de nenhuma das máquinas segundo os dados apresentados.",
+    "E": "Os custos anuais equivalentes diferem em R$ 888,00, de modo que a escolha não é indiferente."
+  }
+},
+{
+  "id": "INE-12",
+  "tipo": "Inédita",
+  "area": "Engenharia Econômica",
+  "dificuldade": "Média",
+  "competencia": "Calcular pontos de equilíbrio contábil e econômico e a margem de contribuição.",
+  "enunciado": "Uma empresa apresenta custos e despesas fixas mensais de R$ 120.000,00. O preço de venda unitário de seu produto é de R$ 80,00 e o custo variável unitário é de R$ 50,00. Os acionistas exigem uma remuneração mínima do capital investido de R$ 45.000,00 por mês.\n\nCom base nesses dados, avalie as afirmações a seguir.\n\nI. O ponto de equilíbrio contábil é de 4 000 unidades por mês.\nII. A margem de contribuição unitária é de R$ 30,00.\nIII. O ponto de equilíbrio econômico é de 5 500 unidades por mês.\nIV. Para um volume de 6 000 unidades por mês, o lucro operacional é de R$ 90.000,00.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e IV.",
+    "B": "II e IV.",
+    "C": "I, II e IV.",
+    "D": "I, II e III.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "D",
+  "justificativa": "A margem de contribuição unitária é 80 − 50 = R$ 30,00 (II correta). O ponto de equilíbrio contábil é 120 000 ÷ 30 = 4 000 unidades (I correta). O ponto de equilíbrio econômico incorpora a remuneração mínima exigida: (120 000 + 45 000) ÷ 30 = 165 000 ÷ 30 = 5 500 unidades (III correta).",
+  "porqueErradas": {
+    "A": "A afirmação IV é falsa: para 6 000 unidades, o lucro operacional é 6 000 × 30 − 120 000 = 180 000 − 120 000 = R$ 60.000,00, e não R$ 90.000,00.",
+    "B": "Inclui IV, que superestima o lucro operacional em R$ 30.000,00.",
+    "C": "Embora I e II estejam corretas, IV apresenta valor incorreto do lucro operacional.",
+    "E": "Inclui IV, incorreta, e omite I, que corresponde ao ponto de equilíbrio contábil."
+  }
+},
+{
+  "id": "INE-13",
+  "tipo": "Inédita",
+  "area": "Pesquisa Operacional",
+  "dificuldade": "Média",
+  "competencia": "Balancear oferta e demanda em problemas de transporte.",
+  "enunciado": "Uma empresa possui três fábricas, com capacidades mensais de 300, 400 e 500 unidades, que devem abastecer três centros consumidores, cujas demandas mensais são de 350, 450 e 300 unidades. Os custos unitários de transporte entre cada fábrica e cada centro são conhecidos.\n\nPara que o problema possa ser resolvido pelo algoritmo clássico de transporte, que exige oferta total igual à demanda total, deve-se",
+  "alternativas": {
+    "A": "reduzir proporcionalmente a capacidade das três fábricas até totalizar 1 100 unidades.",
+    "B": "acrescentar um centro consumidor fictício, com demanda de 100 unidades e custos de transporte nulos.",
+    "C": "acrescentar uma fábrica fictícia, com capacidade de 100 unidades e custos de transporte nulos.",
+    "D": "aumentar em 100 unidades a demanda do centro consumidor de maior custo de transporte.",
+    "E": "distribuir proporcionalmente as 100 unidades excedentes entre os três centros consumidores."
+  },
+  "gabarito": "B",
+  "justificativa": "A oferta total é 300 + 400 + 500 = 1 200 unidades e a demanda total é 350 + 450 + 300 = 1 100 unidades, havendo um excedente de oferta de 100 unidades. O procedimento padrão para balancear o modelo é criar um destino fictício (centro consumidor artificial) que absorva as 100 unidades excedentes, atribuindo custo zero a essas rotas — o que representa, na prática, a produção que simplesmente não é despachada.",
+  "porqueErradas": {
+    "A": "Reduzir arbitrariamente a capacidade das fábricas altera os dados do problema e impede identificar qual unidade ficará ociosa na solução ótima.",
+    "C": "A fábrica fictícia é o recurso usado quando a demanda supera a oferta; aqui ocorre o inverso — sobra capacidade produtiva.",
+    "D": "Aumentar artificialmente a demanda de um centro real distorce o problema e forçaria o envio de produtos não requeridos por aquele destino.",
+    "E": "Ratear o excedente entre os centros reais também altera as demandas verdadeiras, comprometendo a validade da solução obtida."
+  }
+},
+{
+  "id": "INE-14",
+  "tipo": "Inédita",
+  "area": "Pesquisa Operacional",
+  "dificuldade": "Difícil",
+  "competencia": "Calcular medidas de desempenho de um sistema de filas M/M/1.",
+  "enunciado": "Um posto de atendimento único recebe clientes segundo um processo de Poisson, com taxa média de chegada de 12 clientes por hora, e o tempo de atendimento segue distribuição exponencial, com taxa média de 15 clientes por hora, caracterizando um sistema M/M/1.\n\nConsidere: taxa de utilização ρ = λ/μ; número médio de clientes no sistema L = ρ/(1 − ρ); número médio na fila Lq = ρ²/(1 − ρ); tempo médio na fila Wq = Lq/λ.\n\nCom base nesses dados, avalie as afirmações a seguir.\n\nI. A taxa de utilização do sistema é de 80%.\nII. O número médio de clientes no sistema é de 4.\nIII. O tempo médio de espera na fila é de 20 minutos.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "III, apenas.",
+    "C": "I e II, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "C",
+  "justificativa": "A taxa de utilização é ρ = 12/15 = 0,80, ou seja, 80% (I correta). O número médio de clientes no sistema é L = 0,80/(1 − 0,80) = 0,80/0,20 = 4 clientes (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira: L = 4 clientes decorre diretamente da fórmula fornecida.",
+    "B": "A afirmação III é falsa: Lq = 0,80²/0,20 = 3,2 clientes e Wq = 3,2/12 = 0,267 hora ≈ 16 minutos. O valor de 20 minutos corresponde ao tempo médio no sistema (W = L/λ = 4/12), que inclui o atendimento.",
+    "D": "Inclui III, que confunde o tempo de espera na fila com o tempo total de permanência no sistema.",
+    "E": "Inclui III, incorreta pelo mesmo motivo — são 16 minutos na fila, e não 20."
+  }
+},
+{
+  "id": "INE-15",
+  "tipo": "Inédita",
+  "area": "Pesquisa Operacional",
+  "dificuldade": "Difícil",
+  "competencia": "Resolver graficamente um problema de programação linear e identificar restrições ativas.",
+  "enunciado": "Considere o seguinte problema de programação linear:\n\nMaximizar Z = 5x + 4y\nsujeito a:\n6x + 4y ≤ 24 (recurso A, em horas)\nx + 2y ≤ 6 (recurso B, em horas)\nx ≥ 0, y ≥ 0\n\nCom base nesse modelo, avalie as afirmações a seguir.\n\nI. A solução ótima é x = 3 e y = 1,5, com Z = 21.\nII. Na solução ótima, ambos os recursos estão totalmente utilizados.\nIII. Na solução ótima, há folga de 2 horas no recurso B.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "I e II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "B",
+  "justificativa": "Resolvendo o sistema formado pelas duas restrições na igualdade: de x + 2y = 6 obtém-se x = 6 − 2y; substituindo em 6x + 4y = 24, tem-se 36 − 12y + 4y = 24, logo y = 1,5 e x = 3, com Z = 5(3) + 4(1,5) = 21. Comparando com os demais vértices — (4; 0) com Z = 20 e (0; 3) com Z = 12 — confirma-se o ótimo (I correta). Como a solução satisfaz as duas restrições na igualdade, ambos os recursos estão totalmente consumidos (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira: a solução ótima está na interseção das duas restrições, que se tornam ativas.",
+    "C": "A afirmação III é falsa: substituindo a solução ótima em x + 2y, obtém-se 3 + 3 = 6, exatamente o limite do recurso B — não há folga alguma.",
+    "D": "Inclui III, que contradiz a própria afirmação II: um recurso não pode estar simultaneamente esgotado e com folga.",
+    "E": "As afirmações II e III são mutuamente excludentes, de modo que não podem ser ambas verdadeiras."
+  }
+},
+{
+  "id": "INE-16",
+  "tipo": "Inédita",
+  "area": "Estatística",
+  "dificuldade": "Média",
+  "competencia": "Construir intervalo de confiança para a média populacional com variância conhecida.",
+  "enunciado": "Em um controle de recebimento, foram pesadas 100 peças de um lote, obtendo-se massa média de 250 g. Sabe-se, por dados históricos, que o desvio-padrão populacional é de 20 g.\n\nConsiderando z = 1,96 para 95% de confiança, o intervalo de confiança de 95% para a massa média populacional é de aproximadamente",
+  "alternativas": {
+    "A": "[230,4 g; 269,6 g].",
+    "B": "[246,1 g; 253,9 g].",
+    "C": "[248,0 g; 252,0 g].",
+    "D": "[249,8 g; 250,2 g].",
+    "E": "[210,8 g; 289,2 g]."
+  },
+  "gabarito": "B",
+  "justificativa": "O erro-padrão da média é σ/√n = 20/√100 = 20/10 = 2 g. A margem de erro é 1,96 × 2 = 3,92 g. Logo, o intervalo é 250 ± 3,92, ou seja, aproximadamente [246,1 g; 253,9 g].",
+  "porqueErradas": {
+    "A": "Corresponde a usar o desvio-padrão populacional (20 g) diretamente na margem de erro, sem dividi-lo pela raiz do tamanho da amostra.",
+    "C": "Corresponde a uma margem de erro de 2 g, ou seja, apenas o erro-padrão, sem multiplicá-lo pelo valor crítico z = 1,96.",
+    "D": "Resultaria de dividir o desvio-padrão pelo tamanho da amostra (n = 100) em vez de por √n.",
+    "E": "Corresponde a multiplicar o desvio-padrão populacional por 1,96 sem considerar o tamanho da amostra, o que superestima muito a incerteza."
+  }
+},
+{
+  "id": "INE-17",
+  "tipo": "Inédita",
+  "area": "Estatística",
+  "dificuldade": "Média",
+  "competencia": "Interpretar modelos de regressão linear simples, coeficiente de determinação e limites da inferência causal.",
+  "enunciado": "Um engenheiro analisou a relação entre as horas mensais dedicadas à manutenção preventiva (x) e o número de falhas registradas no mês (y) em um conjunto de equipamentos. O modelo ajustado por mínimos quadrados foi\n\nŷ = 28 − 0,4x\n\ncom coeficiente de determinação R² = 0,81.\n\nCom base nessas informações, avalie as afirmações a seguir.\n\nI. Para 40 horas mensais de manutenção preventiva, o modelo estima 12 falhas.\nII. O coeficiente de correlação linear é de aproximadamente −0,9.\nIII. Cerca de 81% da variabilidade do número de falhas é explicada pelo modelo.\nIV. O resultado obtido garante que o aumento das horas de manutenção preventiva é a causa da redução do número de falhas.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e II.",
+    "B": "III e IV.",
+    "C": "I, II e IV.",
+    "D": "I, II e III.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "D",
+  "justificativa": "Substituindo x = 40: ŷ = 28 − 0,4 × 40 = 28 − 16 = 12 falhas (I correta). O coeficiente de correlação é r = ±√R² = ±0,9; como a inclinação da reta é negativa, r ≈ −0,9 (II correta). O R² indica a proporção da variabilidade de y explicada pelo modelo, ou seja, 81% (III correta).",
+  "porqueErradas": {
+    "A": "Embora I e II estejam corretas, a alternativa omite III, que expressa corretamente o significado do coeficiente de determinação.",
+    "B": "A afirmação IV é falsa: associação estatística, ainda que forte, não estabelece relação de causa e efeito — pode haver variáveis de confundimento não consideradas no modelo.",
+    "C": "Inclui IV, que extrapola indevidamente da correlação para a causalidade.",
+    "E": "Inclui IV, incorreta, e deixa de fora I, que corresponde à aplicação direta do modelo ajustado."
+  }
+},
+{
+  "id": "INE-18",
+  "tipo": "Inédita",
+  "area": "Gestão da Qualidade",
+  "dificuldade": "Difícil",
+  "competencia": "Construir cartas de controle por atributos (carta p) e tratar limites negativos.",
+  "enunciado": "Em uma linha de montagem, a fração média de itens defeituosos observada historicamente é de 4% (p̄ = 0,04). O controle é feito por meio de cartas de controle por atributos, com amostras de 200 itens.\n\nSabendo que os limites de controle de uma carta p são dados por p̄ ± 3·√[p̄(1 − p̄)/n], os limites superior e inferior de controle são, respectivamente, de aproximadamente",
+  "alternativas": {
+    "A": "0,082 e 0 (zero).",
+    "B": "0,082 e −0,002.",
+    "C": "0,055 e 0,025.",
+    "D": "0,120 e 0 (zero).",
+    "E": "0,040 e 0 (zero)."
+  },
+  "gabarito": "A",
+  "justificativa": "Calculando o desvio-padrão da proporção: √[0,04 × 0,96 / 200] = √0,000192 ≈ 0,01386. Três desvios correspondem a 3 × 0,01386 ≈ 0,0416. Assim, LSC = 0,04 + 0,0416 ≈ 0,082 e o limite inferior calculado seria 0,04 − 0,0416 ≈ −0,002. Como uma fração de defeituosos não pode ser negativa, o LIC é truncado em zero.",
+  "porqueErradas": {
+    "B": "O valor do LSC está correto, mas um limite inferior negativo não tem significado físico: por convenção, adota-se zero como LIC nesses casos.",
+    "C": "Corresponderia a usar apenas um desvio-padrão em vez dos três previstos na construção convencional das cartas de controle.",
+    "D": "0,120 superestima o LSC — corresponderia a um desvio-padrão da proporção muito maior do que o calculado para n = 200.",
+    "E": "0,040 é a própria linha central da carta (p̄), e não o limite superior de controle."
+  }
+},
+{
+  "id": "INE-19",
+  "tipo": "Inédita",
+  "area": "Gestão de Projetos",
+  "dificuldade": "Difícil",
+  "competencia": "Aplicar a análise de valor agregado (EVM) no controle de projetos.",
+  "enunciado": "Um projeto tem orçamento no término (ONT) de R$ 500.000,00 e prazo previsto de 10 meses. Ao final do quarto mês, foram apurados os seguintes valores:\n\n• Valor Planejado (VP): R$ 200.000,00\n• Valor Agregado (VA): R$ 180.000,00\n• Custo Real (CR): R$ 210.000,00\n\nCom base nesses dados, avalie as afirmações a seguir.\n\nI. O projeto está atrasado em relação ao cronograma e acima do orçamento previsto.\nII. O índice de desempenho de custos (IDC) é de aproximadamente 0,86.\nIII. A estimativa no término (ENT), mantida a tendência atual de desempenho de custos, é de aproximadamente R$ 583.000,00.\nIV. A variação de prazos (VPr) é de + R$ 20.000,00.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e IV.",
+    "B": "II e IV.",
+    "C": "I, II e III.",
+    "D": "I, III e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "C",
+  "justificativa": "A variação de prazos é VA − VP = 180 000 − 200 000 = −R$ 20.000,00 e a variação de custos é VA − CR = 180 000 − 210 000 = −R$ 30.000,00; ambas negativas indicam atraso e estouro de orçamento (I correta). O IDC é VA/CR = 180 000/210 000 ≈ 0,857 (II correta). A estimativa no término é ENT = ONT/IDC = 500 000/0,857 ≈ R$ 583.000,00 (III correta).",
+  "porqueErradas": {
+    "A": "A afirmação IV inverte o sinal: a variação de prazos é negativa (−R$ 20.000,00), justamente o que caracteriza o atraso apontado na afirmação I.",
+    "B": "Inclui IV, com sinal incorreto, e deixa de fora I e III, que decorrem corretamente dos indicadores calculados.",
+    "D": "Inclui IV, incorreta, e omite II, que corresponde ao cálculo do índice de desempenho de custos.",
+    "E": "Inclui IV, cujo sinal positivo contradiz o valor agregado inferior ao valor planejado."
+  }
+},
+{
+  "id": "INE-20",
+  "tipo": "Inédita",
+  "area": "Gestão de Projetos",
+  "dificuldade": "Média",
+  "competencia": "Compreender a natureza e a função da Estrutura Analítica do Projeto (EAP).",
+  "enunciado": "A Estrutura Analítica do Projeto (EAP) é uma decomposição hierárquica do escopo total do trabalho a ser executado pela equipe do projeto, a fim de atingir os objetivos e criar as entregas requeridas.\n\nA respeito da EAP, avalie as afirmações a seguir.\n\nI. A EAP organiza e define o escopo total do projeto, de modo que o trabalho não representado nela é considerado fora do escopo.\nII. O menor nível de decomposição da EAP é denominado pacote de trabalho, para o qual é possível estimar custos e durações com razoável confiança.\nIII. A EAP é orientada a entregas ou fases, e não à sequência temporal de execução das atividades.\nIV. A EAP equivale ao cronograma do projeto, sendo apenas uma forma hierárquica de apresentá-lo.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e II.",
+    "B": "II e IV.",
+    "C": "I, II e III.",
+    "D": "III e IV.",
+    "E": "I, II e IV."
+  },
+  "gabarito": "C",
+  "justificativa": "A EAP delimita o escopo total do projeto, valendo a regra dos 100%: o que não aparece na estrutura está fora do escopo (I correta). Seu nível mais baixo é o pacote de trabalho, unidade para a qual se estimam custos, recursos e durações (II correta). Sua lógica de decomposição é por entregas ou fases, e não pela ordem cronológica de execução (III correta).",
+  "porqueErradas": {
+    "A": "Embora I e II estejam corretas, a alternativa omite III, que caracteriza a orientação a entregas da EAP.",
+    "B": "A afirmação IV é falsa: a EAP define o que será entregue, enquanto o cronograma define quando cada atividade será executada — são artefatos distintos e complementares.",
+    "D": "Inclui IV, que confunde EAP com cronograma, e omite I e II.",
+    "E": "Inclui IV, incorreta, e deixa de fora III, que expressa a lógica de decomposição da estrutura."
+  }
+}
+]

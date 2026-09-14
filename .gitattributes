@@ -1,0 +1,6 @@
+# Normaliza finais de linha: evita que o Windows gere diferenças falsas
+* text=auto eol=lf
+
+# Arquivos binários — nunca converter
+*.png binary
+*.pdf binary

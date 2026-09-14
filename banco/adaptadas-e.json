@@ -1,0 +1,502 @@
+[
+{
+  "id": "ADP-63",
+  "tipo": "Adaptada",
+  "ano": 2019,
+  "referencia": "Adaptada de ENADE 2019 — Questão 9",
+  "area": "Desenvolvimento de Produto e Inovação",
+  "dificuldade": "Média",
+  "competencia": "Relacionar o princípio construtivo da manufatura aditiva às liberdades de projeto que ela proporciona.",
+  "enunciado": "Avalie as asserções a seguir e a relação proposta entre elas.\n\nI. A manufatura aditiva permite produzir peças com canais internos de refrigeração e estruturas treliçadas internas, geometrias inviáveis pelos processos convencionais de usinagem e fundição.\n\nPORQUE\n\nII. Na manufatura aditiva a peça é construída camada a camada a partir de um modelo digital, sem necessidade de ferramental dedicado nem de acesso de ferramenta de corte às superfícies internas.\n\nA respeito dessas asserções, assinale a opção correta.",
+  "alternativas": {
+    "A": "As asserções I e II são proposições verdadeiras, e a II é uma justificativa correta da I.",
+    "B": "As asserções I e II são proposições verdadeiras, mas a II não é uma justificativa correta da I.",
+    "C": "A asserção I é uma proposição verdadeira, e a II é uma proposição falsa.",
+    "D": "A asserção I é uma proposição falsa, e a II é uma proposição verdadeira.",
+    "E": "As asserções I e II são proposições falsas."
+  },
+  "gabarito": "A",
+  "justificativa": "As duas asserções são verdadeiras e há nexo causal direto entre elas. A usinagem exige que a ferramenta alcance fisicamente a superfície a ser trabalhada, e a fundição exige que o macho seja removido após a solidificação — ambas as restrições inviabilizam canais internos complexos. A construção camada a camada elimina exatamente essas duas limitações, sendo a razão pela qual essas geometrias se tornam possíveis.",
+  "porqueErradas": {
+    "B": "A relação causal existe e é direta: é precisamente a deposição camada a camada, sem ferramental nem acesso de ferramenta, que libera o projetista das restrições geométricas dos processos convencionais.",
+    "C": "A asserção II é verdadeira e descreve corretamente o princípio de funcionamento da manufatura aditiva.",
+    "D": "A asserção I é verdadeira: canais conformais de refrigeração e estruturas treliçadas internas são aplicações consolidadas da manufatura aditiva.",
+    "E": "Ambas as asserções são verdadeiras e, adicionalmente, a segunda explica a primeira."
+  }
+},
+{
+  "id": "ADP-64",
+  "tipo": "Adaptada",
+  "ano": 2019,
+  "referencia": "Adaptada de ENADE 2019 — Questão 11",
+  "area": "Pesquisa Operacional",
+  "dificuldade": "Difícil",
+  "competencia": "Executar simulação manual de sistema de filas e calcular a taxa de utilização do servidor.",
+  "enunciado": "Em uma simulação manual de um guichê único de atendimento, os tempos entre as chegadas de clientes sucessivos, em minutos, seguem a série 3, 4, 2, 6 e 5. Os tempos de atendimento, em minutos, seguem a série 4, 3, 5, 2 e 4. O cliente que encontra o guichê ocupado aguarda na fila.\n\nNo instante 0 da simulação, que corresponde à abertura do guichê, o primeiro cliente acaba de chegar e inicia imediatamente seu atendimento.\n\nConsiderando o período de simulação do instante 0 ao instante 24 minutos, a taxa de utilização do guichê é de",
+  "alternativas": {
+    "A": "60%.",
+    "B": "70%.",
+    "C": "75%.",
+    "D": "80%.",
+    "E": "90%."
+  },
+  "gabarito": "C",
+  "justificativa": "Montando a linha do tempo: o cliente 1 chega em 0 e é atendido de 0 a 4. O cliente 2 chega em 3 (intervalo 3), espera e é atendido de 4 a 7. O cliente 3 chega em 7 (intervalo 4) e é atendido de 7 a 12. O cliente 4 chega em 9 (intervalo 2), aguarda e é atendido de 12 a 14. O cliente 5 chega em 15 (intervalo 6) e é atendido de 15 a 19. O guichê fica ocupado 4 + 3 + 5 + 2 + 4 = 18 minutos em 24 minutos de simulação, resultando em 18/24 = 75%.",
+  "porqueErradas": {
+    "A": "60% corresponderia a 14,4 minutos ocupados — valor inferior à soma dos cinco tempos de atendimento, que é de 18 minutos.",
+    "B": "70% equivaleria a 16,8 minutos de ocupação, o que exigiria desprezar parte de um dos atendimentos.",
+    "D": "80% implicaria 19,2 minutos ocupados, acima da soma real dos atendimentos realizados até o instante 24.",
+    "E": "90% corresponderia a 21,6 minutos, desconsiderando os intervalos de ociosidade entre os instantes 14 e 15 e após o instante 19."
+  }
+},
+{
+  "id": "ADP-65",
+  "tipo": "Adaptada",
+  "ano": 2019,
+  "referencia": "Adaptada de ENADE 2019 — Questão 12",
+  "area": "Estatística",
+  "dificuldade": "Média",
+  "competencia": "Calcular medidas descritivas e interpretar frequências a partir de dados agrupados em classes.",
+  "enunciado": "Um centro de serviços registrou o tempo de atendimento, em minutos, de 40 chamados, organizando os resultados na distribuição de frequências a seguir.\n\nClasse (min) | Frequência\n0 ⊢ 10 | 4\n10 ⊢ 20 | 10\n20 ⊢ 30 | 14\n30 ⊢ 40 | 8\n40 ⊢ 50 | 4\n\nCom base nesses dados, avalie as afirmações a seguir.\n\nI. O tempo médio de atendimento, calculado pelos pontos médios das classes, é de 24,5 minutos.\nII. A classe modal é a de 20 a 30 minutos.\nIII. Trinta por cento dos chamados foram atendidos em tempo entre 10 e 20 minutos.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "II, apenas.",
+    "C": "I e II, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "C",
+  "justificativa": "Usando os pontos médios das classes: (5 × 4 + 15 × 10 + 25 × 14 + 35 × 8 + 45 × 4) ÷ 40 = (20 + 150 + 350 + 280 + 180) ÷ 40 = 980 ÷ 40 = 24,5 minutos (I correta). A classe de maior frequência é a de 20 a 30 minutos, com 14 observações, sendo portanto a classe modal (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira: 14 é a maior frequência entre as cinco classes.",
+    "B": "Além de II, a afirmação I também procede, conforme o cálculo pelos pontos médios.",
+    "D": "A afirmação III é falsa: a classe de 10 a 20 minutos concentra 10 dos 40 chamados, ou seja, 25%, e não 30%.",
+    "E": "Inclui III, que converte incorretamente a frequência absoluta em frequência relativa."
+  }
+},
+{
+  "id": "ADP-66",
+  "tipo": "Adaptada",
+  "ano": 2019,
+  "referencia": "Adaptada de ENADE 2019 — Questão 13",
+  "area": "Desenvolvimento de Produto e Inovação",
+  "dificuldade": "Média",
+  "competencia": "Reconhecer a finalidade de ferramentas de apoio ao desenvolvimento de produtos.",
+  "enunciado": "No desenvolvimento de um novo produto, a equipe de engenharia recorreu a um conjunto de ferramentas de apoio.\n\nA respeito dessas ferramentas, avalie as afirmações a seguir.\n\nI. O QFD traduz requisitos expressos pelo cliente em características técnicas mensuráveis do produto, por meio da matriz conhecida como casa da qualidade.\nII. O FMEA identifica modos de falha potenciais e prioriza as ações corretivas a partir do número de prioridade de risco.\nIII. A matriz de Pugh apoia a seleção de conceitos, comparando alternativas contra um conceito de referência segundo critérios previamente definidos.\nIV. O Design Thinking inicia pela fase de prototipagem, deixando a compreensão do usuário para uma etapa posterior de validação.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e IV.",
+    "B": "III e IV.",
+    "C": "I, II e III.",
+    "D": "I, II e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "C",
+  "justificativa": "As três primeiras afirmações descrevem corretamente a finalidade de cada ferramenta: o QFD converte a voz do cliente em requisitos técnicos (I), o FMEA antecipa falhas e as prioriza pelo NPR (II), e a matriz de Pugh estrutura a convergência entre conceitos concorrentes (III).",
+  "porqueErradas": {
+    "A": "A afirmação IV inverte a sequência do Design Thinking, cuja primeira fase é justamente a imersão ou empatia — compreender profundamente o usuário antes de gerar e prototipar soluções.",
+    "B": "Inclui IV, que desloca a compreensão do usuário para depois da prototipagem, contrariando a lógica do método.",
+    "D": "Inclui IV, incorreta, e omite III, que apresenta corretamente a matriz de Pugh.",
+    "E": "Inclui IV, incorreta, e deixa de fora I, que descreve a função do QFD."
+  }
+},
+{
+  "id": "ADP-67",
+  "tipo": "Adaptada",
+  "ano": 2019,
+  "referencia": "Adaptada de ENADE 2019 — Questão 14",
+  "area": "Ergonomia e Segurança do Trabalho",
+  "dificuldade": "Média",
+  "competencia": "Distinguir trabalho prescrito de trabalho real na análise ergonômica do trabalho.",
+  "enunciado": "A análise ergonômica do trabalho opera com a distinção entre dois conceitos centrais: tarefa e atividade.\n\nA respeito dessa distinção, assinale a opção correta.",
+  "alternativas": {
+    "A": "A tarefa é o que o trabalhador efetivamente faz no posto, enquanto a atividade é o procedimento prescrito pela organização.",
+    "B": "A tarefa é o trabalho prescrito pela organização, enquanto a atividade é o que o trabalhador efetivamente realiza para dar conta dessa prescrição.",
+    "C": "Tarefa e atividade são termos equivalentes, empregados indistintamente na análise ergonômica do trabalho.",
+    "D": "A distância entre tarefa e atividade revela indisciplina do trabalhador e deve ser eliminada por meio de treinamento e supervisão.",
+    "E": "A atividade é definida pelo setor de métodos e tempos, ao passo que a tarefa emerge espontaneamente da prática do trabalhador."
+  },
+  "gabarito": "B",
+  "justificativa": "Na tradição da ergonomia da atividade, a tarefa é o trabalho prescrito — o objetivo, os procedimentos e as condições determinadas pela organização. A atividade é o trabalho real: o conjunto de estratégias, regulações e modos operatórios que o trabalhador efetivamente mobiliza, com o corpo e a inteligência, para atingir o objetivo em condições que nunca correspondem exatamente ao previsto.",
+  "porqueErradas": {
+    "A": "Os conceitos estão invertidos: prescrição é tarefa, realização é atividade.",
+    "C": "A distinção é o fundamento do método: analisar apenas o prescrito ignora tudo o que o trabalhador precisa fazer para compensar a variabilidade real do sistema.",
+    "D": "A defasagem entre prescrito e real é inerente a qualquer situação de trabalho e constitui objeto de análise, não falta disciplinar. É justamente ela que revela as regulações necessárias e os pontos a transformar.",
+    "E": "Inverte novamente os conceitos: é a tarefa que é definida pela organização do trabalho, e a atividade que se constrói na prática."
+  }
+},
+{
+  "id": "ADP-68",
+  "tipo": "Adaptada",
+  "ano": 2019,
+  "referencia": "Adaptada de ENADE 2019 — Questão 15",
+  "area": "Gestão Organizacional e Estratégia",
+  "dificuldade": "Fácil",
+  "competencia": "Classificar o posicionamento competitivo segundo as estratégias genéricas de Porter.",
+  "enunciado": "Uma rede de supermercados atua exclusivamente em bairros periféricos de uma região metropolitana, atendendo consumidores de baixa renda. Opera com sortimento reduzido, lojas de estrutura simples, marcas próprias e política agressiva de preços baixos, sem investimento em serviços diferenciados.\n\nSegundo a tipologia das estratégias competitivas genéricas, essa rede adota a estratégia de",
+  "alternativas": {
+    "A": "liderança em custo total.",
+    "B": "diferenciação.",
+    "C": "enfoque em custos.",
+    "D": "enfoque em diferenciação.",
+    "E": "meio-termo, sem definição clara de posicionamento."
+  },
+  "gabarito": "C",
+  "justificativa": "A estratégia combina dois elementos: escopo competitivo estreito — um segmento geográfico e socioeconômico específico — e fonte de vantagem baseada em custo, expressa no sortimento enxuto, na estrutura simples e nas marcas próprias. Alvo estreito com vantagem de custo caracteriza exatamente o enfoque em custos.",
+  "porqueErradas": {
+    "A": "A liderança em custo total pressupõe escopo amplo, atendendo a muitos segmentos simultaneamente; aqui a atuação é deliberadamente restrita a um segmento definido.",
+    "B": "A diferenciação exige atributos singulares valorizados pelo cliente e disposição a pagar prêmio de preço — o oposto da política de preços baixos descrita.",
+    "D": "O escopo estreito está correto, mas a fonte de vantagem é o custo, e não a singularidade da oferta.",
+    "E": "A empresa tem posicionamento perfeitamente definido: vantagem de custo em um segmento específico. O meio-termo caracteriza a empresa que não consegue sustentar nem custo nem diferenciação."
+  }
+},
+{
+  "id": "ADP-69",
+  "tipo": "Adaptada",
+  "ano": 2019,
+  "referencia": "Adaptada de ENADE 2019 — Questão 16",
+  "area": "Ergonomia e Segurança do Trabalho",
+  "dificuldade": "Média",
+  "competencia": "Conhecer os requisitos e o escopo de aplicação da ISO 45001.",
+  "enunciado": "Uma empresa de médio porte decidiu implantar um sistema de gestão de segurança e saúde ocupacional conforme a ISO 45001.\n\nA respeito dessa norma, avalie as afirmações a seguir.\n\nI. A norma exige que a organização identifique perigos e avalie riscos e oportunidades de forma sistemática e documentada.\nII. A norma estabelece requisitos específicos de participação e consulta aos trabalhadores em todos os níveis da organização.\nIII. A norma aplica-se exclusivamente a indústrias de grande porte com atividades de alto risco.\nIV. A norma exige que a organização estabeleça processos de preparação e resposta a situações de emergência.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e III.",
+    "B": "II e III.",
+    "C": "I, II e IV.",
+    "D": "I, III e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "C",
+  "justificativa": "A identificação de perigos e a avaliação de riscos constituem o núcleo do planejamento exigido pela norma (I correta). A ISO 45001 inovou ao tornar a consulta e a participação dos trabalhadores um requisito explícito e detalhado (II correta). E a preparação e resposta a emergências é requisito expresso da seção de operação (IV correta).",
+  "porqueErradas": {
+    "A": "A afirmação III é falsa: a norma é explicitamente aplicável a organizações de qualquer porte, natureza e ramo de atividade.",
+    "B": "Inclui III, que restringe indevidamente o escopo de aplicação da norma.",
+    "D": "Inclui III, incorreta, e omite II, que trata de um dos requisitos mais característicos da ISO 45001.",
+    "E": "Inclui III, incorreta, e deixa de fora I, que corresponde ao requisito central de planejamento."
+  }
+},
+{
+  "id": "ADP-70",
+  "tipo": "Adaptada",
+  "ano": 2019,
+  "referencia": "Adaptada de ENADE 2019 — Questão 17",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Média",
+  "competencia": "Identificar as variáveis pertinentes ao cálculo de previsão, capacidade, estoques e tempo de ciclo.",
+  "enunciado": "O planejamento e controle da produção mobiliza diferentes conjuntos de variáveis, conforme a decisão a ser tomada.\n\nA respeito dessas variáveis, avalie as afirmações a seguir.\n\nI. A previsão de demanda apoia-se em dados históricos de vendas, carteira de pedidos firmes, opinião da força de vendas e de especialistas e tendências de mercado.\nII. O cálculo da capacidade de produção considera o número de máquinas e de postos de trabalho, a quantidade de turnos, o número de operadores e a eficiência dos recursos.\nIII. O dimensionamento do estoque de segurança depende da variabilidade da demanda, da variabilidade do tempo de ressuprimento e do nível de serviço desejado.\nIV. O tempo de ciclo de um processo produtivo é determinado exclusivamente pela demanda do cliente, sendo independente dos tempos das operações.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e IV.",
+    "B": "II e IV.",
+    "C": "I, II e III.",
+    "D": "I, III e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "C",
+  "justificativa": "As três primeiras afirmações associam corretamente cada decisão ao seu conjunto de variáveis: métodos quantitativos e qualitativos na previsão de demanda (I), recursos disponíveis e sua eficiência no cálculo da capacidade (II), e incertezas de demanda e de ressuprimento combinadas ao nível de serviço no estoque de segurança (III).",
+  "porqueErradas": {
+    "A": "A afirmação IV confunde tempo de ciclo com takt time. O takt time é que deriva da demanda do cliente; o tempo de ciclo é determinado pelos tempos efetivos das operações do processo.",
+    "B": "Inclui IV, que troca os conceitos de tempo de ciclo e takt time, e omite I e III.",
+    "D": "Inclui IV, incorreta, e deixa de fora II, que trata das variáveis de capacidade.",
+    "E": "Inclui IV, incorreta, e omite I, que apresenta as fontes de informação da previsão de demanda."
+  }
+},
+{
+  "id": "ADP-71",
+  "tipo": "Adaptada",
+  "ano": 2019,
+  "referencia": "Adaptada de ENADE 2019 — Questão 18",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Fácil",
+  "competencia": "Aplicar o método da média móvel ponderada na previsão de produção.",
+  "enunciado": "Uma confeitaria registrou a seguinte produção de tortas ao longo da semana:\n\n• Segunda-feira: 800\n• Terça-feira: 850\n• Quarta-feira: 900\n• Quinta-feira: 950\n• Sexta-feira: 1 100\n\nA previsão de produção para o sábado corresponde à média ponderada das quantidades produzidas na sexta-feira, com peso 0,5; na quinta-feira, com peso 0,3; e na quarta-feira, com peso 0,2.\n\nNessas condições, a produção prevista para o sábado está entre",
+  "alternativas": {
+    "A": "900 e 950 tortas.",
+    "B": "950 e 1 000 tortas.",
+    "C": "1 000 e 1 050 tortas.",
+    "D": "1 050 e 1 100 tortas.",
+    "E": "1 100 e 1 150 tortas."
+  },
+  "gabarito": "C",
+  "justificativa": "Aplicando os pesos: 0,5 × 1 100 + 0,3 × 950 + 0,2 × 900 = 550 + 285 + 180 = 1 015 tortas, valor situado no intervalo de 1 000 a 1 050.",
+  "porqueErradas": {
+    "A": "O intervalo de 900 a 950 corresponderia praticamente à média simples dos três dias, ignorando o peso dominante atribuído à sexta-feira.",
+    "B": "950 a 1 000 resultaria de atribuir pesos mais equilibrados entre os três dias considerados.",
+    "D": "1 050 a 1 100 exigiria peso ainda maior para a sexta-feira do que os 0,5 estabelecidos no enunciado.",
+    "E": "Acima de 1 100 seria impossível: a média ponderada nunca supera o maior dos valores ponderados, que é 1 100."
+  }
+},
+{
+  "id": "ADP-72",
+  "tipo": "Adaptada",
+  "ano": 2019,
+  "referencia": "Adaptada de ENADE 2019 — Questão 19",
+  "area": "Sistemas de Produção Enxuta",
+  "dificuldade": "Média",
+  "competencia": "Compreender o funcionamento, os parâmetros e as condições de aplicação do sistema Kanban.",
+  "enunciado": "Uma fábrica de componentes eletrônicos avalia a implantação de um sistema kanban para controlar o fluxo entre suas células de montagem.\n\nA respeito desse sistema, avalie as afirmações a seguir.\n\nI. O kanban autoriza a produção a partir do consumo verificado no processo seguinte, caracterizando um sistema puxado.\nII. O número de cartões kanban em circulação não influencia o estoque máximo em processo, que depende apenas do tamanho do lote de produção.\nIII. O kanban apresenta melhor desempenho em ambientes de demanda relativamente estável e produção nivelada.\nIV. O kanban é a solução mais indicada para itens de demanda muito irregular e de baixíssimo giro.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e II.",
+    "B": "I e III.",
+    "C": "II e IV.",
+    "D": "I, III e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "B",
+  "justificativa": "O kanban é o mecanismo operacional do sistema puxado: nada é produzido sem que haja consumo autorizado a jusante (I correta). Seu bom funcionamento depende de fluxo estável e produção nivelada, condições sem as quais o dimensionamento dos cartões se torna inviável (III correta).",
+  "porqueErradas": {
+    "A": "A afirmação II é falsa: o número de cartões multiplicado pela capacidade do contenedor define exatamente o teto de material em processo — é esse o mecanismo pelo qual o kanban limita o estoque.",
+    "C": "Reúne duas afirmações falsas: II nega a função de limitação de estoque, e IV recomenda o kanban justamente onde ele é menos indicado.",
+    "D": "Inclui IV, que contraria as condições de aplicação do sistema: itens de demanda errática e baixo giro são melhor atendidos por planejamento empurrado, com base em previsão.",
+    "E": "Inclui II e IV, ambas incorretas."
+  }
+},
+{
+  "id": "ADP-73",
+  "tipo": "Adaptada",
+  "ano": 2019,
+  "referencia": "Adaptada de ENADE 2019 — Questão 23",
+  "area": "Sustentabilidade e Meio Ambiente",
+  "dificuldade": "Média",
+  "competencia": "Compreender os princípios e instrumentos da Política Nacional de Resíduos Sólidos.",
+  "enunciado": "A Política Nacional de Resíduos Sólidos (Lei n. 12.305/2010) organiza a gestão de resíduos no país a partir de princípios, objetivos e instrumentos específicos.\n\nA respeito dessa política, avalie as afirmações a seguir.\n\nI. A lei estabelece a seguinte ordem de prioridade na gestão de resíduos: não geração, redução, reutilização, reciclagem, tratamento e disposição final ambientalmente adequada dos rejeitos.\nII. A responsabilidade pelo ciclo de vida dos produtos é compartilhada entre fabricantes, importadores, distribuidores, comerciantes, consumidores e titulares dos serviços públicos de limpeza urbana.\nIII. A lei admite a disposição final de resíduos em lixões a céu aberto, desde que a área esteja devidamente licenciada pelo órgão ambiental competente.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "III, apenas.",
+    "C": "I e II, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "C",
+  "justificativa": "A ordem de prioridade descrita em I está expressa no artigo 9.º da lei e é um de seus eixos estruturantes. A responsabilidade compartilhada pelo ciclo de vida do produto, envolvendo toda a cadeia e também o poder público, é outro pilar da política (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira e constitui um dos instrumentos centrais da lei.",
+    "B": "A afirmação III é falsa: a lei determinou justamente o encerramento dos lixões, exigindo disposição final ambientalmente adequada dos rejeitos em aterros sanitários licenciados.",
+    "D": "Inclui III, que contraria um dos objetivos expressos da política.",
+    "E": "Inclui III, incorreta: a eliminação dos lixões é uma das principais determinações da PNRS."
+  }
+},
+{
+  "id": "ADP-74",
+  "tipo": "Adaptada",
+  "ano": 2019,
+  "referencia": "Adaptada de ENADE 2019 — Questão 24",
+  "area": "Sistemas de Informação e Indústria 4.0",
+  "dificuldade": "Média",
+  "competencia": "Reconhecer as tecnologias habilitadoras da indústria 4.0 e seus efeitos sobre o trabalho.",
+  "enunciado": "A quarta revolução industrial articula um conjunto de tecnologias habilitadoras que transformam produtos, processos e modelos de negócio.\n\nA respeito dessas tecnologias, avalie as afirmações a seguir.\n\nI. A manufatura aditiva viabiliza a customização em massa, por dispensar ferramental dedicado a cada variante do produto.\nII. Os sistemas ciberfísicos integram o mundo físico ao digital, permitindo monitoramento e controle dos processos em tempo real.\nIII. As técnicas de análise de grandes volumes de dados ampliam a capacidade de decisão a partir de informações antes não exploradas.\nIV. A adoção dessas tecnologias dispensa a qualificação da mão de obra, pois as decisões passam a ser integralmente automatizadas.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e IV.",
+    "B": "II e IV.",
+    "C": "I, II e III.",
+    "D": "I, III e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "C",
+  "justificativa": "A manufatura aditiva elimina o custo de ferramental por variante, tornando economicamente viável produzir lotes unitários personalizados (I correta). Os sistemas ciberfísicos são a base da integração entre planta física e camada digital (II correta). E a analítica de dados amplia a base informacional das decisões gerenciais e operacionais (III correta).",
+  "porqueErradas": {
+    "A": "A afirmação IV inverte um dos efeitos mais documentados da indústria 4.0: a demanda por qualificação aumenta, deslocando-se para competências digitais, analíticas e de resolução de problemas.",
+    "B": "Inclui IV, incorreta, e omite I e III.",
+    "D": "Inclui IV, que supõe automação integral da decisão — o que não ocorre nem tecnicamente nem organizacionalmente.",
+    "E": "Inclui IV, incorreta, e deixa de fora I, que trata da customização em massa."
+  }
+},
+{
+  "id": "ADP-75",
+  "tipo": "Adaptada",
+  "ano": 2019,
+  "referencia": "Adaptada de ENADE 2019 — Questão 25",
+  "area": "Engenharia Econômica",
+  "dificuldade": "Média",
+  "competencia": "Identificar a Taxa Interna de Retorno a partir do perfil do Valor Presente Líquido.",
+  "enunciado": "A análise de um projeto de modernização de linha produziu o seguinte perfil de Valor Presente Líquido em função da taxa de desconto:\n\nTaxa de desconto | VPL (R$ mil)\n0% | + 400\n5% | + 210\n10% | + 60\n12% | 0\n15% | − 80\n20% | − 190\n\nCom base nesses dados, a taxa interna de retorno do projeto é de",
+  "alternativas": {
+    "A": "5% ao ano.",
+    "B": "10% ao ano.",
+    "C": "12% ao ano.",
+    "D": "15% ao ano.",
+    "E": "20% ao ano."
+  },
+  "gabarito": "C",
+  "justificativa": "A taxa interna de retorno é, por definição, a taxa de desconto que anula o Valor Presente Líquido do projeto. Na tabela, o VPL é exatamente zero a 12% ao ano — essa é, portanto, a TIR.",
+  "porqueErradas": {
+    "A": "A 5% o VPL é de + R$ 210 mil, valor bastante positivo; o projeto ainda cria valor a essa taxa.",
+    "B": "A 10% o VPL é de + R$ 60 mil, positivo — a curva ainda não cruzou o eixo horizontal.",
+    "D": "A 15% o VPL já é negativo (− R$ 80 mil), indicando que a TIR foi ultrapassada.",
+    "E": "A 20% o VPL é de − R$ 190 mil, o valor mais negativo da tabela, bem além do ponto de cruzamento."
+  }
+},
+{
+  "id": "ADP-76",
+  "tipo": "Adaptada",
+  "ano": 2019,
+  "referencia": "Adaptada de ENADE 2019 — Questão 27",
+  "area": "Pesquisa Operacional",
+  "dificuldade": "Média",
+  "competencia": "Verificar viabilidade de soluções em problemas de transporte com restrições de oferta e demanda.",
+  "enunciado": "Uma empresa possui duas fábricas, com capacidades mensais de 600 unidades (F1) e 900 unidades (F2), que devem abastecer dois centros consumidores, com demandas de 700 unidades (C1) e 500 unidades (C2).\n\nDefine-se xij como a quantidade enviada da fábrica i para o centro consumidor j. Foram propostas três opções de envio:\n\n• Opção 1: x11 = 600; x21 = 100; x12 = 0; x22 = 500\n• Opção 2: x11 = 700; x21 = 0; x12 = 0; x22 = 500\n• Opção 3: x11 = 400; x21 = 300; x12 = 200; x22 = 300\n\nConsiderando que todas as demandas devem ser integralmente atendidas, avalie as afirmações a seguir.\n\nI. A opção 1 é viável.\nII. A opção 2 é inviável, pois extrapola a capacidade da fábrica F1.\nIII. A opção 3 é inviável, pois não atende integralmente à demanda do centro C2.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "III, apenas.",
+    "C": "I e II, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "C",
+  "justificativa": "Na opção 1, F1 envia 600 (no limite de sua capacidade) e F2 envia 100 + 500 = 600 (dentro dos 900 disponíveis); C1 recebe 600 + 100 = 700 e C2 recebe 500 — todas as restrições são satisfeitas (I correta). Na opção 2, F1 enviaria 700 unidades, acima de sua capacidade de 600 (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira: a opção 2 viola explicitamente a capacidade da fábrica F1.",
+    "B": "A afirmação III é falsa: na opção 3, o centro C2 recebe 200 + 300 = 500 unidades, exatamente sua demanda. A opção é, portanto, viável.",
+    "D": "Inclui III, que classifica erroneamente a opção 3 como inviável, quando ela satisfaz todas as restrições.",
+    "E": "Inclui III, incorreta — basta somar os envios para C2 na opção 3 para verificar que a demanda é integralmente atendida."
+  }
+},
+{
+  "id": "ADP-77",
+  "tipo": "Adaptada",
+  "ano": 2019,
+  "referencia": "Adaptada de ENADE 2019 — Questão 29",
+  "area": "Gestão da Manutenção",
+  "dificuldade": "Média",
+  "competencia": "Calcular MTBF, MTTR e disponibilidade a partir de registros de manutenção.",
+  "enunciado": "Uma injetora opera em regime de 16 horas diárias. Em determinado dia, o equipamento ficou parado por 3 horas para manutenção corretiva, distribuídas em 6 paradas.\n\nConsidere que:\nMTBF = (TD − TM) / P;\nMTTR = TM / P;\nem que TD é o tempo total de disponibilidade, TM o tempo total de manutenção e P o número de paradas.\n\nCom base nesses dados, avalie as afirmações a seguir.\n\nI. O MTTR do equipamento foi de 30 minutos.\nII. O MTBF do equipamento foi de 130 minutos.\nIII. A disponibilidade do equipamento no período foi de 75%.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "I e II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "B",
+  "justificativa": "O turno tem 16 h = 960 minutos e o tempo de manutenção é 3 h = 180 minutos, em 6 paradas. Assim, MTTR = 180 ÷ 6 = 30 minutos (I correta) e MTBF = (960 − 180) ÷ 6 = 780 ÷ 6 = 130 minutos (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira e decorre diretamente da fórmula fornecida no enunciado.",
+    "C": "A afirmação III é falsa: a disponibilidade é (960 − 180) ÷ 960 = 780 ÷ 960 = 0,8125, ou seja, 81,25%, e não 75%.",
+    "D": "Inclui III, cujo valor de disponibilidade não corresponde à razão entre tempo operacional e tempo total.",
+    "E": "Inclui III, incorreta quanto ao cálculo da disponibilidade."
+  }
+},
+{
+  "id": "ADP-78",
+  "tipo": "Adaptada",
+  "ano": 2019,
+  "referencia": "Adaptada de ENADE 2019 — Questão 30",
+  "area": "Gestão da Qualidade",
+  "dificuldade": "Média",
+  "competencia": "Comparar a variabilidade de processos por meio da amplitude dos limites de controle.",
+  "enunciado": "Duas extrusoras produzem o mesmo perfil plástico. O monitoramento por cartas de controle para valores individuais da espessura, em milímetros, resultou nos seguintes parâmetros:\n\n• Extrusora 1: LSC = 42,0 mm; linha central = 35,0 mm; LIC = 28,0 mm\n• Extrusora 2: LSC = 38,5 mm; linha central = 35,0 mm; LIC = 31,5 mm\n\nAmbos os processos encontram-se sob controle estatístico, sem pontos fora dos limites.\n\nCom base nesses dados, conclui-se que",
+  "alternativas": {
+    "A": "a extrusora 1 apresenta melhor ajuste, pois seu limite superior de controle é mais elevado.",
+    "B": "a extrusora 2 apresenta melhor ajuste, pois produz peças com menor variabilidade de espessura.",
+    "C": "as duas extrusoras apresentam o mesmo ajuste, uma vez que possuem a mesma linha central.",
+    "D": "a extrusora 1 apresenta melhor ajuste, pois seus limites de controle mais amplos reduzem a chance de alarme falso.",
+    "E": "não é possível comparar as extrusoras sem conhecer os limites de especificação do produto."
+  },
+  "gabarito": "B",
+  "justificativa": "A amplitude entre os limites de controle reflete a variabilidade natural do processo, pois corresponde a seis desvios-padrão. Na extrusora 1 essa amplitude é 42,0 − 28,0 = 14,0 mm, enquanto na extrusora 2 é 38,5 − 31,5 = 7,0 mm — metade do valor. Com a mesma centralização, a extrusora 2 produz peças significativamente mais uniformes, caracterizando melhor ajuste.",
+  "porqueErradas": {
+    "A": "Os limites de controle não são metas nem especificações: um LSC mais alto apenas revela maior dispersão do processo, o que é indesejável.",
+    "C": "Processos com a mesma média podem ter dispersões muito diferentes — e é exatamente o que ocorre aqui, com amplitudes de 14,0 mm e 7,0 mm.",
+    "D": "Limites amplos não são vantagem: eles decorrem da própria variabilidade do processo e indicam menor capacidade de atender a especificações estreitas.",
+    "E": "A comparação entre os dois processos quanto à variabilidade é perfeitamente possível com os dados apresentados; os limites de especificação seriam necessários apenas para calcular índices de capacidade."
+  }
+},
+{
+  "id": "ADP-79",
+  "tipo": "Adaptada",
+  "ano": 2019,
+  "referencia": "Adaptada de ENADE 2019 — Questão 31",
+  "area": "Gestão da Qualidade",
+  "dificuldade": "Média",
+  "competencia": "Aplicar a ferramenta SIPOC ao mapeamento de processos de serviço.",
+  "enunciado": "Uma oficina de manutenção automotiva mapeou seu processo de revisão preventiva utilizando a ferramenta SIPOC (supplier, input, process, output, customer).\n\nA respeito dessa aplicação, avalie as afirmações a seguir.\n\nI. A distribuidora que fornece as peças de reposição ocupa a posição de supplier.\nII. As peças, os filtros e os fluidos recebidos para a revisão ocupam a posição de input.\nIII. O veículo revisado e entregue ao proprietário ocupa a posição de output.\nIV. A execução da troca de óleo do motor ocupa a posição de customer.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e IV.",
+    "B": "II e IV.",
+    "C": "I, II e III.",
+    "D": "I, III e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "C",
+  "justificativa": "O SIPOC organiza o processo em cinco blocos. A distribuidora que entrega os insumos é fornecedora (I correta); peças, filtros e fluidos são as entradas transformadas pelo processo (II correta); e o veículo revisado, pronto para entrega, é a saída que o processo gera (III correta).",
+  "porqueErradas": {
+    "A": "A afirmação IV está incorreta: a troca de óleo é uma atividade de transformação e pertence ao bloco process. O customer é quem recebe a saída — no caso, o proprietário do veículo.",
+    "B": "Inclui IV, que classifica uma atividade operacional como cliente do processo.",
+    "D": "Inclui IV, incorreta, e omite II, que identifica corretamente as entradas.",
+    "E": "Inclui IV, incorreta, e deixa de fora I, que identifica o fornecedor do processo."
+  }
+},
+{
+  "id": "ADP-80",
+  "tipo": "Adaptada",
+  "ano": 2019,
+  "referencia": "Adaptada de ENADE 2019 — Questão 32",
+  "area": "Sistemas de Informação e Indústria 4.0",
+  "dificuldade": "Média",
+  "competencia": "Compreender os requisitos de integração e os fatores críticos da manufatura avançada.",
+  "enunciado": "A implantação de iniciativas de manufatura avançada em plantas industriais envolve dimensões técnicas e organizacionais.\n\nA respeito dessas dimensões, avalie as afirmações a seguir.\n\nI. A interoperabilidade entre sistemas e equipamentos de diferentes fornecedores é condição para a integração efetiva de uma planta industrial.\nII. A digitalização dos processos gera a base de dados que alimenta modelos analíticos e sistemas de apoio à decisão.\nIII. A adoção dessas tecnologias depende exclusivamente de investimento em equipamentos, sendo dispensável a qualificação das equipes e a revisão dos processos.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "III, apenas.",
+    "C": "I e II, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "C",
+  "justificativa": "Sem padrões e protocolos comuns, equipamentos e sistemas de fornecedores distintos não trocam dados de forma útil — daí a interoperabilidade ser condição para a integração (I correta). E é a digitalização dos processos que produz os dados sobre os quais operam a analítica e os sistemas de apoio à decisão (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira e descreve a origem dos dados que sustentam as demais camadas tecnológicas.",
+    "B": "A afirmação III é falsa: os principais obstáculos relatados em projetos de manufatura avançada são organizacionais — qualificação das equipes, cultura e redesenho de processos — e não apenas de investimento em máquinas.",
+    "D": "Inclui III, que reduz a transformação digital a uma questão de aquisição de equipamentos.",
+    "E": "Inclui III, incorreta pelo mesmo motivo."
+  }
+},
+{
+  "id": "ADP-81",
+  "tipo": "Adaptada",
+  "ano": 2019,
+  "referencia": "Adaptada de ENADE 2019 — Questão 33",
+  "area": "Arranjo Físico e Layout",
+  "dificuldade": "Difícil",
+  "competencia": "Minimizar o custo de movimentação de materiais na alocação de recursos em um arranjo físico linear.",
+  "enunciado": "Quatro máquinas (M1, M2, M3 e M4) devem ser alocadas em quatro posições dispostas em linha reta (P1, P2, P3 e P4), com distância unitária entre posições adjacentes — ou seja, a distância entre P1 e P3 é 2, entre P1 e P4 é 3, e assim por diante.\n\nOs fluxos de materiais entre as máquinas, em paletes por turno, são:\n\n• M1 → M2: 20\n• M2 → M3: 30\n• M3 → M4: 10\n\nO custo de movimentação é proporcional ao produto do fluxo pela distância entre as posições ocupadas. Assinale a opção que apresenta a alocação (máquina, posição) de menor custo total de movimentação.",
+  "alternativas": {
+    "A": "(M1,P1); (M2,P2); (M3,P3); (M4,P4).",
+    "B": "(M2,P1); (M1,P2); (M3,P3); (M4,P4).",
+    "C": "(M1,P1); (M3,P2); (M2,P3); (M4,P4).",
+    "D": "(M4,P1); (M1,P2); (M2,P3); (M3,P4).",
+    "E": "(M3,P1); (M2,P2); (M1,P3); (M4,P4)."
+  },
+  "gabarito": "A",
+  "justificativa": "Como os fluxos formam a cadeia M1 → M2 → M3 → M4, o custo mínimo é obtido quando todas as máquinas que trocam material ficam em posições adjacentes. Na alternativa A, as três movimentações percorrem distância unitária: 20 × 1 + 30 × 1 + 10 × 1 = 60. Qualquer outra disposição afasta ao menos um par com fluxo, elevando o custo.",
+  "porqueErradas": {
+    "B": "M2 em P1 e M3 em P3 ficam a distância 2, e esse é justamente o par de maior fluxo: 20 × 1 + 30 × 2 + 10 × 1 = 90.",
+    "C": "M1 e M2 ficam a distância 2 e M3 e M4 também: 20 × 2 + 30 × 1 + 10 × 2 = 90.",
+    "D": "M3 em P4 e M4 em P1 ficam nos extremos, a distância 3: 20 × 1 + 30 × 1 + 10 × 3 = 80.",
+    "E": "M3 em P1 e M4 em P4 ficam a distância 3: 20 × 1 + 30 × 1 + 10 × 3 = 80."
+  }
+},
+{
+  "id": "ADP-82",
+  "tipo": "Adaptada",
+  "ano": 2019,
+  "referencia": "Adaptada de ENADE 2019 — Questão 35",
+  "area": "Gestão Organizacional e Estratégia",
+  "dificuldade": "Média",
+  "competencia": "Compreender a estrutura de causa e efeito entre as perspectivas do Balanced Scorecard.",
+  "enunciado": "Uma indústria identificou alta rotatividade entre seus técnicos especializados e decidiu estruturar sua gestão estratégica com o Balanced Scorecard, buscando relacionar a retenção de talentos aos resultados do negócio.\n\nNesse contexto, é correto afirmar que",
+  "alternativas": {
+    "A": "o BSC trata exclusivamente de indicadores financeiros, não sendo adequado para acompanhar temas de gestão de pessoas.",
+    "B": "a perspectiva de aprendizado e crescimento constitui a base do mapa estratégico, sustentando as melhorias nas demais perspectivas.",
+    "C": "a perspectiva de clientes constitui a base do mapa estratégico, da qual derivam as demais perspectivas.",
+    "D": "as quatro perspectivas do BSC são independentes entre si, devendo ser acompanhadas separadamente por cada unidade.",
+    "E": "o BSC substitui o planejamento estratégico da organização, dispensando a definição prévia de missão, visão e objetivos."
+  },
+  "gabarito": "B",
+  "justificativa": "No mapa estratégico do BSC, a perspectiva de aprendizado e crescimento — que reúne competências, clima organizacional, sistemas de informação e capital humano — ocupa a base da cadeia de causa e efeito. Investimentos nela habilitam a melhoria dos processos internos, que por sua vez melhoram a proposta de valor ao cliente e, ao final, os resultados financeiros. É exatamente por isso que a retenção de técnicos especializados pode ser ligada aos resultados do negócio.",
+  "porqueErradas": {
+    "A": "O BSC nasceu justamente da crítica à gestão baseada apenas em indicadores financeiros, acrescentando três perspectivas não financeiras.",
+    "C": "A perspectiva de clientes situa-se no meio da cadeia causal, sendo consequência dos processos internos e das capacidades desenvolvidas na base do mapa.",
+    "D": "A articulação entre as perspectivas por relações de causa e efeito é o elemento distintivo do BSC; tratá-las isoladamente descaracteriza a ferramenta.",
+    "E": "O BSC é instrumento de tradução e execução da estratégia: ele pressupõe missão, visão e objetivos previamente definidos, em vez de substituí-los."
+  }
+}
+]

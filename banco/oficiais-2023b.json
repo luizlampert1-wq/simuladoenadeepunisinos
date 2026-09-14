@@ -1,0 +1,255 @@
+[
+{
+  "id": "2023-Q20",
+  "tipo": "Oficial",
+  "ano": 2023,
+  "referencia": "ENADE 2023 — Questão 20 (Componente Específico)",
+  "area": "Gestão de Estoques",
+  "dificuldade": "Média",
+  "competencia": "Distinguir os métodos de previsão de consumo de materiais e suas hipóteses.",
+  "enunciado": "A tabela a seguir apresenta o histórico de consumo de um item em uma empresa (em unidades):\n\nmarço 60 | abril 70 | maio 85 | junho 88 | julho 94 | agosto 98 | setembro 98 | outubro 102 | novembro 105 | dezembro 111\n\nCom base nos dados apresentados e considerando que os estudos acerca de estoques dependem da previsão do consumo de material, assinale a opção correta.",
+  "alternativas": {
+    "A": "Na previsão de consumo para meses futuros, visando reduzir a influência do baixo consumo nos meses de março e abril, pode-se utilizar o método da média móvel ponderada, caracterizado pela aplicação de pesos maiores aos dados de consumo mais recentes e pesos menores aos dados mais antigos.",
+    "B": "No método da média móvel, a previsão do próximo período é calculada pela média do consumo dos períodos anteriores, obtendo-se valores menores que os ocorridos nos últimos períodos, caso o consumo tenha tendências decrescentes, e maiores se o consumo tiver tendências crescentes.",
+    "C": "No método da média com ponderação exponencial, apenas o consumo dos meses de julho e dezembro deve ser utilizado na fórmula de cálculo da previsão do consumo para o próximo mês, janeiro.",
+    "D": "No método da média móvel para três períodos, a previsão de consumo para o próximo mês, janeiro, é superior a 111 unidades, dada a tendência crescente de consumo.",
+    "E": "No método do último período, a previsão de consumo para o próximo mês, janeiro, é de 70 unidades."
+  },
+  "gabarito": "A",
+  "justificativa": "A média móvel ponderada atribui pesos decrescentes conforme os dados se tornam mais antigos, o que reduz exatamente a influência dos consumos baixos de março e abril sobre a previsão. É a descrição correta do método e a solução adequada ao problema apresentado.",
+  "porqueErradas": {
+    "B": "A afirmação inverte o comportamento do método: em séries com tendência crescente, a média móvel simples produz previsões menores que os valores recentes (defasagem para baixo), e não maiores.",
+    "C": "A suavização exponencial utiliza a previsão anterior e a demanda do último período, incorporando indiretamente todo o histórico — não seleciona meses isolados como julho e dezembro.",
+    "D": "A média móvel de três períodos seria (98 + 102 + 105 + 111)... considerando os três últimos meses: (102 + 105 + 111)/3 = 106 unidades, valor inferior a 111 — a média móvel sempre fica abaixo do último valor em série crescente.",
+    "E": "No método do último período, a previsão é igual ao consumo do último mês observado, ou seja, 111 unidades (dezembro), e não 70."
+  }
+},
+{
+  "id": "2023-Q21",
+  "tipo": "Oficial",
+  "ano": 2023,
+  "referencia": "ENADE 2023 — Questão 21 (Componente Específico)",
+  "area": "Engenharia Econômica",
+  "dificuldade": "Média",
+  "competencia": "Selecionar alternativas tecnológicas a partir da análise gráfica de custo total versus volume.",
+  "figura": "2023_q21.png",
+  "enunciado": "Uma fábrica planeja aumentar sua capacidade de produção para atender ao crescimento da demanda previsto para os próximos anos. Após considerar uma dezena de pacotes tecnológicos, o gerente de produção definiu três alternativas tecnológicas, com características diferentes de custo fixo anual, custo variável por unidade e volume de produção anual.\n\nSabendo que o custo total anual = custo fixo anual + custo variável por unidade × volume de produção anual, analise o gráfico acima, que representa a relação custo × volume das três tecnologias avaliadas.\n\nSobre a análise de viabilidade econômica das tecnologias avaliadas nos níveis de produção V1, V2 e V3, assinale a opção correta.",
+  "alternativas": {
+    "A": "Para volumes acima de V2 e abaixo de V3, a tecnologia 1 é a escolha preferencial.",
+    "B": "Para volumes abaixo de V1, a tecnologia 3 apresenta o melhor resultado econômico.",
+    "C": "Para volumes entre V1 e V3, a tecnologia 2 apresenta o melhor resultado econômico.",
+    "D": "Para volumes abaixo de V2 e acima de V3, a tecnologia 1 apresenta custos totais menores.",
+    "E": "Para volumes acima de V3, a tecnologia 1 apresenta um melhor resultado econômico do que as demais."
+  },
+  "gabarito": "C",
+  "justificativa": "A tecnologia 1 tem o menor custo fixo e o maior custo variável (reta mais inclinada), sendo preferível apenas em volumes baixos. A tecnologia 3 tem o maior custo fixo e o menor custo variável (reta mais horizontal), tornando-se vantajosa apenas em volumes altos. A tecnologia 2 é intermediária: a partir de V1 ela passa a custar menos que a tecnologia 1 e permanece abaixo da tecnologia 3 até V3. Portanto, no intervalo entre V1 e V3, a tecnologia 2 apresenta o menor custo total.",
+  "porqueErradas": {
+    "A": "Acima de V2 a tecnologia 1 já é a mais cara das três, pois seu elevado custo variável faz a reta cruzar as demais e permanecer no topo.",
+    "B": "Abaixo de V1 a melhor opção é a tecnologia 1, que parte do menor custo fixo; a tecnologia 3, com o maior custo fixo, é a mais cara nesse trecho.",
+    "D": "A tecnologia 1 só apresenta o menor custo abaixo de V1; acima de V3 a mais econômica é a tecnologia 3.",
+    "E": "Acima de V3 a tecnologia 3 assume a posição de menor custo total, justamente por seu baixo custo variável unitário."
+  }
+},
+{
+  "id": "2023-Q22",
+  "tipo": "Oficial",
+  "ano": 2023,
+  "referencia": "ENADE 2023 — Questão 22 (Componente Específico)",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Média",
+  "competencia": "Aplicar o método da suavização exponencial simples na previsão de demanda.",
+  "enunciado": "O gestor de um estabelecimento comercial adota o modelo de previsão de demanda pela média móvel simples para ração canina para cães adultos e para filhotes. Para a semana atual, os resultados referentes à demanda e previsão de demanda, em kg, são:\n\n• Adulto: demanda 6 200 | previsão 6 350\n• Filhote: demanda 670 | previsão 620\n\nA falta de produto para atender à demanda de ração para filhotes motivou o gestor a adotar o modelo de suavização exponencial para a previsão de demanda, com parâmetros suavizadores 0,2 e 0,5 para a ração canina para adultos e filhotes, respectivamente.\n\nDiante desses dados, verifica-se que a previsão da demanda de ração para cães adultos e filhotes, para a semana seguinte, deve ser, respectivamente, de",
+  "alternativas": {
+    "A": "6 320 e 645.",
+    "B": "6 320 e 630.",
+    "C": "6 305 e 640.",
+    "D": "6 275 e 645.",
+    "E": "6 275 e 630."
+  },
+  "gabarito": "A",
+  "justificativa": "A fórmula da suavização exponencial simples é F(t+1) = F(t) + α · [D(t) − F(t)]. Para adultos: 6 350 + 0,2 × (6 200 − 6 350) = 6 350 + 0,2 × (−150) = 6 350 − 30 = 6 320 kg. Para filhotes: 620 + 0,5 × (670 − 620) = 620 + 25 = 645 kg.",
+  "porqueErradas": {
+    "B": "Acerta a previsão para adultos, mas o valor 630 para filhotes corresponderia a um parâmetro suavizador de 0,2, e não de 0,5 como indicado no enunciado.",
+    "C": "Ambos os valores resultam da aplicação de parâmetros suavizadores diferentes dos especificados para cada produto.",
+    "D": "O valor 6 275 para adultos corresponderia a α = 0,5, quando o enunciado define α = 0,2 para esse item.",
+    "E": "Erra nos dois valores, invertendo os parâmetros suavizadores atribuídos a cada tipo de ração."
+  }
+},
+{
+  "id": "2023-Q23",
+  "tipo": "Oficial",
+  "ano": 2023,
+  "referencia": "ENADE 2023 — Questão 23 (Componente Específico)",
+  "area": "Cálculo e Otimização",
+  "dificuldade": "Média",
+  "competencia": "Aplicar os conceitos de custo marginal, custo médio e receita a funções de custo e receita.",
+  "enunciado": "Suponha que um engenheiro tenha sido contratado para analisar a situação econômica de determinada empresa fabricante de produtos populares. A análise determinou que o custo total para a produção de x unidades pela empresa foi dado pela função C(x) = 15 + 3x + x²; o custo médio de produção foi estimado pela função Q(x) = C(x)/x; a receita total recebida pela venda de x unidades foi projetada pela função R(x) = 3x − x²/2.\n\nEm seu relatório, o engenheiro pôde concluir corretamente que",
+  "alternativas": {
+    "A": "a função custo marginal é dada por C'(x) = 15 + 2x.",
+    "B": "o custo real da fabricação da terceira unidade é de R$ 15.",
+    "C": "o custo médio para a fabricação de dez unidades é de R$ 18.",
+    "D": "a taxa de variação do custo, quando forem fabricadas três unidades, será de R$ 9 por unidade.",
+    "E": "o empreendimento é rentável, pois a receita total é superior ao custo total de produção para qualquer quantidade produzida."
+  },
+  "gabarito": "D",
+  "justificativa": "A taxa de variação do custo é o custo marginal, dado pela derivada: C'(x) = 3 + 2x. Para x = 3, tem-se C'(3) = 3 + 6 = R$ 9 por unidade, exatamente o que afirma a alternativa D.",
+  "porqueErradas": {
+    "A": "A derivada de C(x) = 15 + 3x + x² é C'(x) = 3 + 2x. A alternativa mantém indevidamente a constante 15, que desaparece na derivação.",
+    "B": "O custo real da terceira unidade é C(3) − C(2) = (15 + 9 + 9) − (15 + 6 + 4) = 33 − 25 = R$ 8, e não R$ 15.",
+    "C": "O custo médio para dez unidades é C(10)/10 = (15 + 30 + 100)/10 = 145/10 = R$ 14,50, e não R$ 18.",
+    "E": "A receita R(x) = 3x − x²/2 é sempre inferior ao custo C(x) = 15 + 3x + x², pois a diferença R(x) − C(x) = −15 − 1,5x² é negativa para qualquer x — o empreendimento nunca é rentável com essas funções."
+  }
+},
+{
+  "id": "2023-Q24",
+  "tipo": "Oficial",
+  "ano": 2023,
+  "referencia": "ENADE 2023 — Questão 24 (Componente Específico)",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Difícil",
+  "competencia": "Aplicar a lógica do MRP com lote múltiplo da produção diária, estoque de segurança e lead time.",
+  "figura": "2023_q24.png",
+  "enunciado": "Um fornecedor de buchas e cunhas recebeu de seu cliente a programação para as semanas 14 a 23, conforme apresentado na Tabela 1 (figura acima), que traz o estoque disponível no início da semana 14, o estoque de segurança, a capacidade de produção diária de cada item e as necessidades de materiais das semanas 14 a 23.\n\nO fornecedor utilizou a regra de dimensionamento da quantidade fixa, correspondente à produção diária, e os lotes foram produzidos em múltiplos inteiros da produção diária. O fornecedor trabalha 6 dias por semana, não tendo restrição de capacidade para atender às demandas semanais previstas. O lead time para fabricação é de uma semana para todos os produtos, uma vez que o fornecedor não permite alterações na programação da semana em curso.\n\nCom base nos dados apresentados, conclui-se que, para atender a demanda de",
+  "alternativas": {
+    "A": "BUCHA 0025, o fornecedor emite ordem de produção interna de 240 unidades na semana 15.",
+    "B": "160 itens da BUCHA 0025, o fornecedor encerra a semana 23 com estoque projetado de 40 unidades.",
+    "C": "250 itens da CUNHA 0056, o fornecedor encerra a semana 23 com estoque projetado de 30 unidades.",
+    "D": "5 600 itens da BUCHA 0039, o fornecedor emite ordens de produção interna que totalizam 5 220 unidades.",
+    "E": "BUCHA 0039, o fornecedor mantém o estoque projetado médio de 236 unidades por semana no horizonte planejado."
+  },
+  "gabarito": "E",
+  "justificativa": "Para a BUCHA 0039 (estoque inicial 380, estoque de segurança 160, produção diária 160), aplicando a regra de lotes múltiplos de 160 com lead time de uma semana e mantendo sempre o estoque acima do de segurança, os estoques projetados das semanas 14 a 23 resultam em 180, 260, 280, 200, 280, 300, 160, 260, 220 e 220 unidades. A soma é 2 360 e a média é 2 360 ÷ 10 = 236 unidades por semana, exatamente o valor indicado.",
+  "porqueErradas": {
+    "A": "A BUCHA 0025 tem estoque inicial de 40 unidades e demanda única de 160 na semana 18. Com lead time de uma semana, a ordem seria liberada bem depois da semana 15 — não há necessidade de produção tão cedo.",
+    "B": "Com estoque inicial de 40 unidades e uma única necessidade de 160 na semana 18, atendida por um lote de 240, o estoque ao final do horizonte seria de 120 unidades, e não 40.",
+    "C": "A demanda total da CUNHA 0056 nas semanas 14 a 23 é de 250 unidades, mas o estoque projetado ao final da semana 23, com lotes múltiplos de 96 e estoque inicial de 50, não resulta em 30 unidades.",
+    "D": "A demanda total da BUCHA 0039 é de 5 600 unidades. Considerando o estoque inicial de 380, o estoque de segurança de 160 e os lotes em múltiplos de 160, o total produzido é de 5 440 unidades — e não 5 220, valor que sequer é múltiplo de 160."
+  }
+},
+{
+  "id": "2023-Q25",
+  "tipo": "Oficial",
+  "ano": 2023,
+  "referencia": "ENADE 2023 — Questão 25 (Componente Específico)",
+  "area": "Engenharia Econômica",
+  "dificuldade": "Difícil",
+  "competencia": "Determinar o ponto de equilíbrio considerando margem de contribuição e restrição de capacidade.",
+  "enunciado": "Suponha que a empresa Alfa apresente as seguintes características, com custo fixo de R$ 10 000:\n\n• Tempo disponível para produção: 100 horas;\n• Produto A: preço unitário de venda R$ 260,00; custo variável unitário R$ 100,00; tempo de produção 2 horas por unidade.\n• Produto B: preço unitário de venda R$ 150,00; custo variável unitário R$ 50,00; tempo de produção 1 hora por unidade.\n\nConsiderando o gráfico do ponto de equilíbrio e as informações apresentadas, pode-se concluir que a empresa Alfa atingirá o ponto de equilíbrio com o produto",
+  "alternativas": {
+    "A": "B, com 67 unidades vendidas.",
+    "B": "A, com faturamento de R$ 16 250,00.",
+    "C": "B, com 100 unidades e 100 horas de produção.",
+    "D": "A, com o ponto de equilíbrio em 38 unidades vendidas.",
+    "E": "A, com margem de contribuição unitária no valor de R$ 160,00."
+  },
+  "gabarito": "C",
+  "justificativa": "A margem de contribuição unitária do produto B é 150 − 50 = R$ 100. O ponto de equilíbrio exige 10 000 ÷ 100 = 100 unidades. Como B consome 1 hora por unidade, são necessárias exatamente 100 horas — precisamente o tempo disponível. Já o produto A tem margem de 260 − 100 = R$ 160 e exigiria 10 000 ÷ 160 = 62,5 unidades, que a 2 horas cada consumiriam 125 horas, acima da capacidade de 100 horas. Portanto, somente com o produto B a empresa consegue atingir o equilíbrio dentro da restrição de tempo.",
+  "porqueErradas": {
+    "A": "Com 67 unidades de B a contribuição seria de apenas R$ 6 700, insuficiente para cobrir os R$ 10 000 de custo fixo.",
+    "B": "O faturamento de R$ 16 250 corresponde de fato às 62,5 unidades de equilíbrio do produto A, mas essa produção exigiria 125 horas — 25% acima da capacidade disponível, tornando-a inviável.",
+    "D": "38 unidades de A gerariam contribuição de R$ 6 080, muito abaixo do custo fixo; o equilíbrio de A ocorreria em 62,5 unidades.",
+    "E": "A margem de R$ 160,00 do produto A está corretamente calculada, mas a afirmação conclui que o equilíbrio é atingido com o produto A — o que não é possível dentro das 100 horas disponíveis."
+  }
+},
+{
+  "id": "2023-Q26",
+  "tipo": "Oficial",
+  "ano": 2023,
+  "referencia": "ENADE 2023 — Questão 26 (Componente Específico)",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Difícil",
+  "competencia": "Identificar o recurso gargalo e definir o mix de produção pela Teoria das Restrições.",
+  "figura": "2023_q26.png",
+  "enunciado": "Bolas para moagem forjadas em aço alto carbono são utilizadas em unidades de tratamento de minérios e na indústria cimenteira. Em uma empresa de produção de bolas para moagem, o fluxo do processo de fabricação inclui: (i) aquecimento de barras de aço (estação V); (ii) forjamento (estação W); (iii) laminação (estação X); (iv) têmpera (estação Y); (v) revenimento (estação Z), restrito a algumas aplicações específicas.\n\nO engenheiro responsável recebeu o programa da semana seguinte, considerando o fluxo do processo apresentado na figura acima, e o fato de cada centro de trabalho possuir capacidade máxima de processamento igual a 2 400 minutos por semana.\n\nConsiderando as informações apresentadas, é correto afirmar que o gargalo da operação é a estação de trabalho",
+  "alternativas": {
+    "A": "V (aquecer barras de aço) e o mix de produtos, para se alcançar o objetivo proposto, é de 12 000 unidades de B25, 48 600 unidades de B50 e 20 300 unidades de B40.",
+    "B": "Y (tratamento térmico por têmpera) e o mix de produtos, para se alcançar o objetivo proposto, é de 12 000 unidades de B25, 23 100 unidades de B40 e 45 800 unidades de B50.",
+    "C": "X (laminar) e o mix de produtos, para se alcançar o objetivo proposto, é de 23 100 unidades de B40, 48 600 unidades de B50 e 9 200 unidades de B25.",
+    "D": "V (aquecer barras de aço) e a priorização de produção, para se alcançar o objetivo proposto, é B40, B50 e B25.",
+    "E": "X (laminar) e a priorização de produção, para se alcançar o objetivo proposto, é B25, B50 e B40."
+  },
+  "gabarito": "A",
+  "justificativa": "Calculando a carga de cada estação para a demanda total: em V, 12 000/60 + 23 100/35 + 48 600/30 = 200 + 660 + 1 620 = 2 480 min, acima dos 2 400 disponíveis — V é o gargalo (todas as demais estações ficam abaixo da capacidade). O ganho unitário é 7 − 4 = $3 para B25, 6 − 4 = $2 para B40 e 6 − 3 = $3 para B50. O ganho por minuto de V é: B25 = 3 × 60 = $180/min; B50 = 3 × 30 = $90/min; B40 = 2 × 35 = $70/min. Priorizando nessa ordem: B25 (12 000 un, 200 min), B50 (48 600 un, 1 620 min) e, com os 580 min restantes, B40 = 580 × 35 = 20 300 unidades.",
+  "porqueErradas": {
+    "B": "A estação Y consome apenas 1 080 minutos para a demanda total, estando muito abaixo da capacidade — não é o gargalo.",
+    "C": "A estação X consome 1 345 minutos, também bem abaixo dos 2 400 disponíveis; além disso, o mix proposto sacrifica o B25, que é o produto de maior ganho por minuto do gargalo.",
+    "D": "Identifica corretamente o gargalo (V), mas inverte a priorização: o critério da TOC é o ganho por minuto do recurso restritivo, que coloca B25 em primeiro e B40 em último.",
+    "E": "Erra na identificação do gargalo — X não é o recurso restritivo — embora a ordem de priorização indicada esteja correta."
+  }
+},
+{
+  "id": "2023-Q27",
+  "tipo": "Oficial",
+  "ano": 2023,
+  "referencia": "ENADE 2023 — Questão 27 (Componente Específico)",
+  "area": "Pesquisa Operacional",
+  "dificuldade": "Difícil",
+  "competencia": "Resolver problema de designação (alocação) maximizando o retorno total.",
+  "enunciado": "Uma empresa produz derivados lácteos em sua unidade central, podendo atender clientes de quatro regiões: Norte, Sul, Leste e Oeste. Os vendedores Astolfo, Benício, Carlitos e Demóstenes serão alocados, no próximo semestre, para atender a essas localidades. A tabela apresenta o potencial de lucro, em milhões de reais, que pode ser gerado pelos vendedores em cada região. A empresa não possui recursos para enviar mais de um funcionário para atender a cada região.\n\nVendedor | Norte | Sul | Leste | Oeste\nAstolfo | 17 | 16 | 16 | 20\nBenício | 14 | 13 | 8 | 19\nCarlitos | 11 | 19 | 9 | 15\nDemóstenes | 19 | 16 | 13 | 19\n\nAcerca desse cenário, avalie as afirmações a seguir.\n\nI. Pelo fato da região Oeste ser a mais lucrativa entre as possíveis alocações, o funcionário Astolfo deverá ser enviado para atender essa região.\nII. Pelo fato de ser a opção menos lucrativa entre as possíveis alocações, o funcionário Benício não deverá ser enviado para atender a região Leste.\nIII. A opção mais lucrativa, entre todas as possíveis alocações, resultará em 73 milhões de reais.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "D",
+  "justificativa": "A solução ótima do problema de designação é: Astolfo → Leste (16), Benício → Oeste (19), Carlitos → Sul (19) e Demóstenes → Norte (19), totalizando 73 milhões de reais (III correta). Nessa solução, Benício não é alocado ao Leste, onde seu potencial de lucro é o menor de toda a matriz (8 milhões) — confirmando a afirmação II.",
+  "porqueErradas": {
+    "A": "A afirmação I é falsa: embora Astolfo tenha o maior valor individual na região Oeste (20), alocá-lo ali obriga a deslocar Benício para regiões de baixo retorno, reduzindo o total. A otimização do problema de designação não decorre da escolha do maior valor isolado.",
+    "B": "Embora II esteja correta, III também é verdadeira — o valor ótimo é efetivamente de 73 milhões.",
+    "C": "Inclui I, que aplica indevidamente a lógica do máximo local em vez da otimização global da alocação.",
+    "E": "Inclui I, incorreta pelo mesmo motivo: a melhor alocação individual não corresponde necessariamente à melhor alocação do conjunto."
+  }
+},
+{
+  "id": "2023-Q28",
+  "tipo": "Oficial",
+  "ano": 2023,
+  "referencia": "ENADE 2023 — Questão 28 (Componente Específico)",
+  "area": "Pesquisa Operacional",
+  "dificuldade": "Difícil",
+  "competencia": "Resolver problema de programação linear e interpretar restrições ativas e folgas.",
+  "enunciado": "Uma fábrica pode produzir dois tipos de vidros blindados, o Alfa e o Beta, cujos lotes com 1 000 unidades contribuem para gerar um lucro de, respectivamente, R$ 15 000,00 e R$ 6 000,00. Entre os diversos insumos de produção, há dois que são limitantes: a sílica (vendida em kg) e o corante (vendido em litros). Sabe-se que, na produção unitária de cada um dos produtos, utiliza-se 1 kg de sílica. São, também, consumidos 2 litros de corante para cada unidade de vidro Alfa e 1 litro de corante para cada unidade de vidro Beta. Os fornecedores entregam, diariamente, 7 000 kg de sílica e 10 000 litros de corante.\n\nConsiderando que o objetivo da empresa é maximizar o seu lucro, avalie as afirmações a seguir.\n\nI. A fábrica deveria produzir exclusivamente os vidros Alfa.\nII. A fábrica deveria estabelecer um contrato com um grande cliente e fornecer 6 lotes de vidros Alfa diariamente.\nIII. A fábrica deveria adquirir mais corante, com o intuito de aumentar a produção de seus vidros.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "C",
+  "justificativa": "O modelo é maximizar 15x + 6y, sujeito a x + y ≤ 7 000 (sílica) e 2x + y ≤ 10 000 (corante). Avaliando os vértices: (5 000; 0) rende R$ 75 000; (3 000; 4 000) rende R$ 69 000; (0; 7 000) rende R$ 42 000. O ótimo é produzir apenas 5 000 unidades de Alfa (I correta). Nessa solução, o corante está totalmente consumido (2 × 5 000 = 10 000 L), enquanto sobram 2 000 kg de sílica — logo, o corante é o recurso restritivo e ampliá-lo permitiria aumentar a produção (III correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, III também é verdadeira: como o corante é a restrição ativa, sua ampliação desloca o ótimo e aumenta o lucro.",
+    "B": "A afirmação II é inviável: 6 lotes correspondem a 6 000 unidades de Alfa, que exigiriam 12 000 litros de corante — acima dos 10 000 litros disponíveis.",
+    "D": "Inclui II, que propõe uma quantidade que viola a restrição de corante, e omite I.",
+    "E": "Inclui II, inviável pela restrição de corante."
+  }
+},
+{
+  "id": "2023-Q29",
+  "tipo": "Oficial",
+  "ano": 2023,
+  "referencia": "ENADE 2023 — Questão 29 (Componente Específico)",
+  "area": "Sistemas de Produção Enxuta",
+  "dificuldade": "Média",
+  "competencia": "Relacionar a troca rápida de ferramentas ao lote econômico e à implementação do Sistema Toyota de Produção.",
+  "enunciado": "O Sistema Toyota de Produção (STP) é uma filosofia que objetiva a eliminação de desperdícios no processo produtivo, por meio de ações eficientes, sem interrupções no fluxo e sob a demanda do cliente.\n\nConsiderando o STP, avalie as asserções a seguir e a relação proposta entre elas.\n\nI. A troca rápida de ferramentas (TRF) é um dos métodos utilizados para tornar possível a implementação do STP.\n\nPORQUE\n\nII. O método TRF fundamenta-se na premissa de que, quanto menor o tempo de preparação de máquina (setup), menor o tamanho do lote econômico.\n\nA respeito dessas asserções, assinale a opção correta.",
+  "alternativas": {
+    "A": "As asserções I e II são proposições verdadeiras, e a II é uma justificativa correta da I.",
+    "B": "As asserções I e II são proposições verdadeiras, mas a II não é uma justificativa correta da I.",
+    "C": "A asserção I é uma proposição verdadeira, e a asserção II é uma proposição falsa.",
+    "D": "A asserção I é uma proposição falsa, e a asserção II é uma proposição verdadeira.",
+    "E": "As asserções I e II são proposições falsas."
+  },
+  "gabarito": "A",
+  "justificativa": "Ambas as asserções são verdadeiras e existe nexo causal entre elas. A TRF (SMED, de Shigeo Shingo) é de fato um dos métodos habilitadores do STP (I). E a razão disso está exatamente na asserção II: como o lote econômico é proporcional à raiz quadrada do custo de preparação, reduzir o tempo de setup reduz o lote econômico, viabilizando lotes pequenos, produção nivelada e resposta rápida à demanda — que são requisitos do just in time.",
+  "porqueErradas": {
+    "B": "A relação causal existe e é direta: é precisamente por reduzir o lote econômico que a TRF viabiliza a produção em pequenos lotes exigida pelo STP.",
+    "C": "A asserção II é verdadeira: pela fórmula do lote econômico, a redução do custo (tempo) de preparação diminui o tamanho ótimo do lote.",
+    "D": "A asserção I é verdadeira — a TRF é reconhecidamente uma das técnicas fundamentais para a implementação do Sistema Toyota de Produção.",
+    "E": "As duas asserções são verdadeiras e, adicionalmente, a segunda justifica corretamente a primeira."
+  }
+}
+]

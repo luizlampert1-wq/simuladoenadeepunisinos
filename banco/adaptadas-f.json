@@ -1,0 +1,577 @@
+[
+{
+  "id": "ADP-83",
+  "tipo": "Adaptada",
+  "ano": 2023,
+  "referencia": "Adaptada de ENADE 2023 — Questão 11",
+  "area": "Gestão Organizacional e Estratégia",
+  "dificuldade": "Média",
+  "competencia": "Classificar decisões empresariais segundo as estratégias competitivas genéricas.",
+  "enunciado": "Uma metalúrgica mantém duas linhas de negócio. Na primeira, produz parafusos padronizados em volumes de 3 milhões de peças por mês, vendidos a distribuidores no país inteiro. Na segunda, fabrica ferramentas especiais sob encomenda para um pequeno grupo de clientes do setor aeroespacial, que exigem certificações específicas e pagam preços muito acima da média do mercado.\n\nCom base na classificação das estratégias competitivas genéricas, avalie as afirmações a seguir.\n\nI. A produção de parafusos padronizados em alto volume caracteriza a busca por economia de escala, fonte típica da liderança em custos.\nII. O atendimento ao nicho aeroespacial com produtos sob encomenda e certificados caracteriza enfoque em diferenciação.\nIII. Uma mesma empresa não pode adotar estratégias genéricas distintas em unidades de negócio diferentes.\nIV. A liderança em custos exige necessariamente que a empresa pratique o menor preço de venda do mercado.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e II.",
+    "B": "III e IV.",
+    "C": "I, II e III.",
+    "D": "I, II e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "A",
+  "justificativa": "O volume de 3 milhões de peças mensais de um produto padronizado é a condição clássica para diluição de custos fixos e ganhos de escala, fonte da liderança em custos (I correta). Já a segunda linha combina alvo estreito — um pequeno grupo de clientes de um único setor — com singularidade percebida, expressa nas certificações e no atendimento sob encomenda, o que configura enfoque em diferenciação (II correta).",
+  "porqueErradas": {
+    "B": "A afirmação III é falsa: estratégias genéricas aplicam-se a unidades de negócio, e é comum que uma mesma empresa adote posicionamentos distintos em mercados distintos — exatamente o caso descrito.",
+    "C": "Inclui III, que nega indevidamente a possibilidade de estratégias múltiplas em uma mesma organização.",
+    "D": "Inclui IV, que é falsa: liderança em custos significa ter a menor estrutura de custos do setor. A empresa pode praticar preço próximo ao da concorrência e converter a vantagem de custo em margem superior.",
+    "E": "Inclui III e IV, ambas incorretas, e deixa de fora I."
+  }
+},
+{
+  "id": "ADP-84",
+  "tipo": "Adaptada",
+  "ano": 2023,
+  "referencia": "Adaptada de ENADE 2023 — Questão 13",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Média",
+  "competencia": "Calcular e interpretar o desvio médio absoluto e o sinal de rastreamento de modelos de previsão.",
+  "enunciado": "Uma empresa acompanha o desempenho de seu modelo de previsão de demanda ao longo de 12 meses. Ao final do período, apurou:\n\n• soma dos erros absolutos de previsão: 360 unidades;\n• soma algébrica dos erros de previsão: − 48 unidades.\n\nConsidere que o desvio médio absoluto (MAD) é a média dos erros absolutos e que o sinal de rastreamento é a razão entre a soma algébrica dos erros e o MAD. Adote como faixa aceitável o intervalo de − 4 a + 4.\n\nCom base nesses dados, avalie as afirmações a seguir.\n\nI. O desvio médio absoluto do período é de 30 unidades.\nII. O sinal de rastreamento do período é de − 1,6.\nIII. O sinal de rastreamento encontra-se fora da faixa aceitável, indicando modelo enviesado.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "III, apenas.",
+    "C": "I e II, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "C",
+  "justificativa": "O MAD é 360 ÷ 12 = 30 unidades (I correta). O sinal de rastreamento é a soma algébrica dos erros dividida pelo MAD: − 48 ÷ 30 = − 1,6 (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira e decorre diretamente da definição do indicador.",
+    "B": "A afirmação III é falsa: o valor − 1,6 está confortavelmente dentro da faixa de − 4 a + 4, indicando que o modelo permanece sob controle, sem viés significativo.",
+    "D": "Inclui III, que interpreta erroneamente um valor situado dentro dos limites de controle como sinal de viés.",
+    "E": "Inclui III, incorreta quanto à leitura da faixa aceitável do sinal de rastreamento."
+  }
+},
+{
+  "id": "ADP-85",
+  "tipo": "Adaptada",
+  "ano": 2023,
+  "referencia": "Adaptada de ENADE 2023 — Questão 14",
+  "area": "Estatística",
+  "dificuldade": "Média",
+  "competencia": "Interpretar medidas de posição e de dispersão na comparação entre processos.",
+  "enunciado": "Três máquinas injetoras foram avaliadas quanto à resistência ao impacto, em MPa, das peças que produzem. O resumo estatístico das amostras foi:\n\nMáquina | Mínimo | 1.º quartil | Mediana | 3.º quartil | Máximo\nM1 | 16 | 18 | 20 | 22 | 24\nM2 | 10 | 11 | 12 | 13 | 14\nM3 | 14 | 17 | 21 | 25 | 28\n\nCom base nesses dados, avalie as afirmações a seguir.\n\nI. A máquina M2 apresenta a menor amplitude interquartílica entre as três.\nII. A máquina M3 apresenta a maior amplitude total entre as três.\nIII. Metade das peças produzidas pela máquina M1 apresenta resistência superior a 20 MPa.\nIV. A máquina M2 é a mais indicada, pois sua baixa dispersão compensa o menor nível de resistência obtido.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e IV.",
+    "B": "II e IV.",
+    "C": "I, II e III.",
+    "D": "I, III e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "C",
+  "justificativa": "As amplitudes interquartílicas são 4 MPa (M1), 2 MPa (M2) e 8 MPa (M3) — a menor é a de M2 (I correta). As amplitudes totais são 8, 4 e 14 MPa — a maior é a de M3 (II correta). Como a mediana divide a amostra ao meio, metade das peças de M1 supera os 20 MPa da mediana (III correta).",
+  "porqueErradas": {
+    "A": "A afirmação IV é falsa: baixa dispersão não compensa desempenho insuficiente. A máquina M2 produz peças com resistência entre 10 e 14 MPa, muito abaixo das demais — é consistente, mas consistentemente pior.",
+    "B": "Inclui IV, que troca o critério de desempenho pelo de uniformidade.",
+    "D": "Inclui IV, incorreta, e omite II, que trata corretamente da amplitude total.",
+    "E": "Inclui IV, incorreta, e deixa de fora I, que identifica a menor dispersão interquartílica."
+  }
+},
+{
+  "id": "ADP-86",
+  "tipo": "Adaptada",
+  "ano": 2023,
+  "referencia": "Adaptada de ENADE 2023 — Questão 15",
+  "area": "Gestão de Projetos",
+  "dificuldade": "Média",
+  "competencia": "Determinar duração mínima, folgas e precedências em diagramas de rede.",
+  "enunciado": "O preparo de um lote de pães em uma padaria segue a rede de atividades a seguir, com tempos em minutos:\n\n• Aquecer o forno (12 min) — inicia junto com o processo;\n• Pesar os insumos (4 min) — inicia junto com o processo;\n• Misturar a massa (6 min) — depende de pesar os insumos;\n• Assar (20 min) — depende de aquecer o forno e de misturar a massa;\n• Resfriar (8 min) — depende de assar;\n• Embalar (5 min) — depende de resfriar.\n\nCom base nessa rede, avalie as afirmações a seguir.\n\nI. A duração mínima total do processo é de 45 minutos.\nII. O caminho que inclui pesar os insumos e misturar a massa possui folga total de 2 minutos.\nIII. A atividade de assar pode ser iniciada assim que a massa estiver misturada.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "I e II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "B",
+  "justificativa": "Assar depende de dois ramos paralelos: aquecer o forno leva 12 minutos, enquanto pesar e misturar somam 4 + 6 = 10 minutos. Prevalece o maior, de modo que assar começa aos 12 minutos. A duração total é 12 + 20 + 8 + 5 = 45 minutos (I correta). A folga do ramo dos insumos é 12 − 10 = 2 minutos (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira: o ramo dos insumos termina 2 minutos antes do momento em que assar pode começar.",
+    "C": "A afirmação III é falsa: assar depende também do forno aquecido, que só fica pronto aos 12 minutos — dois minutos depois de a massa estar misturada.",
+    "D": "Inclui III, que ignora a segunda precedência da atividade de assar.",
+    "E": "Inclui III, incorreta quanto às condições de início da atividade de assar."
+  }
+},
+{
+  "id": "ADP-87",
+  "tipo": "Adaptada",
+  "ano": 2023,
+  "referencia": "Adaptada de ENADE 2023 — Questão 16",
+  "area": "Gestão de Projetos",
+  "dificuldade": "Difícil",
+  "competencia": "Calcular a folga total de um caminho em rede PERT/CPM.",
+  "enunciado": "Um projeto de instalação de equipamento é composto pelas atividades a seguir.\n\nAtividade | Duração (dias) | Predecessoras\nA | 6 | —\nB | 4 | A\nC | 9 | A\nD | 5 | B\nE | 3 | C\nF | 7 | D e E\n\nCom base nesses dados, a folga total do caminho que inclui as atividades B e D, em dias, é de",
+  "alternativas": {
+    "A": "0.",
+    "B": "3.",
+    "C": "6.",
+    "D": "22.",
+    "E": "25."
+  },
+  "gabarito": "B",
+  "justificativa": "Há dois caminhos na rede: A → B → D → F = 6 + 4 + 5 + 7 = 22 dias, e A → C → E → F = 6 + 9 + 3 + 7 = 25 dias. O caminho crítico é o de 25 dias, que define a duração do projeto. A folga total do caminho que contém B e D é 25 − 22 = 3 dias.",
+  "porqueErradas": {
+    "A": "Folga zero caracterizaria um caminho crítico. O caminho A-B-D-F dura 22 dias, três dias menos que o caminho mais longo da rede.",
+    "C": "6 dias é a duração da atividade A, comum aos dois caminhos, e não a diferença entre eles.",
+    "D": "22 dias é a duração do próprio caminho A-B-D-F, não sua folga.",
+    "E": "25 dias é a duração total do projeto, correspondente ao caminho crítico A-C-E-F."
+  }
+},
+{
+  "id": "ADP-88",
+  "tipo": "Adaptada",
+  "ano": 2023,
+  "referencia": "Adaptada de ENADE 2023 — Questão 18",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Média",
+  "competencia": "Selecionar modelos de previsão combinando acurácia e ausência de viés.",
+  "enunciado": "Quatro modelos de previsão de demanda foram avaliados ao longo de um ano, com os seguintes resultados:\n\nModelo | Desvio médio absoluto | Sinal de rastreamento\nM1 | 6,2 | − 0,8\nM2 | 5,1 | + 2,6\nM3 | 9,4 | − 3,9\nM4 | 5,4 | + 0,4\n\nA empresa adota como faixa aceitável o intervalo de − 4 a + 4 para o sinal de rastreamento.\n\nCom base nesses dados, avalie as afirmações a seguir.\n\nI. Todos os quatro modelos apresentam sinal de rastreamento dentro da faixa aceitável.\nII. O modelo M2 é o que apresenta o menor desvio médio absoluto.\nIII. O modelo M3 deve ser o preferido, por apresentar o maior desvio médio absoluto.\nIV. Considerando conjuntamente acurácia e ausência de viés, o modelo M4 é a escolha mais equilibrada.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e III.",
+    "B": "II e III.",
+    "C": "I, II e IV.",
+    "D": "I, III e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "C",
+  "justificativa": "Os quatro sinais de rastreamento (− 0,8; + 2,6; − 3,9; + 0,4) situam-se dentro da faixa de − 4 a + 4 (I correta). O menor desvio médio absoluto é o de M2, com 5,1 (II correta). Combinando os dois critérios, M4 apresenta MAD de 5,4 — praticamente igual ao melhor — com sinal de rastreamento de apenas + 0,4, o mais próximo de zero, sendo portanto a escolha mais equilibrada (IV correta).",
+  "porqueErradas": {
+    "A": "A afirmação III inverte o critério: o MAD mede o erro médio do modelo, de modo que o maior valor indica a pior acurácia, e não a melhor.",
+    "B": "Inclui III, que trata o maior erro como vantagem.",
+    "D": "Inclui III, incorreta, e omite II, que identifica corretamente o menor desvio médio absoluto.",
+    "E": "Inclui III, incorreta, e deixa de fora I, que verifica a faixa de controle dos quatro modelos."
+  }
+},
+{
+  "id": "ADP-89",
+  "tipo": "Adaptada",
+  "ano": 2023,
+  "referencia": "Adaptada de ENADE 2023 — Questão 19",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Difícil",
+  "competencia": "Confrontar carga prevista e capacidade disponível em um centro de trabalho.",
+  "enunciado": "Um centro de trabalho opera em dois turnos de 8 horas, durante 22 dias úteis por mês, totalizando 352 horas mensais de capacidade. O tempo médio de processamento é de 1,6 hora por unidade. A demanda do mês corrente foi de 180 unidades e a área comercial projeta crescimento de 8% ao mês.\n\nConsiderando essa situação, avalie as asserções a seguir e a relação proposta entre elas.\n\nI. A empresa precisará ampliar a capacidade do centro de trabalho já no próximo mês para atender à demanda projetada.\n\nPORQUE\n\nII. O crescimento da demanda eleva a utilização do centro de trabalho, consumindo um número maior de horas produtivas.\n\nA respeito dessas asserções, assinale a opção correta.",
+  "alternativas": {
+    "A": "As asserções I e II são proposições verdadeiras, e a II é uma justificativa correta da I.",
+    "B": "As asserções I e II são proposições verdadeiras, mas a II não é uma justificativa correta da I.",
+    "C": "A asserção I é uma proposição verdadeira, e a II é uma proposição falsa.",
+    "D": "A asserção I é uma proposição falsa, e a II é uma proposição verdadeira.",
+    "E": "As asserções I e II são proposições falsas."
+  },
+  "gabarito": "D",
+  "justificativa": "No próximo mês a demanda será 180 × 1,08 ≈ 194 unidades, exigindo 194 × 1,6 ≈ 311 horas — valor ainda inferior às 352 horas disponíveis, o que corresponde a uma utilização de cerca de 88%. Não há, portanto, necessidade de ampliar a capacidade já no próximo mês, o que torna a asserção I falsa. A asserção II, por sua vez, é verdadeira em si mesma: mais demanda consome mais horas do centro de trabalho.",
+  "porqueErradas": {
+    "A": "A asserção I é falsa: a carga projetada de 311 horas cabe nas 352 horas disponíveis. O estouro só ocorre alguns meses adiante, quando a demanda ultrapassar 220 unidades mensais.",
+    "B": "Também parte da premissa de que a asserção I seja verdadeira, o que o cálculo de capacidade não sustenta.",
+    "C": "A asserção II é verdadeira: trata-se de uma relação direta e correta entre volume de demanda e consumo de horas produtivas.",
+    "E": "A asserção II é verdadeira, de modo que classificar ambas como falsas é incorreto."
+  }
+},
+{
+  "id": "ADP-90",
+  "tipo": "Adaptada",
+  "ano": 2023,
+  "referencia": "Adaptada de ENADE 2023 — Questão 20",
+  "area": "Gestão de Estoques",
+  "dificuldade": "Média",
+  "competencia": "Aplicar e criticar métodos de previsão de consumo em séries com tendência.",
+  "enunciado": "O histórico de consumo de um item apresentou os seguintes valores:\n\njaneiro 300 | fevereiro 285 | março 270 | abril 250 | maio 235 | junho 220\n\nCom base nesses dados e nos métodos de previsão de consumo de materiais, assinale a opção correta.",
+  "alternativas": {
+    "A": "No método do último período, a previsão de consumo para julho é de 220 unidades.",
+    "B": "No método da média móvel para três períodos, a previsão para julho é de 220 unidades.",
+    "C": "Em séries com tendência decrescente, a média móvel simples produz previsão inferior ao último valor observado.",
+    "D": "No método da média móvel ponderada, atribuem-se pesos maiores aos dados de consumo mais antigos.",
+    "E": "Em séries com tendência decrescente, a média móvel simples subestima sistematicamente o consumo futuro."
+  },
+  "gabarito": "A",
+  "justificativa": "O método do último período é o mais simples dos métodos de previsão: adota-se como previsão para o período seguinte o valor efetivamente observado no período imediatamente anterior. Como o consumo de junho foi de 220 unidades, essa é a previsão para julho.",
+  "porqueErradas": {
+    "B": "A média móvel dos três últimos períodos é (250 + 235 + 220) ÷ 3 = 235 unidades, e não 220.",
+    "C": "Ocorre o contrário: por incorporar valores antigos e mais altos, a média móvel simples produz previsão superior ao último valor observado em séries decrescentes — 235 contra 220, neste caso.",
+    "D": "A lógica da ponderação é inversa: atribuem-se pesos maiores aos dados mais recentes, justamente por refletirem melhor a situação atual da demanda.",
+    "E": "Em série decrescente, a média móvel simples superestima o consumo futuro, pois seu resultado fica acima da tendência; a subestimação ocorre em séries crescentes."
+  }
+},
+{
+  "id": "ADP-91",
+  "tipo": "Adaptada",
+  "ano": 2023,
+  "referencia": "Adaptada de ENADE 2023 — Questão 21",
+  "area": "Engenharia Econômica",
+  "dificuldade": "Difícil",
+  "competencia": "Selecionar alternativas tecnológicas por comparação de custos totais em um dado volume.",
+  "enunciado": "Uma fábrica avalia três pacotes tecnológicos para sua nova linha, com as seguintes estruturas de custo anual:\n\n• Tecnologia A: custo fixo de R$ 50.000,00 e custo variável de R$ 12,00 por unidade;\n• Tecnologia B: custo fixo de R$ 110.000,00 e custo variável de R$ 7,00 por unidade;\n• Tecnologia C: custo fixo de R$ 200.000,00 e custo variável de R$ 4,00 por unidade.\n\nPara um volume anual de produção de 20 000 unidades, a tecnologia de menor custo total e o respectivo custo são",
+  "alternativas": {
+    "A": "a Tecnologia A, com custo total de R$ 290.000,00.",
+    "B": "a Tecnologia B, com custo total de R$ 250.000,00.",
+    "C": "a Tecnologia C, com custo total de R$ 280.000,00.",
+    "D": "a Tecnologia B, com custo total de R$ 280.000,00.",
+    "E": "a Tecnologia C, com custo total de R$ 250.000,00."
+  },
+  "gabarito": "B",
+  "justificativa": "Calculando o custo total para 20 000 unidades: Tecnologia A = 50 000 + 12 × 20 000 = R$ 290.000,00; Tecnologia B = 110 000 + 7 × 20 000 = R$ 250.000,00; Tecnologia C = 200 000 + 4 × 20 000 = R$ 280.000,00. A Tecnologia B apresenta o menor custo total nesse volume, situado entre seus dois pontos de indiferença — 12 000 unidades em relação a A e 30 000 unidades em relação a C.",
+  "porqueErradas": {
+    "A": "O valor de R$ 290.000,00 está correto para a Tecnologia A, mas é o mais alto dos três nesse volume — A só é vantajosa abaixo de 12 000 unidades.",
+    "C": "O valor de R$ 280.000,00 está correto para a Tecnologia C, porém ela só se torna a mais econômica acima de 30 000 unidades por ano.",
+    "D": "Identifica corretamente a tecnologia, mas atribui a ela o custo total da Tecnologia C.",
+    "E": "Identifica corretamente o menor custo, mas atribui-o à tecnologia errada."
+  }
+},
+{
+  "id": "ADP-92",
+  "tipo": "Adaptada",
+  "ano": 2023,
+  "referencia": "Adaptada de ENADE 2023 — Questão 23",
+  "area": "Cálculo e Otimização",
+  "dificuldade": "Média",
+  "competencia": "Aplicar os conceitos de custo marginal, custo médio e custo real de uma unidade adicional.",
+  "enunciado": "A análise econômica de uma fábrica de componentes determinou que o custo total de produção de x unidades é dado por C(x) = 40 + 5x + 2x², e a receita total obtida com a venda de x unidades é R(x) = 30x − x²/2.\n\nCom base nessas funções, assinale a opção correta.",
+  "alternativas": {
+    "A": "A função custo marginal é dada por C'(x) = 40 + 4x.",
+    "B": "O custo real de fabricação da quarta unidade é de R$ 19,00.",
+    "C": "O custo médio de fabricação de dez unidades é de R$ 34,00.",
+    "D": "O custo marginal, quando são fabricadas cinco unidades, é de R$ 20,00.",
+    "E": "O lucro é crescente para qualquer quantidade produzida."
+  },
+  "gabarito": "B",
+  "justificativa": "O custo real da quarta unidade é a diferença entre o custo de produzir quatro e o de produzir três unidades: C(4) = 40 + 20 + 32 = R$ 92,00 e C(3) = 40 + 15 + 18 = R$ 73,00, resultando em 92 − 73 = R$ 19,00.",
+  "porqueErradas": {
+    "A": "A derivada de C(x) = 40 + 5x + 2x² é C'(x) = 5 + 4x; a constante 40 desaparece na derivação.",
+    "C": "O custo médio para dez unidades é C(10)/10 = (40 + 50 + 200)/10 = 290/10 = R$ 29,00, e não R$ 34,00.",
+    "D": "O custo marginal em x = 5 é C'(5) = 5 + 4 × 5 = R$ 25,00, e não R$ 20,00.",
+    "E": "A função lucro é L(x) = R(x) − C(x) = 25x − 2,5x² − 40, uma parábola com concavidade para baixo, cujo máximo ocorre em x = 5. A partir daí o lucro passa a decrescer."
+  }
+},
+{
+  "id": "ADP-93",
+  "tipo": "Adaptada",
+  "ano": 2023,
+  "referencia": "Adaptada de ENADE 2023 — Questão 24",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Difícil",
+  "competencia": "Aplicar a lógica do MRP com lote múltiplo, estoque de segurança e lead time.",
+  "enunciado": "Um item é planejado pelo MRP com os seguintes parâmetros:\n\n• Estoque disponível no início do horizonte: 250 unidades\n• Estoque de segurança: 100 unidades\n• Regra de lote: múltiplos de 120 unidades\n• Lead time: 1 semana\n\nAs necessidades brutas previstas são: semana 1 = 0; semana 2 = 200; semana 3 = 300; semana 4 = 150 unidades. Não há recebimentos programados.\n\nMantendo o estoque projetado sempre igual ou superior ao estoque de segurança, o total de unidades produzidas no horizonte de quatro semanas é de",
+  "alternativas": {
+    "A": "480 unidades.",
+    "B": "600 unidades.",
+    "C": "650 unidades.",
+    "D": "720 unidades.",
+    "E": "840 unidades."
+  },
+  "gabarito": "B",
+  "justificativa": "Semana 1: 250 − 0 = 250, acima do estoque de segurança, sem necessidade de produção. Semana 2: 250 − 200 = 50, abaixo de 100; faltam 50 unidades, o que exige 1 lote de 120, deixando 250 + 120 − 200 = 170. Semana 3: 170 − 300 = − 130; faltam 230 unidades, exigindo 2 lotes (240), deixando 170 + 240 − 300 = 110. Semana 4: 110 − 150 = − 40; faltam 140 unidades, exigindo 2 lotes (240), deixando 110 + 240 − 150 = 200. O total produzido é 120 + 240 + 240 = 600 unidades.",
+  "porqueErradas": {
+    "A": "480 unidades corresponderiam a 4 lotes, quantidade insuficiente para cobrir as necessidades e ainda preservar o estoque de segurança ao final do horizonte.",
+    "C": "650 não é múltiplo de 120, contrariando a regra de dimensionamento de lote estabelecida.",
+    "D": "720 unidades corresponderiam a 6 lotes, um a mais do que o necessário: a produção excedente ficaria parada como estoque adicional.",
+    "E": "840 unidades corresponderiam a 7 lotes, muito acima da necessidade líquida total do horizonte."
+  }
+},
+{
+  "id": "ADP-94",
+  "tipo": "Adaptada",
+  "ano": 2023,
+  "referencia": "Adaptada de ENADE 2023 — Questão 25",
+  "area": "Engenharia Econômica",
+  "dificuldade": "Difícil",
+  "competencia": "Determinar o ponto de equilíbrio considerando margem de contribuição e restrição de capacidade.",
+  "enunciado": "Uma empresa apresenta custos fixos mensais de R$ 24.000,00 e dispõe de 600 horas mensais de capacidade produtiva. Os dados de seus dois produtos são:\n\n• Produto X: preço de venda R$ 150,00; custo variável unitário R$ 90,00; tempo de produção 3 horas por unidade.\n• Produto Y: preço de venda R$ 100,00; custo variável unitário R$ 60,00; tempo de produção 1 hora por unidade.\n\nConsiderando que a empresa produzirá apenas um dos dois produtos, ela atingirá o ponto de equilíbrio",
+  "alternativas": {
+    "A": "com o produto X, vendendo 400 unidades por mês.",
+    "B": "com o produto Y, produzindo 600 unidades e consumindo as 600 horas disponíveis.",
+    "C": "com o produto X, por apresentar a maior margem de contribuição unitária.",
+    "D": "com o produto Y, vendendo 400 unidades por mês.",
+    "E": "com qualquer um dos dois produtos, indiferentemente."
+  },
+  "gabarito": "B",
+  "justificativa": "A margem de contribuição do produto Y é 100 − 60 = R$ 40,00 por unidade, exigindo 24 000 ÷ 40 = 600 unidades para o equilíbrio. Como cada unidade consome 1 hora, são necessárias exatamente as 600 horas disponíveis — o equilíbrio é alcançado no limite da capacidade. Já o produto X tem margem de R$ 60,00 e exigiria 400 unidades, que a 3 horas cada consumiriam 1 200 horas, o dobro da capacidade disponível.",
+  "porqueErradas": {
+    "A": "As 400 unidades são o ponto de equilíbrio contábil do produto X, mas exigiriam 1 200 horas de produção — inviável dentro das 600 horas disponíveis.",
+    "C": "A maior margem unitária do produto X não se traduz em vantagem quando há restrição de capacidade: o critério relevante passa a ser a margem por hora, que é de R$ 20,00 para X e R$ 40,00 para Y.",
+    "D": "Com 400 unidades do produto Y a contribuição total seria de R$ 16.000,00, insuficiente para cobrir os R$ 24.000,00 de custos fixos.",
+    "E": "A escolha não é indiferente: apenas o produto Y permite atingir o equilíbrio dentro da capacidade disponível."
+  }
+},
+{
+  "id": "ADP-95",
+  "tipo": "Adaptada",
+  "ano": 2023,
+  "referencia": "Adaptada de ENADE 2023 — Questão 26",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Difícil",
+  "competencia": "Definir o mix de produção pelo ganho por unidade de tempo no recurso gargalo.",
+  "enunciado": "Uma fábrica possui uma estação gargalo com capacidade de 2 400 minutos por semana. Os dados dos três produtos fabricados são:\n\nProduto | Ganho por unidade | Tempo no gargalo | Demanda semanal\nP1 | R$ 12,00 | 4 min | 200 unidades\nP2 | R$ 20,00 | 10 min | 150 unidades\nP3 | R$ 9,00 | 3 min | 300 unidades\n\nConsiderando os princípios da Teoria das Restrições, o mix semanal que maximiza o ganho total é",
+  "alternativas": {
+    "A": "200 unidades de P1, 300 de P3 e 70 de P2.",
+    "B": "200 unidades de P1, 150 de P2 e 100 de P3.",
+    "C": "200 unidades de P1, 150 de P2 e 30 de P3.",
+    "D": "200 unidades de P1, 300 de P3 e 150 de P2.",
+    "E": "300 unidades de P3, 150 de P2 e 100 de P1."
+  },
+  "gabarito": "A",
+  "justificativa": "Atender toda a demanda exigiria 200 × 4 + 150 × 10 + 300 × 3 = 3 200 minutos, acima dos 2 400 disponíveis. O critério da TOC é o ganho por minuto do gargalo: P1 rende 12/4 = R$ 3,00/min; P3 rende 9/3 = R$ 3,00/min; P2 rende 20/10 = R$ 2,00/min. Priorizam-se P1 e P3, que consomem 800 + 900 = 1 700 minutos; com os 700 minutos restantes produzem-se 70 unidades de P2. O ganho total é 2 400 + 2 700 + 1 400 = R$ 6.500,00.",
+  "porqueErradas": {
+    "B": "Consumiria 800 + 1 500 + 300 = 2 600 minutos, acima da capacidade de 2 400 minutos do gargalo.",
+    "C": "Viável em capacidade (800 + 1 500 + 90 = 2 390 min), mas gera ganho de R$ 5.670,00 — inferior, por privilegiar P2, que é o produto de menor ganho por minuto do gargalo.",
+    "D": "Atender integralmente as três demandas exigiria 3 200 minutos, muito acima da capacidade disponível.",
+    "E": "Consumiria 900 + 1 500 + 400 = 2 800 minutos, também acima da capacidade do gargalo."
+  }
+},
+{
+  "id": "ADP-96",
+  "tipo": "Adaptada",
+  "ano": 2023,
+  "referencia": "Adaptada de ENADE 2023 — Questão 27",
+  "area": "Pesquisa Operacional",
+  "dificuldade": "Difícil",
+  "competencia": "Resolver problema de designação com objetivo de minimização.",
+  "enunciado": "Quatro técnicos de manutenção devem ser designados a quatro equipamentos, um técnico por equipamento. A tabela apresenta o custo estimado, em milhares de reais, da manutenção de cada equipamento por cada técnico.\n\nTécnico | E1 | E2 | E3 | E4\nT1 | 9 | 11 | 14 | 11\nT2 | 6 | 15 | 13 | 13\nT3 | 12 | 13 | 6 | 8\nT4 | 11 | 9 | 10 | 12\n\nO custo total mínimo da designação, em milhares de reais, é de",
+  "alternativas": {
+    "A": "28.",
+    "B": "30.",
+    "C": "32.",
+    "D": "35.",
+    "E": "38."
+  },
+  "gabarito": "C",
+  "justificativa": "A designação ótima é T1 → E4 (11), T2 → E1 (6), T3 → E3 (6) e T4 → E2 (9), totalizando 32 mil reais. Note que ela não corresponde a escolher o menor custo de cada linha isoladamente: T1 tem custo menor em E1 (9), mas ceder E1 a T2, cujo custo ali é de apenas 6, libera um ganho maior para o conjunto.",
+  "porqueErradas": {
+    "A": "28 mil reais seria inferior ao mínimo possível: qualquer designação válida com um técnico por equipamento resulta em custo igual ou superior a 32 mil reais.",
+    "B": "30 mil reais também é inatingível — nenhuma combinação de quatro células, uma por linha e uma por coluna, soma esse valor.",
+    "D": "35 mil reais corresponde a designações válidas, como T1 → E2, T2 → E1, T3 → E3 e T4 → E4, mas não é a de menor custo.",
+    "E": "38 mil reais está bem acima do ótimo e resultaria de uma alocação que deixa técnicos em equipamentos de custo elevado."
+  }
+},
+{
+  "id": "ADP-97",
+  "tipo": "Adaptada",
+  "ano": 2023,
+  "referencia": "Adaptada de ENADE 2023 — Questão 28",
+  "area": "Pesquisa Operacional",
+  "dificuldade": "Difícil",
+  "competencia": "Resolver problema de programação linear e interpretar restrições ativas.",
+  "enunciado": "Uma fábrica produz duas peças, Alfa e Beta, com lucros unitários de R$ 20,00 e R$ 12,00, respectivamente. Cada peça Alfa consome 2 kg de liga metálica e 1 hora de usinagem; cada peça Beta consome 1 kg de liga e 1 hora de usinagem. Estão disponíveis, por dia, 800 kg de liga metálica e 600 horas de usinagem.\n\nCom base nesse modelo, avalie as afirmações a seguir.\n\nI. A solução que maximiza o lucro é produzir 200 peças Alfa e 400 peças Beta por dia.\nII. Na solução ótima, tanto a liga metálica quanto as horas de usinagem estão integralmente utilizadas.\nIII. Produzir apenas peças Alfa maximiza o lucro, por ser o produto de maior margem unitária.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "III, apenas.",
+    "C": "I e II, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "C",
+  "justificativa": "O modelo é maximizar 20A + 12B, sujeito a 2A + B ≤ 800 e A + B ≤ 600. Avaliando os vértices: (0; 600) rende R$ 7.200,00; (400; 0) rende R$ 8.000,00; e a interseção das duas restrições, (200; 400), rende 4 000 + 4 800 = R$ 8.800,00, o maior valor (I correta). Nessa solução, 2 × 200 + 400 = 800 kg de liga e 200 + 400 = 600 horas de usinagem — ambos os recursos totalmente consumidos (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira: a solução ótima situa-se exatamente na interseção das duas restrições, tornando ambas ativas.",
+    "B": "A afirmação III é falsa: produzir apenas Alfa limita-se a 400 unidades pela restrição de liga, gerando R$ 8.000,00 — menos que os R$ 8.800,00 do mix ótimo. Maior margem unitária não implica melhor uso dos recursos escassos.",
+    "D": "Inclui III, que aplica o critério da margem unitária ignorando o consumo diferenciado de recursos.",
+    "E": "Inclui III, incorreta: o mix combinado supera em R$ 800,00 a produção exclusiva de Alfa."
+  }
+},
+{
+  "id": "ADP-98",
+  "tipo": "Adaptada",
+  "ano": 2023,
+  "referencia": "Adaptada de ENADE 2023 — Questão 29",
+  "area": "Sistemas de Produção Enxuta",
+  "dificuldade": "Média",
+  "competencia": "Relacionar a redução do tempo de setup à redução do tamanho de lote e à liberação de capacidade.",
+  "enunciado": "Avalie as asserções a seguir e a relação proposta entre elas.\n\nI. A aplicação da troca rápida de ferramentas permite reduzir o tamanho dos lotes de produção sem perda de capacidade produtiva.\n\nPORQUE\n\nII. O tempo total consumido com preparações em um período é proporcional ao número de preparações realizadas, de modo que setups mais rápidos permitem trocas mais frequentes com o mesmo consumo de tempo.\n\nA respeito dessas asserções, assinale a opção correta.",
+  "alternativas": {
+    "A": "As asserções I e II são proposições verdadeiras, e a II é uma justificativa correta da I.",
+    "B": "As asserções I e II são proposições verdadeiras, mas a II não é uma justificativa correta da I.",
+    "C": "A asserção I é uma proposição verdadeira, e a II é uma proposição falsa.",
+    "D": "A asserção I é uma proposição falsa, e a II é uma proposição verdadeira.",
+    "E": "As asserções I e II são proposições falsas."
+  },
+  "gabarito": "A",
+  "justificativa": "As duas asserções são verdadeiras e há nexo causal direto. O que impede lotes pequenos em um sistema tradicional é o tempo perdido em preparações: mais lotes significam mais setups e menos tempo disponível para produzir. Ao reduzir drasticamente a duração de cada setup, a troca rápida de ferramentas permite multiplicar o número de preparações mantendo o mesmo consumo total de tempo — exatamente a razão pela qual lotes menores deixam de custar capacidade.",
+  "porqueErradas": {
+    "B": "A relação causal é justamente o mecanismo do método: é a proporcionalidade entre número de setups e tempo consumido que explica por que setups mais curtos viabilizam lotes menores.",
+    "C": "A asserção II é verdadeira e descreve corretamente o efeito do tempo de preparação sobre a capacidade disponível.",
+    "D": "A asserção I é verdadeira: viabilizar lotes pequenos sem perda de capacidade é precisamente o objetivo da troca rápida de ferramentas.",
+    "E": "Ambas as asserções são verdadeiras e, adicionalmente, a segunda explica a primeira."
+  }
+},
+{
+  "id": "ADP-99",
+  "tipo": "Adaptada",
+  "ano": 2023,
+  "referencia": "Adaptada de ENADE 2023 — Questão 31",
+  "area": "Gestão de Estoques",
+  "dificuldade": "Difícil",
+  "competencia": "Compreender os determinantes do estoque de segurança e o efeito da centralização.",
+  "enunciado": "O dimensionamento do estoque de segurança é uma das decisões centrais da gestão de estoques, com impacto direto sobre custos logísticos e nível de serviço.\n\nA respeito desse tema, avalie as afirmações a seguir.\n\nI. Quando a demanda é independente entre períodos, o estoque de segurança cresce com a raiz quadrada do tempo de ressuprimento, e não proporcionalmente a ele.\nII. Elevar o nível de serviço de 95% para 99% dobra o estoque de segurança necessário.\nIII. A centralização dos estoques em um único armazém reduz o estoque de segurança total necessário para o mesmo nível de serviço.\nIV. O estoque de segurança protege a operação tanto da variabilidade da demanda quanto da variabilidade do tempo de ressuprimento.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e II.",
+    "B": "II e III.",
+    "C": "I, III e IV.",
+    "D": "I, II e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "C",
+  "justificativa": "Com demandas independentes, as variâncias se somam ao longo do tempo de ressuprimento, de modo que o desvio-padrão — e com ele o estoque de segurança — cresce com a raiz quadrada do lead time (I correta). A centralização produz o efeito de agregação de riscos (risk pooling): as variações de demanda das regiões se compensam parcialmente, reduzindo o estoque de segurança total (III correta). E a finalidade do estoque de segurança é exatamente absorver as duas fontes de incerteza, de demanda e de suprimento (IV correta).",
+  "porqueErradas": {
+    "A": "A afirmação II é falsa: o estoque de segurança é proporcional ao fator z, que passa de cerca de 1,65 (95%) para 2,33 (99%) — um aumento de aproximadamente 41%, e não de 100%.",
+    "B": "Inclui II, que supõe relação linear entre nível de serviço e estoque de segurança.",
+    "D": "Inclui II, incorreta, e omite III, que trata do efeito da centralização.",
+    "E": "Inclui II, incorreta, e deixa de fora I, que descreve corretamente a relação com o tempo de ressuprimento."
+  }
+},
+{
+  "id": "ADP-100",
+  "tipo": "Adaptada",
+  "ano": 2023,
+  "referencia": "Adaptada de ENADE 2023 — Questão 33",
+  "area": "Mecânica dos Fluidos",
+  "dificuldade": "Difícil",
+  "competencia": "Identificar as causas da cavitação em bombas e as medidas corretivas adequadas.",
+  "enunciado": "Uma bomba centrífuga instalada em uma estação de recalque apresenta ruído característico de cavitação, acompanhado de queda de vazão e de desgaste acelerado do rotor. O fenômeno ocorre quando a pressão absoluta na entrada do rotor cai até a pressão de vapor do líquido, formando bolhas que implodem ao atingir regiões de maior pressão.\n\nPara eliminar o problema, a medida adequada é",
+  "alternativas": {
+    "A": "elevar a posição da bomba em relação ao nível do líquido no reservatório de sucção.",
+    "B": "reduzir o diâmetro da tubulação de sucção, aumentando a velocidade de entrada do fluido.",
+    "C": "reduzir a altura geométrica de sucção, aproximando a bomba do nível do líquido no reservatório.",
+    "D": "aumentar a rotação da bomba, elevando a energia fornecida ao fluido na entrada do rotor.",
+    "E": "aumentar a temperatura do líquido bombeado, reduzindo sua viscosidade e as perdas por atrito."
+  },
+  "gabarito": "C",
+  "justificativa": "A cavitação é evitada garantindo que o NPSH disponível na instalação supere o NPSH requerido pela bomba. O NPSH disponível diminui com a altura geométrica de sucção e com as perdas de carga na linha de sucção. Aproximar a bomba do nível do líquido reduz diretamente a altura de sucção e, em geral, também o comprimento da tubulação, elevando o NPSH disponível e afastando a pressão de entrada do valor da pressão de vapor.",
+  "porqueErradas": {
+    "A": "Elevar a bomba aumenta a altura geométrica de sucção, reduzindo o NPSH disponível — é justamente o oposto da medida corretiva.",
+    "B": "Reduzir o diâmetro aumenta a velocidade e, com ela, a perda de carga na sucção, diminuindo ainda mais o NPSH disponível.",
+    "D": "Aumentar a rotação eleva o NPSH requerido pela bomba, agravando a cavitação em vez de eliminá-la.",
+    "E": "Elevar a temperatura aumenta a pressão de vapor do líquido, aproximando-a da pressão de entrada e tornando a cavitação mais provável."
+  }
+},
+{
+  "id": "ADP-101",
+  "tipo": "Adaptada",
+  "ano": 2023,
+  "referencia": "Adaptada de ENADE 2023 — Questão 34",
+  "area": "Gestão da Manutenção",
+  "dificuldade": "Média",
+  "competencia": "Distinguir os indicadores de confiabilidade, manutenibilidade, disponibilidade e eficiência global.",
+  "enunciado": "A engenharia de manutenção de uma planta industrial acompanha um conjunto de indicadores de desempenho de seus equipamentos.\n\nA respeito desses indicadores, avalie as afirmações a seguir.\n\nI. O Tempo Médio Entre Falhas (MTBF) é o indicador associado à confiabilidade do equipamento.\nII. O Tempo Médio para Reparo (MTTR) é o indicador associado à manutenibilidade do equipamento.\nIII. A disponibilidade do equipamento pode ser expressa pela razão MTBF / (MTBF + MTTR).\nIV. A Eficiência Global do Equipamento (OEE) considera exclusivamente a disponibilidade do ativo.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e IV.",
+    "B": "II e IV.",
+    "C": "I, II e III.",
+    "D": "I, III e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "C",
+  "justificativa": "O MTBF mede o tempo médio de operação até a próxima falha, sendo a medida direta de confiabilidade (I correta). O MTTR mede a rapidez com que o equipamento é restabelecido, caracterizando a manutenibilidade (II correta). A disponibilidade combina os dois indicadores: o tempo operando dividido pelo tempo total do ciclo operar-reparar, ou seja, MTBF / (MTBF + MTTR) (III correta).",
+  "porqueErradas": {
+    "A": "A afirmação IV é falsa: o OEE é o produto de três fatores — disponibilidade, desempenho e qualidade —, e não apenas da disponibilidade.",
+    "B": "Inclui IV, que reduz indevidamente o OEE a um único de seus três componentes.",
+    "D": "Inclui IV, incorreta, e omite II, que associa corretamente o MTTR à manutenibilidade.",
+    "E": "Inclui IV, incorreta, e deixa de fora I, que associa o MTBF à confiabilidade."
+  }
+},
+{
+  "id": "ADP-102",
+  "tipo": "Adaptada",
+  "ano": 2023,
+  "referencia": "Adaptada de ENADE 2023 — Questão 35",
+  "area": "Gestão da Qualidade",
+  "dificuldade": "Média",
+  "competencia": "Calcular e interpretar os índices de capacidade Cp e Cpk.",
+  "enunciado": "Um processo de usinagem produz eixos cuja especificação de diâmetro tem limite inferior de 10,0 mm e limite superior de 16,0 mm. O processo encontra-se sob controle estatístico, com média de 14,0 mm e desvio-padrão de 0,5 mm.\n\nCom base nesses dados, avalie as afirmações a seguir.\n\nI. O índice de capacidade potencial (Cp) do processo é igual a 2,0.\nII. O índice de capacidade real (Cpk) do processo é de aproximadamente 1,33.\nIII. O processo encontra-se centrado em relação aos limites de especificação.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "I e II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "B",
+  "justificativa": "O Cp mede a capacidade potencial: (16,0 − 10,0) ÷ (6 × 0,5) = 6 ÷ 3 = 2,0 (I correta). O Cpk considera o descentramento: mín[(16,0 − 14,0)/1,5; (14,0 − 10,0)/1,5] = mín[1,33; 2,67] = 1,33 (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira e resulta da aplicação direta da fórmula do Cpk.",
+    "C": "A afirmação III é falsa: o centro da especificação é 13,0 mm e a média do processo é 14,0 mm, havendo deslocamento de 1,0 mm — comprovado pela diferença entre Cp (2,0) e Cpk (1,33).",
+    "D": "Inclui III, que ignora o descentramento evidenciado pela discrepância entre os dois índices.",
+    "E": "Inclui III, incorreta: se o processo estivesse centrado, Cpk seria igual a Cp."
+  }
+},
+{
+  "id": "ADP-103",
+  "tipo": "Adaptada",
+  "ano": 2023,
+  "referencia": "Adaptada de ENADE 2023 — Questão 36",
+  "area": "Ergonomia e Segurança do Trabalho",
+  "dificuldade": "Fácil",
+  "competencia": "Conhecer os requisitos de mobiliário e de postos de trabalho da NR-17.",
+  "enunciado": "A Norma Regulamentadora n. 17 estabelece parâmetros que permitem a adaptação das condições de trabalho às características psicofisiológicas dos trabalhadores.\n\nA respeito dos requisitos de mobiliário e postos de trabalho previstos nessa norma, avalie as afirmações a seguir.\n\nI. Os assentos utilizados nos postos de trabalho devem ter altura ajustável à estatura do trabalhador e à natureza da função exercida.\nII. Deve ser disponibilizado apoio para os pés sempre que os pés do trabalhador não alcançarem confortavelmente o piso.\nIII. Nas atividades executadas na posição em pé, devem ser colocados assentos à disposição dos trabalhadores para utilização durante as pausas.\nIV. A NR-17 aplica-se exclusivamente a atividades de processamento eletrônico de dados e teleatendimento.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e IV.",
+    "B": "II e IV.",
+    "C": "I, II e III.",
+    "D": "I, III e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "C",
+  "justificativa": "As três primeiras afirmações correspondem a requisitos expressos da NR-17: regulagem de altura dos assentos conforme a estatura e a função (I), apoio para os pés quando necessário (II) e disponibilização de assentos para pausas em atividades realizadas em pé (III).",
+  "porqueErradas": {
+    "A": "A afirmação IV é falsa: a NR-17 aplica-se a todas as atividades e ambientes de trabalho. Processamento eletrônico de dados e teleatendimento são apenas casos que recebem requisitos adicionais específicos.",
+    "B": "Inclui IV, que restringe indevidamente o campo de aplicação da norma.",
+    "D": "Inclui IV, incorreta, e omite II, que trata do apoio para os pés.",
+    "E": "Inclui IV, incorreta, e deixa de fora I, que trata da regulagem de altura dos assentos."
+  }
+},
+{
+  "id": "ADP-104",
+  "tipo": "Adaptada",
+  "ano": 2023,
+  "referencia": "Adaptada de ENADE 2023 — Questão 37",
+  "area": "Engenharia Econômica",
+  "dificuldade": "Média",
+  "competencia": "Calcular e comparar payback simples e payback descontado.",
+  "enunciado": "Um projeto de investimento exige desembolso inicial de R$ 300.000,00 e gera fluxos de caixa líquidos de R$ 100.000,00 ao final de cada um dos quatro anos seguintes. A taxa mínima de atratividade é de 10% ao ano.\n\nOs valores presentes dos fluxos, a 10% ao ano, são: ano 1 = R$ 90.909; ano 2 = R$ 82.645; ano 3 = R$ 75.131; ano 4 = R$ 68.301.\n\nCom base nesses dados, avalie as afirmações a seguir.\n\nI. O payback simples do projeto é de 3 anos.\nII. O payback descontado do projeto ocorre no quarto ano.\nIII. O payback descontado é sempre menor que o payback simples, pois considera o valor do dinheiro no tempo.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "I e II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "B",
+  "justificativa": "Pelo payback simples, os fluxos nominais acumulam 100 000 + 100 000 + 100 000 = R$ 300.000,00 ao final do terceiro ano, igualando o investimento (I correta). Pelo payback descontado, os valores presentes acumulam R$ 90.909 no primeiro ano, R$ 173.554 no segundo e R$ 248.685 no terceiro — ainda abaixo do investimento — atingindo R$ 316.986 apenas no quarto ano (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira e decorre do acúmulo dos fluxos descontados apresentados no enunciado.",
+    "C": "A afirmação III inverte a relação: como o desconto reduz o valor de cada fluxo, o capital demora mais a ser recuperado. O payback descontado é sempre maior ou igual ao simples — nunca menor.",
+    "D": "Inclui III, que contraria o próprio resultado do exercício, no qual o payback descontado (4 anos) supera o simples (3 anos).",
+    "E": "Inclui III, incorreta quanto à relação entre os dois indicadores."
+  }
+},
+{
+  "id": "ADP-105",
+  "tipo": "Adaptada",
+  "ano": 2023,
+  "referencia": "Adaptada de ENADE 2023 — Questão 38",
+  "area": "Ergonomia e Segurança do Trabalho",
+  "dificuldade": "Média",
+  "competencia": "Classificar riscos ambientais na elaboração de mapa de riscos.",
+  "enunciado": "Em uma indústria química, foram levantados os seguintes riscos nos diferentes setores da planta:\n\n• Setor A: manuseio e transferência de ácido sulfúrico concentrado;\n• Setor B: operação de ponte rolante para movimentação de cargas suspensas;\n• Setor C: exposição prolongada à vibração de marteletes pneumáticos;\n• Setor D: contato com efluentes em estação de tratamento biológico;\n• Setor E: levantamento manual repetitivo de sacarias.\n\nNa construção do mapa de riscos, os riscos dos setores A, B, C, D e E classificam-se, respectivamente, como",
+  "alternativas": {
+    "A": "químico, acidente, físico, biológico e ergonômico.",
+    "B": "químico, físico, acidente, biológico e ergonômico.",
+    "C": "físico, acidente, químico, ergonômico e biológico.",
+    "D": "químico, acidente, ergonômico, biológico e físico.",
+    "E": "biológico, acidente, físico, químico e ergonômico."
+  },
+  "gabarito": "A",
+  "justificativa": "Ácido sulfúrico é agente químico, com risco de exposição por contato e inalação de vapores (A). A movimentação de cargas suspensas por ponte rolante configura risco de acidente, pela possibilidade de queda de carga (B). Vibração é agente físico, ao lado de ruído, calor e radiações (C). O contato com efluentes em tratamento biológico expõe o trabalhador a microrganismos, caracterizando risco biológico (D). E o levantamento manual repetitivo de cargas é risco ergonômico (E).",
+  "porqueErradas": {
+    "B": "Classifica a ponte rolante como risco físico e a vibração como risco de acidente — a vibração é agente físico e a movimentação de cargas suspensas é risco de acidente.",
+    "C": "Inverte as três primeiras classificações: ácido é químico, não físico; e vibração é física, não química.",
+    "D": "Classifica a vibração como risco ergonômico e o levantamento de cargas como risco físico, trocando as duas categorias entre si.",
+    "E": "Classifica o ácido sulfúrico como risco biológico e os efluentes como risco químico, invertendo as duas categorias."
+  }
+}
+]

@@ -1,0 +1,347 @@
+[
+{
+  "id": "INE-76",
+  "tipo": "Inédita",
+  "area": "Materiais e Processos de Fabricação",
+  "dificuldade": "Média",
+  "competencia": "Selecionar tratamentos térmicos conforme as propriedades desejadas no aço.",
+  "enunciado": "Um lote de eixos em aço ABNT 1045 foi submetido a têmpera e apresentou dureza de 58 HRC, porém com fragilidade excessiva: várias peças romperam de forma frágil durante os ensaios de impacto.\n\nPara reduzir a fragilidade e aliviar as tensões residuais, preservando ainda um bom nível de dureza, o tratamento térmico indicado é",
+  "alternativas": {
+    "A": "o recozimento pleno.",
+    "B": "a normalização.",
+    "C": "o revenimento.",
+    "D": "a cementação.",
+    "E": "a têmpera superficial por indução."
+  },
+  "gabarito": "C",
+  "justificativa": "O revenimento é o tratamento realizado imediatamente após a têmpera, com aquecimento a temperaturas abaixo da zona crítica. Ele promove a transformação parcial da martensita, aliviando as tensões residuais da têmpera e reduzindo a fragilidade, ao custo de uma queda controlada de dureza — exatamente o compromisso buscado no caso descrito.",
+  "porqueErradas": {
+    "A": "O recozimento pleno visa amolecer o material ao máximo, eliminando praticamente toda a dureza obtida pela têmpera e anulando o objetivo do tratamento anterior.",
+    "B": "A normalização refina o grão e homogeneíza a estrutura, mas produz perlita fina, com dureza muito inferior à desejada para a aplicação.",
+    "D": "A cementação é tratamento termoquímico de enriquecimento superficial em carbono, aplicado a aços de baixo carbono antes da têmpera; não corrige a fragilidade de uma peça já temperada.",
+    "E": "A têmpera superficial por indução endurece a camada externa da peça, agravando — e não reduzindo — a fragilidade do componente."
+  }
+},
+{
+  "id": "INE-77",
+  "tipo": "Inédita",
+  "area": "Materiais e Processos de Fabricação",
+  "dificuldade": "Média",
+  "competencia": "Selecionar processos de soldagem conforme material, espessura e requisitos de acabamento.",
+  "enunciado": "Uma indústria de equipamentos alimentícios precisa soldar chapas de aço inoxidável austenítico de 1,5 mm de espessura. Os requisitos são acabamento superficial de alta qualidade, sem necessidade de esmerilhamento posterior, controle preciso do aporte térmico para evitar distorções, e ausência de escória sobre o cordão.\n\nNessas condições, o processo de soldagem indicado é",
+  "alternativas": {
+    "A": "o eletrodo revestido (SMAW).",
+    "B": "o arco submerso (SAW).",
+    "C": "o TIG (GTAW).",
+    "D": "o oxiacetilênico.",
+    "E": "a eletroescória."
+  },
+  "gabarito": "C",
+  "justificativa": "O processo TIG utiliza eletrodo não consumível de tungstênio e proteção por gás inerte, permitindo controle fino da corrente e, portanto, do aporte térmico. Produz cordões limpos, sem escória e sem respingos, com excelente acabamento — características que o tornam o processo de referência para chapas finas de aço inoxidável em aplicações sanitárias.",
+  "porqueErradas": {
+    "A": "O eletrodo revestido gera escória que exige remoção e respingos que comprometem o acabamento, além de aporte térmico elevado e difícil de controlar em chapas de 1,5 mm.",
+    "B": "O arco submerso é processo de alta deposição, indicado para chapas grossas em posição plana; seu elevado aporte térmico perfuraria a chapa fina.",
+    "D": "A soldagem oxiacetilênica tem aporte térmico muito disperso, provocando grande zona afetada pelo calor e distorções acentuadas em chapas finas.",
+    "E": "A eletroescória destina-se a seções muito espessas, soldadas em passe único na posição vertical, sendo completamente inadequada a 1,5 mm."
+  }
+},
+{
+  "id": "INE-78",
+  "tipo": "Inédita",
+  "area": "Materiais e Processos de Fabricação",
+  "dificuldade": "Média",
+  "competencia": "Caracterizar os processos de conformação mecânica e suas limitações.",
+  "enunciado": "Os processos de conformação mecânica transformam a geometria dos metais por deformação plástica, sem remoção de material.\n\nA respeito desses processos, avalie as afirmações a seguir.\n\nI. A laminação a quente permite maiores reduções de espessura por passe, porém resulta em acabamento superficial e tolerâncias dimensionais inferiores aos da laminação a frio.\nII. A trefilação é um processo de conformação a frio, empregado na produção de fios, arames e barras de pequeno diâmetro.\nIII. A estampagem profunda tem sua conformabilidade limitada pela estricção do material e pelo enrugamento da aba da chapa.\nIV. A extrusão só pode ser realizada a frio, em razão das elevadas pressões envolvidas no processo.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e IV.",
+    "B": "II e IV.",
+    "C": "I, II e III.",
+    "D": "I, III e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "C",
+  "justificativa": "A laminação a quente reduz a tensão de escoamento do material, permitindo grandes reduções por passe, mas a oxidação superficial e a contração no resfriamento prejudicam acabamento e tolerâncias (I correta). A trefilação é processo a frio por tração através de fieira (II correta). E os dois modos de falha típicos da estampagem profunda são exatamente a estricção no fundo do copo e o enrugamento da aba (III correta).",
+  "porqueErradas": {
+    "A": "A afirmação IV é falsa: a extrusão pode ser realizada a quente — configuração mais comum para alumínio e aço — ou a frio, conforme o material e a geometria desejada.",
+    "B": "Inclui IV, incorreta, e omite I e III.",
+    "D": "Inclui IV, que restringe indevidamente a extrusão ao processamento a frio.",
+    "E": "Inclui IV, incorreta, e deixa de fora I, que compara laminação a quente e a frio."
+  }
+},
+{
+  "id": "INE-79",
+  "tipo": "Inédita",
+  "area": "Materiais e Processos de Fabricação",
+  "dificuldade": "Fácil",
+  "competencia": "Selecionar o ensaio mecânico adequado ao mecanismo de falha investigado.",
+  "enunciado": "Um eixo de transmissão rompeu em serviço após dois anos de operação, embora as tensões de trabalho estivessem bem abaixo do limite de escoamento do material. A análise da superfície de fratura revelou marcas de praia características, típicas da propagação progressiva de trinca sob carregamento cíclico.\n\nPara caracterizar esse comportamento no projeto de um novo eixo, o ensaio mecânico adequado é o ensaio de",
+  "alternativas": {
+    "A": "tração.",
+    "B": "dureza Brinell.",
+    "C": "fadiga.",
+    "D": "fluência.",
+    "E": "impacto Charpy."
+  },
+  "gabarito": "C",
+  "justificativa": "O ensaio de fadiga submete corpos de prova a carregamentos cíclicos de amplitude controlada, registrando o número de ciclos até a falha e permitindo construir a curva S-N e determinar o limite de fadiga. É o ensaio que reproduz exatamente o mecanismo descrito: ruptura sob tensões inferiores ao escoamento, por acúmulo progressivo de dano ao longo dos ciclos.",
+  "porqueErradas": {
+    "A": "O ensaio de tração é estático e determina limite de escoamento, limite de resistência e alongamento — propriedades que, no caso relatado, não explicam a falha, já que a tensão de trabalho estava abaixo do escoamento.",
+    "B": "O ensaio de dureza mede a resistência à penetração localizada, sem relação com a propagação de trincas sob carregamento cíclico.",
+    "D": "A fluência é a deformação lenta e contínua sob carga constante em alta temperatura, mecanismo distinto da fadiga.",
+    "E": "O ensaio Charpy avalia a tenacidade sob impacto, isto é, a resistência à fratura sob carregamento único de alta velocidade, e não sob ciclos repetidos."
+  }
+},
+{
+  "id": "INE-80",
+  "tipo": "Inédita",
+  "area": "Sustentabilidade e Meio Ambiente",
+  "dificuldade": "Média",
+  "competencia": "Compreender os princípios e a hierarquia de estratégias da economia circular.",
+  "enunciado": "Uma fabricante de eletrodomésticos decidiu reformular sua estratégia de produto com base nos princípios da economia circular.\n\nA respeito desses princípios, avalie as afirmações a seguir.\n\nI. A economia circular propõe manter produtos, componentes e materiais em uso no maior nível de valor possível e pelo maior tempo possível.\nII. O projeto para desmontagem facilita a recuperação de componentes ao final da vida útil, viabilizando reuso e remanufatura.\nIII. A reciclagem é a estratégia de maior valor agregado dentro dos ciclos técnicos da economia circular.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "I e II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "B",
+  "justificativa": "Manter materiais circulando no mais alto valor pelo maior tempo é a formulação central do conceito (I correta). O projeto para desmontagem é o requisito técnico que viabiliza essa circulação, permitindo separar componentes sem destruí-los (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira e descreve a condição de projeto que torna a circularidade viável na prática.",
+    "C": "A afirmação III inverte a hierarquia dos ciclos técnicos. A reciclagem é o anel mais externo e de menor valor, pois destrói a forma do produto e frequentemente degrada o material. Manutenção, reuso, reforma e remanufatura preservam mais valor agregado.",
+    "D": "Inclui III, que posiciona incorretamente a reciclagem no topo da hierarquia de estratégias circulares.",
+    "E": "Inclui III, incorreta: a reciclagem é a última opção antes da recuperação energética e da disposição final."
+  }
+},
+{
+  "id": "INE-81",
+  "tipo": "Inédita",
+  "area": "Sustentabilidade e Meio Ambiente",
+  "dificuldade": "Média",
+  "competencia": "Aplicar os níveis de prioridade da Produção mais Limpa.",
+  "enunciado": "Uma indústria química implantou um programa de Produção mais Limpa, que organiza as oportunidades de melhoria em níveis hierárquicos de prioridade.\n\nA respeito dessa abordagem, avalie as afirmações a seguir.\n\nI. A Produção mais Limpa prioriza a prevenção da geração de resíduos na fonte sobre o tratamento de fim de tubo.\nII. Entre as ações de primeiro nível estão a redução na fonte, obtida por modificação do produto ou do processo produtivo.\nIII. A reciclagem externa, realizada fora da unidade produtiva, é considerada ação de prevenção na fonte.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "I e II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "B",
+  "justificativa": "A inversão de prioridade em relação ao tratamento de fim de tubo é o que define a Produção mais Limpa: em vez de tratar o resíduo gerado, evita-se que ele seja gerado (I correta). As ações de nível 1 compreendem a redução na fonte — por modificação do produto ou do processo — e a reciclagem interna (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira e detalha o conteúdo do primeiro nível de prioridade.",
+    "C": "A afirmação III é falsa: a reciclagem externa corresponde ao nível 2 da hierarquia, pois o resíduo já foi gerado e precisa sair da unidade. Prevenção na fonte é apenas o que evita a geração.",
+    "D": "Inclui III, que classifica incorretamente a reciclagem externa como medida preventiva de primeiro nível.",
+    "E": "Inclui III, incorreta quanto ao nível hierárquico da reciclagem externa."
+  }
+},
+{
+  "id": "INE-82",
+  "tipo": "Inédita",
+  "area": "Sustentabilidade e Meio Ambiente",
+  "dificuldade": "Fácil",
+  "competencia": "Calcular indicadores de ecoeficiência a partir de dados de consumo específico.",
+  "enunciado": "Após a implantação de um programa de reuso de água, uma indústria de celulose reduziu seu consumo específico de 6,0 m³ para 4,2 m³ de água por tonelada de produto acabado, mantendo o mesmo volume de produção.\n\nA redução percentual do consumo específico de água foi de",
+  "alternativas": {
+    "A": "18%.",
+    "B": "25%.",
+    "C": "30%.",
+    "D": "43%.",
+    "E": "70%."
+  },
+  "gabarito": "C",
+  "justificativa": "A redução absoluta é 6,0 − 4,2 = 1,8 m³ por tonelada. A redução percentual toma como base o consumo original: 1,8 ÷ 6,0 = 0,30, ou seja, 30%.",
+  "porqueErradas": {
+    "A": "18% corresponde ao valor absoluto da redução (1,8) tratado diretamente como percentual, sem a divisão pela base.",
+    "B": "25% resultaria de uma redução de 1,5 m³ por tonelada, e não dos 1,8 m³ efetivamente obtidos.",
+    "D": "43% resultaria de dividir a redução pelo consumo final (1,8 ÷ 4,2) em vez de pelo consumo inicial — erro comum na escolha da base de comparação.",
+    "E": "70% é a proporção do consumo que permaneceu após a melhoria (4,2 ÷ 6,0), e não a redução obtida."
+  }
+},
+{
+  "id": "INE-83",
+  "tipo": "Inédita",
+  "area": "Sustentabilidade e Meio Ambiente",
+  "dificuldade": "Média",
+  "competencia": "Classificar resíduos sólidos industriais conforme a NBR 10004.",
+  "enunciado": "Uma indústria de galvanoplastia gera lodo proveniente do tratamento de seus efluentes, contendo cromo hexavalente em concentração superior aos limites estabelecidos no ensaio de lixiviação.\n\nSegundo a classificação de resíduos sólidos da ABNT NBR 10004, esse lodo é classificado como resíduo",
+  "alternativas": {
+    "A": "Classe I — perigoso.",
+    "B": "Classe II A — não inerte.",
+    "C": "Classe II B — inerte.",
+    "D": "Classe III — reciclável.",
+    "E": "não classificável, por se tratar de subproduto de tratamento de efluentes."
+  },
+  "gabarito": "A",
+  "justificativa": "A NBR 10004 classifica como Classe I — perigoso o resíduo que apresente toxicidade, inflamabilidade, corrosividade, reatividade ou patogenicidade. O cromo hexavalente consta expressamente entre os parâmetros de toxicidade do ensaio de lixiviação, e sua concentração acima do limite enquadra o lodo galvânico como resíduo perigoso, exigindo destinação em aterro industrial licenciado Classe I.",
+  "porqueErradas": {
+    "B": "A Classe II A reúne resíduos não inertes que não apresentam periculosidade, podendo ter propriedades como biodegradabilidade ou solubilidade em água — o que não se aplica a um resíduo com toxicidade comprovada.",
+    "C": "A Classe II B abrange resíduos inertes, que não liberam constituintes acima dos padrões de potabilidade no ensaio de solubilização, situação oposta à descrita.",
+    "D": "A NBR 10004 não prevê uma Classe III; a classificação limita-se às classes I, II A e II B.",
+    "E": "Todo resíduo sólido, inclusive lodos de estações de tratamento, é objeto de classificação pela norma."
+  }
+},
+{
+  "id": "INE-84",
+  "tipo": "Inédita",
+  "area": "Gestão da Manutenção",
+  "dificuldade": "Média",
+  "competencia": "Distinguir as estratégias de manutenção e seus critérios de aplicação.",
+  "enunciado": "O plano de manutenção de uma planta industrial combina diferentes estratégias, conforme a criticidade e o padrão de falha de cada equipamento.\n\nA respeito dessas estratégias, avalie as afirmações a seguir.\n\nI. A manutenção preventiva é executada em intervalos predeterminados de tempo ou de uso, independentemente da condição observada do equipamento.\nII. A manutenção preditiva baseia-se no monitoramento de parâmetros — como vibração, temperatura e análise de óleo — para intervir somente quando há evidência de degradação.\nIII. A manutenção corretiva planejada decorre da decisão gerencial de operar o ativo até a falha, com recursos e procedimentos preparados antecipadamente.\nIV. A manutenção detectiva busca aumentar a frequência de falhas dos equipamentos, de modo a facilitar o mapeamento de seus modos de falha.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e IV.",
+    "B": "II e IV.",
+    "C": "I, II e III.",
+    "D": "I, III e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "C",
+  "justificativa": "A manutenção preventiva é baseada em tempo ou uso, não em condição (I correta). A preditiva monitora parâmetros para antecipar a falha iminente, intervindo apenas quando necessário (II correta). E a corretiva planejada é uma decisão deliberada de operar até a falha, adotada quando a consequência é pequena e o custo de prevenir supera o de corrigir (III correta).",
+  "porqueErradas": {
+    "A": "A afirmação IV é falsa: a manutenção detectiva consiste em verificar sistemas de proteção e instrumentação para identificar falhas ocultas — aquelas que não se manifestam na operação normal. Jamais se busca aumentar a frequência de falhas.",
+    "B": "Inclui IV, que descreve equivocadamente a finalidade da manutenção detectiva.",
+    "D": "Inclui IV, incorreta, e omite II, que caracteriza a manutenção preditiva.",
+    "E": "Inclui IV, incorreta, e deixa de fora I, que define a manutenção preventiva."
+  }
+},
+{
+  "id": "INE-85",
+  "tipo": "Inédita",
+  "area": "Gestão da Manutenção",
+  "dificuldade": "Média",
+  "competencia": "Compreender a estrutura e os objetivos da Manutenção Produtiva Total.",
+  "enunciado": "Uma montadora implantou a Manutenção Produtiva Total (TPM) em sua planta principal, envolvendo operadores e equipe de manutenção.\n\nA respeito dessa abordagem, avalie as afirmações a seguir.\n\nI. A TPM organiza-se em pilares, entre os quais se destacam a manutenção autônoma, a manutenção planejada, a melhoria específica e a educação e treinamento.\nII. A manutenção autônoma transfere aos operadores atividades básicas de limpeza, lubrificação, reaperto e inspeção de seus próprios equipamentos.\nIII. A TPM tem como metas de referência zero falhas, zero defeitos e zero acidentes.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "I e II, apenas.",
+    "C": "II e III, apenas.",
+    "D": "I e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "E",
+  "justificativa": "As três afirmações descrevem corretamente a TPM. A estrutura em pilares é sua organização característica (I). A manutenção autônoma é o pilar que redefine o papel do operador, atribuindo-lhe os cuidados básicos do equipamento e liberando a equipe de manutenção para atividades de maior complexidade (II). E o conjunto de metas de perda zero — falhas, defeitos e acidentes — orienta todo o programa (III).",
+  "porqueErradas": {
+    "A": "As três afirmações são verdadeiras; restringir a resposta a I deixa de fora elementos centrais da abordagem.",
+    "B": "Além de I e II, a afirmação III também procede quanto às metas que estruturam o programa.",
+    "C": "Omite I, que apresenta a organização da TPM em pilares.",
+    "D": "Omite II, que descreve o pilar mais característico da TPM — a manutenção autônoma."
+  }
+},
+{
+  "id": "INE-86",
+  "tipo": "Inédita",
+  "area": "Gestão da Manutenção",
+  "dificuldade": "Média",
+  "competencia": "Calcular a disponibilidade de equipamentos a partir de MTBF e MTTR.",
+  "enunciado": "Um equipamento crítico de uma linha de produção apresenta tempo médio entre falhas (MTBF) de 240 horas e tempo médio para reparo (MTTR) de 12 horas.\n\nSabendo que a disponibilidade inerente é dada por A = MTBF / (MTBF + MTTR), a disponibilidade desse equipamento é de aproximadamente",
+  "alternativas": {
+    "A": "90,0%.",
+    "B": "92,5%.",
+    "C": "95,2%.",
+    "D": "97,5%.",
+    "E": "98,0%."
+  },
+  "gabarito": "C",
+  "justificativa": "Aplicando a fórmula: A = 240 ÷ (240 + 12) = 240 ÷ 252 = 0,9524, ou seja, aproximadamente 95,2%. O ciclo completo operar-reparar dura 252 horas, das quais 240 são de operação.",
+  "porqueErradas": {
+    "A": "90,0% corresponderia a um MTTR de aproximadamente 26,7 horas, mais que o dobro do informado.",
+    "B": "92,5% corresponderia a um MTTR de cerca de 19,5 horas, superior ao real.",
+    "D": "97,5% resultaria de um MTTR de aproximadamente 6 horas, metade do valor informado.",
+    "E": "98,0% exigiria MTTR de cerca de 4,9 horas, bem abaixo das 12 horas do enunciado."
+  }
+},
+{
+  "id": "INE-87",
+  "tipo": "Inédita",
+  "area": "Sistemas de Informação e Indústria 4.0",
+  "dificuldade": "Média",
+  "competencia": "Comparar tecnologias de identificação automática aplicadas à logística.",
+  "enunciado": "Um centro de distribuição avalia a substituição da leitura por código de barras pela identificação por radiofrequência (RFID) no controle de movimentação de paletes.\n\nA respeito da comparação entre essas tecnologias, avalie as afirmações a seguir.\n\nI. O RFID permite leitura sem linha de visada direta e a identificação simultânea de múltiplos itens.\nII. As etiquetas RFID passivas não possuem bateria própria, sendo energizadas pelo campo eletromagnético emitido pelo leitor.\nIII. O código de barras apresenta custo unitário de etiqueta inferior ao da etiqueta RFID.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "I e II, apenas.",
+    "C": "II e III, apenas.",
+    "D": "I e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "E",
+  "justificativa": "As três afirmações estão corretas e resumem o trade-off da decisão. O RFID dispensa linha de visada e lê vários transponders simultaneamente, o que permite identificar um palete inteiro na passagem por um portal (I). As etiquetas passivas retiram energia do próprio campo do leitor, o que as torna mais baratas e duráveis que as ativas (II). E o código de barras, sendo apenas impressão, tem custo unitário muito inferior — razão pela qual continua predominante em itens de baixo valor (III).",
+  "porqueErradas": {
+    "A": "As três afirmações são verdadeiras; restringir a resposta a I ignora tanto o princípio de funcionamento das etiquetas passivas quanto a questão de custo.",
+    "B": "Além de I e II, a afirmação III também procede e é justamente o principal fator que limita a adoção em massa do RFID.",
+    "C": "Omite I, que apresenta a vantagem funcional decisiva do RFID sobre o código de barras.",
+    "D": "Omite II, que descreve corretamente o princípio de funcionamento das etiquetas passivas."
+  }
+},
+{
+  "id": "INE-88",
+  "tipo": "Inédita",
+  "area": "Sistemas de Informação e Indústria 4.0",
+  "dificuldade": "Média",
+  "competencia": "Reconhecer os níveis da pirâmide de automação industrial.",
+  "enunciado": "A automação industrial é tradicionalmente representada por uma pirâmide de níveis hierárquicos, que vai do contato direto com o processo físico até o planejamento corporativo.\n\nA sequência que apresenta esses níveis, do mais baixo para o mais alto, é",
+  "alternativas": {
+    "A": "ERP, MES, SCADA, CLP, sensores e atuadores.",
+    "B": "sensores e atuadores, CLP, SCADA, MES, ERP.",
+    "C": "CLP, sensores e atuadores, MES, SCADA, ERP.",
+    "D": "SCADA, CLP, sensores e atuadores, ERP, MES.",
+    "E": "MES, ERP, SCADA, CLP, sensores e atuadores."
+  },
+  "gabarito": "B",
+  "justificativa": "A pirâmide começa no nível de campo, com sensores e atuadores em contato direto com o processo. Acima vem o nível de controle, com os controladores lógicos programáveis. Segue o nível de supervisão, com os sistemas SCADA, que monitoram e comandam o conjunto. Em seguida o nível de execução da manufatura, com o MES, que programa e acompanha a produção. No topo, o nível corporativo, com o ERP, que integra a gestão da empresa.",
+  "porqueErradas": {
+    "A": "Apresenta a sequência exatamente invertida, partindo do nível corporativo para o nível de campo.",
+    "C": "Coloca o CLP abaixo dos sensores, quando é o controlador que lê os sensores, e inverte SCADA e MES.",
+    "D": "Posiciona a supervisão abaixo do controle e do nível de campo, além de inverter MES e ERP no topo.",
+    "E": "Coloca MES e ERP na base da pirâmide, quando são justamente os níveis mais altos da hierarquia."
+  }
+},
+{
+  "id": "INE-89",
+  "tipo": "Inédita",
+  "area": "Sistemas de Informação e Indústria 4.0",
+  "dificuldade": "Média",
+  "competencia": "Distinguir computação em nuvem de computação de borda em aplicações industriais.",
+  "enunciado": "Uma indústria implantou sensores em suas prensas para monitoramento contínuo de vibração, com processamento local dos sinais para acionar parada de emergência em milissegundos, e envio periódico de dados consolidados para uma plataforma remota de análise histórica.\n\nA respeito das arquiteturas empregadas, avalie as afirmações a seguir.\n\nI. O processamento local dos sinais junto à fonte de dados caracteriza a computação de borda (edge computing), adotada quando a latência é crítica.\nII. A plataforma remota de análise histórica caracteriza a computação em nuvem, que oferece escalabilidade e reduz o investimento em infraestrutura própria.\nIII. A computação de borda substitui integralmente a necessidade de nuvem em aplicações industriais.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "I e II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "B",
+  "justificativa": "O processamento junto à fonte, com resposta em milissegundos, é exatamente a motivação da computação de borda: eliminar o tempo de ida e volta até um servidor remoto quando a latência é crítica para a segurança (I correta). Já a análise histórica de grandes volumes, sem exigência de tempo real, aproveita a escalabilidade e o modelo de custo da nuvem (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira e descreve o papel complementar da nuvem na arquitetura apresentada.",
+    "C": "A afirmação III é falsa: as duas arquiteturas são complementares, e o próprio caso descrito demonstra isso. A borda trata a resposta imediata; a nuvem, o histórico, o treinamento de modelos e a consolidação entre plantas.",
+    "D": "Inclui III, que trata como excludentes duas arquiteturas que operam em conjunto.",
+    "E": "Inclui III, incorreta: a arquitetura descrita no enunciado utiliza as duas simultaneamente."
+  }
+},
+{
+  "id": "INE-90",
+  "tipo": "Inédita",
+  "area": "Sistemas de Produção Enxuta",
+  "dificuldade": "Média",
+  "competencia": "Compreender a finalidade e a estrutura do mapeamento do fluxo de valor.",
+  "enunciado": "Uma equipe de melhoria iniciou o mapeamento do fluxo de valor (VSM) de uma família de produtos de sua fábrica.\n\nA respeito dessa ferramenta, avalie as afirmações a seguir.\n\nI. O mapa representa, em um único documento, tanto o fluxo de materiais quanto o fluxo de informações, de porta a porta.\nII. O lead time total e o tempo de agregação de valor são indicadores obtidos a partir da linha do tempo construída na base do mapa.\nIII. O mapa do estado futuro deve reproduzir fielmente o estado atual, servindo apenas para documentar o processo existente.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "I e II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "B",
+  "justificativa": "A representação simultânea dos fluxos de material e de informação é o que distingue o VSM de um fluxograma convencional (I correta). E a linha do tempo desenhada na base do mapa permite separar o lead time total do tempo que efetivamente agrega valor, revelando a proporção de desperdício do fluxo (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira e descreve o principal indicador extraído do mapa.",
+    "C": "A afirmação III contraria a finalidade da ferramenta: o mapa do estado futuro é uma proposta de transformação, construída pela aplicação dos princípios do fluxo contínuo, do sistema puxado e do nivelamento. Se reproduzisse o estado atual, não haveria projeto de melhoria.",
+    "D": "Inclui III, que reduz o VSM a um instrumento de documentação, ignorando seu propósito de transformação.",
+    "E": "Inclui III, incorreta: a comparação entre estado atual e estado futuro é o cerne do método."
+  }
+}
+]

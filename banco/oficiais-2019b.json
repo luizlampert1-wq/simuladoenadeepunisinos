@@ -1,0 +1,355 @@
+[
+{
+  "id": "2019-Q22",
+  "tipo": "Oficial",
+  "ano": 2019,
+  "referencia": "ENADE 2019 — Questão 22 (Componente Específico)",
+  "area": "Gestão de Projetos",
+  "dificuldade": "Difícil",
+  "competencia": "Determinar a duração de um projeto pelo caminho crítico com estimativas triangulares de tempo.",
+  "enunciado": "No projeto de construção de uma casa, o tempo de duração de cada etapa foi modelado por uma distribuição triangular com os tempos mínimos, os mais prováveis e os máximos. Nesse projeto, cada etapa pôde ser iniciada assim que a etapa precedente estivesse concluída.\n\nEtapa | Mínimo | Mais provável | Máximo | Precedentes\nA — fundação | 1 | 2 | 3 | —\nB — alvenaria | 3 | 4 | 5 | A\nC — elétrica e hidráulica | 2 | 3 | 4 | A\nD — acabamento externo | 3 | 5 | 6 | B e C\nE — acabamento interno | 2 | 4 | 5 | B e C\nF — decoração interior | 1 | 2 | 3 | E\n\nCom base nessas informações, o tempo de duração mínimo, o mais provável e o máximo do projeto são, respectivamente,",
+  "alternativas": {
+    "A": "7, 12 e 16.",
+    "B": "7, 12 e 17.",
+    "C": "7, 13 e 16.",
+    "D": "8, 12 e 16.",
+    "E": "8, 13 e 17."
+  },
+  "gabarito": "A",
+  "justificativa": "Os caminhos possíveis são A→B/C→D e A→B/C→E→F, sendo que D e E só iniciam após a conclusão de B e C (prevalece a maior das duas).\nMínimo: A = 1; máx(B=3, C=2) = 3; caminho por D = 1+3+3 = 7; caminho por E e F = 1+3+2+1 = 7. Logo, 7.\nMais provável: A = 2; máx(B=4, C=3) = 4; por D = 2+4+5 = 11; por E e F = 2+4+4+2 = 12. Logo, 12.\nMáximo: A = 3; máx(B=5, C=4) = 5; por D = 3+5+6 = 14; por E e F = 3+5+5+3 = 16. Logo, 16.",
+  "porqueErradas": {
+    "B": "O valor máximo de 17 resultaria de somar as durações de B e C em vez de tomar apenas a maior delas, já que as duas atividades ocorrem em paralelo após a fundação.",
+    "C": "O valor mais provável de 13 superestima o caminho crítico: o caminho A→B→E→F com tempos mais prováveis soma 2+4+4+2 = 12, e não 13.",
+    "D": "O mínimo de 8 desconsidera que C (2 dias) ocorre em paralelo com B (3 dias), de modo que apenas a maior duração condiciona o início de D e E.",
+    "E": "Erra tanto no mínimo quanto nos demais valores, por somar atividades paralelas em vez de considerar o caminho mais longo."
+  }
+},
+{
+  "id": "2019-Q23",
+  "tipo": "Oficial",
+  "ano": 2019,
+  "referencia": "ENADE 2019 — Questão 23 (Componente Específico)",
+  "area": "Sustentabilidade e Meio Ambiente",
+  "dificuldade": "Média",
+  "competencia": "Compreender a Política Nacional de Resíduos Sólidos e a evolução das estratégias de gestão ambiental.",
+  "enunciado": "O volume crescente e a complexidade dos resíduos gerados atualmente representam um sério risco para os ecossistemas e para a saúde humana. Após vinte e um anos de discussões no Congresso Nacional, a aprovação da Política Nacional de Resíduos Sólidos (PNRS) por meio da Lei n. 12.305 de 2010 marcou o início de uma forte articulação institucional entre os três entes federados (União, Estados e Municípios), o setor produtivo e a sociedade em geral na busca de soluções para os problemas na gestão dos resíduos sólidos.\n\nNesse contexto, avalie as afirmações a seguir.\n\nI. A PNRS contém instrumentos importantes tanto para permitir ao país o avanço necessário no enfrentamento dos principais problemas ambientais, sociais e econômicos decorrentes do manejo inadequado dos resíduos sólidos, quanto para promover sua gestão e sua correta destinação.\nII. A produção mais limpa (P+L) é uma estratégia mais antiga do que a política de tratamento de resíduos de fim de tubo (end of pipe).\nIII. A logística reversa de pós-consumo é apontada na PNRS como elemento norteador da gestão dos resíduos sólidos e trata de procedimentos como a reciclagem, que podem trazer benefícios ao meio ambiente.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "C",
+  "justificativa": "A afirmação I está correta: a PNRS instituiu instrumentos como os planos de resíduos sólidos, a responsabilidade compartilhada, os acordos setoriais e a logística reversa. A III também procede: a logística reversa é um dos instrumentos centrais da lei, abrangendo procedimentos de coleta, restituição e reaproveitamento, entre eles a reciclagem.",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, III também é verdadeira — a logística reversa é expressamente prevista na Lei n. 12.305/2010.",
+    "B": "A afirmação II inverte a cronologia: as soluções de fim de tubo (end of pipe), que tratam o resíduo após sua geração, são anteriores; a produção mais limpa surge depois, propondo a prevenção na origem.",
+    "D": "Inclui II, que inverte a ordem histórica das estratégias de gestão ambiental, e omite I.",
+    "E": "Inclui II, cuja cronologia está invertida em relação à evolução das abordagens de gestão ambiental."
+  }
+},
+{
+  "id": "2019-Q24",
+  "tipo": "Oficial",
+  "ano": 2019,
+  "referencia": "ENADE 2019 — Questão 24 (Componente Específico)",
+  "area": "Sistemas de Informação e Indústria 4.0",
+  "dificuldade": "Média",
+  "competencia": "Analisar os impactos competitivos das tecnologias digitais da indústria 4.0.",
+  "enunciado": "Pesquisa realizada pela Confederação Nacional da Indústria (CNI) apontou que grande parte dos setores industriais brasileiros está defasada em relação à adoção de tecnologias digitais. Tais setores estão ameaçados de ficarem para trás na corrida tecnológica devido a desvantagens competitivas referentes à quarta revolução industrial, denominada indústria 4.0. De forma geral, há uma percepção de que captar dados e saber usá-los de forma eficiente é o que gera valor, competitividade e redução de riscos nos negócios.\n\nA partir das informações apresentadas, avalie as afirmações a seguir.\n\nI. A indústria 4.0 trouxe o conceito de coleta, tratamento e mineração de dados (data mining) e tornará obsoletos os modelos de negócios tradicionais que não a adotarem.\nII. A dinâmica competitiva tende a selecionar as empresas que se adaptam melhor e mais rápido às exigências do mercado, e alguns setores industriais brasileiros podem ficar para trás nessa corrida tecnológica.\nIII. Novos modelos de negócio, como as fintechs e os bancos digitais, que operam serviços mais ágeis via internet e aplicativos de celular, têm inserido inteligência artificial no atendimento virtual aos clientes.\nIV. A computação em nuvem (cloud computing) amplia a capacidade analítica de tomada de decisão dos gestores, fortalecendo as vantagens competitivas das empresas e dos setores industriais.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e III.",
+    "B": "I e IV.",
+    "C": "II e III.",
+    "D": "I, II e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "E",
+  "justificativa": "A afirmação II reproduz o argumento central do texto sobre seleção competitiva e risco de defasagem dos setores brasileiros. A III é correta e exemplifica novos modelos de negócio digitais com uso de inteligência artificial. A IV também procede: a computação em nuvem amplia a capacidade de processamento e análise de dados, sustentando vantagens competitivas.",
+  "porqueErradas": {
+    "A": "A afirmação I contém duas impropriedades: a mineração de dados é anterior à indústria 4.0, e a previsão de que os modelos tradicionais se tornarão necessariamente obsoletos é uma generalização absoluta não sustentada pelo texto.",
+    "B": "Inclui I, com sua afirmação determinista sobre a obsolescência dos modelos tradicionais, e omite II e III.",
+    "C": "Embora II e III estejam corretas, a alternativa deixa de fora IV, que também é verdadeira quanto aos efeitos da computação em nuvem.",
+    "D": "Inclui I e omite III, invertendo o conjunto correto de afirmações."
+  }
+},
+{
+  "id": "2019-Q25",
+  "tipo": "Oficial",
+  "ano": 2019,
+  "referencia": "ENADE 2019 — Questão 25 (Componente Específico)",
+  "area": "Engenharia Econômica",
+  "dificuldade": "Média",
+  "competencia": "Identificar a Taxa Interna de Retorno a partir do perfil do Valor Presente Líquido.",
+  "figura": "2019_q25.png",
+  "enunciado": "Uma empresa está avaliando a substituição de um equipamento obsoleto por um novo, com investimento inicial de R$ 500 000,00 e benefícios esperados de R$ 20 000,00 no primeiro ano, de R$ 30 000,00 no segundo ano e de R$ 90 000,00 por ano, do terceiro ao décimo segundo ano, o que leva ao perfil de valor presente líquido (VPL) apresentado na figura acima.\n\nNessa situação, a taxa interna de retorno (TIR) do projeto de substituição do equipamento é de",
+  "alternativas": {
+    "A": "25% ao ano.",
+    "B": "20% ao ano.",
+    "C": "15% ao ano.",
+    "D": "10% ao ano.",
+    "E": "5% ao ano."
+  },
+  "gabarito": "D",
+  "justificativa": "Por definição, a Taxa Interna de Retorno é a taxa de desconto que torna o VPL igual a zero. No gráfico, a curva do VPL cruza o eixo horizontal — ou seja, intercepta o valor zero — exatamente na taxa de 10% ao ano.",
+  "porqueErradas": {
+    "A": "Em 25% a curva já se encontra em região de VPL fortemente negativo, muito além do cruzamento com o eixo.",
+    "B": "Em 20% o gráfico indica VPL de aproximadamente −R$ 200 mil, portanto negativo, e não nulo.",
+    "C": "Em 15% o VPL indicado é de aproximadamente −R$ 118 mil, ainda negativo — a curva já cruzou o eixo antes desse ponto.",
+    "E": "Em 5% o VPL é de cerca de R$ 177 mil, positivo; a TIR é a taxa em que esse valor se anula, o que ocorre adiante."
+  }
+},
+{
+  "id": "2019-Q26",
+  "tipo": "Oficial",
+  "ano": 2019,
+  "referencia": "ENADE 2019 — Questão 26 (Componente Específico)",
+  "area": "Pesquisa Operacional",
+  "dificuldade": "Difícil",
+  "competencia": "Resolver problema de mix de produção com restrições de capacidade em etapas sucessivas e limite de mercado.",
+  "enunciado": "Um gerente de produção de uma fábrica de pneus deseja definir qual é o mix de pneus grandes e pequenos para maximização do lucro. Ele dispõe das seguintes informações acerca do processo de produção da fábrica:\n\nO lucro de cada unidade de pneu pequeno é de R$ 20,00, e o de cada unidade de pneu grande, R$ 50,00. O processo de produção do pneu é realizado em duas etapas subsequentes: confecção e vulcanização. A capacidade diária máxima do processo de confecção é de 3 000 pneus pequenos, quando se confeccionam apenas pneus pequenos, ou de 2 000 pneus grandes, quando se confeccionam apenas pneus grandes, sendo possível a produção combinada, desde que respeitada a capacidade de confecção. A capacidade diária máxima do processo de vulcanização é de 2 000 pneus pequenos, quando se vulcanizam apenas pneus pequenos, ou de 1 000 pneus grandes, quando se vulcanizam apenas pneus grandes, também admitida a produção combinada. O mercado consegue absorver a totalidade da produção diária de pneus pequenos, mas absorve, no máximo, 800 pneus grandes por dia.\n\nNessa situação, considerando x1 a quantidade de pneus pequenos e x2 a quantidade de pneus grandes a serem produzidos diariamente, a opção que corresponde à solução correta do problema, na forma (x1, x2), é",
+  "alternativas": {
+    "A": "(400; 800).",
+    "B": "(400; 1 000).",
+    "C": "(1 000; 800).",
+    "D": "(1 200; 400).",
+    "E": "(0; 1 000)."
+  },
+  "gabarito": "A",
+  "justificativa": "As restrições, em forma normalizada, são: confecção — x1/3000 + x2/2000 ≤ 1; vulcanização — x1/2000 + x2/1000 ≤ 1; mercado — x2 ≤ 800. Testando a alternativa A: confecção = 400/3000 + 800/2000 = 0,13 + 0,40 = 0,53 ≤ 1 (viável); vulcanização = 400/2000 + 800/1000 = 0,20 + 0,80 = 1,00 ≤ 1 (no limite); x2 = 800 (no limite de mercado). O lucro é 400 × 20 + 800 × 50 = R$ 48 000,00, o maior entre as soluções viáveis.",
+  "porqueErradas": {
+    "B": "Inviável: 1 000 pneus grandes superam o limite de absorção do mercado, que é de 800 unidades por dia.",
+    "C": "Inviável na vulcanização: 1 000/2 000 + 800/1 000 = 1,30, ultrapassando em 30% a capacidade dessa etapa.",
+    "D": "Viável (vulcanização = 0,60 + 0,40 = 1,00), mas gera lucro de 1 200 × 20 + 400 × 50 = R$ 44 000,00, inferior ao da alternativa A, pois desloca capacidade do produto de maior margem para o de menor.",
+    "E": "Inviável: 1 000 pneus grandes excedem o limite de mercado de 800 unidades, além de desprezar totalmente a receita dos pneus pequenos."
+  }
+},
+{
+  "id": "2019-Q27",
+  "tipo": "Oficial",
+  "ano": 2019,
+  "referencia": "ENADE 2019 — Questão 27 (Componente Específico)",
+  "area": "Pesquisa Operacional",
+  "dificuldade": "Média",
+  "competencia": "Verificar viabilidade de soluções em problemas de transporte com restrições de capacidade e demanda.",
+  "enunciado": "Uma empresa possui três fábricas, localizadas em São Paulo, Manaus e Recife, as quais devem abastecer consumidores de duas regiões do Brasil: Sudeste e Nordeste.\n\nCapacidade das fábricas (milhares de unidades): São Paulo = 2 000; Manaus = 1 500; Recife = 1 000.\nDemanda dos centros consumidores (milhares de unidades): Sudeste = 2 500; Nordeste = 1 500.\n\nDefine-se a variável de decisão como xij, quantidade de produtos (em milhares de unidades) enviados da fábrica i para o centro consumidor j, em que i = 1 (São Paulo), 2 (Manaus) ou 3 (Recife) e j = 1 (Sudeste) ou 2 (Nordeste).\n\nSão, então, propostas as seguintes opções para os envios:\n• opção 1: x11 = 2 500, x21 = 0, x31 = 0, x12 = 0, x22 = 500, x32 = 1 000;\n• opção 2: x11 = 2 000, x21 = 0, x31 = 500, x12 = 0, x22 = 300, x32 = 1 200;\n• opção 3: x11 = 2 000, x21 = 500, x31 = 0, x12 = 0, x22 = 500, x32 = 1 000;\n• opção 4: x11 = 1 500, x21 = 0, x31 = 1 000, x12 = 500, x22 = 500, x32 = 0.\n\nCom base nessa situação, considerando que as demandas dos consumidores devem ser atendidas, avalie as afirmações a seguir.\n\nI. As opções 1 e 2 são inviáveis, pois nelas há extrapolação da capacidade das fábricas.\nII. A opção 3 é viável, pois todas as demandas dos consumidores são atendidas, sem que haja extrapolação da capacidade das fábricas.\nIII. A opção 4 é viável, pois todas as demandas dos consumidores são atendidas, sem que haja extrapolação da capacidade das fábricas.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "III, apenas.",
+    "C": "I e II, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "C",
+  "justificativa": "Na opção 1, São Paulo enviaria 2 500 unidades, acima de sua capacidade de 2 000. Na opção 2, Recife enviaria 500 + 1 200 = 1 700, acima de sua capacidade de 1 000 — logo, ambas são inviáveis (I correta). Na opção 3, São Paulo envia 2 000, Manaus 1 000 e Recife 1 000, todos dentro das capacidades, e as demandas são atendidas: Sudeste 2 000 + 500 = 2 500 e Nordeste 500 + 1 000 = 1 500 (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira: a opção 3 respeita todas as capacidades e atende integralmente às duas demandas.",
+    "B": "A afirmação III é falsa: na opção 4, o Nordeste recebe apenas 500 + 500 = 1 000 unidades, deixando 500 da demanda de 1 500 sem atendimento.",
+    "D": "Inclui III, que classifica erroneamente a opção 4 como viável apesar do não atendimento da demanda do Nordeste.",
+    "E": "Inclui III, incorreta pelo mesmo motivo — a opção 4 não satisfaz a restrição de demanda."
+  }
+},
+{
+  "id": "2019-Q28",
+  "tipo": "Oficial",
+  "ano": 2019,
+  "referencia": "ENADE 2019 — Questão 28 (Componente Específico)",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Difícil",
+  "competencia": "Distinguir capacidade máxima, capacidade programada e capacidade efetiva de um sistema produtivo.",
+  "enunciado": "A capacidade produtiva é um indicador fundamental para analisar o fluxo operacional de uma organização. O planejamento e o controle da capacidade de produção determinam a capacidade efetiva da operação produtiva, de forma que ela possa responder à demanda.\n\nConsidere uma empresa têxtil que pode utilizar um regime de trabalho de três turnos diários, de 8 horas cada um, nos sete dias da semana. A capacidade de produção é de 200 peças de determinado item por hora. Em uma semana, a empresa trabalhou dois turnos por dia, durante cinco dias. Os registros de produção dessa semana de trabalho apresentaram as seguintes ocorrências:\n\n• Amostragem de qualidade programada: 3 horas\n• Falta de pessoal: 4 horas\n• Manutenção preventiva programada: 4 horas\n• Nenhum trabalho programado: 3 horas\n• Falta de energia elétrica: 6 horas\n\nCom base nesses dados, avalie as afirmações a seguir.\n\nI. A capacidade máxima de produção da empresa é de 33 600 peças por semana.\nII. A capacidade programada de produção na semana avaliada foi de 16 000 peças.\nIII. A máxima produção possível na semana avaliada foi de 13 200 peças.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "A",
+  "justificativa": "A capacidade máxima (de projeto) considera a operação plena: 3 turnos × 8 h × 7 dias = 168 horas por semana, que a 200 peças/hora resultam em 33 600 peças — a afirmação I é correta.",
+  "porqueErradas": {
+    "B": "A afirmação II é falsa: o tempo efetivamente programado deve descontar as 3 horas sem trabalho programado das 80 horas do regime adotado (2 turnos × 8 h × 5 dias), resultando em 77 h × 200 = 15 400 peças, e não 16 000.",
+    "C": "A afirmação III é falsa: descontando também as paradas programadas de amostragem (3 h) e manutenção preventiva (4 h), restam 70 horas, o que corresponde a 14 000 peças — e não 13 200.",
+    "D": "Reúne as duas afirmações incorretas, que confundem o tratamento das paradas programadas e não programadas.",
+    "E": "Apenas I se sustenta; II e III apresentam valores que não correspondem ao desconto correto das paradas."
+  }
+},
+{
+  "id": "2019-Q29",
+  "tipo": "Oficial",
+  "ano": 2019,
+  "referencia": "ENADE 2019 — Questão 29 (Componente Específico)",
+  "area": "Gestão da Manutenção",
+  "dificuldade": "Média",
+  "competencia": "Calcular e interpretar os indicadores MTBF e MTTR na gestão da manutenção.",
+  "enunciado": "Em uma fábrica, a manutenção dos equipamentos é uma forma de melhoria da produtividade. Vários indicadores são importantes nesse controle, destacando-se o MTBF (Mean Time Between Failures) e o MTTR (Mean Time To Repair).\n\nUma prensa funciona diariamente em turno de 12 horas. Em um turno de trabalho, o equipamento ficou parado por 2 horas para manutenção e apresentou MTBF de 2 horas e 30 minutos.\n\nConsidere que:\nMTBF = (TD − TM) / P;\nMTTR = TM / P;\nem que TD = tempo total de disponibilidade; TM = tempo total de manutenção; P = número de paradas.\n\nCom base nos dados apresentados, avalie as afirmações a seguir.\n\nI. O MTTR da prensa foi de 180 minutos.\nII. O equipamento teve 4 paradas durante o turno de 12 horas.\nIII. Quanto maior for o MTBF e menor for o MTTR, melhor será o desempenho do equipamento.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "D",
+  "justificativa": "Com TD = 720 min e TM = 120 min, aplica-se MTBF = (720 − 120)/P = 600/P. Como o MTBF informado é 150 min (2 h 30 min), tem-se P = 600/150 = 4 paradas (II correta). A afirmação III também é correta: MTBF elevado indica maior confiabilidade e MTTR reduzido indica melhor manutenibilidade, ambos desejáveis.",
+  "porqueErradas": {
+    "A": "A afirmação I é falsa: MTTR = TM/P = 120/4 = 30 minutos, e não 180 minutos. O valor 180 não corresponde a nenhuma das grandezas do problema.",
+    "B": "Embora II esteja correta, III também é verdadeira e expressa corretamente a interpretação dos dois indicadores.",
+    "C": "Inclui I, que apresenta valor incorreto para o MTTR, e omite II.",
+    "E": "Inclui I, cujo valor de MTTR contraria o resultado da própria fórmula fornecida no enunciado."
+  }
+},
+{
+  "id": "2019-Q30",
+  "tipo": "Oficial",
+  "ano": 2019,
+  "referencia": "ENADE 2019 — Questão 30 (Componente Específico)",
+  "area": "Gestão da Qualidade",
+  "dificuldade": "Média",
+  "competencia": "Comparar a variabilidade de processos por meio de cartas de controle para valores individuais.",
+  "figura": "2019_q30.png",
+  "enunciado": "Uma fábrica dispõe na linha de produção de duas máquinas de peças plásticas injetadas. É sabido que as condições de injeção, como o tempo de resfriamento dos moldes, afetam diretamente a qualidade das peças, sobretudo no que diz respeito às propriedades mecânicas, como a resistência ao impacto. Nesse contexto, para avaliar o desempenho das máquinas, foi realizado teste de resistência ao impacto de corpos de prova produzidos em cada uma das máquinas, obtidos por amostragem aleatória. A figura acima apresenta as cartas de controle de variáveis para dados individuais, incluindo os limites superiores e inferiores de controle (LSC e LIC).\n\nNessa situação, a análise das cartas de controle indica que",
+  "alternativas": {
+    "A": "o ajuste da máquina 1 é melhor do que o da máquina 2, pois a máquina 1 produz peças que apresentam resistência ao impacto com LSC maior do que as produzidas na máquina 2.",
+    "B": "o ajuste da máquina 1 é pior do que o da máquina 2, pois a máquina 1 produz peças com valores de resistência ao impacto mais próximos do LSC e do LIC, em comparação com as produzidas na máquina 2.",
+    "C": "o ajuste da máquina 1 é pior do que o da máquina 2, pois a máquina 2 produz peças mais homogêneas do que a máquina 1.",
+    "D": "o ajuste da máquina 1 é pior do que o da máquina 2, pois a máquina 1 produz peças que, em sua maioria, apresentam resistência ao impacto que não atinge o LIC ou o LSC.",
+    "E": "o ajuste da máquina 1 é melhor do que o da máquina 2, pois a máquina 2 produz peças que apresentam maior amplitude dos valores de resistência ao impacto do que as produzidas na máquina 1."
+  },
+  "gabarito": "E",
+  "justificativa": "A amplitude dos limites de controle reflete a variabilidade natural do processo. Na máquina 1, LSC − LIC = 35,40 − 17,54 = 17,86 MPa; na máquina 2, LSC − LIC = 32,64 − 14,02 = 18,62 MPa. A máquina 2 apresenta, portanto, maior dispersão dos valores de resistência ao impacto, o que caracteriza pior ajuste — e, por consequência, melhor ajuste da máquina 1.",
+  "porqueErradas": {
+    "A": "Um LSC maior não indica melhor ajuste: os limites de controle não são especificações de qualidade, e sim reflexo da variabilidade do próprio processo.",
+    "B": "A conclusão está invertida — é a máquina 2 que apresenta maior dispersão; além disso, proximidade dos pontos em relação aos limites não é, por si só, critério de comparação entre processos distintos.",
+    "C": "Inverte a comparação: quem produz peças mais homogêneas, com menor amplitude de variação, é a máquina 1.",
+    "D": "Não atingir os limites de controle é o comportamento esperado de um processo estável — isso não caracteriza ajuste pior, e sim processo sob controle estatístico."
+  }
+},
+{
+  "id": "2019-Q31",
+  "tipo": "Oficial",
+  "ano": 2019,
+  "referencia": "ENADE 2019 — Questão 31 (Componente Específico)",
+  "area": "Gestão da Qualidade",
+  "dificuldade": "Média",
+  "competencia": "Aplicar a ferramenta SIPOC ao mapeamento de processos.",
+  "enunciado": "A norma ISO 9001:2015 foca na adoção da abordagem por processos para desenvolver, implementar e melhorar a eficácia de um Sistema de Gestão da Qualidade. Muito utilizado em metodologias Seis Sigma, o SIPOC (supplier, input, process, output e customer) é uma ferramenta para mapear processos em que os fatores que impactam diretamente a execução do trabalho são definidos e formalizados.\n\n(CARPINETTI, L. C. R.; GEROLAMO, M. C. Gestão da qualidade ISO 9001:2015. São Paulo: Atlas, 2016, adaptado.)\n\nNesse contexto, avalie as afirmações a seguir, acerca da aplicação da ferramenta SIPOC em um restaurante japonês.\n\nI. A realização da inspeção de qualidade do sushi montado está no output do SIPOC.\nII. O vendedor de peixe está no supplier, já o atum e o salmão estão no input do SIPOC.\nIII. Pessoas que procuram comida japonesa estão no customer do SIPOC.\nIV. Resíduos de peixe são posicionados como process do SIPOC.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e II.",
+    "B": "II e III.",
+    "C": "III e IV.",
+    "D": "I, III e IV.",
+    "E": "I, II e IV."
+  },
+  "gabarito": "B",
+  "justificativa": "A afirmação II está correta: o vendedor de peixe é o fornecedor (supplier) e o atum e o salmão são as entradas (inputs) do processo. A III também procede: quem consome o produto final — as pessoas que procuram comida japonesa — ocupa a posição de cliente (customer).",
+  "porqueErradas": {
+    "A": "A afirmação I é incorreta: a inspeção de qualidade é uma atividade executada dentro do processo (process), e não uma saída. O output seria o sushi pronto para consumo.",
+    "C": "A afirmação IV é incorreta: resíduos de peixe são subprodutos da transformação, classificáveis como saída (output) indesejada, e não como o processo em si.",
+    "D": "Reúne I e IV, ambas com classificação equivocada dos elementos do SIPOC, e omite II.",
+    "E": "Inclui I e IV, que posicionam erroneamente a inspeção e os resíduos nas categorias da ferramenta."
+  }
+},
+{
+  "id": "2019-Q32",
+  "tipo": "Oficial",
+  "ano": 2019,
+  "referencia": "ENADE 2019 — Questão 32 (Componente Específico)",
+  "area": "Sistemas de Informação e Indústria 4.0",
+  "dificuldade": "Média",
+  "competencia": "Compreender os eixos tecnológicos e os desafios da manufatura avançada.",
+  "enunciado": "Na transição das nações industriais para a quarta revolução industrial, potências como Alemanha, China e Estados Unidos investem na estruturação da manufatura avançada para garantir que suas economias sejam competitivas no mercado global. Essas iniciativas internacionais na conhecida indústria 4.0 apresentam relação temática com trabalhos realizados no Brasil em convergência e integração tecnológica, desenvolvimento de cadeias produtivas, recursos humanos, regulação e infraestrutura. Porém, destaque-se que os trabalhos internacionais estão concentrados na gestão da informação e do conhecimento tecnológico, na digitalização, nos sistemas ciberfísicos, na inteligência artificial (IA), na internet das coisas (IoT), na interoperabilidade, na robótica colaborativa, e em novos materiais e máquinas híbridas.\n\n(BRASIL. MDIC; MCTIC. Perspectivas de especialistas brasileiros sobre a manufatura avançada no Brasil. Brasília, 2016, adaptado.)\n\nA partir desse contexto, avalie as afirmações a seguir.\n\nI. A gestão da informação e do conhecimento tecnológico é um desafio para a integração das tecnologias nos mercados globais.\nII. A integração de sistemas de plantas industriais depende da implantação de sistemas ciberfísicos e da robótica colaborativa.\nIII. A gestão da informação e do conhecimento tecnológico engloba o entendimento estratégico dos setores por meio de análise de metadados e da criação de inteligência de mercado.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "C",
+  "justificativa": "A afirmação I é correta e está alinhada ao texto, que aponta a gestão da informação e do conhecimento tecnológico como eixo central e desafio da integração tecnológica global. A III também procede: essa gestão abrange a análise de metadados e a construção de inteligência de mercado para orientar decisões estratégicas setoriais.",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, III também é verdadeira e complementa o escopo da gestão da informação e do conhecimento tecnológico.",
+    "B": "A afirmação II é falsa por ser excessivamente restritiva: a integração de plantas industriais se apoia, sobretudo, em interoperabilidade, digitalização e padrões de comunicação — sistemas ciberfísicos e robótica colaborativa são componentes possíveis, não condições necessárias.",
+    "D": "Inclui II, que estabelece uma dependência que o texto não sustenta, e omite I.",
+    "E": "Inclui II, cuja formulação condiciona indevidamente a integração de plantas a duas tecnologias específicas."
+  }
+},
+{
+  "id": "2019-Q33",
+  "tipo": "Oficial",
+  "ano": 2019,
+  "referencia": "ENADE 2019 — Questão 33 (Componente Específico)",
+  "area": "Arranjo Físico e Layout",
+  "dificuldade": "Difícil",
+  "competencia": "Minimizar o custo de movimentação de materiais na alocação de máquinas em posições de um arranjo físico.",
+  "figura": "2019_q33.png",
+  "enunciado": "O planejamento do arranjo físico (layout) tem como objetivo garantir a maior eficiência possível na combinação dos recursos utilizados nas atividades produtivas. O custo total de um arranjo físico é dado pelo somatório de wij · kij · dij mais os custos fixos de localização, em que wij é a medida de interação entre as atividades i e j, dij a distância entre elas e kij o fator de conversão para custos.\n\nConsidere um processo produtivo que utilize seis máquinas (M1 a M6), cada uma devendo ser alocada em uma das posições do esquema a seguir, disposto em duas linhas:\n\nPosição 1 | Posição 2 | Posição 3\nPosição 4 | Posição 5 | Posição 6\n\nPor restrições de infraestrutura, as máquinas M5 e M6 têm posições predefinidas e fixas nas posições 6 e 5, respectivamente.\n\nA matriz de-para (número de paletes movimentados por turno) registra os seguintes fluxos não nulos: M1 → M3 = 10; M2 → M1 = 13; M3 → M5 = 10; M4 → M2 = 15; M5 → M6 = 9. (A matriz completa é apresentada na figura acima.)\n\nCom base nessas informações, assinale a opção que apresenta a associação (máquina, posição) que leva ao arranjo físico com custo mínimo de movimentação de materiais.",
+  "alternativas": {
+    "A": "(M3,1); (M2,2); (M4,3); (M1,4); (M5,5); (M6,6).",
+    "B": "(M2,1); (M1,2); (M3,3); (M4,4); (M6,5); (M5,6).",
+    "C": "(M4,1); (M2,2); (M1,3); (M3,4); (M6,5); (M5,6).",
+    "D": "(M1,1); (M2,2); (M4,3); (M3,4); (M6,5); (M5,6).",
+    "E": "(M1,1); (M2,2); (M4,3); (M3,4); (M5,5); (M6,6)."
+  },
+  "gabarito": "B",
+  "justificativa": "Primeiro, as alternativas devem respeitar as posições fixas: M6 na posição 5 e M5 na posição 6 — o que elimina A e E. Entre as restantes, calcula-se o custo pela soma dos fluxos multiplicados pelas distâncias retilíneas entre posições. Na alternativa B, todos os cinco fluxos ocorrem entre posições adjacentes (distância unitária): 10 + 13 + 10 + 15 + 9 = 57. Na alternativa D, os fluxos M1→M3 e M3→M5 percorrem distâncias maiores, elevando o custo para 67; na alternativa C, o custo sobe para 87. A alternativa B é, portanto, a de custo mínimo.",
+  "porqueErradas": {
+    "A": "Viola a restrição de infraestrutura: aloca M5 na posição 5 e M6 na posição 6, quando o enunciado fixa M5 na posição 6 e M6 na posição 5.",
+    "C": "Respeita as posições fixas, mas afasta as máquinas com maior interação: M1 e M3 ficam em extremos opostos do arranjo, elevando o custo total para 87.",
+    "D": "Também atende às posições fixas, porém coloca M3 e M5 distantes entre si, resultando em custo de 67, superior aos 57 da alternativa B.",
+    "E": "Viola a restrição de infraestrutura, invertendo as posições predefinidas de M5 e M6."
+  }
+},
+{
+  "id": "2019-Q34",
+  "tipo": "Oficial",
+  "ano": 2019,
+  "referencia": "ENADE 2019 — Questão 34 (Componente Específico)",
+  "area": "Logística e Cadeia de Suprimentos",
+  "dificuldade": "Média",
+  "competencia": "Comparar alternativas logísticas por meio de funções de custo fixo e variável.",
+  "enunciado": "A gestão da cadeia de suprimentos diz respeito às práticas necessárias a uma empresa para que suas operações agreguem valor ao cliente, sem desconsiderar a importância do reaproveitamento dos resíduos. Uma empresa com três fábricas de refrigerantes elaborou um planejamento para recuperar o seu maior resíduo, os vasilhames de plástico. Foi planejado, para cada fábrica, um sistema logístico de recuperação de resíduos oriundos do principal ponto de coleta.\n\nCustos para o transporte de até 30 000 vasilhames do ponto de coleta até as fábricas:\n• Cidade F: custo fixo mensal R$ 20.000,00 e custo variável unitário R$ 8,00\n• Cidade G: custo fixo mensal R$ 50.000,00 e custo variável unitário R$ 4,00\n• Cidade H: custo fixo mensal R$ 70.000,00 e custo variável unitário R$ 3,00\n\nCom base nas informações e nos dados apresentados, avalie as afirmações a seguir.\n\nI. O sistema logístico de recuperação de resíduos da fábrica situada na cidade F é o que apresenta o menor custo total para o transporte de 10 000 vasilhames.\nII. O sistema logístico de recuperação de resíduos da fábrica situada na cidade H é o que apresenta o menor custo total para o transporte de 30 000 vasilhames.\nIII. Para 25 000 vasilhames, o custo total de transporte do sistema de recuperação de resíduos é igual para as fábricas localizadas nas cidades G e H.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "B",
+  "justificativa": "Para 30 000 vasilhames: F = 20 000 + 8 × 30 000 = R$ 260 000; G = 50 000 + 4 × 30 000 = R$ 170 000; H = 70 000 + 3 × 30 000 = R$ 160 000. A cidade H apresenta o menor custo, confirmando a afirmação II.",
+  "porqueErradas": {
+    "A": "A afirmação I é falsa: para 10 000 vasilhames, F custa 20 000 + 80 000 = R$ 100 000, G custa 50 000 + 40 000 = R$ 90 000 e H custa 70 000 + 30 000 = R$ 100 000 — o menor custo é o de G, e não o de F.",
+    "C": "Reúne duas afirmações incorretas: I erra o menor custo em 10 000 unidades e III erra a igualdade em 25 000 unidades.",
+    "D": "A afirmação III é falsa: para 25 000 vasilhames, G custa 50 000 + 100 000 = R$ 150 000 e H custa 70 000 + 75 000 = R$ 145 000 — os valores não coincidem. A igualdade entre G e H ocorreria em 20 000 unidades.",
+    "E": "Apenas II se sustenta; I e III apresentam comparações de custo incorretas."
+  }
+},
+{
+  "id": "2019-Q35",
+  "tipo": "Oficial",
+  "ano": 2019,
+  "referencia": "ENADE 2019 — Questão 35 (Componente Específico)",
+  "area": "Gestão Organizacional e Estratégia",
+  "dificuldade": "Média",
+  "competencia": "Compreender a lógica do Balanced Scorecard e suas relações de causa e efeito entre perspectivas.",
+  "enunciado": "A área de gestão de pessoas está diretamente ligada à alta liderança de uma empresa, podendo interagir, de forma abrangente, com as demais áreas organizacionais. Porém, para se obter êxito na gestão estratégica, todos na empresa precisam assumir a responsabilidade de gerenciar e liderar pessoas.\n\nCom o intuito de melhorar o seu clima organizacional, uma empresa resolve utilizar o Balanced Scorecard (BSC).\n\nConsiderando-se as informações apresentadas, as perspectivas que compõem o BSC e a sua aplicação nessa empresa, é correto afirmar que",
+  "alternativas": {
+    "A": "o BSC possibilitará a cada unidade administrativa da empresa o estabelecimento de estilos de liderança únicos e distintos entre si.",
+    "B": "o desdobramento de estratégias de longo prazo para estratégias de curto prazo, por meio do BSC, induz melhorias no clima organizacional da empresa.",
+    "C": "a escolha do BSC mostra-se adequada à gestão estratégica de pessoas, pois as diversas perspectivas do BSC conduzirão, como resultado final, à perspectiva de aprendizagem e crescimento.",
+    "D": "o BSC, ao integrar os indicadores de desempenho, permitirá que a perspectiva de aprendizagem e crescimento seja organizada de forma desvinculada das demais perspectivas, o que contribuirá para a autonomia de cada unidade administrativa da empresa.",
+    "E": "o BSC, por utilizar-se de indicadores de desempenho e de relações de causa e efeito, contribuirá para o entendimento pelas unidades administrativas da empresa dos fatores-chave para a motivação dos funcionários, o que permitirá a cada unidade identificar sua contribuição no resultado final da empresa."
+  },
+  "gabarito": "E",
+  "justificativa": "O BSC articula quatro perspectivas (financeira, clientes, processos internos e aprendizagem e crescimento) por meio de relações de causa e efeito, traduzidas em mapas estratégicos e indicadores. Essa estrutura permite que cada unidade compreenda como seu desempenho contribui para o resultado global da organização e quais fatores — entre eles a motivação das pessoas — são determinantes nessa cadeia.",
+  "porqueErradas": {
+    "A": "O BSC busca alinhamento estratégico em torno de objetivos comuns; estimular estilos de liderança distintos e isolados entre unidades contraria essa finalidade.",
+    "B": "O desdobramento temporal da estratégia é característica do BSC, mas não induz por si só melhoria de clima organizacional — a relação apresentada é uma simplificação indevida.",
+    "C": "Inverte a cadeia causal: a perspectiva de aprendizagem e crescimento é a base do mapa estratégico, ponto de partida que sustenta as demais, e não o resultado final.",
+    "D": "Contraria o princípio essencial do BSC: as perspectivas são interligadas por relações de causa e efeito, não podendo a aprendizagem e crescimento ser tratada de forma desvinculada."
+  }
+}
+]

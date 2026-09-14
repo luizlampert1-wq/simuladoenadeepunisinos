@@ -1,0 +1,230 @@
+[
+{
+  "id": "2023-Q30",
+  "tipo": "Oficial",
+  "ano": 2023,
+  "referencia": "ENADE 2023 — Questão 30 (Componente Específico)",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Média",
+  "competencia": "Definir o mix de produção pelo ganho por unidade de tempo no recurso gargalo (Teoria das Restrições).",
+  "enunciado": "Em um determinado sistema de produção, quando a demanda é maior que a capacidade de processamento, tem-se um recurso gargalo (interno) que condiciona a decisão de mix de produtos. No quadro a seguir, são apresentados dados para apoiar a decisão sobre os produtos de um sistema produtivo:\n\n• Demanda mensal do produto A: 300 unidades\n• Demanda mensal do produto B: 200 unidades\n• Ganho por unidade do produto A: R$ 500,00\n• Ganho por unidade do produto B: R$ 800,00\n• Tempo de processamento por unidade do produto A no gargalo: 1 hora\n• Tempo de processamento por unidade do produto B no gargalo: 2 horas\n• Capacidade máxima mensal do gargalo do sistema produtivo: 500 horas\n\nConsiderando as informações apresentadas e os conceitos da Teoria das Restrições, assinale a opção em que o mix de produtos que maximiza economicamente a utilização da capacidade do sistema de produção corresponde, respectivamente, às seguintes unidades do produto A e do produto B.",
+  "alternativas": {
+    "A": "100 e 200.",
+    "B": "100 e 300.",
+    "C": "200 e 200.",
+    "D": "300 e 100.",
+    "E": "300 e 200."
+  },
+  "gabarito": "D",
+  "justificativa": "Pela Teoria das Restrições, o critério de decisão é o ganho por unidade de tempo no recurso gargalo. Produto A: R$ 500 ÷ 1 h = R$ 500/h. Produto B: R$ 800 ÷ 2 h = R$ 400/h. Prioriza-se A: 300 unidades consomem 300 horas. Restam 200 horas, que permitem produzir 200 ÷ 2 = 100 unidades de B. O mix ótimo é 300 de A e 100 de B, com ganho total de 300 × 500 + 100 × 800 = R$ 230 000.",
+  "porqueErradas": {
+    "A": "Consome 100 × 1 + 200 × 2 = 500 h (viável), mas gera ganho de apenas R$ 210 000, pois privilegia o produto de menor ganho por hora de gargalo.",
+    "B": "Inviável duplamente: consumiria 100 + 600 = 700 horas, acima das 500 disponíveis, e 300 unidades de B superam a demanda de mercado, que é de 200.",
+    "C": "Consumiria 200 + 400 = 600 horas, ultrapassando a capacidade de 500 horas do gargalo.",
+    "E": "Atender integralmente ambas as demandas exigiria 300 + 400 = 700 horas, muito acima da capacidade disponível."
+  }
+},
+{
+  "id": "2023-Q31",
+  "tipo": "Oficial",
+  "ano": 2023,
+  "referencia": "ENADE 2023 — Questão 31 (Componente Específico)",
+  "area": "Gestão de Estoques",
+  "dificuldade": "Média",
+  "competencia": "Compreender os determinantes e as funções do estoque de segurança.",
+  "enunciado": "O estoque de segurança corresponde a uma fração do estoque total em uma cadeia de suprimentos, afetando os custos logísticos.\n\nConsiderando os conceitos sobre estoque de segurança, analise as afirmações a seguir.\n\nI. Quanto maior a variabilidade da demanda durante o tempo de ressuprimento, maior deverá ser o estoque de segurança a ser mantido para oferecer o mesmo nível de serviço.\nII. O estoque de segurança, para um determinado nível de serviço, não acarreta custo de manutenção e armazenagem, pois ele é utilizado apenas quando a demanda esperada é excedida.\nIII. Quanto maior o nível de serviço, menor deve ser o estoque de segurança a ser mantido.\nIV. A redução na variabilidade no tempo de ressuprimento permite a redução do nível de estoque de segurança, sem prejudicar a disponibilidade do produto.\nV. Uma das funções do estoque de segurança é garantir a disponibilidade de estoque em face à incerteza na oferta e na demanda.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I, II e III.",
+    "B": "I, III e V.",
+    "C": "I, IV e V.",
+    "D": "II, III e IV.",
+    "E": "II, IV e V."
+  },
+  "gabarito": "C",
+  "justificativa": "O estoque de segurança é calculado por ES = z · σ, em que z depende do nível de serviço e σ é o desvio-padrão da demanda durante o tempo de ressuprimento. Assim, maior variabilidade exige maior estoque de segurança (I correta) e menor variabilidade permite reduzi-lo sem perda de disponibilidade (IV correta). Sua função é justamente proteger contra as incertezas de oferta e demanda (V correta).",
+  "porqueErradas": {
+    "A": "Inclui II, que ignora que todo estoque físico gera custo de manutenção e armazenagem, esteja sendo consumido ou não. Inclui também III, que inverte a relação entre nível de serviço e estoque de segurança.",
+    "B": "Inclui III, que é falsa: quanto maior o nível de serviço desejado, maior o valor de z e, portanto, maior o estoque de segurança necessário.",
+    "D": "Reúne II, III e IV, sendo apenas IV correta; II e III contrariam a teoria de gestão de estoques.",
+    "E": "Inclui II, que nega indevidamente o custo de manter estoque de segurança."
+  }
+},
+{
+  "id": "2023-Q32",
+  "tipo": "Oficial",
+  "ano": 2023,
+  "referencia": "ENADE 2023 — Questão 32 (Componente Específico)",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Difícil",
+  "competencia": "Calcular takt time, número de estações e eficiência no balanceamento de linha de montagem.",
+  "figura": "2023_q32.png",
+  "enunciado": "Determinada empresa fabricante de decodificadores para aparelhos de TV deve produzir 300 unidades desse material, por dia, para atender à demanda. Para otimizar o fluxo produtivo, o engenheiro da empresa decidiu realizar o balanceamento da linha de produção, estimando que 600 minutos por dia seria o tempo disponível para produção. A montagem do produto é composta por cinco operações (A, B, C, D e E), com durações e precedências especificadas no diagrama acima: A = 1,2 min; B = 0,7 min; C = 1,0 min; D = 0,5 min; E = 2,0 min.\n\nCom base nos dados apresentados, avalie as afirmações a seguir, relativas à referida empresa.\n\nI. O takt time do sistema produtivo para atender a demanda é igual a 2 minutos por unidade.\nII. A quantidade de estações de trabalho suficiente para balancear a linha de produção é igual a 2.\nIII. A eficiência do balanceamento da linha de produção é igual a 90%.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "C",
+  "justificativa": "O takt time é o tempo disponível dividido pela demanda: 600 min ÷ 300 unidades = 2 minutos por unidade (I correta). O tempo total de montagem é 1,2 + 0,7 + 1,0 + 0,5 + 2,0 = 5,4 minutos. O número mínimo teórico de estações é 5,4 ÷ 2 = 2,7, arredondado para cima, 3 estações. A eficiência do balanceamento é o tempo total dividido pelo produto do número de estações pelo tempo de ciclo: 5,4 ÷ (3 × 2) = 5,4 ÷ 6 = 0,90, ou 90% (III correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, III também é verdadeira — a eficiência calculada com 3 estações é exatamente 90%.",
+    "B": "A afirmação II é falsa: 2 estações forneceriam apenas 2 × 2 = 4 minutos de capacidade por ciclo, insuficientes para os 5,4 minutos de conteúdo de trabalho. São necessárias 3 estações.",
+    "D": "Inclui II, que subdimensiona a linha, tornando impossível atender à demanda dentro do takt time.",
+    "E": "Inclui II, incorreta pelo mesmo motivo: o conteúdo total de trabalho excede a capacidade de duas estações."
+  }
+},
+{
+  "id": "2023-Q33",
+  "tipo": "Oficial",
+  "ano": 2023,
+  "referencia": "ENADE 2023 — Questão 33 (Componente Específico)",
+  "area": "Mecânica dos Fluidos",
+  "dificuldade": "Difícil",
+  "competencia": "Aplicar a equação de Bernoulli e o conceito de pressão de vapor na análise de separação da coluna líquida.",
+  "figura": "2023_q33.png",
+  "enunciado": "Comparada às equações de escoamentos viscosos, a equação de movimento (Equação de Euler) empregada para escoamento incompressível e sem viscosidade é matematicamente mais simples. Uma aproximação conveniente resulta na Equação de Bernoulli: P/γ + v²/(2g) + z = constante, em que P é a pressão, γ é o peso específico do fluido, v é a velocidade de escoamento e z é a cota de altura.\n\nMuitos problemas em tubulações estão associados à velocidade de escoamento de líquidos no interior de tubos. Um dos problemas é a separação da coluna líquida ocasionada pela obstrução do escoamento causada por bolhas. Essas bolhas são formadas pelos gases dissolvidos na água, que se desprendem do líquido quando a pressão é reduzida à pressão de vapor. As bolhas tendem a aumentar de tamanho com a liberação dos gases, tornando a vazão intermitente, podendo, até mesmo, interrompê-la.\n\n(PORTO, R. M. Hidráulica básica. São Paulo: EESC-USP, 2006, adaptado.)\n\nConsidere a figura acima, que representa onde ocorre a separação da coluna líquida no tubo ascendente que transporta água a 60 °C, cuja pressão de vapor (Pv) é, aproximadamente, 19,53 kPa.\n\nPara que o problema seja contornado, a solução é",
+  "alternativas": {
+    "A": "a elevação da cota de altura z2 estipulada para o trecho 2.",
+    "B": "a redução da vazão volumétrica média do fluido em escoamento.",
+    "C": "a redução da pressão manométrica P2, imposta no trecho 2 da tubulação.",
+    "D": "a diminuição da velocidade de escoamento do fluido no trecho 1 da tubulação.",
+    "E": "o esfriamento da água em escoamento na tubulação, pois a pressão Pv diminuirá."
+  },
+  "gabarito": "E",
+  "justificativa": "A separação da coluna líquida ocorre quando a pressão absoluta no ponto mais desfavorável cai até a pressão de vapor do líquido. A pressão de vapor é fortemente dependente da temperatura: a 60 °C ela vale cerca de 19,53 kPa, enquanto a 20 °C cai para aproximadamente 2,3 kPa. Ao resfriar a água, reduz-se a pressão de vapor e amplia-se a margem entre a pressão de operação e o limiar de vaporização, eliminando a formação de bolhas.",
+  "porqueErradas": {
+    "A": "Elevar a cota z2 reduz ainda mais a pressão disponível naquele ponto, pela equação de Bernoulli — o que agrava a separação da coluna líquida em vez de evitá-la.",
+    "B": "Reduzir a vazão diminui o termo de velocidade, mas não altera o fator determinante do fenômeno, que é a relação entre a pressão no ponto crítico e a pressão de vapor do líquido.",
+    "C": "Reduzir a pressão P2 aproxima ainda mais a pressão local da pressão de vapor, favorecendo a formação de bolhas — é o oposto da solução.",
+    "D": "Diminuir a velocidade no trecho 1 tem efeito marginal; o problema se manifesta no trecho ascendente, onde a cota e a perda de carga reduzem a pressão até o valor de Pv."
+  }
+},
+{
+  "id": "2023-Q34",
+  "tipo": "Oficial",
+  "ano": 2023,
+  "referencia": "ENADE 2023 — Questão 34 (Componente Específico)",
+  "area": "Gestão da Manutenção",
+  "dificuldade": "Média",
+  "competencia": "Distinguir confiabilidade, manutenibilidade e OEE entre os indicadores da engenharia de manutenção.",
+  "enunciado": "Para garantir a eficácia da gestão da qualidade, uma organização deve determinar e aplicar critérios e métodos (incluídos monitoramento, medições e indicadores de desempenho) necessários para assegurar a operação e o controle dos seus processos.\n\n(ABNT NBR ISO 9001: Sistema de gestão da qualidade — requisitos. Rio de Janeiro: ABNT, 2015.)\n\nDada a necessidade de serem garantidas a disponibilidade e a confiabilidade de equipamentos, deve-se realizar o monitoramento da eficácia das ações da Engenharia de Manutenção por meio da utilização de indicadores de desempenho.\n\nConsiderando esses indicadores, avalie as afirmações a seguir.\n\nI. O nível de qualidade na produção é o fator que mais influencia a Eficiência Global dos Equipamentos (OEE).\nII. O Tempo Médio Entre Falhas (MTBF) é utilizado na determinação da manutenibilidade de equipamentos.\nIII. A distribuição estatística dos dados de taxa de falha pode ser dos tipos normal, exponencial ou Weibull.\nIV. O Tempo Médio para Reparar (MTTR), que indica a eficiência da ação corretiva, é utilizado na determinação da confiabilidade de equipamento.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I.",
+    "B": "III.",
+    "C": "I e II.",
+    "D": "II e IV.",
+    "E": "III e IV."
+  },
+  "gabarito": "B",
+  "justificativa": "Apenas a afirmação III está correta: as taxas de falha de equipamentos são modeladas por diferentes distribuições estatísticas, sendo a exponencial adequada à fase de falhas aleatórias, a normal às falhas por desgaste e a de Weibull uma distribuição flexível capaz de representar as três fases da curva da banheira.",
+  "porqueErradas": {
+    "A": "A afirmação I é falsa: o OEE é o produto de disponibilidade × desempenho × qualidade, e os três fatores têm peso multiplicativo equivalente — nenhum deles é, por definição, o mais influente.",
+    "C": "Inclui I, incorreta quanto ao peso relativo dos fatores do OEE, e II, que troca os conceitos: o MTBF determina a confiabilidade, não a manutenibilidade.",
+    "D": "Ambas as afirmações invertem os conceitos: o MTBF está associado à confiabilidade e o MTTR à manutenibilidade — exatamente o contrário do que se afirma.",
+    "E": "Embora III esteja correta, IV inverte o conceito: o MTTR mede a rapidez do reparo, sendo indicador de manutenibilidade, e não de confiabilidade."
+  }
+},
+{
+  "id": "2023-Q35",
+  "tipo": "Oficial",
+  "ano": 2023,
+  "referencia": "ENADE 2023 — Questão 35 (Componente Específico)",
+  "area": "Gestão da Qualidade",
+  "dificuldade": "Difícil",
+  "competencia": "Distinguir capacidade potencial (Cp) de capacidade real (Cpk) de processos.",
+  "figura": "2023_q35.png",
+  "enunciado": "As cartas de controle fornecem informações sobre o valor de parâmetros de processo e sobre o seu comportamento ao longo do tempo. Isso permite que se faça estimativa da capacidade do processo. Dessa forma, se o processo apresenta apenas variações aleatórias é possível, por meio das propriedades da curva de distribuição normal, determinar a sua capacidade.\n\n(MONTGOMERY, D. C. Introdução ao controle estatístico da qualidade. Rio de Janeiro: LTC, 2004, adaptado.)\n\nA figura acima apresenta as distribuições dos processos A e B em relação aos limites de especificação inferior (LIE) e superior (LSE).\n\nCom base na figura e considerando que o desvio padrão dos processos A e B têm o mesmo valor, avalie as afirmações a seguir, relativas aos índices de capacidade desses processos.\n\nI. Os processos A e B têm a mesma capacidade real.\nII. Os processos A e B têm a mesma capacidade potencial.\nIII. A capacidade potencial do processo B é menor que sua capacidade real.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "B",
+  "justificativa": "A capacidade potencial é medida pelo índice Cp = (LSE − LIE)/(6σ), que depende apenas da amplitude de especificação e do desvio-padrão — não da posição da média. Como ambos os processos têm o mesmo desvio-padrão e os mesmos limites de especificação, o Cp é idêntico para os dois (II correta).",
+  "porqueErradas": {
+    "A": "A afirmação I é falsa: a capacidade real (Cpk) leva em conta o descentramento da média em relação aos limites. Como A e B estão deslocados de forma diferente dentro da faixa de especificação, seus índices Cpk são distintos.",
+    "C": "Inclui I, que ignora o efeito do descentramento sobre o Cpk, e III, que inverte a relação entre os dois índices.",
+    "D": "Inclui III, que é falsa: por construção, Cpk ≤ Cp sempre — a capacidade real nunca supera a potencial, igualando-se a ela apenas quando o processo está perfeitamente centrado.",
+    "E": "As afirmações I e III contrariam, respectivamente, o efeito do descentramento e a relação matemática entre Cp e Cpk."
+  }
+},
+{
+  "id": "2023-Q36",
+  "tipo": "Oficial",
+  "ano": 2023,
+  "referencia": "ENADE 2023 — Questão 36 (Componente Específico)",
+  "area": "Ergonomia e Segurança do Trabalho",
+  "dificuldade": "Fácil",
+  "competencia": "Conhecer os requisitos de mobiliário dos postos de trabalho segundo a NR-17.",
+  "enunciado": "No desenvolvimento do trabalho manual feito na posição sentado ou que tenha de ser feito em pé, bancadas, mesas, escrivaninhas e painéis devem proporcionar ao trabalhador condições de boa postura, visualização e operação e devem atender aos seguintes requisitos mínimos: a) ter altura e características da superfície de trabalho compatíveis com o tipo de atividade, com a distância requerida dos olhos ao campo de trabalho e com a altura do assento; b) ter área de trabalho de fácil alcance e visualização pelo trabalhador; c) ter características dimensionais que possibilitem posicionamento e movimentação adequados dos segmentos corporais.\n\n(NR-17, adaptado.)\n\nAcerca dos mobiliários adequados em postos de trabalho conforme disposto na Norma Regulamentadora n. 17, avalie as afirmações a seguir.\n\nI. Os assentos utilizados em postos de trabalho devem ter altura fixa, independentemente da estatura do trabalhador e da natureza da função exercida.\nII. Os postos de trabalho, em que as atividades são realizadas em pé, devem possuir mobiliário adequado para que o trabalhador descanse no próprio posto de trabalho.\nIII. O posto de trabalho, em que a atividade puder ser executada na posição sentada, deve ser planejado ou adaptado para esta posição.\nIV. Os assentos utilizados nos postos de trabalho devem ter encosto com forma levemente adaptada ao corpo do trabalhador, para a proteção de sua região lombar.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e II.",
+    "B": "II e III.",
+    "C": "III e IV.",
+    "D": "I, II e IV.",
+    "E": "I, III e IV."
+  },
+  "gabarito": "C",
+  "justificativa": "A NR-17 estabelece que, sempre que a atividade puder ser executada na posição sentada, o posto de trabalho deve ser planejado ou adaptado para essa posição (III correta) e que os assentos devem ter encosto com forma levemente adaptada ao corpo para proteção da região lombar (IV correta).",
+  "porqueErradas": {
+    "A": "A afirmação I contraria diretamente a NR-17, que exige assentos com altura ajustável à estatura do trabalhador e à natureza da função exercida.",
+    "B": "A afirmação II é imprecisa: a norma determina a disponibilização de assentos para pausas, mas não a exigência genérica de mobiliário para descanso no próprio posto em todas as atividades em pé.",
+    "D": "Inclui I, que contraria a exigência de regulagem de altura dos assentos prevista na norma.",
+    "E": "Inclui I, incorreta pelo mesmo motivo — a altura fixa é justamente o que a NR-17 busca evitar."
+  }
+},
+{
+  "id": "2023-Q37",
+  "tipo": "Oficial",
+  "ano": 2023,
+  "referencia": "ENADE 2023 — Questão 37 (Componente Específico)",
+  "area": "Engenharia Econômica",
+  "dificuldade": "Média",
+  "competencia": "Aplicar e criticar o método do payback simples e sua variante descontada.",
+  "enunciado": "O método do payback simples considera o tempo de retorno do capital investido, quando o investidor estabelece um prazo máximo para recuperação do investimento, que servirá de padrão para a análise da viabilidade econômica do projeto. Suponha que uma empresa pretenda realizar um projeto de investimento com seis anos de duração, sendo de quatro anos o prazo estabelecido para a recuperação do capital investido. Os fluxos de caixa anuais do projeto são:\n\nAno 0: −400 000 | Ano 1: +80 000 | Ano 2: +90 000 | Ano 3: +120 000 | Ano 4: +130 000 | Ano 5: +100 000 | Ano 6: +70 000\n\nConsiderando as informações apresentadas e o método payback simples, avalie as afirmações a seguir.\n\nI. A recuperação do capital, no método payback simples, ocorrerá no prazo de até quatro anos, o que significa que o projeto deve ser aceito, pois atendeu à condição estabelecida.\nII. O método payback simples considera o valor do dinheiro no tempo, mas não a distribuição do fluxo de caixa no período de recuperação do investimento.\nIII. O método payback simples pode ser comparado a um padrão de rentabilidade como, por exemplo, o custo de oportunidade do capital investido.\nIV. O método payback simples pode ser adaptado para payback descontado, modelo que se diferencia do anterior apenas pelo fato de nele ser considerada uma taxa de atratividade ou de desconto.\nV. A adaptação de payback simples para payback descontado não resolve todos os problemas, mas introduz a taxa de desconto, direcionando-se a solução para o método da taxa interna de retorno.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e III.",
+    "B": "I e IV.",
+    "C": "II e IV.",
+    "D": "II e V.",
+    "E": "III e V."
+  },
+  "gabarito": "B",
+  "justificativa": "Acumulando os fluxos: ao final do ano 3 tem-se 80 + 90 + 120 = R$ 290 000; ao final do ano 4, 290 + 130 = R$ 420 000, valor que supera o investimento de R$ 400 000. A recuperação ocorre, portanto, dentro dos quatro anos estabelecidos, e o projeto deve ser aceito (I correta). A afirmação IV também é correta: o payback descontado difere do simples exatamente por aplicar uma taxa de desconto aos fluxos antes de acumulá-los.",
+  "porqueErradas": {
+    "A": "A afirmação III é falsa: o payback é um indicador de tempo de recuperação, não de rentabilidade — não pode ser comparado diretamente a um custo de oportunidade do capital.",
+    "C": "A afirmação II inverte a característica do método: o payback simples é justamente criticado por NÃO considerar o valor do dinheiro no tempo.",
+    "D": "Reúne II, que descreve incorretamente o método, e V, que estabelece uma relação indevida entre o payback descontado e a taxa interna de retorno.",
+    "E": "Reúne III e V, ambas incorretas quanto à natureza do indicador e à sua relação com outros métodos de análise."
+  }
+},
+{
+  "id": "2023-Q38",
+  "tipo": "Oficial",
+  "ano": 2023,
+  "referencia": "ENADE 2023 — Questão 38 (Componente Específico)",
+  "area": "Ergonomia e Segurança do Trabalho",
+  "dificuldade": "Média",
+  "competencia": "Classificar riscos ambientais na elaboração de mapa de riscos.",
+  "enunciado": "Em um esquema de uma instalação industrial, estão identificados cinco ambientes de trabalho. Para cada um desses ambientes foram identificados os riscos ambientais listados a seguir.\n\n• Ambiente A: alto ruído de máquinas e equipamentos;\n• Ambiente B: operação com eletricidade;\n• Ambiente C: radiações ionizantes;\n• Ambiente D: utilização de óleos e lubrificantes;\n• Ambiente E: postura inadequada.\n\nOs riscos mencionados para os ambientes A, B, C, D e E podem ser classificados, no processo de construção de um mapa de riscos, respectivamente, como",
+  "alternativas": {
+    "A": "físico, físico, acidente, físico e ergonômico.",
+    "B": "ergonômico, físico, químico, químico e físico.",
+    "C": "acidente, acidente, químico, químico e físico.",
+    "D": "físico, acidente, químico, ergonômico e físico.",
+    "E": "físico, acidente, físico, químico e ergonômico."
+  },
+  "gabarito": "E",
+  "justificativa": "Conforme a classificação dos riscos ambientais adotada no mapa de riscos: ruído é agente físico (A); operação com eletricidade configura risco de acidente, por envolver choque elétrico e possibilidade de incêndio (B); radiações ionizantes são agentes físicos (C); óleos e lubrificantes são agentes químicos, por exposição dérmica e a névoas e vapores (D); e postura inadequada é risco ergonômico (E).",
+  "porqueErradas": {
+    "A": "Classifica a eletricidade como risco físico e os óleos como risco físico — a eletricidade é risco de acidente e os óleos e lubrificantes são agentes químicos.",
+    "B": "Classifica o ruído como risco ergonômico e as radiações ionizantes como químico; ambos são agentes físicos. Também trata a postura inadequada como risco físico.",
+    "C": "Classifica o ruído como risco de acidente e as radiações ionizantes como químico, quando ambos são agentes físicos; além disso, trata a postura como risco físico.",
+    "D": "Classifica as radiações ionizantes como risco químico — elas são agentes físicos — e inverte a classificação dos óleos (químico) com a da postura (ergonômico)."
+  }
+}
+]

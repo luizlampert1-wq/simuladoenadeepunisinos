@@ -1,0 +1,328 @@
+[
+{
+  "id": "2019-Q09",
+  "tipo": "Oficial",
+  "ano": 2019,
+  "referencia": "ENADE 2019 — Questão 9 (Componente Específico)",
+  "area": "Desenvolvimento de Produto e Inovação",
+  "dificuldade": "Média",
+  "competencia": "Avaliar asserções sobre novos espaços de criação e ciclo de desenvolvimento de produtos e a relação entre elas.",
+  "enunciado": "Novos produtos chegam ao mercado desenvolvidos a partir de novas ideias, materiais e tecnologias. Empreendedores, em busca de oportunidades, acompanham as inovações. Paralelamente, surgem formas inovadoras de desenvolvimento do produto e da produção. Alguns produtos, antes confeccionados somente pela subtração de materiais, passaram a ser produzidos com manufatura aditiva. Termos como Internet das Coisas e Design Thinking tornaram-se expressões do dia a dia.\n\nConsiderando esse contexto, avalie as asserções a seguir e a relação proposta entre elas.\n\nI. Os novos espaços de criação e desenvolvimento estão se espalhando e se tornando mais acessíveis a cada dia, o que contribui para a alavancagem dos negócios.\n\nPORQUE\n\nII. O desenvolvimento de produtos, que abrange as fases: ideia inicial e triagem, especificações do produto, formulação de alternativas, construção do modelo ou mock-up, construção de um protótipo e aprovação, tem sido realizado em tempos totais de ciclo cada vez mais curtos.\n\nA respeito dessas asserções, assinale a opção correta.",
+  "alternativas": {
+    "A": "As asserções I e II são proposições verdadeiras, e a II é uma justificativa correta da I.",
+    "B": "As asserções I e II são proposições verdadeiras, mas a II não é uma justificativa correta da I.",
+    "C": "A asserção I é proposição verdadeira, e a II é uma proposição falsa.",
+    "D": "A asserção I é proposição falsa, e a II é uma proposição verdadeira.",
+    "E": "As asserções I e II são proposições falsas."
+  },
+  "gabarito": "B",
+  "justificativa": "As duas asserções são verdadeiras: espaços de criação como fab labs, makerspaces e incubadoras têm se disseminado (I), e os ciclos de desenvolvimento de produtos vêm se encurtando (II). Contudo, a redução do tempo de ciclo é consequência da difusão dessas tecnologias e espaços, e não a causa deles. A relação causal está invertida, de modo que II não justifica I.",
+  "porqueErradas": {
+    "A": "A asserção II descreve um efeito — ciclos mais curtos — e não a causa da disseminação dos espaços de criação; a relação causal proposta está invertida.",
+    "C": "A asserção II é verdadeira: prototipagem rápida, manufatura aditiva e ferramentas digitais efetivamente reduziram o tempo total de ciclo de desenvolvimento.",
+    "D": "A asserção I é verdadeira: a multiplicação e o barateamento de espaços de criação e prototipagem é fenômeno amplamente documentado.",
+    "E": "Ambas as asserções são verdadeiras; o que não se sustenta é apenas o nexo causal entre elas."
+  }
+},
+{
+  "id": "2019-Q10",
+  "tipo": "Oficial",
+  "ano": 2019,
+  "referencia": "ENADE 2019 — Questão 10 (Componente Específico)",
+  "area": "Cálculo e Otimização",
+  "dificuldade": "Média",
+  "competencia": "Determinar mínimo de função polinomial por derivadas em problema de custo de estocagem.",
+  "enunciado": "A gerência de produção de uma empresa fabricante de calculadoras definiu como objetivo garantir o custo mínimo de estocagem. O perfil de produção da empresa indica, por meio de dados históricos, que o custo de estoque C(x), em milhares de reais, é dado pela expressão\n\nC(x) = (1/3)·x³ − (11/2)·x² + 24x + 31\n\npara x > 0, em que x representa, em milhares, o número de calculadoras produzidas diariamente.\n\n(HOFFMANN, L. D.; BRADLEY, G. L. Cálculo: um curso moderno e suas aplicações. 11. ed. Rio de Janeiro: LTC, 2015, adaptado.)\n\nNesse contexto, o número de calculadoras produzidas por dia que minimiza o custo de estocagem é",
+  "alternativas": {
+    "A": "3 000.",
+    "B": "5 500.",
+    "C": "8 000.",
+    "D": "41 000.",
+    "E": "62 500."
+  },
+  "gabarito": "C",
+  "justificativa": "Derivando: C'(x) = x² − 11x + 24. Igualando a zero, x² − 11x + 24 = 0, cujas raízes são x = 3 e x = 8. A segunda derivada é C''(x) = 2x − 11: em x = 3, C''(3) = −5 < 0 (máximo local); em x = 8, C''(8) = 5 > 0 (mínimo local). Como x está em milhares, o mínimo ocorre em 8 000 calculadoras por dia.",
+  "porqueErradas": {
+    "A": "x = 3 também anula a derivada primeira, mas a segunda derivada é negativa nesse ponto — trata-se de um máximo local, não de um mínimo.",
+    "B": "5 500 corresponde a x = 5,5, que é o ponto de inflexão da função (onde C''(x) = 0), e não um ponto de mínimo.",
+    "D": "41 000 não é raiz da derivada; provavelmente resulta de avaliar a própria função em algum ponto em vez de resolver C'(x) = 0.",
+    "E": "62 500 está fora de qualquer solução do problema — nenhum dos pontos críticos da função corresponde a esse valor."
+  }
+},
+{
+  "id": "2019-Q11",
+  "tipo": "Oficial",
+  "ano": 2019,
+  "referencia": "ENADE 2019 — Questão 11 (Componente Específico)",
+  "area": "Pesquisa Operacional",
+  "dificuldade": "Difícil",
+  "competencia": "Executar simulação manual de sistema de filas e calcular a taxa de utilização do servidor.",
+  "enunciado": "Em uma simulação manual de um posto bancário, os tempos (em minutos) entre as chegadas de clientes sucessivos seguem a série de números aleatórios R1 (2, 5, 6, 2, 4). Os tempos (em minutos) de atendimentos de um único caixa seguem a série de números aleatórios R2 (2, 3, 2, 4, 3). Caso o cliente chegue e encontre o caixa ocupado, ele aguarda na fila até a sua vez de ser atendido. No instante 0 de simulação, que corresponde à abertura do banco, o sistema encontra-se com um único cliente, que acabou de chegar e que está iniciando seu atendimento.\n\nConsiderando essa situação, para o período de simulação, que compreende o instante 0 até o instante 20 minutos, assinale a opção que apresenta a taxa de utilização correta do caixa.",
+  "alternativas": {
+    "A": "50%.",
+    "B": "60%.",
+    "C": "70%.",
+    "D": "80%.",
+    "E": "90%."
+  },
+  "gabarito": "C",
+  "justificativa": "Construindo a linha do tempo: o cliente 1 chega em t = 0 e é atendido de 0 a 2. O cliente 2 chega em t = 2 (intervalo 2) e é atendido de 2 a 5. O cliente 3 chega em t = 7 (intervalo 5) e é atendido de 7 a 9. O cliente 4 chega em t = 13 (intervalo 6) e é atendido de 13 a 17. O cliente 5 chega em t = 15 (intervalo 2), aguarda e é atendido de 17 a 20. O caixa fica ocupado 2 + 3 + 2 + 4 + 3 = 14 minutos em um período de 20 minutos, resultando em utilização de 14/20 = 70%.",
+  "porqueErradas": {
+    "A": "50% corresponderia a 10 minutos de ocupação — valor obtido ao considerar apenas parte dos atendimentos ou ignorar a fila formada pelo quinto cliente.",
+    "B": "60% equivaleria a 12 minutos ocupados, resultado de desprezar um dos atendimentos da sequência.",
+    "D": "80% suporia 16 minutos de ocupação, valor superior à soma real dos tempos de atendimento dentro da janela de 20 minutos.",
+    "E": "90% implicaria 18 minutos ocupados, desconsiderando os intervalos de ociosidade entre 5 e 7 minutos e entre 9 e 13 minutos."
+  }
+},
+{
+  "id": "2019-Q12",
+  "tipo": "Oficial",
+  "ano": 2019,
+  "referencia": "ENADE 2019 — Questão 12 (Componente Específico)",
+  "area": "Estatística",
+  "dificuldade": "Média",
+  "competencia": "Interpretar histogramas de frequência e calcular medidas descritivas a partir de dados agrupados.",
+  "figura": "2019_q12.png",
+  "enunciado": "Uma empresa de eletrônicos portáteis, interessada em traçar um perfil de seus potenciais consumidores, realizou uma pesquisa com 30 pessoas, indagando quanto cada uma delas gastou com aparelhos eletrônicos e acessórios no último mês. Os resultados obtidos foram tratados e apresentados na forma de um histograma de frequência, conforme o apresentado na figura acima.\n\nCom base nessa situação e nos dados da figura, avalie as afirmações a seguir.\n\nI. Entre os entrevistados, a média de gastos com compra de aparelhos e acessórios eletrônicos foi superior a R$ 145,00.\nII. Entre os entrevistados, 2% gastaram entre R$ 340,00 e R$ 380,00 na compra de aparelhos e acessórios eletrônicos.\nIII. Entre os entrevistados, 40% gastaram entre R$ 100,00 e R$ 140,00 na compra de aparelhos e acessórios eletrônicos.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "A",
+  "justificativa": "Calculando a média por ponto médio de classe com as frequências do histograma (5, 9, 6, 5, 2, 1 e 2 observações, totalizando 30), obtém-se um valor da ordem de R$ 164,00, superior aos R$ 145,00 indicados — a afirmação I é correta.",
+  "porqueErradas": {
+    "B": "A classe de R$ 340,00 a R$ 380,00 contém 2 das 30 observações, o que corresponde a aproximadamente 6,7%, e não a 2%. A afirmação confunde a frequência absoluta (2 pessoas) com o percentual.",
+    "C": "Embora I esteja correta, III é falsa: a classe de R$ 100,00 a R$ 140,00 concentra 9 das 30 observações, ou seja, 30% — e não 40%.",
+    "D": "Reúne as duas afirmações incorretas, ambas decorrentes de leitura equivocada das frequências relativas do histograma.",
+    "E": "As afirmações II e III apresentam percentuais incompatíveis com as frequências mostradas no gráfico."
+  }
+},
+{
+  "id": "2019-Q13",
+  "tipo": "Oficial",
+  "ano": 2019,
+  "referencia": "ENADE 2019 — Questão 13 (Componente Específico)",
+  "area": "Desenvolvimento de Produto e Inovação",
+  "dificuldade": "Média",
+  "competencia": "Reconhecer a finalidade e as limitações de ferramentas de desenvolvimento de produto (QFD, FMEA, Pugh, Design Thinking, manufatura aditiva).",
+  "enunciado": "A inovação diz respeito ao desenvolvimento de novas soluções que atendam aos mercados ou gerem valor para a sociedade. Para auxiliar o processo de desenvolvimento de novos produtos, são aplicadas algumas ferramentas, como: QFD (Quality Function Deployment), FMEA (Failure Mode and Effect Analysis), Pugh, Design Thinking e Manufatura Aditiva.\n\n(Disponível em: www.oecd-ilibrary.org. Acesso em: 18 jun. 2019, adaptado.)\n\nA partir do tema tratado no texto, avalie as afirmações a seguir.\n\nI. O uso isolado do QFD pode gerar um produto atrativo ao cliente, porém sem confiabilidade para o exercício de todas as suas funções.\nII. O modelo proposto por Pugh analisa as etapas de desenvolvimento do produto considerando os aspectos ergonômicos.\nIII. A primeira fase do processo de Design Thinking é chamada imersão ou empatia.\nIV. A Manufatura Aditiva utiliza-se da impressão 3D para a produção customizada.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e II.",
+    "B": "II e III.",
+    "C": "III e IV.",
+    "D": "I, II e IV.",
+    "E": "I, III e IV."
+  },
+  "gabarito": "E",
+  "justificativa": "A afirmação I é correta: o QFD traduz a voz do cliente em requisitos técnicos, mas não avalia modos de falha — daí a necessidade de complementá-lo com o FMEA para assegurar confiabilidade. A III é correta: o Design Thinking inicia pela fase de imersão ou empatia, na qual se busca compreender profundamente o usuário. A IV também procede: a manufatura aditiva, por construir a peça camada a camada, é particularmente adequada à produção customizada.",
+  "porqueErradas": {
+    "A": "A afirmação II é falsa: a matriz de Pugh é uma ferramenta de seleção e convergência de conceitos, comparando alternativas frente a critérios ponderados — não se trata de um método de análise ergonômica.",
+    "B": "Inclui II, que atribui indevidamente foco ergonômico à matriz de Pugh, e omite I e IV.",
+    "C": "Embora III e IV estejam corretas, a alternativa deixa de fora I, que expressa corretamente a limitação do QFD quanto à confiabilidade.",
+    "D": "Inclui II, incorreta quanto à natureza da matriz de Pugh, e omite III."
+  }
+},
+{
+  "id": "2019-Q14",
+  "tipo": "Oficial",
+  "ano": 2019,
+  "referencia": "ENADE 2019 — Questão 14 (Componente Específico)",
+  "area": "Ergonomia e Segurança do Trabalho",
+  "dificuldade": "Média",
+  "competencia": "Relacionar margem de manobra, modos operatórios e carga de trabalho na análise ergonômica do trabalho.",
+  "enunciado": "A análise ergonômica busca adaptar as situações de trabalho às características psicofisiológicas dos trabalhadores. Conhecer a distância entre o trabalho prescrito (tarefa) e o trabalho real (atividade) é essencial nos projetos do trabalho, uma vez que essa distância pode gerar consequências danosas à produtividade e à saúde dos trabalhadores. No projeto do trabalho, é importante analisar a margem de manobra resultante da tarefa, os modos operatórios adotados na atividade e, consequentemente, a carga de trabalho.\n\n(GUÉRIN, F. et al. Compreender o trabalho para transformá-lo: a prática da ergonomia. São Paulo: Edgard Blucher, 2001, adaptado.)\n\nNesse contexto, quando se aumenta a margem de manobra,",
+  "alternativas": {
+    "A": "a carga de trabalho e os modos operatórios diminuem.",
+    "B": "a carga de trabalho e os modos operatórios aumentam.",
+    "C": "a carga de trabalho aumenta e os modos operatórios diminuem.",
+    "D": "a carga de trabalho diminui e os modos operatórios aumentam.",
+    "E": "a carga de trabalho e os modos operatórios se mantêm inalterados."
+  },
+  "gabarito": "D",
+  "justificativa": "A margem de manobra é o grau de liberdade que o trabalhador dispõe para escolher como executar a tarefa. Quanto maior essa liberdade, maior o número de modos operatórios possíveis — o trabalhador pode alternar posturas, ritmos e estratégias. Essa possibilidade de variação reduz a solicitação de um mesmo conjunto de estruturas corporais e cognitivas, diminuindo a carga de trabalho.",
+  "porqueErradas": {
+    "A": "A quantidade de modos operatórios disponíveis cresce, e não diminui, quando aumenta a liberdade de ação do trabalhador.",
+    "B": "Embora os modos operatórios aumentem, a carga de trabalho diminui — a maior possibilidade de regulação alivia a solicitação sobre o trabalhador.",
+    "C": "Inverte completamente a relação: maior margem de manobra amplia os modos operatórios e reduz a carga.",
+    "E": "A margem de manobra é justamente o parâmetro que permite ao trabalhador regular sua atividade; alterá-la necessariamente afeta modos operatórios e carga."
+  }
+},
+{
+  "id": "2019-Q15",
+  "tipo": "Oficial",
+  "ano": 2019,
+  "referencia": "ENADE 2019 — Questão 15 (Componente Específico)",
+  "area": "Gestão Organizacional e Estratégia",
+  "dificuldade": "Fácil",
+  "competencia": "Compreender as estratégias competitivas genéricas de Porter e seus escopos de atuação.",
+  "enunciado": "Atualmente, as organizações estão inseridas em ambientes com mudanças contínuas e, nesse cenário, planejar estrategicamente é uma alternativa para que se mantenham competitivas no mercado. As estratégias competitivas genéricas combinam a fonte de vantagem (baixo custo ou diferenciação) com o escopo competitivo (vários segmentos ou um segmento particular), resultando em: Liderança no custo total, Diferenciação, Enfoque em custos e Enfoque em diferenciação.\n\n(PORTER, M. E. Vantagem competitiva. 7. ed. Rio de Janeiro: Campus, 1986, adaptado.)\n\nNesse contexto, avalie as afirmações a seguir.\n\nI. Na estratégia denominada Liderança no custo total, considera-se que a organização tem um escopo amplo e atende a muitos segmentos e que suas fontes de vantagens incluem a busca de economias de escala, tecnologia patenteada e acesso preferencial a matérias-primas.\nII. Na estratégia denominada Diferenciação, a organização seleciona um ou mais atributos considerados importantes em seus segmentos-alvo, posicionando-se singularmente para satisfazer tais atributos.\nIII. Quando se utiliza da estratégia denominada Enfoque em custos, a organização procura uma vantagem de custo em seu segmento-alvo.\nIV. Na estratégia denominada Enfoque em diferenciação, a organização procura uma vantagem de diferenciação em seu segmento-alvo.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "II, apenas.",
+    "B": "I e III, apenas.",
+    "C": "III e IV, apenas.",
+    "D": "I, II e IV, apenas.",
+    "E": "I, II, III e IV."
+  },
+  "gabarito": "E",
+  "justificativa": "Todas as quatro afirmações reproduzem fielmente as definições de Porter. A liderança em custo total pressupõe escopo amplo e fontes de vantagem como economias de escala, tecnologia proprietária e acesso privilegiado a insumos (I). A diferenciação consiste em selecionar atributos valorizados e posicionar-se de modo singular para atendê-los (II). As estratégias de enfoque atuam sobre um segmento-alvo estreito, buscando vantagem de custo (III) ou de diferenciação (IV) dentro dele.",
+  "porqueErradas": {
+    "A": "Restringe indevidamente o conjunto: as demais três afirmações também descrevem corretamente as estratégias genéricas.",
+    "B": "Omite II e IV, que definem corretamente a diferenciação e o enfoque em diferenciação.",
+    "C": "Omite I e II, que descrevem corretamente as duas estratégias de escopo amplo.",
+    "D": "Omite III, que apresenta corretamente a estratégia de enfoque em custos."
+  }
+},
+{
+  "id": "2019-Q16",
+  "tipo": "Oficial",
+  "ano": 2019,
+  "referencia": "ENADE 2019 — Questão 16 (Componente Específico)",
+  "area": "Ergonomia e Segurança do Trabalho",
+  "dificuldade": "Média",
+  "competencia": "Conhecer requisitos da ISO 45001:2018 sobre planejamento operacional e resposta a emergências.",
+  "enunciado": "A ISO 45001:2018, norma de sistemas de gestão de segurança e saúde ocupacional, é uma ferramenta em que podem se apoiar organizações públicas e privadas, em casos de sinistros ou situações irregulares, como incêndios e desabamentos.\n\nConsiderando os requisitos dessa norma, avalie as afirmações a seguir.\n\nI. Essa norma, além de um certificado, é, também, uma ferramenta preditiva.\nII. A seção de planejamento e controle operacional da ISO 45001:2018 determina que as empresas certificadas planejem, implementem e controlem procedimentos para os riscos identificados.\nIII. A referida norma determina que as empresas certificadas adotem medidas de preparação e resposta a emergências.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "D",
+  "justificativa": "A ISO 45001 estabelece, no requisito de planejamento e controle operacional, que a organização planeje, implemente e controle os processos necessários para atender aos requisitos do sistema e tratar os riscos identificados (II correta). A norma também exige processos de preparação e resposta a emergências (III correta).",
+  "porqueErradas": {
+    "A": "A afirmação I é imprecisa: a ISO 45001 é uma norma de requisitos para sistema de gestão, de caráter preventivo e baseada na identificação de perigos — não é uma ferramenta preditiva no sentido técnico do termo.",
+    "B": "Embora II esteja correta, III também é verdadeira e não pode ser excluída.",
+    "C": "Inclui I, que caracteriza incorretamente a natureza da norma, e omite II, que é um de seus requisitos centrais.",
+    "E": "Inclui I, cuja caracterização da norma como ferramenta preditiva não corresponde ao que ela estabelece."
+  }
+},
+{
+  "id": "2019-Q17",
+  "tipo": "Oficial",
+  "ano": 2019,
+  "referencia": "ENADE 2019 — Questão 17 (Componente Específico)",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Média",
+  "competencia": "Identificar as variáveis pertinentes ao cálculo de previsão de demanda, capacidade e níveis de estoque.",
+  "enunciado": "A competência de uma empresa para prever cenários e planejar a produção determina a sua sobrevivência e o seu crescimento.\n\nConsiderando esse contexto, avalie as afirmações a seguir.\n\nI. São variáveis para o cálculo da previsão da demanda de uma empresa: dados históricos de vendas e de demanda, pedidos e contratos assinados, prognóstico da força de vendas, prognóstico de especialistas e tendências de mercado.\nII. São variáveis para o cálculo da capacidade de produção de uma empresa: maquinário disponível, número de funcionários e de estações de trabalho.\nIII. São variáveis para o cálculo dos níveis de estoque de uma empresa: informações sobre promoções e descontos e a confiabilidade dos equipamentos.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "II, apenas.",
+    "B": "III, apenas.",
+    "C": "I e II, apenas.",
+    "D": "I e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "C",
+  "justificativa": "A afirmação I lista corretamente as fontes clássicas de previsão de demanda, combinando métodos quantitativos (séries históricas, carteira de pedidos) e qualitativos (força de vendas, especialistas, tendências). A II também está correta: a capacidade produtiva é determinada pelos recursos disponíveis — máquinas, mão de obra e postos de trabalho.",
+  "porqueErradas": {
+    "A": "Embora II esteja correta, I também é verdadeira: as variáveis listadas são efetivamente as utilizadas na previsão de demanda.",
+    "B": "A afirmação III mistura fatores heterogêneos: promoções e descontos afetam a demanda, e a confiabilidade dos equipamentos afeta a capacidade — nenhum deles é variável direta do cálculo dos níveis de estoque, que depende de demanda, lead time e nível de serviço.",
+    "D": "Inclui III, que associa incorretamente essas variáveis ao dimensionamento de estoques, e omite II.",
+    "E": "Inclui III, que apresenta variáveis não pertinentes ao cálculo dos níveis de estoque."
+  }
+},
+{
+  "id": "2019-Q18",
+  "tipo": "Oficial",
+  "ano": 2019,
+  "referencia": "ENADE 2019 — Questão 18 (Componente Específico)",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Fácil",
+  "competencia": "Aplicar o método da média móvel ponderada na previsão de produção.",
+  "enunciado": "A tabela a seguir indica o número de pães produzidos por uma padaria em cada dia da semana.\n\n• Domingo: 2 600\n• Segunda-feira: 2 200\n• Terça-feira: 2 250\n• Quarta-feira: 2 100\n• Quinta-feira: 2 300\n• Sexta-feira: 2 450\n\nA previsão de produção de pães no sábado corresponde à média ponderada das quantidades de pães produzidos na sexta-feira, com peso de 0,5; na quinta-feira, com peso de 0,3; e na quarta-feira, com peso de 0,2.\n\nNessa situação, o número de pães produzidos no sábado está entre",
+  "alternativas": {
+    "A": "2 000 e 2 150.",
+    "B": "2 200 e 2 350.",
+    "C": "2 375 e 2 400.",
+    "D": "2 435 e 2 480.",
+    "E": "2 500 e 2 525."
+  },
+  "gabarito": "B",
+  "justificativa": "Aplicando os pesos: 0,5 × 2 450 + 0,3 × 2 300 + 0,2 × 2 100 = 1 225 + 690 + 420 = 2 335 pães. Esse valor situa-se no intervalo de 2 200 a 2 350.",
+  "porqueErradas": {
+    "A": "O intervalo de 2 000 a 2 150 ficaria abaixo até mesmo do menor valor considerado no cálculo (2 100 da quarta-feira), o que é impossível em uma média ponderada desses três dias.",
+    "C": "2 375 a 2 400 resultaria de atribuir peso maior à sexta-feira do que os 0,5 estabelecidos no enunciado.",
+    "D": "2 435 a 2 480 corresponderia praticamente ao valor da sexta-feira isolado (2 450), ignorando a ponderação dos demais dias.",
+    "E": "2 500 a 2 525 supera todos os valores da série usados no cálculo — a média ponderada nunca pode exceder o maior dos valores ponderados."
+  }
+},
+{
+  "id": "2019-Q19",
+  "tipo": "Oficial",
+  "ano": 2019,
+  "referencia": "ENADE 2019 — Questão 19 (Componente Específico)",
+  "area": "Sistemas de Produção Enxuta",
+  "dificuldade": "Média",
+  "competencia": "Compreender o funcionamento e as condições de aplicação do sistema Kanban.",
+  "enunciado": "O Just in Time (JIT), um dos pilares do Sistema Toyota de Produção, baseia-se no princípio do abastecimento de produtos e matérias-primas nas quantidades solicitadas e nos momentos adequados, ou seja, nada deve ser produzido, comprado ou transportado sem que seja necessário. Um importante subsistema do JIT é o Kanban.\n\nNesse contexto, avalie as afirmações a seguir.\n\nI. O Kanban foi criado para controlar o nível de inventário, a produção e o fornecimento de componentes e, em alguns casos, de matéria-prima.\nII. O Kanban apresenta resultados positivos quando aplicado em situações nas quais os estoques das estações de trabalho estão desbalanceados.\nIII. O e-Kanban é definido como uma variação do Kanban tradicional, em que os cartões são substituídos por sinais eletrônicos.\nIV. O sistema Kanban funciona com sistemas produtivos puxados, ou seja, sistemas cuja ordem de produção depende do cliente, interno ou externo.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e II.",
+    "B": "II e IV.",
+    "C": "III e IV.",
+    "D": "I, II e III.",
+    "E": "I, III e IV."
+  },
+  "gabarito": "E",
+  "justificativa": "A afirmação I descreve corretamente a função do Kanban como sistema de controle visual de inventário, produção e reposição de componentes. A III está correta: o e-Kanban substitui os cartões físicos por sinais eletrônicos, mantendo a mesma lógica. A IV também procede: o Kanban é o mecanismo operacional do sistema puxado, no qual a produção é autorizada pelo consumo do cliente interno ou externo.",
+  "porqueErradas": {
+    "A": "A afirmação II é falsa: o Kanban pressupõe fluxo estável e produção nivelada (heijunka). Em ambientes desbalanceados e com demanda errática, o sistema perde eficácia e pode até provocar rupturas.",
+    "B": "Inclui II, que inverte uma das condições de aplicação do Kanban, e omite I e III.",
+    "C": "Embora III e IV estejam corretas, a alternativa deixa de fora I, que descreve a própria finalidade do sistema.",
+    "D": "Inclui II, incorreta quanto às condições de aplicação, e omite IV, que caracteriza a lógica puxada."
+  }
+},
+{
+  "id": "2019-Q20",
+  "tipo": "Oficial",
+  "ano": 2019,
+  "referencia": "ENADE 2019 — Questão 20 (Componente Específico)",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Difícil",
+  "competencia": "Calcular a capacidade de um sistema produtivo em série e identificar o recurso gargalo.",
+  "enunciado": "Os vários materiais utilizados na fabricação de tijolos são extraídos e transportados até o misturador e o laminador, que deixam a mistura homogênea. Por meio de correias transportadoras, esses materiais chegam à maromba, que, em um fluxo contínuo, dá forma e corta o produto no tamanho especificado pelo cliente. Nessa etapa, os tijolos estão úmidos e ficam em uma estufa até estarem preparados para a queima no forno. O processo é, portanto: Misturador e laminador → Maromba → Estufa → Forno.\n\nUma fábrica de tijolos recebeu demanda pela produção de tijolos de 5 kg e com 25 cm de comprimento. O misturador e o laminador conseguem produzir 20 000 kg de material seco por hora. A maromba trabalha em uma velocidade máxima de 10 m/min para esse tipo de tijolo. A estufa, onde os tijolos devem repousar por 4 horas, comporta 12 000 unidades desse tipo de tijolo. O forno tem capacidade de queimar 800 tijolos em 48 minutos.\n\nConsiderando as informações apresentadas, bem como a situação descrita, avalie as asserções a seguir e a relação proposta entre elas.\n\nI. A máxima produção diária da fábrica, em um turno de 8 horas ininterruptas, é de 8 000 tijolos.\n\nPORQUE\n\nII. A capacidade da estufa está subdimensionada.\n\nA respeito dessas asserções, assinale a opção correta.",
+  "alternativas": {
+    "A": "As asserções I e II são proposições verdadeiras, e a II é uma justificativa correta da I.",
+    "B": "As asserções I e II são proposições verdadeiras, mas a II não é uma justificativa correta da I.",
+    "C": "A asserção I é uma proposição verdadeira, e a II é uma proposição falsa.",
+    "D": "A asserção I é uma proposição falsa, e a II é uma proposição verdadeira.",
+    "E": "As asserções I e II são proposições falsas."
+  },
+  "gabarito": "C",
+  "justificativa": "Calculando a capacidade horária de cada etapa: misturador/laminador = 20 000 kg/h ÷ 5 kg = 4 000 tijolos/h; maromba = 10 m/min ÷ 0,25 m = 40 tijolos/min = 2 400 tijolos/h; estufa = 12 000 unidades ÷ 4 h = 3 000 tijolos/h; forno = 800 tijolos ÷ 48 min = 1 000 tijolos/h. O gargalo é o forno, com 1 000 tijolos/h, o que resulta em 8 000 tijolos em um turno de 8 horas — a asserção I é verdadeira. A asserção II é falsa: a estufa tem capacidade de 3 000 tijolos/h, o triplo do gargalo, portanto está superdimensionada em relação ao forno.",
+  "porqueErradas": {
+    "A": "A asserção II é falsa — a estufa, com 3 000 tijolos/h, não é o recurso restritivo; o gargalo é o forno.",
+    "B": "Também pressupõe que II seja verdadeira, o que não ocorre.",
+    "D": "A asserção I é verdadeira: a capacidade do gargalo (forno) de 1 000 tijolos/h multiplicada por 8 horas resulta exatamente em 8 000 tijolos.",
+    "E": "A asserção I é verdadeira, conforme o cálculo da capacidade do recurso gargalo."
+  }
+},
+{
+  "id": "2019-Q21",
+  "tipo": "Oficial",
+  "ano": 2019,
+  "referencia": "ENADE 2019 — Questão 21 (Componente Específico)",
+  "area": "Engenharia Econômica",
+  "dificuldade": "Média",
+  "competencia": "Calcular o tempo de retorno (payback) de um investimento em eficiência energética.",
+  "enunciado": "A instalação de painéis residenciais de captação de energia solar é uma opção de investimento que permite ao usuário economia na conta de energia. Outra opção, mais tradicional, é a instalação de equipamentos que aquecem a água com energia solar, permitindo a substituição dos chuveiros elétricos, uma das maiores fontes domésticas de consumo de energia elétrica.\n\nA partir dessas informações, considere que, em uma residência, há dois chuveiros elétricos que ficam ligados duas horas por dia cada um. Esses chuveiros têm potências de 3 600 W e 4 400 W. A tarifa de consumo de energia é de R$ 0,50 por kWh, acrescida de 30% de imposto. O dono da residência, visando substituir os dois chuveiros elétricos, solicitou orçamento a uma empresa especializada na instalação de sistemas de energia solar. O orçamento recebido foi de R$ 3 000,00 e envolvia a instalação de um kit solar completo.\n\nConsiderando que o dono da residência aceitou o orçamento da empresa e que o mês possui 30 dias, assinale a opção que apresenta o tempo de recuperação do capital investido.",
+  "alternativas": {
+    "A": "21,1 meses.",
+    "B": "17,5 meses.",
+    "C": "14,2 meses.",
+    "D": "9,6 meses.",
+    "E": "6,3 meses."
+  },
+  "gabarito": "D",
+  "justificativa": "O consumo diário é (3,6 kW + 4,4 kW) × 2 h = 16 kWh. Em 30 dias: 480 kWh por mês. A tarifa efetiva é R$ 0,50 × 1,30 = R$ 0,65 por kWh, resultando em economia mensal de 480 × 0,65 = R$ 312,00. O payback simples é 3 000 ÷ 312 = 9,6 meses.",
+  "porqueErradas": {
+    "A": "21,1 meses resultaria de considerar apenas um dos chuveiros ou metade do tempo diário de uso.",
+    "B": "17,5 meses corresponderia a uma economia mensal por volta de R$ 171,00, incompatível com o consumo calculado.",
+    "C": "14,2 meses seria obtido ao ignorar o acréscimo de 30% de imposto sobre a tarifa, o que reduziria a economia mensal para R$ 240,00 — ainda assim, resultaria em 12,5 meses.",
+    "E": "6,3 meses superestimaria a economia mensal, o que exigiria um consumo muito superior aos 480 kWh efetivamente calculados."
+  }
+}
+]

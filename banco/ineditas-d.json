@@ -1,0 +1,347 @@
+[
+{
+  "id": "INE-31",
+  "tipo": "Inédita",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Média",
+  "competencia": "Distinguir as estratégias de planejamento agregado e seus efeitos sobre custos.",
+  "enunciado": "No planejamento agregado da produção, a empresa define como conciliar a capacidade disponível com a demanda prevista ao longo do horizonte de planejamento.\n\nA respeito das estratégias disponíveis, avalie as afirmações a seguir.\n\nI. Na estratégia de produção nivelada, a taxa de produção é mantida constante e as variações de demanda são absorvidas por estoques e pela carteira de pedidos.\nII. Na estratégia de acompanhamento da demanda, a capacidade é ajustada período a período, o que reduz os estoques mas eleva os custos de contratação, demissão e horas extras.\nIII. A estratégia nivelada é sempre a mais econômica, independentemente dos custos de manutenção de estoque e de alteração da força de trabalho.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "III, apenas.",
+    "C": "I e II, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "C",
+  "justificativa": "A estratégia nivelada mantém produção constante e usa o estoque como amortecedor das oscilações de demanda (I correta). A estratégia de acompanhamento faz o oposto: ajusta a capacidade à demanda de cada período, minimizando estoques ao custo de maior instabilidade da força de trabalho (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira e descreve corretamente a estratégia oposta.",
+    "B": "A afirmação III é falsa: a escolha depende da comparação entre os custos envolvidos. Se o custo de manter estoque for elevado — produtos perecíveis ou de alto valor —, a estratégia de acompanhamento pode ser mais econômica.",
+    "D": "Inclui III, que generaliza indevidamente a superioridade de uma das estratégias.",
+    "E": "Inclui III, incorreta: não existe estratégia universalmente superior no planejamento agregado."
+  }
+},
+{
+  "id": "INE-32",
+  "tipo": "Inédita",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Média",
+  "competencia": "Aplicar regras de sequenciamento e calcular medidas de desempenho da programação.",
+  "enunciado": "Quatro ordens de produção aguardam processamento em um centro de trabalho, com os seguintes tempos de processamento:\n\n• Ordem J1: 6 horas\n• Ordem J2: 2 horas\n• Ordem J3: 8 horas\n• Ordem J4: 4 horas\n\nO programador adotou a regra SPT (menor tempo de processamento primeiro). Todas as ordens estão disponíveis no instante zero e o centro processa uma ordem por vez.\n\nNessas condições, o tempo médio de fluxo das quatro ordens é de",
+  "alternativas": {
+    "A": "5 horas.",
+    "B": "8 horas.",
+    "C": "10 horas.",
+    "D": "12,5 horas.",
+    "E": "20 horas."
+  },
+  "gabarito": "C",
+  "justificativa": "Pela regra SPT, a sequência é J2 (2 h), J4 (4 h), J1 (6 h) e J3 (8 h). Os tempos de fluxo acumulados são 2, 6, 12 e 20 horas, somando 40 horas. O tempo médio de fluxo é 40 ÷ 4 = 10 horas.",
+  "porqueErradas": {
+    "A": "5 horas é a média dos tempos de processamento individuais (20 ÷ 4), e não o tempo médio de fluxo, que inclui a espera na fila.",
+    "B": "8 horas é o tempo de processamento da ordem mais longa, sem relação com a média dos tempos de fluxo.",
+    "D": "12,5 horas seria o tempo médio de fluxo caso a sequência fosse invertida (LPT): 8, 14, 18 e 20, somando 60 e resultando em 15 horas — nem esse valor corresponde à alternativa.",
+    "E": "20 horas é o tempo total de processamento de todas as ordens, ou seja, o instante de conclusão da última."
+  }
+},
+{
+  "id": "INE-33",
+  "tipo": "Inédita",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Média",
+  "competencia": "Calcular takt time e dimensionar o número de operadores de uma célula.",
+  "enunciado": "Uma célula de montagem deve produzir 640 unidades por dia, dispondo de 480 minutos diários de tempo produtivo. O conteúdo total de trabalho manual necessário para montar uma unidade é de 12 minutos.\n\nNessas condições, o takt time e o número mínimo teórico de operadores da célula são, respectivamente,",
+  "alternativas": {
+    "A": "0,75 minuto por unidade e 12 operadores.",
+    "B": "0,75 minuto por unidade e 14 operadores.",
+    "C": "0,75 minuto por unidade e 16 operadores.",
+    "D": "1,33 minuto por unidade e 9 operadores.",
+    "E": "1,33 minuto por unidade e 16 operadores."
+  },
+  "gabarito": "C",
+  "justificativa": "O takt time é o tempo disponível dividido pela demanda: 480 ÷ 640 = 0,75 minuto por unidade. O número mínimo teórico de operadores é o conteúdo total de trabalho dividido pelo takt time: 12 ÷ 0,75 = 16 operadores.",
+  "porqueErradas": {
+    "A": "O takt time está correto, mas 12 operadores corresponderia a dividir o conteúdo de trabalho por 1 minuto, e não pelo takt time de 0,75 minuto.",
+    "B": "O takt time está correto, porém 14 operadores não resulta de nenhuma das divisões pertinentes ao dimensionamento.",
+    "D": "1,33 minuto corresponde à divisão invertida (640 ÷ 480), o que não é o takt time.",
+    "E": "Acerta o número de operadores, mas apresenta o takt time invertido."
+  }
+},
+{
+  "id": "INE-34",
+  "tipo": "Inédita",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Difícil",
+  "competencia": "Aplicar o modelo da curva de aprendizagem na estimativa de tempos de produção.",
+  "enunciado": "Na montagem de um equipamento de grande porte sob encomenda, observa-se efeito de aprendizagem com taxa de 80%: cada vez que a quantidade acumulada produzida dobra, o tempo unitário de montagem cai para 80% do valor anterior.\n\nSabendo que a primeira unidade exigiu 100 horas de montagem, o tempo de montagem da oitava unidade será de",
+  "alternativas": {
+    "A": "25,6 horas.",
+    "B": "51,2 horas.",
+    "C": "64,0 horas.",
+    "D": "80,0 horas.",
+    "E": "41,0 horas."
+  },
+  "gabarito": "B",
+  "justificativa": "Da primeira à oitava unidade a quantidade dobra três vezes: 1 → 2 → 4 → 8. Aplicando a taxa de 80% a cada duplicação: 100 × 0,8 = 80 horas (2.ª unidade); 80 × 0,8 = 64 horas (4.ª unidade); 64 × 0,8 = 51,2 horas (8.ª unidade).",
+  "porqueErradas": {
+    "A": "25,6 horas resultaria de quatro duplicações, correspondendo à 16.ª unidade, e não à oitava.",
+    "C": "64,0 horas é o tempo da quarta unidade, após apenas duas duplicações.",
+    "D": "80,0 horas é o tempo da segunda unidade, após uma única duplicação.",
+    "E": "41,0 horas corresponderia aproximadamente à 10.ª ou 11.ª unidade, além do ponto solicitado."
+  }
+},
+{
+  "id": "INE-35",
+  "tipo": "Inédita",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Média",
+  "competencia": "Compor o lead time de produção a partir de seus elementos constituintes.",
+  "enunciado": "Um lote de 500 peças será processado em um centro de trabalho. Os tempos envolvidos são:\n\n• tempo de preparação (setup) do centro: 60 minutos;\n• tempo de processamento unitário: 0,8 minuto por peça;\n• tempo de movimentação do lote até o centro seguinte: 30 minutos;\n• tempo de espera em fila antes do processamento: 120 minutos.\n\nNessas condições, o lead time de produção do lote nesse centro é de",
+  "alternativas": {
+    "A": "400 minutos.",
+    "B": "490 minutos.",
+    "C": "610 minutos.",
+    "D": "700 minutos.",
+    "E": "1 000 minutos."
+  },
+  "gabarito": "C",
+  "justificativa": "O lead time de produção soma todos os elementos: espera em fila (120) + preparação (60) + processamento do lote (500 × 0,8 = 400) + movimentação (30) = 610 minutos. Note que o processamento efetivo representa apenas 400 dos 610 minutos — cerca de 66% —, sendo o restante tempo sem agregação de valor.",
+  "porqueErradas": {
+    "A": "400 minutos corresponde apenas ao tempo de processamento do lote, desconsiderando setup, fila e movimentação.",
+    "B": "490 minutos resultaria de somar processamento, setup e movimentação, esquecendo o tempo de espera em fila.",
+    "D": "700 minutos superestima o total; não há combinação dos elementos apresentados que resulte nesse valor.",
+    "E": "1 000 minutos corresponderia a um tempo de processamento unitário muito superior ao informado no enunciado."
+  }
+},
+{
+  "id": "INE-36",
+  "tipo": "Inédita",
+  "area": "Sistemas de Produção Enxuta",
+  "dificuldade": "Difícil",
+  "competencia": "Construir sequência de produção nivelada (heijunka) a partir da demanda mensal.",
+  "enunciado": "Uma linha de montagem produz três modelos, com as seguintes demandas mensais, distribuídas uniformemente ao longo de 20 dias úteis:\n\n• Modelo A: 1 200 unidades\n• Modelo B: 600 unidades\n• Modelo C: 200 unidades\n\nA empresa pretende adotar o nivelamento da produção (heijunka), produzindo diariamente a proporção correspondente de cada modelo em ciclos curtos e repetitivos.\n\nA sequência de produção que expressa corretamente esse nivelamento, repetida ao longo do dia, é",
+  "alternativas": {
+    "A": "A-A-A-A-A-A-B-B-B-C",
+    "B": "A-B-C",
+    "C": "A-A-B-C",
+    "D": "A-A-A-B-B-C",
+    "E": "A-A-A-A-B-B-C"
+  },
+  "gabarito": "A",
+  "justificativa": "As demandas diárias são 1 200 ÷ 20 = 60 unidades de A, 600 ÷ 20 = 30 de B e 200 ÷ 20 = 10 de C, o que corresponde à proporção 6 : 3 : 1. O menor ciclo que reproduz essa proporção contém 10 unidades — seis do modelo A, três do B e uma do C — e deve ser repetido 10 vezes ao longo do dia para totalizar as 100 unidades diárias.",
+  "porqueErradas": {
+    "B": "A sequência A-B-C produz os três modelos em quantidades iguais, proporção 1 : 1 : 1, incompatível com as demandas apresentadas.",
+    "C": "A proporção 2 : 1 : 1 produziria excesso de C e déficit de A em relação à demanda real.",
+    "D": "A proporção 3 : 2 : 1 não corresponde às demandas: o modelo B seria produzido em excesso.",
+    "E": "A proporção 4 : 2 : 1 aproxima-se mais, mas ainda não reproduz a razão 6 : 3 : 1 exigida pelas demandas."
+  }
+},
+{
+  "id": "INE-37",
+  "tipo": "Inédita",
+  "area": "Gestão de Estoques",
+  "dificuldade": "Difícil",
+  "competencia": "Dimensionar o estoque-alvo em sistema de revisão periódica.",
+  "enunciado": "Uma distribuidora controla determinado item por sistema de revisão periódica, com os seguintes parâmetros:\n\n• Intervalo entre revisões: 15 dias\n• Tempo de ressuprimento: 5 dias\n• Demanda diária média: 40 unidades\n• Desvio-padrão da demanda diária: 8 unidades\n• Nível de serviço adotado: 95% (z = 1,65)\n\nNo sistema de revisão periódica, o estoque-alvo cobre a demanda do intervalo de revisão somado ao tempo de ressuprimento, acrescida do estoque de segurança correspondente a esse mesmo período. O desvio-padrão da demanda no período é obtido multiplicando-se o desvio-padrão diário pela raiz quadrada do número de dias.\n\nNessas condições, o estoque-alvo é de aproximadamente",
+  "alternativas": {
+    "A": "800 unidades.",
+    "B": "859 unidades.",
+    "C": "890 unidades.",
+    "D": "960 unidades.",
+    "E": "1 000 unidades."
+  },
+  "gabarito": "B",
+  "justificativa": "O período de proteção é o intervalo de revisão mais o tempo de ressuprimento: 15 + 5 = 20 dias. A demanda média nesse período é 40 × 20 = 800 unidades. O desvio-padrão do período é 8 × √20 ≈ 8 × 4,47 = 35,8 unidades, e o estoque de segurança é 1,65 × 35,8 ≈ 59 unidades. Somando: 800 + 59 = 859 unidades.",
+  "porqueErradas": {
+    "A": "800 unidades corresponde apenas à demanda média do período de proteção, sem o estoque de segurança — o que reduziria o nível de serviço a 50%.",
+    "C": "890 unidades resultaria de um fator z superior ao indicado ou de um desvio-padrão do período calculado incorretamente.",
+    "D": "960 unidades seria obtido ao usar o desvio-padrão do período como 8 × 20 = 160, multiplicando pelo número de dias em vez de sua raiz quadrada.",
+    "E": "1 000 unidades superestima largamente o estoque-alvo, elevando desnecessariamente o custo de manutenção de estoque."
+  }
+},
+{
+  "id": "INE-38",
+  "tipo": "Inédita",
+  "area": "Gestão de Estoques",
+  "dificuldade": "Média",
+  "competencia": "Calcular e interpretar giro e cobertura de estoque.",
+  "enunciado": "Uma empresa apresentou, no último exercício, custo das mercadorias vendidas de R$ 7.200.000,00 e estoque médio de R$ 600.000,00.\n\nCom base nesses dados, avalie as afirmações a seguir.\n\nI. O giro de estoque da empresa foi de 12 vezes ao ano.\nII. A cobertura de estoque é de aproximadamente 30 dias.\nIII. Uma redução do estoque médio para R$ 400.000,00, mantido o mesmo custo das mercadorias vendidas, elevaria o giro para 18 vezes ao ano.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "I e II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "E",
+  "justificativa": "O giro é a razão entre o custo das mercadorias vendidas e o estoque médio: 7 200 000 ÷ 600 000 = 12 vezes ao ano (I correta). A cobertura é o inverso do giro no período: 360 ÷ 12 = 30 dias (II correta). Reduzindo o estoque médio para R$ 400.000,00: 7 200 000 ÷ 400 000 = 18 vezes ao ano (III correta).",
+  "porqueErradas": {
+    "A": "As três afirmações são verdadeiras; restringir a resposta a I ignora dois cálculos igualmente corretos.",
+    "B": "Além de I e II, a afirmação III também procede: o giro é inversamente proporcional ao estoque médio.",
+    "C": "Omite II, que converte corretamente o giro anual em dias de cobertura.",
+    "D": "Omite I, que apresenta o cálculo básico do giro de estoque."
+  }
+},
+{
+  "id": "INE-39",
+  "tipo": "Inédita",
+  "area": "Gestão de Estoques",
+  "dificuldade": "Fácil",
+  "competencia": "Calcular o ponto de pedido em sistema de revisão contínua.",
+  "enunciado": "Uma fábrica controla determinado insumo pelo sistema de revisão contínua. A demanda média é de 50 unidades por dia, o tempo de ressuprimento é de 8 dias e a empresa mantém estoque de segurança de 120 unidades.\n\nNessas condições, o ponto de pedido do insumo é de",
+  "alternativas": {
+    "A": "400 unidades.",
+    "B": "470 unidades.",
+    "C": "520 unidades.",
+    "D": "560 unidades.",
+    "E": "640 unidades."
+  },
+  "gabarito": "C",
+  "justificativa": "O ponto de pedido é a demanda esperada durante o tempo de ressuprimento somada ao estoque de segurança: (50 × 8) + 120 = 400 + 120 = 520 unidades. Ao atingir esse nível, o pedido deve ser emitido para que a reposição chegue antes do esgotamento.",
+  "porqueErradas": {
+    "A": "400 unidades corresponde apenas à demanda durante o tempo de ressuprimento, sem a proteção do estoque de segurança.",
+    "B": "470 unidades não decorre de nenhuma combinação correta dos dados apresentados.",
+    "D": "560 unidades resultaria de um estoque de segurança de 160 unidades, valor diferente do informado.",
+    "E": "640 unidades corresponderia a um tempo de ressuprimento de aproximadamente 10 dias, e não de 8."
+  }
+},
+{
+  "id": "INE-40",
+  "tipo": "Inédita",
+  "area": "Gestão de Estoques",
+  "dificuldade": "Média",
+  "competencia": "Classificar os custos associados à gestão de estoques.",
+  "enunciado": "A gestão de estoques envolve o equilíbrio entre diferentes categorias de custo, que se comportam de maneira distinta em relação ao tamanho do lote.\n\nA respeito dessas categorias, avalie as afirmações a seguir.\n\nI. O custo de pedido abrange as despesas de emissão, acompanhamento, transporte e recebimento de cada pedido, e é proporcional ao número de pedidos emitidos no período.\nII. O custo de armazenagem abrange o custo de oportunidade do capital imobilizado, seguros, obsolescência, perdas e ocupação de espaço.\nIII. O custo de falta abrange vendas perdidas, multas contratuais, paradas de produção e deterioração da imagem junto ao cliente.\nIV. O custo de aquisição varia com o tamanho do lote mesmo quando o preço unitário de compra é constante.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e IV.",
+    "B": "II e IV.",
+    "C": "I, II e III.",
+    "D": "I, III e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "C",
+  "justificativa": "As três primeiras afirmações descrevem corretamente as categorias: o custo de pedido cresce com o número de pedidos, ou seja, cai quando o lote aumenta (I); o custo de armazenagem cresce com o estoque médio, ou seja, sobe quando o lote aumenta (II); e o custo de falta reúne as consequências do não atendimento (III). É a oposição entre I e II que origina o lote econômico.",
+  "porqueErradas": {
+    "A": "A afirmação IV é falsa: com preço unitário constante, o custo de aquisição anual é o produto da demanda pelo preço, valor que independe do tamanho do lote — razão pela qual esse termo não afeta o cálculo do lote econômico.",
+    "B": "Inclui IV, incorreta, e omite I e III.",
+    "D": "Inclui IV, que atribui ao custo de aquisição uma dependência do lote que só existiria com descontos por quantidade.",
+    "E": "Inclui IV, incorreta, e deixa de fora I, que caracteriza o custo de pedido."
+  }
+},
+{
+  "id": "INE-41",
+  "tipo": "Inédita",
+  "area": "Logística e Cadeia de Suprimentos",
+  "dificuldade": "Média",
+  "competencia": "Calcular e interpretar indicadores de nível de serviço logístico.",
+  "enunciado": "Uma distribuidora processou 2 000 pedidos em determinado mês. Desses, 1 840 foram entregues completos, sem avarias e dentro do prazo acordado com o cliente.\n\nCom base nessa situação, avalie as afirmações a seguir.\n\nI. O indicador OTIF (On Time In Full) do mês foi de 92%.\nII. O OTIF combina pontualidade e integridade do pedido, sendo por isso mais exigente do que cada um desses critérios isoladamente.\nIII. Um pedido entregue dentro do prazo, porém com quantidade incompleta, é contabilizado como atendido no cálculo do OTIF.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "I e II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "B",
+  "justificativa": "O OTIF é a razão entre pedidos perfeitos e pedidos totais: 1 840 ÷ 2 000 = 0,92, ou seja, 92% (I correta). Por exigir simultaneamente prazo e integridade, o indicador é necessariamente menor ou igual a cada critério isolado — daí ser mais exigente (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira e explica por que o OTIF é um indicador mais rigoroso que a simples pontualidade.",
+    "C": "A afirmação III contraria a definição do indicador: o pedido só é computado como atendido se cumprir ambos os critérios — no prazo (on time) e completo (in full).",
+    "D": "Inclui III, que desconsidera o componente in full do indicador.",
+    "E": "Inclui III, incorreta: um pedido incompleto não é contabilizado como atendido no OTIF."
+  }
+},
+{
+  "id": "INE-42",
+  "tipo": "Inédita",
+  "area": "Logística e Cadeia de Suprimentos",
+  "dificuldade": "Fácil",
+  "competencia": "Identificar configurações operacionais de centros de distribuição.",
+  "enunciado": "Uma rede varejista reestruturou seu centro de distribuição. As cargas recebidas dos fornecedores passaram a ser desconsolidadas na doca de recebimento, separadas por loja de destino e reexpedidas em até 12 horas, sem que os produtos sejam endereçados a posições de estocagem.\n\nEssa configuração operacional é denominada",
+  "alternativas": {
+    "A": "cross-docking.",
+    "B": "milk run.",
+    "C": "consolidação de cargas em armazém.",
+    "D": "postponement.",
+    "E": "estoque gerenciado pelo fornecedor (VMI)."
+  },
+  "gabarito": "A",
+  "justificativa": "O cross-docking caracteriza-se exatamente pela passagem direta da doca de recebimento para a doca de expedição, com desconsolidação e reconsolidação das cargas por destino, sem armazenagem intermediária. Elimina-se o endereçamento, a estocagem e a separação posterior, reduzindo custo de manutenção de estoque e tempo de ciclo.",
+  "porqueErradas": {
+    "B": "O milk run é uma estratégia de coleta programada, na qual um veículo percorre vários fornecedores recolhendo cargas fracionadas; diz respeito ao transporte, e não à operação interna do centro de distribuição.",
+    "C": "A consolidação em armazém pressupõe justamente a armazenagem das cargas até que se forme volume suficiente para expedição — o oposto do descrito.",
+    "D": "O postponement é o adiamento deliberado da customização final do produto até que a demanda se confirme, estratégia relativa à configuração do produto.",
+    "E": "No VMI o fornecedor assume a responsabilidade de repor os estoques do cliente; trata-se de um modelo de gestão de reposição, não de uma operação de doca."
+  }
+},
+{
+  "id": "INE-43",
+  "tipo": "Inédita",
+  "area": "Logística e Cadeia de Suprimentos",
+  "dificuldade": "Média",
+  "competencia": "Compreender as causas e as formas de mitigação do efeito chicote na cadeia de suprimentos.",
+  "enunciado": "Em uma cadeia de suprimentos de bens de consumo, observou-se que pequenas variações na demanda do consumidor final produziam oscilações cada vez maiores nos pedidos colocados junto ao varejo, ao distribuidor e, por fim, ao fabricante.\n\nA respeito desse fenômeno, avalie as afirmações a seguir.\n\nI. Trata-se do efeito chicote, caracterizado pela amplificação da variabilidade dos pedidos à medida que se avança para montante na cadeia.\nII. Entre suas causas estão a atualização sucessiva de previsões, a formação de lotes de pedido, as flutuações de preço e as promoções, e o racionamento em situações de escassez.\nIII. O compartilhamento de informações de demanda real com os elos a montante tende a reduzir a intensidade do efeito.\nIV. O efeito chicote é mais intenso nas cadeias em que os elos compartilham dados de ponto de venda em tempo real.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e IV.",
+    "B": "II e IV.",
+    "C": "I, II e III.",
+    "D": "I, III e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "C",
+  "justificativa": "A amplificação progressiva da variabilidade rumo ao fornecedor é a definição do efeito chicote (I correta). Suas quatro causas clássicas são exatamente as listadas em II. E, como o fenômeno decorre em boa parte da falta de visibilidade da demanda real, o compartilhamento de informações é a principal medida de mitigação (III correta).",
+  "porqueErradas": {
+    "A": "A afirmação IV inverte a relação: compartilhar dados de ponto de venda em tempo real reduz o efeito chicote, pois elimina a necessidade de cada elo inferir a demanda a partir dos pedidos do elo seguinte.",
+    "B": "Inclui IV, incorreta, e omite I e III.",
+    "D": "Inclui IV, que contradiz diretamente a afirmação III, correta na mesma alternativa.",
+    "E": "Inclui IV, incorreta, e deixa de fora I, que define o fenômeno."
+  }
+},
+{
+  "id": "INE-44",
+  "tipo": "Inédita",
+  "area": "Logística e Cadeia de Suprimentos",
+  "dificuldade": "Média",
+  "competencia": "Aplicar o método do centro de gravidade na localização de instalações.",
+  "enunciado": "Uma empresa avalia a localização de um novo centro de distribuição que atenderá três mercados, cujas coordenadas em um plano cartesiano e demandas mensais são:\n\nMercado | Coordenada x | Coordenada y | Demanda (t/mês)\nM1 | 10 | 20 | 300\nM2 | 30 | 40 | 500\nM3 | 50 | 10 | 200\n\nPelo método do centro de gravidade, a localização é obtida pela média das coordenadas ponderada pelas demandas.\n\nNessas condições, as coordenadas (x, y) do centro de distribuição são",
+  "alternativas": {
+    "A": "(26; 22).",
+    "B": "(28; 28).",
+    "C": "(30; 23).",
+    "D": "(30; 30).",
+    "E": "(33; 25)."
+  },
+  "gabarito": "B",
+  "justificativa": "A demanda total é 300 + 500 + 200 = 1 000 t/mês. Para a coordenada x: (10 × 300 + 30 × 500 + 50 × 200) ÷ 1 000 = (3 000 + 15 000 + 10 000) ÷ 1 000 = 28. Para a coordenada y: (20 × 300 + 40 × 500 + 10 × 200) ÷ 1 000 = (6 000 + 20 000 + 2 000) ÷ 1 000 = 28. O centro de gravidade situa-se, portanto, em (28; 28).",
+  "porqueErradas": {
+    "A": "(26; 22) não corresponde à ponderação pelas demandas; aproxima-se de uma média deslocada em favor do mercado M1.",
+    "C": "(30; 23) resultaria de trocar os pesos entre os mercados ou de usar médias simples em uma das coordenadas.",
+    "D": "(30; 30) corresponde à média aritmética simples das coordenadas dos três mercados, ignorando a ponderação por demanda.",
+    "E": "(33; 25) atribuiria peso excessivo ao mercado M3, cuja demanda é a menor das três."
+  }
+},
+{
+  "id": "INE-45",
+  "tipo": "Inédita",
+  "area": "Logística e Cadeia de Suprimentos",
+  "dificuldade": "Média",
+  "competencia": "Identificar o fator limitante no carregamento de veículos (peso versus cubagem).",
+  "enunciado": "Uma carreta tem capacidade máxima de 28 toneladas de carga e 90 m³ de volume útil. Pretende-se transportar 1 200 caixas idênticas, cada uma com 20 kg e 0,08 m³.\n\nCom base nesses dados, verifica-se que o carregamento é limitado",
+  "alternativas": {
+    "A": "pelo peso, havendo ainda volume disponível para acréscimo de carga.",
+    "B": "pela cubagem, sendo necessário reduzir a carga para 1 125 caixas.",
+    "C": "nem pelo peso nem pela cubagem, pois a carga cabe integralmente no veículo.",
+    "D": "pelo peso, sendo necessário reduzir a carga para 1 400 caixas.",
+    "E": "pela cubagem, sendo necessário reduzir a carga para 1 000 caixas."
+  },
+  "gabarito": "B",
+  "justificativa": "O peso total é 1 200 × 20 kg = 24 000 kg = 24 toneladas, dentro do limite de 28 toneladas. Já o volume total é 1 200 × 0,08 m³ = 96 m³, acima dos 90 m³ disponíveis. O fator limitante é, portanto, a cubagem. A quantidade máxima transportável é 90 ÷ 0,08 = 1 125 caixas — carga de baixa densidade, em que o veículo \"cuba\" antes de atingir o peso máximo.",
+  "porqueErradas": {
+    "A": "O peso de 24 toneladas está abaixo do limite de 28 toneladas; não é o peso que restringe o carregamento.",
+    "C": "A carga não cabe: seu volume de 96 m³ excede em 6 m³ o espaço útil de 90 m³ do veículo.",
+    "D": "Além de identificar o fator limitante errado, 1 400 caixas pesariam 28 toneladas — exatamente o limite de peso —, mas ocupariam 112 m³, muito além do volume disponível.",
+    "E": "Identifica corretamente a cubagem como restrição, mas subestima a capacidade: 1 000 caixas ocupariam apenas 80 m³, deixando 10 m³ ociosos."
+  }
+}
+]

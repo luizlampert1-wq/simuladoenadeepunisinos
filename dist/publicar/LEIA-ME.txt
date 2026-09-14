@@ -1,0 +1,33 @@
+SIMULADO ENADE - ENGENHARIA DE PRODUCAO
+Pasta pronta para publicacao na internet
+
+Esta pasta contem UM unico arquivo: index.html (2,3 MB).
+Ele e autossuficiente - questoes, figuras, estilos e codigo estao todos dentro dele.
+Nao precisa de servidor, banco de dados nem internet para funcionar.
+
+COMO PUBLICAR (escolha uma opcao)
+
+1) NETLIFY DROP - mais rapido, sem instalar nada
+   - Acesse: https://app.netlify.com/drop
+   - Arraste ESTA PASTA inteira para a area indicada
+   - Em segundos aparece um link publico, ex.: https://nome-aleatorio.netlify.app
+   - Qualquer pessoa abre esse link, sem login
+   - Crie uma conta gratuita se quiser manter o link permanente e trocar o nome
+
+2) GITHUB PAGES - gratuito e permanente
+   - Crie um repositorio publico no github.com
+   - Envie o arquivo index.html para a raiz do repositorio
+   - Settings > Pages > Source: branch main, pasta / (root) > Save
+   - O link sai como https://SEU-USUARIO.github.io/NOME-DO-REPO/
+
+3) MOODLE DA UNISINOS
+   - Envie index.html como recurso do tipo Arquivo na sua disciplina
+   - Os alunos abrem direto pelo ambiente, ja autenticados
+
+4) GOOGLE SITES / QUALQUER HOSPEDAGEM
+   - Basta subir o index.html; funciona em qualquer servidor de arquivos estaticos
+
+PARA ATUALIZAR DEPOIS
+   - Rode "python build.py" na pasta do projeto
+   - Copie dist/simulado-enade-ep.html por cima deste index.html
+   - Republique (no Netlify, arraste a pasta de novo)

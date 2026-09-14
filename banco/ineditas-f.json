@@ -1,0 +1,347 @@
+[
+{
+  "id": "INE-61",
+  "tipo": "Inédita",
+  "area": "Engenharia Econômica",
+  "dificuldade": "Fácil",
+  "competencia": "Aplicar o regime de juros compostos no cálculo de montantes.",
+  "enunciado": "Uma empresa aplicou R$ 10.000,00 em um fundo que rende 8% ao ano, em regime de juros compostos, durante 3 anos, sem aportes ou resgates intermediários.\n\nConsiderando que (1,08)³ = 1,259712, o montante acumulado ao final do período é de",
+  "alternativas": {
+    "A": "R$ 12.400,00.",
+    "B": "R$ 12.597,12.",
+    "C": "R$ 12.800,00.",
+    "D": "R$ 13.000,00.",
+    "E": "R$ 13.604,89."
+  },
+  "gabarito": "B",
+  "justificativa": "No regime de juros compostos, o montante é M = C · (1 + i)ⁿ = 10 000 × (1,08)³ = 10 000 × 1,259712 = R$ 12.597,12.",
+  "porqueErradas": {
+    "A": "R$ 12.400,00 corresponde ao regime de juros simples: 10 000 + 3 × 800 = 12 400, o que desconsidera a capitalização dos juros sobre juros.",
+    "C": "R$ 12.800,00 não decorre de nenhum dos dois regimes com os dados apresentados.",
+    "D": "R$ 13.000,00 corresponderia a um rendimento acumulado de 30%, acima dos 25,97% efetivamente obtidos em três anos a 8% ao ano.",
+    "E": "R$ 13.604,89 corresponde a (1,08)⁴, ou seja, a quatro anos de aplicação, e não a três."
+  }
+},
+{
+  "id": "INE-62",
+  "tipo": "Inédita",
+  "area": "Engenharia Econômica",
+  "dificuldade": "Média",
+  "competencia": "Converter taxa nominal em taxa efetiva.",
+  "enunciado": "Uma instituição financeira oferece uma linha de crédito com taxa nominal de 24% ao ano, capitalizada mensalmente.\n\nConsiderando que (1,02)¹² ≈ 1,2682, a taxa efetiva anual dessa operação é de aproximadamente",
+  "alternativas": {
+    "A": "24,00% ao ano.",
+    "B": "24,50% ao ano.",
+    "C": "26,82% ao ano.",
+    "D": "28,00% ao ano.",
+    "E": "30,00% ao ano."
+  },
+  "gabarito": "C",
+  "justificativa": "A taxa nominal de 24% ao ano capitalizada mensalmente corresponde a 24% ÷ 12 = 2% ao mês. A taxa efetiva anual é obtida pela capitalização dessa taxa ao longo dos doze meses: (1,02)¹² − 1 = 1,2682 − 1 = 0,2682, ou seja, 26,82% ao ano.",
+  "porqueErradas": {
+    "A": "24,00% é a taxa nominal declarada, que só coincidiria com a efetiva se a capitalização fosse anual.",
+    "B": "24,50% subestima o efeito da capitalização mensal ao longo de doze períodos.",
+    "D": "28,00% superestima o resultado; esse valor exigiria taxa mensal superior a 2%.",
+    "E": "30,00% corresponderia a uma taxa mensal de aproximadamente 2,21%, acima da praticada na operação."
+  }
+},
+{
+  "id": "INE-63",
+  "tipo": "Inédita",
+  "area": "Engenharia Econômica",
+  "dificuldade": "Fácil",
+  "competencia": "Calcular a depreciação de ativos pelo método linear.",
+  "enunciado": "Uma indústria adquiriu um equipamento por R$ 240.000,00, com vida útil estimada em 8 anos e valor residual previsto de R$ 40.000,00 ao final desse período.\n\nAdotando o método linear, a depreciação anual do equipamento é de",
+  "alternativas": {
+    "A": "R$ 20.000,00.",
+    "B": "R$ 25.000,00.",
+    "C": "R$ 30.000,00.",
+    "D": "R$ 35.000,00.",
+    "E": "R$ 40.000,00."
+  },
+  "gabarito": "B",
+  "justificativa": "No método linear, a depreciação anual é a diferença entre o valor de aquisição e o valor residual, dividida pela vida útil: (240 000 − 40 000) ÷ 8 = 200 000 ÷ 8 = R$ 25.000,00 por ano.",
+  "porqueErradas": {
+    "A": "R$ 20.000,00 resultaria de desconsiderar o valor residual, depreciando indevidamente apenas parte do valor: 240 000 ÷ 12 anos, prazo que também não corresponde ao informado.",
+    "C": "R$ 30.000,00 corresponderia a depreciar o valor integral de aquisição (240 000 ÷ 8), ignorando que R$ 40.000,00 permanecem como valor residual.",
+    "D": "R$ 35.000,00 não decorre de nenhuma combinação correta dos dados apresentados.",
+    "E": "R$ 40.000,00 é o próprio valor residual do equipamento, não a parcela anual de depreciação."
+  }
+},
+{
+  "id": "INE-64",
+  "tipo": "Inédita",
+  "area": "Engenharia Econômica",
+  "dificuldade": "Difícil",
+  "competencia": "Comparar projetos por Valor Presente Líquido e índice de lucratividade sob restrição de capital.",
+  "enunciado": "Uma empresa avalia dois projetos mutuamente excludentes, ambos com a mesma vida útil, à taxa mínima de atratividade de 12% ao ano:\n\n• Projeto A: investimento inicial de R$ 100.000,00 e valor presente líquido de R$ 25.000,00;\n• Projeto B: investimento inicial de R$ 160.000,00 e valor presente líquido de R$ 32.000,00.\n\nSabendo que o índice de lucratividade é a razão entre o valor presente líquido e o investimento inicial, avalie as afirmações a seguir.\n\nI. Pelo critério do valor presente líquido, sem restrição de capital, deve-se escolher o projeto B.\nII. O projeto A apresenta maior índice de lucratividade que o projeto B.\nIII. Quando há restrição de capital disponível, o índice de lucratividade pode alterar a ordem de preferência entre os projetos.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "I e II, apenas.",
+    "C": "II e III, apenas.",
+    "D": "I e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "E",
+  "justificativa": "Sem restrição de capital, o critério é maximizar a riqueza absoluta gerada, e o projeto B apresenta VPL superior — R$ 32.000,00 contra R$ 25.000,00 (I correta). Os índices de lucratividade são 25 000 ÷ 100 000 = 0,25 para A e 32 000 ÷ 160 000 = 0,20 para B, favorecendo A (II correta). Havendo restrição orçamentária, o que interessa é o valor gerado por real investido, de modo que o índice pode inverter a preferência — o capital poupado ao escolher A pode ser aplicado em outra oportunidade (III correta).",
+  "porqueErradas": {
+    "A": "As três afirmações são verdadeiras; limitar a resposta a I ignora a análise de eficiência do capital.",
+    "B": "Além de I e II, a afirmação III também procede e explica por que os dois critérios podem divergir.",
+    "C": "Omite I, que apresenta a decisão correta pelo critério do VPL na ausência de restrição de capital.",
+    "D": "Omite II, cujo cálculo dos índices de lucratividade sustenta justamente o argumento da afirmação III."
+  }
+},
+{
+  "id": "INE-65",
+  "tipo": "Inédita",
+  "area": "Engenharia Econômica",
+  "dificuldade": "Média",
+  "competencia": "Identificar custos relevantes e irrelevantes em decisões de investimento.",
+  "enunciado": "Uma empresa avalia a substituição de um torno adquirido há seis anos por R$ 180.000,00, cujo valor contábil residual é de R$ 30.000,00 e cujo valor de mercado atual é de R$ 22.000,00.\n\nA respeito dos custos relevantes nessa decisão, avalie as afirmações a seguir.\n\nI. Os custos afundados, já incorridos e irrecuperáveis, não devem influenciar a decisão sobre o futuro do ativo.\nII. O custo de oportunidade corresponde ao benefício da melhor alternativa que se deixa de realizar ao adotar determinada decisão.\nIII. O valor contábil residual de R$ 30.000,00 é o parâmetro relevante para decidir sobre a substituição do torno.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "I e II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "B",
+  "justificativa": "Os R$ 180.000,00 pagos há seis anos são custo afundado: nenhuma decisão presente os recupera, de modo que devem ser ignorados na análise (I correta). O custo de oportunidade, por sua vez, é conceito central da engenharia econômica e corresponde ao que se renuncia ao escolher uma alternativa em detrimento de outra (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira e define corretamente o custo de oportunidade.",
+    "C": "A afirmação III é falsa: o valor contábil é resultado de convenções de depreciação e não gera fluxo de caixa. O parâmetro relevante é o valor de mercado de R$ 22.000,00, que é o montante efetivamente realizável com a venda do ativo.",
+    "D": "Inclui III, que confunde valor contábil com valor econômico relevante para a decisão.",
+    "E": "Inclui III, incorreta: decisões econômicas baseiam-se em fluxos de caixa futuros, não em registros contábeis do passado."
+  }
+},
+{
+  "id": "INE-66",
+  "tipo": "Inédita",
+  "area": "Engenharia Econômica",
+  "dificuldade": "Difícil",
+  "competencia": "Reconhecer as limitações do método da Taxa Interna de Retorno.",
+  "enunciado": "A Taxa Interna de Retorno é um dos métodos mais difundidos de análise de investimentos, mas apresenta limitações que exigem cautela em sua aplicação.\n\nA respeito dessas limitações, avalie as afirmações a seguir.\n\nI. O método pressupõe que os fluxos intermediários sejam reinvestidos à própria taxa interna de retorno, hipótese que pode ser irrealista quando a TIR é muito elevada.\nII. Fluxos de caixa que apresentam mais de uma inversão de sinal ao longo do horizonte podem resultar em múltiplas taxas internas de retorno.\nIII. Na comparação entre projetos mutuamente excludentes, a TIR conduz sempre à mesma decisão que o valor presente líquido.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "I e II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "B",
+  "justificativa": "A hipótese implícita de reinvestimento à própria TIR é uma das críticas clássicas ao método, especialmente quando a taxa obtida é muito superior ao custo de capital da empresa (I correta). E fluxos não convencionais, com mais de uma inversão de sinal, podem gerar múltiplas raízes para a equação do VPL igual a zero, tornando a TIR ambígua (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira e constitui outra limitação reconhecida do método.",
+    "C": "A afirmação III é falsa: em projetos de escalas ou perfis temporais distintos, TIR e VPL podem indicar escolhas opostas. Nesses casos, o VPL prevalece, por medir diretamente a riqueza gerada — sendo necessária a análise incremental para conciliar os dois critérios.",
+    "D": "Inclui III, que ignora o conhecido conflito entre os dois métodos em decisões de projetos mutuamente excludentes.",
+    "E": "Inclui III, incorreta: a coincidência entre TIR e VPL não é garantida nesse tipo de comparação."
+  }
+},
+{
+  "id": "INE-67",
+  "tipo": "Inédita",
+  "area": "Engenharia Econômica",
+  "dificuldade": "Média",
+  "competencia": "Calcular prestações de série uniforme por meio do fator de recuperação de capital.",
+  "enunciado": "Uma empresa financiou a compra de um equipamento no valor de R$ 60.000,00, a ser pago em 5 prestações anuais iguais e consecutivas, à taxa de 10% ao ano.\n\nConsiderando que o fator de recuperação de capital para 10% ao ano e 5 períodos é igual a 0,26380, o valor de cada prestação é de aproximadamente",
+  "alternativas": {
+    "A": "R$ 12.000,00.",
+    "B": "R$ 13.200,00.",
+    "C": "R$ 15.828,00.",
+    "D": "R$ 18.000,00.",
+    "E": "R$ 20.000,00."
+  },
+  "gabarito": "C",
+  "justificativa": "O fator de recuperação de capital converte um valor presente em uma série uniforme equivalente. Assim, a prestação é 60 000 × 0,26380 = R$ 15.828,00. Note que o total pago, 5 × 15 828 = R$ 79.140,00, supera o principal justamente porque incorpora os juros do período.",
+  "porqueErradas": {
+    "A": "R$ 12.000,00 corresponde à simples divisão do principal pelo número de parcelas, o que equivaleria a um financiamento sem juros.",
+    "B": "R$ 13.200,00 corresponderia a acrescentar 10% de juros uma única vez sobre a parcela sem juros, o que não reflete a capitalização ao longo dos cinco períodos.",
+    "D": "R$ 18.000,00 superestima a prestação — resultaria de um fator de recuperação de 0,30, correspondente a taxa ou prazo diferentes dos informados.",
+    "E": "R$ 20.000,00 corresponderia a amortizar o principal em apenas 3 parcelas, prazo distinto do contratado."
+  }
+},
+{
+  "id": "INE-68",
+  "tipo": "Inédita",
+  "area": "Pesquisa Operacional",
+  "dificuldade": "Difícil",
+  "competencia": "Interpretar o preço-sombra e a análise de sensibilidade em programação linear.",
+  "enunciado": "Após resolver um modelo de programação linear de mix de produção, um analista examina o relatório de sensibilidade gerado pelo solver, que informa os preços-sombra (valores duais) associados a cada restrição de recurso.\n\nA respeito desse conceito, avalie as afirmações a seguir.\n\nI. O preço-sombra de um recurso indica quanto a função-objetivo varia para cada unidade adicional desse recurso disponibilizada.\nII. Recursos que apresentam folga na solução ótima têm preço-sombra igual a zero.\nIII. O preço-sombra permanece válido para qualquer variação na disponibilidade do recurso, por maior que seja.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "I e II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "B",
+  "justificativa": "O preço-sombra é exatamente a taxa de variação da função-objetivo por unidade adicional do recurso, indicando quanto vale a pena pagar por essa unidade extra (I correta). Um recurso com folga não restringe a solução: obter mais dele não altera o resultado, e seu preço-sombra é nulo (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira e decorre diretamente da condição de folgas complementares.",
+    "C": "A afirmação III é falsa: o preço-sombra só é válido dentro de um intervalo de variação, informado no próprio relatório de sensibilidade. Fora desse intervalo, a base ótima muda e outra restrição passa a ser limitante, alterando o valor dual.",
+    "D": "Inclui III, que desconsidera a existência de um intervalo de validade para os valores duais.",
+    "E": "Inclui III, incorreta: extrapolar o preço-sombra indefinidamente é erro frequente na interpretação desses relatórios."
+  }
+},
+{
+  "id": "INE-69",
+  "tipo": "Inédita",
+  "area": "Pesquisa Operacional",
+  "dificuldade": "Fácil",
+  "competencia": "Identificar o tipo de variável adequado à modelagem de decisões discretas.",
+  "enunciado": "Uma empresa de distribuição precisa decidir quais centros de distribuição abrir entre cinco localidades candidatas, considerando o custo fixo de instalação de cada centro e os custos de transporte até os mercados atendidos. Cada localidade pode apenas ser escolhida ou não — não há decisão de abertura parcial.\n\nPara representar corretamente essa decisão em um modelo de otimização, devem ser utilizadas",
+  "alternativas": {
+    "A": "variáveis contínuas não negativas.",
+    "B": "variáveis binárias.",
+    "C": "variáveis inteiras irrestritas em sinal.",
+    "D": "restrições obrigatoriamente não lineares.",
+    "E": "função-objetivo quadrática."
+  },
+  "gabarito": "B",
+  "justificativa": "A decisão de abrir ou não cada centro é dicotômica e não admite valores intermediários. Ela é representada por variáveis binárias, que assumem valor 1 quando o centro é aberto e 0 caso contrário. O custo fixo de instalação é então multiplicado por essa variável, entrando na função-objetivo apenas quando a localidade é efetivamente escolhida — estrutura característica dos problemas de localização de instalações.",
+  "porqueErradas": {
+    "A": "Variáveis contínuas admitiriam soluções como abrir 0,37 de um centro de distribuição, o que não tem sentido físico nem operacional.",
+    "C": "Variáveis inteiras irrestritas permitiriam valores negativos ou superiores a 1, igualmente sem significado para uma decisão de abrir ou não abrir.",
+    "D": "O problema é perfeitamente representável por restrições lineares; a não linearidade não é exigida pela natureza da decisão.",
+    "E": "A função-objetivo é a soma de custos fixos e variáveis, ambos lineares nas variáveis de decisão."
+  }
+},
+{
+  "id": "INE-70",
+  "tipo": "Inédita",
+  "area": "Pesquisa Operacional",
+  "dificuldade": "Média",
+  "competencia": "Analisar a estabilidade e a utilização de sistemas de filas com múltiplos servidores.",
+  "enunciado": "Um setor de atendimento opera com 2 atendentes em paralelo. Os clientes chegam a uma taxa média de 10 por hora e cada atendente é capaz de atender, em média, 8 clientes por hora.\n\nConsiderando que a taxa de utilização de um sistema com c servidores é ρ = λ / (c · μ), avalie as afirmações a seguir.\n\nI. A taxa de utilização do sistema é de 62,5%.\nII. O sistema é estável, pois a capacidade total de atendimento supera a taxa média de chegada.\nIII. Caso houvesse apenas um atendente, o sistema seria instável, com fila crescendo indefinidamente.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "I e II, apenas.",
+    "C": "II e III, apenas.",
+    "D": "I e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "E",
+  "justificativa": "A taxa de utilização é ρ = 10 ÷ (2 × 8) = 10 ÷ 16 = 0,625, ou 62,5% (I correta). Como ρ é menor que 1, a capacidade total de 16 atendimentos por hora supera as 10 chegadas por hora e o sistema é estável (II correta). Com apenas um atendente, a capacidade cairia para 8 por hora, inferior às 10 chegadas: ρ excederia 1 e a fila cresceria sem limite (III correta).",
+  "porqueErradas": {
+    "A": "As três afirmações são verdadeiras; restringir a resposta a I ignora as conclusões sobre a estabilidade do sistema.",
+    "B": "Além de I e II, a afirmação III também procede: com um único atendente a taxa de chegada superaria a de atendimento.",
+    "C": "Omite I, que apresenta o cálculo correto da taxa de utilização.",
+    "D": "Omite II, que enuncia corretamente a condição de estabilidade do sistema de filas."
+  }
+},
+{
+  "id": "INE-71",
+  "tipo": "Inédita",
+  "area": "Pesquisa Operacional",
+  "dificuldade": "Média",
+  "competencia": "Compreender o alcance e os limites da simulação computacional.",
+  "enunciado": "Uma empresa de logística contratou um estudo de simulação de eventos discretos para avaliar o desempenho de seu centro de distribuição sob diferentes configurações de docas e equipes.\n\nA respeito da simulação como técnica de apoio à decisão, avalie as afirmações a seguir.\n\nI. A simulação permite avaliar sistemas complexos para os quais não existe solução analítica fechada.\nII. Números pseudoaleatórios são utilizados para gerar valores das variáveis de entrada conforme suas distribuições de probabilidade.\nIII. A simulação fornece, por construção, a solução ótima garantida do problema estudado.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "I e II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "B",
+  "justificativa": "A principal vantagem da simulação é justamente tratar sistemas com interdependências, filas e aleatoriedade que inviabilizam modelos analíticos fechados (I correta). E a geração de valores das variáveis aleatórias a partir de suas distribuições, por meio de números pseudoaleatórios, é o mecanismo central da técnica (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira e descreve o funcionamento essencial de um modelo de simulação.",
+    "C": "A afirmação III é falsa: a simulação é uma técnica de avaliação de desempenho, não de otimização. Ela informa como cada cenário se comporta, mas cabe ao analista propor e comparar os cenários — sem garantia de que o melhor entre eles seja o ótimo global.",
+    "D": "Inclui III, que atribui à simulação uma propriedade de otimalidade que ela não possui.",
+    "E": "Inclui III, incorreta: mesmo com módulos de otimização acoplados, o resultado é uma boa solução, não um ótimo comprovado."
+  }
+},
+{
+  "id": "INE-72",
+  "tipo": "Inédita",
+  "area": "Pesquisa Operacional",
+  "dificuldade": "Média",
+  "competencia": "Determinar o caminho de custo mínimo em uma rede.",
+  "enunciado": "Uma transportadora precisa levar uma carga da origem O até o destino D, passando pelos entroncamentos A e B. As distâncias, em quilômetros, dos trechos disponíveis são:\n\n• O → A: 4\n• O → B: 6\n• A → B: 2\n• A → D: 7\n• B → A: 2\n• B → D: 3\n\nTodos os trechos podem ser percorridos nos dois sentidos, com a mesma distância.\n\nA menor distância total entre O e D, em quilômetros, é de",
+  "alternativas": {
+    "A": "8.",
+    "B": "9.",
+    "C": "11.",
+    "D": "13.",
+    "E": "15."
+  },
+  "gabarito": "B",
+  "justificativa": "Os caminhos possíveis são: O-A-D = 4 + 7 = 11 km; O-B-D = 6 + 3 = 9 km; O-A-B-D = 4 + 2 + 3 = 9 km; e O-B-A-D = 6 + 2 + 7 = 15 km. A menor distância é de 9 km, alcançada por dois caminhos distintos — O-B-D e O-A-B-D —, o que caracteriza soluções ótimas alternativas.",
+  "porqueErradas": {
+    "A": "8 km é inferior a qualquer combinação válida de trechos entre a origem e o destino.",
+    "C": "11 km é a distância do caminho O-A-D, que não é o de menor custo.",
+    "D": "13 km não corresponde a nenhum dos caminhos possíveis na rede apresentada.",
+    "E": "15 km é a distância do caminho O-B-A-D, o mais longo entre os disponíveis."
+  }
+},
+{
+  "id": "INE-73",
+  "tipo": "Inédita",
+  "area": "Ergonomia e Segurança do Trabalho",
+  "dificuldade": "Difícil",
+  "competencia": "Calcular a dose diária de exposição ocupacional a ruído.",
+  "enunciado": "Um trabalhador é exposto, em sua jornada, a dois níveis de ruído contínuo: 90 dB(A) durante 3 horas e 85 dB(A) durante 4 horas.\n\nOs limites de tolerância aplicáveis são de 4 horas para 90 dB(A) e de 8 horas para 85 dB(A). A dose diária é a soma das razões entre o tempo de exposição e o tempo máximo permitido em cada nível, sendo aceitável quando não ultrapassa 100%.\n\nNessas condições, a dose de exposição do trabalhador é de",
+  "alternativas": {
+    "A": "75%, situação dentro do limite de tolerância.",
+    "B": "100%, situação exatamente no limite de tolerância.",
+    "C": "125%, situação acima do limite de tolerância.",
+    "D": "125%, situação dentro do limite de tolerância.",
+    "E": "150%, situação acima do limite de tolerância."
+  },
+  "gabarito": "C",
+  "justificativa": "A dose é a soma das frações de exposição: 3 h ÷ 4 h = 0,75 para o nível de 90 dB(A), mais 4 h ÷ 8 h = 0,50 para o nível de 85 dB(A), totalizando 1,25, ou seja, 125%. Por superar 100%, a exposição está acima do limite de tolerância e exige medidas de controle.",
+  "porqueErradas": {
+    "A": "75% corresponde apenas à primeira parcela da dose, desconsiderando as 4 horas de exposição a 85 dB(A).",
+    "B": "100% seria a dose se a exposição a 90 dB(A) fosse de 2 horas, e não de 3.",
+    "D": "O valor de 125% está correto, mas a conclusão é oposta: qualquer dose superior a 100% caracteriza exposição acima do limite de tolerância.",
+    "E": "150% corresponderia a somar 1,0 e 0,5, o que exigiria exposição de 4 horas completas ao nível de 90 dB(A)."
+  }
+},
+{
+  "id": "INE-74",
+  "tipo": "Inédita",
+  "area": "Ergonomia e Segurança do Trabalho",
+  "dificuldade": "Média",
+  "competencia": "Conhecer a estrutura e as atribuições da CIPA e do SESMT.",
+  "enunciado": "Uma indústria de médio porte está estruturando suas instâncias internas de segurança e saúde no trabalho.\n\nA respeito dessas instâncias, avalie as afirmações a seguir.\n\nI. A Comissão Interna de Prevenção de Acidentes tem por objetivo a prevenção de acidentes e de doenças relacionadas ao trabalho, tornando compatível o trabalho com a preservação da vida e a promoção da saúde.\nII. O dimensionamento do Serviço Especializado em Segurança e Medicina do Trabalho depende do grau de risco da atividade e do número de empregados do estabelecimento.\nIII. A comissão é composta exclusivamente por representantes indicados pelo empregador, cabendo aos trabalhadores apenas o acompanhamento de suas decisões.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "I e II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "B",
+  "justificativa": "A finalidade da CIPA descrita em I corresponde à definição normativa da comissão. E o dimensionamento do SESMT é efetivamente determinado pelo cruzamento entre o grau de risco da atividade econômica e o número de empregados do estabelecimento (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira e expressa o critério de dimensionamento do SESMT.",
+    "C": "A afirmação III é falsa: a CIPA tem composição paritária, com representantes indicados pelo empregador e representantes eleitos pelos trabalhadores em votação secreta — essa bipartição é característica essencial da comissão.",
+    "D": "Inclui III, que desconsidera a natureza paritária da composição da CIPA.",
+    "E": "Inclui III, incorreta: os representantes dos trabalhadores são eleitos, e não indicados pelo empregador."
+  }
+},
+{
+  "id": "INE-75",
+  "tipo": "Inédita",
+  "area": "Ergonomia e Segurança do Trabalho",
+  "dificuldade": "Difícil",
+  "competencia": "Calcular as taxas de frequência e de gravidade de acidentes do trabalho.",
+  "enunciado": "Uma empresa com 500 empregados, cada um trabalhando 2 000 horas por ano, registrou em determinado exercício 8 acidentes do trabalho com afastamento, que resultaram em 240 dias perdidos.\n\nSabendo que a taxa de frequência é o número de acidentes por milhão de horas-homem trabalhadas e que a taxa de gravidade é o número de dias perdidos por milhão de horas-homem trabalhadas, esses indicadores valem, respectivamente,",
+  "alternativas": {
+    "A": "4 e 120.",
+    "B": "8 e 240.",
+    "C": "16 e 480.",
+    "D": "0,8 e 24.",
+    "E": "8 e 30."
+  },
+  "gabarito": "B",
+  "justificativa": "O total de horas-homem trabalhadas é 500 × 2 000 = 1 000 000 de horas. A taxa de frequência é (8 × 1 000 000) ÷ 1 000 000 = 8 acidentes por milhão de horas-homem. A taxa de gravidade é (240 × 1 000 000) ÷ 1 000 000 = 240 dias perdidos por milhão de horas-homem.",
+  "porqueErradas": {
+    "A": "4 e 120 corresponderiam ao dobro de horas-homem trabalhadas, ou seja, a 1 000 empregados nas mesmas condições.",
+    "C": "16 e 480 corresponderiam à metade das horas-homem, isto é, a 250 empregados.",
+    "D": "0,8 e 24 resultariam de adotar 10 milhões de horas-homem como base de cálculo, escala que não corresponde à definição dos indicadores.",
+    "E": "A taxa de frequência está correta, mas o valor 30 para a gravidade corresponderia a apenas 30 dias perdidos no período, e não aos 240 registrados."
+  }
+}
+]

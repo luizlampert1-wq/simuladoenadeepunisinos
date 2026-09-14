@@ -1,0 +1,257 @@
+[
+{
+  "id": "2023-Q10",
+  "tipo": "Oficial",
+  "ano": 2023,
+  "referencia": "ENADE 2023 — Questão 10 (Componente Específico)",
+  "area": "Estatística",
+  "dificuldade": "Fácil",
+  "competencia": "Calcular probabilidades em uma distribuição uniforme contínua.",
+  "enunciado": "Uma das preocupações dos gestores de instituições bancárias é o tempo de permanência do cliente na agência. Considere que o tempo gasto por um cliente em um banco, entre meio-dia e uma hora da tarde, apresente o comportamento de uma distribuição de probabilidade uniforme entre 0 e 30 minutos.\n\nA probabilidade de que o tempo de permanência de um cliente esteja entre 5 e 20 minutos é, aproximadamente, de",
+  "alternativas": {
+    "A": "25%.",
+    "B": "33%.",
+    "C": "45%.",
+    "D": "50%.",
+    "E": "67%."
+  },
+  "gabarito": "D",
+  "justificativa": "Em uma distribuição uniforme contínua no intervalo [a, b], a probabilidade de a variável cair em um subintervalo [c, d] é (d − c)/(b − a). Aqui: (20 − 5)/(30 − 0) = 15/30 = 0,50, ou seja, 50%.",
+  "porqueErradas": {
+    "A": "25% corresponderia a um intervalo de 7,5 minutos dentro da faixa de 30 minutos, e não aos 15 minutos do enunciado.",
+    "B": "33% equivaleria a um intervalo de 10 minutos — resultado de considerar, por exemplo, apenas de 10 a 20 minutos.",
+    "C": "45% não corresponde a nenhuma razão simples entre o intervalo pedido e a amplitude total da distribuição.",
+    "E": "67% equivaleria a 20 minutos de amplitude, o que seria a probabilidade de o tempo estar entre 0 e 20 minutos, desprezando o limite inferior de 5 minutos."
+  }
+},
+{
+  "id": "2023-Q11",
+  "tipo": "Oficial",
+  "ano": 2023,
+  "referencia": "ENADE 2023 — Questão 11 (Componente Específico)",
+  "area": "Gestão Organizacional e Estratégia",
+  "dificuldade": "Média",
+  "competencia": "Classificar decisões empresariais segundo as estratégias competitivas genéricas.",
+  "enunciado": "No Brasil, os principais produtos fabricados e comercializados por uma empresa são motosserras, roçadeiras e aparadores elétricos, cuja produção aproximada é de 50 000 unidades mensais. A empresa também produz cilindros para motores, fabricando em torno de 500 000 unidades por mês.\n\nQuanto à produção de cilindros para motores, identificou-se que a empresa compete na estratégia de liderança em custos, pois a produção é de alto volume, visto que esses produtos são destinados tanto para produção dos motores dos equipamentos produzidos internamente quanto para outras empresas que utilizam esses produtos no mercado interno e externo.\n\nNos mercados agropecuário, de jardinagem e florestal, foi identificado que a empresa compete na estratégia de diferenciação. Trata-se de produtos com valor agregado, que, depois de produzidos, são comercializados diretamente aos consumidores em lojas próprias.\n\n(PIRAN, F. A. S. et al. Revista Contemporânea de Contabilidade, v. 13, n. 28, 2016, adaptado.)\n\nCom base no texto e na classificação das decisões de estratégias competitivas genéricas, avalie as afirmações a seguir.\n\nI. A estratégia de liderança em custos baseia-se na obtenção de economia de escala, decorrente do uso dos cilindros em uma maior variedade de produtos.\nII. A diversidade de clientes que adquire os cilindros evidencia que a empresa adota a estratégia competitiva genérica baseada no enfoque em custo.\nIII. A estratégia de diferenciação pode ser direcionada para alvos amplos ou estreitos, a depender dos segmentos de clientes que a empresa pretende alcançar.\nIV. A referida empresa adota estratégia com enfoque na diferenciação, pois comercializa produtos nos mercados agropecuário, de jardinagem e florestal.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e II.",
+    "B": "I e III.",
+    "C": "III e IV.",
+    "D": "I, II e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "B",
+  "justificativa": "A afirmação I é correta: o alto volume de cilindros, usados tanto internamente quanto por outras empresas, gera economia de escala, fonte clássica de liderança em custos. A III também procede: na tipologia de Porter, a diferenciação pode ser praticada em escopo amplo (diferenciação) ou estreito (enfoque em diferenciação), conforme os segmentos visados.",
+  "porqueErradas": {
+    "A": "A afirmação II é falsa: a diversidade de clientes e o alcance a mercados interno e externo caracterizam escopo amplo — logo, liderança em custos, e não enfoque em custo, que pressupõe segmento estreito.",
+    "C": "A afirmação IV é falsa: o próprio texto identifica a estratégia adotada nesses mercados como diferenciação, e não enfoque em diferenciação.",
+    "D": "Inclui II e IV, ambas com classificação incorreta do escopo competitivo, e omite III.",
+    "E": "Inclui II e IV, incorretas, e deixa de fora I, que identifica corretamente a fonte de vantagem em custo."
+  }
+},
+{
+  "id": "2023-Q12",
+  "tipo": "Oficial",
+  "ano": 2023,
+  "referencia": "ENADE 2023 — Questão 12 (Componente Específico)",
+  "area": "Gestão de Estoques",
+  "dificuldade": "Difícil",
+  "competencia": "Calcular ponto de reposição e estoque de segurança a partir do nível de serviço e da distribuição normal.",
+  "enunciado": "Com o crescimento do mercado de pet shop, os estabelecimentos especializados passaram a gerenciar elevados níveis de estoque. O gestor de um estabelecimento contratou um estagiário de Engenharia de Produção para auxiliá-lo na gestão de estoques.\n\nPara calcular o ponto de reposição (demanda média durante o tempo de reposição mais o estoque de segurança) do item ração canina em embalagens de 15 kg, definiu um nível de serviço igual a 99%, sendo essa a probabilidade de não esgotar o estoque em qualquer ciclo de pedido. Os dados levantados foram:\n\n• Demanda diária média: 160 embalagens de 15 kg\n• Desvio padrão da demanda diária: 25 embalagens de 15 kg\n• Tempo de reposição: 3 dias\n\nApós seis meses de implantação do serviço, o gestor percebeu que poderia reduzir o nível de serviço para 85%.\n\nConsidere que a demanda do item está distribuída normalmente e, portanto, o estoque de segurança é obtido pelo produto do número de desvios padrão (z), associado ao nível de serviço definido, e o desvio padrão da demanda durante o tempo de reposição. Nesse caso, o desvio padrão da demanda durante o tempo de reposição é igual a 43 unidades. (Da tabela normal padrão: z ≈ 2,33 para 99% e z ≈ 1,04 para 85%.)\n\nConsiderando as informações apresentadas, assinale a opção correta.",
+  "alternativas": {
+    "A": "A demanda média no tempo de reposição é de 320 unidades.",
+    "B": "O ponto de reposição para o nível de serviço de 85% é de 400 unidades.",
+    "C": "O estoque de segurança para o nível de serviço de 99% é de 120 unidades.",
+    "D": "O ponto de reposição teve redução em cerca de 40 unidades, após a diminuição do nível de serviço de 99% para 85%.",
+    "E": "O estoque de segurança foi aumentado em mais de 45 unidades, em razão da redução do nível de serviço de 99% para 85%."
+  },
+  "gabarito": "D",
+  "justificativa": "A demanda média durante o tempo de reposição é 160 × 3 = 480 unidades. Com σ durante o tempo de reposição igual a 43: estoque de segurança a 99% = 2,33 × 43 ≈ 100 unidades, levando a um ponto de reposição de 580; a 85% = 1,04 × 43 ≈ 45 unidades, levando a um ponto de reposição de 525. A redução do nível de serviço, portanto, diminui o ponto de reposição — e a alternativa D é a única que descreve corretamente esse efeito de redução, enquanto todas as demais apresentam valores ou sentido incorretos.",
+  "observacao": "Atenção: pelos valores da tabela normal, a redução do ponto de reposição é de aproximadamente 55 unidades, e não exatamente 40. Ainda assim, D é a única alternativa que aponta o sentido correto (redução do ponto de reposição) e a ordem de grandeza mais próxima; foi mantida como gabarito oficial pelo INEP.",
+  "porqueErradas": {
+    "A": "A demanda média no tempo de reposição é 160 × 3 = 480 unidades, e não 320 — o valor 320 corresponderia a apenas dois dias de demanda.",
+    "B": "O ponto de reposição a 85% é 480 + 45 = 525 unidades; o valor 400 sequer cobre a demanda média durante o tempo de reposição.",
+    "C": "O estoque de segurança a 99% é 2,33 × 43 ≈ 100 unidades, e não 120.",
+    "E": "O sentido está invertido: reduzir o nível de serviço de 99% para 85% diminui o valor de z e, portanto, reduz o estoque de segurança — não o aumenta."
+  }
+},
+{
+  "id": "2023-Q13",
+  "tipo": "Oficial",
+  "ano": 2023,
+  "referencia": "ENADE 2023 — Questão 13 (Componente Específico)",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Difícil",
+  "competencia": "Interpretar indicadores de acompanhamento de previsão de demanda (MAD e sinal de rastreamento) e projetar a demanda por suavização exponencial.",
+  "figura": "2023_q13.png",
+  "enunciado": "As estacas pré-fabricadas de concreto são cravadas no terreno para a execução das fundações. A tabela acima indica a demanda, a previsão de demanda pelo método da suavização exponencial com parâmetro suavizador de 0,6, o erro da previsão, o erro absoluto e o sinal de rastreamento para a estaca de 420 mm, ao longo de 20 dias. Os totais do período são: demanda 4 275, previsão 4 280, erro de previsão −5 e erro absoluto 537.\n\nNa tabela, o erro de previsão tem distribuição aproximadamente normal, com média zero ao nível de confiança de 95%, o que possibilita o monitoramento do sinal de rastreamento do modelo de previsão por meio de gráfico de controle.\n\nCom base nos dados apresentados, avalie as afirmações a seguir.\n\nI. O sinal de rastreamento indica que o modelo de previsão rastreia a variação da demanda.\nII. O desvio médio absoluto (MAD) para o período de 20 dias é de aproximadamente −0,4.\nIII. O MAD para o período de 20 dias é de aproximadamente 27.\nIV. A previsão da demanda para o dia 21 é de aproximadamente 217 estacas.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e II.",
+    "B": "II e IV.",
+    "C": "III e IV.",
+    "D": "I, II e III.",
+    "E": "I, III e IV."
+  },
+  "gabarito": "E",
+  "justificativa": "O MAD é a média dos erros absolutos: 537 ÷ 20 = 26,85 ≈ 27 (III correta). A previsão para o dia 21 pela suavização exponencial é F₂₁ = F₂₀ + α(D₂₀ − F₂₀) = 197 + 0,6 × (230 − 197) = 197 + 19,8 ≈ 217 estacas (IV correta). O sinal de rastreamento mantém-se dentro dos limites de controle ao longo dos 20 dias, indicando que o modelo acompanha adequadamente a variação da demanda (I correta).",
+  "porqueErradas": {
+    "A": "A afirmação II é falsa: o MAD é sempre positivo, por ser média de valores absolutos. O valor −0,4 confunde o MAD com a média do sinal de rastreamento ou do erro de previsão.",
+    "B": "Inclui II, que atribui ao MAD um valor negativo — impossível por definição.",
+    "C": "Embora III e IV estejam corretas, a alternativa omite I, que expressa corretamente a leitura do gráfico de controle do sinal de rastreamento.",
+    "D": "Inclui II, incorreta, e deixa de fora IV, que corresponde ao cálculo correto da previsão para o dia 21."
+  }
+},
+{
+  "id": "2023-Q14",
+  "tipo": "Oficial",
+  "ano": 2023,
+  "referencia": "ENADE 2023 — Questão 14 (Componente Específico)",
+  "area": "Estatística",
+  "dificuldade": "Média",
+  "competencia": "Interpretar diagramas de caixa (boxplot) para comparar posição e dispersão entre processos.",
+  "figura": "2023_q14.png",
+  "enunciado": "Uma pequena fábrica, que produz artefatos plásticos injetados, possui três máquinas injetoras em suas instalações. Todas as máquinas têm a mesma capacidade de processamento e se encontram em plena operação. No entanto, clientes começaram a reclamar da qualidade dos produtos, pois, em muitos casos, as peças rachavam ao sofrerem pequenas quedas. A fim de verificar o ajuste das injetoras, foram selecionadas aleatoriamente 8 peças injetadas de cada máquina e, subsequentemente, o ensaio de resistência ao impacto foi conduzido em tais peças. Os resultados experimentais são apresentados no diagrama boxplot acima.\n\nA análise da figura permite concluir, comparativamente, que",
+  "alternativas": {
+    "A": "a máquina 3 apresenta um melhor ajuste em relação à máquina 2, pois as peças injetadas exibem maior resistência ao impacto.",
+    "B": "a máquina 3 é a que apresenta o melhor ajuste entre as máquinas da fábrica, pois fornece as peças injetadas de maior resistência ao impacto.",
+    "C": "a máquina 1 apresenta um melhor ajuste em relação à máquina 2, pois é capaz de produzir 50% das peças injetadas com propriedade de resistência ao impacto superior a 19 J/m.",
+    "D": "a máquina 3 é a que apresenta o pior ajuste dentre as máquinas da fábrica, pois é capaz de produzir 50% das peças injetadas com propriedade de resistência ao impacto inferior a 17 J/m.",
+    "E": "a máquina 2 é a que apresenta o pior ajuste dentre as máquinas da fábrica, pois os dados experimentais para a resistência ao impacto são os que exibem o maior intervalo interquartílico."
+  },
+  "gabarito": "C",
+  "justificativa": "No boxplot, a linha central da caixa é a mediana, que divide a amostra ao meio. A mediana da máquina 1 situa-se em torno de 19,4 J/m — logo, metade das peças dessa máquina apresenta resistência superior a 19 J/m. Além disso, a máquina 1 combina mediana elevada com caixa estreita (baixa dispersão), enquanto a máquina 2 tem mediana em torno de 12 J/m, muito inferior. A comparação da alternativa C é, portanto, correta em ambos os aspectos.",
+  "porqueErradas": {
+    "A": "A máquina 3 apresenta a maior dispersão de todas, com amplitude que vai de cerca de 14 a 28 J/m — maior resistência mediana não compensa a falta de consistência, que é o critério de ajuste.",
+    "B": "Pelo mesmo motivo: a máquina 3 tem a caixa mais larga do gráfico, indicando processo muito variável e, portanto, mal ajustado.",
+    "D": "A mediana da máquina 3 está em torno de 20,5 J/m, e não abaixo de 17 J/m; a leitura da figura está incorreta.",
+    "E": "O maior intervalo interquartílico é o da máquina 3, e não o da máquina 2 — cuja caixa é, na verdade, bastante estreita."
+  }
+},
+{
+  "id": "2023-Q15",
+  "tipo": "Oficial",
+  "ano": 2023,
+  "referencia": "ENADE 2023 — Questão 15 (Componente Específico)",
+  "area": "Gestão de Projetos",
+  "dificuldade": "Média",
+  "competencia": "Determinar caminho crítico e relações de precedência em diagrama de rede.",
+  "figura": "2023_q15.png",
+  "enunciado": "Suponha que Leandro e seu irmão tenham resolvido fazer um macarrão ao alho e óleo seguindo a sequência representada no diagrama de rede acima, com os tempos das atividades dados em minutos: Início (T1 = 0), Ferver a água (T2 = 6), Cortar o alho (T3 = 2), Refogar o alho (T4 = 4), Colocar o macarrão na água (T5 = 5), Tirar a água do macarrão (T6 = 3), Temperar o macarrão (T7 = 3), Ralar o queijo sobre o macarrão (T8 = 2) e Fim (T9 = 0).\n\nConsiderando que esse diagrama de rede foi seguido corretamente, avalie as afirmações a seguir.\n\nI. O macarrão ao alho e óleo levou, no mínimo, 19 minutos para ficar pronto.\nII. O caminho que inclui as atividades de cortar o alho e refogar o alho é um caminho não crítico.\nIII. A atividade de temperar o macarrão somente pode ser realizada após a atividade de ferver a água.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "III, apenas.",
+    "C": "I e II, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "E",
+  "justificativa": "Após ferver a água (6 min), a rede se divide em dois ramos que convergem em \"temperar o macarrão\". O ramo do alho soma 2 + 4 = 6 min; o ramo do macarrão soma 5 + 3 = 8 min. Prevalece o maior: 6 + 8 = 14 min até o temperar. Somando temperar (3) e ralar o queijo (2), chega-se a 19 minutos (I correta). Como o ramo do alho é o mais curto, ele dispõe de folga e não é crítico (II correta). E, por estar a jusante de ferver a água em ambos os ramos, temperar só pode ocorrer depois dessa atividade (III correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II e III também são verdadeiras e não podem ser descartadas.",
+    "B": "Restringe indevidamente o conjunto: além de III, tanto I quanto II decorrem corretamente da leitura do diagrama.",
+    "C": "Omite III, que expressa corretamente a relação de precedência entre ferver a água e temperar o macarrão.",
+    "D": "Omite I, que corresponde ao cálculo correto da duração do caminho crítico (19 minutos)."
+  }
+},
+{
+  "id": "2023-Q16",
+  "tipo": "Oficial",
+  "ano": 2023,
+  "referencia": "ENADE 2023 — Questão 16 (Componente Específico)",
+  "area": "Gestão de Projetos",
+  "dificuldade": "Difícil",
+  "competencia": "Calcular a folga de um caminho em rede PERT/CPM.",
+  "figura": "2023_q16.png",
+  "enunciado": "PERT (Program Evaluation and Review Technique) e CPM (Critical Path Method) são técnicas utilizadas na gestão de projetos que foram desenvolvidas na década de 1950.\n\nNo diagrama acima estão representadas as atividades, e suas respectivas durações em dias, para a instalação de um equipamento de produção.\n\nAssinale a alternativa que indica a folga, em dias, do caminho que inclui as atividades A, D e J.",
+  "alternativas": {
+    "A": "3.",
+    "B": "8.",
+    "C": "13.",
+    "D": "15.",
+    "E": "18."
+  },
+  "gabarito": "C",
+  "justificativa": "A duração total do projeto é dada pelo caminho crítico. Calculando as datas mais cedo em cada nó da rede, chega-se a uma duração total de 23 dias. O caminho formado por A (3 dias), D (5 dias) e J (2 dias) soma 3 + 5 + 2 = 10 dias. A folga desse caminho é, portanto, 23 − 10 = 13 dias.",
+  "porqueErradas": {
+    "A": "3 dias corresponderia a um caminho de 20 dias de duração, valor incompatível com a soma das atividades A, D e J.",
+    "B": "8 dias resultaria de comparar o caminho A-D-J com um caminho de 18 dias, que não é o crítico da rede.",
+    "D": "15 dias seria a folga se o caminho A-D-J durasse apenas 8 dias — mas ele soma 10 dias.",
+    "E": "18 dias excede a própria diferença possível, pois implicaria que o caminho A-D-J durasse apenas 5 dias."
+  }
+},
+{
+  "id": "2023-Q17",
+  "tipo": "Oficial",
+  "ano": 2023,
+  "referencia": "ENADE 2023 — Questão 17 (Componente Específico)",
+  "area": "Gestão de Projetos",
+  "dificuldade": "Média",
+  "competencia": "Determinar a duração de um projeto a partir de tabela de atividades e precedências.",
+  "enunciado": "O quadro a seguir lista as atividades de um projeto, com suas durações e a indicação das atividades predecessoras.\n\nAtividade | Duração (dias) | Predecessoras\nA | 3 | —\nB | 4 | A\nC | 2 | B\nD | 5 | B\nE | 4 | C\nF | 3 | D\nG | 2 | E, F\n\nDe acordo com o cronograma apresentado, o tempo para completar o projeto, em dias, corresponde a",
+  "alternativas": {
+    "A": "15.",
+    "B": "16.",
+    "C": "17.",
+    "D": "18.",
+    "E": "19."
+  },
+  "gabarito": "C",
+  "justificativa": "Existem dois caminhos até G. Caminho 1: A → B → C → E → G = 3 + 4 + 2 + 4 + 2 = 15 dias. Caminho 2: A → B → D → F → G = 3 + 4 + 5 + 3 + 2 = 17 dias. A duração do projeto é a do caminho mais longo (crítico), ou seja, 17 dias.",
+  "porqueErradas": {
+    "A": "15 dias é a duração do caminho A-B-C-E-G, que não é o crítico — ele possui 2 dias de folga em relação ao caminho mais longo.",
+    "B": "16 dias não corresponde a nenhum caminho da rede; provavelmente resulta de erro na soma das durações.",
+    "D": "18 dias superestima o caminho crítico, possivelmente por somar a duração de C ou E, que pertencem ao caminho paralelo.",
+    "E": "19 dias resultaria de somar atividades que ocorrem em paralelo, quando apenas o caminho mais longo determina a duração do projeto."
+  }
+},
+{
+  "id": "2023-Q18",
+  "tipo": "Oficial",
+  "ano": 2023,
+  "referencia": "ENADE 2023 — Questão 18 (Componente Específico)",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Média",
+  "competencia": "Avaliar modelos de previsão de demanda por meio de erro acumulado, MAD e tracking signal.",
+  "enunciado": "A tabela a seguir apresenta os resultados de quatro estimativas de previsão de demanda de uma empresa fabricante de bens de capital: média móvel de três meses (n = 3), média exponencial (alfa = 0,5) e as duas mesmas técnicas com sazonalidade (SZ). Os indicadores acumulados no ano foram:\n\nIndicador | n=3 | alfa=0,5 | n=3 c/ SZ | alfa=0,5 c/ SZ\nErro acumulado | −4 | −5 | −15 | −16\nDesvio médio absoluto | 7,8 | 10,6 | 8,6 | 7,5\nTracking signal | −0,51 | −0,47 | −1,7 | −2,1\n\nConsiderando os dados da tabela, assinale a opção correta.",
+  "alternativas": {
+    "A": "A adoção de qualquer um dos modelos de previsão apresentados é elegível para uma restrição -3 < tracking signal < 3.",
+    "B": "O tracking signal apresenta valor negativo em todas as estimativas, logo para essa empresa, nenhum dos modelos de previsão utilizados foi adequado.",
+    "C": "O uso de médias exponenciais deve ser evitado quando se tem mais de um dado real de demanda, pois, nesses modelos, considera-se apenas um valor real de demanda.",
+    "D": "O modelo de média exponencial com sazonalidade apresentou o menor tracking signal, logo a empresa deve adotar esse modelo para a previsão da demanda do produto, cujo indicador é otimizante.",
+    "E": "O modelo de média exponencial com sazonalidade obteve o menor erro acumulado, sendo esse, portanto, o modelo mais indicado, pois os erros de subestimação e superestimação da demanda estão se compensando."
+  },
+  "gabarito": "A",
+  "justificativa": "O tracking signal é um indicador de viés do modelo: valores dentro da faixa de controle (−3 a +3) indicam que o modelo permanece não enviesado. Os quatro modelos apresentam tracking signal de −0,51, −0,47, −1,7 e −2,1, todos dentro do intervalo. Portanto, todos são elegíveis sob esse critério.",
+  "porqueErradas": {
+    "B": "Um tracking signal negativo indica apenas tendência de superestimação da demanda; enquanto estiver dentro dos limites de controle, o modelo permanece adequado.",
+    "C": "A suavização exponencial incorpora todo o histórico de forma ponderada e decrescente — a afirmação inverte o funcionamento do método.",
+    "D": "O tracking signal não é indicador otimizante: ele é de controle, devendo apenas permanecer dentro dos limites. Além disso, −2,1 é o maior desvio em módulo entre os quatro, e não o menor.",
+    "E": "O menor erro acumulado em módulo é o do modelo de média móvel (−4), e não o da média exponencial com sazonalidade (−16). Erro acumulado próximo de zero, isoladamente, também pode mascarar erros grandes que se cancelam."
+  }
+},
+{
+  "id": "2023-Q19",
+  "tipo": "Oficial",
+  "ano": 2023,
+  "referencia": "ENADE 2023 — Questão 19 (Componente Específico)",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Difícil",
+  "competencia": "Calcular carga e capacidade de um centro de trabalho a partir de mix de demanda.",
+  "enunciado": "Uma empresa automobilística fabrica carros de passeio em três cores: branco, preto e cinza. A unidade fabril conta com três centros de trabalho: estruturação, pintura e acabamento, que operam em dois turnos de oito horas cada. A demanda agregada para este mês foi de 200 carros de passeio, e o setor de vendas prevê que a demanda irá aumentar 10% ao mês durante o próximo semestre. O engenheiro de produção responsável pela análise da capacidade acredita que os centros de trabalho para pintura e acabamento estão ociosos e, por isso, está preocupado momentaneamente apenas com o centro de estruturação.\n\nTabela 1 — Tempo gasto, em horas, na produção de cada veículo na estruturação:\nBranco = 1,0 | Preto = 1,5 | Cinza = 0,5\n\nTabela 2 — Demanda de carros por cor:\nBranco = 50% | Preto = 40% | Cinza = 10%\n\nNesse contexto, e considerando que o mês útil tenha sempre 20 dias, avalie as asserções a seguir e a relação proposta entre elas.\n\nI. A empresa, no próximo mês, precisará traçar um plano de aumento da capacidade produtiva do centro de trabalho de estruturação, com o objetivo de atender ao crescimento de sua demanda.\n\nPORQUE\n\nII. Um aumento na demanda exigirá maior utilização do centro de trabalho de estruturação, consumindo um tempo maior de produção.\n\nA respeito dessas asserções, assinale a opção correta.",
+  "alternativas": {
+    "A": "As asserções I e II são proposições verdadeiras, e a II é uma justificativa correta da I.",
+    "B": "As asserções I e II são proposições verdadeiras, mas a II não é uma justificativa correta da I.",
+    "C": "A asserção I é uma proposição verdadeira, e a II é uma proposição falsa.",
+    "D": "A asserção I é uma proposição falsa, e a II é uma proposição verdadeira.",
+    "E": "As asserções I e II são proposições falsas."
+  },
+  "gabarito": "D",
+  "justificativa": "O tempo médio de estruturação por veículo é 0,50 × 1,0 + 0,40 × 1,5 + 0,10 × 0,5 = 1,15 h. Para os 220 carros do próximo mês (200 + 10%), a carga será 220 × 1,15 = 253 horas. A capacidade do centro é 2 turnos × 8 h × 20 dias = 320 horas mensais. Como 253 h < 320 h, não há necessidade de ampliar a capacidade no próximo mês — a asserção I é falsa. Já a asserção II é verdadeira em si mesma: mais demanda de fato consome mais tempo do centro de trabalho.",
+  "porqueErradas": {
+    "A": "A asserção I é falsa: a carga prevista de 253 horas ainda está bem abaixo das 320 horas disponíveis no centro de estruturação.",
+    "B": "Também pressupõe que I seja verdadeira, o que o cálculo de capacidade não confirma.",
+    "C": "A asserção II é verdadeira — trata-se de uma relação direta e correta entre aumento de demanda e consumo de tempo produtivo.",
+    "E": "A asserção II é verdadeira, de modo que classificar ambas como falsas está incorreto."
+  }
+}
+]

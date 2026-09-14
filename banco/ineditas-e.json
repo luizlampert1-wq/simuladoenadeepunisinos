@@ -1,0 +1,347 @@
+[
+{
+  "id": "INE-46",
+  "tipo": "Inédita",
+  "area": "Gestão da Qualidade",
+  "dificuldade": "Média",
+  "competencia": "Classificar os custos da qualidade e compreender sua dinâmica.",
+  "enunciado": "A gestão dos custos da qualidade organiza os gastos relacionados à conformidade e à não conformidade em quatro categorias.\n\nA respeito dessas categorias, avalie as afirmações a seguir.\n\nI. Os custos de prevenção incluem treinamento, planejamento da qualidade, qualificação de fornecedores e projeto robusto de produto e processo.\nII. Os custos de avaliação incluem inspeção de recebimento, ensaios de laboratório, auditorias de processo e calibração de instrumentos.\nIII. As falhas internas são detectadas antes da entrega ao cliente, enquanto as falhas externas se manifestam após a entrega.\nIV. O aumento do investimento em prevenção eleva o custo total da qualidade, por acrescentar gastos sem contrapartida.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e IV.",
+    "B": "II e IV.",
+    "C": "I, II e III.",
+    "D": "I, III e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "C",
+  "justificativa": "As três primeiras afirmações classificam corretamente as categorias: prevenção atua antes de o defeito existir (I), avaliação verifica a conformidade do que já foi produzido (II), e a distinção entre falhas internas e externas está no momento da detecção em relação à entrega ao cliente (III).",
+  "porqueErradas": {
+    "A": "A afirmação IV é falsa: investir em prevenção reduz as falhas internas e externas, que costumam ser as parcelas mais caras. O efeito líquido típico é a redução do custo total da qualidade.",
+    "B": "Inclui IV, que ignora o efeito da prevenção sobre as demais categorias de custo.",
+    "D": "Inclui IV, incorreta, e omite II, que trata dos custos de avaliação.",
+    "E": "Inclui IV, incorreta, e deixa de fora I, que caracteriza os custos de prevenção."
+  }
+},
+{
+  "id": "INE-47",
+  "tipo": "Inédita",
+  "area": "Gestão da Qualidade",
+  "dificuldade": "Fácil",
+  "competencia": "Selecionar a ferramenta da qualidade adequada ao tipo de investigação.",
+  "enunciado": "Uma equipe de melhoria investiga a variação da espessura de chapas laminadas. Suspeita-se que a temperatura de trabalho do laminador influencie a espessura obtida. Foram registrados, para 60 lotes, os pares de valores de temperatura e de espessura média, e a equipe deseja verificar se existe e qual é a forma da relação entre essas duas variáveis.\n\nA ferramenta da qualidade adequada a essa investigação é",
+  "alternativas": {
+    "A": "o diagrama de Pareto.",
+    "B": "o diagrama de dispersão.",
+    "C": "a folha de verificação.",
+    "D": "o histograma.",
+    "E": "a carta de controle."
+  },
+  "gabarito": "B",
+  "justificativa": "O diagrama de dispersão é a ferramenta destinada a investigar a existência, o sentido e a intensidade da relação entre duas variáveis quantitativas. Cada lote é representado por um ponto cujas coordenadas são a temperatura e a espessura, permitindo visualizar padrões de associação — linear, não linear ou ausência de relação.",
+  "porqueErradas": {
+    "A": "O diagrama de Pareto ordena categorias por frequência ou impacto para priorizar problemas; não relaciona duas variáveis quantitativas entre si.",
+    "C": "A folha de verificação é instrumento de coleta organizada de dados, etapa anterior à análise da relação entre variáveis.",
+    "D": "O histograma descreve a distribuição de uma única variável, não a associação entre duas.",
+    "E": "A carta de controle monitora a estabilidade de uma variável ao longo do tempo, sem relacioná-la a outra variável de processo."
+  }
+},
+{
+  "id": "INE-48",
+  "tipo": "Inédita",
+  "area": "Gestão da Qualidade",
+  "dificuldade": "Difícil",
+  "competencia": "Compreender os fundamentos e os limites da amostragem de aceitação.",
+  "enunciado": "Um plano de amostragem simples por atributos foi definido com tamanho de amostra n = 80, número de aceitação Ac = 2 e número de rejeição Re = 3.\n\nA respeito desse plano, avalie as afirmações a seguir.\n\nI. O lote é aceito quando forem encontradas até 2 unidades defeituosas na amostra de 80 peças.\nII. A curva característica de operação relaciona a fração de defeituosos do lote à probabilidade de sua aceitação.\nIII. O risco do produtor é a probabilidade de rejeitar um lote cuja qualidade é, de fato, aceitável.\nIV. A amostragem de aceitação melhora a qualidade intrínseca do lote inspecionado.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e IV.",
+    "B": "II e IV.",
+    "C": "I, II e III.",
+    "D": "I, III e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "C",
+  "justificativa": "O número de aceitação define o critério de decisão: até 2 defeituosos aceita-se o lote, a partir de 3 rejeita-se (I correta). A curva característica de operação é justamente o gráfico que descreve o poder discriminatório do plano, relacionando qualidade do lote e probabilidade de aceitação (II correta). E o risco do produtor, ou erro tipo I, é a probabilidade de rejeitar lote bom (III correta).",
+  "porqueErradas": {
+    "A": "A afirmação IV é falsa: a amostragem apenas separa lotes aceitos de rejeitados, sem alterar a fração de defeituosos daquilo que foi produzido. A qualidade se constrói no processo, não na inspeção.",
+    "B": "Inclui IV, que atribui à inspeção um efeito de melhoria que ela não possui.",
+    "D": "Inclui IV, incorreta, e omite II, que trata da curva característica de operação.",
+    "E": "Inclui IV, incorreta, e deixa de fora I, que expressa o critério de decisão do plano."
+  }
+},
+{
+  "id": "INE-49",
+  "tipo": "Inédita",
+  "area": "Gestão da Qualidade",
+  "dificuldade": "Fácil",
+  "competencia": "Reconhecer as fases do ciclo DMAIC em projetos Seis Sigma.",
+  "enunciado": "Um projeto Seis Sigma reduziu de 4,2% para 0,9% a taxa de refugo de uma linha de estamparia. Concluídas as melhorias, a equipe precisa assegurar que o novo patamar de desempenho se mantenha após o encerramento do projeto, estabelecendo planos de controle, atualizando procedimentos operacionais padrão e definindo indicadores de acompanhamento com responsáveis designados.\n\nEssas atividades correspondem à fase do ciclo DMAIC denominada",
+  "alternativas": {
+    "A": "Define.",
+    "B": "Measure.",
+    "C": "Analyze.",
+    "D": "Improve.",
+    "E": "Control."
+  },
+  "gabarito": "E",
+  "justificativa": "A fase Control encerra o ciclo DMAIC e destina-se precisamente a sustentar os ganhos obtidos: implantação do plano de controle, revisão de procedimentos padrão, definição de indicadores de monitoramento, treinamento dos operadores e transferência formal do processo ao seu responsável.",
+  "porqueErradas": {
+    "A": "A fase Define delimita o problema, o escopo, a equipe e as metas do projeto, ocorrendo em seu início.",
+    "B": "A fase Measure levanta a situação atual, valida o sistema de medição e estabelece a linha de base do desempenho.",
+    "C": "A fase Analyze identifica e comprova estatisticamente as causas-raiz do problema investigado.",
+    "D": "A fase Improve gera, testa e implanta as soluções — que, no caso descrito, já foram concluídas."
+  }
+},
+{
+  "id": "INE-50",
+  "tipo": "Inédita",
+  "area": "Gestão da Qualidade",
+  "dificuldade": "Média",
+  "competencia": "Calcular o indicador DPMO em programas Seis Sigma.",
+  "enunciado": "Em um processo de montagem, cada unidade produzida apresenta 3 oportunidades distintas de ocorrência de defeito. Na inspeção de 5 000 unidades, foram registrados 15 defeitos no total.\n\nSabendo que o DPMO (defeitos por milhão de oportunidades) é dado pela razão entre o número de defeitos e o número total de oportunidades, multiplicada por um milhão, o DPMO desse processo é de",
+  "alternativas": {
+    "A": "300.",
+    "B": "1 000.",
+    "C": "3 000.",
+    "D": "5 000.",
+    "E": "15 000."
+  },
+  "gabarito": "B",
+  "justificativa": "O número total de oportunidades é 5 000 unidades × 3 oportunidades = 15 000. A razão entre defeitos e oportunidades é 15 ÷ 15 000 = 0,001. Multiplicando por um milhão: 1 000 DPMO.",
+  "porqueErradas": {
+    "A": "300 resultaria de dividir os 15 defeitos apenas pelas 5 000 unidades e multiplicar por 10⁵, errando tanto o denominador quanto a escala.",
+    "C": "3 000 seria obtido ao dividir os defeitos pelas 5 000 unidades sem considerar as 3 oportunidades por unidade.",
+    "D": "5 000 corresponde ao número de unidades inspecionadas, não ao indicador.",
+    "E": "15 000 corresponde ao número total de oportunidades de defeito, não ao DPMO."
+  }
+},
+{
+  "id": "INE-51",
+  "tipo": "Inédita",
+  "area": "Gestão da Qualidade",
+  "dificuldade": "Média",
+  "competencia": "Interpretar sinais de causas especiais em cartas de controle e distinguir controle de capacidade.",
+  "enunciado": "Uma equipe monitora um processo por meio de cartas de controle de médias.\n\nA respeito da interpretação dessas cartas, avalie as afirmações a seguir.\n\nI. Um único ponto situado além dos limites de controle indica a presença de causa especial de variação.\nII. Uma sequência de nove pontos consecutivos do mesmo lado da linha central indica causa especial, ainda que todos estejam dentro dos limites de controle.\nIII. Um processo cujos pontos permanecem dentro dos limites de controle atende, necessariamente, aos limites de especificação do produto.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "I e II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "B",
+  "justificativa": "O ponto além dos limites é o sinal clássico de causa especial (I correta). As regras complementares de detecção incluem sequências longas do mesmo lado da linha central, que sinalizam deslocamento da média mesmo sem pontos fora dos limites (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira: as regras de sequência existem justamente para detectar alterações que os limites isolados não capturam.",
+    "C": "A afirmação III confunde controle estatístico com capacidade. Limites de controle derivam da variabilidade do próprio processo; limites de especificação derivam do requisito do cliente. Um processo pode estar perfeitamente sob controle e, ainda assim, ser incapaz de atender à especificação.",
+    "D": "Inclui III, que trata como equivalentes dois conceitos distintos do controle estatístico de processo.",
+    "E": "Inclui III, incorreta: estabilidade e capacidade são propriedades independentes de um processo."
+  }
+},
+{
+  "id": "INE-52",
+  "tipo": "Inédita",
+  "area": "Estatística",
+  "dificuldade": "Média",
+  "competencia": "Interpretar corretamente o p-valor e a decisão em testes de hipóteses.",
+  "enunciado": "Uma indústria alimentícia testa a hipótese nula de que o conteúdo médio de suas embalagens é de 500 g, contra a hipótese alternativa de que esse valor é diferente de 500 g. Adotou-se nível de significância de 5%. A partir de uma amostra, obteve-se p-valor igual a 0,032.\n\nCom base nessa situação, avalie as afirmações a seguir.\n\nI. Como o p-valor é menor que o nível de significância adotado, rejeita-se a hipótese nula.\nII. O p-valor é a probabilidade de se observar um resultado tão ou mais extremo que o obtido, supondo verdadeira a hipótese nula.\nIII. O p-valor de 0,032 significa que há 3,2% de probabilidade de a hipótese nula ser verdadeira.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "I e II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "B",
+  "justificativa": "A regra de decisão compara o p-valor ao nível de significância: sendo 0,032 menor que 0,05, rejeita-se a hipótese nula (I correta). E a afirmação II reproduz a definição correta do p-valor: uma probabilidade condicional calculada sob a suposição de que a hipótese nula é verdadeira (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira e apresenta a definição formal do p-valor.",
+    "C": "A afirmação III inverte o condicionamento — é o erro de interpretação mais comum em testes de hipóteses. O p-valor é a probabilidade dos dados dada a hipótese, e não a probabilidade da hipótese dados os dados.",
+    "D": "Inclui III, que atribui ao p-valor um significado de probabilidade da hipótese, o que exigiria abordagem bayesiana e uma distribuição a priori.",
+    "E": "Inclui III, incorreta pela inversão do condicionamento probabilístico."
+  }
+},
+{
+  "id": "INE-53",
+  "tipo": "Inédita",
+  "area": "Estatística",
+  "dificuldade": "Média",
+  "competencia": "Aplicar a distribuição binomial em problemas de inspeção por atributos.",
+  "enunciado": "Um lote de peças apresenta 5% de itens defeituosos. Um inspetor retira, ao acaso e com reposição, 4 peças desse lote.\n\nA probabilidade de que nenhuma das 4 peças retiradas seja defeituosa é de, aproximadamente,",
+  "alternativas": {
+    "A": "5%.",
+    "B": "20%.",
+    "C": "74%.",
+    "D": "81%.",
+    "E": "95%."
+  },
+  "gabarito": "D",
+  "justificativa": "Como as retiradas são com reposição, os eventos são independentes e a probabilidade de uma peça ser não defeituosa é 0,95 em cada extração. A probabilidade de nenhuma das quatro ser defeituosa é 0,95⁴ = 0,8145, ou aproximadamente 81%.",
+  "porqueErradas": {
+    "A": "5% é a fração de defeituosos do lote, isto é, a probabilidade de uma única peça ser defeituosa.",
+    "B": "20% corresponderia a 4 × 5%, soma que não se aplica: probabilidades de eventos independentes se multiplicam, e ainda assim isso representaria a chance de haver defeituosos, não o contrário.",
+    "C": "74% corresponderia aproximadamente a 0,95⁶, ou seja, a uma amostra de 6 peças.",
+    "E": "95% é a probabilidade de uma única peça não ser defeituosa; para quatro peças simultaneamente esse valor é necessariamente menor."
+  }
+},
+{
+  "id": "INE-54",
+  "tipo": "Inédita",
+  "area": "Estatística",
+  "dificuldade": "Difícil",
+  "competencia": "Aplicar a distribuição de Poisson a processos de chegada.",
+  "enunciado": "Em um posto de atendimento, os clientes chegam segundo um processo de Poisson, com taxa média de 3 clientes por minuto.\n\nSabendo que, na distribuição de Poisson, P(X = k) = e^(−λ) · λ^k / k!, e adotando e^(−3) ≈ 0,0498, a probabilidade de que cheguem exatamente 2 clientes em um minuto é de, aproximadamente,",
+  "alternativas": {
+    "A": "10,0%.",
+    "B": "14,9%.",
+    "C": "22,4%.",
+    "D": "33,6%.",
+    "E": "44,8%."
+  },
+  "gabarito": "C",
+  "justificativa": "Aplicando a fórmula com λ = 3 e k = 2: P(X = 2) = e^(−3) × 3² / 2! = 0,0498 × 9 / 2 = 0,0498 × 4,5 = 0,2241, ou seja, aproximadamente 22,4%.",
+  "porqueErradas": {
+    "A": "10,0% não corresponde a nenhum valor da distribuição com λ = 3; aproxima-se de P(X = 5), que vale cerca de 10,1%.",
+    "B": "14,9% é o valor de P(X = 1) = 0,0498 × 3 = 0,1494, ou seja, a probabilidade de chegar exatamente um cliente.",
+    "D": "33,6% seria obtido ao esquecer a divisão por 2! no denominador, calculando 0,0498 × 9 = 0,448 e aplicando outro erro de escala.",
+    "E": "44,8% corresponde a 0,0498 × 9, resultado de omitir integralmente o fatorial no denominador da fórmula."
+  }
+},
+{
+  "id": "INE-55",
+  "tipo": "Inédita",
+  "area": "Estatística",
+  "dificuldade": "Difícil",
+  "competencia": "Dimensionar o tamanho de amostra para estimação de proporções.",
+  "enunciado": "Uma empresa deseja estimar a proporção de clientes satisfeitos com seu serviço de entrega, admitindo margem de erro máxima de 4 pontos percentuais e nível de confiança de 95% (z = 1,96). Não há estimativa prévia da proporção, adotando-se, por isso, o cenário mais conservador (p = 0,5).\n\nSabendo que o tamanho de amostra é dado por n = z² · p · (1 − p) / E², o número mínimo de clientes a serem entrevistados é de aproximadamente",
+  "alternativas": {
+    "A": "150.",
+    "B": "385.",
+    "C": "601.",
+    "D": "1 068.",
+    "E": "2 401."
+  },
+  "gabarito": "C",
+  "justificativa": "Substituindo na fórmula: n = (1,96)² × 0,5 × 0,5 / (0,04)² = 3,8416 × 0,25 / 0,0016 = 0,9604 / 0,0016 = 600,25. Como o tamanho de amostra deve ser inteiro e a margem de erro é máxima, arredonda-se para cima: 601 entrevistados.",
+  "porqueErradas": {
+    "A": "150 corresponderia a uma margem de erro de cerca de 8 pontos percentuais, o dobro da admitida.",
+    "B": "385 é o tamanho de amostra para margem de erro de 5 pontos percentuais no mesmo nível de confiança — valor muito difundido, mas que não atende à exigência de 4 pontos.",
+    "D": "1 068 corresponderia a margem de erro de 3 pontos percentuais, mais rigorosa do que a especificada.",
+    "E": "2 401 corresponderia a margem de erro de 2 pontos percentuais, sobredimensionando muito a pesquisa."
+  }
+},
+{
+  "id": "INE-56",
+  "tipo": "Inédita",
+  "area": "Estatística",
+  "dificuldade": "Média",
+  "competencia": "Escolher medidas de tendência central adequadas na presença de valores atípicos.",
+  "enunciado": "Os salários mensais de sete funcionários de um pequeno setor, em milhares de reais, são:\n\n3, 3, 4, 4, 5, 6 e 40\n\nO valor de 40 mil corresponde ao salário do diretor da área, incluído no levantamento por engano.\n\nCom base nesses dados, avalie as afirmações a seguir.\n\nI. A média do conjunto é fortemente influenciada pelo valor atípico de 40 mil.\nII. A mediana do conjunto é 4 mil reais.\nIII. A média é a medida de tendência central mais representativa desse conjunto de dados.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "I e II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "B",
+  "justificativa": "A média é 65 ÷ 7 ≈ 9,3 mil reais, valor superior ao salário de seis dos sete funcionários — evidência direta da influência do valor atípico (I correta). A mediana é o quarto valor da série ordenada, ou seja, 4 mil reais (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira: com sete observações ordenadas, a mediana é o valor central, que é 4.",
+    "C": "A afirmação III é falsa: justamente por ser sensível a valores extremos, a média de 9,3 mil não representa bem um conjunto em que seis dos sete salários estão entre 3 e 6 mil. A mediana é a medida robusta adequada nesse caso.",
+    "D": "Inclui III, que recomenda a medida menos apropriada diante de um valor atípico tão discrepante.",
+    "E": "Inclui III, incorreta: a presença do outlier desqualifica a média como medida representativa."
+  }
+},
+{
+  "id": "INE-57",
+  "tipo": "Inédita",
+  "area": "Estatística",
+  "dificuldade": "Difícil",
+  "competencia": "Compreender a estrutura e o alcance de experimentos fatoriais.",
+  "enunciado": "Uma equipe de engenharia planeja um experimento fatorial completo do tipo 2³ para investigar a influência de temperatura, pressão e tempo de ciclo sobre a resistência de peças injetadas, avaliando cada fator em dois níveis.\n\nA respeito desse planejamento, avalie as afirmações a seguir.\n\nI. O experimento fatorial completo exige 8 combinações experimentais distintas.\nII. O planejamento permite estimar os três efeitos principais e todas as interações entre os fatores.\nIII. Um planejamento fatorial fracionado do tipo 2³⁻¹ exigiria apenas 4 combinações, ao custo de confundimento entre efeitos.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "I e II, apenas.",
+    "C": "II e III, apenas.",
+    "D": "I e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "E",
+  "justificativa": "Um fatorial 2³ combina três fatores em dois níveis, resultando em 2³ = 8 ensaios (I correta). Com todas as combinações executadas, é possível estimar os três efeitos principais, as três interações de dois fatores e a interação tripla (II correta). Já o fracionado 2³⁻¹ executa metade dos ensaios, 4 no total, economizando recursos mas gerando confundimento (aliasing) entre efeitos principais e interações (III correta).",
+  "porqueErradas": {
+    "A": "As três afirmações são verdadeiras; restringir a resposta a I ignora as características essenciais do planejamento fatorial.",
+    "B": "Além de I e II, a afirmação III também procede quanto ao planejamento fracionado.",
+    "C": "Omite I, que estabelece o número de ensaios do fatorial completo.",
+    "D": "Omite II, que expressa a principal vantagem do fatorial completo: estimar efeitos principais e interações sem confundimento."
+  }
+},
+{
+  "id": "INE-58",
+  "tipo": "Inédita",
+  "area": "Gestão de Projetos",
+  "dificuldade": "Média",
+  "competencia": "Aplicar a estimativa de três pontos (PERT) na duração de atividades.",
+  "enunciado": "Na elaboração do cronograma de um projeto, uma atividade teve suas durações estimadas em 4 dias no cenário otimista, 10 dias no cenário mais provável e 22 dias no cenário pessimista.\n\nAdotando a distribuição beta, com tempo esperado te = (a + 4m + b) / 6 e desvio-padrão σ = (b − a) / 6, avalie as afirmações a seguir.\n\nI. O tempo esperado da atividade é de 11 dias.\nII. O desvio-padrão da duração da atividade é de 3 dias.\nIII. O tempo esperado coincide com o tempo mais provável, pois este recebe o maior peso na fórmula.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "I e II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "B",
+  "justificativa": "Aplicando a fórmula do tempo esperado: (4 + 4 × 10 + 22) ÷ 6 = 66 ÷ 6 = 11 dias (I correta). O desvio-padrão é (22 − 4) ÷ 6 = 18 ÷ 6 = 3 dias (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira e decorre da aplicação direta da fórmula do desvio-padrão.",
+    "C": "A afirmação III é falsa: o tempo esperado (11 dias) difere do mais provável (10 dias). A distribuição é assimétrica à direita, pois o cenário pessimista está 12 dias acima do mais provável, enquanto o otimista está apenas 6 dias abaixo — o que desloca a média para cima.",
+    "D": "Inclui III, que ignora o efeito da assimetria da distribuição sobre o valor esperado.",
+    "E": "Inclui III, incorreta: os dois valores só coincidiriam em distribuição simétrica."
+  }
+},
+{
+  "id": "INE-59",
+  "tipo": "Inédita",
+  "area": "Gestão de Projetos",
+  "dificuldade": "Média",
+  "competencia": "Distinguir as técnicas de compressão de cronograma e seus efeitos.",
+  "enunciado": "O gerente de um projeto industrial precisa entregar o escopo contratado em prazo inferior ao originalmente planejado.\n\nA respeito das técnicas disponíveis para essa finalidade, avalie as afirmações a seguir.\n\nI. A compressão (crashing) reduz a duração pela adição de recursos às atividades do caminho crítico, geralmente elevando os custos do projeto.\nII. O paralelismo (fast tracking) antecipa atividades originalmente sequenciais, executando-as com sobreposição, o que aumenta o risco de retrabalho.\nIII. Comprimir atividades que não pertencem ao caminho crítico reduz a duração total do projeto.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "I e II, apenas.",
+    "C": "I e III, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "B",
+  "justificativa": "O crashing troca custo por prazo, acrescentando recursos às atividades críticas (I correta). O fast tracking troca risco por prazo, sobrepondo atividades que seriam sequenciais e assumindo a possibilidade de retrabalho caso as premissas mudem (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira e descreve a segunda técnica clássica de compressão de cronograma.",
+    "C": "A afirmação III é falsa: a duração do projeto é determinada pelo caminho crítico. Atividades não críticas possuem folga, e reduzi-las apenas aumenta essa folga, sem antecipar a entrega — além de consumir recursos sem benefício.",
+    "D": "Inclui III, que desconsidera o papel do caminho crítico na definição da duração do projeto.",
+    "E": "Inclui III, incorreta: comprimir atividades com folga não altera a data de término."
+  }
+},
+{
+  "id": "INE-60",
+  "tipo": "Inédita",
+  "area": "Gestão de Projetos",
+  "dificuldade": "Média",
+  "competencia": "Compreender as estratégias e os instrumentos de gerenciamento de riscos em projetos.",
+  "enunciado": "A equipe de um projeto de implantação de nova linha produtiva estruturou seu processo de gerenciamento de riscos.\n\nA respeito desse processo, avalie as afirmações a seguir.\n\nI. As estratégias de resposta a riscos negativos incluem eliminar, transferir, mitigar e aceitar.\nII. A matriz de probabilidade e impacto é o instrumento usual da análise qualitativa, apoiando a priorização dos riscos identificados.\nIII. A reserva de contingência destina-se aos riscos identificados, enquanto a reserva gerencial cobre riscos não identificados.\nIV. A transferência do risco, por meio de seguro ou de contrato, elimina a possibilidade de sua ocorrência.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e IV.",
+    "B": "II e IV.",
+    "C": "I, II e III.",
+    "D": "I, III e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "C",
+  "justificativa": "As quatro estratégias clássicas para ameaças são exatamente as listadas em I. A matriz de probabilidade e impacto é o instrumento padrão da análise qualitativa (II correta). E a distinção entre reserva de contingência — para riscos conhecidos — e reserva gerencial — para os desconhecidos — é a que orienta o orçamento do projeto (III correta).",
+  "porqueErradas": {
+    "A": "A afirmação IV é falsa: transferir desloca o impacto financeiro para um terceiro, mas o evento continua podendo ocorrer. Um seguro contra incêndio não impede o incêndio.",
+    "B": "Inclui IV, que confunde transferência com eliminação do risco.",
+    "D": "Inclui IV, incorreta, e omite II, que apresenta o instrumento da análise qualitativa.",
+    "E": "Inclui IV, incorreta, e deixa de fora I, que enumera as estratégias de resposta a ameaças."
+  }
+}
+]

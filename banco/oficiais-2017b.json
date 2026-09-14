@@ -1,0 +1,305 @@
+[
+{
+  "id": "2017-Q23",
+  "tipo": "Oficial",
+  "ano": 2017,
+  "referencia": "ENADE 2017 — Questão 23 (Componente Específico)",
+  "area": "Desenvolvimento de Produto e Inovação",
+  "dificuldade": "Média",
+  "competencia": "Compreender os princípios da engenharia simultânea no desenvolvimento de produtos.",
+  "enunciado": "Sistemas de gerenciamento, em tempo real, de processos produtivos têm apresentado ganhos para as empresas devido à aquisição de dados de produção que proporcionam maior produtividade com a otimização dos recursos e a redução de custos, como rastreamento dos materiais, monitoramento das sequências de programação, controle estatístico de processo. Para as empresas, o desenvolvimento de produtos ainda é tarefa complexa e apresenta custo elevado; por isso, práticas como a engenharia simultânea têm contribuído com a redução dos desperdícios industriais.\n\n(ROZENFELD, H. et al. Gestão do desenvolvimento de produtos. São Paulo: Saraiva, 2006, adaptado.)\n\nA partir dessas informações, a respeito da engenharia simultânea e sua relação com o desenvolvimento de produtos inovadores, avalie as afirmações a seguir.\n\nI. A engenharia simultânea contribui para que o resultado do desenvolvimento de produtos inovadores atinja o mercado no tempo projetado.\nII. A engenharia simultânea, também conhecida como engenharia concorrente ou paralela, contempla, em sua metodologia, o princípio de desenvolvimento de produtos em etapas sequenciais do processo de inovação.\nIII. A engenharia simultânea praticada em organizações empresariais baseia-se em relações de paralelismo para executar atividades, com o objetivo de antecipar a ocorrência de problemas no processo de desenvolvimento de produtos inovadores.\nIV. A engenharia simultânea melhora as formas clássicas de organização do trabalho em uma empresa, possibilitando flexibilidade e autonomia da equipe responsável pelo desenvolvimento de produtos inovadores.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e II.",
+    "B": "II e III.",
+    "C": "III e IV.",
+    "D": "I, II e IV.",
+    "E": "I, III e IV."
+  },
+  "gabarito": "E",
+  "justificativa": "A engenharia simultânea sobrepõe atividades que tradicionalmente seriam sequenciais, reduzindo o tempo de desenvolvimento (I correta) e permitindo antecipar problemas por meio do trabalho paralelo de equipes multifuncionais (III correta). Esse arranjo rompe com a organização clássica departamentalizada, conferindo flexibilidade e autonomia à equipe de projeto (IV correta).",
+  "porqueErradas": {
+    "A": "A afirmação II contradiz a própria definição de engenharia simultânea: seu princípio é justamente a execução paralela (concorrente) das etapas, e não sequencial.",
+    "B": "Inclui II, que descreve o modelo sequencial tradicional — exatamente o que a engenharia simultânea busca substituir.",
+    "C": "Embora III e IV estejam corretas, a alternativa omite I, que expressa um dos principais benefícios da prática: a redução do time to market.",
+    "D": "Inclui II, que é falsa por atribuir caráter sequencial à metodologia."
+  }
+},
+{
+  "id": "2017-Q24",
+  "tipo": "Oficial",
+  "ano": 2017,
+  "referencia": "ENADE 2017 — Questão 24 (Componente Específico)",
+  "area": "Gestão da Qualidade",
+  "dificuldade": "Média",
+  "competencia": "Distinguir os níveis estratégico, tático e operacional do modelo geral de gestão da qualidade.",
+  "enunciado": "O modelo geral de gestão da qualidade tem seus princípios, sistemas e ferramentas nos níveis estratégico, tático e operacional, respectivamente.\n\nNesse contexto, é correto afirmar que o nível tático inclui",
+  "alternativas": {
+    "A": "custos da qualidade.",
+    "B": "gerenciamento da rotina.",
+    "C": "ferramentas da qualidade.",
+    "D": "gerenciamento das diretrizes.",
+    "E": "controle estatístico de processos."
+  },
+  "gabarito": "D",
+  "justificativa": "No modelo apresentado, o nível estratégico abriga os princípios, o tático os sistemas de gestão e o operacional as ferramentas. O gerenciamento das diretrizes (hoshin kanri) é precisamente o sistema que desdobra os objetivos estratégicos da organização em metas e planos de ação para as unidades — portanto, situa-se no nível tático.",
+  "porqueErradas": {
+    "A": "Os custos da qualidade constituem um indicador de apoio à decisão, tratado como medida de desempenho, e não como o sistema de desdobramento típico do nível tático.",
+    "B": "O gerenciamento da rotina atua sobre a padronização e a manutenção dos processos do dia a dia, caracterizando o nível operacional.",
+    "C": "As ferramentas da qualidade (diagrama de Ishikawa, Pareto, histograma, folha de verificação) pertencem ao nível operacional por definição do próprio modelo.",
+    "E": "O controle estatístico de processos é técnica aplicada diretamente no chão de fábrica, integrando o nível operacional."
+  }
+},
+{
+  "id": "2017-Q25",
+  "tipo": "Oficial",
+  "ano": 2017,
+  "referencia": "ENADE 2017 — Questão 25 (Componente Específico)",
+  "area": "Gestão Organizacional e Estratégia",
+  "dificuldade": "Média",
+  "competencia": "Relacionar estratégias competitivas genéricas de Porter aos critérios competitivos da estratégia de produção.",
+  "enunciado": "Pressionada pelos preços mais baixos do minério de ferro oferecidos pela mineradora australiana AUS, em grande parte pela proximidade geográfica da Austrália em relação à China, a mineradora brasileira BRA (maior exportadora mundial da commodity) divulgou recentemente o acordo com uma grande siderúrgica alemã, para redução do preço do minério de ferro fino e das pelotas. Segundo o consenso entre analistas de mercado especializados no setor, esse é mais um sinal forte de que a situação do mercado segue prejudicial às mineradoras, visto que as exportações chinesas cresceram menos que o esperado este ano, e as vendas para o mercado europeu permaneceram estagnadas.\n\n(Disponível em: www.portosenavios.com.br. Acesso em: 20 jul. 2017, adaptado.)\n\nO caso descrito demonstra uma conjuntura de mercado que caracteriza uma relação causal entre a Estratégia Competitiva Genérica e os critérios competitivos da Estratégia de Produção e Operações das empresas.\n\nA relação causal específica no caso da empresa BRA se estabelece entre",
+  "alternativas": {
+    "A": "logística e qualidade.",
+    "B": "diferenciação e inovação.",
+    "C": "diferenciação e flexibilidade.",
+    "D": "liderança no custo e custos baixos.",
+    "E": "globalização e desempenho na entrega."
+  },
+  "gabarito": "D",
+  "justificativa": "O minério de ferro é uma commodity: o produto é padronizado e a concorrência se dá essencialmente por preço. Ao reduzir preços para reagir à concorrente australiana, a BRA adota a estratégia competitiva genérica de liderança em custo, que se traduz, na estratégia de produção e operações, no critério competitivo de custos baixos.",
+  "porqueErradas": {
+    "A": "Logística não é uma das estratégias competitivas genéricas de Porter, e a qualidade não é o critério em disputa no caso relatado.",
+    "B": "Diferenciação pressupõe atributos singulares percebidos pelo cliente, o que não se aplica a uma commodity padronizada como o minério de ferro.",
+    "C": "Além de a diferenciação não se aplicar ao caso, a flexibilidade não é o critério competitivo mobilizado na decisão de reduzir preços.",
+    "E": "Globalização é um contexto de mercado, não uma estratégia genérica; e o desempenho na entrega não é o fator determinante descrito no texto."
+  }
+},
+{
+  "id": "2017-Q26",
+  "tipo": "Oficial",
+  "ano": 2017,
+  "referencia": "ENADE 2017 — Questão 26 (Componente Específico)",
+  "area": "Sistemas de Informação e Indústria 4.0",
+  "dificuldade": "Fácil",
+  "competencia": "Reconhecer o benefício central de um sistema ERP na integração de processos.",
+  "enunciado": "Uma empresa do ramo de cosméticos vem enfrentando uma série de reclamações de clientes, entre as quais as referentes aos atrasos na entrega de produtos e aos erros na emissão de notas fiscais. O diretor de operações identificou que as causas das reclamações envolvem os setores de compras, armazenagem, produção, financeiro e vendas e, para solucionar tais problemas, propôs implementar um ERP (Enterprise Resource Planning) que permite",
+  "alternativas": {
+    "A": "retorno financeiro significativo de curto prazo para a empresa.",
+    "B": "controle de forma automatizada dos dados e decisões da empresa.",
+    "C": "redução do custo de investimento em treinamento dos funcionários para uso do sistema.",
+    "D": "envolvimento dos setores de compras, armazenagem e produção separadamente dos setores financeiro e de vendas.",
+    "E": "integração dos dados de processos internos em uma base de dados única e consistente, a qual serve de apoio nas decisões gerenciais."
+  },
+  "gabarito": "E",
+  "justificativa": "O ERP tem como característica definidora a base de dados única e integrada, que elimina redundâncias e inconsistências entre setores. No caso descrito — atrasos de entrega e erros de faturamento causados pela desarticulação entre compras, armazenagem, produção, financeiro e vendas — é exatamente essa integração que ataca a causa-raiz e apoia as decisões gerenciais.",
+  "porqueErradas": {
+    "A": "Implantações de ERP exigem investimento elevado e período de maturação; o retorno financeiro costuma ocorrer no médio e longo prazos, não no curto.",
+    "B": "O ERP automatiza o fluxo de dados, mas não toma decisões — estas continuam sendo responsabilidade dos gestores, que passam a contar com informação mais confiável.",
+    "C": "Ocorre o contrário: a implantação de um ERP demanda investimento significativo em capacitação e gestão da mudança.",
+    "D": "Manter os setores separados é precisamente o problema que se quer resolver; o ERP existe para integrá-los, não para segregá-los."
+  }
+},
+{
+  "id": "2017-Q27",
+  "tipo": "Oficial",
+  "ano": 2017,
+  "referencia": "ENADE 2017 — Questão 27 (Componente Específico)",
+  "area": "Desenvolvimento de Produto e Inovação",
+  "dificuldade": "Média",
+  "competencia": "Analisar estratégias de gestão da inovação tecnológica na indústria.",
+  "enunciado": "As práticas gerenciais voltadas à inovação tecnológica mais adotadas pelas empresas brasileiras são relacionadas ao gerenciamento tático do desenvolvimento de produtos e processos. É comum que as indústrias adotem estratégia de inovação imitativa e que, na maioria das empresas, a Pesquisa & Desenvolvimento se concentre quase que exclusivamente no desenvolvimento de produtos e processos.\n\nConsiderando a necessidade de superar o modelo descrito, para aprimorar os sistemas de produção, visando incrementar as inovações tecnológicas, é necessário que as empresas industriais",
+  "alternativas": {
+    "A": "reforcem o investimento em desenvolvimento, de forma a concentrar as atividades de desenvolvimento de produtos e processos oriundos da estratégia de gestão da inovação imitativa.",
+    "B": "reposicionem as indústrias, para maior controle estatístico dos processos produtivos e, assim, enfatizem o gerenciamento tático do desenvolvimento de produtos e processos.",
+    "C": "reposicionem estrategicamente as indústrias, de forma a reestruturar os processos internos e reorganizar a gestão da inovação aumentando o investimento em pesquisa.",
+    "D": "desmembrem as atividades de pesquisa e de desenvolvimento, de modo a assegurar que o desenvolvimento de produtos e processos seja menos influenciado pelos investimentos em pesquisa.",
+    "E": "reestruturem os sistemas de produção das indústrias de modo que se concentrem no desenvolvimento de produtos por meio de processos mais automatizados."
+  },
+  "gabarito": "C",
+  "justificativa": "O texto aponta duas limitações a superar: a predominância da estratégia imitativa e a concentração do P&D apenas na parcela de \"desenvolvimento\", com pouca pesquisa. A superação exige elevar a inovação ao nível estratégico — e não apenas tático — reorganizando a gestão da inovação e ampliando o investimento na atividade de pesquisa, que é exatamente o que propõe a alternativa C.",
+  "porqueErradas": {
+    "A": "Reforça precisamente o modelo que se quer superar, mantendo a estratégia imitativa e a concentração no desenvolvimento em detrimento da pesquisa.",
+    "B": "Controle estatístico de processos é ferramenta de qualidade operacional e não ataca a carência de pesquisa; além disso, mantém o foco no gerenciamento tático criticado no texto.",
+    "D": "Separar pesquisa de desenvolvimento e reduzir a influência da pesquisa agrava o problema diagnosticado, em vez de resolvê-lo.",
+    "E": "Automatizar processos é melhoria de manufatura; não altera a estratégia de inovação nem amplia a capacidade de pesquisa da empresa."
+  }
+},
+{
+  "id": "2017-Q28",
+  "tipo": "Oficial",
+  "ano": 2017,
+  "referencia": "ENADE 2017 — Questão 28 (Componente Específico)",
+  "area": "Logística e Cadeia de Suprimentos",
+  "dificuldade": "Difícil",
+  "competencia": "Avaliar a qualidade de agrupamentos e sequenciamentos em problemas de roteirização de veículos.",
+  "figura": "2017_q28.png",
+  "enunciado": "Em um problema de roteirização e programação de veículos, algumas premissas básicas orientaram as etapas de agrupamento dos clientes a serem atendidos na mesma rota e a sequência de atendimento. No abastecimento da linha de produção de veículos, um operador logístico coleta peças de 12 fornecedores e as transporta até um centro de distribuição, para consolidação das cargas. Considerando que o volume coletado de cada cliente é idêntico, foram propostas quatro rotas, mostradas na figura acima, as quais atendem a restrições tanto de capacidade de carga dos veículos quanto de tempo.\n\nCom base nessas informações e na figura, verifica-se que",
+  "alternativas": {
+    "A": "o problema pode ser definido como milkrun ou milk pick-up, pois há diversos clientes que devem ser atendidos em um tempo predeterminado.",
+    "B": "as rotas propostas atendem aos requisitos do método das economias, também chamado Clarke e Wright.",
+    "C": "o agrupamento proposto é adequado, visto que todas as rotas atendem ao mesmo número de clientes e o mesmo volume de carga.",
+    "D": "o agrupamento de clientes nas rotas 1 e 2 deve ser modificado, pois as rotas não têm o formato \"gota d'água\".",
+    "E": "o agrupamento dos clientes das rotas 3 e 4 pode ser melhorado ao se alocar, em uma mesma rota, os clientes mais distantes da central de distribuição."
+  },
+  "gabarito": "E",
+  "justificativa": "Um dos princípios básicos de bom roteamento é agrupar em uma mesma rota paradas próximas entre si, evitando cruzamentos e deslocamentos redundantes. Na figura, as rotas 3 e 4 apresentam trajetos que se sobrepõem e que percorrem regiões distantes de forma intercalada; reagrupar os clientes mais afastados do centro de distribuição em uma mesma rota reduziria a distância total percorrida.",
+  "porqueErradas": {
+    "A": "O milk run caracteriza-se por coletas em rota fixa, com janelas e frequências predefinidas; o enunciado não fornece informação de tempo predeterminado que permita essa classificação.",
+    "B": "O método das economias de Clarke e Wright constrói rotas combinando pares de clientes pelo maior ganho de distância — as rotas da figura apresentam cruzamentos e sobreposições incompatíveis com o resultado desse método.",
+    "C": "Atender ao mesmo número de clientes e volume não torna o agrupamento adequado: a qualidade da roteirização depende da proximidade geográfica entre as paradas, e não apenas do balanceamento de carga.",
+    "D": "O formato \"gota d'água\" é uma diretriz desejável, mas o problema evidente nas rotas apresentadas está na sobreposição entre as rotas 3 e 4, e não no desenho das rotas 1 e 2."
+  }
+},
+{
+  "id": "2017-Q29",
+  "tipo": "Oficial",
+  "ano": 2017,
+  "referencia": "ENADE 2017 — Questão 29 (Componente Específico)",
+  "area": "Pesquisa Operacional",
+  "dificuldade": "Média",
+  "competencia": "Dimensionar a capacidade de um sistema de filas a partir da distribuição de probabilidades de estado.",
+  "enunciado": "Uma lanchonete está projetando um sistema de atendimento drive-thru, permitindo, assim, que o cliente efetue e retire o pedido sem sair do seu veículo. Para isso, foi realizada a seguinte estimativa: 20 carros por hora como taxa de chegada de veículos em horário de maior movimento e 30 clientes motorizados por hora como taxa de atendimento. A probabilidade (Pn) de a lanchonete estar com n carros em seu sistema, tanto na espera quanto em atendimento, foi calculada e os dados obtidos estão apresentados a seguir.\n\nn = 0 → 33%\nn = 1 → 22%\nn = 2 → 15%\nn = 3 → 10%\nn = 4 → 7%\nn = 5 → 4%\nn = 6 → 3%\nn = 7 → 2%\nn = 8 → 1%\n\nObjetivando não prejudicar a circulação de veículos no entorno da lanchonete, definiu-se que a capacidade do sistema deveria atender a pelo menos 90% da demanda.\n\nCom base nessas informações e nos dados da tabela, a capacidade mínima de carros no sistema a ser considerada no projeto corresponderá a",
+  "alternativas": {
+    "A": "3.",
+    "B": "5.",
+    "C": "6.",
+    "D": "7.",
+    "E": "8."
+  },
+  "gabarito": "B",
+  "justificativa": "Acumulando as probabilidades a partir de n = 0: 33% (n≤0); 55% (n≤1); 70% (n≤2); 80% (n≤3); 87% (n≤4); 91% (n≤5). O primeiro valor de n cuja probabilidade acumulada atinge ou supera os 90% exigidos é n = 5.",
+  "porqueErradas": {
+    "A": "Com capacidade para 3 carros, a probabilidade acumulada é de apenas 80%, abaixo do nível de serviço de 90% estabelecido no projeto.",
+    "C": "Capacidade 6 acumula 94% e atende ao requisito, mas não é a capacidade mínima — 5 já satisfaz a condição, com menor investimento em área.",
+    "D": "Capacidade 7 acumula 96%: excede em muito o requisito e não corresponde ao valor mínimo solicitado.",
+    "E": "Capacidade 8 acumula 97%, sendo o maior dimensionamento possível entre as opções e, portanto, o mais distante do mínimo pedido."
+  }
+},
+{
+  "id": "2017-Q30",
+  "tipo": "Oficial",
+  "ano": 2017,
+  "referencia": "ENADE 2017 — Questão 30 (Componente Específico)",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Média",
+  "competencia": "Calcular capacidade em horário normal e necessidade total de produção em planejamento agregado.",
+  "enunciado": "Considere a situação em que um engenheiro de produção tenha elaborado um planejamento agregado, utilizando uma estratégia de produção constante, igual à capacidade em horário normal. Quando necessário, para suprir a demanda do mês, horas extras deverão ser utilizadas. O estoque inicial é de 100 unidades e, ao final do período de planejamento, o estoque deverá ser zero. Ao todo, são 10 trabalhadores cumprindo turno diário de trabalho de 8 horas e 20 dias úteis por mês. O tempo padrão de produção é de 2 homens-hora por unidade.\n\nDemanda mensal (unidades):\n• Janeiro: 700\n• Fevereiro: 1 000\n• Março: 1 100\n• Abril: 900\n\nConsiderando essa situação e os dados apresentados, verifica-se que a capacidade de produção mensal em horário normal e a produção total necessária para o período de janeiro a abril correspondem, respectivamente, a",
+  "alternativas": {
+    "A": "800 e 3 600.",
+    "B": "800 e 3 700.",
+    "C": "900 e 3 700.",
+    "D": "925 e 3 600.",
+    "E": "925 e 3 700."
+  },
+  "gabarito": "A",
+  "justificativa": "A capacidade mensal em horário normal é: 10 trabalhadores × 8 h/dia × 20 dias = 1 600 homens-hora; dividindo pelo tempo padrão de 2 homens-hora por unidade, obtém-se 800 unidades por mês. A produção total necessária é a demanda acumulada (700 + 1 000 + 1 100 + 900 = 3 700) menos o estoque inicial de 100 unidades, já que o estoque final deve ser zero: 3 700 − 100 = 3 600 unidades.",
+  "porqueErradas": {
+    "B": "Acerta a capacidade (800), mas usa a demanda bruta de 3 700 sem abater o estoque inicial de 100 unidades disponível no início do período.",
+    "C": "O valor 900 não decorre dos dados: 1 600 homens-hora ÷ 2 homens-hora por unidade resulta em 800 unidades, e a produção necessária também está incorreta.",
+    "D": "O valor 925 desconsidera o tempo padrão de 2 homens-hora por unidade na conversão da capacidade.",
+    "E": "Erra nos dois valores: a capacidade correta é 800 unidades e a produção necessária é 3 600, com o estoque inicial abatido."
+  }
+},
+{
+  "id": "2017-Q31",
+  "tipo": "Oficial",
+  "ano": 2017,
+  "referencia": "ENADE 2017 — Questão 31 (Componente Específico)",
+  "area": "Engenharia Econômica",
+  "dificuldade": "Difícil",
+  "competencia": "Analisar curvas de custo total e identificar o ponto de indiferença entre alternativas tecnológicas.",
+  "figura": "2017_q31.png",
+  "enunciado": "Em linha com sua estratégia de crescimento de médio e longo prazos no mercado externo, o proprietário de uma vinícola artesanal brasileira pretende aumentar a capacidade de produção de seu melhor vinho, que é, atualmente, de 3 900 garrafas por mês. Como critério de investimento, esse proprietário considera viáveis apenas projetos que elevem a capacidade de produção para, pelo menos, o dobro da atual.\n\nConsiderando essas restrições, foram apresentados dois projetos alternativos (representados pelas funções P1 e P2) para aumento da produção da vinícola, com base nas estimativas de custos fixos e variáveis mostradas no gráfico acima, em que CT representa os custos totais e CV o custo variável unitário.\n\n(GAITHER, N.; FRAZIER, G. Administração da produção e operações. 8. ed. São Paulo: Pioneira/Thomson Learning, 2001, adaptado.)\n\nConsiderando essas informações e os dados apresentados no gráfico, avalie as afirmações a seguir.\n\nI. A quantidade no ponto (Q1/2) corresponde a 7 800 unidades do produto.\nII. O custo total no ponto (CT1/2) é de R$ 40 000,00.\nIII. O projeto 2 é mais econômico do que o 1, para se produzir o dobro da capacidade atual.\nIV. O projeto 2 é mais econômico do que o 1, para se produzir o triplo da capacidade atual.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e III.",
+    "B": "II e IV.",
+    "C": "III e IV.",
+    "D": "I, II e III.",
+    "E": "I, II e IV."
+  },
+  "gabarito": "B",
+  "justificativa": "Do gráfico: P1 tem custo fixo de R$ 16 mil e custo variável unitário de R$ 3; P2 tem custo fixo de R$ 28 mil e custo variável unitário de R$ 1,50. O ponto de indiferença ocorre quando 16 + 3Q = 28 + 1,5Q, o que dá 1,5Q = 12 e Q = 8 mil unidades. O custo total nesse ponto é 16 + 3 × 8 = R$ 40 mil (II correta). Para o triplo da capacidade atual, 3 × 3 900 = 11 700 unidades, acima do ponto de indiferença: CT(P1) = 16 + 3 × 11,7 = R$ 51,1 mil e CT(P2) = 28 + 1,5 × 11,7 = R$ 45,55 mil, logo P2 é mais econômico (IV correta).",
+  "porqueErradas": {
+    "A": "A afirmação I é falsa: o ponto de indiferença ocorre em 8 000 unidades, e não 7 800 — este último é apenas o dobro da capacidade atual. A III também não procede.",
+    "C": "A afirmação III é falsa: para o dobro da capacidade (7 800 unidades), abaixo do ponto de indiferença, P1 custa R$ 39,4 mil contra R$ 39,7 mil de P2 — P1 ainda é o mais econômico.",
+    "D": "Inclui I e III, ambas falsas, e deixa de fora IV, que é correta.",
+    "E": "Inclui I, que confunde o ponto de indiferença (8 000) com o dobro da capacidade atual (7 800)."
+  }
+},
+{
+  "id": "2017-Q32",
+  "tipo": "Oficial",
+  "ano": 2017,
+  "referencia": "ENADE 2017 — Questão 32 (Componente Específico)",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Difícil",
+  "competencia": "Interpretar o registro básico do MRP e a lógica de liberação de ordens com lead time e estoque de segurança.",
+  "enunciado": "O plano mestre de produção é um planejamento de produtos finais ou acabados, período por período. Sua programação leva em conta as previsões de demanda, o consumo médio histórico e as limitações de capacidade, armazenagem e fornecimento. Esse macro plano é o input para a programação do MRP (Planejamento das Necessidades de Material).\n\nA tabela a seguir apresenta o registro do MRP na programação de produção, em que as barras medem 4,8 metros, o lote mínimo de produção é de 200 barras, o tempo de produção é de 3 semanas e o estoque de segurança é de 20 barras.\n\nPeríodos (semanas):                1 | 2 | 3 | 4 | 5 | 6 | 7\nNecessidades brutas (demanda):     – | – | – | 40 | 50 | 400 | 100\nEstoque inicial:                   20 | 20 | 180 | 180 | 130 | 20 | 20\nRecebimento de ordens planejadas:  0 | 200 | 0 | 0 | 290 | 0 | 200\nEstoque atual previsto:            20 | 180 | 180 | 130 | 20 | 20 | 120\nLiberação de ordens planejadas:    – | 290 | – | 200 | – | – | –\n\nA partir das informações apresentadas e dos conceitos que envolvem o MRP, avalie as afirmações a seguir.\n\nI. Os valores encontrados na liberação de ordens planejadas levam em consideração o custo financeiro do estoque, a capacidade do gargalo e o tempo de produção.\nII. As liberações de ordens planejadas afetam o estoque atual previsto e têm impacto sobre o estoque somente após o tempo de produção.\nIII. A liberação, na semana 2, de uma ordem planejada de produção de 290 barras é responsável por garantir o atendimento da necessidade bruta de 50 barras na semana 4.\nIV. Se na semana 2 a ordem liberada fosse de 280 barras, haveria uma ruptura do estoque de segurança a partir da semana 5.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e II.",
+    "B": "I e III.",
+    "C": "II e IV.",
+    "D": "I, III e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "C",
+  "justificativa": "A afirmação II descreve a lógica central do MRP: a ordem liberada em determinada semana só se converte em recebimento — e, portanto, só afeta o estoque — após decorrido o lead time de 3 semanas (a ordem de 290 liberada na semana 2 é recebida na semana 5). A IV também procede: com 280 em vez de 290 barras, o estoque da semana 5 cairia de 20 para 10 barras, ficando abaixo do estoque de segurança de 20 barras.",
+  "porqueErradas": {
+    "A": "A afirmação I é falsa: o registro do MRP considera as necessidades líquidas, o lote e o lead time; custo financeiro de estoque e capacidade de gargalo não entram no cálculo da liberação de ordens — são tratados, respectivamente, no dimensionamento de lotes e no CRP.",
+    "B": "Além de I ser falsa, III também é: a ordem de 290 barras liberada na semana 2 é recebida na semana 5 e atende à necessidade daquele período, não à necessidade de 50 barras da semana 4.",
+    "D": "Inclui I e III, ambas incorretas quanto aos critérios de cálculo e ao período de recebimento da ordem.",
+    "E": "Inclui III, que associa erroneamente o recebimento da ordem à semana 4, quando o lead time de 3 semanas o coloca na semana 5."
+  }
+},
+{
+  "id": "2017-Q33",
+  "tipo": "Oficial",
+  "ano": 2017,
+  "referencia": "ENADE 2017 — Questão 33 (Componente Específico)",
+  "area": "Gestão de Projetos",
+  "dificuldade": "Média",
+  "competencia": "Interpretar diagramas de rede, relações de precedência e caminho crítico.",
+  "figura": "2017_q33.png",
+  "enunciado": "A figura acima apresenta o trecho de um diagrama de rede utilizado para representar as atividades de um projeto de instalações prediais, com o tempo dado em dias.\n\n(DO VALE, A. B.; SOARES, C. A. P. et al. Fundamentos de gerenciamento de projetos. Rio de Janeiro: FGV, 2007, adaptado.)\n\nCom relação ao diagrama de rede, avalie as afirmações a seguir.\n\nI. As relações de dependência entre as partes de água e esgoto, elétrica e de telefonia estão presentes no diagrama.\nII. Os dados apresentados permitem concluir que o caminho crítico corresponde a 16 dias.\nIII. A conclusão da atividade de instalação de esgotos é suficiente para se iniciar a atividade de colocação de louças e metais.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "III, apenas.",
+    "C": "I e II, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "A",
+  "justificativa": "O diagrama efetivamente representa as três frentes de serviço — hidráulica/esgoto, elétrica e telefonia — com suas relações de precedência (I correta).",
+  "porqueErradas": {
+    "B": "A afirmação III é falsa: pela rede, a colocação de louças e metais depende também da conclusão da rede de água fria, e não apenas da instalação de esgotos.",
+    "C": "A afirmação II é falsa: 16 dias é apenas a duração da atividade T8 (colocação de louças e metais); o caminho crítico é a soma das durações ao longo do caminho mais longo da rede, sendo necessariamente muito superior a esse valor.",
+    "D": "Reúne as duas afirmações incorretas — II confunde duração de atividade com duração de caminho, e III ignora uma das precedências.",
+    "E": "Apenas I é verdadeira; II e III contêm erros de leitura da rede."
+  }
+},
+{
+  "id": "2017-Q34",
+  "tipo": "Oficial",
+  "ano": 2017,
+  "referencia": "ENADE 2017 — Questão 34 (Componente Específico)",
+  "area": "Gestão da Manutenção",
+  "dificuldade": "Média",
+  "competencia": "Calcular os indicadores MTBF e MTTR a partir de registros de paradas.",
+  "enunciado": "Entre os indicadores de desempenho para gestão da manutenção, incluem-se o MTBF (Mean Time Between Failures) e o MTTR (Mean Time To Repair).\n\nConsidere a situação em que um moinho de café opere em turno único e diário de 8 horas, sendo que, em determinada data, apresentou quatro falhas em um turno. A primeira parada demorou 20 minutos, a segunda e a terceira duraram 15 minutos e, a última, 30 minutos. Nesse caso, os resultados, em minutos, do MTBF e do MTTR são, respectivamente, iguais a",
+  "alternativas": {
+    "A": "90 e 30.",
+    "B": "100 e 20.",
+    "C": "105 e 15.",
+    "D": "220 e 20.",
+    "E": "340 e 30."
+  },
+  "gabarito": "B",
+  "justificativa": "O turno tem 8 h = 480 minutos. O tempo total de manutenção é 20 + 15 + 15 + 30 = 80 minutos, com 4 paradas. O MTTR é o tempo médio de reparo: 80 ÷ 4 = 20 minutos. O MTBF é o tempo médio de operação entre falhas: (480 − 80) ÷ 4 = 400 ÷ 4 = 100 minutos.",
+  "porqueErradas": {
+    "A": "Utiliza 30 minutos como MTTR — valor da parada mais longa, e não a média das quatro paradas.",
+    "C": "Divide o tempo de operação por um número incorreto de paradas e adota 15 minutos como MTTR, que é apenas a duração das paradas intermediárias.",
+    "D": "O valor 220 resultaria de dividir o tempo disponível por apenas duas paradas, ignorando que foram registradas quatro falhas.",
+    "E": "O valor 340 desconsidera a divisão pelo número de paradas e o MTTR de 30 minutos corresponde apenas à última parada."
+  }
+}
+]

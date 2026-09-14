@@ -1,0 +1,302 @@
+[
+{
+  "id": "ADP-14",
+  "tipo": "Adaptada",
+  "ano": 2019,
+  "referencia": "Adaptada de ENADE 2019 — Questão 20",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Difícil",
+  "competencia": "Calcular a capacidade de um sistema produtivo em série e identificar o recurso gargalo.",
+  "enunciado": "Em uma panificadora industrial, o processo de produção de pães de 0,5 kg segue as etapas: Masseira → Divisora → Câmara de fermentação → Forno.\n\n• A masseira processa 600 kg de massa por hora.\n• A divisora produz 1 200 peças por hora.\n• A câmara de fermentação comporta 3 000 peças, e os pães devem permanecer nela por 90 minutos.\n• O forno assa 400 peças a cada 30 minutos.\n\nConsiderando as informações apresentadas, avalie as asserções a seguir e a relação proposta entre elas.\n\nI. A produção máxima da panificadora, em um turno de 8 horas ininterruptas, é de 6 400 pães.\n\nPORQUE\n\nII. O forno é o recurso gargalo do processo produtivo.\n\nA respeito dessas asserções, assinale a opção correta.",
+  "alternativas": {
+    "A": "As asserções I e II são proposições verdadeiras, e a II é uma justificativa correta da I.",
+    "B": "As asserções I e II são proposições verdadeiras, mas a II não é uma justificativa correta da I.",
+    "C": "A asserção I é uma proposição verdadeira, e a II é uma proposição falsa.",
+    "D": "A asserção I é uma proposição falsa, e a II é uma proposição verdadeira.",
+    "E": "As asserções I e II são proposições falsas."
+  },
+  "gabarito": "A",
+  "justificativa": "Convertendo todas as etapas para peças por hora: masseira = 600 kg/h ÷ 0,5 kg = 1 200 peças/h; divisora = 1 200 peças/h; fermentação = 3 000 peças ÷ 1,5 h = 2 000 peças/h; forno = 400 peças ÷ 0,5 h = 800 peças/h. O forno é a etapa de menor capacidade, sendo o gargalo (II verdadeira). A capacidade do sistema é ditada pelo gargalo: 800 × 8 = 6 400 pães por turno (I verdadeira). Como a produção máxima decorre diretamente da capacidade do gargalo, a II justifica corretamente a I.",
+  "porqueErradas": {
+    "B": "A relação causal existe e é direta: em um sistema em série, a capacidade total é exatamente a do recurso de menor capacidade — o forno.",
+    "C": "A asserção II é verdadeira: com 800 peças/h, o forno tem a menor capacidade entre as quatro etapas do processo.",
+    "D": "A asserção I é verdadeira: 800 peças/h multiplicadas por 8 horas resultam precisamente em 6 400 pães.",
+    "E": "Ambas as asserções são verdadeiras, conforme o cálculo das capacidades de cada etapa."
+  }
+},
+{
+  "id": "ADP-15",
+  "tipo": "Adaptada",
+  "ano": 2019,
+  "referencia": "Adaptada de ENADE 2019 — Questão 21",
+  "area": "Engenharia Econômica",
+  "dificuldade": "Média",
+  "competencia": "Calcular o tempo de retorno de investimento em eficiência energética.",
+  "enunciado": "Um pequeno hotel possui três chuveiros elétricos de 5 500 W, cada um utilizado, em média, 1,5 hora por dia. A tarifa de energia é de R$ 0,60 por kWh, acrescida de 25% de impostos. O proprietário recebeu o orçamento de R$ 4 455,00 para a instalação de um sistema de aquecimento solar que substituirá integralmente os chuveiros elétricos.\n\nConsiderando que o mês possui 30 dias, o tempo de recuperação do capital investido é de",
+  "alternativas": {
+    "A": "6,0 meses.",
+    "B": "8,0 meses.",
+    "C": "10,5 meses.",
+    "D": "12,0 meses.",
+    "E": "15,0 meses."
+  },
+  "gabarito": "B",
+  "justificativa": "O consumo diário é 3 × 5,5 kW × 1,5 h = 24,75 kWh. Em 30 dias: 742,5 kWh por mês. A tarifa efetiva é R$ 0,60 × 1,25 = R$ 0,75 por kWh, resultando em economia mensal de 742,5 × 0,75 = R$ 556,875. O payback simples é 4 455,00 ÷ 556,875 = 8,0 meses.",
+  "porqueErradas": {
+    "A": "6,0 meses exigiria economia mensal de R$ 742,50, valor que só seria alcançado desconsiderando a tarifa e usando diretamente o consumo em kWh.",
+    "C": "10,5 meses corresponderia a uma economia mensal de cerca de R$ 424,00, incompatível com o consumo calculado.",
+    "D": "12,0 meses resultaria de uma economia mensal de R$ 371,25 — valor obtido ao considerar apenas dois dos três chuveiros.",
+    "E": "15,0 meses implicaria economia mensal de R$ 297,00, o que corresponderia a desconsiderar os impostos e reduzir o tempo de uso diário."
+  }
+},
+{
+  "id": "ADP-16",
+  "tipo": "Adaptada",
+  "ano": 2019,
+  "referencia": "Adaptada de ENADE 2019 — Questão 22",
+  "area": "Gestão de Projetos",
+  "dificuldade": "Difícil",
+  "competencia": "Determinar a duração de um projeto pelo caminho crítico com estimativas triangulares de tempo.",
+  "enunciado": "Em um projeto de implantação de uma linha de montagem, o tempo de duração de cada etapa foi modelado por uma distribuição triangular. Cada etapa pode ser iniciada assim que todas as suas precedentes estiverem concluídas.\n\nEtapa | Mínimo | Mais provável | Máximo | Precedentes\nA — projeto detalhado | 2 | 3 | 4 | —\nB — obras civis | 4 | 5 | 7 | A\nC — aquisição de equipamentos | 3 | 4 | 5 | A\nD — instalação | 2 | 4 | 6 | B e C\nE — comissionamento | 1 | 2 | 3 | D\n\nCom base nessas informações, os tempos de duração mínimo, mais provável e máximo do projeto são, respectivamente,",
+  "alternativas": {
+    "A": "9, 14 e 20.",
+    "B": "9, 13 e 20.",
+    "C": "9, 14 e 19.",
+    "D": "10, 14 e 20.",
+    "E": "9, 15 e 21."
+  },
+  "gabarito": "A",
+  "justificativa": "As etapas B e C ocorrem em paralelo após A, e D só começa quando ambas terminam — prevalece, portanto, a maior das duas durações.\nMínimo: A = 2; máx(B = 4, C = 3) = 4; D = 2; E = 1 → 2 + 4 + 2 + 1 = 9.\nMais provável: A = 3; máx(B = 5, C = 4) = 5; D = 4; E = 2 → 3 + 5 + 4 + 2 = 14.\nMáximo: A = 4; máx(B = 7, C = 5) = 7; D = 6; E = 3 → 4 + 7 + 6 + 3 = 20.",
+  "porqueErradas": {
+    "B": "O valor mais provável de 13 subestima o caminho crítico: a maior duração entre B (5) e C (4) é 5, resultando em 3 + 5 + 4 + 2 = 14.",
+    "C": "O valor máximo de 19 desconsidera que, no cenário pessimista, a etapa B (7 dias) é a que condiciona o início de D.",
+    "D": "O mínimo de 10 resultaria de somar erroneamente as durações de B e C, que ocorrem em paralelo.",
+    "E": "Os valores 15 e 21 superestimam o caminho crítico, somando parcialmente as durações de atividades paralelas."
+  }
+},
+{
+  "id": "ADP-17",
+  "tipo": "Adaptada",
+  "ano": 2019,
+  "referencia": "Adaptada de ENADE 2019 — Questão 26",
+  "area": "Pesquisa Operacional",
+  "dificuldade": "Difícil",
+  "competencia": "Resolver problema de mix de produção com restrições de capacidade em etapas sucessivas e limite de mercado.",
+  "enunciado": "Uma fábrica de móveis produz mesas e cadeiras. O lucro é de R$ 90,00 por mesa e de R$ 40,00 por cadeira. O processo tem duas etapas sucessivas: corte e montagem.\n\n• A capacidade diária do corte é de 400 mesas, se forem cortadas apenas mesas, ou de 1 200 cadeiras, se forem cortadas apenas cadeiras, admitida a produção combinada.\n• A capacidade diária da montagem é de 300 mesas, se forem montadas apenas mesas, ou de 900 cadeiras, se forem montadas apenas cadeiras, também admitida a produção combinada.\n• O mercado absorve toda a produção de mesas, mas, no máximo, 600 cadeiras por dia.\n\nSendo M a quantidade diária de mesas e C a quantidade diária de cadeiras, a solução que maximiza o lucro, na forma (M, C), é",
+  "alternativas": {
+    "A": "(100; 600).",
+    "B": "(300; 0).",
+    "C": "(200; 600).",
+    "D": "(0; 600).",
+    "E": "(100; 900)."
+  },
+  "gabarito": "A",
+  "justificativa": "As restrições normalizadas são: corte — M/400 + C/1200 ≤ 1, equivalente a 3M + C ≤ 1 200; montagem — M/300 + C/900 ≤ 1, equivalente a 3M + C ≤ 900; mercado — C ≤ 600. A montagem é sempre a restrição mais apertada. Como cada unidade de \"recurso de montagem\" rende R$ 90/3 = R$ 30 em mesas e R$ 40/1 = R$ 40 em cadeiras, prioriza-se a cadeira até o limite de mercado (600), consumindo 600 do recurso; restam 300, permitindo 3M = 300, ou seja, M = 100. O lucro é 100 × 90 + 600 × 40 = 9 000 + 24 000 = R$ 33 000,00.",
+  "porqueErradas": {
+    "B": "Viável (3 × 300 = 900), mas gera lucro de apenas R$ 27 000,00, desprezando totalmente a contribuição das cadeiras.",
+    "C": "Inviável na montagem: 3 × 200 + 600 = 1 200, acima do limite de 900 dessa etapa.",
+    "D": "Viável, porém deixa 300 unidades do recurso de montagem ociosas e gera lucro de apenas R$ 24 000,00.",
+    "E": "Inviável: 900 cadeiras superam o limite de absorção do mercado, que é de 600 unidades por dia."
+  }
+},
+{
+  "id": "ADP-18",
+  "tipo": "Adaptada",
+  "ano": 2019,
+  "referencia": "Adaptada de ENADE 2019 — Questão 28",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Difícil",
+  "competencia": "Distinguir capacidade máxima, capacidade programada e capacidade efetiva.",
+  "enunciado": "Uma confecção pode operar em regime de três turnos diários de 8 horas, durante 6 dias por semana, com capacidade de produção de 150 peças por hora. Em determinada semana, a empresa trabalhou dois turnos por dia, durante cinco dias. Os registros dessa semana apresentaram as seguintes ocorrências:\n\n• Nenhum trabalho programado: 4 horas\n• Setup programado: 6 horas\n• Manutenção preventiva programada: 5 horas\n• Falta de energia elétrica: 3 horas\n• Absenteísmo: 2 horas\n\nCom base nesses dados, avalie as afirmações a seguir.\n\nI. A capacidade máxima de produção da empresa é de 21 600 peças por semana.\nII. A capacidade programada de produção na semana avaliada foi de 11 400 peças.\nIII. A máxima produção possível na semana avaliada foi de 12 000 peças.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "II, apenas.",
+    "C": "I e II, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "C",
+  "justificativa": "A capacidade máxima (de projeto) considera a operação plena: 3 turnos × 8 h × 6 dias = 144 horas, que a 150 peças/h resultam em 21 600 peças (I correta). O regime efetivamente adotado foi de 2 turnos × 8 h × 5 dias = 80 horas; descontando as 4 horas sem trabalho programado, a capacidade programada é 76 h × 150 = 11 400 peças (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira: 76 horas programadas a 150 peças/h resultam exatamente em 11 400 peças.",
+    "B": "Além de II, a afirmação I também é verdadeira — a capacidade máxima é de fato 21 600 peças semanais.",
+    "D": "A afirmação III é falsa: descontando ainda as paradas programadas de setup (6 h) e manutenção preventiva (5 h), restam 65 horas, correspondentes a 9 750 peças — e não 12 000.",
+    "E": "Inclui III, que superestima a produção possível por não descontar as paradas programadas de setup e manutenção preventiva."
+  }
+},
+{
+  "id": "ADP-19",
+  "tipo": "Adaptada",
+  "ano": 2019,
+  "referencia": "Adaptada de ENADE 2019 — Questão 34",
+  "area": "Logística e Cadeia de Suprimentos",
+  "dificuldade": "Média",
+  "competencia": "Comparar alternativas logísticas por meio de funções de custo fixo e variável.",
+  "enunciado": "Uma indústria de bebidas avalia três centros de distribuição para escoar sua produção. Os custos mensais de operação de cada alternativa, para volumes de até 50 000 unidades, são:\n\n• Cidade P: custo fixo mensal R$ 15.000,00 e custo variável unitário R$ 6,00\n• Cidade Q: custo fixo mensal R$ 39.000,00 e custo variável unitário R$ 3,00\n• Cidade R: custo fixo mensal R$ 63.000,00 e custo variável unitário R$ 2,00\n\nCom base nessas informações, avalie as afirmações a seguir.\n\nI. Para um volume de 5 000 unidades, o centro de distribuição da cidade P apresenta o menor custo total.\nII. Para um volume de 40 000 unidades, o centro de distribuição da cidade R apresenta o menor custo total.\nIII. Para um volume de 20 000 unidades, o custo total é igual para os centros das cidades Q e R.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "II, apenas.",
+    "C": "I e II, apenas.",
+    "D": "II e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "C",
+  "justificativa": "Para 5 000 unidades: P = 15 000 + 30 000 = R$ 45 000; Q = 39 000 + 15 000 = R$ 54 000; R = 63 000 + 10 000 = R$ 73 000 — a cidade P é a mais econômica (I correta). Para 40 000 unidades: P = 15 000 + 240 000 = R$ 255 000; Q = 39 000 + 120 000 = R$ 159 000; R = 63 000 + 80 000 = R$ 143 000 — a cidade R é a mais econômica (II correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, II também é verdadeira: em volumes elevados, o menor custo variável da cidade R compensa seu custo fixo mais alto.",
+    "B": "Além de II, a afirmação I também procede: em volumes baixos, prevalece a alternativa de menor custo fixo.",
+    "D": "A afirmação III é falsa: para 20 000 unidades, Q custa 39 000 + 60 000 = R$ 99 000 e R custa 63 000 + 40 000 = R$ 103 000. A igualdade entre Q e R ocorreria apenas em 24 000 unidades.",
+    "E": "Inclui III, que aponta uma igualdade de custos em volume incorreto."
+  }
+},
+{
+  "id": "ADP-20",
+  "tipo": "Adaptada",
+  "ano": 2023,
+  "referencia": "Adaptada de ENADE 2023 — Questão 10",
+  "area": "Estatística",
+  "dificuldade": "Fácil",
+  "competencia": "Calcular probabilidades em uma distribuição uniforme contínua.",
+  "enunciado": "Em uma célula de manufatura, o tempo de preparação (setup) de uma máquina comporta-se segundo uma distribuição de probabilidade uniforme entre 10 e 50 minutos.\n\nA probabilidade de que o tempo de setup esteja entre 20 e 35 minutos é, aproximadamente, de",
+  "alternativas": {
+    "A": "25%.",
+    "B": "30%.",
+    "C": "37,5%.",
+    "D": "45%.",
+    "E": "60%."
+  },
+  "gabarito": "C",
+  "justificativa": "Em uma distribuição uniforme contínua no intervalo [a, b], a probabilidade de a variável cair em [c, d] é (d − c)/(b − a). Aqui: (35 − 20)/(50 − 10) = 15/40 = 0,375, ou seja, 37,5%.",
+  "porqueErradas": {
+    "A": "25% corresponderia a um subintervalo de 10 minutos dentro da amplitude total de 40 minutos, e não aos 15 minutos do enunciado.",
+    "B": "30% equivaleria a um subintervalo de 12 minutos, valor que não corresponde ao intervalo solicitado.",
+    "D": "45% resultaria de dividir 18 por 40, o que não corresponde à amplitude do intervalo pedido.",
+    "E": "60% seria obtido ao dividir 15 por 25, isto é, usando erroneamente 25 como amplitude total da distribuição."
+  }
+},
+{
+  "id": "ADP-21",
+  "tipo": "Adaptada",
+  "ano": 2023,
+  "referencia": "Adaptada de ENADE 2023 — Questão 12",
+  "area": "Gestão de Estoques",
+  "dificuldade": "Difícil",
+  "competencia": "Calcular ponto de reposição e estoque de segurança a partir do nível de serviço e da distribuição normal.",
+  "enunciado": "Um centro de distribuição de autopeças gerencia o estoque de um item com as seguintes características:\n\n• Demanda diária média: 200 unidades\n• Desvio-padrão da demanda diária: 30 unidades\n• Tempo de reposição: 4 dias (constante)\n• Nível de serviço adotado: 97,5% (z = 1,96)\n\nConsiderando que a demanda diária é independente e normalmente distribuída, e que o desvio-padrão da demanda durante o tempo de reposição é obtido por σ_LT = σ_diário × √(tempo de reposição), o ponto de reposição desse item, em unidades, é de aproximadamente",
+  "alternativas": {
+    "A": "800.",
+    "B": "877.",
+    "C": "918.",
+    "D": "960.",
+    "E": "1 018."
+  },
+  "gabarito": "C",
+  "justificativa": "O desvio-padrão da demanda durante o tempo de reposição é σ_LT = 30 × √4 = 30 × 2 = 60 unidades. O estoque de segurança é ES = z × σ_LT = 1,96 × 60 = 117,6 ≈ 118 unidades. A demanda média durante o tempo de reposição é 200 × 4 = 800 unidades. Logo, o ponto de reposição é 800 + 118 = 918 unidades.",
+  "porqueErradas": {
+    "A": "800 unidades corresponde apenas à demanda média durante o tempo de reposição, sem acrescentar o estoque de segurança — com esse ponto, o nível de serviço seria de apenas 50%.",
+    "B": "877 resultaria de adotar um nível de serviço de 90% (z ≈ 1,28), e não os 97,5% definidos no enunciado.",
+    "D": "960 seria obtido ao calcular o estoque de segurança com σ_LT = 30 × 4 = 120 em vez de 30 × √4 = 60, ou seja, multiplicando pelo tempo de reposição em vez de sua raiz.",
+    "E": "1 018 resultaria de usar σ_LT = 30 × 4 = 120 combinado com z = 1,96, superdimensionando o estoque de segurança."
+  }
+},
+{
+  "id": "ADP-22",
+  "tipo": "Adaptada",
+  "ano": 2023,
+  "referencia": "Adaptada de ENADE 2023 — Questão 17",
+  "area": "Gestão de Projetos",
+  "dificuldade": "Média",
+  "competencia": "Determinar caminho crítico e folga total a partir de tabela de atividades e precedências.",
+  "enunciado": "O quadro a seguir apresenta as atividades de um projeto de modernização de uma linha de envase, com suas durações e precedências.\n\nAtividade | Duração (dias) | Predecessoras\nA | 5 | —\nB | 4 | A\nC | 3 | A\nD | 6 | B\nE | 5 | C\nF | 2 | D e E\n\nCom base no cronograma apresentado, a folga total do caminho que inclui as atividades C e E, em dias, é de",
+  "alternativas": {
+    "A": "1.",
+    "B": "2.",
+    "C": "3.",
+    "D": "5.",
+    "E": "7."
+  },
+  "gabarito": "B",
+  "justificativa": "Há dois caminhos no projeto. Caminho 1: A → B → D → F = 5 + 4 + 6 + 2 = 17 dias. Caminho 2: A → C → E → F = 5 + 3 + 5 + 2 = 15 dias. O caminho crítico é o mais longo, com 17 dias, que define a duração do projeto. A folga total do caminho que contém C e E é 17 − 15 = 2 dias.",
+  "porqueErradas": {
+    "A": "1 dia resultaria de uma diferença de duração de apenas um dia entre os caminhos, o que não corresponde às durações apresentadas.",
+    "C": "3 dias corresponde à duração da atividade C isoladamente, e não à folga do caminho que a contém.",
+    "D": "5 dias é a duração da atividade A ou da atividade E, não a folga total do caminho não crítico.",
+    "E": "7 dias seria a folga se o caminho A-C-E-F durasse apenas 10 dias, o que não ocorre — ele soma 15 dias."
+  }
+},
+{
+  "id": "ADP-23",
+  "tipo": "Adaptada",
+  "ano": 2023,
+  "referencia": "Adaptada de ENADE 2023 — Questão 22",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Fácil",
+  "competencia": "Aplicar o método da suavização exponencial simples na previsão de demanda.",
+  "enunciado": "Uma distribuidora utiliza o método da suavização exponencial simples para prever a demanda de dois produtos. Os dados da semana atual são:\n\n• Produto Alfa: previsão de 1 500 unidades e demanda real de 1 800 unidades; parâmetro suavizador α = 0,3.\n• Produto Beta: previsão de 900 unidades e demanda real de 850 unidades; parâmetro suavizador α = 0,4.\n\nAs previsões de demanda para a semana seguinte dos produtos Alfa e Beta são, respectivamente, de",
+  "alternativas": {
+    "A": "1 590 e 880 unidades.",
+    "B": "1 590 e 920 unidades.",
+    "C": "1 620 e 880 unidades.",
+    "D": "1 710 e 870 unidades.",
+    "E": "1 500 e 900 unidades."
+  },
+  "gabarito": "A",
+  "justificativa": "A fórmula da suavização exponencial simples é F(t+1) = F(t) + α · [D(t) − F(t)]. Produto Alfa: 1 500 + 0,3 × (1 800 − 1 500) = 1 500 + 90 = 1 590 unidades. Produto Beta: 900 + 0,4 × (850 − 900) = 900 + 0,4 × (−50) = 900 − 20 = 880 unidades.",
+  "porqueErradas": {
+    "B": "Acerta a previsão de Alfa, mas o valor 920 para Beta inverte o sinal da correção — como a demanda real (850) ficou abaixo da previsão (900), a nova previsão deve diminuir.",
+    "C": "O valor 1 620 para Alfa corresponderia a α = 0,4, e não a α = 0,3 como definido para esse produto.",
+    "D": "O valor 1 710 para Alfa corresponderia a α = 0,7, e o valor 870 para Beta não decorre de nenhum dos parâmetros indicados.",
+    "E": "Repete as previsões anteriores, o que equivaleria a adotar α = 0, ignorando completamente a informação da demanda observada."
+  }
+},
+{
+  "id": "ADP-24",
+  "tipo": "Adaptada",
+  "ano": 2023,
+  "referencia": "Adaptada de ENADE 2023 — Questão 32",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Difícil",
+  "competencia": "Calcular takt time, número teórico de estações e eficiência de balanceamento de linha.",
+  "enunciado": "Uma empresa de eletrodomésticos precisa produzir 480 unidades por dia de um pequeno aparelho, dispondo de 480 minutos diários de produção. A montagem é composta por cinco operações, com as seguintes durações: A = 0,5 min; B = 0,4 min; C = 0,8 min; D = 0,6 min; E = 0,3 min.\n\nCom base nos dados apresentados, avalie as afirmações a seguir.\n\nI. O takt time do sistema produtivo é de 1 minuto por unidade.\nII. O número mínimo teórico de estações de trabalho para balancear a linha é igual a 2.\nIII. A eficiência do balanceamento da linha é de aproximadamente 87%.\n\nÉ correto o que se afirma em",
+  "alternativas": {
+    "A": "I, apenas.",
+    "B": "III, apenas.",
+    "C": "I e II, apenas.",
+    "D": "I e III, apenas.",
+    "E": "I, II e III."
+  },
+  "gabarito": "D",
+  "justificativa": "O takt time é o tempo disponível dividido pela demanda: 480 min ÷ 480 unidades = 1 minuto por unidade (I correta). O conteúdo total de trabalho é 0,5 + 0,4 + 0,8 + 0,6 + 0,3 = 2,6 minutos, de modo que o número mínimo teórico de estações é 2,6 ÷ 1 = 2,6, arredondado para cima, 3 estações. A eficiência do balanceamento é 2,6 ÷ (3 × 1) = 0,867, ou seja, aproximadamente 87% (III correta).",
+  "porqueErradas": {
+    "A": "Embora I esteja correta, III também é verdadeira: com 3 estações e tempo de ciclo de 1 minuto, a eficiência é de 86,7%.",
+    "B": "Além de III, a afirmação I também procede — o takt time é efetivamente de 1 minuto por unidade.",
+    "C": "A afirmação II é falsa: 2 estações forneceriam apenas 2 minutos de capacidade por ciclo, insuficientes para os 2,6 minutos de conteúdo de trabalho.",
+    "E": "Inclui II, que subdimensiona a linha — o número mínimo teórico de estações é 3, e não 2."
+  }
+},
+{
+  "id": "ADP-25",
+  "tipo": "Adaptada",
+  "ano": 2023,
+  "referencia": "Adaptada de ENADE 2023 — Questão 30",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Média",
+  "competencia": "Definir o mix de produção pelo ganho por unidade de tempo no recurso gargalo.",
+  "enunciado": "Em um sistema produtivo, um único recurso gargalo dispõe de 600 horas por mês. Os dados dos dois produtos fabricados são:\n\n• Produto X: ganho de R$ 300,00 por unidade; tempo de 1,5 hora por unidade no gargalo; demanda mensal de 250 unidades.\n• Produto Y: ganho de R$ 280,00 por unidade; tempo de 1,0 hora por unidade no gargalo; demanda mensal de 300 unidades.\n\nConsiderando os conceitos da Teoria das Restrições, o mix mensal que maximiza economicamente a utilização da capacidade do gargalo corresponde, respectivamente, às seguintes unidades dos produtos X e Y:",
+  "alternativas": {
+    "A": "250 e 225.",
+    "B": "200 e 300.",
+    "C": "250 e 300.",
+    "D": "0 e 300.",
+    "E": "400 e 0."
+  },
+  "gabarito": "B",
+  "justificativa": "O critério da Teoria das Restrições é o ganho por unidade de tempo no gargalo: produto X rende 300 ÷ 1,5 = R$ 200,00 por hora, enquanto o produto Y rende 280 ÷ 1,0 = R$ 280,00 por hora. Prioriza-se Y: 300 unidades consomem 300 horas. Com as 300 horas restantes, produzem-se 300 ÷ 1,5 = 200 unidades de X. O ganho total é 200 × 300 + 300 × 280 = 60 000 + 84 000 = R$ 144 000,00.",
+  "porqueErradas": {
+    "A": "Consome exatamente as 600 horas (250 × 1,5 + 225 × 1 = 375 + 225), mas gera ganho de R$ 138 000,00 — inferior, por priorizar o produto de menor ganho por hora de gargalo. É o erro típico de decidir pelo ganho unitário (R$ 300 de X).",
+    "C": "Inviável: exigiria 250 × 1,5 + 300 × 1 = 675 horas, acima das 600 disponíveis no gargalo.",
+    "D": "Viável, mas deixa 300 horas do gargalo ociosas, gerando apenas R$ 84 000,00 de ganho.",
+    "E": "Inviável duplamente: consumiria 600 horas apenas com X, mas 400 unidades superam a demanda de mercado, que é de 250 unidades."
+  }
+}
+]

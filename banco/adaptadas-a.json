@@ -1,0 +1,327 @@
+[
+{
+  "id": "ADP-01",
+  "tipo": "Adaptada",
+  "ano": 2014,
+  "referencia": "Adaptada de ENADE 2014 — Questão 9",
+  "area": "Estatística",
+  "dificuldade": "Média",
+  "competencia": "Interpretar parâmetros de uma distribuição normal e derivar grandezas físicas a partir deles.",
+  "enunciado": "Em uma transportadora urbana, a distância percorrida por um entregador em cada rota pode ser modelada por uma variável aleatória com distribuição normal, de média μ = 40 km e variância σ² = 64 km². A duração média de cada rota é de 2 horas e 30 minutos.\n\nCom base nesses dados, avalie as afirmações a seguir.\n\nI. A velocidade média de cada entrega é de 16 km/h.\nII. A distância média percorrida em cada entrega é de 40 km.\nIII. A área média coberta em cada entrega é de 64 km².\nIV. A distância percorrida em cada entrega, em um desvio-padrão, está entre 32 km e 48 km.\nV. A velocidade média de cada entrega, em um desvio-padrão, está entre 10 km/h e 20 km/h.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e III.",
+    "B": "II e V.",
+    "C": "I, II e IV.",
+    "D": "III, IV e V.",
+    "E": "I, II, IV e V."
+  },
+  "gabarito": "C",
+  "justificativa": "A média μ = 40 km é a distância média por rota (II correta). A velocidade média é 40 km ÷ 2,5 h = 16 km/h (I correta). Como σ² = 64 km², o desvio-padrão é σ = 8 km, e o intervalo de um desvio-padrão é 40 ± 8 = [32 km; 48 km] (IV correta).",
+  "porqueErradas": {
+    "A": "A afirmação III confunde variância com área: σ² = 64 km² é a medida de dispersão da distância, e não uma superfície percorrida.",
+    "B": "A afirmação V é falsa: convertendo o intervalo de distância, obtém-se 32/2,5 = 12,8 km/h e 48/2,5 = 19,2 km/h, e não de 10 a 20 km/h.",
+    "D": "Reúne III e V, ambas incorretas, e omite I e II, que decorrem diretamente dos parâmetros fornecidos.",
+    "E": "Inclui V, cujo intervalo de velocidade não corresponde à conversão correta do intervalo de um desvio-padrão."
+  }
+},
+{
+  "id": "ADP-02",
+  "tipo": "Adaptada",
+  "ano": 2014,
+  "referencia": "Adaptada de ENADE 2014 — Questão 12",
+  "area": "Ciências Térmicas",
+  "dificuldade": "Média",
+  "competencia": "Aplicar a lei de Fourier de condução de calor na seleção de materiais de construção.",
+  "enunciado": "Um galpão industrial deve ser projetado para manter a temperatura interna em 22 °C, enquanto a temperatura externa média é de 40 °C. No dimensionamento da parede externa, de 25 cm de espessura, o engenheiro considerou um fluxo de calor em regime permanente de 72 W/m².\n\nA tabela a seguir apresenta a condutividade térmica de materiais disponíveis:\n• Concreto: 1,40 W·m⁻¹·K⁻¹\n• Pedra natural: 1,00 W·m⁻¹·K⁻¹\n• Placa de aglomerado de fibras de madeira: 0,20 W·m⁻¹·K⁻¹\n• Placa de madeira prensada: 0,10 W·m⁻¹·K⁻¹\n• Placa com espuma rígida de poliuretano: 0,03 W·m⁻¹·K⁻¹\n\nPara que a condição de projeto seja atendida, qual material deve compor a parede externa?",
+  "alternativas": {
+    "A": "Concreto.",
+    "B": "Pedra natural.",
+    "C": "Placa de aglomerado de fibras de madeira.",
+    "D": "Placa de madeira prensada.",
+    "E": "Placa com espuma rígida de poliuretano."
+  },
+  "gabarito": "B",
+  "justificativa": "Pela lei de Fourier, q = k · ΔT / L, logo k = q · L / ΔT = 72 × 0,25 / (40 − 22) = 18 / 18 = 1,00 W·m⁻¹·K⁻¹. O material com essa condutividade é a pedra natural.",
+  "porqueErradas": {
+    "A": "Com o concreto (k = 1,40), o fluxo de calor seria 1,40 × 18 / 0,25 = 100,8 W/m², acima dos 72 W/m² previstos em projeto.",
+    "C": "Com a placa de aglomerado (k = 0,20), o fluxo seria de apenas 14,4 W/m², muito abaixo da condição de projeto.",
+    "D": "Com a madeira prensada (k = 0,10), o fluxo cairia para 7,2 W/m², um décimo do valor especificado.",
+    "E": "A espuma de poliuretano (k = 0,03) resultaria em fluxo de 2,16 W/m² — é o melhor isolante da lista, mas não atende à condição estabelecida."
+  }
+},
+{
+  "id": "ADP-03",
+  "tipo": "Adaptada",
+  "ano": 2014,
+  "referencia": "Adaptada de ENADE 2014 — Questão 19",
+  "area": "Pesquisa Operacional",
+  "dificuldade": "Média",
+  "competencia": "Formular e resolver problema de programação linear de mix de produção com múltiplas restrições.",
+  "enunciado": "Uma fábrica de tintas produz duas linhas: Standard (S) e Premium (P), medidas em litros. A produção de um litro de tinta Standard consome 1 kg de pigmento do tipo I e 1 kg de resina. A produção de um litro de tinta Premium consome 1 kg de pigmento do tipo II e 2 kg de resina.\n\nSabe-se que:\n• o lucro por litro de Standard é de R$ 4,00 e o de Premium é de R$ 3,00;\n• o fornecedor entrega, por semana, 2 000 kg de pigmento do tipo I e 3 000 kg de pigmento do tipo II;\n• a disponibilidade semanal de resina é de 7 000 kg.\n\nDenominando S a quantidade de litros de tinta Standard e P a quantidade de litros de tinta Premium, qual é o plano de produção semanal viável que gera o maior lucro?",
+  "alternativas": {
+    "A": "S = 0; P = 3 000",
+    "B": "S = 2 000; P = 2 500",
+    "C": "S = 2 000; P = 3 000",
+    "D": "S = 1 000; P = 3 000",
+    "E": "S = 2 000; P = 0"
+  },
+  "gabarito": "B",
+  "justificativa": "O modelo é: maximizar 4S + 3P, sujeito a S ≤ 2 000 (pigmento I), P ≤ 3 000 (pigmento II) e S + 2P ≤ 7 000 (resina). A alternativa B consome 2 000 + 2 × 2 500 = 7 000 kg de resina, exatamente o limite, e respeita as demais restrições, gerando lucro de 4 × 2 000 + 3 × 2 500 = 8 000 + 7 500 = R$ 15 500,00 — o maior entre as opções viáveis.",
+  "porqueErradas": {
+    "A": "Viável (0 + 6 000 = 6 000 kg de resina), mas gera lucro de apenas R$ 9 000,00, por abrir mão integralmente do produto de maior margem unitária.",
+    "C": "Inviável: consumiria 2 000 + 2 × 3 000 = 8 000 kg de resina, acima dos 7 000 kg disponíveis.",
+    "D": "Viável (1 000 + 6 000 = 7 000 kg), porém gera lucro de R$ 13 000,00, inferior aos R$ 15 500,00 da alternativa B.",
+    "E": "Viável (2 000 kg de resina), mas gera apenas R$ 8 000,00 e deixa ociosos 5 000 kg de resina e todo o pigmento do tipo II."
+  }
+},
+{
+  "id": "ADP-04",
+  "tipo": "Adaptada",
+  "ano": 2014,
+  "referencia": "Adaptada de ENADE 2014 — Questão 24",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Difícil",
+  "competencia": "Identificar o recurso gargalo e definir o mix de produção pelo ganho por minuto de gargalo.",
+  "enunciado": "Um sistema produtivo fabrica dois produtos, M e N, passando por três recursos (R1, R2 e R3), cada um com capacidade de 2 400 minutos por semana.\n\nProduto M: preço de venda R$ 120,00; custo de matéria-prima R$ 60,00; tempos de processamento de 8 min em R1, 6 min em R2 e 4 min em R3; demanda semanal de 150 unidades.\n\nProduto N: preço de venda R$ 150,00; custo de matéria-prima R$ 70,00; tempos de processamento de 6 min em R1, 15 min em R2 e 5 min em R3; demanda semanal de 120 unidades.\n\nConsiderando a Teoria das Restrições, o mix semanal que maximiza o ganho do sistema é composto por",
+  "alternativas": {
+    "A": "150 unidades de M e 100 unidades de N.",
+    "B": "150 unidades de M e 120 unidades de N.",
+    "C": "60 unidades de M e 120 unidades de N.",
+    "D": "100 unidades de M e 120 unidades de N.",
+    "E": "150 unidades de M e nenhuma unidade de N."
+  },
+  "gabarito": "A",
+  "justificativa": "Carga para a demanda total: R1 = 150×8 + 120×6 = 1 920 min; R2 = 150×6 + 120×15 = 900 + 1 800 = 2 700 min; R3 = 150×4 + 120×5 = 1 200 min. Somente R2 excede os 2 400 min disponíveis, sendo o gargalo. Os ganhos unitários são 120 − 60 = R$ 60 para M e 150 − 70 = R$ 80 para N. O ganho por minuto de R2 é 60/6 = R$ 10,00 para M e 80/15 ≈ R$ 5,33 para N. Prioriza-se M: 150 unidades consomem 900 min; com os 1 500 min restantes produzem-se 1 500/15 = 100 unidades de N. Ganho total = R$ 17 000,00.",
+  "porqueErradas": {
+    "B": "Inviável: atender integralmente as duas demandas exigiria 2 700 minutos em R2, acima dos 2 400 disponíveis.",
+    "C": "Viável (360 + 1 800 = 2 160 min em R2), mas gera ganho de apenas R$ 13 200,00, por sacrificar o produto de maior ganho por minuto do gargalo.",
+    "D": "Viável, pois consome exatamente 2 400 min em R2, porém gera R$ 15 600,00 — abaixo dos R$ 17 000,00 da alternativa A. É o erro típico de priorizar pelo ganho unitário (N tem R$ 80) em vez do ganho por minuto do gargalo.",
+    "E": "Deixa 1 500 minutos do gargalo ociosos e gera apenas R$ 9 000,00 de ganho."
+  }
+},
+{
+  "id": "ADP-05",
+  "tipo": "Adaptada",
+  "ano": 2014,
+  "referencia": "Adaptada de ENADE 2014 — Questão 27",
+  "area": "Gestão de Estoques",
+  "dificuldade": "Média",
+  "competencia": "Calcular o lote econômico de compra e os custos associados.",
+  "enunciado": "Uma empresa consome 9 000 unidades por ano de determinado componente, com demanda praticamente constante ao longo do período. O custo de emissão e processamento de cada pedido é de R$ 200,00 e o custo anual de manter uma unidade em estoque é de R$ 10,00. O preço unitário de compra é constante, independentemente da quantidade adquirida.\n\nNessas condições, o lote econômico de compra, em unidades, é de",
+  "alternativas": {
+    "A": "300.",
+    "B": "424.",
+    "C": "600.",
+    "D": "900.",
+    "E": "1 200."
+  },
+  "gabarito": "C",
+  "justificativa": "O lote econômico de compra é Q* = √(2 · D · Cp / Ca), em que D é a demanda anual, Cp o custo por pedido e Ca o custo anual de armazenagem por unidade. Assim: Q* = √(2 × 9 000 × 200 / 10) = √(3 600 000 / 10) = √360 000 = 600 unidades. Nesse ponto, os custos anuais de pedido (15 × 200 = R$ 3 000) e de armazenagem (300 × 10 = R$ 3 000) se igualam, como esperado no ótimo.",
+  "porqueErradas": {
+    "A": "300 unidades corresponde ao estoque médio (Q*/2) no lote econômico, e não ao tamanho do lote.",
+    "B": "424 resultaria de omitir o fator 2 no numerador da fórmula, isto é, calcular √(9 000 × 200 / 10).",
+    "D": "900 seria obtido ao usar a demanda em outra base temporal ou ao trocar os valores de custo de pedido e de armazenagem.",
+    "E": "1 200 corresponde ao dobro do lote econômico — nesse volume, o custo de armazenagem passaria a R$ 6 000 ao ano, elevando o custo total."
+  }
+},
+{
+  "id": "ADP-06",
+  "tipo": "Adaptada",
+  "ano": 2014,
+  "referencia": "Adaptada de ENADE 2014 — Questão 16",
+  "area": "Engenharia Econômica",
+  "dificuldade": "Média",
+  "competencia": "Calcular payback simples de projeto de substituição energética e avaliar atributos de fontes renováveis.",
+  "enunciado": "Uma indústria de vidros planos pretende substituir parte do gás natural utilizado em seus fornos por biomassa proveniente de resíduos agroindustriais. A adaptação dos queimadores exige um investimento equivalente a 30% do consumo anual atual de combustível. O transporte anual da biomassa custará o equivalente a 8% do consumo anual atual. Estima-se que a substituição promova uma economia equivalente a 18% do consumo anual atual, por ano.\n\nA partir da situação descrita, avalie as afirmações a seguir.\n\nI. O investimento se paga em 3 anos.\nII. A partir do quarto ano, a indústria passa a ter benefício econômico líquido.\nIII. A substituição do gás natural por biomassa sólida reduz a emissão de material particulado.\nIV. Ao final de cinco anos, o benefício líquido acumulado supera o investimento em um valor equivalente a 20% do consumo anual atual.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e III.",
+    "B": "II e III.",
+    "C": "I, II e IV.",
+    "D": "I, III e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "C",
+  "justificativa": "Tomando o consumo anual atual como 100%, o benefício líquido anual é 18% de economia menos 8% de transporte, ou seja, 10% ao ano. Com investimento de 30%, o payback é 30 ÷ 10 = 3 anos (I correta), de modo que a partir do quarto ano há benefício líquido (II correta). Em cinco anos, o acumulado é 5 × 10% = 50%, superando o investimento de 30% em 20% (IV correta).",
+  "porqueErradas": {
+    "A": "A afirmação III é falsa: a queima de biomassa sólida emite mais material particulado que o gás natural, que é o combustível de queima mais limpa entre os fósseis.",
+    "B": "Inclui III, incorreta quanto à emissão de particulados, e omite I e IV.",
+    "D": "Inclui III, falsa, e deixa de fora II, que decorre diretamente do payback de 3 anos.",
+    "E": "Inclui III, falsa, e omite I, que estabelece corretamente o prazo de retorno do investimento."
+  }
+},
+{
+  "id": "ADP-07",
+  "tipo": "Adaptada",
+  "ano": 2017,
+  "referencia": "Adaptada de ENADE 2017 — Questão 18",
+  "area": "Resistência dos Materiais",
+  "dificuldade": "Difícil",
+  "competencia": "Aplicar a equação da tensão de flexão a três pontos para comparar corpos de prova de geometrias distintas.",
+  "enunciado": "No ensaio de flexão a três pontos, a tensão de flexão σ do material é obtida por\n\nσ = 3Fd / (2·w·h²)\n\nem que F é a carga aplicada, d é a distância entre os apoios, w é a largura do corpo de prova e h é a sua espessura.\n\nConsidere dois corpos de prova, A e B, do mesmo material cerâmico, cuja resistência à flexão é de 320 MPa. O corpo de prova A tem metade da largura e o dobro da espessura do corpo de prova B, e ambos são submetidos ao mesmo ensaio, com a mesma distância entre apoios.\n\nNessa situação, qual porcentagem da força necessária para o rompimento do corpo de prova B deverá ser aplicada ao corpo de prova A para que este também se rompa?",
+  "alternativas": {
+    "A": "50%",
+    "B": "100%",
+    "C": "150%",
+    "D": "200%",
+    "E": "400%"
+  },
+  "gabarito": "D",
+  "justificativa": "Para o corpo B: σ = 3·F_B·d / (2·w·h²). Para o corpo A, com largura w/2 e espessura 2h: σ = 3·F_A·d / (2·(w/2)·(2h)²) = 3·F_A·d / (2·(w/2)·4h²) = 3·F_A·d / (4·w·h²). Igualando as tensões de ruptura: 3F_A/(4wh²) = 3F_B/(2wh²), o que leva a F_A/4 = F_B/2, ou seja, F_A = 2·F_B = 200%.",
+  "porqueErradas": {
+    "A": "50% consideraria apenas o efeito da redução da largura pela metade, ignorando que a espessura entra ao quadrado e dobrou.",
+    "B": "100% suporia que os efeitos da largura e da espessura se cancelam, o que não ocorre pela dependência quadrática em h.",
+    "C": "150% não corresponde a nenhuma combinação correta dos fatores geométricos envolvidos na fórmula.",
+    "E": "400% consideraria apenas o efeito quadrático do dobro da espessura (fator 4), desprezando a redução da largura pela metade (fator 1/2)."
+  }
+},
+{
+  "id": "ADP-08",
+  "tipo": "Adaptada",
+  "ano": 2017,
+  "referencia": "Adaptada de ENADE 2017 — Questão 22",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Fácil",
+  "competencia": "Aplicar o método da média móvel ponderada na previsão de demanda.",
+  "enunciado": "Uma fábrica de componentes eletrônicos utiliza o método da média móvel ponderada para prever a demanda do mês seguinte, considerando os três meses mais recentes, com pesos de 60%, 25% e 15%, do mês mais próximo para o mais distante.\n\nA demanda real registrada, em milhares de unidades, foi:\n• junho: 140\n• julho: 160\n• agosto: 200\n• setembro: 240\n\nCom base nesses dados, qual a previsão de demanda, em milhares de unidades, para o mês de outubro?",
+  "alternativas": {
+    "A": "200.",
+    "B": "210.",
+    "C": "218.",
+    "D": "225.",
+    "E": "240."
+  },
+  "gabarito": "C",
+  "justificativa": "Os três meses mais recentes são setembro (peso 60%), agosto (25%) e julho (15%). Assim: 0,60 × 240 + 0,25 × 200 + 0,15 × 160 = 144 + 50 + 24 = 218 mil unidades.",
+  "porqueErradas": {
+    "A": "200 é a média aritmética simples dos quatro meses (140 + 160 + 200 + 240)/4, o que desconsidera a ponderação exigida e inclui junho indevidamente.",
+    "B": "210 corresponderia à média simples dos três meses mais recentes (160 + 200 + 240)/3, ignorando os pesos definidos.",
+    "D": "225 resultaria de atribuir peso ainda maior a setembro do que os 60% estabelecidos no enunciado.",
+    "E": "240 é simplesmente a demanda de setembro, o que caracteriza o método do último período, e não a média móvel ponderada."
+  }
+},
+{
+  "id": "ADP-09",
+  "tipo": "Adaptada",
+  "ano": 2017,
+  "referencia": "Adaptada de ENADE 2017 — Questão 29",
+  "area": "Pesquisa Operacional",
+  "dificuldade": "Média",
+  "competencia": "Dimensionar a capacidade de um sistema de filas a partir da distribuição de probabilidades de estado.",
+  "enunciado": "Uma farmácia está projetando um guichê de atendimento rápido. A probabilidade (Pn) de haver n clientes no sistema, somando fila e atendimento, foi estimada em:\n\nn = 0 → 40% | n = 1 → 24% | n = 2 → 14% | n = 3 → 9% | n = 4 → 5% | n = 5 → 3% | n = 6 → 2% | n = 7 → 2% | n = 8 → 1%\n\nPara não comprometer a circulação no interior da loja, definiu-se que a capacidade do sistema deveria atender a pelo menos 90% da demanda.\n\nCom base nesses dados, a capacidade mínima de clientes no sistema a ser considerada no projeto corresponderá a",
+  "alternativas": {
+    "A": "3.",
+    "B": "4.",
+    "C": "5.",
+    "D": "6.",
+    "E": "7."
+  },
+  "gabarito": "B",
+  "justificativa": "Acumulando as probabilidades: n ≤ 0 → 40%; n ≤ 1 → 64%; n ≤ 2 → 78%; n ≤ 3 → 87%; n ≤ 4 → 92%. O primeiro valor de n cuja probabilidade acumulada atinge ou supera 90% é n = 4.",
+  "porqueErradas": {
+    "A": "Com capacidade para 3 clientes, a probabilidade acumulada é de 87%, abaixo do nível de serviço de 90% definido no projeto.",
+    "C": "Capacidade 5 acumula 95% e atende ao requisito, mas não é o valor mínimo solicitado — 4 já é suficiente.",
+    "D": "Capacidade 6 acumula 97%, superdimensionando o guichê em relação ao critério estabelecido.",
+    "E": "Capacidade 7 acumula 99%, sendo o dimensionamento mais distante do mínimo pedido no enunciado."
+  }
+},
+{
+  "id": "ADP-10",
+  "tipo": "Adaptada",
+  "ano": 2017,
+  "referencia": "Adaptada de ENADE 2017 — Questão 30",
+  "area": "Planejamento e Controle da Produção",
+  "dificuldade": "Média",
+  "competencia": "Calcular capacidade em horário normal e necessidade total de produção em planejamento agregado.",
+  "enunciado": "Um engenheiro de produção elaborou um planejamento agregado com estratégia de produção constante, igual à capacidade em horário normal, recorrendo a horas extras quando necessário. O estoque inicial é de 150 unidades e, ao final do período de planejamento, o estoque deverá ser zero. A equipe é composta por 12 trabalhadores, em turno diário de 8 horas, com 22 dias úteis por mês. O tempo padrão de produção é de 3 homens-hora por unidade.\n\nDemanda mensal (unidades): Janeiro 600 | Fevereiro 750 | Março 800 | Abril 700\n\nA capacidade de produção mensal em horário normal e a produção total necessária para o período de janeiro a abril correspondem, respectivamente, a",
+  "alternativas": {
+    "A": "704 e 2 700.",
+    "B": "704 e 2 850.",
+    "C": "660 e 2 700.",
+    "D": "660 e 2 850.",
+    "E": "750 e 2 700."
+  },
+  "gabarito": "A",
+  "justificativa": "A capacidade mensal é 12 trabalhadores × 8 h/dia × 22 dias = 2 112 homens-hora; dividindo pelo tempo padrão de 3 homens-hora por unidade, obtém-se 704 unidades por mês. A demanda acumulada é 600 + 750 + 800 + 700 = 2 850 unidades; descontando o estoque inicial de 150 unidades (o estoque final deve ser zero), a produção necessária é 2 850 − 150 = 2 700 unidades.",
+  "porqueErradas": {
+    "B": "Acerta a capacidade mensal, mas usa a demanda bruta de 2 850 unidades sem abater o estoque inicial de 150 unidades já disponível.",
+    "C": "O valor 660 resultaria de considerar 20 dias úteis em vez dos 22 informados no enunciado.",
+    "D": "Erra nos dois valores: usa 20 dias úteis para a capacidade e não abate o estoque inicial da produção necessária.",
+    "E": "O valor 750 desconsidera o tempo padrão de 3 homens-hora por unidade na conversão de horas disponíveis em unidades produzidas."
+  }
+},
+{
+  "id": "ADP-11",
+  "tipo": "Adaptada",
+  "ano": 2017,
+  "referencia": "Adaptada de ENADE 2017 — Questão 31",
+  "area": "Engenharia Econômica",
+  "dificuldade": "Média",
+  "competencia": "Determinar o ponto de indiferença entre alternativas com diferentes estruturas de custo fixo e variável.",
+  "enunciado": "Uma empresa avalia dois pacotes tecnológicos para ampliar sua capacidade produtiva:\n\n• Tecnologia X: custo fixo anual de R$ 24 000,00 e custo variável de R$ 5,00 por unidade;\n• Tecnologia Y: custo fixo anual de R$ 60 000,00 e custo variável de R$ 2,00 por unidade.\n\nSabendo que o custo total anual é dado por custo fixo + custo variável unitário × volume anual, avalie as afirmações a seguir.\n\nI. O ponto de indiferença entre as duas tecnologias ocorre em 12 000 unidades por ano.\nII. O custo total anual no ponto de indiferença é de R$ 84 000,00.\nIII. Para um volume anual de 20 000 unidades, a tecnologia X apresenta o menor custo total.\nIV. Para um volume anual de 8 000 unidades, a tecnologia X apresenta o menor custo total.\n\nÉ correto apenas o que se afirma em",
+  "alternativas": {
+    "A": "I e III.",
+    "B": "II e IV.",
+    "C": "I, II e IV.",
+    "D": "I, III e IV.",
+    "E": "II, III e IV."
+  },
+  "gabarito": "C",
+  "justificativa": "O ponto de indiferença ocorre quando 24 000 + 5Q = 60 000 + 2Q, ou seja, 3Q = 36 000 e Q = 12 000 unidades (I correta). Nesse volume, o custo total é 24 000 + 5 × 12 000 = R$ 84 000,00 (II correta). Para 8 000 unidades, abaixo do ponto de indiferença: X custa 24 000 + 40 000 = R$ 64 000 e Y custa 60 000 + 16 000 = R$ 76 000 — a tecnologia X é mais econômica (IV correta).",
+  "porqueErradas": {
+    "A": "A afirmação III é falsa: para 20 000 unidades, X custa 24 000 + 100 000 = R$ 124 000 e Y custa 60 000 + 40 000 = R$ 100 000 — acima do ponto de indiferença, Y é mais econômica.",
+    "B": "Embora II e IV estejam corretas, a alternativa omite I, que identifica corretamente o ponto de indiferença.",
+    "D": "Inclui III, incorreta para volumes acima do ponto de indiferença, e omite II.",
+    "E": "Inclui III, incorreta, e deixa de fora I, que estabelece o volume de equilíbrio entre as tecnologias."
+  }
+},
+{
+  "id": "ADP-12",
+  "tipo": "Adaptada",
+  "ano": 2017,
+  "referencia": "Adaptada de ENADE 2017 — Questão 34",
+  "area": "Gestão da Manutenção",
+  "dificuldade": "Média",
+  "competencia": "Calcular os indicadores MTBF e MTTR a partir de registros de paradas.",
+  "enunciado": "Uma injetora opera em turno único diário de 10 horas. Em determinado dia, o equipamento apresentou quatro falhas no turno. A primeira parada durou 30 minutos, a segunda e a quarta duraram 25 minutos cada e a terceira durou 20 minutos.\n\nNesse caso, os resultados, em minutos, do MTBF (tempo médio entre falhas) e do MTTR (tempo médio para reparo) são, respectivamente, iguais a",
+  "alternativas": {
+    "A": "125 e 25.",
+    "B": "125 e 20.",
+    "C": "150 e 25.",
+    "D": "100 e 25.",
+    "E": "500 e 100."
+  },
+  "gabarito": "A",
+  "justificativa": "O turno tem 10 h = 600 minutos. O tempo total de manutenção é 30 + 25 + 20 + 25 = 100 minutos, distribuídos em 4 paradas. O MTTR é 100 ÷ 4 = 25 minutos. O MTBF é o tempo médio de operação entre falhas: (600 − 100) ÷ 4 = 500 ÷ 4 = 125 minutos.",
+  "porqueErradas": {
+    "B": "Acerta o MTBF, mas adota 20 minutos como MTTR — valor da parada mais curta, e não a média das quatro paradas.",
+    "C": "O valor 150 resultaria de dividir os 600 minutos do turno por 4 sem descontar o tempo de manutenção.",
+    "D": "O valor 100 seria obtido se o tempo total de manutenção fosse 200 minutos, o que não corresponde aos dados.",
+    "E": "Apresenta o tempo total de operação (500 min) e o tempo total de manutenção (100 min), sem dividir pelo número de paradas."
+  }
+},
+{
+  "id": "ADP-13",
+  "tipo": "Adaptada",
+  "ano": 2019,
+  "referencia": "Adaptada de ENADE 2019 — Questão 10",
+  "area": "Cálculo e Otimização",
+  "dificuldade": "Média",
+  "competencia": "Determinar ponto de mínimo de função polinomial por meio de derivadas.",
+  "enunciado": "A gerência de uma fábrica de conectores identificou que o custo mensal de estocagem C(x), em milhares de reais, é dado por\n\nC(x) = (1/3)·x³ − 7x² + 40x + 20\n\npara x > 0, em que x representa, em milhares, o número de conectores produzidos diariamente.\n\nNesse contexto, o número de conectores produzidos por dia que minimiza o custo de estocagem é",
+  "alternativas": {
+    "A": "4 000.",
+    "B": "7 000.",
+    "C": "10 000.",
+    "D": "14 000.",
+    "E": "20 000."
+  },
+  "gabarito": "C",
+  "justificativa": "Derivando: C'(x) = x² − 14x + 40. Igualando a zero, as raízes são x = 4 e x = 10. A segunda derivada é C''(x) = 2x − 14: em x = 4, C''(4) = −6 < 0, caracterizando máximo local; em x = 10, C''(10) = 6 > 0, caracterizando mínimo local. Como x está em milhares, o custo mínimo ocorre em 10 000 conectores por dia.",
+  "porqueErradas": {
+    "A": "x = 4 também anula a derivada primeira, mas a segunda derivada é negativa nesse ponto — trata-se de um máximo local, e não de um mínimo.",
+    "B": "7 000 corresponde a x = 7, que é o ponto de inflexão da função (onde C''(x) = 0), e não um ponto crítico da derivada primeira.",
+    "D": "14 000 não é raiz de C'(x) = 0; o valor 14 aparece apenas como coeficiente da derivada.",
+    "E": "20 000 corresponde ao termo independente da função de custo, sem relação com os pontos críticos."
+  }
+}
+]
