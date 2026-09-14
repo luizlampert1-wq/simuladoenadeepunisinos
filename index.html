@@ -258,34 +258,50 @@ const MAX_LINHAS    = 15;   // limite de linhas da resposta discursiva, como no 
    fica apenas no navegador do aluno (localStorage).
    Para ativar, veja a seção 7 do README.
    ------------------------------------------------------------ */
-const COLETA = {
-  ativa: false,
-  url: "",        // endpoint que recebe o POST (Google Apps Script, Formulários, etc.)
-};
+const COLETA = {"ativa": false, "url": ""};   // vem de coleta.json, injetado pelo build.py
 
-async function registrarResultado(registro){
-  // 1) histórico local — sempre
+const LS = { hist:"enade_ep_hist_v2", prog:"enade_ep_prog_v2", tema:"enade_ep_tema_v1",
+             aluno:"enade_ep_aluno_v1", fila:"enade_ep_fila_v1" };
+const MAX_FILA = 50;
+
+const coletaLigada = () => !!(COLETA && COLETA.ativa && COLETA.url);
+
+/* Sempre enfileira e depois tenta escoar. Se o aluno estiver sem internet,
+   o registro fica guardado e é reenviado na próxima vez que abrir o app. */
+function registrarResultado(registro){
   const hist = store(LS.hist) || [];
   hist.unshift(registro);
   store(LS.hist, hist.slice(0, 30));
 
-  // 2) envio externo — só quando configurado
-  if (!COLETA.ativa || !COLETA.url) return { enviado:false, motivo:"coleta desativada" };
-  try{
-    await fetch(COLETA.url, {
-      method: "POST",
-      mode: "no-cors",
-      headers: { "Content-Type": "text/plain;charset=utf-8" },
-      body: JSON.stringify(registro)
-    });
-    return { enviado:true };
-  }catch(e){
-    return { enviado:false, motivo:String(e) };
-  }
+  if (!coletaLigada()) return;
+  const fila = store(LS.fila) || [];
+  fila.push(registro);
+  store(LS.fila, fila.slice(-MAX_FILA));
+  escoarFila();
 }
 
-const LS = { hist:"enade_ep_hist_v2", prog:"enade_ep_prog_v2", tema:"enade_ep_tema_v1",
-             aluno:"enade_ep_aluno_v1" };
+async function escoarFila(){
+  if (!coletaLigada()) return;
+  const fila = store(LS.fila) || [];
+  if (!fila.length) return;
+  const pendentes = [];
+  for (const r of fila){
+    try{
+      // no-cors: a requisição sai, mas a resposta é opaca — não dá para saber
+      // se o servidor gravou. Só falha de rede é detectável, e é justamente
+      // o caso que interessa reenviar depois.
+      await fetch(COLETA.url, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify(r)
+      });
+    }catch(e){
+      pendentes.push(r);
+    }
+  }
+  store(LS.fila, pendentes.slice(-MAX_FILA));
+}
 const LETRAS = ["A","B","C","D","E"];
 const $ = (sel, el=document) => el.querySelector(sel);
 const esc = s => String(s).replace(/[&<>"']/g, c =>
@@ -824,6 +840,7 @@ function lightbox(src){
 
 $("#sub").textContent =
   `${N_QUESTOES} questões por simulado · banco com ${BANCO.length} · atualizado em ${BUILD_INFO.data}`;
+escoarFila();   // reenvia o que ficou pendente de uma sessão sem internet
 telaInicial();
 </script>
 

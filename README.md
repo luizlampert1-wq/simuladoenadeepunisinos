@@ -25,6 +25,8 @@ simulado-enade-ep/
 │   └── discursivas-ineditas.json   ·   10 discursivas inéditas
 ├── figuras/                        ← 29 figuras recortadas dos PDFs originais
 ├── app/index.html                  ← interface (HTML + CSS + JS)
+├── coleta.json                     ← para onde vão os resultados (seção 7)
+├── coleta/apps-script.gs           ← script da planilha do Google, pronto para colar
 ├── build.py                        ← gera o aplicativo final
 ├── testar.py                       ← testes automatizados
 ├── index.html                      ← gerado pelo build — é o que o GitHub Pages publica
@@ -347,56 +349,147 @@ restrito**, há dois caminhos honestos:
   Resolve, mas deixa de ser um arquivo estático: exige hospedagem, cadastro de aplicação no TI da
   universidade e manutenção.
 
-### 7.3. Coleta dos resultados por aluno
+### 7.3. Coleta dos resultados — como fazer cair no Excel
 
 Hoje o histórico (e-mail, nome, data, acertos, erros, percentual, tempo, desempenho por área e os
 ids das questões sorteadas) é gravado **apenas no navegador do aluno**, em `localStorage`. Ele vê
-os próprios simulados na tela inicial; você não vê nada. Nada sai da máquina dele.
+os próprios simulados na tela inicial; você não vê nada.
 
-Para que os resultados cheguem até você, é preciso um ponto de coleta. O aplicativo já tem o gancho
-pronto e isolado, no início do `<script>` de `app/index.html`:
+Para os resultados chegarem até você, é preciso um ponto de coleta. O aplicativo já está pronto:
+ele monta o registro, enfileira e envia. Falta só dizer **para onde**.
 
-```js
-const COLETA = {
-  ativa: false,
-  url: "",        // endpoint que recebe o POST
-};
+#### O que você edita
+
+Um arquivo só, na raiz do projeto — **`coleta.json`**:
+
+```json
+{
+  "ativa": false,
+  "url": ""
+}
 ```
 
-Com `ativa: true` e uma `url`, cada simulado finalizado dispara um POST com o registro em JSON.
-Nada mais no aplicativo precisa mudar.
+Você não mexe em HTML nem em JavaScript. Depois de editar, `python build.py` e publique. O build
+recusa a configuração se `ativa` for `true` com a `url` vazia ou sem `https://`.
 
-**Opção recomendada — Google Sheets via Apps Script.** Gratuita, dentro da conta institucional,
-sem hospedagem e sem custo:
+#### Qual caminho escolher
 
-1. Crie uma planilha no Google Drive da UNISINOS.
-2. *Extensões → Apps Script*, e cole:
+| Caminho | Custo | Automático | Onde os dados ficam |
+|---|---|---|---|
+| **A. Google Sheets** (Apps Script) | grátis | sim | planilha do Google, que você baixa em `.xlsx` |
+| **B. Power Automate + Excel Online** | exige conector **premium** | sim | arquivo `.xlsx` real no OneDrive |
+| **C. Sem coleta** | grátis | não | só no navegador de cada aluno |
 
-   ```js
-   function doPost(e) {
-     const d = JSON.parse(e.postData.contents);
-     SpreadsheetApp.getActiveSheet().appendRow([
-       new Date(), d.email, d.nome, d.acertos, d.totalObjetivas,
-       d.percentual, d.discursivasRespondidas, d.minutos, JSON.stringify(d.porArea)
-     ]);
-     return ContentService.createTextOutput("ok");
+**A recomendação depende de uma coisa que só você pode verificar:** se a sua licença da UNISINOS
+inclui **Power Automate Premium**. O gatilho que o aplicativo precisa — *"Quando uma solicitação
+HTTP é recebida"* — é um conector premium, e muitas licenças acadêmicas (A1/A3) não o incluem.
+
+Para checar, leva um minuto: entre em **make.powerautomate.com**, clique em *Criar → Fluxo de nuvem
+instantâneo* e procure o gatilho *"Quando uma solicitação HTTP é recebida"*. Se ele vier com o selo
+**Premium** e não deixar salvar, você não tem — vá de caminho A.
+
+- **Tem premium?** Caminho B. É Excel de verdade, no OneDrive institucional, sem nada fora da
+  Microsoft.
+- **Não tem?** Caminho A. Funciona hoje, de graça, e você trabalha no Excel do mesmo jeito —
+  a planilha vira `.xlsx` em dois cliques.
+
+---
+
+#### Caminho A — Google Sheets (grátis)
+
+1. Crie uma planilha nova no Google Drive (de preferência na conta institucional).
+2. *Extensões → Apps Script*. Apague o que estiver lá e cole o conteúdo de
+   **[`coleta/apps-script.gs`](coleta/apps-script.gs)**.
+3. *Implantar → Nova implantação → Aplicativo da Web*, com:
+   - **Executar como:** Eu (sua conta)
+   - **Quem pode acessar:** Qualquer pessoa
+
+   Autorize quando o Google pedir e **copie a URL que termina em `/exec`**.
+4. Confira: cole essa URL no navegador. Deve responder *"Coleta do Simulado ENADE ativa."*
+5. No projeto, edite `coleta.json`:
+   ```json
+   {
+     "ativa": true,
+     "url": "https://script.google.com/macros/s/AKfy.../exec"
    }
    ```
-3. *Implantar → Nova implantação → Aplicativo da Web*, executar como **você**, com acesso para
-   **qualquer pessoa**. Copie a URL gerada.
-4. Cole a URL em `COLETA.url`, mude `ativa` para `true`, rode `python build.py` e publique.
+6. `python build.py`, `python testar.py`, `git add -A`, `git commit -m "Liga a coleta"`, `git push`.
 
-Cada simulado finalizado vira uma linha na planilha.
+Cada simulado finalizado vira uma linha. O script cria o cabeçalho sozinho na primeira vez.
 
-**Outras opções:** um Formulário Google (mesma ideia, menos controle sobre as colunas), ou um
-serviço como Supabase/Firebase se você quiser consultas e painéis. Em todos os casos, muda apenas
-a `url` — o aplicativo não sabe qual é o destino.
+**Para abrir no Excel:** na planilha, *Arquivo → Fazer download → Microsoft Excel (.xlsx)*.
 
-**Sobre o `db` do Artifact (claude.ai):** a versão publicada no claude.ai pode usar um banco de
-dados do próprio Artifact, sem nada externo. Duas ressalvas: só funciona no link do claude.ai
-(no GitHub Pages não existe), e a capacidade de identificar cada visitante individualmente não está
-disponível nesta conta — os dados ficariam num espaço comum a todos os alunos. Por isso a planilha
-é a recomendação.
+> **Não use "Publicar na web" para ligar o Excel direto à planilha.** Funciona, mas gera um link
+> público — e a planilha tem e-mails de alunos identificados. Baixar o `.xlsx` quando precisar é
+> mais trabalho nenhum e não expõe nada.
+
+---
+
+#### Caminho B — Power Automate + Excel Online (100% Microsoft)
+
+1. No OneDrive institucional, crie uma pasta de trabalho do Excel, por exemplo
+   `Simulado ENADE - resultados.xlsx`.
+2. Na primeira linha, escreva os cabeçalhos:
+
+   `Recebido em | Data do simulado | E-mail | Nome | Acertos | Total objetivas | Percentual | Nota | Discursivas respondidas | Total discursivas | Minutos | Desempenho por área`
+
+3. Selecione essas células e vá em *Inserir → Tabela*, marcando **"Minha tabela tem cabeçalhos"**.
+   Isso é obrigatório: o Power Automate só escreve dentro de uma Tabela, não em células soltas.
+4. Em **make.powerautomate.com**: *Criar → Fluxo de nuvem instantâneo → Quando uma solicitação HTTP
+   é recebida*.
+5. No gatilho, clique em *Usar o esquema de conteúdo de exemplo* e cole:
+
+   ```json
+   {
+     "nome": "Ana", "email": "ana@edu.unisinos.br",
+     "data": "14/09/2026, 15:52:13", "dataISO": "2026-09-14T18:52:13.000Z",
+     "acertos": 27, "erros": 9, "totalObjetivas": 36, "percentual": 75,
+     "discursivasRespondidas": 2, "totalDiscursivas": 2, "minutos": 48,
+     "ids": ["2023-Q20"], "porArea": {}
+   }
+   ```
+6. Adicione a ação **Excel Online (Business) → Adicionar uma linha em uma tabela**, aponte para o
+   arquivo e a tabela, e associe cada coluna ao campo correspondente do gatilho.
+7. Salve. O Power Automate gera a **URL HTTP POST** — copie e cole em `coleta.json`, com
+   `"ativa": true`. Depois `python build.py` e publique.
+
+O arquivo é um `.xlsx` de verdade no OneDrive: abre no Excel do computador, sincroniza sozinho, e
+não tem link público.
+
+---
+
+#### O que chega em cada linha
+
+| Coluna | Exemplo |
+|---|---|
+| Recebido em | 14/09/2026 15:53 |
+| Data do simulado | 14/09/2026 15:52 |
+| E-mail | ana.camargo@edu.unisinos.br |
+| Nome | Ana Beatriz Camargo |
+| Acertos / Total objetivas | 27 / 36 |
+| Percentual (%) / Nota (0-10) | 75 / 7,5 |
+| Discursivas respondidas | 2 de 2 |
+| Minutos | 48 |
+| Desempenho por área | `{"Estatística":"4/4","Gestão de Estoques":"1/2",...}` |
+| Questões sorteadas | `2023-Q20 ADP-14 INE-77 ...` |
+
+As duas últimas colunas são texto bruto de propósito: servem para auditoria (conferir qual questão
+caiu para quem) e para uma análise mais fina depois, sem poluir a planilha com 23 colunas de áreas.
+
+#### O que o aplicativo faz para nada se perder
+
+Se o aluno estiver sem internet ao finalizar, o registro **fica guardado no navegador dele** e é
+reenviado automaticamente na próxima vez que abrir o aplicativo. A fila guarda os 50 resultados
+mais recentes.
+
+Duas limitações que vale saber:
+
+- **O aplicativo não consegue confirmar a entrega.** O envio é feito em modo `no-cors`, então o
+  navegador manda a requisição mas não lê a resposta. Só falha de rede é detectável — e é
+  justamente essa que a fila reenvia. Quem confirma que chegou é a planilha.
+- **A URL de coleta fica visível** no código da página publicada. Quem a encontrar pode enviar
+  linhas. O script do caminho A já recusa e-mails fora de `@edu.unisinos.br`; se aparecer lixo,
+  apague a linha.
 
 ### 7.4. Antes de ligar a coleta
 
@@ -408,7 +501,11 @@ Três cuidados que custam pouco:
 - **Não use os resultados para nota ou avaliação formal** sem comunicar a turma — é um simulado de
   treinamento, e tratá-lo assim evita qualquer discussão.
 
----
+### 7.5. Desligar a coleta
+
+Volte `coleta.json` para `{"ativa": false, "url": ""}`, rode `python build.py` e publique. O
+aplicativo para de enviar na hora; o que já está na planilha continua lá.
+
 
 ## 8. Sobre o gabarito no código
 
@@ -430,7 +527,7 @@ Drive só seu, publicando apenas o `index.html` gerado.
 
 ## 9. Testes automatizados
 
-`python testar.py` executa o aplicativo real dentro do Chrome em modo headless. São **44
+`python testar.py` executa o aplicativo real dentro do Chrome em modo headless. São **49
 verificações**:
 
 **Banco**
@@ -468,8 +565,13 @@ verificações**:
 - **nenhum elemento de correção aparece durante o simulado**;
 - pede confirmação antes de finalizar e exibe as 38 questões na correção;
 - o histórico registra o e-mail do aluno;
-- recupera o simulado em andamento — inclusive o rascunho da discursiva — ao recarregar a página;
-- o envio externo de dados vem desativado por padrão.
+- recupera o simulado em andamento — inclusive o rascunho da discursiva — ao recarregar a página.
+
+**Coleta de resultados**
+- vem desativada por padrão, e com ela desligada nada é enfileirado para envio;
+- o histórico local é gravado de qualquer forma;
+- com a coleta ligada, o resultado entra na fila e o envio é disparado;
+- a fila de reenvio tem teto de 50 registros e descarta os mais antigos.
 
 **Responsividade**
 - mede o conteúdo em viewport real de **390 px e 320 px** nas quatro telas (início, objetiva,

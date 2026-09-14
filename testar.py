@@ -396,10 +396,41 @@ DRIVER_LOGICA = r"""
     try { localStorage.clear(); } catch(e){}
   })();
 
-  // ---------- 10. coleta de dados desativada por padrão ----------
+  // ---------- 10. coleta de resultados ----------
   (function(){
+    try { localStorage.clear(); } catch(e){}
     ok("Envio externo de dados vem desativado (nada sai do navegador do aluno)",
         COLETA.ativa === false && !COLETA.url);
+
+    S = {nome:"Teste", email:EMAIL, questoes:sortear(), respostas:{}, atual:0, inicio:Date.now()};
+    telaResultado();
+    ok("Com a coleta desligada, nenhum resultado é enfileirado para envio",
+        !(store(LS.fila) || []).length);
+    ok("O histórico local é gravado de qualquer forma",
+        (store(LS.hist) || []).length === 1);
+
+    // liga a coleta com um fetch de mentira, que nunca resolve: assim a fila
+    // fica exatamente como registrarResultado a deixou.
+    const fetchReal = window.fetch;
+    let chamadas = 0;
+    window.fetch = () => { chamadas++; return new Promise(() => {}); };
+    COLETA.ativa = true; COLETA.url = "https://exemplo.invalido/coleta";
+    try { localStorage.clear(); } catch(e){}
+
+    for (let i = 0; i < MAX_FILA + 12; i++)
+      registrarResultado({ email:EMAIL, nome:"Teste", acertos:i });
+    const fila = store(LS.fila) || [];
+    ok("Com a coleta ligada, o resultado entra na fila e o envio é disparado",
+        fila.length > 0 && chamadas > 0, fila.length + " na fila · " + chamadas + " envios");
+    ok("A fila de reenvio tem teto de " + MAX_FILA + " registros",
+        fila.length === MAX_FILA, "fila = " + fila.length);
+    ok("A fila descarta os mais antigos e guarda os mais recentes",
+        fila[fila.length-1].acertos === MAX_FILA + 11 && fila[0].acertos === 12,
+        "do " + fila[0].acertos + " ao " + fila[fila.length-1].acertos);
+
+    window.fetch = fetchReal;
+    COLETA.ativa = false; COLETA.url = "";
+    try { localStorage.clear(); } catch(e){}
   })();
 
   // ---------- saída ----------

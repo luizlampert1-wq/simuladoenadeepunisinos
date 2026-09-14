@@ -124,6 +124,30 @@ def validar(banco, origem):
     return erros, avisos
 
 
+# ----------------------------------------------------------------- coleta
+def carregar_coleta():
+    """Lê coleta.json — a configuração do envio dos resultados.
+
+    Fica fora do app de propósito: ligar a coleta é editar dois campos de um
+    JSON, não mexer em HTML."""
+    caminho = os.path.join(RAIZ, "coleta.json")
+    if not os.path.exists(caminho):
+        return {"ativa": False, "url": ""}
+    with open(caminho, encoding="utf-8") as fh:
+        try:
+            cfg = json.load(fh)
+        except json.JSONDecodeError as e:
+            raise SystemExit(f"ERRO de JSON em coleta.json: {e}")
+
+    ativa = bool(cfg.get("ativa"))
+    url = str(cfg.get("url") or "").strip()
+    if ativa and not url:
+        raise SystemExit("ERRO: coleta.json está com \"ativa\": true e \"url\" vazia.")
+    if ativa and not url.startswith("https://"):
+        raise SystemExit(f"ERRO: a url da coleta precisa começar com https:// (veio {url!r})")
+    return {"ativa": ativa, "url": url}
+
+
 # ----------------------------------------------------------------- figuras
 def embutir_figuras(banco):
     cache, total = {}, 0
@@ -184,8 +208,14 @@ def main():
 
     with open(os.path.join(RAIZ, "app", "index.html"), encoding="utf-8") as fh:
         corpo = fh.read()
+    coleta = carregar_coleta()
+    print("  coleta de resultados: " +
+          (f"ATIVA -> {coleta['url']}" if coleta["ativa"]
+           else "desativada (os dados ficam só no navegador do aluno)"))
+
     corpo = corpo.replace("__BANCO__", payload)
     corpo = corpo.replace("__BUILD__", json.dumps(info, ensure_ascii=False))
+    corpo = corpo.replace("__COLETA__", json.dumps(coleta, ensure_ascii=False))
 
     os.makedirs(os.path.join(RAIZ, "dist"), exist_ok=True)
 
