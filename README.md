@@ -436,17 +436,29 @@ Cada simulado finalizado vira uma linha. O script cria o cabeçalho sozinho na p
 
 #### Caminho B — Power Automate + Excel Online (100% Microsoft)
 
+**A planilha**
+
 1. No OneDrive institucional, crie uma pasta de trabalho do Excel, por exemplo
    `Simulado ENADE - resultados.xlsx`.
-2. Na primeira linha, escreva os cabeçalhos:
+2. Na primeira linha, escreva os 13 cabeçalhos:
 
-   `Recebido em | Data do simulado | E-mail | Nome | Acertos | Total objetivas | Percentual | Nota | Discursivas respondidas | Total discursivas | Minutos | Desempenho por área`
+   `Recebido em | Data do simulado | E-mail | Nome | Acertos | Total objetivas | Percentual | Nota | Discursivas respondidas | Total discursivas | Minutos | Desempenho por área | Questões sorteadas`
 
-3. Selecione essas células e vá em *Inserir → Tabela*, marcando **"Minha tabela tem cabeçalhos"**.
-   Isso é obrigatório: o Power Automate só escreve dentro de uma Tabela, não em células soltas.
-4. Em **make.powerautomate.com**: *Criar → Fluxo de nuvem instantâneo → Quando uma solicitação HTTP
-   é recebida*.
-5. No gatilho, clique em *Usar o esquema de conteúdo de exemplo* e cole:
+3. Selecione essas células, *Inserir → Tabela*, marcando **"Minha tabela tem cabeçalhos"**. Em
+   *Design da Tabela → Nome da Tabela*, dê um nome fixo, como `Resultados`. Isso é obrigatório: o
+   Power Automate só escreve dentro de uma Tabela, nunca em células soltas.
+4. Salve e **feche** o arquivo.
+
+**O fluxo** — em **make.powerautomate.com**, com a conta dona do arquivo:
+
+5. *Criar → Fluxo de nuvem instantâneo*. Dê um nome e escolha o gatilho **"Quando uma solicitação
+   HTTP é recebida"** (tem o losango **Premium**). *Criar*.
+6. **Deixe o campo "Esquema JSON do corpo da solicitação" vazio.** Em *Mostrar opções avançadas*,
+   defina **Método = POST**. Se aparecer *"Quem pode acionar o fluxo?"*, escolha **Qualquer
+   pessoa** — os alunos chamam o fluxo sem estar autenticados no locatário.
+7. *Nova etapa* → **Analisar JSON**:
+   - **Conteúdo:** a expressão `triggerBody()` (se reclamar, use `string(triggerBody())`)
+   - **Esquema:** *Usar payload de exemplo para gerar esquema*, colando:
 
    ```json
    {
@@ -457,13 +469,44 @@ Cada simulado finalizado vira uma linha. O script cria o cabeçalho sozinho na p
      "ids": ["2023-Q20"], "porArea": {}
    }
    ```
-6. Adicione a ação **Excel Online (Business) → Adicionar uma linha em uma tabela**, aponte para o
-   arquivo e a tabela, e associe cada coluna ao campo correspondente do gatilho.
-7. Salve. O Power Automate gera a **URL HTTP POST** — copie e cole em `coleta.json`, com
-   `"ativa": true`. Depois `python build.py` e publique.
+
+   **Por que este passo existe:** o aplicativo envia o corpo como `text/plain`, não
+   `application/json`. Não é escolha — em envio sem CORS o navegador só admite os tipos da lista
+   segura, e o Power Automate não devolve cabeçalhos CORS que autorizem `application/json`. Sem o
+   *Analisar JSON*, `triggerBody()` é uma string e todos os campos chegam vazios na planilha.
+8. *Nova etapa* → **Excel Online (Business) → Adicionar uma linha em uma tabela**:
+
+   | Campo | Valor |
+   |---|---|
+   | Local | OneDrive for Business |
+   | Biblioteca de documentos | OneDrive |
+   | Arquivo | o `.xlsx` criado acima |
+   | Tabela | `Resultados` |
+
+   Menu *Arquivo* vazio = conexão com outra conta. Menu *Tabela* vazio = a Tabela não foi criada.
+
+9. Preencha as colunas com a saída do **Analisar JSON** (não do gatilho). Quatro precisam de
+   expressão, o resto é conteúdo dinâmico direto:
+
+   | Coluna | Expressão |
+   |---|---|
+   | Recebido em | `convertFromUtc(utcNow(), 'E. South America Standard Time', 'dd/MM/yyyy HH:mm')` |
+   | Nota | `div(mul(body('Analisar_JSON')?['acertos'], 10.0), body('Analisar_JSON')?['totalObjetivas'])` |
+   | Desempenho por área | `string(body('Analisar_JSON')?['porArea'])` |
+   | Questões sorteadas | `join(body('Analisar_JSON')?['ids'], ' ')` |
+
+   As duas últimas são objeto e lista: arrastadas como conteúdo dinâmico viram `[object Object]`
+   ou quebram o fluxo.
+
+10. **Salvar.** Só então o gatilho exibe a **URL HTTP POST** — copie e cole em `coleta.json`, com
+    `"ativa": true`. Depois `python build.py`, `python testar.py` e publique.
 
 O arquivo é um `.xlsx` de verdade no OneDrive: abre no Excel do computador, sincroniza sozinho, e
 não tem link público.
+
+Se o gatilho HTTP estiver bloqueado por licença, a Microsoft oferece um teste gratuito de 90 dias
+do Power Automate Premium — dá para validar tudo antes de decidir. Se não valer a pena, o caminho A
+entrega o mesmo resultado no Excel, de graça.
 
 ---
 
