@@ -131,7 +131,7 @@ Cloudflare Pages, Vercel, Google Sites, hospedagem da própria instituição —
 
 ### Opção C — link do Artifact (claude.ai)
 
-**https://claude.ai/code/artifact/8fbfb95d-dbb7-450f-b6cc-3edb66aeb321**
+**https://claude.ai/artifact/JkYTPDZeTHguomt9nvseUG**
 
 Este link nasce privado. Abra a página e use o menu de compartilhamento para liberar o acesso.
 
