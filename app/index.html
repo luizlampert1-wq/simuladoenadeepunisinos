@@ -81,7 +81,7 @@
   .btn.danger{background:var(--err)}
   .row{display:flex; gap:10px; flex-wrap:wrap}
   .spread{display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap}
-  input[type=text],input[type=email],textarea{
+  input[type=text],textarea{
     width:100%; padding:12px 14px; border:1px solid var(--line); border-radius:10px;
     background:var(--surface); color:var(--ink); font:inherit}
   textarea{min-height:230px; resize:vertical; line-height:1.6}
@@ -240,75 +240,18 @@ const N_DISCURSIVAS = 2;    // discursivas por simulado
 const N_QUESTOES    = N_OBJETIVAS + N_DISCURSIVAS;   // 38, como no ENADE 2023
 const MAX_POR_AREA  = 4;    // teto de objetivas da mesma área
 const HIST_EVITAR   = 2;    // simulados anteriores cujas questões são evitadas
-const DOMINIO       = "@edu.unisinos.br";
 const MAX_LINHAS    = 15;   // limite de linhas da resposta discursiva, como no ENADE
 
-/* ------------------------------------------------------------
-   COLETA DE RESULTADOS
-   Ponto único de integração. Enquanto `ativa` for false, tudo
-   fica apenas no navegador do aluno (localStorage).
-   Para ativar, veja a seção 7 do README.
-   ------------------------------------------------------------ */
-const COLETA = __COLETA__;   // vem de coleta.json, injetado pelo build.py
-
 const LS = { hist:"enade_ep_hist_v2", prog:"enade_ep_prog_v2", tema:"enade_ep_tema_v1",
-             aluno:"enade_ep_aluno_v1", fila:"enade_ep_fila_v1" };
-const MAX_FILA = 50;
+             aluno:"enade_ep_aluno_v1" };
 
-const coletaLigada = () => !!(COLETA && COLETA.ativa && COLETA.url);
-
-/* Sempre enfileira e depois tenta escoar. Se o aluno estiver sem internet,
-   o registro fica guardado e é reenviado na próxima vez que abrir o app. */
+/* O resultado fica só no navegador do aluno. Nada é enviado para fora. */
 function registrarResultado(registro){
   const hist = store(LS.hist) || [];
   hist.unshift(registro);
   store(LS.hist, hist.slice(0, 30));
-
-  if (!coletaLigada()) return;
-  const fila = store(LS.fila) || [];
-  fila.push(registro);
-  store(LS.fila, fila.slice(-MAX_FILA));
-  escoarFila();
 }
 
-/* Devolve true quando o registro pode sair da fila.
-   modo "cors"     — o destino autoriza a leitura da resposta (Power Automate):
-                     dá para saber de verdade se entregou.
-   modo "no-cors"  — o destino não devolve cabeçalhos CORS (Google Apps Script):
-                     a resposta é opaca; só falha de rede é detectável. */
-async function enviar(registro){
-  if (COLETA.modo === "no-cors"){
-    await fetch(COLETA.url, {
-      method: "POST",
-      mode: "no-cors",
-      headers: { "Content-Type": "text/plain;charset=utf-8" },
-      body: JSON.stringify(registro)
-    });
-    return true;
-  }
-  const r = await fetch(COLETA.url, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(registro)
-  });
-  if (r.ok) return true;
-  // 4xx é erro permanente (assinatura, esquema): reenviar não resolve e só
-  // faria a fila bater no servidor a cada abertura. 5xx é passageiro.
-  return r.status >= 400 && r.status < 500;
-}
-
-async function escoarFila(){
-  if (!coletaLigada()) return;
-  const fila = store(LS.fila) || [];
-  if (!fila.length) return;
-  const pendentes = [];
-  for (const r of fila){
-    let entregue = false;
-    try { entregue = await enviar(r); } catch(e){ entregue = false; }
-    if (!entregue) pendentes.push(r);
-  }
-  store(LS.fila, pendentes.slice(-MAX_FILA));
-}
 const LETRAS = ["A","B","C","D","E"];
 const $ = (sel, el=document) => el.querySelector(sel);
 const esc = s => String(s).replace(/[&<>"']/g, c =>
@@ -322,10 +265,6 @@ function shuffle(a){
   const r = a.slice();
   for (let i = r.length - 1; i > 0; i--){ const j = Math.floor(Math.random()*(i+1)); [r[i],r[j]]=[r[j],r[i]]; }
   return r;
-}
-
-function emailValido(e){
-  return /^[^\s@]+@edu\.unisinos\.br$/i.test(String(e).trim());
 }
 
 /* ============================================================
@@ -373,11 +312,11 @@ function sortear(){
 /* ============================================================
    Estado
    ============================================================ */
-let S = null;   // { nome, email, questoes, respostas, atual, inicio }
+let S = null;   // { nome, questoes, respostas, atual, inicio }
 
 function salvarProgresso(){
   if (!S) return;
-  store(LS.prog, { nome:S.nome, email:S.email, ids:S.questoes.map(q=>q.id),
+  store(LS.prog, { nome:S.nome, ids:S.questoes.map(q=>q.id),
                    respostas:S.respostas, atual:S.atual, inicio:S.inicio });
 }
 function restaurarProgresso(){
@@ -385,7 +324,7 @@ function restaurarProgresso(){
   if (!p || !p.ids) return null;
   const qs = p.ids.map(id => BANCO.find(q => q.id === id)).filter(Boolean);
   if (qs.length !== p.ids.length) return null;
-  return { nome:p.nome, email:p.email, questoes:qs, respostas:p.respostas||{},
+  return { nome:p.nome, questoes:qs, respostas:p.respostas||{},
            atual:p.atual||0, inicio:p.inicio };
 }
 
@@ -444,27 +383,12 @@ function telaInicial(msg){
 
     <div class="card">
       <h3 style="font-size:1rem; margin-bottom:14px">Identificação</h3>
-      ${coletaLigada() ? `
-      <div class="note" style="margin:0 0 18px">
-        <b>Como seus dados são usados</b>
-        Ao finalizar um simulado, são enviados ao professor responsável pela disciplina:
-        seu nome, seu e-mail institucional, a data, o tempo gasto, o número de acertos e erros
-        e o seu desempenho por área. A finalidade é acompanhar a preparação da turma para o ENADE.
-        <b style="margin-top:8px">O que não é enviado</b>
-        O texto que você escreve nas questões discursivas permanece apenas neste navegador —
-        só o número de discursivas respondidas é informado.
-      </div>` : ""}
-      <div style="margin-bottom:14px">
-        <label for="email">E-mail institucional</label>
-        <input type="email" id="email" placeholder="seunome@edu.unisinos.br"
-               autocomplete="email" inputmode="email" maxlength="120"
-               value="${esc(aluno.email || "")}">
-        <p class="hint">O acesso é restrito a e-mails <b>${DOMINIO}</b>.</p>
-      </div>
       <div>
         <label for="nome">Nome completo</label>
         <input type="text" id="nome" placeholder="Digite seu nome completo" autocomplete="name"
                maxlength="80" value="${esc(aluno.nome || "")}">
+        <p class="hint">Serve apenas para identificar o seu resultado nesta tela.
+          Nada é enviado para fora deste navegador.</p>
       </div>
       <p id="erroForm" class="erro" style="display:none"></p>
       <div class="row" style="margin-top:16px">
@@ -487,24 +411,18 @@ function telaInicial(msg){
   `;
 
   const iniciar = () => {
-    const email = $("#email").value.trim();
-    const nome  = $("#nome").value.trim();
-    const err   = $("#erroForm");
-    if (!emailValido(email)){
-      err.textContent = `Informe um e-mail institucional válido, terminado em ${DOMINIO}.`;
-      err.style.display = "block"; $("#email").focus(); return;
-    }
+    const nome = $("#nome").value.trim();
+    const err  = $("#erroForm");
     if (!nome){
       err.textContent = "Informe seu nome completo.";
       err.style.display = "block"; $("#nome").focus(); return;
     }
-    store(LS.aluno, { nome, email });
-    S = { nome, email, questoes:sortear(), respostas:{}, atual:0, inicio:Date.now() };
+    store(LS.aluno, { nome });
+    S = { nome, questoes:sortear(), respostas:{}, atual:0, inicio:Date.now() };
     salvarProgresso(); telaQuiz();
   };
   $("#iniciar").onclick = iniciar;
-  ["email","nome"].forEach(id =>
-    $("#"+id).addEventListener("keydown", e => { if (e.key === "Enter") iniciar(); }));
+  $("#nome").addEventListener("keydown", e => { if (e.key === "Enter") iniciar(); });
   if (pend){
     $("#retomar").onclick   = () => { S = pend; telaQuiz(); };
     $("#descartar").onclick = () => { del(LS.prog); telaInicial(); };
@@ -660,7 +578,7 @@ function telaResultado(){
   }
 
   registrarResultado({
-    nome: S.nome, email: S.email,
+    nome: S.nome,
     data: new Date().toLocaleString("pt-BR"),
     dataISO: new Date().toISOString(),
     acertos, erros, totalObjetivas: nObj, percentual: pct,
@@ -680,7 +598,7 @@ function telaResultado(){
     <div class="card">
       <h2 style="font-size:1.15rem">Resultado de ${esc(S.nome)}</h2>
       <p class="small muted" style="margin:4px 0 18px">
-        ${esc(S.email)} · ${new Date().toLocaleString("pt-BR")} · tempo aproximado: ${mins} min</p>
+        ${new Date().toLocaleString("pt-BR")} · tempo aproximado: ${mins} min</p>
       <div class="score">
         <div class="donut" style="--p:${pct}"><div>${pct}%</div></div>
         <div class="stats" style="flex:1; min-width:240px; margin:0">
@@ -722,7 +640,7 @@ function telaResultado(){
   `;
 
   $("#novo").onclick = () => {
-    S = { nome:S.nome, email:S.email, questoes:sortear(), respostas:{}, atual:0, inicio:Date.now() };
+    S = { nome:S.nome, questoes:sortear(), respostas:{}, atual:0, inicio:Date.now() };
     salvarProgresso(); telaQuiz();
   };
   $("#inicio").onclick = () => telaInicial();
@@ -860,6 +778,6 @@ function lightbox(src){
 
 $("#sub").textContent =
   `${N_QUESTOES} questões por simulado · banco com ${BANCO.length} · atualizado em ${BUILD_INFO.data}`;
-escoarFila();   // reenvia o que ficou pendente de uma sessão sem internet
+del("enade_ep_fila_v1");   // resto da coleta que existiu em versões anteriores
 telaInicial();
 </script>

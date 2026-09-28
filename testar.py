@@ -50,11 +50,8 @@ DRIVER_LOGICA = r"""
   const R = [];
   const ok = (nome, cond, det) => R.push({nome, cond: !!cond, det: det || ""});
   const L = ["A","B","C","D","E"];
-  const EMAIL = "aluno.teste@edu.unisinos.br";
-
-  function preencher(email, nome){
-    document.getElementById("email").value = email;
-    document.getElementById("nome").value  = nome;
+  function preencher(nome){
+    document.getElementById("nome").value = nome;
     document.getElementById("iniciar").click();
   }
   const erroVisivel = () => {
@@ -205,22 +202,6 @@ DRIVER_LOGICA = r"""
         "corretas=" + certos + " de " + OBJETIVAS.length);
   })();
 
-  // ---------- 5. validação do e-mail institucional ----------
-  (function(){
-    const validos   = ["ana@edu.unisinos.br", "joao.silva@edu.unisinos.br",
-                       "MARIA@EDU.UNISINOS.BR", "a1@edu.unisinos.br"];
-    const invalidos = ["", "ana", "ana@unisinos.br", "ana@gmail.com",
-                       "ana@edu.unisinos.br.br", "ana@edu.unisinos.com",
-                       "ana @edu.unisinos.br", "@edu.unisinos.br",
-                       "ana@edu.unisinos.brx", "edu.unisinos.br"];
-    const fv = validos.filter(e => !emailValido(e));
-    const fi = invalidos.filter(e => emailValido(e));
-    ok("Aceita e-mails @edu.unisinos.br (inclusive em maiúsculas)",
-        fv.length === 0, fv.join(", "));
-    ok("Recusa e-mails de outros domínios e endereços malformados",
-        fi.length === 0, fi.join(", "));
-  })();
-
   // ---------- 6. pontuação de ponta a ponta ----------
   (function(){
     try { localStorage.clear(); } catch(e){}
@@ -233,7 +214,7 @@ DRIVER_LOGICA = r"""
     ];
     let todosOk = true, det = [];
     for (const c of cenarios){
-      S = {nome:"Teste", email:EMAIL, questoes:sortear(), respostas:{}, atual:0, inicio:Date.now()};
+      S = {nome:"Teste", questoes:sortear(), respostas:{}, atual:0, inicio:Date.now()};
       S.questoes.filter(q=>q.formato==="objetiva").forEach((q,i)=>{
         const r = c.f(q,i); if (r) S.respostas[q.id] = r; });
       telaResultado();
@@ -244,7 +225,7 @@ DRIVER_LOGICA = r"""
     ok("Placar correto em todos os cenários (36/0/18/branco)", todosOk, det.join(" | "));
 
     // a nota e o percentual consideram apenas as 36 objetivas
-    S = {nome:"Teste", email:EMAIL, questoes:sortear(), respostas:{}, atual:0, inicio:Date.now()};
+    S = {nome:"Teste", questoes:sortear(), respostas:{}, atual:0, inicio:Date.now()};
     S.questoes.filter(q=>q.formato==="objetiva").forEach((q,i)=>{
       if (i < 27) S.respostas[q.id] = q.gabarito; });
     telaResultado();
@@ -257,7 +238,7 @@ DRIVER_LOGICA = r"""
   // ---------- 7. gabarito exibido confere com o banco ----------
   (function(){
     try { localStorage.clear(); } catch(e){}
-    S = {nome:"Conferência", email:EMAIL, questoes:sortear(), respostas:{}, atual:0, inicio:Date.now()};
+    S = {nome:"Conferência", questoes:sortear(), respostas:{}, atual:0, inicio:Date.now()};
     S.questoes.forEach((q,i)=>{
       S.respostas[q.id] = q.formato === "objetiva" ? "ABCDE"[i%5] : "Resposta escrita de teste " + i;
     });
@@ -308,17 +289,15 @@ DRIVER_LOGICA = r"""
     try { localStorage.clear(); } catch(e){}
     telaInicial();
     document.getElementById("iniciar").click();
-    ok("Bloqueia início sem e-mail", erroVisivel());
-
-    preencher("aluno@gmail.com", "Aluno de Teste");
-    ok("Bloqueia início com e-mail não institucional",
-        erroVisivel() && !/Questão 1 de/.test(document.body.innerText));
-
-    preencher(EMAIL, "");
     ok("Bloqueia início sem o nome do aluno",
         erroVisivel() && !/Questão 1 de/.test(document.body.innerText));
 
-    preencher(EMAIL, "Aluno de Teste");
+    ok("A tela inicial pede só o nome — nenhum outro campo",
+        !document.getElementById("email") &&
+        document.querySelectorAll(".card input").length === 1 &&
+        !!document.getElementById("nome"));
+
+    preencher("Aluno de Teste");
     ok("Inicia o simulado e mostra 'Questão 1 de 38'",
         /Questão 1 de 38/.test(document.body.innerText));
 
@@ -363,8 +342,10 @@ DRIVER_LOGICA = r"""
     ok("Mostra as 38 questões na correção detalhada",
         document.querySelectorAll(".rev").length === 38,
         document.querySelectorAll(".rev").length + " blocos");
-    ok("Histórico registra o simulado com o e-mail do aluno",
-        (store(LS.hist)||[]).length === 1 && (store(LS.hist)||[])[0].email === EMAIL);
+    const reg = (store(LS.hist)||[])[0] || {};
+    ok("Histórico registra o simulado com o nome do aluno",
+        (store(LS.hist)||[]).length === 1 && reg.nome === "Aluno de Teste");
+    ok("O registro do histórico não guarda e-mail", !("email" in reg));
     try { localStorage.clear(); } catch(e){}
   })();
 
@@ -375,7 +356,7 @@ DRIVER_LOGICA = r"""
     try { localStorage.setItem("__t","1"); localStorage.removeItem("__t"); } catch(e){ temLS = false; }
     if (!temLS){ ok("Persistência (localStorage indisponível neste contexto)", true, "ignorado"); return; }
     telaInicial();
-    preencher(EMAIL, "Aluno Persistente");
+    preencher("Aluno Persistente");
     for (let i = 0; i < 5; i++) document.querySelectorAll(".alt")[0].click();
     S.atual = 37;                                      // vai até a última discursiva
     telaQuiz();
@@ -388,62 +369,11 @@ DRIVER_LOGICA = r"""
     ok("Recupera o simulado em andamento após recarregar a página",
         rec && rec.questoes.map(q=>q.id).join(",") === idsAntes &&
         JSON.stringify(rec.respostas) === respAntes && rec.nome === "Aluno Persistente" &&
-        rec.email === EMAIL && rec.atual === 37);
+        rec.atual === 37);
     ok("A resposta discursiva em andamento também é preservada",
         rec && /Rascunho da discursiva\./.test(JSON.stringify(rec.respostas)));
     ok("Banco de questões continua disponível após recarregar (embutido no arquivo)",
         BANCO.length >= 100);
-    try { localStorage.clear(); } catch(e){}
-  })();
-
-  // ---------- 10. coleta de resultados ----------
-  (function(){
-    try { localStorage.clear(); } catch(e){}
-    const C = window.__COLETA_REAL;
-    ok("Configuração da coleta é coerente (desligada, ou ligada com url https)",
-        (!C.ativa && !C.url) || (C.ativa && /^https:\/\//.test(C.url)),
-        C.ativa ? ("ativa · modo " + C.modo) : "desativada");
-    ok("O modo de envio é 'cors' ou 'no-cors'",
-        C.modo === "cors" || C.modo === "no-cors", "modo = " + C.modo);
-
-    S = {nome:"Teste", email:EMAIL, questoes:sortear(), respostas:{}, atual:0, inicio:Date.now()};
-    telaResultado();
-    ok("Com a coleta desligada, nenhum resultado é enfileirado para envio",
-        !(store(LS.fila) || []).length);
-    ok("O histórico local é gravado de qualquer forma",
-        (store(LS.hist) || []).length === 1);
-
-    // liga a coleta contra uma url de mentira. O fetch já foi substituído por um
-    // que nunca resolve, então a fila fica como registrarResultado a deixou.
-    COLETA.ativa = true; COLETA.url = "https://exemplo.invalido/coleta";
-    const chamadasAntes = window.__envios;
-    try { localStorage.clear(); } catch(e){}
-
-    for (let i = 0; i < MAX_FILA + 12; i++)
-      registrarResultado({ email:EMAIL, nome:"Teste", acertos:i });
-    const fila = store(LS.fila) || [];
-    const chamadas = window.__envios - chamadasAntes;
-    ok("Com a coleta ligada, o resultado entra na fila e o envio é disparado",
-        fila.length > 0 && chamadas > 0, fila.length + " na fila · " + chamadas + " envios");
-    ok("A fila de reenvio tem teto de " + MAX_FILA + " registros",
-        fila.length === MAX_FILA, "fila = " + fila.length);
-    ok("A fila descarta os mais antigos e guarda os mais recentes",
-        fila[fila.length-1].acertos === MAX_FILA + 11 && fila[0].acertos === 12,
-        "do " + fila[0].acertos + " ao " + fila[fila.length-1].acertos);
-
-    // aviso de uso de dados, exigido assim que a coleta passa a funcionar
-    telaInicial();
-    const comAviso = document.body.innerText;
-    ok("Com a coleta ligada, a tela inicial explica quais dados são enviados",
-        /Como seus dados são usados/i.test(comAviso) &&
-        /e-mail institucional/i.test(comAviso) && /não é enviado/i.test(comAviso));
-    ok("O aviso deixa claro que o texto das discursivas não é enviado",
-        /permanece apenas neste navegador/.test(comAviso));
-
-    COLETA.ativa = false; COLETA.url = "";
-    telaInicial();
-    ok("Com a coleta desligada, o aviso de uso de dados não aparece",
-        !/Como seus dados são usados/i.test(document.body.innerText));
     try { localStorage.clear(); } catch(e){}
   })();
 
@@ -474,8 +404,7 @@ DRIVER_PAUSA = r"""<script>
     sessionStorage.setItem("__passo", "2");
     try { localStorage.clear(); } catch(e){}
     telaInicial();
-    document.getElementById("email").value = "aluno.teste@edu.unisinos.br";
-    document.getElementById("nome").value  = "Aluno Pausa";
+    document.getElementById("nome").value = "Aluno Pausa";
     document.getElementById("iniciar").click();
     for (let i = 0; i < 3; i++) document.querySelectorAll(".alt")[i % 5].click();
     S.atual = 37; telaQuiz();
@@ -550,8 +479,7 @@ def testar_pausa(porta):
 
 
 _ENTRAR = """
-  document.getElementById("email").value = "ana.camargo@edu.unisinos.br";
-  document.getElementById("nome").value  = "Ana Beatriz Camargo";
+  document.getElementById("nome").value = "Ana Beatriz Camargo";
   document.getElementById("iniciar").click();
 """
 
@@ -637,21 +565,6 @@ def testar_responsivo(porta, larguras=(390, 320), shots=False):
     return falhou
 
 
-# Nenhum teste pode escrever na planilha de produção. Este trecho entra em TODA
-# página de teste, logo depois do aplicativo e antes do driver: troca o fetch por
-# um que nunca resolve e desliga a coleta, guardando a configuração real para ser
-# inspecionada. Sem isso, cada execução da bateria despejaria dezenas de linhas
-# de lixo no destino configurado em coleta.json.
-NEUTRALIZA_COLETA = """<script>
-  window.__fetchReal = window.fetch;
-  window.__envios = 0;
-  window.fetch = function(){ window.__envios++; return new Promise(function(){}); };
-  window.__COLETA_REAL = { ativa: COLETA.ativa, url: COLETA.url, modo: COLETA.modo };
-  COLETA.ativa = false; COLETA.url = "";
-</script>
-"""
-
-
 def preparar(nome, driver):
     base = open(os.path.join(DIST, "artifact.html"), encoding="utf-8").read()
     caminho = os.path.join(DIST, f"_t_{nome}.html")
@@ -660,7 +573,6 @@ def preparar(nome, driver):
                  '<meta name="viewport" content="width=device-width, initial-scale=1">'
                  '<style>body{margin:0}img{max-width:100%}</style></head><body>\n')
         fh.write(base)
-        fh.write(NEUTRALIZA_COLETA)
         fh.write(driver)
         fh.write("\n</body></html>")
     return f"_t_{nome}.html"
